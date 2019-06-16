@@ -1,0 +1,14 @@
+---
+author: phwl
+comments: true
+date: 2011-12-14 09:27:50+00:00
+layout: post
+link: http://phwl.org/delhi/
+slug: delhi
+title: Delhi 2011
+wordpress_id: 1966
+categories:
+- travel
+---
+
+[![P1100183](http://phwl.org/wp-content/uploads/2014/11/P1100183.jpg)](http://phwl.org/wp-content/uploads/2014/11/P1100183.jpg)
