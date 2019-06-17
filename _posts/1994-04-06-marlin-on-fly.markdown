@@ -7,7 +7,6 @@ slug: marlin-on-fly
 title: Marlin on Fly
 wordpress_id: 76
 categories:
-- Australia
 - fishing
 ---
 
