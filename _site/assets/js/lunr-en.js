@@ -49,7 +49,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Cessna first solo",
       excerpt: "Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.\n\n\n",
-      categories: ["travel"],
+      categories: ["hobbies"],
       tags: [],
       id: 4
     });
@@ -1443,7 +1443,7 @@ var store = [
       
       {
         "title": "Cessna first solo",
-        "url": "http://localhost:4000/travel/cessna-first-solo/",
+        "url": "http://localhost:4000/hobbies/cessna-first-solo/",
         "excerpt": "Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.\n\n\n",
         "teaser":
           
