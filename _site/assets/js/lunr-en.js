@@ -49,7 +49,7 @@ var store = [
       
       {
         "title": "Welcome to Minimal Mistakes Jekyll",
-        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/",
+        "url": "/update/welcome-to-minimal-mistakes-jekyll/",
         "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
         "teaser":
           
@@ -60,7 +60,7 @@ var store = [
       
       {
         "title": "Math Support",
-        "url": "http://localhost:4000/math-support/",
+        "url": "/math-support/",
         "excerpt": "You can enable math support through use_math: true front matter which enable the MathJax.js rendering. After enable math support, use...",
         "teaser":
           
@@ -71,7 +71,7 @@ var store = [
       
       {
         "title": "Sample Post",
-        "url": "http://localhost:4000/sample/sample-post/",
+        "url": "/sample/sample-post/",
         "excerpt": "Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem efficitur, accumsan erat at, molestie dui....",
         "teaser":
           
