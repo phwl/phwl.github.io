@@ -21,7 +21,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Barramundi on Fly",
-      excerpt: "[caption id=”attachment_1598” align=”alignnone” width=”199”] Barramundi, Mary River[/caption] _An edited version of this article appears at flyfish.com _ Background The Northern...",
+      excerpt: "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
       categories: ["australia","fishing","Fly-fishing"],
       tags: [],
       id: 1
@@ -30,7 +30,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Marlin on Fly",
-      excerpt: "[caption id=”attachment_1601” align=”alignnone” width=”300”] Black marlin on fly, Cape Bowling Green, Queensland[/caption] An edited version of this article appeared in...",
+      excerpt: "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
       categories: ["fishing","Fly-fishing"],
       tags: [],
       id: 2
@@ -1411,7 +1411,7 @@ var store = [
       {
         "title": "Barramundi on Fly",
         "url": "http://localhost:4000/australia/fishing/fly-fishing/barramundi-on-fly/",
-        "excerpt": "[caption id=”attachment_1598” align=”alignnone” width=”199”] Barramundi, Mary River[/caption] _An edited version of this article appears at flyfish.com _ Background The Northern...",
+        "excerpt": "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
         "teaser":
           
             null
@@ -1422,7 +1422,7 @@ var store = [
       {
         "title": "Marlin on Fly",
         "url": "http://localhost:4000/fishing/fly-fishing/marlin-on-fly/",
-        "excerpt": "[caption id=”attachment_1601” align=”alignnone” width=”300”] Black marlin on fly, Cape Bowling Green, Queensland[/caption] An edited version of this article appeared in...",
+        "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
         "teaser":
           
             null

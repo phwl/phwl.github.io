@@ -15,13 +15,8 @@ categories:
 * * *
 
 
-
-[caption id="attachment_1598" align="alignnone" width="199"]![](http://phwl.org/wp-content/uploads/2001/08/plbarra1-199x300.jpg) Barramundi, Mary River[/caption]
-
-_An edited version of this article appears at [flyfish.com](http://www.flyfish.com/library/editorial.php?id=611)
-_
-
-
+{% picture 1991/08/plbarra1.jpg --alt "Barramundi" %}
+Barramundi, Mary River
 
 * * *
 
