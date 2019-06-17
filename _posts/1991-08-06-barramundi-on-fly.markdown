@@ -2,6 +2,7 @@
 author: phwl
 comments: true
 date: 1991-08-06 16:25:23+00:00
+link: https://phwl.github.io/barramundi-on-fly
 slug: barramundi-on-fly
 title: Barramundi on Fly
 wordpress_id: 82
