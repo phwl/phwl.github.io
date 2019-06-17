@@ -13,8 +13,8 @@ categories:
 
 Went for a fish in Sydney Harbour with my neighbour Michael. Had a great time catching luderick (otherwise known as blackfish).
 
-[![P1130251](http://phwl.org/wp-content/uploads/2015/12/P1130251.jpg)](http://phwl.org/wp-content/uploads/2015/12/P1130251.jpg)
+[![P1130251](/assets/images/2015/12/P1130251.jpg)](/assets/images/2015/12/P1130251.jpg)
 
 <!-- more -->
 
-[![P1130254](http://phwl.org/wp-content/uploads/2015/12/P1130254.jpg)](http://phwl.org/wp-content/uploads/2015/12/P1130254.jpg)
+[![P1130254](/assets/images/2015/12/P1130254.jpg)](/assets/images/2015/12/P1130254.jpg)

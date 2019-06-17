@@ -10,4 +10,4 @@ categories:
 - travel
 ---
 
-I only have this as a pdf file but this link contains the story of my 2011 trip to London: [london-2011](http://phwl.org/wp-content/uploads/2014/12/london-2011.pdf).
+I only have this as a pdf file but this link contains the story of my 2011 trip to London: [london-2011](/assets/images/2014/12/london-2011.pdf).

@@ -13,19 +13,19 @@ categories:
 
 Here are some photos from the School of Electrical and Information Engineering retreat in Manly.
 
-[caption id="attachment_2637" align="alignnone" width="8196"][![Panorama from Queenscliff Rockpool](http://phwl.org/wp-content/uploads/2016/09/queencliffpano.jpg)](http://phwl.org/wp-content/uploads/2016/09/queencliffpano.jpg) Panorama from Queenscliff Rockpool[/caption]
+[caption id="attachment_2637" align="alignnone" width="8196"][![Panorama from Queenscliff Rockpool](/assets/images/2016/09/queencliffpano.jpg)](/assets/images/2016/09/queencliffpano.jpg) Panorama from Queenscliff Rockpool[/caption]
 
 <!-- more -->
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_3647.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_3647.jpg)
+[![](/assets/images/2016/09/IMG_3647.jpg)](/assets/images/2016/09/IMG_3647.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_3659.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_3659.jpg)
+[![](/assets/images/2016/09/IMG_3659.jpg)](/assets/images/2016/09/IMG_3659.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_3673.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_3673.jpg)
+[![](/assets/images/2016/09/IMG_3673.jpg)](/assets/images/2016/09/IMG_3673.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_3681.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_3681.jpg)
+[![](/assets/images/2016/09/IMG_3681.jpg)](/assets/images/2016/09/IMG_3681.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_8119.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_8119.jpg)
+[![](/assets/images/2016/09/IMG_8119.jpg)](/assets/images/2016/09/IMG_8119.jpg)
 
 
-[![](http://phwl.org/wp-content/uploads/2016/09/IMG_8131.jpg)](http://phwl.org/wp-content/uploads/2016/09/IMG_8131.jpg)
+[![](/assets/images/2016/09/IMG_8131.jpg)](/assets/images/2016/09/IMG_8131.jpg)

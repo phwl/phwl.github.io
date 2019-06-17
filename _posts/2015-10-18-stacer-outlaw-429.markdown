@@ -12,19 +12,19 @@ categories:
 
 Traded in the Quintrex for a new [Stacer Outlaw 429](http://www.stacer.com.au/Aluminium-Boat-Range1/429OutlawSideConsole?Particulars=429%20Outlaw%20Side%20Console) with Evinrude 50 hp at [Huett Marine](http://www.huettmarine.com.au/).  I highly recommend them as they are great people to deal with and very knowledgeable.
 
-[![IMG_5965](http://phwl.org/wp-content/uploads/2015/10/IMG_5965.jpg)](http://phwl.org/wp-content/uploads/2015/10/IMG_5965.jpg)
+[![IMG_5965](/assets/images/2015/10/IMG_5965.jpg)](/assets/images/2015/10/IMG_5965.jpg)
 
 <!-- more -->
 
 The other choice was a Quintrex 420SC Renegade which is nearly the same boat. One of the reasons I chose the Outlaw is it is a little deeper.
 
-![](http://phwl.org/wp-content/uploads/2018/08/img_1854.jpg)
+![](/assets/images/2018/08/img_1854.jpg)
 
 I really like the 3mm top and bottom aluminum,  clean layout and the side console. It is quite a bit heavier than the old boat and hence gives a much better ride in the chop. There is lots of room for storage in the front casting deck, and a live-bait tank in the rear. Will give more details of the boat as it is customised. Richard at [http://www.mystaceroutlaw449.com](http://www.mystaceroutlaw449.com) gives good information on what he did with his Stacer Outlaw 449.
 
 This is the first fish caught. Since the legal limit for mulloway has been increased to 70cm, it went back.
 
-[![IMG_5966](http://phwl.org/wp-content/uploads/2015/10/IMG_5966.jpg)](http://phwl.org/wp-content/uploads/2015/10/IMG_5966.jpg)
+[![IMG_5966](/assets/images/2015/10/IMG_5966.jpg)](/assets/images/2015/10/IMG_5966.jpg)
 
 **Specifications**
 

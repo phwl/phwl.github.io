@@ -23,12 +23,12 @@ Photos from the [Berkeley Wireless Research Center](https://bwrc.eecs.berkeley.e
 
 
 
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5968-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5968-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5967-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5967-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5977-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5977-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5984-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5984-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5991-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5991-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5994-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5994-1024x682.jpg)
-  * [![](http://phwl.org/wp-content/uploads/2019/02/DSCF5996-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/02/DSCF5996-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5968-1024x682.jpg)](/assets/images/2019/02/DSCF5968-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5967-1024x682.jpg)](/assets/images/2019/02/DSCF5967-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5977-1024x682.jpg)](/assets/images/2019/02/DSCF5977-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5984-1024x682.jpg)](/assets/images/2019/02/DSCF5984-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5991-1024x682.jpg)](/assets/images/2019/02/DSCF5991-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5994-1024x682.jpg)](/assets/images/2019/02/DSCF5994-1024x682.jpg)
+  * [![](/assets/images/2019/02/DSCF5996-1024x682.jpg)](/assets/images/2019/02/DSCF5996-1024x682.jpg)
 
 

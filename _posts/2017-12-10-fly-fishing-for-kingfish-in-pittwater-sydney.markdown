@@ -17,7 +17,7 @@ categories:
 
 Ken came from Seattle to Sydney for a few solid days of fishing. I'm going to call this [FFF'18](http://phwl.org/category/hobbies/fishing/fff/) (even though it was in 2017 and the real FFF'18 was Ken and Guy fishing in NZ).
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-14.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-14.jpg)
+[![](/assets/images/2017/12/kingfish17-14.jpg)](/assets/images/2017/12/kingfish17-14.jpg)
 
 <!-- more -->
 
@@ -25,71 +25,71 @@ Ken came from Seattle to Sydney for a few solid days of fishing. I'm going to ca
 
 On the first day, Nicole and I took him out on the boat to the Hawkesbury River to fish Bar Point. It was a pretty quiet day and we fished all the usual spots with no success. When we moved close to shore at The Point, we caught and released his first fish, a Soapy.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-1.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-1.jpg)
+[![](/assets/images/2017/12/kingfish17-1.jpg)](/assets/images/2017/12/kingfish17-1.jpg)
 
 We caught a couple more soapies after which I hooked up on something different. I was surprised that it was a really nice > 40cm whiting, which is a personal best for me.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-2.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-2.jpg)
+[![](/assets/images/2017/12/kingfish17-2.jpg)](/assets/images/2017/12/kingfish17-2.jpg)
 
 Next Ken caught the target specices, a bream but it was a little too small.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-3.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-3.jpg)
+[![](/assets/images/2017/12/kingfish17-3.jpg)](/assets/images/2017/12/kingfish17-3.jpg)
 
 Back at the boat ramp, we were literally attacked by pelicans, trying to snatch our fish. Nicole took this photo under great pressure.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-4.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-4.jpg)
+[![](/assets/images/2017/12/kingfish17-4.jpg)](/assets/images/2017/12/kingfish17-4.jpg)
 
 **Day 2 Pittwater with Justin Duggan**
 
 The main purpose of the trip was for Ken and I to learn how to fly-fish for kingfish. We enlisted Justin Duggan, [Sydney Flyfishing](http://sydneyflyfishing.com.au/), who picked us up from Newport Wharf.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-5.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-5.jpg)
+[![](/assets/images/2017/12/kingfish17-5.jpg)](/assets/images/2017/12/kingfish17-5.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-6.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-6.jpg)
+[![](/assets/images/2017/12/kingfish17-6.jpg)](/assets/images/2017/12/kingfish17-6.jpg)
 
 This furball is an [Enrico Puglasi Flex Calamari fly](https://www.epflies.com/estore/ep-deals/173815) (looks more convincing when wet), and what we used for Kingfish on the surface. It wasn't long before we saw some surface kingfish activity. Justin teased the fish towards the boat with a skipbait lure (no hooks) and we sight cast to a pack of kingfish with no result.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-7.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-7.jpg)
+[![](/assets/images/2017/12/kingfish17-7.jpg)](/assets/images/2017/12/kingfish17-7.jpg)
 
 It wasn't long before Ken hooked up and landed this beautiful kingfish. He looks happy in this photo.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-9.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-9.jpg)
+[![](/assets/images/2017/12/kingfish17-9.jpg)](/assets/images/2017/12/kingfish17-9.jpg)
 
 Here are a couple of photos courtesy of Justin.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/IMG_5706.jpg)](http://phwl.org/wp-content/uploads/2017/12/IMG_5706.jpg)
+[![](/assets/images/2017/12/IMG_5706.jpg)](/assets/images/2017/12/IMG_5706.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2017/12/IMG_5717.jpg)](http://phwl.org/wp-content/uploads/2017/12/IMG_5717.jpg)
+[![](/assets/images/2017/12/IMG_5717.jpg)](/assets/images/2017/12/IMG_5717.jpg)
 
 Soon after, Ken caught another and then we had a double hookup. Mine didn't fight much as it took the fly very deep. By 8am, we had caught and released 4 kingfish, and the trip could already be labelled a success.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-10.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-10.jpg)
+[![](/assets/images/2017/12/kingfish17-10.jpg)](/assets/images/2017/12/kingfish17-10.jpg)
 
 Things went quiet after that, possibly because it was around the high tide. We explored some other bays without success. We went out towards Palm Beach and found some tailor chomping bait on the surface.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-12.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-12.jpg)
+[![](/assets/images/2017/12/kingfish17-12.jpg)](/assets/images/2017/12/kingfish17-12.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-11.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-11.jpg)
+[![](/assets/images/2017/12/kingfish17-11.jpg)](/assets/images/2017/12/kingfish17-11.jpg)
 
 Here is a photo of Barrenjoey Lighthouse.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-13.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-13.jpg)
+[![](/assets/images/2017/12/kingfish17-13.jpg)](/assets/images/2017/12/kingfish17-13.jpg)
 
 We then found a high bait school on the fishfinder. Looking at the top righthand display, all the red part from 10-20 ft were anchovies, with bonito, kingfish and flathead feeding on them.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-15.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-15.jpg)
+[![](/assets/images/2017/12/kingfish17-15.jpg)](/assets/images/2017/12/kingfish17-15.jpg)
 
 I hooked up on a kingfish which burnt my fingers with tension from the fly line. After some anxious moments, we brought this kingfish on board.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-14.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-14.jpg)
+[![](/assets/images/2017/12/kingfish17-14.jpg)](/assets/images/2017/12/kingfish17-14.jpg)
 
 Ken got a bonito, and then I got one. These make great sashimi!
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-17.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-17.jpg)
+[![](/assets/images/2017/12/kingfish17-17.jpg)](/assets/images/2017/12/kingfish17-17.jpg)
 
 While all this was happening, Justin took half a dozen flathead, this being the largest one (estimated at 80cm) but was lost at the boat. It would have been released anyway.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-18.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-18.jpg)
+[![](/assets/images/2017/12/kingfish17-18.jpg)](/assets/images/2017/12/kingfish17-18.jpg)
 
 Overall, it was a fantastic trip and Justin an extremely knowledgable and generous guide.
 
@@ -101,22 +101,22 @@ A school of bonito came up not far from the boat and I gunned the boat into posi
 
 Coming back to Church Point, we chased bonito that were coming up near a construction area, again with no success. Then, one rose in front of us, Ken cast a lure at it, and hooked up. He was on for a brief period of time and the fish came off. There were other bonito following it, and with only about a meter of line out of the rod, splashed the lure on the surface. A second bonito took the lure and he landed this fish.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-20.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-20.jpg)
+[![](/assets/images/2017/12/kingfish17-20.jpg)](/assets/images/2017/12/kingfish17-20.jpg)
 
 Soon after, we ran into Justin at Church Point. He had found a lot of bait and caught lots of fish and suggested we try at Salt Pan Cove. We went there and found a large school of bait between all the boats, so we anchored and fished. Soon we caught our first kingfish by ourselves on fly. Strong winds and heavy rain came in so we called it a day.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-21.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-21.jpg)
+[![](/assets/images/2017/12/kingfish17-21.jpg)](/assets/images/2017/12/kingfish17-21.jpg)
 
 Blisters after 2 days of fly-fishing. Ken had a bruised abdomen from fighting kingfish.
 
-[![](http://phwl.org/wp-content/uploads/2017/12/IMG_0460.jpg)](http://phwl.org/wp-content/uploads/2017/12/IMG_0460.jpg)
+[![](/assets/images/2017/12/IMG_0460.jpg)](/assets/images/2017/12/IMG_0460.jpg)
 
 **Day 4 Sydney Harbour**
 
 On the last day, we did sightseeing. This was done by fly-fishing in Sydney Harbour for luderick (blackfish). We started by bait fishing with sea cabbage and quickly caught and released a fish. We spent the next hour fly-fishing for them with no result. Then Ken put some cabbage on his fly, and caught another one on his first drift. We then tried the fly again with no result. Finally, he put cabbage on his fly and caught a fish on the second drift. Guess we need to work on our fly pattern ...
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-22.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-22.jpg)
+[![](/assets/images/2017/12/kingfish17-22.jpg)](/assets/images/2017/12/kingfish17-22.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-23-1.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-23-1.jpg)
+[![](/assets/images/2017/12/kingfish17-23-1.jpg)](/assets/images/2017/12/kingfish17-23-1.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2017/12/kingfish17-24.jpg)](http://phwl.org/wp-content/uploads/2017/12/kingfish17-24.jpg)
+[![](/assets/images/2017/12/kingfish17-24.jpg)](/assets/images/2017/12/kingfish17-24.jpg)

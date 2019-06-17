@@ -11,4 +11,4 @@ categories:
 - photography
 ---
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2014/06/P6040022-1024x768.jpg)](http://phwl.org/wp-content/uploads/2014/06/P6040022.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2014/06/P6040022-1024x768.jpg)](/assets/images/2014/06/P6040022.jpg)

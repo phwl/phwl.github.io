@@ -13,7 +13,7 @@ categories:
 
 From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a plane trip to New Zealand. From Hong Kong, it is even more difficult. In London, I found out that the reservoir at Walthamstow is accessible by tube and stocked with trout. On the day, nobody was doing any catching at all. I thought that it would be a small puddle so I brought my pea shooter. Actually it was a large lake and everyone else was using heavy artillery to cast long distances.
 
-[![waltham220905-trout](http://phwl.org/wp-content/uploads/2005/09/waltham220905-trout.jpg)](http://phwl.org/wp-content/uploads/2005/09/waltham220905-trout.jpg)
+[![waltham220905-trout](/assets/images/2005/09/waltham220905-trout.jpg)](/assets/images/2005/09/waltham220905-trout.jpg)
 <!-- more -->
 
 

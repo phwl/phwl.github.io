@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[caption id="attachment_3027" align="alignnone" width="4467"][![](http://phwl.org/wp-content/uploads/2017/05/P4300003-3.jpg)](http://phwl.org/wp-content/uploads/2017/05/P4300003-3.jpg) Sydney Skyline from Balls Head[/caption]
+[caption id="attachment_3027" align="alignnone" width="4467"][![](/assets/images/2017/05/P4300003-3.jpg)](/assets/images/2017/05/P4300003-3.jpg) Sydney Skyline from Balls Head[/caption]

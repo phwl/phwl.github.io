@@ -10,4 +10,4 @@ categories:
 - travel
 ---
 
-[![P1100183](http://phwl.org/wp-content/uploads/2014/11/P1100183.jpg)](http://phwl.org/wp-content/uploads/2014/11/P1100183.jpg)
+[![P1100183](/assets/images/2014/11/P1100183.jpg)](/assets/images/2014/11/P1100183.jpg)

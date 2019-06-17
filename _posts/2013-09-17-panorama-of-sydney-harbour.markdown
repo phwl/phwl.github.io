@@ -13,8 +13,8 @@ post_format:
 - Image
 ---
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/09/hbridge-pano24092013-lores-1024x300.jpg)](http://phwl.org/wp-content/uploads/2013/09/hbridge-pano24092013-lores.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/09/hbridge-pano24092013-lores-1024x300.jpg)](/assets/images/2013/09/hbridge-pano24092013-lores.jpg)
 
 <!-- more -->
 
-![hbridge-pano](http://phwl.org/wp-content/uploads/2013/09/hbridge-pano-1024x382.jpg)
+![hbridge-pano](/assets/images/2013/09/hbridge-pano-1024x382.jpg)

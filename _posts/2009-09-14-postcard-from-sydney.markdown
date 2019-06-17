@@ -13,7 +13,7 @@ categories:
 
 Having been educated in Sydney, I was surprised that moving back would be a culture shock. I can translate "Bloody oath it's a sheila" to "What a surprise, here is a member of the fairer sex," and know that a "googly" has no relation to Google, but can't say I've adjusted yet after having spent 12 years in Hong Kong.
 
-[![a010](http://phwl.org/wp-content/uploads/2009/09/a010.jpg)](http://phwl.org/wp-content/uploads/2009/09/a010.jpg)
+[![a010](/assets/images/2009/09/a010.jpg)](/assets/images/2009/09/a010.jpg)
 
 <!-- more -->
 

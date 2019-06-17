@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![bondibeach](http://phwl.org/wp-content/uploads/2014/08/bondibeach-1024x452.jpg)](http://phwl.org/wp-content/uploads/2014/08/bondibeach.jpg)
+[![bondibeach](/assets/images/2014/08/bondibeach-1024x452.jpg)](/assets/images/2014/08/bondibeach.jpg)

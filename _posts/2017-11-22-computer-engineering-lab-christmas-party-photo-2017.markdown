@@ -14,7 +14,7 @@ post_format:
 
 
 
-[caption id="attachment_3352" align="alignnone" width="840"][![](http://phwl.org/wp-content/uploads/2017/11/celchristmas17-1024x768.jpeg)](http://phwl.org/wp-content/uploads/2017/11/celchristmas17.jpeg) CEL Party 2017[/caption]
+[caption id="attachment_3352" align="alignnone" width="840"][![](/assets/images/2017/11/celchristmas17-1024x768.jpeg)](/assets/images/2017/11/celchristmas17.jpeg) CEL Party 2017[/caption]
 
 Photos from earlier years below.
 
@@ -23,8 +23,8 @@ Photos from earlier years below.
 
 
 
-[caption id="attachment_3354" align="alignnone" width="840"][![](http://phwl.org/wp-content/uploads/2017/11/celchristmas2016-1024x768.jpg)](http://phwl.org/wp-content/uploads/2017/11/celchristmas2016.jpg) CEL Party 2016[/caption]
+[caption id="attachment_3354" align="alignnone" width="840"][![](/assets/images/2017/11/celchristmas2016-1024x768.jpg)](/assets/images/2017/11/celchristmas2016.jpg) CEL Party 2016[/caption]
 
-[caption id="attachment_3357" align="alignnone" width="840"][![](http://phwl.org/wp-content/uploads/2017/11/celparty2015-1024x768.jpg)](http://phwl.org/wp-content/uploads/2017/11/celparty2015.jpg) CEL Party 2015[/caption]
+[caption id="attachment_3357" align="alignnone" width="840"][![](/assets/images/2017/11/celparty2015-1024x768.jpg)](/assets/images/2017/11/celparty2015.jpg) CEL Party 2015[/caption]
 
-[caption id="attachment_3355" align="alignnone" width="840"][![](http://phwl.org/wp-content/uploads/2017/11/celchristmas2014-1024x768.jpg)](http://phwl.org/wp-content/uploads/2017/11/celchristmas2014.jpg) CEL Party 2014[/caption]
+[caption id="attachment_3355" align="alignnone" width="840"][![](/assets/images/2017/11/celchristmas2014-1024x768.jpg)](/assets/images/2017/11/celchristmas2014.jpg) CEL Party 2014[/caption]

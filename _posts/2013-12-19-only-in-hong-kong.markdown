@@ -12,9 +12,9 @@ categories:
 
 The below is a report of a true story. No names have been changed to protect identities.
 
-[<!-- more -->](http://phwl.org/wp-content/uploads/2013/12/sherlockcsi.jpg)
+[<!-- more -->](/assets/images/2013/12/sherlockcsi.jpg)
 
-[![sherlockcsi](http://phwl.org/wp-content/uploads/2013/12/sherlockcsi-e1413152907589-768x1024.jpg)](http://phwl.org/wp-content/uploads/2013/12/sherlockcsi.jpg)
+[![sherlockcsi](/assets/images/2013/12/sherlockcsi-e1413152907589-768x1024.jpg)](/assets/images/2013/12/sherlockcsi.jpg)
 
 
 
@@ -66,7 +66,7 @@ In the meantime, we discuss Hong Kong politics and police leave entitlements.
 
 Fingerprints are found on the door but not on P's bag or wallet. Perpetrators must have used gloves. Fingerprints on door will be run through the CSI computer 0900 tomorrow.
 
-[![csi](http://phwl.org/wp-content/uploads/2013/12/csi.jpg)](http://phwl.org/wp-content/uploads/2013/12/csi.jpg)[![fingerprints](http://phwl.org/wp-content/uploads/2013/12/fingerprints-e1413152945345-768x1024.jpg)](http://phwl.org/wp-content/uploads/2013/12/fingerprints.jpg)
+[![csi](/assets/images/2013/12/csi.jpg)](/assets/images/2013/12/csi.jpg)[![fingerprints](http://phwl.org/wp-content/uploads/2013/12/fingerprints-e1413152945345-768x1024.jpg)](http://phwl.org/wp-content/uploads/2013/12/fingerprints.jpg)
 
 More intense writing and phone calling takes place. During the breaks we find that CSI is very familiar with the drug situation in Cabramatta, Sydney and knows where to get the good heroin (opposite the railway station).
 

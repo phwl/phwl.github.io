@@ -19,5 +19,5 @@ I really liked my Canon S120 but it met its demise by being drowned in coffee. R
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/02/IMG_3107-768x1024.jpg)](http://phwl.org/wp-content/uploads/2019/02/IMG_3107.jpg)
+[![](/assets/images/2019/02/IMG_3107-768x1024.jpg)](/assets/images/2019/02/IMG_3107.jpg)
 

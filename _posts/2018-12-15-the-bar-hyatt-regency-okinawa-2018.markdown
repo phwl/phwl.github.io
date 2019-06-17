@@ -12,10 +12,10 @@ categories:
 
 Following the [FPT conference](http://icfpt.org), we had a great evening at The Bar on the top floor of the Hyatt Regency in Naha, Okinawa.
 
-[![](http://phwl.org/wp-content/uploads/2018/12/DSCF5869.jpg)](http://phwl.org/wp-content/uploads/2018/12/DSCF5869.jpg)
+[![](/assets/images/2018/12/DSCF5869.jpg)](/assets/images/2018/12/DSCF5869.jpg)
 
 <!-- more -->
 
-[![](http://phwl.org/wp-content/uploads/2018/12/DSCF5878.jpg)](http://phwl.org/wp-content/uploads/2018/12/DSCF5878.jpg)
+[![](/assets/images/2018/12/DSCF5878.jpg)](/assets/images/2018/12/DSCF5878.jpg)
 
-[![](http://phwl.org/wp-content/uploads/2018/12/DSCF5865.jpg)](http://phwl.org/wp-content/uploads/2018/12/DSCF5865.jpg) [![](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg)](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg)
+[![](/assets/images/2018/12/DSCF5865.jpg)](/assets/images/2018/12/DSCF5865.jpg) [![](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg)](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg)

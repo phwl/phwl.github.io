@@ -25,7 +25,7 @@ The mako shark is one of the fastest and most ferocious fish in the sea. They ca
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0832-1024x616.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0832.jpg)
+[![](/assets/images/2019/05/IMG_0832-1024x616.jpg)](/assets/images/2019/05/IMG_0832.jpg)
 
 
 
@@ -43,7 +43,7 @@ https://youtu.be/py-aq-s33mQ
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0720-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0720.jpg)
+[![](/assets/images/2019/05/IMG_0720-1024x683.jpg)](/assets/images/2019/05/IMG_0720.jpg)
 
 
 
@@ -55,7 +55,7 @@ We booked one of the pioneers of mako fly fishing, [Conway Bowman](http://conway
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0746-1024x575.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0746.jpg)W
+[![](/assets/images/2019/05/IMG_0746-1024x575.jpg)](/assets/images/2019/05/IMG_0746.jpg)W
 
 
 
@@ -85,7 +85,7 @@ After setting up the burley (chum), we got our gear in order and made a few prac
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0740-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0740.jpg)
+[![](/assets/images/2019/05/IMG_0740-1024x683.jpg)](/assets/images/2019/05/IMG_0740.jpg)
 
 
 
@@ -97,7 +97,7 @@ Size #14 rod and reel with floating fly-line. Not sure what size hook, might hav
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0772-1024x575.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0772.jpg)
+[![](/assets/images/2019/05/IMG_0772-1024x575.jpg)](/assets/images/2019/05/IMG_0772.jpg)
 
 
 
@@ -109,11 +109,11 @@ No problem seeing this fly, I think it is a bird imitation.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0847-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0847.jpg)
+[![](/assets/images/2019/05/IMG_0847-1024x683.jpg)](/assets/images/2019/05/IMG_0847.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0762-1024x575.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0762.jpg)
+[![](/assets/images/2019/05/IMG_0762-1024x575.jpg)](/assets/images/2019/05/IMG_0762.jpg)
 
 
 
@@ -133,15 +133,15 @@ Right on the low tide, a mako appeared. Conway teased it in and Ken had it take 
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0786-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0786.jpg)
+[![](/assets/images/2019/05/IMG_0786-1024x683.jpg)](/assets/images/2019/05/IMG_0786.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0787-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0787.jpg)
+[![](/assets/images/2019/05/IMG_0787-1024x683.jpg)](/assets/images/2019/05/IMG_0787.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0788-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0788.jpg)
+[![](/assets/images/2019/05/IMG_0788-1024x683.jpg)](/assets/images/2019/05/IMG_0788.jpg)
 
 
 
@@ -153,11 +153,11 @@ This time Ken was able to set the hook while it was moving away from the boat.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0790-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0790.jpg)
+[![](/assets/images/2019/05/IMG_0790-1024x683.jpg)](/assets/images/2019/05/IMG_0790.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0801-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0801.jpg)
+[![](/assets/images/2019/05/IMG_0801-1024x683.jpg)](/assets/images/2019/05/IMG_0801.jpg)
 
 
 
@@ -169,11 +169,11 @@ and it was on ...
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0810-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0810.jpg)
+[![](/assets/images/2019/05/IMG_0810-1024x683.jpg)](/assets/images/2019/05/IMG_0810.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0812-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0812.jpg)
+[![](/assets/images/2019/05/IMG_0812-1024x683.jpg)](/assets/images/2019/05/IMG_0812.jpg)
 
 
 
@@ -203,11 +203,11 @@ Ken did a good job getting the fish to the boat.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0831-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0831.jpg)
+[![](/assets/images/2019/05/IMG_0831-1024x683.jpg)](/assets/images/2019/05/IMG_0831.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0832-1024x616.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0832.jpg)
+[![](/assets/images/2019/05/IMG_0832-1024x616.jpg)](/assets/images/2019/05/IMG_0832.jpg)
 
 
 
@@ -229,11 +229,11 @@ https://youtu.be/v907fdFlPqg
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0836-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0836.jpg)
+[![](/assets/images/2019/05/IMG_0836-1024x683.jpg)](/assets/images/2019/05/IMG_0836.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_0845-1024x683.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_0845.jpg)
+[![](/assets/images/2019/05/IMG_0845-1024x683.jpg)](/assets/images/2019/05/IMG_0845.jpg)
 
 
 
@@ -245,7 +245,7 @@ About an hour later, a school of mackerel came by and for about 20 minutes, we c
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/05/IMG_3480-768x1024.jpg)](http://phwl.org/wp-content/uploads/2019/05/IMG_3480.jpg)
+[![](/assets/images/2019/05/IMG_3480-768x1024.jpg)](/assets/images/2019/05/IMG_3480.jpg)
 
 
 

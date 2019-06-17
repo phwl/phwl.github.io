@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![The Gap, Sydney Australia](http://phwl.org/wp-content/uploads/2013/08/gappano-1024x387.jpg)](http://phwl.org/wp-content/uploads/2013/08/gappano.jpg)
+[![The Gap, Sydney Australia](/assets/images/2013/08/gappano-1024x387.jpg)](/assets/images/2013/08/gappano.jpg)

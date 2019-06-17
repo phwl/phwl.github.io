@@ -11,7 +11,7 @@ categories:
 ---
 
 Wandering around [Sim City](http://www.allabouthongkong.com/?p=644) in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first digital camera I really like as it is small, quiet and fast, making it really pleasant to use. The experience is not unlike joining a cult.[
-](http://phwl.org/wp-content/uploads/2017/04/DSCF4152.jpg)[![](http://phwl.org/wp-content/uploads/2017/04/DSCF4152-bw.jpg)](http://phwl.org/wp-content/uploads/2017/04/DSCF4152-bw.jpg)
+](/assets/images/2017/04/DSCF4152.jpg)[![](/assets/images/2017/04/DSCF4152-bw.jpg)](http://phwl.org/wp-content/uploads/2017/04/DSCF4152-bw.jpg)
 
 <!-- more -->
 
@@ -58,7 +58,7 @@ Here are some links to resources regarding the X100 series.
   * Fujifilm blog - [https://fujifilm-blog.com/](https://fujifilm-blog.com/)
 
  	
-  * Photographer Eivind Rohne [https://erohne.wordpress.com/](https://erohne.wordpress.com/). I use some of his [custom settings](https://erohne.wordpress.com/2015/01/05/custom-settings-for-the-fujifilm-x-t1/) ([local](http://phwl.org/wp-content/uploads/2017/04/img_0879-0.jpg))
+  * Photographer Eivind Rohne [https://erohne.wordpress.com/](https://erohne.wordpress.com/). I use some of his [custom settings](https://erohne.wordpress.com/2015/01/05/custom-settings-for-the-fujifilm-x-t1/) ([local](/assets/images/2017/04/img_0879-0.jpg))
 
  	
   * Fujilove - [https://fujilove.com](https://fujilove.com)

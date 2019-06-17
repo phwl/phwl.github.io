@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![whalebeach](http://phwl.org/wp-content/uploads/2016/03/whalebeach.jpg)](http://phwl.org/wp-content/uploads/2016/03/whalebeach.jpg)
+[![whalebeach](/assets/images/2016/03/whalebeach.jpg)](/assets/images/2016/03/whalebeach.jpg)

@@ -12,4 +12,4 @@ categories:
 
 Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.
 
-[![plcessna](http://phwl.org/wp-content/uploads/2015/12/plcessna.jpg)](http://phwl.org/wp-content/uploads/2015/12/plcessna.jpg)
+[![plcessna](/assets/images/2015/12/plcessna.jpg)](/assets/images/2015/12/plcessna.jpg)

@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![](http://phwl.org/wp-content/uploads/2017/04/IMG_9416.jpg)](http://phwl.org/wp-content/uploads/2017/04/IMG_9416.jpg)
+[![](/assets/images/2017/04/IMG_9416.jpg)](/assets/images/2017/04/IMG_9416.jpg)

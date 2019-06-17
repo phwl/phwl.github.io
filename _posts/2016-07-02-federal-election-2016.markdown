@@ -10,7 +10,7 @@ categories:
 - photography
 ---
 
-[![IMG_2522](http://phwl.org/wp-content/uploads/2016/07/IMG_2522.jpg)](http://phwl.org/wp-content/uploads/2016/07/IMG_2522.jpg)
+[![IMG_2522](/assets/images/2016/07/IMG_2522.jpg)](/assets/images/2016/07/IMG_2522.jpg)
 
 <!-- more -->
 

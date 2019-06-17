@@ -13,4 +13,4 @@ categories:
 
 Went for a drive this morning to Akuna Bay. Fog was coming off the river and this photograph was taken on the road between Akuna Bay and Church Point.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/04/akunabay-1024x487.jpg)](http://phwl.org/wp-content/uploads/2013/04/akunabay.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/04/akunabay-1024x487.jpg)](/assets/images/2013/04/akunabay.jpg)

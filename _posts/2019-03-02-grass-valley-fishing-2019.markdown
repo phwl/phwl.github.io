@@ -22,7 +22,7 @@ The FPGA Fly-Fishing Symposium 2019 ([FFF'19](http://phwl.org/category/hobbies/f
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0221-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0221.jpg)
+[![](/assets/images/2019/03/IMG_0221-1024x682.jpg)](/assets/images/2019/03/IMG_0221.jpg)
 
 
 
@@ -38,11 +38,11 @@ I am not the superstitious type but we received many encouraging signs in Monter
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0043-1024x575.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0043.jpg)
+[![](/assets/images/2019/03/IMG_0043-1024x575.jpg)](/assets/images/2019/03/IMG_0043.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0045-1024x575.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0045.jpg)
+[![](/assets/images/2019/03/IMG_0045-1024x575.jpg)](/assets/images/2019/03/IMG_0045.jpg)
 
 
 
@@ -54,7 +54,7 @@ We had planned to fish with a guide the first day of the trip and then do our ow
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0234-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0234.jpg)
+[![](/assets/images/2019/03/IMG_0234-1024x682.jpg)](/assets/images/2019/03/IMG_0234.jpg)
 
 
 
@@ -94,7 +94,7 @@ The next day got up at 5:30am to go fishing with [Chuck Ragan](http://www.crflyf
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0151-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0151.jpg)
+[![](/assets/images/2019/03/IMG_0151-1024x682.jpg)](/assets/images/2019/03/IMG_0151.jpg)
 
 
 
@@ -124,15 +124,15 @@ Chuck was really cool, laid back and even more enthusiastic than ourselves. He k
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0156-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0156.jpg)
+[![](/assets/images/2019/03/IMG_0156-1024x682.jpg)](/assets/images/2019/03/IMG_0156.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0161-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0161.jpg)
+[![](/assets/images/2019/03/IMG_0161-1024x682.jpg)](/assets/images/2019/03/IMG_0161.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0165-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0165.jpg)
+[![](/assets/images/2019/03/IMG_0165-1024x682.jpg)](/assets/images/2019/03/IMG_0165.jpg)
 
 
 
@@ -144,7 +144,7 @@ We were using #7 weight rods with floating lines. Due to miscommunication, I bro
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0200-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0200.jpg)
+[![](/assets/images/2019/03/IMG_0200-1024x682.jpg)](/assets/images/2019/03/IMG_0200.jpg)
 
 
 
@@ -180,23 +180,23 @@ It wasn't long before we were into fish.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0211-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0211.jpg)
+[![](/assets/images/2019/03/IMG_0211-1024x682.jpg)](/assets/images/2019/03/IMG_0211.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0175-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0175.jpg)
+[![](/assets/images/2019/03/IMG_0175-1024x682.jpg)](/assets/images/2019/03/IMG_0175.jpg)
 
 
 
-![](http://phwl.org/wp-content/uploads/2019/03/IMG_5952-1024x768.jpg)
+![](/assets/images/2019/03/IMG_5952-1024x768.jpg)
 
 
 
-![](http://phwl.org/wp-content/uploads/2019/03/IMG_5956-1024x768.jpg)
+![](/assets/images/2019/03/IMG_5956-1024x768.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0197-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0197.jpg)
+[![](/assets/images/2019/03/IMG_0197-1024x682.jpg)](/assets/images/2019/03/IMG_0197.jpg)
 
 
 
@@ -208,7 +208,7 @@ Things were going well, even the rain stopped for a bit and then Guy pulled out 
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0195-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0195.jpg)
+[![](/assets/images/2019/03/IMG_0195-1024x682.jpg)](/assets/images/2019/03/IMG_0195.jpg)
 
 
 
@@ -220,15 +220,15 @@ As mentioned earlier, I'm not superstitious and would even allow Banana Boat sun
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0202-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0202.jpg)
+[![](/assets/images/2019/03/IMG_0202-1024x682.jpg)](/assets/images/2019/03/IMG_0202.jpg)
 
 
 
-![](http://phwl.org/wp-content/uploads/2019/03/IMG_5959-1024x768.jpg)
+![](/assets/images/2019/03/IMG_5959-1024x768.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0215-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0215.jpg)
+[![](/assets/images/2019/03/IMG_0215-1024x682.jpg)](/assets/images/2019/03/IMG_0215.jpg)
 
 
 
@@ -240,7 +240,7 @@ We ended up with about 2 dozen fish (all released). As Chuck predicted, the disc
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0232-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0232.jpg)
+[![](/assets/images/2019/03/IMG_0232-1024x682.jpg)](/assets/images/2019/03/IMG_0232.jpg)
 
 
 
@@ -252,15 +252,15 @@ We didn't have a plan for the next day and it was either going to the shopping m
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0243-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0243.jpg)
+[![](/assets/images/2019/03/IMG_0243-1024x682.jpg)](/assets/images/2019/03/IMG_0243.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0249-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0249.jpg)
+[![](/assets/images/2019/03/IMG_0249-1024x682.jpg)](/assets/images/2019/03/IMG_0249.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0258-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0258.jpg)
+[![](/assets/images/2019/03/IMG_0258-1024x682.jpg)](/assets/images/2019/03/IMG_0258.jpg)
 
 
 
@@ -272,7 +272,7 @@ Ken caught the first fish which was a nice fat spotted bass.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0257-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0257.jpg)
+[![](/assets/images/2019/03/IMG_0257-1024x682.jpg)](/assets/images/2019/03/IMG_0257.jpg)
 
 
 
@@ -284,19 +284,19 @@ We caught a few more and they larger than the ones at Bullards.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0260-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0260.jpg)
+[![](/assets/images/2019/03/IMG_0260-1024x682.jpg)](/assets/images/2019/03/IMG_0260.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0262-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0262.jpg)
+[![](/assets/images/2019/03/IMG_0262-1024x682.jpg)](/assets/images/2019/03/IMG_0262.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0272-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0272.jpg)
+[![](/assets/images/2019/03/IMG_0272-1024x682.jpg)](/assets/images/2019/03/IMG_0272.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0274-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0274.jpg)
+[![](/assets/images/2019/03/IMG_0274-1024x682.jpg)](/assets/images/2019/03/IMG_0274.jpg)
 
 
 
@@ -308,11 +308,11 @@ Ken took the largest fish of the trip.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0267-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0267.jpg)
+[![](/assets/images/2019/03/IMG_0267-1024x682.jpg)](/assets/images/2019/03/IMG_0267.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0269-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0269.jpg)
+[![](/assets/images/2019/03/IMG_0269-1024x682.jpg)](/assets/images/2019/03/IMG_0269.jpg)
 
 
 
@@ -324,7 +324,7 @@ We had another great day, catching about half a dozen fish. Hogan had a very col
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/03/IMG_0277-1024x682.jpg)](http://phwl.org/wp-content/uploads/2019/03/IMG_0277.jpg)
+[![](/assets/images/2019/03/IMG_0277-1024x682.jpg)](/assets/images/2019/03/IMG_0277.jpg)
 
 
 

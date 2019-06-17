@@ -12,7 +12,7 @@ categories:
 
 Following the [International Conference on Field Programmable Technology](http://www.icfpt.org) we spent some time in Kyoto and Osaka.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123629-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123629.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123629-1024x768.jpg)](/assets/images/2013/12/PC123629.jpg)
 
 
 
@@ -20,31 +20,31 @@ Following the [International Conference on Field Programmable Technology](http:/
 
 Clear Water Temple is a World Heritage Site. Here are some schoolgirls playing with water.
 
-![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123659-1024x768.jpg)
+![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123659-1024x768.jpg)
 
-Prayer cards.[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123629-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123629.jpg)
+Prayer cards.[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123629-1024x768.jpg)](/assets/images/2013/12/PC123629.jpg)
 
-Nice hat.![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123575-1024x768.jpg)
+Nice hat.![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123575-1024x768.jpg)
 
 This is Clear Water Temple itself, with a view of Kyoto in the background. Built in 1633, it is a magnificent piece of carpentry.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/clearwatertemple-1024x424.jpg)](http://phwl.org/wp-content/uploads/2013/12/clearwatertemple.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123664-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123664.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/clearwatertemple-1024x424.jpg)](/assets/images/2013/12/clearwatertemple.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123664-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123664.jpg)
 
 Massive pieces of timber were used and lots of fancy joints.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123628-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123628.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123590-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123590.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123628-1024x768.jpg)](/assets/images/2013/12/PC123628.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123590-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123590.jpg)
 
-This picture is actually quite misleading as autumn was long over.[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC133977-1024x694.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC133977.jpg)A beautiful garden.[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123671-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123671.jpg)
+This picture is actually quite misleading as autumn was long over.[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC133977-1024x694.jpg)](/assets/images/2013/12/PC133977.jpg)A beautiful garden.[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123671-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123671.jpg)
 
 We then took the bus to nearby Gion.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123779-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123779.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123779-1024x768.jpg)](/assets/images/2013/12/PC123779.jpg)
 
-Many tourists enjoy dressing up in kimonos and taking selfies.[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123757-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123757.jpg)
+Many tourists enjoy dressing up in kimonos and taking selfies.[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123757-1024x768.jpg)](/assets/images/2013/12/PC123757.jpg)
 
 Japanese marbled beef restaurant.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123780-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123780.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123784-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123784.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123796-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123796.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123792-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123792.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123809-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123809.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123780-1024x768.jpg)](/assets/images/2013/12/PC123780.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123784-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123784.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123796-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123796.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123792-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123792.jpg) [![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/PC123809-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/PC123809.jpg)
 
 The Shinto Fushimi Inari Shrine with many torii gates.
 

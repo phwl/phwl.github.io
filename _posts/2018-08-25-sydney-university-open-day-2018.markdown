@@ -13,7 +13,7 @@ post_format:
 - Gallery
 ---
 
-[![](http://phwl.org/wp-content/uploads/2018/08/img_1989.jpg)](http://phwl.org/wp-content/uploads/2018/08/img_1989.jpg)
+[![](/assets/images/2018/08/img_1989.jpg)](/assets/images/2018/08/img_1989.jpg)
 
 <!-- more -->
 
@@ -23,4 +23,4 @@ Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO.
 
 Here is the log, contacts include New Caledonia and New Zealand.
 
-[![](http://phwl.org/wp-content/uploads/2018/08/qsolog.jpg)](http://phwl.org/wp-content/uploads/2018/08/qsolog.jpg)
+[![](/assets/images/2018/08/qsolog.jpg)](/assets/images/2018/08/qsolog.jpg)

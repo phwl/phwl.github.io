@@ -14,4 +14,4 @@ post_format:
 
 I was honoured to have received this pen from my ex-students at CUHK.
 
-[caption id="attachment_2406" align="alignnone" width="1024"][![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2016/01/4201211301_58b7b50ef4_o.jpg)](http://phwl.org/wp-content/uploads/2016/01/4201211301_58b7b50ef4_o.jpg) OLYMPUS DIGITAL CAMERA[/caption]
+[caption id="attachment_2406" align="alignnone" width="1024"][![OLYMPUS DIGITAL CAMERA](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg)](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg) OLYMPUS DIGITAL CAMERA[/caption]

@@ -16,15 +16,15 @@ categories:
 
 Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout fishery in the US. When Prof Brent Nelson invited me to fish there it didn't take me long to accept.
 
-![p1000420](http://phwl.org/wp-content/uploads/2015/12/p1000420.jpg)
+![p1000420](/assets/images/2015/12/p1000420.jpg)
 
 <!-- more -->
 
 Salt Lake City (SLC) is a vast desert surrounded by the rocky mountains. At this time of year, there is still snow on most of the mountains and many higher altitude lakes are still frozen. It looked vaguely familiar and I could picture John Wayne coming down the mountain. What I found amazing was that anyone would settle in a place like SLC, coming over the mountains on wagons and just seeing miles and miles of featureless plains. They were definitely very tough people.
 
-![p1000428](http://phwl.org/wp-content/uploads/2015/12/p1000428.jpg)
+![p1000428](/assets/images/2015/12/p1000428.jpg)
 
-![p1000440](http://phwl.org/wp-content/uploads/2015/12/p1000440.jpg)
+![p1000440](/assets/images/2015/12/p1000440.jpg)
 
 Upon arriving at Brent's house, we got straight into renovating his bathroom. This was necessary as they wanted to use it during my visit. Academics are theorists and shouldn't be allowed to do anything too practical. Yogi Berra said, "in theory there is no difference between theory and practice, in practice there is." All of the bathroom's electrical appliances worked properly except one set of lights. Also earlier, a large spark was inadvertently generated due to a short. After much bumbling around, we isolated the problem to a loose wire deep in the guts of the wiring. Quietly pleased that nobody got electrocuted, I helped Brent fix the rest of the bathroom, hang the door and everything was operational.
 
@@ -34,25 +34,25 @@ The next day, I gave a seminar at Brigham Young University (BYU). One of the be
 
 On the way, we stopped at a 7-eleven. In the photo below, the small one on the left is a pint (600 ml) and the big one 1.9 L. I've seen 2 L bottles before but never a 2 L cup. Two of those are enough to kill you.
 
-![p1000257](http://phwl.org/wp-content/uploads/2015/12/p1000257.jpg)
+![p1000257](/assets/images/2015/12/p1000257.jpg)
 
 Here are some pictures that I took on the way to the Green River.
 
-![p1000264](http://phwl.org/wp-content/uploads/2015/12/p1000264.jpg)
+![p1000264](/assets/images/2015/12/p1000264.jpg)
 
-![p1000270](http://phwl.org/wp-content/uploads/2015/12/p1000270.jpg)
+![p1000270](/assets/images/2015/12/p1000270.jpg)
 
-![p1000283](http://phwl.org/wp-content/uploads/2015/12/p1000283.jpg)
+![p1000283](/assets/images/2015/12/p1000283.jpg)
 
-![p1000285](http://phwl.org/wp-content/uploads/2015/12/p1000285.jpg)
+![p1000285](/assets/images/2015/12/p1000285.jpg)
 
-![p1000286](http://phwl.org/wp-content/uploads/2015/12/p1000286.jpg)
+![p1000286](/assets/images/2015/12/p1000286.jpg)
 
 That evening we walked the banks of the Green River. A large Osprey dive-bombed a trout right in front of us. It sounded like a bomb going off.
 
 Here is a picture of where we stayed, we don't get that much snow when we go skiing.
 
-![p1000295](http://phwl.org/wp-content/uploads/2015/12/p1000295.jpg)
+![p1000295](/assets/images/2015/12/p1000295.jpg)
 
 **Green River**
 
@@ -62,7 +62,7 @@ After a quick breakfast we met out guide, Ryan Kelly (www.greenriverflyfisher.c
 
 We put the boat in at Flaming Gorge Dam. Ryan remembered Brent because his eccentric brother-in-law hammered the trout using a crappie jig on a previous trip.
 
-![p1000303](http://phwl.org/wp-content/uploads/2015/12/p1000303.jpg)
+![p1000303](/assets/images/2015/12/p1000303.jpg)
 
 The river was crystal clear and we saw plenty of fish, sometimes twenty at a time. Started fishing a bobber (actually, fly-fishermen call them strike indicators) under which was had a sow
 bug and a zebra nymph. For those non-fishermen readers, a nymph is an underwater bug. Ryan made the (fishing) joke that we were nymphomanics. The morning started slow with the trout picking up the flies and then dropping them before.
@@ -76,19 +76,19 @@ Fly-fishermen spend lots of time waiting for conditions need to be right so the
 
 Drifting is a beautiful way to fish as you want to present your flies so that they look like they are drifting naturally along with the current. Since the boat travels roughly the same speed as the flies, one can get really long drifts. After missing the first few, Brent caught the first trout and shortly after, I got this one.
 
-![p1000309](http://phwl.org/wp-content/uploads/2015/12/p1000309.jpg)
+![p1000309](/assets/images/2015/12/p1000309.jpg)
 
-![p1000311](http://phwl.org/wp-content/uploads/2015/12/p1000311.jpg)
+![p1000311](/assets/images/2015/12/p1000311.jpg)
 
-![p1000314](http://phwl.org/wp-content/uploads/2015/12/p1000314.jpg)
+![p1000314](/assets/images/2015/12/p1000314.jpg)
 
-![p1000320](http://phwl.org/wp-content/uploads/2015/12/p1000320.jpg)
+![p1000320](/assets/images/2015/12/p1000320.jpg)
 
 We caught a few more before lunch and things picked up after lunch. We were soon catching a fish every cast.
 
-![p1000321](http://phwl.org/wp-content/uploads/2015/12/p1000321.jpg)
+![p1000321](/assets/images/2015/12/p1000321.jpg)
 
-![p1000322](http://phwl.org/wp-content/uploads/2015/12/p1000322.jpg)
+![p1000322](/assets/images/2015/12/p1000322.jpg)
 
 Into the afternoon, the weather improved a little and there was a
 pretty good mayfly hatch (blue winged olives or BWOs to be more precise). We switched to tandem dry flies, a BWO and a cripple in a much large size than the natural and caught a lot more fish.
@@ -108,41 +108,41 @@ a circus with lots people as it was a Saturday. It turned out that there were n
 Again it was cold enough for our guides to ice up. We did not fish for
 long before Brent lost a nice brown trout and then almost immediately after caught another.
 
-![p1000341](http://phwl.org/wp-content/uploads/2015/12/p1000341.jpg)
+![p1000341](/assets/images/2015/12/p1000341.jpg)
 
-![p1000345](http://phwl.org/wp-content/uploads/2015/12/p1000345.jpg)
+![p1000345](/assets/images/2015/12/p1000345.jpg)
 
 Adjusting my strike indicator, I snagged the bottom. I was trying to
 get it off for a while when it started to move! Fought the fish for a
 while but this battle ended up in a long distance release. However, a
 short time later, I caught this nice fat rainbow trout.
 
-![p1000347](http://phwl.org/wp-content/uploads/2015/12/p1000347.jpg)
+![p1000347](/assets/images/2015/12/p1000347.jpg)
 
-![p1000352](http://phwl.org/wp-content/uploads/2015/12/p1000352.jpg)
+![p1000352](/assets/images/2015/12/p1000352.jpg)
 
-![p1000357](http://phwl.org/wp-content/uploads/2015/12/p1000357.jpg)
+![p1000357](/assets/images/2015/12/p1000357.jpg)
 
 After lunch, we fished the upper Provo, expecting another mayfly hatch. Unfortunately, that day there were millions of people on the Upper Provo waiting for the same thing and we only saw a small number of trout even we had a really good hatch. We think the large number of people flogging the water scared the trout away.
 
-![p1000374](http://phwl.org/wp-content/uploads/2015/12/p1000374.jpg)
+![p1000374](/assets/images/2015/12/p1000374.jpg)
 
-![p1000375](http://phwl.org/wp-content/uploads/2015/12/p1000375.jpg)
+![p1000375](/assets/images/2015/12/p1000375.jpg)
 
-![p1000377](http://phwl.org/wp-content/uploads/2015/12/p1000377.jpg)
+![p1000377](/assets/images/2015/12/p1000377.jpg)
 
 On the way home, we went to Deer Creek Lake which had only recently had ice-off (we had considered fishing Strawberry Reservoir but it was still under a few feet of ice). There were huge rainbows there that people were catching on powerbait and we saw some patrolling the edges. Unfortunately, they weren't too interested in the nymph I presented. I am still wondering what would have happened if I had fished a streamer on a sinking line.
 
-![p1000383](http://phwl.org/wp-content/uploads/2015/12/p1000383.jpg)
+![p1000383](/assets/images/2015/12/p1000383.jpg)
 
 That evening, I was taken kicking and screaming to a BYU ballroom
 dancing concert that Brent had to attend. It was pretty good but I think I prefer fishing.
 
-![p1000391](http://phwl.org/wp-content/uploads/2015/12/p1000391.jpg)
+![p1000391](/assets/images/2015/12/p1000391.jpg)
 
 Following the concert we played pool. Wanted to play all night but we were both tired.
 
-![p1000392](http://phwl.org/wp-content/uploads/2015/12/p1000392.jpg)
+![p1000392](/assets/images/2015/12/p1000392.jpg)
 
 
 ## In Search of Coffee
@@ -151,15 +151,15 @@ Following the concert we played pool. Wanted to play all night but we were both
 The next day was a Sunday and I took a bike ride all through Utah in
 search of a place to have a cup of coffee. Here are some pictures.
 
-![p1000396](http://phwl.org/wp-content/uploads/2015/12/p1000396.jpg)
+![p1000396](/assets/images/2015/12/p1000396.jpg)
 
-![p1000397](http://phwl.org/wp-content/uploads/2015/12/p1000397.jpg)
+![p1000397](/assets/images/2015/12/p1000397.jpg)
 
-![p1000400](http://phwl.org/wp-content/uploads/2015/12/p1000400.jpg)
+![p1000400](/assets/images/2015/12/p1000400.jpg)
 
-![p1000403](http://phwl.org/wp-content/uploads/2015/12/p1000403.jpg)
+![p1000403](/assets/images/2015/12/p1000403.jpg)
 
-![p1000411](http://phwl.org/wp-content/uploads/2015/12/p1000411.jpg)
+![p1000411](/assets/images/2015/12/p1000411.jpg)
 
 Couldn't find the pub though.
 

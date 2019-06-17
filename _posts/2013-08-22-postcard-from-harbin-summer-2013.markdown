@@ -17,7 +17,7 @@ This is the view from Dragon Tower.[![OLYMPUS DIGITAL CAMERA](http://www.phwl.or
 
 and an 11MB, 30-shot 360 degree panorama of Harbin.
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/08/harbin-pano3-1024x94.jpg)](http://phwl.org/wp-content/uploads/2013/08/harbin-pano3.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/08/harbin-pano3-1024x94.jpg)](/assets/images/2013/08/harbin-pano3.jpg)
 <!-- more -->
 
 The difference could not be greater. In February, the Songhua River where the guy below is swimming was frozen solid.

@@ -14,4 +14,4 @@ post_format:
 - Image
 ---
 
-[caption id="attachment_3032" align="alignnone" width="1280"][![](http://phwl.org/wp-content/uploads/2017/05/P5160020.jpg)](http://phwl.org/wp-content/uploads/2017/05/P5160020.jpg) The Dish[/caption]
+[caption id="attachment_3032" align="alignnone" width="1280"][![](/assets/images/2017/05/P5160020.jpg)](/assets/images/2017/05/P5160020.jpg) The Dish[/caption]

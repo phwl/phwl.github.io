@@ -14,4 +14,4 @@ post_format:
 - Image
 ---
 
-[![](http://phwl.org/wp-content/uploads/2018/11/sydney-aerialnov18.jpg)](http://phwl.org/wp-content/uploads/2018/11/sydney-aerialnov18.jpg)
+[![](/assets/images/2018/11/sydney-aerialnov18.jpg)](/assets/images/2018/11/sydney-aerialnov18.jpg)

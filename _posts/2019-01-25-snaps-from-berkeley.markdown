@@ -11,7 +11,7 @@ categories:
 ---
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0034-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0034.jpg)Sign says "Abolish the CIA and ICE"  
+[![](/assets/images/2019/01/IMG_0034-1024x768.jpg)](/assets/images/2019/01/IMG_0034.jpg)Sign says "Abolish the CIA and ICE"  
 
 
 
@@ -20,33 +20,33 @@ categories:
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0038-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0038.jpg)
+[![](/assets/images/2019/01/IMG_0038-1024x768.jpg)](/assets/images/2019/01/IMG_0038.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0039-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0039.jpg)
+[![](/assets/images/2019/01/IMG_0039-1024x768.jpg)](/assets/images/2019/01/IMG_0039.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0041-768x1024.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0041.jpg)
+[![](/assets/images/2019/01/IMG_0041-768x1024.jpg)](/assets/images/2019/01/IMG_0041.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0043-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0043.jpg)Only way to get a good parking spot
+[![](/assets/images/2019/01/IMG_0043-1024x768.jpg)](/assets/images/2019/01/IMG_0043.jpg)Only way to get a good parking spot
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0047-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0047.jpg)
+[![](/assets/images/2019/01/IMG_0047-1024x768.jpg)](/assets/images/2019/01/IMG_0047.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0048-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0048.jpg)
+[![](/assets/images/2019/01/IMG_0048-1024x768.jpg)](/assets/images/2019/01/IMG_0048.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0055-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0055.jpg)
+[![](/assets/images/2019/01/IMG_0055-1024x768.jpg)](/assets/images/2019/01/IMG_0055.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0058-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0058.jpg)
+[![](/assets/images/2019/01/IMG_0058-1024x768.jpg)](/assets/images/2019/01/IMG_0058.jpg)
 

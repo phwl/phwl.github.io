@@ -13,7 +13,7 @@ post_format:
 - Image
 ---
 
-[![](http://phwl.org/wp-content/uploads/2017/10/DSCF4677.jpg)](http://phwl.org/wp-content/uploads/2017/10/DSCF4677.jpg)
+[![](/assets/images/2017/10/DSCF4677.jpg)](/assets/images/2017/10/DSCF4677.jpg)
 
 <!-- more -->
 

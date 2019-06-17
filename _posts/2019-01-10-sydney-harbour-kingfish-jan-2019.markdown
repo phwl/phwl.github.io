@@ -20,7 +20,7 @@ It was cold and wet today but good to get out with Beard and son in Sydney Harbo
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/41418944_Unknown-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/41418944_Unknown.jpg)
+[![](/assets/images/2019/01/41418944_Unknown-1024x768.jpg)](/assets/images/2019/01/41418944_Unknown.jpg)
 
 
 
@@ -32,7 +32,7 @@ There were fish everywhere.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0006-940x1024.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0006.jpg)
+[![](/assets/images/2019/01/IMG_0006-940x1024.jpg)](/assets/images/2019/01/IMG_0006.jpg)
 
 
 
@@ -44,7 +44,7 @@ Beard's son with a tailor.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/41419008_Unknown-1-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/41419008_Unknown-1.jpg)
+[![](/assets/images/2019/01/41419008_Unknown-1-1024x768.jpg)](/assets/images/2019/01/41419008_Unknown-1.jpg)
 
 
 
@@ -56,9 +56,9 @@ This was in its mouth.
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/41418992_Unknown-1-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/41418992_Unknown-1.jpg)
+[![](/assets/images/2019/01/41418992_Unknown-1-1024x768.jpg)](/assets/images/2019/01/41418992_Unknown-1.jpg)
 
 
 
-[![](http://phwl.org/wp-content/uploads/2019/01/IMG_0011-1024x768.jpg)](http://phwl.org/wp-content/uploads/2019/01/IMG_0011.jpg)
+[![](/assets/images/2019/01/IMG_0011-1024x768.jpg)](/assets/images/2019/01/IMG_0011.jpg)
 

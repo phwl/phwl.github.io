@@ -12,4 +12,4 @@ post_format:
 - Image
 ---
 
-[![OLYMPUS DIGITAL CAMERA](http://phwl.org/wp-content/uploads/2013/12/f0075200-1024x768.jpg)](http://phwl.org/wp-content/uploads/2013/12/f0075200.jpg)
+[![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/f0075200-1024x768.jpg)](/assets/images/2013/12/f0075200.jpg)

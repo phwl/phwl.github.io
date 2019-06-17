@@ -13,30 +13,30 @@ categories:
 
 My electronics doesn't normally involve a hacksaw, hammer and propane torch but I had fun building this J-pole antenna from instructions by [N6JSX.](http://www.hamuniverse.com/n6jsx2mcopperjportable.html)
 
-[![](http://phwl.org/wp-content/uploads/2017/06/DSCF4455.jpg)](http://phwl.org/wp-content/uploads/2017/06/DSCF4455.jpg)
+[![](/assets/images/2017/06/DSCF4455.jpg)](/assets/images/2017/06/DSCF4455.jpg)
 
 <!-- more -->
 
 Cut them down according to the required lengths, smooth edges and check you have all the parts.
 
-[![](http://phwl.org/wp-content/uploads/2017/06/IMG_5928.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_5928.jpg)
+[![](/assets/images/2017/06/IMG_5928.jpg)](/assets/images/2017/06/IMG_5928.jpg)
 
 Solder it together.
 
-[![](http://phwl.org/wp-content/uploads/2017/06/IMG_5936.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_5936.jpg)
+[![](/assets/images/2017/06/IMG_5936.jpg)](/assets/images/2017/06/IMG_5936.jpg)
 
 The entire process should only take half an hour (that, of course, is if you didn't solder the wrong parts together and have to desolder and resolder like I did).
 
-[![](http://phwl.org/wp-content/uploads/2017/06/IMG_5974.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_5974.jpg)
+[![](/assets/images/2017/06/IMG_5974.jpg)](/assets/images/2017/06/IMG_5974.jpg)
 
 A clear resonance at 146MHz.[
-![](http://phwl.org/wp-content/uploads/2017/06/IMG_9679.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_9679.jpg)
+![](/assets/images/2017/06/IMG_9679.jpg)](/assets/images/2017/06/IMG_9679.jpg)
 
 Smith chart[
-![](http://phwl.org/wp-content/uploads/2017/06/IMG_9680.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_9680.jpg)
+![](/assets/images/2017/06/IMG_9680.jpg)](/assets/images/2017/06/IMG_9680.jpg)
 
 
 
-Not bad at 440MHz either, the markers were at (430-450MHz)[![](http://phwl.org/wp-content/uploads/2017/06/IMG_9675.jpg)](http://phwl.org/wp-content/uploads/2017/06/IMG_9675.jpg)
+Not bad at 440MHz either, the markers were at (430-450MHz)[![](/assets/images/2017/06/IMG_9675.jpg)](/assets/images/2017/06/IMG_9675.jpg)
 
 

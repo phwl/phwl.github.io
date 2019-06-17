@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![Hong Kong Aerial Photo](http://phwl.org/wp-content/uploads/2014/07/P7030408-1024x596.jpg)](http://phwl.org/wp-content/uploads/2014/07/P7030408.jpg)
+[![Hong Kong Aerial Photo](/assets/images/2014/07/P7030408-1024x596.jpg)](/assets/images/2014/07/P7030408.jpg)

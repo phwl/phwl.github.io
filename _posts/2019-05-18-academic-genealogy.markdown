@@ -17,7 +17,7 @@ I visited my PhD supervisor, [Dr Marwan Anwar Jabri](http://marwanjabri.com) las
 
 
 
-![](http://phwl.org/wp-content/uploads/2019/05/6700082371262977270_IMG_0887-1024x683.jpg)Myself and Dr Marwan Jabri
+![](/assets/images/2019/05/6700082371262977270_IMG_0887-1024x683.jpg)Myself and Dr Marwan Jabri
 
 
 
@@ -41,7 +41,7 @@ David's supervisor was [Dr Robert Henry Frater](https://csiropedia.csiro.au/frat
 
 
 
-![](http://phwl.org/wp-content/uploads/2019/05/IMG_3505.jpg)Bob Frater is second from the front on the left hand side of this photo.
+![](/assets/images/2019/05/IMG_3505.jpg)Bob Frater is second from the front on the left hand side of this photo.
 
 
 

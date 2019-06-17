@@ -12,4 +12,4 @@ categories:
 
 First fish of 2017 is a tailor (and it was a fluke).
 
-[![](http://phwl.org/wp-content/uploads/2017/01/spittailor17.jpg)](http://phwl.org/wp-content/uploads/2017/01/spittailor17.jpg)
+[![](/assets/images/2017/01/spittailor17.jpg)](/assets/images/2017/01/spittailor17.jpg)

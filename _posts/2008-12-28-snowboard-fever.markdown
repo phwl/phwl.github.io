@@ -14,4 +14,4 @@ post_format:
 
 Photo from Beijing ski trip.
 
-[![_SBfever1](http://phwl.org/wp-content/uploads/2016/01/3731258183_2af03d23cb_o.jpg)](http://phwl.org/wp-content/uploads/2016/01/3731258183_2af03d23cb_o.jpg)
+[![_SBfever1](/assets/images/2016/01/3731258183_2af03d23cb_o.jpg)](/assets/images/2016/01/3731258183_2af03d23cb_o.jpg)

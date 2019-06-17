@@ -13,4 +13,4 @@ post_format:
 - Image
 ---
 
-[![](http://phwl.org/wp-content/uploads/2018/05/DSC_5851-681x1024.jpg)](http://phwl.org/wp-content/uploads/2018/05/DSC_5851.jpg)
+[![](/assets/images/2018/05/DSC_5851-681x1024.jpg)](/assets/images/2018/05/DSC_5851.jpg)

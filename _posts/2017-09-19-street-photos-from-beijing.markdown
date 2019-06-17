@@ -11,7 +11,7 @@ categories:
 - travel
 ---
 
-![](http://phwl.org/wp-content/uploads/2017/10/DSCF4583-1024x682.jpg)
+![](/assets/images/2017/10/DSCF4583-1024x682.jpg)
 
 Some street photos from a visit to Beijing.
 <!-- more -->
