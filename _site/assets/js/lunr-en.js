@@ -219,7 +219,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Street photos from Hong Kong",
-      excerpt: "Here are some street photos from Hong Kong.\n\n\n       \n",
+      excerpt: "Here are some street photos from Hong Kong.\n\n\n\n",
       categories: ["photography"],
       tags: [],
       id: 23
@@ -228,7 +228,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "The Chinese University of Hong Kong",
-      excerpt: "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n   \n\n\n\n\n\n",
+      excerpt: "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n\n",
       categories: ["photography"],
       tags: [],
       id: 24
@@ -1399,7 +1399,7 @@ var store = [
       
       {
         "title": "Welcome to Minimal Mistakes Jekyll",
-        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/",
+        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll.markdown/",
         "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
         "teaser":
           
@@ -1414,7 +1414,7 @@ var store = [
         "excerpt": "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/1991/08/plbarra1.jpg"
           
       },
     
@@ -1469,7 +1469,7 @@ var store = [
         "excerpt": "Town of Telluride taken from the Jud Wiebe Trail Bear Creek Waterfall Trail to Bear Creek Silver Lake Approach to...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2015/12/telluride1_800.jpg"
           
       },
     
@@ -1653,7 +1653,7 @@ var store = [
       {
         "title": "Street photos from Hong Kong",
         "url": "http://localhost:4000/photography/street-photos-from-hong-kong/",
-        "excerpt": "Here are some street photos from Hong Kong.\n\n\n       \n",
+        "excerpt": "Here are some street photos from Hong Kong.\n\n\n\n",
         "teaser":
           
             null
@@ -1664,7 +1664,7 @@ var store = [
       {
         "title": "The Chinese University of Hong Kong",
         "url": "http://localhost:4000/photography/the-chinese-university-of-hong-kong/",
-        "excerpt": "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n   \n\n\n\n\n\n",
+        "excerpt": "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
             null

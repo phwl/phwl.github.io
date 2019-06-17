@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-16T21:41:07-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>An online diary of my experiences in life and academia.</subtitle><author><name>phwl</name></author><entry><title type="html">Ten Lessons I wish I had been Taught - Gian-Carlo Rota</title><link href="http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="alternate" type="text/html" title="Ten Lessons I wish I had been Taught - Gian-Carlo Rota" /><published>2019-06-11T13:50:41-07:00</published><updated>2019-06-11T13:50:41-07:00</updated><id>http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota</id><content type="html" xml:base="http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/">&lt;p&gt;Interesting talk by the late MIT mathematician and philosopher&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-17T14:34:47-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>An online diary of my experiences in life and academia.</subtitle><author><name>phwl</name></author><entry><title type="html">Ten Lessons I wish I had been Taught - Gian-Carlo Rota</title><link href="http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="alternate" type="text/html" title="Ten Lessons I wish I had been Taught - Gian-Carlo Rota" /><published>2019-06-11T13:50:41-07:00</published><updated>2019-06-11T13:50:41-07:00</updated><id>http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota</id><content type="html" xml:base="http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/">&lt;p&gt;Interesting talk by the late MIT mathematician and philosopher&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.ams.org/notices/199701/comm-rota.pdf&quot;&gt;https://www.ams.org/notices/199701/comm-rota.pdf&lt;/a&gt;&lt;/p&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;Dirk Struik was right: a speaker should try to give his audience something they can take home. But what? I have been collecting some random bits of advice that I keep repeating to myself, do’s and don’ts of which I have been and will always be guilty. Some of you have been exposed to one or more of these tidbits. Collecting these items and presenting them in one speech may be one of the less obnoxious among options of equal presumptuousness. The advice we give others is the advice that we ourselves need. Since it is too late for me to learn these lessons, I will discharge my unfulfilled duty by dishing them out to you. They will be stated in order of increasing controversiality.&lt;/p&gt;
 
-&lt;h3 id=&quot;__1-lecturing&quot;&gt;_ _1 Lecturing   &lt;/h3&gt;
+&lt;h3 id=&quot;__1-lecturing&quot;&gt;_ _1 Lecturing&lt;/h3&gt;
 
 &lt;p&gt;The following four requirements of a good lecture do not seem to be altogether obvious, judging from the mathematics lectures I have been listening to for the past forty-six years.&lt;/p&gt;
 
@@ -32,7 +32,7 @@
 
 &lt;p&gt;&lt;strong&gt;d&lt;/strong&gt;. Give them something to take home It is not easy to follow Professor Struik’s advice. It is easier to state what features of a lecture the audience will always remember, and the answer is not pretty. I often meet, in airports, in the street and occasionally in embarrassing situations, MIT alumni who have taken one or more courses from me. Most of the time they admit that they have forgotten the subject of the course, and all the mathematics I thought I had taught them. However, they will gladly recall some joke, some anecdote, some quirk, some side remark, or some mistake I made.&lt;/p&gt;
 
-&lt;h3 id=&quot;__2-blackboard-technique&quot;&gt;_ _2 Blackboard Technique   &lt;/h3&gt;
+&lt;h3 id=&quot;__2-blackboard-technique&quot;&gt;_ _2 Blackboard Technique&lt;/h3&gt;
 
 &lt;p&gt;Two points.&lt;/p&gt;
 
@@ -42,7 +42,7 @@
 
 &lt;p&gt;&lt;strong&gt;b&lt;/strong&gt;. Start writing on the top left hand corner What we write on the blackboard should correspond to what we want an attentive listener to take down in his notebook. It is preferable to write slowly and in a large handwriting, with no abbreviations. Those members of the audience who are taking notes are doing us a favor, and it is up to us to help them with their copying. When slides are used instead of the blackboard, the speaker should spend some time explaining each slide, preferably by adding sentences that are inessential, repetitive or superfluous, so as to allow any member of the audience time to copy our slide. We all fall prey to the illusion that a listener will find the time to read the copy of the slides we hand them after the lecture. This is wishful thinking.&lt;/p&gt;
 
-&lt;h3 id=&quot;3-publish-the-same-result-several-times&quot;&gt;3 Publish the same result several times   &lt;/h3&gt;
+&lt;h3 id=&quot;3-publish-the-same-result-several-times&quot;&gt;3 Publish the same result several times&lt;/h3&gt;
 
 &lt;p&gt;After getting my degree, I worked for a few years in functional analysis. I bought a copy of Frederick Riesz’ Collected Papers as soon as the big thick heavy oversize volume was published. However, as I began to leaf through, I could not help but notice that the pages were extra thick, almost like cardboard. Strangely, each of Riesz’ publications had been reset in exceptionally large type. I was fond of Riesz’ papers, which were invariably beautifully written and gave the reader a feeling of definitiveness.&lt;/p&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;p&gt;Riesz’ example is worth following. The mathematical community is split into small groups, each one with its own customs, notation and terminology. It may soon be indispensable to present the same result in several versions, each one accessible to a specific group; the price one might have to pay otherwise is to have our work rediscovered by someone who uses a different language and notation, and who will rightly claim it as his own.&lt;/p&gt;
 
-&lt;h3 id=&quot;4-you-are-more-likely-to-be-remembered-by-your-expository-work&quot;&gt;4 You are more likely to be remembered by your expository work   &lt;/h3&gt;
+&lt;h3 id=&quot;4-you-are-more-likely-to-be-remembered-by-your-expository-work&quot;&gt;4 You are more likely to be remembered by your expository work&lt;/h3&gt;
 
 &lt;p&gt;Let us look at two examples, beginning with Hilbert. When we think of Hilbert, we think of a few of his great theorems, like his basis theorem. But Hilbert’s name is more often remembered for his work in number theory, his Zahlbericht, his book Foundations of Geometry and for his text on integral equations. The term “Hilbertspace” was introduced by Stone and von Neumann in recognition of Hilbert’s textbook on integral equations, in which the word “spectrum” was first defined at least twenty years before the discovery of quantum mechanics. Hilbert’s textbook on integral equations is in large part expository, leaning on the work of Hellinger and several other mathematicians whose names are now forgotten.&lt;/p&gt;
 
@@ -64,11 +64,11 @@
 
 &lt;p&gt;It so happens that the fundamental treatises of phenomenology are written in thick, heavy philosophical German. Tradition demands that no examples ever be given of what one is talking about. One day I decided, not without serious misgivings, to publish a paper that was essentially an updating of some paragraphs from a book by Edmund Husserl, with a few examples added. While I was waiting for the worst at the next meeting of the Society for Phenomenology and Existential Philosophy, a prominent phenomenologist rushed towards me with a smile on his face. He was full of praise for my paper, and he strongly encouraged me to further develop the novel and original ideas presented in it.&lt;/p&gt;
 
-&lt;h3 id=&quot;5-every-mathematician-has-only-a-few-tricks&quot;&gt;5 Every mathematician has only a few tricks   &lt;/h3&gt;
+&lt;h3 id=&quot;5-every-mathematician-has-only-a-few-tricks&quot;&gt;5 Every mathematician has only a few tricks&lt;/h3&gt;
 
 &lt;p&gt;A long time ago an older and well known number theorist made some disparaging remarks about Paul Erdos’ work. You admire contributions to mathematics as much as I do, and I felt annoyed when the older mathematician flatly and definitively stated that all of Erdos’ work could be reduced to a few tricks which Erdos repeatedly relied on in his proofs. What the number theorist did not realize is that other mathematicians, even the very best, also rely on a few tricks which they use over and over. Take Hilbert. The second volume of Hilbert’s collected papers contains Hilbert’s papers in invariant theory. I have made a point of reading some of these papers with care. It is sad to note that some of Hilbert’s beautiful results have been completely forgotten. But on reading the proofs of Hilbert’s striking and deep theorems in invariant theory, it was surprising to verify that Hilbert’s proofs relied on the same few tricks. Even Hilbert had only a few tricks!&lt;/p&gt;
 
-&lt;h3 id=&quot;6-do-not-worry-about-your-mistakes&quot;&gt;6 Do not worry about your mistakes   &lt;/h3&gt;
+&lt;h3 id=&quot;6-do-not-worry-about-your-mistakes&quot;&gt;6 Do not worry about your mistakes&lt;/h3&gt;
 
 &lt;p&gt;Once more let me begin with Hilbert. When the Germans were planning to publish Hilbert’s collected papers and to present him with a set on the occasion of one of his later birthdays, they realized that they could not publish the papers in their original versions because they were full of errors, some of them quite serious. Thereupon they hired a young unemployed mathematician, Olga Taussky-Todd, to go over Hilbert’s papers and correct all mistakes. Olga labored for three years; it turned out that all mistake scould be corrected without any major changes in the statement of the theorems. There was one exception, a paper Hilbert wrote in his old age, which could not be fixed; it was a purported proof of the continuum hypothesis, you will find it in a volume of the Mathematische Annalen of the early thirties. At last, on Hilbert’s birthday, a freshly printed set of Hilbert’s collected papers was presented to the Geheimrat. Hilbert leafed through them carefully and did not notice anything.&lt;/p&gt;
 
@@ -80,46 +80,46 @@
 
 &lt;p&gt;There are two kinds of mistakes. There are fatal mistakes that destroy a theory; but there are also contingent ones, which are useful in testing the stability of a theory.&lt;/p&gt;
 
-&lt;h3 id=&quot;7-use-the-feynman-method&quot;&gt;7 Use the Feynman method   &lt;/h3&gt;
+&lt;h3 id=&quot;7-use-the-feynman-method&quot;&gt;7 Use the Feynman method&lt;/h3&gt;
 
 &lt;p&gt;Richard Feynman was fond of giving the following advice on how to be a genius. You have to keep a dozen of your favorite problems constantly present in your mind, although by and large they will lay in a dormant state. Every time you hear or read a new trick or a new result, test it against each of your twelve problems to see whether it helps. Every once in a while there will be a hit, and people will say: &lt;em&gt;“How did he do it? He must be a genius!”&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;8-give-lavish-acknowledgments&quot;&gt;8 Give lavish acknowledgments   &lt;/h3&gt;
+&lt;h3 id=&quot;8-give-lavish-acknowledgments&quot;&gt;8 Give lavish acknowledgments&lt;/h3&gt;
 
 &lt;p&gt;I have always felt miffed after reading a paper in which I felt I was not being given proper credit, and it is safe to conjecture that the same happens to everyone else. One day, I tried an experiment. After writing a rather long paper, I began to draft a thorough bibliography. On the spur of the moment, I decided to cite a few papers which had nothing whatsoever to do with the content of my paper, to see what might happen.&lt;/p&gt;
 
 &lt;p&gt;Somewhat to my surprise, I received letters from two of the authors whose papers I believed were irrelevant to my article. Both letters were written in an emotionally charged tone. Each of the authors warmly congratulated me for being the first to acknowledge their contribution to the field.&lt;/p&gt;
 
-&lt;h3 id=&quot;9-write-informative-introductions&quot;&gt;9 Write informative introductions   &lt;/h3&gt;
+&lt;h3 id=&quot;9-write-informative-introductions&quot;&gt;9 Write informative introductions&lt;/h3&gt;
 
 &lt;p&gt;Nowadays, reading a mathematics paper from top to bottom is a rare event. If we wish our paper to be read, we had better provide our prospective readers with strong motivation to do so. A lengthy introduction, summarizing the history of the subject, giving everybody his due, and perhaps enticingly outlining the content of the paper in a discursive manner, will go some of the way towards getting us a couple of readers.&lt;/p&gt;
 
 &lt;p&gt;As the editor of the journal Advances in Mathematics, I have often sent submitted papers back to the authors with the recommendation that they lengthen their introduction. On occasion I received by return mail a message from the author, stating that the same paper had been previously rejected by Annals of Mathematics because the introduction was already too long.&lt;/p&gt;
 
-&lt;h3 id=&quot;10-be-prepared-for-old-age&quot;&gt;10 Be prepared for old age   &lt;/h3&gt;
+&lt;h3 id=&quot;10-be-prepared-for-old-age&quot;&gt;10 Be prepared for old age&lt;/h3&gt;
 
 &lt;p&gt;My late friend Stan Ulam used to remark that his life was sharply divided into two halves. In the first half, he was always the youngest person in the group; in the second half, he was always the oldest. There was no transitional period.&lt;/p&gt;
 
 &lt;p&gt;I now realize how right he was. The etiquette of old age does not seem to have been written up, and we have to learn it the hard way. It depends on a basic realization, which takes time to adjust to. You must realize that, after reaching a certain age, you are no longer viewed as a person. You become an institution, and you are treated the way institutions are treated. You are expected to behave like a piece of period furniture, an architectural landmark, or an incunabulum.&lt;/p&gt;
 
-&lt;p&gt;It matters little whether you keep publishing or not. If your papers are no good, they will say, &lt;em&gt;“What did you expect? He is a fixture!”&lt;/em&gt; and if an occasional paper of yours is found to be interesting, they will say, &lt;em&gt;“What did you expect? He has been working at this all his life!”&lt;/em&gt; The only sensible response is to enjoy playing your newly-found role as an institution.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Interesting talk by the late MIT mathematician and philosopher</summary></entry><entry><title type="html">Lake Tahoe 2019</title><link href="http://localhost:4000/travel/lake-tahoe-2019/" rel="alternate" type="text/html" title="Lake Tahoe 2019" /><published>2019-05-27T13:40:43-07:00</published><updated>2019-05-27T13:40:43-07:00</updated><id>http://localhost:4000/travel/lake-tahoe-2019</id><content type="html" xml:base="http://localhost:4000/travel/lake-tahoe-2019/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6146.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It matters little whether you keep publishing or not. If your papers are no good, they will say, &lt;em&gt;“What did you expect? He is a fixture!”&lt;/em&gt; and if an occasional paper of yours is found to be interesting, they will say, &lt;em&gt;“What did you expect? He has been working at this all his life!”&lt;/em&gt; The only sensible response is to enjoy playing your newly-found role as an institution.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Interesting talk by the late MIT mathematician and philosopher</summary></entry><entry><title type="html">Lake Tahoe 2019</title><link href="http://localhost:4000/travel/lake-tahoe-2019/" rel="alternate" type="text/html" title="Lake Tahoe 2019" /><published>2019-05-27T13:40:43-07:00</published><updated>2019-05-27T13:40:43-07:00</updated><id>http://localhost:4000/travel/lake-tahoe-2019</id><content type="html" xml:base="http://localhost:4000/travel/lake-tahoe-2019/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Snaps from our trip to Lake Tahoe&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6101-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6101-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6111-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6111-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6109-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6109-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6172-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6172-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6134-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6134-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6146-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6113-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6113-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6185-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6185-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6188-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6188-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/06/DSCF6191-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6191-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Sea lion, Santa Cruz Wharf</title><link href="http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf/" rel="alternate" type="text/html" title="Sea lion, Santa Cruz Wharf" /><published>2019-05-19T19:59:22-07:00</published><updated>2019-05-19T19:59:22-07:00</updated><id>http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf</id><content type="html" xml:base="http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/DSCF6081.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/DSCF6081-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Academic Genealogy</title><link href="http://localhost:4000/academic-genealogy/" rel="alternate" type="text/html" title="Academic Genealogy" /><published>2019-05-17T21:09:59-07:00</published><updated>2019-05-17T21:09:59-07:00</updated><id>http://localhost:4000/academic-genealogy</id><content type="html" xml:base="http://localhost:4000/academic-genealogy/">&lt;p&gt;I visited my PhD supervisor, &lt;a href=&quot;http://marwanjabri.com&quot;&gt;Dr Marwan Anwar Jabri&lt;/a&gt; last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.&lt;/p&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6101-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6111-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6109-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6172-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6134-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6113-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6185-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6188-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6191-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Sea lion, Santa Cruz Wharf</title><link href="http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf/" rel="alternate" type="text/html" title="Sea lion, Santa Cruz Wharf" /><published>2019-05-19T19:59:22-07:00</published><updated>2019-05-19T19:59:22-07:00</updated><id>http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf</id><content type="html" xml:base="http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/DSCF6081-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Academic Genealogy</title><link href="http://localhost:4000/academic-genealogy/" rel="alternate" type="text/html" title="Academic Genealogy" /><published>2019-05-17T21:09:59-07:00</published><updated>2019-05-17T21:09:59-07:00</updated><id>http://localhost:4000/academic-genealogy</id><content type="html" xml:base="http://localhost:4000/academic-genealogy/">&lt;p&gt;I visited my PhD supervisor, &lt;a href=&quot;http://marwanjabri.com&quot;&gt;Dr Marwan Anwar Jabri&lt;/a&gt; last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/6700082371262977270_IMG_0887-1024x683.jpg&quot; alt=&quot;&quot; /&gt;Myself and Dr Marwan Jabri&lt;/p&gt;
 
@@ -135,17 +135,17 @@
 
 &lt;p&gt;https://applehelpwriter.com/2016/07/28/revealing-dropboxs-dirty-little-security-hack/#comment-27348&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s (good) security features. Upon startup, they ask for you to enter your administrator password into their dialog box. After that, they can do anything with your machine. If you just cancel the dialog and start Dropbox up manually, they have all your files, but at least they don’t own your machine.</summary></entry><entry><title type="html">Mako on Fly - San Diego 2019</title><link href="http://localhost:4000/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019/" rel="alternate" type="text/html" title="Mako on Fly - San Diego 2019" /><published>2019-05-01T22:58:11-07:00</published><updated>2019-05-01T22:58:11-07:00</updated><id>http://localhost:4000/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019</id><content type="html" xml:base="http://localhost:4000/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019/">&lt;p&gt;The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to 69 km/h (42 mph) and jump 6m (20 feet) in the air. There two species, the shortfin (&lt;em&gt;Isurus oxyrinchus&lt;/em&gt;) and the longfin (_Isurus paucus), _the shortfin being more common. San Diego is the best place to fish for them, and so following the &lt;a href=&quot;https://www.fccm.org/&quot;&gt;FCCM Conference&lt;/a&gt;, Ken and I went to fly-fish for them.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0832.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0832-1024x616.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0832-1024x616.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;https://youtu.be/py-aq-s33mQ&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0720.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0720-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0720-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We booked one of the pioneers of mako fly fishing, &lt;a href=&quot;http://conwaybowman.com/&quot;&gt;Conway Bowman&lt;/a&gt;. He is famous, even has his own TV show. We met at Dana Landing and went a few miles offshore.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0746.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0746-1024x575.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;W&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0746-1024x575.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;W&lt;/p&gt;
 
 &lt;p&gt;The tides were perfect with the high at 8:30am and the low at 2:30pm. There was a slight swell, cold, windy and it looked like it was going to rain. At the fishing spot, we were greeted by a school of porpoises. That was a good sign as the sharks often follow them around.&lt;/p&gt;
 
@@ -153,39 +153,39 @@
 
 &lt;p&gt;After setting up the burley (chum), we got our gear in order and made a few practise casts.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0740.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0740-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0740-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Size #14 rod and reel with floating fly-line. Not sure what size hook, might have been a 6/0.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0772.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0772-1024x575.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0772-1024x575.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No problem seeing this fly, I think it is a bird imitation.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0847.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0847-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0847-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0762.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0762-1024x575.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0762-1024x575.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Then we sat around for 7 hours …&lt;/p&gt;
 
 &lt;p&gt;Right on the low tide, a mako appeared. Conway teased it in and Ken had it take the fly twice with the fish coming towards the boat but didn’t hook up. This was the third attempt.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0786.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0786-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0786-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0787.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0787-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0787-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0788.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0788-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0788-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This time Ken was able to set the hook while it was moving away from the boat.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0790.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0790-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0790-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0801.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0801-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0801-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;and it was on …&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0810.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0810-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0810-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0812.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0812-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0812-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here is a video.&lt;/p&gt;
 
@@ -193,38 +193,38 @@
 
 &lt;p&gt;Ken did a good job getting the fish to the boat.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0831.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0831-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0831-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0832.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0832-1024x616.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0832-1024x616.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Conway expertly unhooked and released the fish, estimated at about 25 lbs.&lt;/p&gt;
 
 &lt;p&gt;https://youtu.be/v907fdFlPqg&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0836.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0836-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0836-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_0845.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0845-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_0845-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;About an hour later, a school of mackerel came by and for about 20 minutes, we caught a fish every cast. They were driving the bait to the surface and the birds were also having a feast.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/05/IMG_3480.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_3480-768x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_3480-768x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We were hoping for a large fish (or a few more), but gave it our best shot. May is the start of the season with June/July being the most productive months. The best chance of big fish is in August and Conway fishes off Long Beach for them at that time. He catches them up to 300 lb, with larger ones being unstoppable and involves chasing the fish full speed with the boat. We were fortunately to catch one under difficult conditions. It was a great experience and we look forward to returning.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fly-fishing" /><category term="mako shark" /><category term="San Diego" /><summary type="html">The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to 69 km/h (42 mph) and jump 6m (20 feet) in the air. There two species, the shortfin (Isurus oxyrinchus) and the longfin (_Isurus paucus), _the shortfin being more common. San Diego is the best place to fish for them, and so following the FCCM Conference, Ken and I went to fly-fish for them.</summary></entry><entry><title type="html">Yosemite 2019</title><link href="http://localhost:4000/photography/travel/yosemite-2019/" rel="alternate" type="text/html" title="Yosemite 2019" /><published>2019-04-14T20:54:28-07:00</published><updated>2019-04-14T20:54:28-07:00</updated><id>http://localhost:4000/photography/travel/yosemite-2019</id><content type="html" xml:base="http://localhost:4000/photography/travel/yosemite-2019/">&lt;p&gt;Went for a two day trip to Yosemite National Park, staying at Yosemite Cedar Lodge. It is such a magnificent place. Wish I had more time there to take photos.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/04/IMG_0604.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0604-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0604-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/IMG_0639-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0639-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/IMG_0625-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0625-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6051-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6051-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6049-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6049-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6046-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6046-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6045-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6045-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6033-1024x683.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6033-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6027-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6027-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/assets/images/2019/04/DSCF6007-683x1024.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6007-683x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0639-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/IMG_0625-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6051-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6049-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6046-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6045-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6033-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6027-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src=&quot;/assets/images/2019/04/DSCF6007-683x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html">Went for a two day trip to Yosemite National Park, staying at Yosemite Cedar Lodge. It is such a magnificent place. Wish I had more time there to take photos.</summary></entry><entry><title type="html">MacOS Install</title><link href="http://localhost:4000/software/macos-install/" rel="alternate" type="text/html" title="MacOS Install" /><published>2019-04-12T19:30:33-07:00</published><updated>2019-04-12T19:30:33-07:00</updated><id>http://localhost:4000/software/macos-install</id><content type="html" xml:base="http://localhost:4000/software/macos-install/">&lt;p&gt;It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -246,66 +246,66 @@
   &lt;li&gt;Did brew install caskroom/cask/brew-cask and the following casks mactex, xquartz&lt;/li&gt;
   &lt;li&gt;Installed anaconda from anaconda.com&lt;/li&gt;
   &lt;li&gt;Installed Virtualbox from &lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><summary type="html">It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</summary></entry><entry><title type="html">Blue Day in Sydney</title><link href="http://localhost:4000/photography/travel/blue-day-in-sydney/" rel="alternate" type="text/html" title="Blue Day in Sydney" /><published>2019-04-03T23:31:40-07:00</published><updated>2019-04-03T23:31:40-07:00</updated><id>http://localhost:4000/photography/travel/blue-day-in-sydney</id><content type="html" xml:base="http://localhost:4000/photography/travel/blue-day-in-sydney/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/04/7723722910698069406_IMG_0381.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/04/7723722910698069406_IMG_0381-1024x683.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Electronics Flea Market</title><link href="http://localhost:4000/electronics/electronics-flea-market/" rel="alternate" type="text/html" title="Electronics Flea Market" /><published>2019-03-09T15:57:27-08:00</published><updated>2019-03-09T15:57:27-08:00</updated><id>http://localhost:4000/electronics/electronics-flea-market</id><content type="html" xml:base="http://localhost:4000/electronics/electronics-flea-market/">&lt;p&gt;On the second weekend of Mar-Sep, the &lt;a href=&quot;https://www.electronicsfleamarket.com/&quot;&gt;Electronics Flea Market&lt;/a&gt; runs in the carpark of Fry’s Electronics, Sunnyvale CA. I arrived at 8am because I thought I might be the only one there at the starting time of 5am.&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>phwl</name></author><summary type="html">It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</summary></entry><entry><title type="html">Blue Day in Sydney</title><link href="http://localhost:4000/photography/travel/blue-day-in-sydney/" rel="alternate" type="text/html" title="Blue Day in Sydney" /><published>2019-04-03T23:31:40-07:00</published><updated>2019-04-03T23:31:40-07:00</updated><id>http://localhost:4000/photography/travel/blue-day-in-sydney</id><content type="html" xml:base="http://localhost:4000/photography/travel/blue-day-in-sydney/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/04/7723722910698069406_IMG_0381-1024x683.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Electronics Flea Market</title><link href="http://localhost:4000/electronics/electronics-flea-market/" rel="alternate" type="text/html" title="Electronics Flea Market" /><published>2019-03-09T15:57:27-08:00</published><updated>2019-03-09T15:57:27-08:00</updated><id>http://localhost:4000/electronics/electronics-flea-market</id><content type="html" xml:base="http://localhost:4000/electronics/electronics-flea-market/">&lt;p&gt;On the second weekend of Mar-Sep, the &lt;a href=&quot;https://www.electronicsfleamarket.com/&quot;&gt;Electronics Flea Market&lt;/a&gt; runs in the carpark of Fry’s Electronics, Sunnyvale CA. I arrived at 8am because I thought I might be the only one there at the starting time of 5am.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0335.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0335-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0335-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;p&gt;As expected, there was a lot of test equipment.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0308.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0308-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0308-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0324.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0324-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0324-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Microscopes.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0348.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0348-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0348-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0332.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0332-682x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0332-682x1024.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Surprisingly not too many radios.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0315-2.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0315-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0315-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0341.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0341-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0341-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Components.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0309.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0309-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0309-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0296.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0296-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0296-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0337.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0337-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0337-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Computers.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0301-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0317.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0317-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0317-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A lot of other stuff.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0338-1-682x1024.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0311.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0311-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0311-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0339.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0339-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0339-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0342.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0342-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0342-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0316.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0316-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0316-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0322.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0322-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0322-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Interesting cars.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0353.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0353-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0353-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0355.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0355-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0355-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0346.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0346-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0346-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/03/IMG_0340.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0340-1024x682.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/03/IMG_0340-1024x682.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Overall, an interesting visit and the market was not unlike &lt;a href=&quot;http://www.discoverhongkong.com/us/shop/where-to-shop/street-markets-and-shopping-streets/apliu-street-flea-market.jsp&quot;&gt;Apliu St&lt;/a&gt; in Hong Kong.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">On the second weekend of Mar-Sep, the Electronics Flea Market runs in the carpark of Fry’s Electronics, Sunnyvale CA. I arrived at 8am because I thought I might be the only one there at the starting time of 5am.</summary></entry></feed>
