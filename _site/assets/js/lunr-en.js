@@ -40,7 +40,7 @@ var idx = lunr(function () {
     idx.add({
       title: "New Zealand Trip",
       excerpt: "Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the...",
-      categories: ["fishing","travel"],
+      categories: ["fishing"],
       tags: [],
       id: 3
     });
@@ -1432,7 +1432,7 @@ var store = [
       
       {
         "title": "New Zealand Trip",
-        "url": "http://localhost:4000/fishing/travel/new-zealand-trip/",
+        "url": "http://localhost:4000/fishing/new-zealand-trip/",
         "excerpt": "Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the...",
         "teaser":
           
