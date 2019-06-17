@@ -239,11 +239,6 @@ compress_html:
   ignore:
     envs: development
 
-# picture
-picture:
-  source: "assets/images"
-  output: "assets/images/generated"
-
 # Defaults
 defaults:
   # _pages and everything else

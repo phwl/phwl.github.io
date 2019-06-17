@@ -15,9 +15,10 @@ categories:
 * * *
 
 
-{% picture 1991/08/plbarra1.jpg --alt "Barramundi" %}
+![Barramundi](/assets/images/1991/08/plbarra1.jpg){: .align-center}
+<figcaption style="text-align:center">
 Barramundi, Mary River
-
+</figcaption>
 * * *
 
 
