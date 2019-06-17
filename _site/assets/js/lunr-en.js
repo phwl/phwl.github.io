@@ -11,11 +11,20 @@ var idx = lunr(function () {
   
   
     idx.add({
+      title: "Welcome to Minimal Mistakes Jekyll",
+      excerpt: "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
+      categories: ["update"],
+      tags: ["jekyll"],
+      id: 0
+    });
+    
+  
+    idx.add({
       title: "Barramundi on Fly",
       excerpt: "[caption id=”attachment_1598” align=”alignnone” width=”199”] Barramundi, Mary River[/caption] _An edited version of this article appears at flyfish.com _ Background The Northern...",
       categories: ["australia","fishing","Fly-fishing"],
       tags: [],
-      id: 0
+      id: 1
     });
     
   
@@ -24,7 +33,7 @@ var idx = lunr(function () {
       excerpt: "[caption id=”attachment_1601” align=”alignnone” width=”300”] Black marlin on fly, Cape Bowling Green, Queensland[/caption] An edited version of this article appeared in...",
       categories: ["fishing","Fly-fishing"],
       tags: [],
-      id: 1
+      id: 2
     });
     
   
@@ -33,7 +42,7 @@ var idx = lunr(function () {
       excerpt: "Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the...",
       categories: ["fishing","travel"],
       tags: [],
-      id: 2
+      id: 3
     });
     
   
@@ -42,7 +51,7 @@ var idx = lunr(function () {
       excerpt: "Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.\n\n\n",
       categories: ["travel"],
       tags: [],
-      id: 3
+      id: 4
     });
     
   
@@ -51,7 +60,7 @@ var idx = lunr(function () {
       excerpt: "This photo of Stanwell Park was taken back in 1999.\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 4
+      id: 5
     });
     
   
@@ -60,7 +69,7 @@ var idx = lunr(function () {
       excerpt: "Town of Telluride taken from the Jud Wiebe Trail Bear Creek Waterfall Trail to Bear Creek Silver Lake Approach to...",
       categories: ["photography","travel"],
       tags: [],
-      id: 5
+      id: 6
     });
     
   
@@ -69,7 +78,7 @@ var idx = lunr(function () {
       excerpt: "I fish because I love to; because I love the environs where trout are found, which are invariably beautiful and...",
       categories: ["fishing"],
       tags: [],
-      id: 6
+      id: 7
     });
     
   
@@ -78,7 +87,7 @@ var idx = lunr(function () {
       excerpt: "The railway rattled and roared and swung With jolting carriage and bumping trucks. The sun, like a billiard red ball,...",
       categories: ["fishing","Fly-fishing"],
       tags: [],
-      id: 7
+      id: 8
     });
     
   
@@ -87,7 +96,7 @@ var idx = lunr(function () {
       excerpt: "Here are some of my favourite fishing photos from the age before digital cameras.\n\n[gallery ids=”1595,1596,1603,1955,1956”]\n",
       categories: ["fishing"],
       tags: [],
-      id: 8
+      id: 9
     });
     
   
@@ -96,7 +105,7 @@ var idx = lunr(function () {
       excerpt: "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002. [gallery ids=”1409,1408,1407,1406,1405,1404,1403,1402,1401,1400,1399,1398,1397,1395,1394,1393”]...",
       categories: ["australia","fishing"],
       tags: [],
-      id: 9
+      id: 10
     });
     
   
@@ -105,7 +114,7 @@ var idx = lunr(function () {
       excerpt: "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n[gallery ids=”1500,1498,1497,1496,1495,1494,1493,1492,1491,1490,1489,1488,1487,1486,1485,1484,1483,1482,1481,1480,1479,1478,1477,1476,1475,1474,1473,1472,1471,1470,1469,1468,1467,1466,1465,1464,1463,1462,1461,1460,1459,1458,1457,1456,1455,1454,1453,1452,1451,1450,1449,1448,1447,1446,1445,1444,1443,1442,1441,1440,1439,1438,1437,1436,1435,1434,1433,1432,1431,1430,1429,1428,1427,1426,1425,1424,1423,1422,1414,1421,1420,1419,1418,1417,1416,1415,1413,1412”]\n",
       categories: ["australia","fishing"],
       tags: [],
-      id: 10
+      id: 11
     });
     
   
@@ -114,7 +123,7 @@ var idx = lunr(function () {
       excerpt: "Fished Meon Springs yesterday. It was my first fishing trip in the UK and my first experience fishing a managed,...",
       categories: ["fishing","Fly-fishing"],
       tags: [],
-      id: 11
+      id: 12
     });
     
   
@@ -123,7 +132,7 @@ var idx = lunr(function () {
       excerpt: "From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a...",
       categories: ["fishing","Fly-fishing"],
       tags: [],
-      id: 12
+      id: 13
     });
     
   
@@ -132,7 +141,7 @@ var idx = lunr(function () {
       excerpt: "The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from...",
       categories: ["outdoors"],
       tags: [],
-      id: 13
+      id: 14
     });
     
   
@@ -141,7 +150,7 @@ var idx = lunr(function () {
       excerpt: "My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my...",
       categories: ["fishing","Fly-fishing","travel"],
       tags: [],
-      id: 14
+      id: 15
     });
     
   
@@ -150,7 +159,7 @@ var idx = lunr(function () {
       excerpt: "Forster is about a four hour drive from Sydney. Went on a very brief overnight camping/fishing trip with my good...",
       categories: ["australia","fishing"],
       tags: [],
-      id: 15
+      id: 16
     });
     
   
@@ -159,7 +168,7 @@ var idx = lunr(function () {
       excerpt: "Introduction Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout...",
       categories: ["fishing","Fly-fishing","travel"],
       tags: [],
-      id: 16
+      id: 17
     });
     
   
@@ -168,7 +177,7 @@ var idx = lunr(function () {
       excerpt: "Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable...",
       categories: ["fishing"],
       tags: [],
-      id: 17
+      id: 18
     });
     
   
@@ -177,7 +186,7 @@ var idx = lunr(function () {
       excerpt: "Photo from Beijing ski trip.\n\n\n",
       categories: ["photography"],
       tags: [],
-      id: 18
+      id: 19
     });
     
   
@@ -186,7 +195,7 @@ var idx = lunr(function () {
       excerpt: "[gallery ids=”1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619,1620,1621,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,1641,1642,1643,1644,1645,1646,1647,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659”]\n\nHere are some photos taken from a trip to Beijing and Harbin in 2009.\n\n[gallery ids=”776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811”]\n",
       categories: ["travel"],
       tags: [],
-      id: 19
+      id: 20
     });
     
   
@@ -195,7 +204,7 @@ var idx = lunr(function () {
       excerpt: "I was asked by Prof Evangeline Young to give a “Lunchtime Pizza talk” on the 15th May. Here is the...",
       categories: ["academia","fishing","Fly-fishing"],
       tags: [],
-      id: 20
+      id: 21
     });
     
   
@@ -204,7 +213,7 @@ var idx = lunr(function () {
       excerpt: "Here are some photographs of Hong Kong. Kowloon and Hong Kong from the Lung Cheung Rd lookout at dawn. Festival...",
       categories: ["photography"],
       tags: [],
-      id: 21
+      id: 22
     });
     
   
@@ -213,7 +222,7 @@ var idx = lunr(function () {
       excerpt: "Here are some street photos from Hong Kong.\n\n\n       \n",
       categories: ["photography"],
       tags: [],
-      id: 22
+      id: 23
     });
     
   
@@ -222,7 +231,7 @@ var idx = lunr(function () {
       excerpt: "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n   \n\n\n\n\n\n",
       categories: ["photography"],
       tags: [],
-      id: 23
+      id: 24
     });
     
   
@@ -231,7 +240,7 @@ var idx = lunr(function () {
       excerpt: "Having been educated in Sydney, I was surprised that moving back would be a culture shock. I can translate “Bloody...",
       categories: ["australia","Fly-fishing"],
       tags: [],
-      id: 24
+      id: 25
     });
     
   
@@ -240,7 +249,7 @@ var idx = lunr(function () {
       excerpt: "I was honoured to have received this pen from my ex-students at CUHK. [caption id=”attachment_2406” align=”alignnone” width=”1024”] OLYMPUS DIGITAL CAMERA[/caption]...",
       categories: ["academia"],
       tags: [],
-      id: 25
+      id: 26
     });
     
   
@@ -249,7 +258,7 @@ var idx = lunr(function () {
       excerpt: "The 1 million hectare Blue Mountains is a World Heritage listed National Park in NSW Australia. Its name comes from...",
       categories: ["australia","travel"],
       tags: [],
-      id: 26
+      id: 27
     });
     
   
@@ -258,7 +267,7 @@ var idx = lunr(function () {
       excerpt: "In return for my sins I was sent to Ottawa for the week. Ottawa is the capital of Canada and...",
       categories: ["travel"],
       tags: [],
-      id: 27
+      id: 28
     });
     
   
@@ -267,7 +276,7 @@ var idx = lunr(function () {
       excerpt: "This photo of Sydney was taken from Kirribilli, not too far from the Harbour Bridge.\n\n\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 28
+      id: 29
     });
     
   
@@ -276,7 +285,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 29
+      id: 30
     });
     
   
@@ -285,7 +294,7 @@ var idx = lunr(function () {
       excerpt: "Check out Elaine’s amazing motorcycle trip around Australia here\n\n\n",
       categories: ["australia","travel"],
       tags: [],
-      id: 30
+      id: 31
     });
     
   
@@ -294,7 +303,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["travel"],
       tags: [],
-      id: 31
+      id: 32
     });
     
   
@@ -303,7 +312,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["travel"],
       tags: [],
-      id: 32
+      id: 33
     });
     
   
@@ -312,7 +321,7 @@ var idx = lunr(function () {
       excerpt: "I only have this as a pdf file but this link contains the story of my 2011 trip to London: london-2011.\n",
       categories: ["travel"],
       tags: [],
-      id: 33
+      id: 34
     });
     
   
@@ -321,7 +330,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["travel"],
       tags: [],
-      id: 34
+      id: 35
     });
     
   
@@ -330,7 +339,7 @@ var idx = lunr(function () {
       excerpt: "Went with Warren to the Hawkesbury River for 3 days of fishing and camping. Our boat is now 20 years...",
       categories: ["australia","fishing","Hawkesbury River"],
       tags: [],
-      id: 35
+      id: 36
     });
     
   
@@ -339,7 +348,7 @@ var idx = lunr(function () {
       excerpt: "Graham Link was interviewed this morning on 702 ABC about his website on Sydney beaches. It is very informative and...",
       categories: ["australia"],
       tags: [],
-      id: 36
+      id: 37
     });
     
   
@@ -348,7 +357,7 @@ var idx = lunr(function () {
       excerpt: "Spent a fortnight over Easter in Shanghai, as a visitor at Fudan University Played ping pong with students. Had a...",
       categories: ["photography","travel"],
       tags: [],
-      id: 37
+      id: 38
     });
     
   
@@ -357,7 +366,7 @@ var idx = lunr(function () {
       excerpt: "The University of Sydney’s Molonglo Radio Observatory is located about 3-4 hours south of Sydney. It is being used to...",
       categories: ["australia","photography","travel"],
       tags: [],
-      id: 38
+      id: 39
     });
     
   
@@ -366,7 +375,7 @@ var idx = lunr(function () {
       excerpt: "In what has turned out to become an annual event (click on this link for the 2011 version), went on a 4...",
       categories: ["fishing"],
       tags: [],
-      id: 39
+      id: 40
     });
     
   
@@ -375,7 +384,7 @@ var idx = lunr(function () {
       excerpt: "Lake Eucumbene is an alpine lake about 500km south west of Sydney. My fishing mate, Beard (nickname which refered to...",
       categories: ["australia","fishing","Fly-fishing"],
       tags: [],
-      id: 40
+      id: 41
     });
     
   
@@ -384,7 +393,7 @@ var idx = lunr(function () {
       excerpt: "Went for a fish in Sydney Harbour with my neighbour Michael. Had a great time catching luderick (otherwise known as blackfish)....",
       categories: ["australia","fishing"],
       tags: [],
-      id: 41
+      id: 42
     });
     
   
@@ -393,7 +402,7 @@ var idx = lunr(function () {
       excerpt: "Had a really cool time in Harbin. This was the view from my departing flight, and this was the view...",
       categories: ["travel"],
       tags: [],
-      id: 42
+      id: 43
     });
     
   
@@ -402,7 +411,7 @@ var idx = lunr(function () {
       excerpt: "Went for a drive this morning to Akuna Bay. Fog was coming off the river and this photograph was taken...",
       categories: ["australia","photography"],
       tags: [],
-      id: 43
+      id: 44
     });
     
   
@@ -411,7 +420,7 @@ var idx = lunr(function () {
       excerpt: "I had an excellent trip to Shanghai last year and wrote about it in  http://www.phwl.org/postcard-from-shanghai/. I was fortunate enough to be invited...",
       categories: ["travel"],
       tags: [],
-      id: 44
+      id: 45
     });
     
   
@@ -420,7 +429,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["photography"],
       tags: [],
-      id: 45
+      id: 46
     });
     
   
@@ -429,7 +438,7 @@ var idx = lunr(function () {
       excerpt: "Our Sydney University Electrical Engineering students, Stephen Tridgell and David Portelli successfully made a high-altitude balloon launch from Blayney, NSW....",
       categories: ["australia","photography"],
       tags: [],
-      id: 46
+      id: 47
     });
     
   
@@ -438,7 +447,7 @@ var idx = lunr(function () {
       excerpt: "Some photos from The Gap, Watsons Bay, Sydney this morning at sunrise.\n\n\n\n\n\n\n\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 47
+      id: 48
     });
     
   
@@ -447,7 +456,7 @@ var idx = lunr(function () {
       excerpt: "I had the opportunity to visit the Nelson Bay Golf Course and observe the tagging programme of semi-wild Eastern Grey...",
       categories: ["academia","australia"],
       tags: [],
-      id: 48
+      id: 49
     });
     
   
@@ -456,7 +465,7 @@ var idx = lunr(function () {
       excerpt: "Photos from a short trip to Cowan Creek on a foggy morning. More after the jump. First time I’ve seen...",
       categories: ["australia","fishing"],
       tags: [],
-      id: 49
+      id: 50
     });
     
   
@@ -465,7 +474,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["photography"],
       tags: [],
-      id: 50
+      id: 51
     });
     
   
@@ -474,7 +483,7 @@ var idx = lunr(function () {
       excerpt: "After a superb trip to Harbin in winter, I returned in summer to attend the ICEMI conference, kindly hosted again...",
       categories: ["photography","travel"],
       tags: [],
-      id: 51
+      id: 52
     });
     
   
@@ -483,7 +492,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 52
+      id: 53
     });
     
   
@@ -492,7 +501,7 @@ var idx = lunr(function () {
       excerpt: "A photograph of the Sydney University Open Day from a weather balloon above the tower of the main quadrangle. This...",
       categories: ["australia","photography"],
       tags: [],
-      id: 53
+      id: 54
     });
     
   
@@ -501,7 +510,7 @@ var idx = lunr(function () {
       excerpt: "\n\n\n\n\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 54
+      id: 55
     });
     
   
@@ -510,7 +519,7 @@ var idx = lunr(function () {
       excerpt: "Following the International Conference on Field Programmable Technology we spent some time in Kyoto and Osaka. Clear Water Temple is a...",
       categories: ["travel"],
       tags: [],
-      id: 55
+      id: 56
     });
     
   
@@ -519,7 +528,7 @@ var idx = lunr(function () {
       excerpt: "The below is a report of a true story. No names have been changed to protect identities. Previous day We...",
       categories: ["travel"],
       tags: [],
-      id: 56
+      id: 57
     });
     
   
@@ -528,7 +537,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["travel"],
       tags: [],
-      id: 57
+      id: 58
     });
     
   
@@ -537,7 +546,7 @@ var idx = lunr(function () {
       excerpt: "Our trips to the Hawkesbury River have become an annual event (2012, 2011). As usual, the boat ramp was at...",
       categories: ["australia","fishing"],
       tags: [],
-      id: 58
+      id: 59
     });
     
   
@@ -546,7 +555,7 @@ var idx = lunr(function () {
       excerpt: "Our boat was purchased around 1991 and has served us well. It is jointly owned with my close university friends,...",
       categories: ["fishing"],
       tags: [],
-      id: 59
+      id: 60
     });
     
   
@@ -555,7 +564,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 60
+      id: 61
     });
     
   
@@ -564,7 +573,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["photography","travel"],
       tags: [],
-      id: 61
+      id: 62
     });
     
   
@@ -573,7 +582,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 62
+      id: 63
     });
     
   
@@ -582,7 +591,7 @@ var idx = lunr(function () {
       excerpt: "Left Sydney in the last week of November 2014 for London. Australia’s contribution to fashion is the Ugg boot. Strangely,...",
       categories: ["travel"],
       tags: [],
-      id: 63
+      id: 64
     });
     
   
@@ -591,7 +600,7 @@ var idx = lunr(function () {
       excerpt: "Much like previous years, went to do some fishing in the Hawkesbury River over the Christmas break. This time, Beard...",
       categories: ["australia","fishing","Hawkesbury River"],
       tags: [],
-      id: 64
+      id: 65
     });
     
   
@@ -600,7 +609,7 @@ var idx = lunr(function () {
       excerpt: "A gallery of photographs taken around Cradle Mountain, Tasmania.\n\n[gallery ids=”2095,2094,2092,2091,2090,2089,2088,2087,2086,2085,2084,2083”]\n",
       categories: ["australia","photography","travel"],
       tags: [],
-      id: 65
+      id: 66
     });
     
   
@@ -609,7 +618,7 @@ var idx = lunr(function () {
       excerpt: "Waited for ages for my beloved wife’s bag then got that sinking feeling when the carousel stops turning. Everyone had...",
       categories: ["australia","photography","travel"],
       tags: [],
-      id: 66
+      id: 67
     });
     
   
@@ -618,7 +627,7 @@ var idx = lunr(function () {
       excerpt: "In all my years of fishing, we were fortunate not to have had a bad injury. There was the time...",
       categories: ["fishing"],
       tags: [],
-      id: 67
+      id: 68
     });
     
   
@@ -627,7 +636,7 @@ var idx = lunr(function () {
       excerpt: "Went to teach a summer course in reconfigurable computing again at Harbin Institute of Technology (HIT) and to also participate...",
       categories: ["travel"],
       tags: [],
-      id: 68
+      id: 69
     });
     
   
@@ -636,7 +645,7 @@ var idx = lunr(function () {
       excerpt: "Didn’t realise that we have had this boat since 1993. It has performed faultlessly over this period and the Evinrude...",
       categories: ["fishing"],
       tags: [],
-      id: 69
+      id: 70
     });
     
   
@@ -645,7 +654,7 @@ var idx = lunr(function () {
       excerpt: "Traded in the Quintrex for a new Stacer Outlaw 429 with Evinrude 50 hp at Huett Marine.  I highly recommend them...",
       categories: ["fishing"],
       tags: [],
-      id: 70
+      id: 71
     });
     
   
@@ -654,7 +663,7 @@ var idx = lunr(function () {
       excerpt: "A westward looking photograph of Sydney with the Eastern Suburbs in the foreground, Sydney CBD and Harbour in the middle,...",
       categories: ["australia","photography"],
       tags: [],
-      id: 71
+      id: 72
     });
     
   
@@ -663,7 +672,7 @@ var idx = lunr(function () {
       excerpt: "After attending the International Conference on Field Programmable Technology, Brent, Ken and myself took a 5-day fly-fishing trip around the...",
       categories: ["FFF","fishing","Fly-fishing","travel"],
       tags: [],
-      id: 72
+      id: 73
     });
     
   
@@ -672,7 +681,7 @@ var idx = lunr(function () {
       excerpt: "A camping trip with Warren to the Hawkesbury has become an annual event (e.g. in 2014). Unfortunately, we couldn’t do...",
       categories: ["australia","fishing","Hawkesbury River"],
       tags: [],
-      id: 73
+      id: 74
     });
     
   
@@ -681,7 +690,7 @@ var idx = lunr(function () {
       excerpt: "Luderick (otherwise known as blackfish) are among my favourite targets as they are quite plentiful in Sydney Harbour and the fishing...",
       categories: ["australia","fishing"],
       tags: [],
-      id: 74
+      id: 75
     });
     
   
@@ -690,7 +699,7 @@ var idx = lunr(function () {
       excerpt: "Took this photo of Danny Lim, Activist, outside Redfern station. A nice guy and quite a character! He made sure...",
       categories: ["australia","photography"],
       tags: [],
-      id: 75
+      id: 76
     });
     
   
@@ -699,7 +708,7 @@ var idx = lunr(function () {
       excerpt: "\n\n\n\n[gallery ids=”2469,2475,2474,2473,2472,2471,2470”]\n",
       categories: ["photography"],
       tags: [],
-      id: 76
+      id: 77
     });
     
   
@@ -708,7 +717,7 @@ var idx = lunr(function () {
       excerpt: "Spent a week in Osaka, the last time we were there was 2013. Shuttle ride to Sydney airport. Had a day to check out...",
       categories: ["photography","travel"],
       tags: [],
-      id: 77
+      id: 78
     });
     
   
@@ -717,7 +726,7 @@ var idx = lunr(function () {
       excerpt: "We had a very successful Croucher PAPAA workshop at Hong Kong University. The new elevator from HKU MTR station up to Hong...",
       categories: ["photography","travel"],
       tags: [],
-      id: 78
+      id: 79
     });
     
   
@@ -726,7 +735,7 @@ var idx = lunr(function () {
       excerpt: "Here are some photos from the School of Electrical and Information Engineering retreat in Manly. [caption id=”attachment_2637” align=”alignnone” width=”8196”] Panorama from...",
       categories: ["australia","photography"],
       tags: [],
-      id: 79
+      id: 80
     });
     
   
@@ -735,7 +744,7 @@ var idx = lunr(function () {
       excerpt: "I participated in the 2nd FPGA Fly-Fishing (FFF’16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron...",
       categories: ["FFF","fishing","Fly-fishing","photography","travel"],
       tags: [],
-      id: 80
+      id: 81
     });
     
   
@@ -744,7 +753,7 @@ var idx = lunr(function () {
       excerpt: "Departed on a beautiful early-summer Sydney morning in late Nov. Was in London about a day later. This photo has...",
       categories: ["travel"],
       tags: [],
-      id: 81
+      id: 82
     });
     
   
@@ -753,7 +762,7 @@ var idx = lunr(function () {
       excerpt: "Photos from another great trip to the Hawkesbury River. [caption id=”attachment_2760” align=”alignnone” width=”1280”] One of two resident monitor lizards[/caption] [caption...",
       categories: ["australia","fishing","Hawkesbury River"],
       tags: [],
-      id: 82
+      id: 83
     });
     
   
@@ -762,7 +771,7 @@ var idx = lunr(function () {
       excerpt: "First fish of 2017 is a tailor (and it was a fluke).\n\n\n",
       categories: ["fishing"],
       tags: [],
-      id: 83
+      id: 84
     });
     
   
@@ -771,7 +780,7 @@ var idx = lunr(function () {
       excerpt: "Photos from Mungo Brush beach. [caption id=”attachment_2797” align=”alignnone” width=”1280”] Exif_JPEG_PICTURE[/caption] A school of tailor appeared on the surface briefly before...",
       categories: ["australia","Fly-fishing","photography"],
       tags: [],
-      id: 84
+      id: 85
     });
     
   
@@ -780,7 +789,7 @@ var idx = lunr(function () {
       excerpt: "Went on a 2 night, 3 day trip to Mooney Mooney. Pretty much the same thing as previous trips except...",
       categories: ["australia","fishing","Hawkesbury River","photography"],
       tags: [],
-      id: 85
+      id: 86
     });
     
   
@@ -789,7 +798,7 @@ var idx = lunr(function () {
       excerpt: "The 3rd annual FPGA Fly Fishing Workshop (FFF’17) was down on attendance, only Ken and myself participating from the 19-20th...",
       categories: ["FFF","fishing","Fly-fishing","travel"],
       tags: [],
-      id: 86
+      id: 87
     });
     
   
@@ -798,7 +807,7 @@ var idx = lunr(function () {
       excerpt: "An awesome fishing report that Michael Zhu sent to me via Facebook Messenger. Dear Phil, our group of four people boarded Brain’s...",
       categories: ["australia","fishing","Fly-fishing"],
       tags: [],
-      id: 87
+      id: 88
     });
     
   
@@ -807,7 +816,7 @@ var idx = lunr(function () {
       excerpt: "\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 88
+      id: 89
     });
     
   
@@ -816,7 +825,7 @@ var idx = lunr(function () {
       excerpt: "Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to...",
       categories: ["photography","travel"],
       tags: [],
-      id: 89
+      id: 90
     });
     
   
@@ -825,7 +834,7 @@ var idx = lunr(function () {
       excerpt: "Wandering around Sim City in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first...",
       categories: ["photography"],
       tags: [],
-      id: 90
+      id: 91
     });
     
   
@@ -834,7 +843,7 @@ var idx = lunr(function () {
       excerpt: "[caption id=”attachment_3027” align=”alignnone” width=”4467”] Sydney Skyline from Balls Head[/caption]\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 91
+      id: 92
     });
     
   
@@ -843,7 +852,7 @@ var idx = lunr(function () {
       excerpt: "[caption id=”attachment_3032” align=”alignnone” width=”1280”] The Dish[/caption]\n",
       categories: ["australia","electronics","photography"],
       tags: [],
-      id: 92
+      id: 93
     });
     
   
@@ -852,7 +861,7 @@ var idx = lunr(function () {
       excerpt: "My electronics doesn’t normally involve a hacksaw, hammer and propane torch but I had fun building this J-pole antenna from...",
       categories: ["electronics","hobbies"],
       tags: [],
-      id: 93
+      id: 94
     });
     
   
@@ -861,7 +870,7 @@ var idx = lunr(function () {
       excerpt: "I had a lot of trouble making an Ubuntu boot USB drive from OSX. The instructions on https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0 don’t work in...",
       categories: ["software"],
       tags: [],
-      id: 94
+      id: 95
     });
     
   
@@ -870,7 +879,7 @@ var idx = lunr(function () {
       excerpt: "Vivado 2017.4 Version (Aug 2018) Install Xilinx Vivado 2017.4 from https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2017-4.html sudo apt install python-pip Configure licence by putting the below...",
       categories: ["FPGA"],
       tags: [],
-      id: 95
+      id: 96
     });
     
   
@@ -879,7 +888,7 @@ var idx = lunr(function () {
       excerpt: "At my first International Lighthouse and Lightship Weekend with the Manly Warringah Radio Society, operating from Barrenjoey Lighthouse. Here is...",
       categories: ["australia","electronics","travel"],
       tags: [],
-      id: 96
+      id: 97
     });
     
   
@@ -888,7 +897,7 @@ var idx = lunr(function () {
       excerpt: "Ken came to visit from Seattle so Beard and I took a day off on Friday to go car-camping in...",
       categories: ["australia","fishing","photography"],
       tags: [],
-      id: 97
+      id: 98
     });
     
   
@@ -897,7 +906,7 @@ var idx = lunr(function () {
       excerpt: "\n\nSome street photos from a visit to Beijing.\n\n\n[gallery size=”medium” link=”file” ids=”3267,3268,3269,3270,3271”]\n",
       categories: ["photography","travel"],
       tags: [],
-      id: 98
+      id: 99
     });
     
   
@@ -906,7 +915,7 @@ var idx = lunr(function () {
       excerpt: "\n\n\n\n[gallery size=”medium” link=”file” ids=”3281,3282,3283,3277”]\n",
       categories: ["australia","photography"],
       tags: [],
-      id: 99
+      id: 100
     });
     
   
@@ -915,7 +924,7 @@ var idx = lunr(function () {
       excerpt: "The source code for the paper: P. Leong and S. Carlile. Methods for spherical data analysis and visualization. Journal of Neuroscience Methods, 80(2):191–200, 1998....",
       categories: [],
       tags: [],
-      id: 100
+      id: 101
     });
     
   
@@ -924,7 +933,7 @@ var idx = lunr(function () {
       excerpt: "[caption id=”attachment_3352” align=”alignnone” width=”840”] CEL Party 2017[/caption] Photos from earlier years below. [caption id=”attachment_3354” align=”alignnone” width=”840”] CEL Party 2016[/caption] [caption...",
       categories: ["academia"],
       tags: [],
-      id: 101
+      id: 102
     });
     
   
@@ -933,7 +942,7 @@ var idx = lunr(function () {
       excerpt: "Ken came from Seattle to Sydney for a few solid days of fishing. I’m going to call this FFF’18 (even...",
       categories: ["australia","FFF","fishing","Fly-fishing","Hawkesbury River","hobbies"],
       tags: [],
-      id: 102
+      id: 103
     });
     
   
@@ -942,15 +951,6 @@ var idx = lunr(function () {
       excerpt: "The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building, University of Sydney. My office is...",
       categories: ["academia"],
       tags: [],
-      id: 103
-    });
-    
-  
-    idx.add({
-      title: "Welcome to Minimal Mistakes Jekyll",
-      excerpt: "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
-      categories: ["update"],
-      tags: ["jekyll"],
       id: 104
     });
     
@@ -1395,6 +1395,17 @@ var store = [
   
     
     
+    
+      
+      {
+        "title": "Welcome to Minimal Mistakes Jekyll",
+        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/",
+        "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
+        "teaser":
+          
+            null
+          
+      },
     
       
       {
@@ -2534,17 +2545,6 @@ var store = [
         "title": "Directions to CEL",
         "url": "http://localhost:4000/academia/directions-to-cel/",
         "excerpt": "The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building, University of Sydney. My office is...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Welcome to Minimal Mistakes Jekyll",
-        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/",
-        "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
         "teaser":
           
             null
