@@ -36,6 +36,9 @@
 <meta property="og:title" content="Welcome to Minimal Mistakes Jekyll">
 
 
+  <link rel="canonical" href="http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/">
+  <meta property="og:url" content="http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/">
+
 
 
   <meta property="og:description" content="Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of this blog post to be your own OR delete this post and create a new one.">
@@ -79,7 +82,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "phwl",
-      "url" : null,
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -93,7 +96,7 @@
 <!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -105,7 +108,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -128,6 +131,23 @@
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [],
+      displayMath: [],
+      processEscapes: false,
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
 
 <!-- end custom head snippets -->
 
@@ -143,17 +163,17 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="http://localhost:4000/">Life, the Universe and Fishing</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="/about/" >About</a>
+              <a href="http://localhost:4000/about/" >About</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="/posts/" >Posts</a>
+              <a href="http://localhost:4000/posts/" >Posts</a>
             </li>
           
         </ul>
@@ -216,6 +236,76 @@
   <li>Check this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a> out to write your blog posts in markdown</li>
 </ul>
 
+<p>You can enable math support through <code class="highlighter-rouge">use_math: true</code> front matter which enable the MathJax.js rendering.</p>
+
+<p>After enable math support, use <code class="highlighter-rouge">$$ ... $$</code> displaying math equation.</p>
+
+<div>
+<strong><em>For inline mode</em></strong>
+<div style="margin-left:1em;">
+    type your equation in line with other text
+</div>
+<strong><em>For display mode:</em></strong>
+<div style="margin-left:1em;">
+    type your equation such that there is a blank line <em>before</em> your beginning <code>$$</code> and there is a blank line <em>after</em> your ending <code>$$</code>
+</div>
+</div>
+
+<p><br />
+As an example, the following <em>code</em>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The Pythagoras' theorem state that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. The theorem can be written as an equation relating the lengths of the sides $$a$$, $$b$$ and
+$$c$$, often called the "Pythagorean equation":
+
+$$a^2 + b^2 = c^2$$
+
+where $$c$$ represents the length of the hypotenuse and $$a$$ and $$b$$ the lengths of the triangle's other two sides. `[source: wikipedia]`
+
+This also implies that for any square with side length $$x$$, the length of its diagonal is $$\sqrt{2}x$$.
+
+**_Proof:_**
+Let the length of diagonal be $$d$$. Apply Pythagoras theorem on the right angle triangle that has the diagonal as hypotenuse, and side of square as the other two side, we have:
+
+$$
+\begin{align*}
+x^2 + x^2 &amp;= d^2 \\
+d^2 &amp;= 2x^2 \\
+d &amp;= \sqrt{2}x \tag*{$\blacksquare$}
+\end{align*}
+$$
+
+</code></pre></div></div>
+<p><br />
+<em>produces</em>:</p>
+<hr />
+
+<p>The Pythagoras’ theorem state that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. The theorem can be written as an equation relating the lengths of the sides <script type="math/tex">a</script>, <script type="math/tex">b</script> and
+<script type="math/tex">c</script>, often called the “Pythagorean equation”:</p>
+
+<script type="math/tex; mode=display">a^2 + b^2 = c^2</script>
+
+<p>where <script type="math/tex">c</script> represents the length of the hypotenuse and <script type="math/tex">a</script> and <script type="math/tex">b</script> the lengths of the triangle’s other two sides. <code class="highlighter-rouge">[source: wikipedia]</code></p>
+
+<p>This also implies that for any square with side length <script type="math/tex">x</script>, the length of its diagonal is <script type="math/tex">\sqrt{2}x</script>.</p>
+
+<p><strong><em>Proof:</em></strong> Let the length of diagonal be <script type="math/tex">d</script>. Apply Pythagoras theorem on the right angle triangle that has the diagonal as hypotenuse, and side of square as the other two side, we have:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+x^2 + x^2 &= d^2 \\
+d^2 &= 2x^2 \\
+d &= \sqrt{2}x \tag*{$\blacksquare$}
+\end{align*} %]]></script>
+
+<hr />
+
+<p><strong><em>Reference</em></strong></p>
+<ul>
+  <li><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qu%E2%80%8C%E2%80%8Bick-reference">https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-qu%E2%80%8C%E2%80%8Bick-reference</a> (MathJax cheatsheet)</li>
+  <li><a href="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/test/sample-eqnum.html">https://cdn.rawgit.com/mathjax/MathJax/2.7.1/test/sample-eqnum.html</a> (some MathJax example)</li>
+  <li><a href="https://www.mathjax.org/#demo">https://www.mathjax.org/#demo</a> (test your equation at here)</li>
+  <li><a href="https://kramdown.gettalong.org/syntax.html#math-blocks">https://kramdown.gettalong.org/syntax.html#math-blocks</a> (Kramdown rendering of <code class="highlighter-rouge">$$...$$</code> to math mode)</li>
+</ul>
+
         
       </section>
 
@@ -235,7 +325,7 @@
     
       
       
-      <a href="/tags/#jekyll" class="page__taxonomy-item" rel="tag">jekyll</a>
+      <a href="http://localhost:4000/tags/#jekyll" class="page__taxonomy-item" rel="tag">jekyll</a>
     
     </span>
   </p>
@@ -256,7 +346,7 @@
     
       
       
-      <a href="/categories/#update" class="page__taxonomy-item" rel="tag">update</a>
+      <a href="http://localhost:4000/categories/#update" class="page__taxonomy-item" rel="tag">update</a>
     
     </span>
   </p>
@@ -272,23 +362,24 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Welcome+to+Minimal+Mistakes+Jekyll%20%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Welcome+to+Minimal+Mistakes+Jekyll%20http%3A%2F%2Flocalhost%3A4000%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fupdate%2Fwelcome-to-minimal-mistakes-jekyll%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Previous</a>
+      <a href="http://localhost:4000/academia/directions-to-cel/" class="pagination--pager" title="Directions to CEL
+">Previous</a>
     
     
-      <a href="/math-support/" class="pagination--pager" title="Math Support
+      <a href="http://localhost:4000/photography/travel/girl-from-chiang-rai-karen-long-neck-tribe/" class="pagination--pager" title="Girl from Chiang Rai Karen Long Neck Tribe
 ">Next</a>
     
   </nav>
@@ -313,42 +404,17 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sample/sample-post/" rel="permalink">Sample Post
-</a>
+        <a href="http://phwl.org/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/">Ten Lessons I wish I had been Taught - Gian-Carlo Rota
+</a> <a href="http://localhost:4000/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       
     </h2>
     <p class="page__meta">
       
-        <time datetime="2018-07-16T00:00:00-07:00">July 16, 2018</time> &nbsp;&nbsp;&nbsp;
+        <time datetime="2019-06-11T13:50:41-07:00">June 11, 2019</time> &nbsp;&nbsp;&nbsp;
       
       
     </p>
-    <p class="archive__item-excerpt" itemprop="description">Lorem Ipsum
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem efficitur, accumsan erat at, molestie dui. Nunc id libero dolor. D...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/math-support/" rel="permalink">Math Support
-</a>
-      
-    </h2>
-    <p class="page__meta">
-      
-        <time datetime="2018-07-16T00:00:00-07:00">July 16, 2018</time> &nbsp;&nbsp;&nbsp;
-      
-      
-    </p>
-    <p class="archive__item-excerpt" itemprop="description">You can enable math support through use_math: true front matter which enable the MathJax.js rendering.
+    <p class="archive__item-excerpt" itemprop="description">Interesting talk by the late MIT mathematician and philosopher
 
 </p>
   </article>
@@ -364,17 +430,68 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem e
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/update/welcome-to-minimal-mistakes-jekyll/" rel="permalink">Welcome to Minimal Mistakes Jekyll
-</a>
+        <a href="http://phwl.org/lake-tahoe-2019/">Lake Tahoe 2019
+</a> <a href="http://localhost:4000/travel/lake-tahoe-2019/" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       
     </h2>
     <p class="page__meta">
       
-        <time datetime="2017-12-21T00:00:00-08:00">December 21, 2017</time> &nbsp;&nbsp;&nbsp;
+        <time datetime="2019-05-27T13:40:43-07:00">May 27, 2019</time> &nbsp;&nbsp;&nbsp;
       
       
     </p>
-    <p class="archive__item-excerpt" itemprop="description">Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of this blog post to be your own OR delete thi...</p>
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://phwl.org/sea-lion-santa-cruz-wharf/">Sea lion, Santa Cruz Wharf
+</a> <a href="http://localhost:4000/photography/travel/sea-lion-santa-cruz-wharf/" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      
+    </h2>
+    <p class="page__meta">
+      
+        <time datetime="2019-05-19T19:59:22-07:00">May 19, 2019</time> &nbsp;&nbsp;&nbsp;
+      
+      
+    </p>
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://phwl.org/academic-genealogy/">Academic Genealogy
+</a> <a href="http://localhost:4000/academic-genealogy/" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      
+    </h2>
+    <p class="page__meta">
+      
+        <time datetime="2019-05-17T21:09:59-07:00">May 17, 2019</time> &nbsp;&nbsp;&nbsp;
+      
+      
+    </p>
+    <p class="archive__item-excerpt" itemprop="description">I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobi...</p>
   </article>
 </div>
 
@@ -410,7 +527,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem e
     
     
     
-    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://localhost:4000/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -420,12 +537,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet sem e
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 
-  <script src="/assets/js/lunr.min.js"></script>
-  <script src="/assets/js/lunr-en.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr.min.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr-en.js"></script>
 
 
 
