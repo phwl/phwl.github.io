@@ -1,6 +1,6 @@
 ---
 title:  "Welcome to Minimal Mistakes Jekyll"
-date:   2017-12-21
+date:   1900-12-21
 categories: update
 tags: jekyll
 use_math: true
