@@ -2,13 +2,12 @@
 author: phwl
 comments: true
 date: 1994-04-06 16:04:27+00:00
-link: http://phwl.org/marlin-on-fly/
 slug: marlin-on-fly
 title: Marlin on Fly
 wordpress_id: 76
 categories:
+- Australia
 - fishing
-- Fly-fishing
 ---
 
 ![Black marlin](/assets/images/1994/04/plmarlin1.jpg){: .align-center}

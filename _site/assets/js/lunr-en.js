@@ -22,7 +22,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Barramundi on Fly",
       excerpt: "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
-      categories: ["australia","fishing","Fly-fishing"],
+      categories: ["australia","fishing"],
       tags: [],
       id: 1
     });
@@ -31,7 +31,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Marlin on Fly",
       excerpt: "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
-      categories: ["fishing","Fly-fishing"],
+      categories: ["Australia","fishing"],
       tags: [],
       id: 2
     });
@@ -1410,7 +1410,7 @@ var store = [
       
       {
         "title": "Barramundi on Fly",
-        "url": "http://localhost:4000/australia/fishing/fly-fishing/barramundi-on-fly/",
+        "url": "http://localhost:4000/australia/fishing/barramundi-on-fly/",
         "excerpt": "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
         "teaser":
           
@@ -1421,7 +1421,7 @@ var store = [
       
       {
         "title": "Marlin on Fly",
-        "url": "http://localhost:4000/fishing/fly-fishing/marlin-on-fly/",
+        "url": "http://localhost:4000/australia/fishing/marlin-on-fly/",
         "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
         "teaser":
           
