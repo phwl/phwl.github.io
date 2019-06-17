@@ -1399,7 +1399,7 @@ var store = [
       
       {
         "title": "Welcome to Minimal Mistakes Jekyll",
-        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll.markdown/",
+        "url": "http://localhost:4000/update/welcome-to-minimal-mistakes-jekyll/",
         "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
         "teaser":
           
