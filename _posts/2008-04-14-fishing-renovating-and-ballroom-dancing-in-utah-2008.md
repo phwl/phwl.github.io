@@ -10,14 +10,14 @@ categories:
 - fishing
 - travel
 header:
-  teaser: /assets/images/2015/12/p1000420.jpg)
+  teaser: /assets/images/2015/12/p1000341.jpg
 ---
 
 **Introduction**
 
 Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout fishery in the US. When Prof Brent Nelson invited me to fish there it didn't take me long to accept.
 
-![p1000420](/assets/images/2015/12/p1000420.jpg)
+![](/assets/images/2015/12/p1000420.jpg){: .align-center}
 
 <!-- more -->
 
@@ -167,73 +167,3 @@ Couldn't find the pub though.
 I had a wonderful time in Utah and look forward to returning.
 John Gierach put it best, "I don't know what fly-fishing teaches
 us but I think it's something we need to know."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
