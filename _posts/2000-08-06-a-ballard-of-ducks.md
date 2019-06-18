@@ -8,7 +8,6 @@ title: A Ballard of Ducks
 wordpress_id: 14
 categories:
 - fishing
-- Fly-fishing
 ---
 
 The railway rattled and roared and swung

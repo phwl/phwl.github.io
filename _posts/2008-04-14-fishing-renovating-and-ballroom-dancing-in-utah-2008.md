@@ -8,8 +8,9 @@ title: Fishing, Renovating and Ballroom Dancing in Utah 2008
 wordpress_id: 2326
 categories:
 - fishing
-- Fly-fishing
 - travel
+header:
+  teaser: /assets/images/2015/12/p1000420.jpg)
 ---
 
 **Introduction**

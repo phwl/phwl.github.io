@@ -8,6 +8,8 @@ title: Cessna first solo
 wordpress_id: 2371
 categories:
 - hobbies
+header:
+  teaser: /assets/images/2015/12/plcessna.jpg
 ---
 
 Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.

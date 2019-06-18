@@ -7,9 +7,10 @@ slug: a-trip-to-finland
 title: A trip to Finland
 wordpress_id: 10
 categories:
-- fishing
-- Fly-fishing
 - travel
+- fishing
+header:
+  teaser: /assets/images/2007/06/3794357585_f147b6519d_o2.jpg
 ---
 
 My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my host Tero.

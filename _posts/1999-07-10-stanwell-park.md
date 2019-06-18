@@ -8,7 +8,8 @@ title: Stanwell Park
 wordpress_id: 845
 categories:
 - australia
-- photography
+header:
+  teaser: /assets/images/2013/02/stanwell99.jpg
 ---
 
 This photo of Stanwell Park was taken back in 1999.![](http://www.phwl.org/wp-content/uploads/2013/02/stanwell99.jpg){: .align-center}

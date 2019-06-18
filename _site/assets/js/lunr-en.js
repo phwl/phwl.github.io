@@ -21,7 +21,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Barramundi on Fly",
-      excerpt: "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
+      excerpt: "Black marlin on fly, Cape Bowling Green, Queensland, Mary River The Northern Territories (NT) of Australia is best known by...",
       categories: ["fishing"],
       tags: [],
       id: 1
@@ -58,7 +58,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Stanwell Park",
       excerpt: "This photo of Stanwell Park was taken back in 1999.\n",
-      categories: ["australia","photography"],
+      categories: ["australia"],
       tags: [],
       id: 5
     });
@@ -85,7 +85,7 @@ var idx = lunr(function () {
     idx.add({
       title: "A Ballard of Ducks",
       excerpt: "The railway rattled and roared and swung With jolting carriage and bumping trucks. The sun, like a billiard red ball,...",
-      categories: ["fishing","Fly-fishing"],
+      categories: ["fishing"],
       tags: [],
       id: 8
     });
@@ -93,7 +93,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Fishing Photos",
-      excerpt: "Here are some of my favourite fishing photos from the age before digital cameras.\n\n[gallery ids=”1595,1596,1603,1955,1956”]\n",
+      excerpt: "Here are some of my favourite fishing photos from the age before digital cameras. Chris See with a drummer Beard...",
       categories: ["fishing"],
       tags: [],
       id: 9
@@ -102,7 +102,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "London Lakes",
-      excerpt: "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002. [gallery ids=”1409,1408,1407,1406,1405,1404,1403,1402,1401,1400,1399,1398,1397,1395,1394,1393”]...",
+      excerpt: "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       categories: ["australia","fishing"],
       tags: [],
       id: 10
@@ -111,7 +111,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Weipa",
-      excerpt: "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n[gallery ids=”1500,1498,1497,1496,1495,1494,1493,1492,1491,1490,1489,1488,1487,1486,1485,1484,1483,1482,1481,1480,1479,1478,1477,1476,1475,1474,1473,1472,1471,1470,1469,1468,1467,1466,1465,1464,1463,1462,1461,1460,1459,1458,1457,1456,1455,1454,1453,1452,1451,1450,1449,1448,1447,1446,1445,1444,1443,1442,1441,1440,1439,1438,1437,1436,1435,1434,1433,1432,1431,1430,1429,1428,1427,1426,1425,1424,1423,1422,1414,1421,1420,1419,1418,1417,1416,1415,1413,1412”]\n",
+      excerpt: "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       categories: ["australia","fishing"],
       tags: [],
       id: 11
@@ -121,7 +121,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Meon Springs",
       excerpt: "Fished Meon Springs yesterday. It was my first fishing trip in the UK and my first experience fishing a managed,...",
-      categories: ["fishing","Fly-fishing"],
+      categories: ["fishing"],
       tags: [],
       id: 12
     });
@@ -130,7 +130,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Walthamstow Reservoir",
       excerpt: "From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a...",
-      categories: ["fishing","Fly-fishing"],
+      categories: ["fishing"],
       tags: [],
       id: 13
     });
@@ -148,7 +148,7 @@ var idx = lunr(function () {
     idx.add({
       title: "A trip to Finland",
       excerpt: "My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my...",
-      categories: ["fishing","Fly-fishing","travel"],
+      categories: ["travel","fishing"],
       tags: [],
       id: 15
     });
@@ -166,7 +166,7 @@ var idx = lunr(function () {
     idx.add({
       title: "Fishing, Renovating and Ballroom Dancing in Utah 2008",
       excerpt: "Introduction Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout...",
-      categories: ["fishing","Fly-fishing","travel"],
+      categories: ["fishing","travel"],
       tags: [],
       id: 17
     });
@@ -1411,10 +1411,10 @@ var store = [
       {
         "title": "Barramundi on Fly",
         "url": "http://localhost:4000/fishing/barramundi-on-fly/",
-        "excerpt": "Barramundi, Mary River Background The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The...",
+        "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River The Northern Territories (NT) of Australia is best known by...",
         "teaser":
           
-            "http://localhost:4000/assets/images/1991/08/plbarra1.jpg"
+            "http://localhost:4000/assets/images/1991/08/plbarra1-horiz.jpg"
           
       },
     
@@ -1425,7 +1425,7 @@ var store = [
         "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/1994/04/plmarlin1.jpg"
           
       },
     
@@ -1436,7 +1436,7 @@ var store = [
         "excerpt": "Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2014/10/nz96-twizel3.jpg"
           
       },
     
@@ -1447,18 +1447,18 @@ var store = [
         "excerpt": "Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.\n\n\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2015/12/plcessna.jpg"
           
       },
     
       
       {
         "title": "Stanwell Park",
-        "url": "http://localhost:4000/australia/photography/stanwell-park/",
+        "url": "http://localhost:4000/australia/stanwell-park/",
         "excerpt": "This photo of Stanwell Park was taken back in 1999.\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2013/02/stanwell99.jpg"
           
       },
     
@@ -1487,7 +1487,7 @@ var store = [
       
       {
         "title": "A Ballard of Ducks",
-        "url": "http://localhost:4000/fishing/fly-fishing/a-ballard-of-ducks/",
+        "url": "http://localhost:4000/fishing/a-ballard-of-ducks/",
         "excerpt": "The railway rattled and roared and swung With jolting carriage and bumping trucks. The sun, like a billiard red ball,...",
         "teaser":
           
@@ -1499,10 +1499,10 @@ var store = [
       {
         "title": "Fishing Photos",
         "url": "http://localhost:4000/fishing/fishing-photos/",
-        "excerpt": "Here are some of my favourite fishing photos from the age before digital cameras.\n\n[gallery ids=”1595,1596,1603,1955,1956”]\n",
+        "excerpt": "Here are some of my favourite fishing photos from the age before digital cameras. Chris See with a drummer Beard...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2001/08/gt1.jpg"
           
       },
     
@@ -1510,10 +1510,10 @@ var store = [
       {
         "title": "London Lakes",
         "url": "http://localhost:4000/australia/fishing/london-lakes/",
-        "excerpt": "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002. [gallery ids=”1409,1408,1407,1406,1405,1404,1403,1402,1401,1400,1399,1398,1397,1395,1394,1393”]...",
+        "excerpt": "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2002/12/3794804597_870ea589a1_z.jpg"
           
       },
     
@@ -1521,32 +1521,32 @@ var store = [
       {
         "title": "Weipa",
         "url": "http://localhost:4000/australia/fishing/weipa-may-2004/",
-        "excerpt": "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n[gallery ids=”1500,1498,1497,1496,1495,1494,1493,1492,1491,1490,1489,1488,1487,1486,1485,1484,1483,1482,1481,1480,1479,1478,1477,1476,1475,1474,1473,1472,1471,1470,1469,1468,1467,1466,1465,1464,1463,1462,1461,1460,1459,1458,1457,1456,1455,1454,1453,1452,1451,1450,1449,1448,1447,1446,1445,1444,1443,1442,1441,1440,1439,1438,1437,1436,1435,1434,1433,1432,1431,1430,1429,1428,1427,1426,1425,1424,1423,1422,1414,1421,1420,1419,1418,1417,1416,1415,1413,1412”]\n",
+        "excerpt": "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2004/05/IMG_3774.jpg"
           
       },
     
       
       {
         "title": "Meon Springs",
-        "url": "http://localhost:4000/fishing/fly-fishing/meon-springs/",
+        "url": "http://localhost:4000/fishing/meon-springs/",
         "excerpt": "Fished Meon Springs yesterday. It was my first fishing trip in the UK and my first experience fishing a managed,...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2005/09/Tero05.jpg"
           
       },
     
       
       {
         "title": "Walthamstow Reservoir",
-        "url": "http://localhost:4000/fishing/fly-fishing/walthamstow-reservoir/",
+        "url": "http://localhost:4000/fishing/walthamstow-reservoir/",
         "excerpt": "From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2005/09/waltham220905-trout.jpg"
           
       },
     
@@ -1557,18 +1557,18 @@ var store = [
         "excerpt": "The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2018/10/soldierset-front.jpg"
           
       },
     
       
       {
         "title": "A trip to Finland",
-        "url": "http://localhost:4000/fishing/fly-fishing/travel/a-trip-to-finland/",
+        "url": "http://localhost:4000/travel/fishing/a-trip-to-finland/",
         "excerpt": "My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2007/06/3794357585_f147b6519d_o2.jpg"
           
       },
     
@@ -1586,11 +1586,11 @@ var store = [
       
       {
         "title": "Fishing, Renovating and Ballroom Dancing in Utah 2008",
-        "url": "http://localhost:4000/fishing/fly-fishing/travel/fishing-renovating-and-ballroom-dancing-in-utah-2008/",
+        "url": "http://localhost:4000/fishing/travel/fishing-renovating-and-ballroom-dancing-in-utah-2008/",
         "excerpt": "Introduction Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout...",
         "teaser":
           
-            null
+            "http://localhost:4000/assets/images/2015/12/p1000420.jpg)"
           
       },
     

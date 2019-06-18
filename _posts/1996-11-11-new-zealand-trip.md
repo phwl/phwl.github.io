@@ -8,6 +8,8 @@ title: New Zealand Trip
 wordpress_id: 1526
 categories:
 - fishing
+header:
+  teaser: /assets/images/2014/10/nz96-twizel3.jpg
 ---
 
 Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the trip.
