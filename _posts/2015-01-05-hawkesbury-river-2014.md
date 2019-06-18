@@ -10,6 +10,8 @@ categories:
 - australia
 - fishing
 - Hawkesbury River
+header:
+  teaser: /assets/images/2015/01/IMG_0079.jpg
 ---
 
 Much like previous years, went to do some fishing in the Hawkesbury River over the Christmas break. This time, Beard joined us. Nothing too different from other trips and a good time was had by all.

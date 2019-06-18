@@ -9,6 +9,8 @@ wordpress_id: 277
 categories:
 - australia
 - travel
+header:
+  teaser: http://elainext.files.wordpress.com/2010/04/map.jpg
 ---
 
 Check out Elaine's amazing motorcycle trip around Australia [here](http://elainext.wordpress.com/)

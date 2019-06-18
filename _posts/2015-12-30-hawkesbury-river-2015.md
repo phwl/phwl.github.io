@@ -10,6 +10,8 @@ categories:
 - australia
 - fishing
 - Hawkesbury River
+header:
+  teaser: /assets/images/2015/12/IMG_2416.jpg
 ---
 
 A camping trip with Warren to the Hawkesbury has become an annual event (e.g. in [2014](http://phwl.org/hawkesbury-river-2014/)). Unfortunately, we couldn't do it this year but went for a day trip, which was also our first fishing trip there in the [new boat](http://phwl.org/stacer-outlaw-429/). A 6:30am start and not a touch until about noon. Then we caught a couple of flathead and a bream in about 30 min, narrowly avoiding a doughnut.

@@ -11,6 +11,8 @@ categories:
 - fishing
 - Hawkesbury River
 - photography
+header:
+  teaser: /assets/images/2017/01/IMG_5383.jpg
 ---
 
 ![](/assets/images/2017/01/IMG_5383.jpg){: .align-center}

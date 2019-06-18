@@ -8,6 +8,8 @@ title: Postcard from Monterey 2011
 wordpress_id: 2041
 categories:
 - travel
+header:
+  teaser: /assets/images/2014/12/P1080702.jpg
 ---
 
 ![](/assets/images/2014/12/P1080702.jpg){: .align-center}

@@ -10,8 +10,10 @@ categories:
 - academia
 post_format:
 - Image
+header:
+  teaser: /assets/images/2016/01/4201211301_58b7b50ef4_o.jpg
 ---
 
 I was honoured to have received this pen from my ex-students at CUHK.
 
-[caption id="attachment_2406" align="alignnone" width="1024"]![](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg){: .align-center} OLYMPUS DIGITAL CAMERA[/caption]
+![](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg){: .align-center} 

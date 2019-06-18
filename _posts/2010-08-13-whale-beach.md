@@ -11,6 +11,8 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2016/03/whalebeach.jpg
 ---
 
 ![](/assets/images/2016/03/whalebeach.jpg){: .align-center}

@@ -9,8 +9,10 @@ wordpress_id: 268
 categories:
 - australia
 - photography
+header:
+  teaser: /assets/images/2010/05/kirribilli.jpg
 ---
 
 This photo of Sydney was taken from Kirribilli, not too far from the Harbour Bridge.
 
-![](http://www.phwl.org/wp-content/uploads/2010/05/kirribilli.jpg){: .align-center}
+![](/assets/images/2010/05/kirribilli.jpg){: .align-center}
