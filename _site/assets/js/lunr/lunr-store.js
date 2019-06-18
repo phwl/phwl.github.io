@@ -750,7 +750,7 @@ var store = [{
         "url": "http://localhost:4000/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/",
         "teaser":"http://www-history.mcs.st-and.ac.uk/BigPictures/Rota.jpeg"},{
         "title": "Moving from Wordpress to Jekyll",
-        "excerpt":"I have been using Wordpress for many years. It produces good looking websites and is easy to install and maintain. Unfortunately, it isn’t easy at all to backup the website, and the interface is all web-based meaning it is difficult to create scripts which update the website. Most programmers use...","categories": ["website"],
+        "excerpt":"I have been using Wordpress for many years. It produces good looking websites and is easy to install and maintain. Unfortunately, it isn’t easy at all to backup the website, and the interface is all web-based meaning it is difficult to create scripts which update the website. The old website...","categories": ["website"],
         "tags": ["jekyll"],
         "url": "http://localhost:4000/moving-from-wordpress-to-jekyll.md/",
         "teaser":"https://jekyllrb.com/img/logo-2x.png"}]

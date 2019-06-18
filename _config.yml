@@ -98,6 +98,11 @@ defaults:
       author_profile: true
       use_math: false
 
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "phwl-github-io"
+
 category_archive:
   type: liquid
   path: /categories/
