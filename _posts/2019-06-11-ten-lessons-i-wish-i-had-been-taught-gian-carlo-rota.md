@@ -8,6 +8,8 @@ title: Ten Lessons I wish I had been Taught - Gian-Carlo Rota
 wordpress_id: 4815
 categories:
 - academia
+header:
+  teaser: http://www-history.mcs.st-and.ac.uk/BigPictures/Rota.jpeg
 ---
 
 
