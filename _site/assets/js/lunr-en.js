@@ -192,7 +192,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Beijing and Harbin",
-      excerpt: "[gallery ids=”1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619,1620,1621,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,1641,1642,1643,1644,1645,1646,1647,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659”]\n\nHere are some photos taken from a trip to Beijing and Harbin in 2009.\n\n[gallery ids=”776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811”]\n",
+      excerpt: "Here are some photos taken from a trip to Beijing and Harbin in 2009.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       categories: ["travel"],
       tags: [],
       id: 20
@@ -228,7 +228,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "The Chinese University of Hong Kong",
-      excerpt: "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n\n",
+      excerpt: "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n",
       categories: ["photography"],
       tags: [],
       id: 24
@@ -1612,7 +1612,7 @@ var store = [
         "excerpt": "Photo from Beijing ski trip.\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2016/01/3731258183_2af03d23cb_o.jpg"
           
       },
     
@@ -1620,10 +1620,10 @@ var store = [
       {
         "title": "Beijing and Harbin",
         "url": "/travel/beijing-and-harbin/",
-        "excerpt": "[gallery ids=”1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1619,1620,1621,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,1641,1642,1643,1644,1645,1646,1647,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659”]\n\nHere are some photos taken from a trip to Beijing and Harbin in 2009.\n\n[gallery ids=”776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811”]\n",
+        "excerpt": "Here are some photos taken from a trip to Beijing and Harbin in 2009.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2009/02/dsc_2590_1.jpg"
           
       },
     
@@ -1634,7 +1634,7 @@ var store = [
         "excerpt": "I was asked by Prof Evangeline Young to give a “Lunchtime Pizza talk” on the 15th May. Here is the...",
         "teaser":
           
-            null
+            "/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg"
           
       },
     
@@ -1656,7 +1656,7 @@ var store = [
         "excerpt": "Here are some street photos from Hong Kong.\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2009/08/3818727575_13c777a19b.jpg"
           
       },
     
@@ -1664,10 +1664,10 @@ var store = [
       {
         "title": "The Chinese University of Hong Kong",
         "url": "/photography/the-chinese-university-of-hong-kong/",
-        "excerpt": "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n\n",
+        "excerpt": "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2009/08/3732055986_9e2fbe4220.jpg"
           
       },
     

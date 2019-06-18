@@ -10,11 +10,13 @@ categories:
 - academia
 - fishing
 - Fly-fishing
+header:
+  teaser: /assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg
 ---
 
 I was asked by [Prof Evangeline Young](http://www.cse.cuhk.edu.hk/~fyyoung) to give a "Lunchtime Pizza talk" on the 15th May. Here is the text of the talk which is not really about fishing but concerns graduate research.
 
-![](http://www.phwl.org/wp-content/uploads/2009/05/3795629664_bae4ae8ff7_o.jpg){: .align-center}
+![](/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg){: .align-center}
 
 <!-- more -->
 

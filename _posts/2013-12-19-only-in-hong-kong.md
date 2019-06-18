@@ -12,8 +12,6 @@ categories:
 
 The below is a report of a true story. No names have been changed to protect identities.
 
-[<!-- more -->](/assets/images/2013/12/sherlockcsi.jpg)
-
 ![](/assets/images/2013/12/sherlockcsi-e1413152907589.jpg){: .align-center}
 
 

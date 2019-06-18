@@ -8,8 +8,8 @@ title: Snowboard Fever
 wordpress_id: 2398
 categories:
 - photography
-post_format:
-- Image
+header:
+  teaser: /assets/images/2016/01/3731258183_2af03d23cb_o.jpg
 ---
 
 Photo from Beijing ski trip.
