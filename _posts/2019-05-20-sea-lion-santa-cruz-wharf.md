@@ -9,6 +9,8 @@ wordpress_id: 4796
 categories:
 - photography
 - travel
+header:
+  teaser: /assets/images/2019/05/DSCF6081.jpg
 ---
 
 

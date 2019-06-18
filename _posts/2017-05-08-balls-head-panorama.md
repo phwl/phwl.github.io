@@ -9,8 +9,9 @@ wordpress_id: 3024
 categories:
 - australia
 - photography
-post_format:
-- Image
+header:
+  teaser: /assets/images/2017/05/P4300003-3.jpg
 ---
 
-[caption id="attachment_3027" align="alignnone" width="4467"]![](/assets/images/2017/05/P4300003-3.jpg){: .align-center} Sydney Skyline from Balls Head[/caption]
+![](/assets/images/2017/05/P4300003-3.jpg){: .align-center} 
+Sydney Skyline from Balls Head

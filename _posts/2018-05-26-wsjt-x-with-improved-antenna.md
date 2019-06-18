@@ -9,6 +9,8 @@ wordpress_id: 3663
 categories:
 - amateur radio
 - hobbies
+header:
+  teaser: /assets/images/2018/05/Screen-Shot-2018-05-26.jpg
 ---
 
 ![](/assets/images/2018/05/Screen-Shot-2018-05-26.jpg){: .align-center}

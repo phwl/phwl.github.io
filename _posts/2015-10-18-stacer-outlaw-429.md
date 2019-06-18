@@ -8,6 +8,8 @@ title: Stacer Outlaw 429
 wordpress_id: 2232
 categories:
 - fishing
+header:
+  teaser: /assets/images/2015/10/IMG_5965.jpg
 ---
 
 Traded in the Quintrex for a new [Stacer Outlaw 429](http://www.stacer.com.au/Aluminium-Boat-Range1/429OutlawSideConsole?Particulars=429%20Outlaw%20Side%20Console) with Evinrude 50 hp at [Huett Marine](http://www.huettmarine.com.au/).  I highly recommend them as they are great people to deal with and very knowledgeable.

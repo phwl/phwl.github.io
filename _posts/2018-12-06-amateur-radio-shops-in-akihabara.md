@@ -8,6 +8,8 @@ title: Amateur Radio Shops in Akihabara
 wordpress_id: 4264
 categories:
 - amateur radio
+header:
+  teaser: /assets/images/2018/12/DSCF5835.jpg
 ---
 
 Passing through Tokyo this week and took the opportunity to visit a few amateur radio shops in Akihabara.![](/assets/images/2018/12/DSCF5835.jpg){: .align-center}<!-- more -->

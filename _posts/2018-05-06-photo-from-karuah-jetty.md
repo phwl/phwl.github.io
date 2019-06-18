@@ -11,6 +11,8 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2018/05/DSC_5851.jpg
 ---
 
 ![](/assets/images/2018/05/DSC_5851.jpg){: .align-center}

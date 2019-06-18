@@ -8,6 +8,8 @@ title: Harbin and Qingdao 2015
 wordpress_id: 2184
 categories:
 - travel
+header:
+  teaser: /assets/images/2015/07/P7170185.jpg
 ---
 
 ![](/assets/images/2015/07/P7170185.jpg){: .align-center}

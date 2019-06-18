@@ -9,30 +9,32 @@ wordpress_id: 1165
 categories:
 - australia
 - photography
+header:
+  teaser: /assets/images/2013/08/GOPR7514.jpg
 ---
 
 A photograph of the Sydney University Open Day from a weather balloon above the tower of the main quadrangle. This photo was made with [Sydney University Electrical and Information Engineering ](http://www.ee.usyd.edu.au)students Stephen Tridgell and David Portelli using the same equipment as our [High Altitude Balloon project](http://www.phwl.org/high-altitude-balloon-launch-1/).
 
-![DCIM100GOPRO](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7514.jpg)
+![DCIM100GOPRO](/assets/images/2013/08/GOPR7514.jpg)
 
 <!-- more -->
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7063.jpg)
+![](/assets/images/2013/08/GOPR7063.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7319.jpg)
+![](/assets/images/2013/08/GOPR7319.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7344.jpg)
+![](/assets/images/2013/08/GOPR7344.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7374.jpg)
+![](/assets/images/2013/08/GOPR7374.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7395.jpg)
+![](/assets/images/2013/08/GOPR7395.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7402.jpg)
+![](/assets/images/2013/08/GOPR7402.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7463.jpg)
+![](/assets/images/2013/08/GOPR7463.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7514.jpg)
+![](/assets/images/2013/08/GOPR7514.jpg)
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/GOPR7612.jpg)
+![](/assets/images/2013/08/GOPR7612.jpg)
 
 

@@ -9,10 +9,11 @@ wordpress_id: 3571
 categories:
 - amateur radio
 - hobbies
+header:
+  teaser: /assets/images/2018/04/Screen-Shot-2018-04-22-at-8.13.09-pm.png
 ---
 
-![](/assets/images/2018/04/Screen-Shot-2018-04-22-at-8.13.09-pm-1024x569.png){: .align-center}[
-](/assets/images/2018/04/wsprmap.png)
+![](/assets/images/2018/04/Screen-Shot-2018-04-22-at-8.13.09-pm.png){: .align-center}
 
 I've been trying to configure [WSJT-X](https://physics.princeton.edu/pulsar/k1jt/wsjtx.html) so I can run FT8 and WSPR for quite a while now. I finally tracked the problem to my Macbook which is introducing noise to the radio (could be the USB to USB-C adapter) and WSPR-X also crashes a lot during transmission. After switching to an antique Dell Latitude D520 from 2006, my signal on 40m (7.038600 MHz) is being received.
 

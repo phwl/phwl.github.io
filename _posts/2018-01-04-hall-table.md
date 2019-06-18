@@ -9,6 +9,8 @@ wordpress_id: 3420
 categories:
 - hobbies
 - woodwork
+header:
+  teaser: /assets/images/2018/01/IMG_0676.jpg
 ---
 
 

@@ -13,6 +13,8 @@ categories:
 - Fly-fishing
 - Hawkesbury River
 - hobbies
+header:
+  teaser: /assets/images/2017/12/kingfish17-14.jpg
 ---
 
 Ken came from Seattle to Sydney for a few solid days of fishing. I'm going to call this [FFF'18](http://phwl.org/category/hobbies/fishing/fff/) (even though it was in 2017 and the real FFF'18 was Ken and Guy fishing in NZ).

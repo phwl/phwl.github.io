@@ -9,6 +9,8 @@ wordpress_id: 2922
 categories:
 - photography
 - travel
+header:
+  teaser: /assets/images/2017/04/IMG_9415.jpg
 ---
 
 Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to Shanghai in [2014](http://phwl.org/london-shanghai-and-hong-kong-2014/), [2013](http://phwl.org/shanghai-april-2013/) and [2012](http://phwl.org/postcard-from-shanghai/).

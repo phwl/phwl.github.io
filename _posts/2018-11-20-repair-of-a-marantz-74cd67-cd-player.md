@@ -8,6 +8,8 @@ title: Repair of a Marantz 74CD67 CD Player
 wordpress_id: 4240
 categories:
 - electronics
+header:
+  teaser: /assets/images/2018/11/40784800_Unknown.jpg
 ---
 
 My mother bought this Marantz 74CD67 CD player in 1996. Twenty years later, it was unable to read reliably.

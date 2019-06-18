@@ -9,8 +9,8 @@ wordpress_id: 2974
 categories:
 - australia
 - photography
-post_format:
-- Image
+header:
+  teaser: /assets/images/2017/04/IMG_9416.jpg
 ---
 
 ![](/assets/images/2017/04/IMG_9416.jpg){: .align-center}

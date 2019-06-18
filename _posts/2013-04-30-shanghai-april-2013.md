@@ -8,64 +8,66 @@ title: Shanghai April 2013
 wordpress_id: 961
 categories:
 - travel
+header:
+  teaser: /assets/images/2013/04/P4242220.jpg
 ---
 
 I had an excellent trip to Shanghai last year and wrote about it in  [http://www.phwl.org/postcard-from-shanghai/](http://www.phwl.org/postcard-from-shanghai/). I was fortunate enough to be invited back.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4242220.jpg){: .align-center}
+![](/assets/images/2013/04/P4242220.jpg){: .align-center}
 
 <!-- more -->
 
 I stayed in the Expert building, Zhangjiang Campus.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/IMG_2402.jpg){: .align-center}
+![](/assets/images/2013/04/IMG_2402.jpg){: .align-center}
 
-This is the library.![](http://www.phwl.org/wp-content/uploads/2013/04/P4232072.jpg){: .align-center}
+This is the library.![](/assets/images/2013/04/P4232072.jpg){: .align-center}
 
 There were many highlights to this visit. Chen Shuai kindly accompanied me to visit the former residence of Soong Ching Ling, Sun Yat-sen's wife (we also went to Sun Yat-sen's former residence but that was not as interesting).
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P42119151.jpg){: .align-center}
+![](/assets/images/2013/04/P42119151.jpg){: .align-center}
 
 Soong Ching Ling was someone I greatly admire, She had friends like Stalin, who gave her this car.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4211938.jpg){: .align-center}
+![](/assets/images/2013/04/P4211938.jpg){: .align-center}
 
 This was one of her favourite books.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4211930.jpg){: .align-center}
+![](/assets/images/2013/04/P4211930.jpg){: .align-center}
 
 Here is one of her poems.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/II.jpg){: .align-center}
+![](/assets/images/2013/04/II.jpg){: .align-center}
 
 I also went to the China Pavilion at the World Expo Site.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4212031.jpg){: .align-center}
+![](/assets/images/2013/04/P4212031.jpg){: .align-center}
 
-This was a very impressive giant moving display of village life.![](http://www.phwl.org/wp-content/uploads/2013/04/P4212009.jpg){: .align-center}
+This was a very impressive giant moving display of village life.![](/assets/images/2013/04/P4212009.jpg){: .align-center}
 
 We went to little supermarkets,
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P42119131.jpg){: .align-center}
+![](/assets/images/2013/04/P42119131.jpg){: .align-center}
 
 and a huge mall
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4212063.jpg){: .align-center}
+![](/assets/images/2013/04/P4212063.jpg){: .align-center}
 
 This time, I also had an opportunity to visit the main campus of Fudan University.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4242092.jpg){: .align-center}
+![](/assets/images/2013/04/P4242092.jpg){: .align-center}
 
-At 30 storeys, this is the tallest university building in Asia. We went there for coffee.![](http://www.phwl.org/wp-content/uploads/2013/04/P4242100.jpg){: .align-center}
+At 30 storeys, this is the tallest university building in Asia. We went there for coffee.![](/assets/images/2013/04/P4242100.jpg){: .align-center}
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4242125.jpg){: .align-center}
+![](/assets/images/2013/04/P4242125.jpg){: .align-center}
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4242193.jpg){: .align-center}
+![](/assets/images/2013/04/P4242193.jpg){: .align-center}
 
 This is the canteen.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4242167.jpg){: .align-center}
+![](/assets/images/2013/04/P4242167.jpg){: .align-center}
 
 Back to Sydney.
 
-![](http://www.phwl.org/wp-content/uploads/2013/04/P4272248.jpg){: .align-center}
+![](/assets/images/2013/04/P4272248.jpg){: .align-center}

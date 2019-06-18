@@ -10,6 +10,8 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2013/08/hbridge-pano05082013.jpg
 ---
 
-![](http://www.phwl.org/wp-content/uploads/2013/08/hbridge-pano05082013.jpg){: .align-center}
+![](/assets/images/2013/08/hbridge-pano05082013.jpg){: .align-center}

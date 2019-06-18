@@ -9,6 +9,8 @@ wordpress_id: 1345
 categories:
 - australia
 - photography
+header:
+  teaser: /assets/images/2014/06/P6040022.jpg
 ---
 
 ![](/assets/images/2014/06/P6040022.jpg){: .align-center}

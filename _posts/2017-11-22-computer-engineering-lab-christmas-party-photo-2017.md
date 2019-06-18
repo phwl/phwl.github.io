@@ -10,9 +10,9 @@ categories:
 - academia
 post_format:
 - Image
+header:
+  teaser: /assets/images/2017/11/celchristmas17.jpeg
 ---
-
-
 
 [caption id="attachment_3352" align="alignnone" width="840"]![](/assets/images/2017/11/celchristmas17-1024x768.jpeg){: .align-center} CEL Party 2017[/caption]
 

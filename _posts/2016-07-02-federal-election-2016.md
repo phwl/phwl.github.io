@@ -8,10 +8,15 @@ title: Federal Election 2016
 wordpress_id: 2468
 categories:
 - photography
+header:
+  teaser: /assets/images/2016/07/IMG_2522.jpg
 ---
 
 ![](/assets/images/2016/07/IMG_2522.jpg){: .align-center}
 
-<!-- more -->
-
-[gallery ids="2469,2475,2474,2473,2472,2471,2470"]
+![](/assets/images/2016/07/IMG_2502.jpg){: .align-center}
+![](/assets/images/2016/07/IMG_2512.jpg){: .align-center}
+![](/assets/images/2016/07/IMG_2526.jpg){: .align-center}
+![](/assets/images/2016/07/IMG_2529.jpg){: .align-center}
+![](/assets/images/2016/07/IMG_2554.jpg){: .align-center}
+![](/assets/images/2016/07/IMG_2574.jpg){: .align-center}

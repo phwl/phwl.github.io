@@ -10,6 +10,8 @@ categories:
 - travel
 post_format:
 - Image
+header:
+  teaser: /assets/images/2018/10/soldierset-front.jpg 
 ---
 
 ![](/assets/images/2013/12/f0075200.jpg){: .align-center}

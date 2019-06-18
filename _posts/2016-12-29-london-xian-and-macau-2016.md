@@ -8,6 +8,8 @@ title: London, Xi'an and Macau 2016
 wordpress_id: 2689
 categories:
 - travel
+header:
+  teaser: /assets/images/2016/12/IMG_4087.jpg
 ---
 
 Departed on a beautiful early-summer Sydney morning in late Nov.

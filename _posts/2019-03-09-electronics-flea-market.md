@@ -8,6 +8,8 @@ title: Electronics Flea Market
 wordpress_id: 4573
 categories:
 - electronics
+header:
+  teaser: /assets/images/2019/03/IMG_0335.jpg
 ---
 
 

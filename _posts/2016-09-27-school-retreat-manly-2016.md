@@ -9,6 +9,8 @@ wordpress_id: 2619
 categories:
 - australia
 - photography
+header:
+  teaser: /assets/images/2016/09/queencliffpano.jpg
 ---
 
 Here are some photos from the School of Electrical and Information Engineering retreat in Manly.

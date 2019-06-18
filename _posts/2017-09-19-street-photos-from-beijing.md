@@ -9,11 +9,16 @@ wordpress_id: 3266
 categories:
 - photography
 - travel
+header:
+  teaser: /assets/images/2017/10/DSCF4583.jpg
 ---
 
 ![](/assets/images/2017/10/DSCF4583.jpg)
 
 Some street photos from a visit to Beijing.
-<!-- more -->
 
-[gallery size="medium" link="file" ids="3267,3268,3269,3270,3271"]
+![](/assets/images/2017/10/DSCF4570.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4583.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4591.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4599.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4618.jpg){: .align-center}

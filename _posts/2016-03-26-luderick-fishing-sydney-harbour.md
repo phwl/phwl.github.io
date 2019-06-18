@@ -9,6 +9,8 @@ wordpress_id: 2409
 categories:
 - australia
 - fishing
+header:
+  teaser: /assets/images/2016/03/IMG_6937.jpg
 ---
 
 Luderick (otherwise known as blackfish) are among my favourite targets as they are quite plentiful in Sydney Harbour and the fishing is very visual. The rig involves a green weed or sea lettuce on a size 8 hook below a quill float which is carefully balanced with a few split shot. A 10 ft whippy rod and sidecast reel makes up the tackle needed for this type of fishing. Beard called me up the day before to see if I wanted to go fishing, so we made a plan to meet the next day.

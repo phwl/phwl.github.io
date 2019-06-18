@@ -7,10 +7,9 @@ slug: new-zealand-fly-fishing-2015
 title: New Zealand Fly-Fishing 2015
 wordpress_id: 2295
 categories:
-- FFF
 - fishing
-- Fly-fishing
-- travel
+header:
+  teaser: /assets/images/2015/12/IMG_1615.jpg
 ---
 
 After attending the[ International Conference on Field Programmable Technology](http://fpt.massey.ac.nz/), Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We called this the 1st FPGA Fly-Fishing Symposium (FFF'15). Last time I was there was [Nov 1996](http://phwl.org/new-zealand-trip/), before web browers and digital cameras! I had previously fished with Brent in [Utah](http://phwl.org/fishing-renovating-and-ballroom-dancing-in-utah-2008/).

@@ -8,6 +8,8 @@ title: Pelicans at Mooney Mooney boat ramp, Hawkesbury River
 wordpress_id: 1013
 categories:
 - photography
+header:
+  teaser: /assets/images/2013/05/P5182434-lr.jpg
 ---
 
-![](http://www.phwl.org/wp-content/uploads/2013/05/P5182434-lr.jpg){: .align-center}
+![](/assets/images/2013/05/P5182434-lr.jpg){: .align-center}

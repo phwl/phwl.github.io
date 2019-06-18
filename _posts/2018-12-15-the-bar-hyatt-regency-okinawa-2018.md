@@ -8,6 +8,8 @@ title: The Bar, Hyatt Regency Okinawa 2018
 wordpress_id: 4337
 categories:
 - travel
+header:
+  teaser: /assets/images/2018/12/DSCF5869.jpg
 ---
 
 Following the [FPT conference](http://icfpt.org), we had a great evening at The Bar on the top floor of the Hyatt Regency in Naha, Okinawa.

@@ -8,6 +8,8 @@ title: Chengdu and Hong Kong 2018
 wordpress_id: 3832
 categories:
 - travel
+header:
+  teaser: /assets/images/2018/08/P7190077.jpg
 ---
 
 Took a train trip to Chengdu for Sichuan food prior to the [Performance-Aware Programming with Application Accelerators (PAPAA) 2018 Workshop](http://cscpapaa.eee.hku.hk/) in Hong Kong.

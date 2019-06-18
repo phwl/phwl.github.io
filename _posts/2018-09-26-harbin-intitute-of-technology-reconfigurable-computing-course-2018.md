@@ -10,7 +10,7 @@ categories:
 - FPGA
 ---
 
-Lecture Notes ([0-cel](/assets/images/2018/09/0-cel.pdf), [1-intro-cn](/assets/images/2018/09/1-intro-cn.pdf), [1-lstm](http://phwl.org/wp-content/uploads/2018/09/1-lstm.pdf), [2-architecture](http://phwl.org/wp-content/uploads/2018/09/2-architecture.pdf), [3-exploration](http://phwl.org/wp-content/uploads/2018/09/3-exploration.pdf), [4-parallelism](http://phwl.org/wp-content/uploads/2018/09/4-parallelism.pdf), [5-integration](http://phwl.org/wp-content/uploads/2018/09/5-integration.pdf), [6-customisation](http://phwl.org/wp-content/uploads/2018/09/6-customisation.pdf), [7-precision](http://phwl.org/wp-content/uploads/2018/09/7-precision.pdf), [8-mca](http://phwl.org/wp-content/uploads/2018/09/8-mca.pdf), [9-kernelarch](http://phwl.org/wp-content/uploads/2018/09/9-kernelarch.pdf))
+Lecture Notes ([0-cel](/assets/images/2018/09/0-cel.pdf), [1-intro-cn](/assets/images/2018/09/1-intro-cn.pdf), [1-lstm](/assets/images/2018/09/1-lstm.pdf), [2-architecture](/assets/images/2018/09/2-architecture.pdf), [3-exploration](/assets/images/2018/09/3-exploration.pdf), [4-parallelism](/assets/images/2018/09/4-parallelism.pdf), [5-integration](/assets/images/2018/09/5-integration.pdf), [6-customisation](/assets/images/2018/09/6-customisation.pdf), [7-precision](/assets/images/2018/09/7-precision.pdf), [8-mca](/assets/images/2018/09/8-mca.pdf), [9-kernelarch](/assets/images/2018/09/9-kernelarch.pdf))
 
 
 Tutorial Notes ([lstmtut](https://github.com/phwl/hlslstm/blob/master/lstmtut.pdf))

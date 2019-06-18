@@ -10,6 +10,8 @@ categories:
 - amateur radio
 - hobbies
 - photography
+header:
+  teaser: /assets/images/2018/08/IMG_1946.jpg
 ---
 
 ![](/assets/images/2018/08/IMG_1946.jpg){: .align-center}

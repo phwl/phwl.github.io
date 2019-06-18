@@ -9,6 +9,8 @@ wordpress_id: 955
 categories:
 - australia
 - photography
+header:
+  teaser: /assets/images/2013/04/akunabay.jpg
 ---
 
 Went for a drive this morning to Akuna Bay. Fog was coming off the river and this photograph was taken on the road between Akuna Bay and Church Point.

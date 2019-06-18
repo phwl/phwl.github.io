@@ -10,6 +10,8 @@ categories:
 - australia
 - photography
 - travel
+header:
+  teaser: /assets/images/2012/11/P1120459.jpg
 ---
 
 The University of Sydney's [Molonglo Radio Observatory](http://en.wikipedia.org/wiki/Molonglo_Observatory_Synthesis_Telescope) is located about 3-4 hours south of Sydney. It is being used to prototype some of the technologies in the proposed [Square Kilometer Array](http://en.wikipedia.org/wiki/Square_Kilometre_Array).

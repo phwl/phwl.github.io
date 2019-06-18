@@ -8,19 +8,21 @@ title: Postcard from Harbin
 wordpress_id: 851
 categories:
 - travel
+header:
+  teaser: /assets/images/2013/02/P2241417.jpg
 ---
 
-Had a really cool time in Harbin.![](http://www.phwl.org/wp-content/uploads/2013/02/P2241417.jpg){: .align-center}
+Had a really cool time in Harbin.![](/assets/images/2013/02/P2241417.jpg){: .align-center}
 
 
 
 <!-- more -->
 
-This was the view from my departing flight,![](http://www.phwl.org/wp-content/uploads/2013/02/P2180977.jpg){: .align-center}
+This was the view from my departing flight,![](/assets/images/2013/02/P2180977.jpg){: .align-center}
 
-and this was the view arriving in Harbin. ![](http://www.phwl.org/wp-content/uploads/2013/02/P2221072.jpg){: .align-center}
+and this was the view arriving in Harbin. ![](/assets/images/2013/02/P2221072.jpg){: .align-center}
 
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2221087.jpg){: .align-center}
+![](/assets/images/2013/02/P2221087.jpg){: .align-center}
 
 Needless to say, they are very different cities.
 
@@ -28,32 +30,32 @@ My hosts, Prof Yu Peng and Dr Shaojun Wang kindly arranged for Basin Wang and Ri
 
 We first visited the [Siberia Tiger Park](http://www.dongbeihu.net.cn/) which was amazing, particularly since Siberian Tigers are a seriously endangered species. We took a bus ride through the park, from which we could get really close to the animals.
 
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2240486.jpg){: .align-center}
+![](/assets/images/2013/02/P2240486.jpg){: .align-center}
 
-While most of them were reddish-yellow in color, we saw a couple of white ones.![](http://www.phwl.org/wp-content/uploads/2013/02/P2241126.jpg){: .align-center}
+While most of them were reddish-yellow in color, we saw a couple of white ones.![](/assets/images/2013/02/P2241126.jpg){: .align-center}
 
 After the bus ride, we walked around a caged area.
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2241261.jpg){: .align-center}
+![](/assets/images/2013/02/P2241261.jpg){: .align-center}
 
-This keeper was preparing live chickens for feeding.![](http://www.phwl.org/wp-content/uploads/2013/02/P2241314.jpg){: .align-center}
+This keeper was preparing live chickens for feeding.![](/assets/images/2013/02/P2241314.jpg){: .align-center}
 
 I know that the tigers are thinking, "it's KFC time". I wonder what the chicken is thinking?
 
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2241362n.jpg){: .align-center}
+![](/assets/images/2013/02/P2241362n.jpg){: .align-center}
 
 We had lunch at Longhua Yucun Restaurant.
 
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2241386.jpg){: .align-center}
+![](/assets/images/2013/02/P2241386.jpg){: .align-center}
 
-These were just kept as pets and not on the menu.![](http://www.phwl.org/wp-content/uploads/2013/02/P2241409.jpg){: .align-center}
+These were just kept as pets and not on the menu.![](/assets/images/2013/02/P2241409.jpg){: .align-center}
 
 A really large wok.
 
-![](http://www.phwl.org/wp-content/uploads/2013/02/P2241396.jpg){: .align-center}
+![](/assets/images/2013/02/P2241396.jpg){: .align-center}
 
-This photo is with Haomiao Wang and Rigui Yi. The tables in this restaurant were designed like boats. I am thinking of redecorating our kitchen in the same style. ![](http://www.phwl.org/wp-content/uploads/2013/02/P2241373.jpg){: .align-center}
+This photo is with Haomiao Wang and Rigui Yi. The tables in this restaurant were designed like boats. I am thinking of redecorating our kitchen in the same style. ![](/assets/images/2013/02/P2241373.jpg){: .align-center}
 
-This is the Songhua River. There is a sign which says "No swimming". I strongly doubt you could do that even if you wanted to.![](http://www.phwl.org/wp-content/uploads/2013/02/P2240502.jpg){: .align-center}
+This is the Songhua River. There is a sign which says "No swimming". I strongly doubt you could do that even if you wanted to.![](/assets/images/2013/02/P2240502.jpg){: .align-center}
 
 Next we visited the _Harbin Sun Island_ International Snow Sculpture Art Expo, where there were snow sculptures on display. It is a very lovely park and some of the sculptures were really impressive. The best way to describe it to Sydneysiders is that it is sort of like [Sculpture by the Sea](http://www.sculpturebythesea.com/), except it is really cold and there is no sea even though it is on an island.
 

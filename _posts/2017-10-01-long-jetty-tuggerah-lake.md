@@ -11,10 +11,11 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2017/10/DSCF4677.jpg
 ---
 
 ![](/assets/images/2017/10/DSCF4677.jpg){: .align-center}
-
-<!-- more -->
-
-[gallery size="medium" link="file" ids="3281,3282,3283,3277"]
+![](/assets/images/2017/10/DSCF4659.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4662.jpg){: .align-center}
+![](/assets/images/2017/10/DSCF4674.jpg){: .align-center}

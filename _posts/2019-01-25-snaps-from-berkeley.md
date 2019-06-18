@@ -8,6 +8,8 @@ title: Snaps from Berkeley
 wordpress_id: 4409
 categories:
 - academia
+header:
+  teaser: /assets/images/2019/01/IMG_0034.jpg
 ---
 
 

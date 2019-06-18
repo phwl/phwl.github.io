@@ -9,6 +9,8 @@ wordpress_id: 3624
 categories:
 - amateur radio
 - hobbies
+header:
+  teaser: https://powerwerx.azureedge.net/asset/image/assembly/PPpairOKN.jpg
 ---
 
 Anderson Powerpole connectors are the standard for 12V amateur radio equipment. Instructions are here: [https://powerwerx.com/help/powerpole-assembly-instructions](https://powerwerx.com/help/powerpole-assembly-instructions) and this figure shows the correct orientation.

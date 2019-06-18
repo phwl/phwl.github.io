@@ -11,6 +11,8 @@ categories:
 - amateur radio
 post_format:
 - Gallery
+header:
+  teaser: /assets/images/2018/08/img_1989.jpg
 ---
 
 ![](/assets/images/2018/08/img_1989.jpg){: .align-center}

@@ -10,18 +10,11 @@ categories:
 - academia
 - electronics
 - FPGA
+header:
+  teaser: /assets/images/2019/02/DSCF5968.jpg
 ---
 
-
-
-
 Photos from the [Berkeley Wireless Research Center](https://bwrc.eecs.berkeley.edu/) 20th Year Anniversary.
-
-
-
-
-
-
 
   * ![](/assets/images/2019/02/DSCF5968.jpg){: .align-center}
   * ![](/assets/images/2019/02/DSCF5967.jpg){: .align-center}

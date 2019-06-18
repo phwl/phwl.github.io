@@ -8,6 +8,8 @@ title: Nobel laureates Joachim Frank and Dan Shechtman
 wordpress_id: 3990
 categories:
 - academia
+header:
+  teaser: /assets/images/2018/09/img_2034.jpg
 ---
 
 Q&A session with Nobel laureates Joachim Frank (Columbia) and Dan Shechtman (Technion, Israel), moderated by Julie Carney.

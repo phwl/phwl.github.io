@@ -10,6 +10,8 @@ categories:
 - australia
 - Fly-fishing
 - photography
+header:
+  teaser: /assets/images/2017/01/mungobrush2.jpg
 ---
 
 Photos from Mungo Brush beach.

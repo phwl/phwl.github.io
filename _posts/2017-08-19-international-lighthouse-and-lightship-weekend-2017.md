@@ -10,8 +10,8 @@ categories:
 - australia
 - electronics
 - travel
-post_format:
-- Image
+header:
+  teaser: /assets/images/2017/08/P8190063-1-1.jpg
 ---
 
 At my first [International Lighthouse and Lightship Weekend](https://illw.net/) with the [Manly Warringah Radio Society](http://www.mwrs.org.au/), operating from Barrenjoey Lighthouse. Here is their writeup: [http://www.mwrs.org.au/lighthouse-operations/](http://www.mwrs.org.au/lighthouse-operations/). It was a great experience to stay there for the night.

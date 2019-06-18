@@ -8,6 +8,8 @@ title: London, Shanghai and Hong Kong 2014
 wordpress_id: 1972
 categories:
 - travel
+header:
+  teaser: /assets/images/2014/12/PC140137.jpg
 ---
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2014/12/PC140137.jpg)

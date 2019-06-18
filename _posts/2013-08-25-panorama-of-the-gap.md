@@ -11,6 +11,8 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2013/08/gappano.jpg
 ---
 
 ![](/assets/images/2013/08/gappano.jpg){: .align-center}

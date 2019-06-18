@@ -9,6 +9,8 @@ wordpress_id: 4402
 categories:
 - australia
 - fishing
+header:
+  teaser: /assets/images/2019/01/41418944_Unknown.jpg
 ---
 
 

@@ -8,6 +8,8 @@ title: Quintrex Fishseeker Photos
 wordpress_id: 2210
 categories:
 - fishing
+header:
+  teaser: /assets/images/2015/08/R0015861.jpg
 ---
 
 Didn't realise that we have had this boat since 1993. It has performed faultlessly over this period and the Evinrude 30hp outboard still starts first pull.

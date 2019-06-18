@@ -8,6 +8,8 @@ title: Tokyo Institute of Technology Tsubame 3.0 Visit
 wordpress_id: 4321
 categories:
 - FPGA
+header:
+  teaser: /assets/images/2018/12/IMG_9636.jpg
 ---
 
 Hosted by Prof Hiroki Nakahara and Prof Yuko Hara-Azumi, I gave a talk entitled "Large Scale FPGA Implementations of Machine Learning Algorithms" (slides available at [phwl.org/talks](http://phwl.org/talks)) at the Tokyo Institute of Technology. The highlight was a visit to the Tsubame 3.0 supercomputer. In the photo below, from left to right, myself, Prof Yuko Hara-Azumi (Tokyo Tech), Prof Nachiket Kapre (Waterloo) and Prof Hiroki Nakahara (Tokyo Tech).

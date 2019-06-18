@@ -12,6 +12,8 @@ categories:
 - hobbies
 - places
 - travel
+header:
+  teaser: /assets/images/2018/03/DSCF5131.jpg
 ---
 
 [caption id="attachment_3514" align="alignnone" width="1280"]![](/assets/images/2018/03/DSCF5131.jpg){: .align-center} Tim VK2BT, Dave VK2JDS and Owen VK2OL[/caption]

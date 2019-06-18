@@ -10,6 +10,8 @@ categories:
 - amateur radio
 - hobbies
 - travel
+header:
+  teaser: /assets/images/2018/07/img_1601-1.jpg
 ---
 
 University of Kassel Amateur Radio Club station. Here I am with a sausage, received as honorarium for giving a lecture.

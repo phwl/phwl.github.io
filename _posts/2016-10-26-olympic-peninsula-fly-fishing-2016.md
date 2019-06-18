@@ -12,6 +12,8 @@ categories:
 - Fly-fishing
 - photography
 - travel
+header:
+  teaser: /assets/images/2016/10/IMG_3737.jpg
 ---
 
 I participated in the 2nd FPGA Fly-Fishing (FFF'16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron (not pictured below) and myself. The previous FFF was in New Zealand and is described here [http://phwl.org/new-zealand-fly-fishing-2015/](http://phwl.org/new-zealand-fly-fishing-2015/).

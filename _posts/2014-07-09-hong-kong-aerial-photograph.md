@@ -11,6 +11,8 @@ categories:
 - travel
 post_format:
 - Image
+header:
+  teaser: /assets/images/2014/07/P7030408.jpg
 ---
 
 ![](/assets/images/2014/07/P7030408.jpg){: .align-center}

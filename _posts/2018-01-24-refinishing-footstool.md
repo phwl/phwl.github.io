@@ -9,6 +9,8 @@ wordpress_id: 3483
 categories:
 - hobbies
 - woodwork
+header:
+  teaser: /assets/images/2018/01/IMG_0612.jpg
 ---
 
 Refinishing a footstool I made about 5 years ago in Tasmanian Oak. It was my take on this elegant design published in Fine Woodworking [http://www.finewoodworking.com/2002/02/01/a-sturdy-footstool](http://www.finewoodworking.com/2002/02/01/a-sturdy-footstool).

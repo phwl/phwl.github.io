@@ -11,6 +11,8 @@ categories:
 - photography
 post_format:
 - Image
+header:
+  teaser: /assets/images/2014/08/bondibeach.jpg
 ---
 
 ![](/assets/images/2014/08/bondibeach.jpg){: .align-center}

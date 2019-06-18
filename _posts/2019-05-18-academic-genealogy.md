@@ -6,16 +6,14 @@ date: 2019-05-18 04:09:59+00:00
 slug: academic-genealogy
 title: Academic Genealogy
 wordpress_id: 4783
+header:
+  teaser: /assets/images/2019/05/6700082371262977270_IMG_0887.jpg
 ---
 
 
 
 
 I visited my PhD supervisor, [Dr Marwan Anwar Jabri](http://marwanjabri.com) last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.
-
-
-
-
 
 ![](/assets/images/2019/05/6700082371262977270_IMG_0887.jpg)Myself and Dr Marwan Jabri
 

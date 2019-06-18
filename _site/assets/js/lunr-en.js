@@ -588,7 +588,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Cradle Mountain Tasmania",
-      excerpt: "A gallery of photographs taken around Cradle Mountain, Tasmania.\n\n[gallery ids=”2095,2094,2092,2091,2090,2089,2088,2087,2086,2085,2084,2083”]\n",
+      excerpt: "A gallery of photographs taken around Cradle Mountain, Tasmania.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
       categories: ["australia","photography","travel"],
       tags: [],
       id: 64
@@ -652,7 +652,7 @@ var idx = lunr(function () {
     idx.add({
       title: "New Zealand Fly-Fishing 2015",
       excerpt: "After attending the International Conference on Field Programmable Technology, Brent, Ken and myself took a 5-day fly-fishing trip around the...",
-      categories: ["FFF","fishing","Fly-fishing","travel"],
+      categories: ["fishing"],
       tags: [],
       id: 71
     });
@@ -687,7 +687,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Federal Election 2016",
-      excerpt: "\n\n\n\n[gallery ids=”2469,2475,2474,2473,2472,2471,2470”]\n",
+      excerpt: "\n\n\n\n\n\n\n\n",
       categories: ["photography"],
       tags: [],
       id: 75
@@ -822,7 +822,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Balls Head Panorama",
-      excerpt: "[caption id=”attachment_3027” align=”alignnone” width=”4467”] Sydney Skyline from Balls Head[/caption]\n",
+      excerpt: " \nSydney Skyline from Balls Head\n",
       categories: ["australia","photography"],
       tags: [],
       id: 90
@@ -831,7 +831,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "The Dish, Parkes NSW",
-      excerpt: "[caption id=”attachment_3032” align=”alignnone” width=”1280”] The Dish[/caption]\n",
+      excerpt: " \nThe Dish\n",
       categories: ["australia","electronics","photography"],
       tags: [],
       id: 91
@@ -885,7 +885,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Street Photos from Beijing",
-      excerpt: "\n\nSome street photos from a visit to Beijing.\n\n\n[gallery size=”medium” link=”file” ids=”3267,3268,3269,3270,3271”]\n",
+      excerpt: "\n\nSome street photos from a visit to Beijing.\n\n\n\n\n\n\n",
       categories: ["photography","travel"],
       tags: [],
       id: 97
@@ -894,7 +894,7 @@ var idx = lunr(function () {
   
     idx.add({
       title: "Long Jetty, Tuggerah Lake",
-      excerpt: "\n\n\n\n[gallery size=”medium” link=”file” ids=”3281,3282,3283,3277”]\n",
+      excerpt: "\n\n\n\n",
       categories: ["australia","photography"],
       tags: [],
       id: 98
@@ -1381,7 +1381,7 @@ var store = [
       
       {
         "title": "Welcome to Minimal Mistakes Jekyll",
-        "url": "/update/welcome-to-minimal-mistakes-jekyll/",
+        "url": "/welcome-to-minimal-mistakes-jekyll/",
         "excerpt": "Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of...",
         "teaser":
           
@@ -1392,7 +1392,7 @@ var store = [
       
       {
         "title": "Barramundi on Fly",
-        "url": "/fishing/barramundi-on-fly/",
+        "url": "/barramundi-on-fly/",
         "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River The Northern Territories (NT) of Australia is best known by...",
         "teaser":
           
@@ -1403,7 +1403,7 @@ var store = [
       
       {
         "title": "Marlin on Fly",
-        "url": "/fishing/marlin-on-fly/",
+        "url": "/marlin-on-fly/",
         "excerpt": "Black marlin on fly, Cape Bowling Green, Queensland, Mary River An edited version of this article appeared in (Australian) “Modern...",
         "teaser":
           
@@ -1414,7 +1414,7 @@ var store = [
       
       {
         "title": "New Zealand Trip",
-        "url": "/fishing/new-zealand-trip/",
+        "url": "/new-zealand-trip/",
         "excerpt": "Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the...",
         "teaser":
           
@@ -1425,7 +1425,7 @@ var store = [
       
       {
         "title": "Cessna first solo",
-        "url": "/hobbies/cessna-first-solo/",
+        "url": "/cessna-first-solo/",
         "excerpt": "Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.\n\n\n",
         "teaser":
           
@@ -1436,7 +1436,7 @@ var store = [
       
       {
         "title": "Stanwell Park",
-        "url": "/australia/stanwell-park/",
+        "url": "/stanwell-park/",
         "excerpt": "This photo of Stanwell Park was taken back in 1999.\n",
         "teaser":
           
@@ -1447,7 +1447,7 @@ var store = [
       
       {
         "title": "Telluride 2000",
-        "url": "/photography/travel/telluride-2000/",
+        "url": "/telluride-2000/",
         "excerpt": "Town of Telluride taken from the Jud Wiebe Trail Bear Creek Waterfall Trail to Bear Creek Silver Lake Approach to...",
         "teaser":
           
@@ -1458,7 +1458,7 @@ var store = [
       
       {
         "title": "Testament of a Fisherman",
-        "url": "/fishing/testament-of-a-fisherman/",
+        "url": "/testament-of-a-fisherman/",
         "excerpt": "I fish because I love to; because I love the environs where trout are found, which are invariably beautiful and...",
         "teaser":
           
@@ -1469,7 +1469,7 @@ var store = [
       
       {
         "title": "A Ballard of Ducks",
-        "url": "/fishing/a-ballard-of-ducks/",
+        "url": "/a-ballard-of-ducks/",
         "excerpt": "The railway rattled and roared and swung With jolting carriage and bumping trucks. The sun, like a billiard red ball,...",
         "teaser":
           
@@ -1480,7 +1480,7 @@ var store = [
       
       {
         "title": "Fishing Photos",
-        "url": "/fishing/fishing-photos/",
+        "url": "/fishing-photos/",
         "excerpt": "Here are some of my favourite fishing photos from the age before digital cameras. Chris See with a drummer Beard...",
         "teaser":
           
@@ -1491,7 +1491,7 @@ var store = [
       
       {
         "title": "London Lakes",
-        "url": "/australia/fishing/london-lakes/",
+        "url": "/london-lakes/",
         "excerpt": "Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
@@ -1502,7 +1502,7 @@ var store = [
       
       {
         "title": "Weipa",
-        "url": "/australia/fishing/weipa-may-2004/",
+        "url": "/weipa-may-2004/",
         "excerpt": "Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
@@ -1513,7 +1513,7 @@ var store = [
       
       {
         "title": "Meon Springs",
-        "url": "/fishing/meon-springs/",
+        "url": "/meon-springs/",
         "excerpt": "Fished Meon Springs yesterday. It was my first fishing trip in the UK and my first experience fishing a managed,...",
         "teaser":
           
@@ -1524,7 +1524,7 @@ var store = [
       
       {
         "title": "Walthamstow Reservoir",
-        "url": "/fishing/walthamstow-reservoir/",
+        "url": "/walthamstow-reservoir/",
         "excerpt": "From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a...",
         "teaser":
           
@@ -1535,7 +1535,7 @@ var store = [
       
       {
         "title": "Victorinox Swiss Army Knife Soldier Set",
-        "url": "/outdoors/victorinox-swiss-army-knife-soldier-set/",
+        "url": "/victorinox-swiss-army-knife-soldier-set/",
         "excerpt": "The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from...",
         "teaser":
           
@@ -1546,7 +1546,7 @@ var store = [
       
       {
         "title": "A trip to Finland",
-        "url": "/travel/fishing/a-trip-to-finland/",
+        "url": "/a-trip-to-finland/",
         "excerpt": "My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my...",
         "teaser":
           
@@ -1557,18 +1557,18 @@ var store = [
       
       {
         "title": "Forster 2007",
-        "url": "/australia/fishing/forster/",
+        "url": "/forster/",
         "excerpt": "Forster is about a four hour drive from Sydney. Went on a very brief overnight camping/fishing trip with my good...",
         "teaser":
           
-            null
+            "/assets/images/2007/08/p1010269.jpg"
           
       },
     
       
       {
         "title": "Fishing, Renovating and Ballroom Dancing in Utah 2008",
-        "url": "/fishing/travel/fishing-renovating-and-ballroom-dancing-in-utah-2008/",
+        "url": "/fishing-renovating-and-ballroom-dancing-in-utah-2008/",
         "excerpt": "Introduction Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout...",
         "teaser":
           
@@ -1579,7 +1579,7 @@ var store = [
       
       {
         "title": "Forster 2008",
-        "url": "/fishing/booti-booti-national-park-aug-2008/",
+        "url": "/booti-booti-national-park-aug-2008/",
         "excerpt": "Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable...",
         "teaser":
           
@@ -1590,7 +1590,7 @@ var store = [
       
       {
         "title": "Snowboard Fever",
-        "url": "/photography/snowboard-fever/",
+        "url": "/snowboard-fever/",
         "excerpt": "Photo from Beijing ski trip.\n\n\n",
         "teaser":
           
@@ -1601,7 +1601,7 @@ var store = [
       
       {
         "title": "Beijing and Harbin",
-        "url": "/travel/beijing-and-harbin/",
+        "url": "/beijing-and-harbin/",
         "excerpt": "Here are some photos taken from a trip to Beijing and Harbin in 2009.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
@@ -1612,7 +1612,7 @@ var store = [
       
       {
         "title": "Life, the Universe and Fishing",
-        "url": "/academia/fishing/fly-fishing/life-the-universe-and-fishing/",
+        "url": "/life-the-universe-and-fishing/",
         "excerpt": "I was asked by Prof Evangeline Young to give a “Lunchtime Pizza talk” on the 15th May. Here is the...",
         "teaser":
           
@@ -1623,18 +1623,18 @@ var store = [
       
       {
         "title": "Hong Kong Skyline",
-        "url": "/photography/kowloon-and-hong-kong-from-the-air/",
+        "url": "/kowloon-and-hong-kong-from-the-air/",
         "excerpt": "Here are some photographs of Hong Kong. Kowloon and Hong Kong from the Lung Cheung Rd lookout at dawn. Festival...",
         "teaser":
           
-            null
+            "/assets/images/2009/08/3777477460_3c36654fb6_o.jpg"
           
       },
     
       
       {
         "title": "Street photos from Hong Kong",
-        "url": "/photography/street-photos-from-hong-kong/",
+        "url": "/street-photos-from-hong-kong/",
         "excerpt": "Here are some street photos from Hong Kong.\n\n\n\n",
         "teaser":
           
@@ -1645,7 +1645,7 @@ var store = [
       
       {
         "title": "The Chinese University of Hong Kong",
-        "url": "/photography/the-chinese-university-of-hong-kong/",
+        "url": "/the-chinese-university-of-hong-kong/",
         "excerpt": "The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
@@ -1656,7 +1656,7 @@ var store = [
       
       {
         "title": "A Gift From my Students",
-        "url": "/academia/a-gift-from-my-students/",
+        "url": "/a-gift-from-my-students/",
         "excerpt": "I was honoured to have received this pen from my ex-students at CUHK.\n\n\n",
         "teaser":
           
@@ -1667,7 +1667,7 @@ var store = [
       
       {
         "title": "Blue Mountains",
-        "url": "/australia/travel/blue-mountains/",
+        "url": "/blue-mountains/",
         "excerpt": "The 1 million hectare Blue Mountains is a World Heritage listed National Park in NSW Australia. Its name comes from...",
         "teaser":
           
@@ -1678,7 +1678,7 @@ var store = [
       
       {
         "title": "Postcard from Ottawa",
-        "url": "/travel/postcard-from-ottawa/",
+        "url": "/postcard-from-ottawa/",
         "excerpt": "In return for my sins I was sent to Ottawa for the week. Ottawa is the capital of Canada and...",
         "teaser":
           
@@ -1689,7 +1689,7 @@ var store = [
       
       {
         "title": "Sydney skyline at dusk",
-        "url": "/australia/photography/sydney-skyline-at-dusk/",
+        "url": "/sydney-skyline-at-dusk/",
         "excerpt": "This photo of Sydney was taken from Kirribilli, not too far from the Harbour Bridge.\n\n\n",
         "teaser":
           
@@ -1700,7 +1700,7 @@ var store = [
       
       {
         "title": "Whale Beach",
-        "url": "/australia/photography/whale-beach/",
+        "url": "/whale-beach/",
         "excerpt": "\n",
         "teaser":
           
@@ -1711,7 +1711,7 @@ var store = [
       
       {
         "title": "Elaine's (off) Road Trip",
-        "url": "/australia/travel/elaines-off-road-trip/",
+        "url": "/elaines-off-road-trip/",
         "excerpt": "Check out Elaine’s amazing motorcycle trip around Australia here\n\n\n",
         "teaser":
           
@@ -1722,7 +1722,7 @@ var store = [
       
       {
         "title": "Postcard from Ottawa 2011",
-        "url": "/travel/postcard-from-ottawa-2011/",
+        "url": "/postcard-from-ottawa-2011/",
         "excerpt": "\n",
         "teaser":
           
@@ -1733,7 +1733,7 @@ var store = [
       
       {
         "title": "Postcard from Monterey 2011",
-        "url": "/travel/postcard-from-monterey-2011/",
+        "url": "/postcard-from-monterey-2011/",
         "excerpt": "\n",
         "teaser":
           
@@ -1744,7 +1744,7 @@ var store = [
       
       {
         "title": "Postcard from London 2011",
-        "url": "/travel/postcard-from-london-2011/",
+        "url": "/postcard-from-london-2011/",
         "excerpt": "I only have this as a pdf file but this link contains the story of my 2011 trip to London: london-2011.\n",
         "teaser":
           
@@ -1755,7 +1755,7 @@ var store = [
       
       {
         "title": "Delhi 2011",
-        "url": "/travel/delhi/",
+        "url": "/delhi/",
         "excerpt": "\n",
         "teaser":
           
@@ -1766,7 +1766,7 @@ var store = [
       
       {
         "title": "Hawkesbury River 2011",
-        "url": "/australia/fishing/hawkesbury%20river/hawkesbury-river-2011/",
+        "url": "/hawkesbury-river-2011/",
         "excerpt": "Went with Warren to the Hawkesbury River for 3 days of fishing and camping. Our boat is now 20 years...",
         "teaser":
           
@@ -1777,7 +1777,7 @@ var store = [
       
       {
         "title": "Guide to more than 100 Sydney Beaches",
-        "url": "/australia/guide-to-more-than-100-sydney-beaches/",
+        "url": "/guide-to-more-than-100-sydney-beaches/",
         "excerpt": "Graham Link was interviewed this morning on 702 ABC about his website on Sydney beaches. It is very informative and...",
         "teaser":
           
@@ -1788,29 +1788,29 @@ var store = [
       
       {
         "title": "Postcard from Shanghai",
-        "url": "/photography/travel/postcard-from-shanghai/",
+        "url": "/postcard-from-shanghai/",
         "excerpt": "Spent a fortnight over Easter in Shanghai, as a visitor at Fudan University Played ping pong with students. Had a...",
         "teaser":
           
-            null
+            "/assets/images/2012/04/P1110707.jpg"
           
       },
     
       
       {
         "title": "Molonglo Radio Observatory",
-        "url": "/australia/photography/travel/molonglo-radio-observatory/",
+        "url": "/molonglo-radio-observatory/",
         "excerpt": "The University of Sydney’s Molonglo Radio Observatory is located about 3-4 hours south of Sydney. It is being used to...",
         "teaser":
           
-            null
+            "/assets/images/2012/11/P1120459.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury River 2012",
-        "url": "/fishing/hawkesbury-river-2012-2/",
+        "url": "/hawkesbury-river-2012-2/",
         "excerpt": "In what has turned out to become an annual event (click on this link for the 2011 version), went on a 4...",
         "teaser":
           
@@ -1821,194 +1821,194 @@ var store = [
       
       {
         "title": "Lake Eucumbene 2013",
-        "url": "/australia/fishing/fly-fishing/lake-eucumbene-2013/",
+        "url": "/lake-eucumbene-2013/",
         "excerpt": "Lake Eucumbene is an alpine lake about 500km south west of Sydney. My fishing mate, Beard (nickname which refered to...",
         "teaser":
           
-            null
+            "/assets/images/2013/01/P1130242.jpg"
           
       },
     
       
       {
         "title": "Luderick Sydney Harbour",
-        "url": "/australia/fishing/luderick-sydney-harbour/",
+        "url": "/luderick-sydney-harbour/",
         "excerpt": "Went for a fish in Sydney Harbour with my neighbour Michael. Had a great time catching luderick (otherwise known as blackfish)....",
         "teaser":
           
-            null
+            "/assets/images/2015/12/P1130251.jpg"
           
       },
     
       
       {
         "title": "Postcard from Harbin",
-        "url": "/travel/postcard-from-harbin/",
+        "url": "/postcard-from-harbin/",
         "excerpt": "Had a really cool time in Harbin. This was the view from my departing flight, and this was the view...",
         "teaser":
           
-            null
+            "/assets/images/2013/02/P2241417.jpg"
           
       },
     
       
       {
         "title": "Panorama at Akuna Bay",
-        "url": "/australia/photography/panorama-at-akuna-bay/",
+        "url": "/panorama-at-akuna-bay/",
         "excerpt": "Went for a drive this morning to Akuna Bay. Fog was coming off the river and this photograph was taken...",
         "teaser":
           
-            null
+            "/assets/images/2013/04/akunabay.jpg"
           
       },
     
       
       {
         "title": "Shanghai April 2013",
-        "url": "/travel/shanghai-april-2013/",
+        "url": "/shanghai-april-2013/",
         "excerpt": "I had an excellent trip to Shanghai last year and wrote about it in  http://www.phwl.org/postcard-from-shanghai/. I was fortunate enough to be invited...",
         "teaser":
           
-            null
+            "/assets/images/2013/04/P4242220.jpg"
           
       },
     
       
       {
         "title": "Pelicans at Mooney Mooney boat ramp, Hawkesbury River",
-        "url": "/photography/mooney-mooney-boat-ramp/",
+        "url": "/mooney-mooney-boat-ramp/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2013/05/P5182434-lr.jpg"
           
       },
     
       
       {
         "title": "High Altitude Balloon Launch #1",
-        "url": "/australia/photography/high-altitude-balloon-launch-1/",
+        "url": "/high-altitude-balloon-launch-1/",
         "excerpt": "Our Sydney University Electrical Engineering students, Stephen Tridgell and David Portelli successfully made a high-altitude balloon launch from Blayney, NSW....",
         "teaser":
           
-            null
+            "/assets/images/2013/05/GOPR5590.jpg"
           
       },
     
       
       {
         "title": "The Gap, Watsons Bay, Sydney",
-        "url": "/australia/photography/the-gap-watsons-bay-sydney/",
+        "url": "/the-gap-watsons-bay-sydney/",
         "excerpt": "Some photos from The Gap, Watsons Bay, Sydney this morning at sunrise.\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2013/06/thegap-medpano2.jpg"
           
       },
     
       
       {
         "title": "Kangaroo Tagging at Nelson Bay",
-        "url": "/academia/australia/kangaroo-tagging-at-nelson-bay/",
+        "url": "/kangaroo-tagging-at-nelson-bay/",
         "excerpt": "I had the opportunity to visit the Nelson Bay Golf Course and observe the tagging programme of semi-wild Eastern Grey...",
         "teaser":
           
-            null
+            "/assets/images/2013/07/P7090917.jpg"
           
       },
     
       
       {
         "title": "Cowan Creek",
-        "url": "/australia/fishing/cowan-creek/",
+        "url": "/cowan-creek/",
         "excerpt": "Photos from a short trip to Cowan Creek on a foggy morning. More after the jump. First time I’ve seen...",
         "teaser":
           
-            null
+            "/assets/images/2013/07/P7282832.jpg"
           
       },
     
       
       {
         "title": "Panorama of Sydney Opera House and the Harbour Bridge",
-        "url": "/photography/panorama-of-sydney-opera-house-and-the-harbour-bridge/",
+        "url": "/panorama-of-sydney-opera-house-and-the-harbour-bridge/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2013/08/hbridge-pano05082013.jpg"
           
       },
     
       
       {
         "title": "Postcard from Harbin Summer 2013",
-        "url": "/photography/travel/postcard-from-harbin-summer-2013/",
+        "url": "/postcard-from-harbin-summer-2013/",
         "excerpt": "After a superb trip to Harbin in winter, I returned in summer to attend the ICEMI conference, kindly hosted again...",
         "teaser":
           
-            null
+            "/assets/images/2013/08/P8183366.jpg"
           
       },
     
       
       {
         "title": "Sydney Skyline from The Gap",
-        "url": "/australia/photography/panorama-of-the-gap/",
+        "url": "/panorama-of-the-gap/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2013/08/gappano.jpg"
           
       },
     
       
       {
         "title": "Sydney University Open Day (from a weather balloon)",
-        "url": "/australia/photography/sydney-university-open-day-from-a-weather-balloon/",
+        "url": "/sydney-university-open-day-from-a-weather-balloon/",
         "excerpt": "A photograph of the Sydney University Open Day from a weather balloon above the tower of the main quadrangle. This...",
         "teaser":
           
-            null
+            "/assets/images/2013/08/GOPR7514.jpg"
           
       },
     
       
       {
         "title": "Panorama of Sydney Harbour",
-        "url": "/australia/photography/panorama-of-sydney-harbour/",
+        "url": "/panorama-of-sydney-harbour/",
         "excerpt": "\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2013/09/hbridge-pano24092013-lores.jpg"
           
       },
     
       
       {
         "title": "Postcard from Kyoto and Osaka",
-        "url": "/travel/postcard-from-kyoto-and-osaka/",
+        "url": "/postcard-from-kyoto-and-osaka/",
         "excerpt": "Following the International Conference on Field Programmable Technology we spent some time in Kyoto and Osaka. Clear Water Temple is a...",
         "teaser":
           
-            null
+            "/assets/images/2013/12/PC123629.jpg"
           
       },
     
       
       {
         "title": "Girl in Hong Kong MTR",
-        "url": "/travel/girl-in-hong-kong-mtr/",
+        "url": "/girl-in-hong-kong-mtr/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2018/10/soldierset-front.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury River 2013",
-        "url": "/australia/fishing/hawkesbury-river-2013/",
+        "url": "/hawkesbury-river-2013/",
         "excerpt": "Our trips to the Hawkesbury River have become an annual event (2012, 2011). As usual, the boat ramp was at...",
         "teaser":
           
@@ -2019,62 +2019,62 @@ var store = [
       
       {
         "title": "Fishing with friends",
-        "url": "/fishing/fishing-with-friends/",
+        "url": "/fishing-with-friends/",
         "excerpt": "Our boat was purchased around 1991 and has served us well. It is jointly owned with my close university friends,...",
         "teaser":
           
-            null
+            "/assets/images/2014/04/P4241279.jpg"
           
       },
     
       
       {
         "title": "Circular Quay",
-        "url": "/australia/photography/circular-quay/",
+        "url": "/circular-quay/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2014/06/P6040022.jpg"
           
       },
     
       
       {
         "title": "Hong Kong Aerial Photograph",
-        "url": "/photography/travel/hong-kong-aerial-photograph/",
+        "url": "/hong-kong-aerial-photograph/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2014/07/P7030408.jpg"
           
       },
     
       
       {
         "title": "Bondi Beach",
-        "url": "/australia/photography/bondi-beach/",
+        "url": "/bondi-beach/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2014/08/bondibeach.jpg"
           
       },
     
       
       {
         "title": "London, Shanghai and Hong Kong 2014",
-        "url": "/travel/london-shanghai-and-hong-kong-2014/",
+        "url": "/london-shanghai-and-hong-kong-2014/",
         "excerpt": "Left Sydney in the last week of November 2014 for London. Australia’s contribution to fashion is the Ugg boot. Strangely,...",
         "teaser":
           
-            null
+            "/assets/images/2014/12/PC140137.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury River 2014",
-        "url": "/australia/fishing/hawkesbury%20river/hawkesbury-river-2014/",
+        "url": "/hawkesbury-river-2014/",
         "excerpt": "Much like previous years, went to do some fishing in the Hawkesbury River over the Christmas break. This time, Beard...",
         "teaser":
           
@@ -2085,18 +2085,18 @@ var store = [
       
       {
         "title": "Cradle Mountain Tasmania",
-        "url": "/australia/photography/travel/cradle-mountain-tasmania/",
-        "excerpt": "A gallery of photographs taken around Cradle Mountain, Tasmania.\n\n[gallery ids=”2095,2094,2092,2091,2090,2089,2088,2087,2086,2085,2084,2083”]\n",
+        "url": "/cradle-mountain-tasmania/",
+        "excerpt": "A gallery of photographs taken around Cradle Mountain, Tasmania.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2015/02/cradlemtn-pano2.jpg"
           
       },
     
       
       {
         "title": "Tasmanian Holiday 2015",
-        "url": "/australia/photography/travel/tasmanian-holiday-2015/",
+        "url": "/tasmanian-holiday-2015/",
         "excerpt": "Waited for ages for my beloved wife’s bag then got that sinking feeling when the carousel stops turning. Everyone had...",
         "teaser":
           
@@ -2107,73 +2107,73 @@ var store = [
       
       {
         "title": "Fishhook removal",
-        "url": "/fishing/fishhook-removal/",
+        "url": "/fishhook-removal/",
         "excerpt": "In all my years of fishing, we were fortunate not to have had a bad injury. There was the time...",
         "teaser":
           
-            null
+            "http://www.aafp.org/afp/2001/0601/afp20010601p2231-f3.gif"
           
       },
     
       
       {
         "title": "Harbin and Qingdao 2015",
-        "url": "/travel/harbin-and-qingdao-2015/",
+        "url": "/harbin-and-qingdao-2015/",
         "excerpt": "Went to teach a summer course in reconfigurable computing again at Harbin Institute of Technology (HIT) and to also participate...",
         "teaser":
           
-            null
+            "/assets/images/2015/07/P7170185.jpg"
           
       },
     
       
       {
         "title": "Quintrex Fishseeker Photos",
-        "url": "/fishing/boat-photos/",
+        "url": "/boat-photos/",
         "excerpt": "Didn’t realise that we have had this boat since 1993. It has performed faultlessly over this period and the Evinrude...",
         "teaser":
           
-            null
+            "/assets/images/2015/08/R0015861.jpg"
           
       },
     
       
       {
         "title": "Stacer Outlaw 429",
-        "url": "/fishing/stacer-outlaw-429/",
+        "url": "/stacer-outlaw-429/",
         "excerpt": "Traded in the Quintrex for a new Stacer Outlaw 429 with Evinrude 50 hp at Huett Marine.  I highly recommend them...",
         "teaser":
           
-            null
+            "/assets/images/2015/10/IMG_5965.jpg"
           
       },
     
       
       {
         "title": "Sydney looking west",
-        "url": "/australia/photography/sydney-looking-west/",
+        "url": "/sydney-looking-west/",
         "excerpt": "A westward looking photograph of Sydney with the Eastern Suburbs in the foreground, Sydney CBD and Harbour in the middle,...",
         "teaser":
           
-            null
+            "/assets/images/2015/12/sydlookingwest.jpg"
           
       },
     
       
       {
         "title": "New Zealand Fly-Fishing 2015",
-        "url": "/fff/fishing/fly-fishing/travel/new-zealand-fly-fishing-2015/",
+        "url": "/new-zealand-fly-fishing-2015/",
         "excerpt": "After attending the International Conference on Field Programmable Technology, Brent, Ken and myself took a 5-day fly-fishing trip around the...",
         "teaser":
           
-            null
+            "/assets/images/2015/12/IMG_1615.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury River 2015",
-        "url": "/australia/fishing/hawkesbury%20river/hawkesbury-river-2015/",
+        "url": "/hawkesbury-river-2015/",
         "excerpt": "A camping trip with Warren to the Hawkesbury has become an annual event (e.g. in 2014). Unfortunately, we couldn’t do...",
         "teaser":
           
@@ -2184,51 +2184,51 @@ var store = [
       
       {
         "title": "Luderick Fishing Sydney Harbour",
-        "url": "/australia/fishing/luderick-fishing-sydney-harbour/",
+        "url": "/luderick-fishing-sydney-harbour/",
         "excerpt": "Luderick (otherwise known as blackfish) are among my favourite targets as they are quite plentiful in Sydney Harbour and the fishing...",
         "teaser":
           
-            null
+            "/assets/images/2016/03/IMG_6937.jpg"
           
       },
     
       
       {
         "title": "Danny Lim",
-        "url": "/australia/photography/danny-lim/",
+        "url": "/danny-lim/",
         "excerpt": "Took this photo of Danny Lim, Activist, outside Redfern station. A nice guy and quite a character! He made sure...",
         "teaser":
           
-            null
+            "/assets/images/2016/05/IMG_7215-e1463299735771.jpg"
           
       },
     
       
       {
         "title": "Federal Election 2016",
-        "url": "/photography/federal-election-2016/",
-        "excerpt": "\n\n\n\n[gallery ids=”2469,2475,2474,2473,2472,2471,2470”]\n",
+        "url": "/federal-election-2016/",
+        "excerpt": "\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2016/07/IMG_2522.jpg"
           
       },
     
       
       {
         "title": "Osaka trip 2016",
-        "url": "/photography/travel/osaka-trip-2016/",
+        "url": "/osaka-trip-2016/",
         "excerpt": "Spent a week in Osaka, the last time we were there was 2013. Shuttle ride to Sydney airport. Had a day to check out...",
         "teaser":
           
-            null
+            "/assets/images/2016/07/IMG_2849.jpg"
           
       },
     
       
       {
         "title": "PAPAA 2016",
-        "url": "/photography/travel/papaa-2016/",
+        "url": "/papaa-2016/",
         "excerpt": "We had a very successful Croucher PAPAA workshop at Hong Kong University. The new elevator from HKU MTR station up to Hong...",
         "teaser":
           
@@ -2239,40 +2239,40 @@ var store = [
       
       {
         "title": "School Retreat (Manly 2016)",
-        "url": "/australia/photography/school-retreat-manly-2016/",
+        "url": "/school-retreat-manly-2016/",
         "excerpt": "Here are some photos from the School of Electrical and Information Engineering retreat in Manly. [caption id=”attachment_2637” align=”alignnone” width=”8196”] Panorama from...",
         "teaser":
           
-            null
+            "/assets/images/2016/09/queencliffpano.jpg"
           
       },
     
       
       {
         "title": "Olympic Peninsula Fly-Fishing 2016",
-        "url": "/fff/fishing/fly-fishing/photography/travel/olympic-peninsula-fly-fishing-2016/",
+        "url": "/olympic-peninsula-fly-fishing-2016/",
         "excerpt": "I participated in the 2nd FPGA Fly-Fishing (FFF’16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron...",
         "teaser":
           
-            null
+            "/assets/images/2016/10/IMG_3737.jpg"
           
       },
     
       
       {
         "title": "London, Xi'an and Macau 2016",
-        "url": "/travel/london-xian-and-macau-2016/",
+        "url": "/london-xian-and-macau-2016/",
         "excerpt": "Departed on a beautiful early-summer Sydney morning in late Nov. Was in London about a day later. This photo has...",
         "teaser":
           
-            null
+            "/assets/images/2016/12/IMG_4087.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury 2016",
-        "url": "/australia/fishing/hawkesbury%20river/hawkesbury-2016/",
+        "url": "/hawkesbury-2016/",
         "excerpt": "Photos from another great trip to the Hawkesbury River. [caption id=”attachment_2760” align=”alignnone” width=”1280”] One of two resident monitor lizards[/caption] [caption...",
         "teaser":
           
@@ -2283,29 +2283,29 @@ var store = [
       
       {
         "title": "Tailor at the Spit Bridge 2017",
-        "url": "/fishing/tailor-at-the-spit-bridge-2017/",
+        "url": "/tailor-at-the-spit-bridge-2017/",
         "excerpt": "First fish of 2017 is a tailor (and it was a fluke).\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2017/01/spittailor17.jpg"
           
       },
     
       
       {
         "title": "Mungo Brush Beach",
-        "url": "/australia/fly-fishing/photography/mungo-brush-beach/",
+        "url": "/mungo-brush-beach/",
         "excerpt": "Photos from Mungo Brush beach. [caption id=”attachment_2797” align=”alignnone” width=”1280”] Exif_JPEG_PICTURE[/caption] A school of tailor appeared on the surface briefly before...",
         "teaser":
           
-            null
+            "/assets/images/2017/01/mungobrush2.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury River again Australia Day 2017",
-        "url": "/australia/fishing/hawkesbury%20river/photography/hawkesbury-river-again-australia-day-2017/",
+        "url": "/hawkesbury-river-again-australia-day-2017/",
         "excerpt": "Went on a 2 night, 3 day trip to Mooney Mooney. Pretty much the same thing as previous trips except...",
         "teaser":
           
@@ -2316,51 +2316,51 @@ var store = [
       
       {
         "title": "Trinity River 2017",
-        "url": "/fff/fishing/fly-fishing/travel/trinity-river-2017/",
+        "url": "/trinity-river-2017/",
         "excerpt": "The 3rd annual FPGA Fly Fishing Workshop (FFF’17) was down on attendance, only Ken and myself participating from the 19-20th...",
         "teaser":
           
-            null
+            "/assets/images/2017/02/image1-e1487888764948.jpg"
           
       },
     
       
       {
         "title": "South West Rocks (Michael Zhu)",
-        "url": "/australia/fishing/fly-fishing/south-west-rocks-michael-zhu/",
+        "url": "/south-west-rocks-michael-zhu/",
         "excerpt": "An awesome fishing report that Michael Zhu sent to me via Facebook Messenger. Dear Phil, our group of four people boarded Brain’s...",
         "teaser":
           
-            null
+            "/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"
           
       },
     
       
       {
         "title": "View from Office",
-        "url": "/australia/photography/view-from-office/",
+        "url": "/view-from-office/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2017/04/IMG_9416.jpg"
           
       },
     
       
       {
         "title": "Postcard from Shanghai 2017",
-        "url": "/photography/travel/postcard-from-shanghai-2017/",
+        "url": "/postcard-from-shanghai-2017/",
         "excerpt": "Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to...",
         "teaser":
           
-            null
+            "/assets/images/2017/04/IMG_9415.jpg"
           
       },
     
       
       {
         "title": "Fujifilm X Links",
-        "url": "/photography/fujifilm-x-links/",
+        "url": "/fujifilm-x-links/",
         "excerpt": "Wandering around Sim City in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first...",
         "teaser":
           
@@ -2371,40 +2371,40 @@ var store = [
       
       {
         "title": "Balls Head Panorama",
-        "url": "/australia/photography/balls-head-panorama/",
-        "excerpt": "[caption id=”attachment_3027” align=”alignnone” width=”4467”] Sydney Skyline from Balls Head[/caption]\n",
+        "url": "/balls-head-panorama/",
+        "excerpt": " \nSydney Skyline from Balls Head\n",
         "teaser":
           
-            null
+            "/assets/images/2017/05/P4300003-3.jpg"
           
       },
     
       
       {
         "title": "The Dish, Parkes NSW",
-        "url": "/australia/electronics/photography/the-dish-parkes-nsw/",
-        "excerpt": "[caption id=”attachment_3032” align=”alignnone” width=”1280”] The Dish[/caption]\n",
+        "url": "/the-dish-parkes-nsw/",
+        "excerpt": " \nThe Dish\n",
         "teaser":
           
-            null
+            "/assets/images/2017/05/P5160020.jpg"
           
       },
     
       
       {
         "title": "A 2m/70cm (146MHz and 440MHz) J-pole Antenna",
-        "url": "/electronics/hobbies/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/",
+        "url": "/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/",
         "excerpt": "My electronics doesn’t normally involve a hacksaw, hammer and propane torch but I had fun building this J-pole antenna from...",
         "teaser":
           
-            null
+            "/assets/images/2017/06/DSCF4455.jpg"
           
       },
     
       
       {
         "title": "How to make a Ubuntu boot usb in OSX (don't use the UNetbootin USB installer)",
-        "url": "/software/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/",
+        "url": "/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/",
         "excerpt": "I had a lot of trouble making an Ubuntu boot USB drive from OSX. The instructions on https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0 don’t work in...",
         "teaser":
           
@@ -2415,7 +2415,7 @@ var store = [
       
       {
         "title": "Ettus USRP x310 installation on Ubuntu",
-        "url": "/fpga/ettus-usrp-x310-installation-on-ubuntu/",
+        "url": "/ettus-usrp-x310-installation-on-ubuntu/",
         "excerpt": "Vivado 2017.4 Version (Aug 2018) Install Xilinx Vivado 2017.4 from https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2017-4.html sudo apt install python-pip Configure licence by putting the below...",
         "teaser":
           
@@ -2426,18 +2426,18 @@ var store = [
       
       {
         "title": "International Lighthouse and Lightship Weekend 2017",
-        "url": "/australia/electronics/travel/international-lighthouse-and-lightship-weekend-2017/",
+        "url": "/international-lighthouse-and-lightship-weekend-2017/",
         "excerpt": "At my first International Lighthouse and Lightship Weekend with the Manly Warringah Radio Society, operating from Barrenjoey Lighthouse. Here is...",
         "teaser":
           
-            null
+            "/assets/images/2017/08/P8190063-1-1.jpg"
           
       },
     
       
       {
         "title": "Forster trip with Ken",
-        "url": "/australia/fishing/photography/forster-trip-with-ken/",
+        "url": "/forster-trip-with-ken/",
         "excerpt": "Ken came to visit from Seattle so Beard and I took a day off on Friday to go car-camping in...",
         "teaser":
           
@@ -2448,22 +2448,22 @@ var store = [
       
       {
         "title": "Street Photos from Beijing",
-        "url": "/photography/travel/street-photos-from-beijing/",
-        "excerpt": "\n\nSome street photos from a visit to Beijing.\n\n\n[gallery size=”medium” link=”file” ids=”3267,3268,3269,3270,3271”]\n",
+        "url": "/street-photos-from-beijing/",
+        "excerpt": "\n\nSome street photos from a visit to Beijing.\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2017/10/DSCF4583.jpg"
           
       },
     
       
       {
         "title": "Long Jetty, Tuggerah Lake",
-        "url": "/australia/photography/long-jetty-tuggerah-lake/",
-        "excerpt": "\n\n\n\n[gallery size=”medium” link=”file” ids=”3281,3282,3283,3277”]\n",
+        "url": "/long-jetty-tuggerah-lake/",
+        "excerpt": "\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2017/10/DSCF4677.jpg"
           
       },
     
@@ -2481,29 +2481,29 @@ var store = [
       
       {
         "title": "Computer Engineering Lab Christmas Party Photo 2017",
-        "url": "/academia/computer-engineering-lab-christmas-party-photo-2017/",
+        "url": "/computer-engineering-lab-christmas-party-photo-2017/",
         "excerpt": "[caption id=”attachment_3352” align=”alignnone” width=”840”] CEL Party 2017[/caption] Photos from earlier years below. [caption id=”attachment_3354” align=”alignnone” width=”840”] CEL Party 2016[/caption] [caption...",
         "teaser":
           
-            null
+            "/assets/images/2017/11/celchristmas17.jpeg"
           
       },
     
       
       {
         "title": "Fly-fishing for Kingfish in Pittwater, Sydney",
-        "url": "/australia/fff/fishing/fly-fishing/hawkesbury%20river/hobbies/fly-fishing-for-kingfish-in-pittwater-sydney/",
+        "url": "/fly-fishing-for-kingfish-in-pittwater-sydney/",
         "excerpt": "Ken came from Seattle to Sydney for a few solid days of fishing. I’m going to call this FFF’18 (even...",
         "teaser":
           
-            null
+            "/assets/images/2017/12/kingfish17-14.jpg"
           
       },
     
       
       {
         "title": "Directions to CEL",
-        "url": "/academia/directions-to-cel/",
+        "url": "/directions-to-cel/",
         "excerpt": "The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building, University of Sydney. My office is...",
         "teaser":
           
@@ -2514,29 +2514,29 @@ var store = [
       
       {
         "title": "Girl from Chiang Rai Karen Long Neck Tribe",
-        "url": "/photography/travel/girl-from-chiang-rai-karen-long-neck-tribe/",
+        "url": "/girl-from-chiang-rai-karen-long-neck-tribe/",
         "excerpt": "[caption id=”attachment_3447” align=”alignnone” width=”1280”] Girl from Karen Long Neck Hill Tribe[/caption]\n",
         "teaser":
           
-            null
+            "/assets/images/2018/01/DSCF5007.jpg"
           
       },
     
       
       {
         "title": "Camphor Laurel Timber Slab Hall Table",
-        "url": "/hobbies/woodwork/hall-table/",
+        "url": "/hall-table/",
         "excerpt": "This nice camphor laurel slab was purchased at the Sydney Timber and Working with Wood Show. Unfortunately it was a...",
         "teaser":
           
-            null
+            "/assets/images/2018/01/IMG_0676.jpg"
           
       },
     
       
       {
         "title": "How to apply to the Computer Engineering Lab at the University of Sydney",
-        "url": "/academia/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/",
+        "url": "/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/",
         "excerpt": "Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL),...",
         "teaser":
           
@@ -2547,51 +2547,51 @@ var store = [
       
       {
         "title": "Pittwater Jan 2018",
-        "url": "/fishing/pittwater-jan-2018/",
+        "url": "/pittwater-jan-2018/",
         "excerpt": "Despite it being really windy, had a good day of fishing with Beard and his son Lachlan in Pittwater.\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2018/01/38662976_Unknown.jpg"
           
       },
     
       
       {
         "title": "Refinishing Footstool",
-        "url": "/hobbies/woodwork/refinishing-footstool/",
+        "url": "/refinishing-footstool/",
         "excerpt": "Refinishing a footstool I made about 5 years ago in Tasmanian Oak. It was my take on this elegant design...",
         "teaser":
           
-            null
+            "/assets/images/2018/01/IMG_0612.jpg"
           
       },
     
       
       {
         "title": "John Moyle Memorial Field Day 2018",
-        "url": "/amateur%20radio/australia/hobbies/places/travel/john-moyle-memorial-field-day-2018/",
+        "url": "/john-moyle-memorial-field-day-2018/",
         "excerpt": "[caption id=”attachment_3514” align=”alignnone” width=”1280”] Tim VK2BT, Dave VK2JDS and Owen VK2OL[/caption] The Manly Warringah Radio Society (MWRS) participated in the...",
         "teaser":
           
-            null
+            "/assets/images/2018/03/DSCF5131.jpg"
           
       },
     
       
       {
         "title": "Shanghai 2018",
-        "url": "/travel/shanghai-2018/",
+        "url": "/shanghai-2018/",
         "excerpt": "Went to Shanghai again to collaborate with Prof Lingli Wang at Fudan University. Amazing hairy crab roe noodles in Shanghai.   The restaurant...",
         "teaser":
           
-            null
+            "/assets/images/2018/07/39453904_unknown.jpg"
           
       },
     
       
       {
         "title": "Kigumi table",
-        "url": "/hobbies/woodwork/kigumi-table/",
+        "url": "/kigumi-table/",
         "excerpt": "Really amazing craftsmanship on this table.\n\n[embed]https://www.youtube.com/watch?v=x51zMg7roIs[/embed]\n\n",
         "teaser":
           
@@ -2602,29 +2602,29 @@ var store = [
       
       {
         "title": "Configuring WSJT-X on Ubuntu for an Icom IC-7200",
-        "url": "/amateur%20radio/hobbies/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/",
+        "url": "/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/",
         "excerpt": "I’ve been trying to configure WSJT-X so I can run FT8 and WSPR for quite a while now. I finally tracked...",
         "teaser":
           
-            null
+            "/assets/images/2018/04/Screen-Shot-2018-04-22-at-8.13.09-pm.png"
           
       },
     
       
       {
         "title": "Photo from Karuah Jetty",
-        "url": "/hobbies/photography/photo-from-karuah-jetty/",
+        "url": "/photo-from-karuah-jetty/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2018/05/DSC_5851.jpg"
           
       },
     
       
       {
         "title": "How to program Australian Repeaters into an Icom IC-2730A using Chirp",
-        "url": "/amateur%20radio/hobbies/how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp/",
+        "url": "/how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp/",
         "excerpt": "I was not able to find much information on how to program Australian repeaters into my Icom IC-2730A. I did...",
         "teaser":
           
@@ -2635,66 +2635,66 @@ var store = [
       
       {
         "title": "Installing powerpoles",
-        "url": "/amateur%20radio/hobbies/installing-powerpoles/",
+        "url": "/installing-powerpoles/",
         "excerpt": "Anderson Powerpole connectors are the standard for 12V amateur radio equipment. Instructions are here: https://powerwerx.com/help/powerpole-assembly-instructions and this figure shows the correct orientation....",
         "teaser":
           
-            null
+            "https://powerwerx.azureedge.net/asset/image/assembly/PPpairOKN.jpg"
           
       },
     
       
       {
         "title": "WSJT-X with improved antenna",
-        "url": "/amateur%20radio/hobbies/wsjt-x-with-improved-antenna/",
+        "url": "/wsjt-x-with-improved-antenna/",
         "excerpt": "Improving the antenna from http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/ (it now goes down to the fence and up the tree), I can get to...",
         "teaser":
           
-            null
+            "/assets/images/2018/05/Screen-Shot-2018-05-26.jpg"
           
       },
     
       
       {
         "title": "Fishing Utah 2018",
-        "url": "/fishing/fly-fishing/hobbies/travel/fishing-utah-2018/",
+        "url": "/fishing-utah-2018/",
         "excerpt": "Prior to the Computer Vision and Pattern Recognition conference in Salt Lake City, went on an awesome fly-fishing trip, hosted...",
         "teaser":
           
-            null
+            "/assets/images/2018/06/IMG_8437.jpg"
           
       },
     
       
       {
         "title": "Visit to University of Kassel Amateur Radio Club",
-        "url": "/amateur%20radio/hobbies/travel/visit-to-kassel-university-amateur-radio-club/",
+        "url": "/visit-to-kassel-university-amateur-radio-club/",
         "excerpt": "University of Kassel Amateur Radio Club station. Here I am with a sausage, received as honorarium for giving a lecture....",
         "teaser":
           
-            null
+            "/assets/images/2018/07/img_1601-1.jpg"
           
       },
     
       
       {
         "title": "An Afternoon in Frankfurt 2018",
-        "url": "/travel/frankfurt-2018/",
+        "url": "/frankfurt-2018/",
         "excerpt": "Frankfurt street scene with multiple reflections: barber shop with guy’s ghostly head, girls walking  and shops. It is always busy...",
         "teaser":
           
-            null
+            "/assets/images/2018/07/DSCF5430.jpg"
           
       },
     
       
       {
         "title": "Chengdu and Hong Kong 2018",
-        "url": "/travel/chengdu-and-hong-kong-2018/",
+        "url": "/chengdu-and-hong-kong-2018/",
         "excerpt": "Took a train trip to Chengdu for Sichuan food prior to the Performance-Aware Programming with Application Accelerators (PAPAA) 2018 Workshop in...",
         "teaser":
           
-            null
+            "/assets/images/2018/08/P7190077.jpg"
           
       },
     
@@ -2712,40 +2712,40 @@ var store = [
       
       {
         "title": "International Lighthouse and Lightship Weekend 2018",
-        "url": "/amateur%20radio/hobbies/photography/international-lighthouse-and-lightship-weekend-2018/",
+        "url": "/international-lighthouse-and-lightship-weekend-2018/",
         "excerpt": "The Manly Warringah Radio Society (VK2MB) has participated in the International Lighthouse and Lightship Weekend (https://illw.net/) since 2003. This year...",
         "teaser":
           
-            null
+            "/assets/images/2018/08/IMG_1946.jpg"
           
       },
     
       
       {
         "title": "Sydney University Open Day 2018",
-        "url": "/academia/amateur%20radio/sydney-university-open-day-2018/",
+        "url": "/sydney-university-open-day-2018/",
         "excerpt": "Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO. [gallery link=”file” ids=”3953,3954,3955,3956,3957,3958,3959,3960,3961,3962,3963,3981,3980,3979,3978,3977,3976,3975”] Here is the...",
         "teaser":
           
-            null
+            "/assets/images/2018/08/img_1989.jpg"
           
       },
     
       
       {
         "title": "Nobel laureates Joachim Frank and Dan Shechtman",
-        "url": "/academia/nobel-laureates-joachim-frank-and-dan-shechtman/",
+        "url": "/nobel-laureates-joachim-frank-and-dan-shechtman/",
         "excerpt": "Q&amp;A session with Nobel laureates Joachim Frank (Columbia) and Dan Shechtman (Technion, Israel), moderated by Julie Carney. Professor Shechtman won...",
         "teaser":
           
-            null
+            "/assets/images/2018/09/img_2034.jpg"
           
       },
     
       
       {
         "title": "Dell Inspiron 13 7000",
-        "url": "/software/dell-inspiron-13-7000/",
+        "url": "/dell-inspiron-13-7000/",
         "excerpt": "Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd Set up as a personal rather than...",
         "teaser":
           
@@ -2756,18 +2756,18 @@ var store = [
       
       {
         "title": "Mooney Mooney Morning 2018",
-        "url": "/fishing/mooney-mooney-morning-2018/",
+        "url": "/mooney-mooney-morning-2018/",
         "excerpt": "Couldn’t believe this was the first time this year Warren and I fished Mooney Mooney. It was forecast to be...",
         "teaser":
           
-            null
+            "/assets/images/2018/09/40515248_Unknown.jpg"
           
       },
     
       
       {
         "title": "Harbin Intitute of Technology Reconfigurable Computing Course 2018",
-        "url": "/fpga/harbin-intitute-of-technology-reconfigurable-computing-course-2018/",
+        "url": "/harbin-intitute-of-technology-reconfigurable-computing-course-2018/",
         "excerpt": "Lecture Notes (0-cel, 1-intro-cn, 1-lstm, 2-architecture, 3-exploration, 4-parallelism, 5-integration, 6-customisation, 7-precision, 8-mca, 9-kernelarch)\n\nTutorial Notes (lstmtut)\n",
         "teaser":
           
@@ -2778,18 +2778,18 @@ var store = [
       
       {
         "title": "Shanghai Harbin 2018",
-        "url": "/travel/shanghai-harbin-2018/",
+        "url": "/shanghai-harbin-2018/",
         "excerpt": "Had a short holiday prior to giving my 2018 Reconfigurable Computing course at Harbin Institute of Technology (HIT). Photos herein...",
         "teaser":
           
-            null
+            "/assets/images/2018/10/IMG_9441.jpg"
           
       },
     
       
       {
         "title": "FPT18 Workshop on Embedded Machine Learning",
-        "url": "/academia/fly-fishing/fpga/fpt18-workshop-on-embedded-machine-learning/",
+        "url": "/fpt18-workshop-on-embedded-machine-learning/",
         "excerpt": "Embedded Machine Learning: Technology and Opportunities International Conference on Field Programmable Technology Naha, Okinawa http://www.fpt18.sakura.ne.jp/workshop.html December 14, 2018 (afternoon) Organisers:...",
         "teaser":
           
@@ -2800,62 +2800,62 @@ var store = [
       
       {
         "title": "Sydney From the Air Nov 2018",
-        "url": "/australia/photography/travel/sydney-from-the-air-nov-2018/",
+        "url": "/sydney-from-the-air-nov-2018/",
         "excerpt": "\n",
         "teaser":
           
-            null
+            "/assets/images/2018/11/sydney-aerialnov18.jpg"
           
       },
     
       
       {
         "title": "Repair of a Marantz 74CD67 CD Player",
-        "url": "/electronics/repair-of-a-marantz-74cd67-cd-player/",
+        "url": "/repair-of-a-marantz-74cd67-cd-player/",
         "excerpt": "My mother bought this Marantz 74CD67 CD player in 1996. Twenty years later, it was unable to read reliably. This...",
         "teaser":
           
-            null
+            "/assets/images/2018/11/40784800_Unknown.jpg"
           
       },
     
       
       {
         "title": "Amateur Radio Shops in Akihabara",
-        "url": "/amateur%20radio/amateur-radio-shops-in-akihabara/",
+        "url": "/amateur-radio-shops-in-akihabara/",
         "excerpt": "Passing through Tokyo this week and took the opportunity to visit a few amateur radio shops in Akihabara. First had...",
         "teaser":
           
-            null
+            "/assets/images/2018/12/DSCF5835.jpg"
           
       },
     
       
       {
         "title": "Tokyo Institute of Technology Tsubame 3.0 Visit",
-        "url": "/fpga/tokyo-institute-of-technology-tsubame-3-0-visit/",
+        "url": "/tokyo-institute-of-technology-tsubame-3-0-visit/",
         "excerpt": "Hosted by Prof Hiroki Nakahara and Prof Yuko Hara-Azumi, I gave a talk entitled “Large Scale FPGA Implementations of Machine...",
         "teaser":
           
-            null
+            "/assets/images/2018/12/IMG_9636.jpg"
           
       },
     
       
       {
         "title": "The Bar, Hyatt Regency Okinawa 2018",
-        "url": "/travel/the-bar-hyatt-regency-okinawa-2018/",
+        "url": "/the-bar-hyatt-regency-okinawa-2018/",
         "excerpt": "Following the FPT conference, we had a great evening at The Bar on the top floor of the Hyatt Regency...",
         "teaser":
           
-            null
+            "/assets/images/2018/12/DSCF5869.jpg"
           
       },
     
       
       {
         "title": "Hawkesbury 2018",
-        "url": "/australia/fishing/hawkesbury%20river/hawkesbury-2018/",
+        "url": "/hawkesbury-2018/",
         "excerpt": "Returned to the Hawkesbury River (see here for reports on previous trips) with Warren and my daughter Nicole. Last time...",
         "teaser":
           
@@ -2866,95 +2866,95 @@ var store = [
       
       {
         "title": "Sydney Harbour Kingfish Jan 2019",
-        "url": "/australia/fishing/sydney-harbour-kingfish-jan-2019/",
+        "url": "/sydney-harbour-kingfish-jan-2019/",
         "excerpt": "It was cold and wet today but good to get out with Beard and son in Sydney Harbour. First time...",
         "teaser":
           
-            null
+            "/assets/images/2019/01/41418944_Unknown.jpg"
           
       },
     
       
       {
         "title": "Snaps from Berkeley",
-        "url": "/academia/snaps-from-berkeley/",
+        "url": "/snaps-from-berkeley/",
         "excerpt": "Sign says “Abolish the CIA and ICE”\n\n\n\n\n\n\n\n\n\nOnly way to get a good parking spot\n\n\n\n\n\n\n\n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2019/01/IMG_0034.jpg"
           
       },
     
       
       {
         "title": "Las Vegas 2019",
-        "url": "/travel/las-vegas-2019/",
+        "url": "/las-vegas-2019/",
         "excerpt": "Made the 16 hour return drive to Las Vegas for a long weekend. Here are some photos. Las Vegas Strip....",
         "teaser":
           
-            null
+            "/assets/images/2019/02/DSCF5958.jpg"
           
       },
     
       
       {
         "title": "Berkeley Wireless Research Center 20th Year Anniversary",
-        "url": "/academia/electronics/fpga/berkeley-wireless-research-center-20-year-anniversary/",
+        "url": "/berkeley-wireless-research-center-20-year-anniversary/",
         "excerpt": "Photos from the Berkeley Wireless Research Center 20th Year Anniversary.\n\n\n  \n  \n  \n  \n  \n  \n  \n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2019/02/DSCF5968.jpg"
           
       },
     
       
       {
         "title": "Death of a Canon S120",
-        "url": "/photography/death-of-a-canon-s120/",
+        "url": "/death-of-a-canon-s120/",
         "excerpt": "I really liked my Canon S120 but it met its demise by being drowned in coffee. Replaced it with a...",
         "teaser":
           
-            null
+            "/assets/images/2019/02/IMG_3107.jpg"
           
       },
     
       
       {
         "title": "Grass Valley Fly-Fishing 2019",
-        "url": "/fff/fishing/fly-fishing/travel/grass-valley-fishing-2019/",
+        "url": "/grass-valley-fishing-2019/",
         "excerpt": "The FPGA Fly-Fishing Symposium 2019 (FFF’19) was a post-FPGA Conference workshop, attended by Guy, Ken and I. I am not...",
         "teaser":
           
-            null
+            "/assets/images/2019/03/IMG_0221.jpg"
           
       },
     
       
       {
         "title": "Electronics Flea Market",
-        "url": "/electronics/electronics-flea-market/",
+        "url": "/electronics-flea-market/",
         "excerpt": "On the second weekend of Mar-Sep, the Electronics Flea Market runs in the carpark of Fry’s Electronics, Sunnyvale CA. I...",
         "teaser":
           
-            null
+            "/assets/images/2019/03/IMG_0335.jpg"
           
       },
     
       
       {
         "title": "Blue Day in Sydney",
-        "url": "/photography/travel/blue-day-in-sydney/",
+        "url": "/blue-day-in-sydney/",
         "excerpt": "\n\n",
         "teaser":
           
-            null
+            "/assets/images/2019/04/7723722910698069406_IMG_0381.jpg"
           
       },
     
       
       {
         "title": "MacOS Install",
-        "url": "/software/macos-install/",
+        "url": "/macos-install/",
         "excerpt": "It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I...",
         "teaser":
           
@@ -2965,29 +2965,29 @@ var store = [
       
       {
         "title": "Yosemite 2019",
-        "url": "/photography/travel/yosemite-2019/",
+        "url": "/yosemite-2019/",
         "excerpt": "Went for a two day trip to Yosemite National Park, staying at Yosemite Cedar Lodge. It is such a magnificent...",
         "teaser":
           
-            null
+            "/assets/images/2019/04/IMG_0604.jpg"
           
       },
     
       
       {
         "title": "Mako on Fly - San Diego 2019",
-        "url": "/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019/",
+        "url": "/mako-on-fly-san-diego-2019/",
         "excerpt": "The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to...",
         "teaser":
           
-            null
+            "/assets/images/2019/05/IMG_0832.jpg"
           
       },
     
       
       {
         "title": "Dropbox - don't give full access to your machine",
-        "url": "/software/dropbox-dont-give-full-access-to-your-machine/",
+        "url": "/dropbox-dont-give-full-access-to-your-machine/",
         "excerpt": "Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s (good)...",
         "teaser":
           
@@ -3002,36 +3002,36 @@ var store = [
         "excerpt": "I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium...",
         "teaser":
           
-            null
+            "/assets/images/2019/05/6700082371262977270_IMG_0887.jpg"
           
       },
     
       
       {
         "title": "Sea lion, Santa Cruz Wharf",
-        "url": "/photography/travel/sea-lion-santa-cruz-wharf/",
+        "url": "/sea-lion-santa-cruz-wharf/",
         "excerpt": "\n\n",
         "teaser":
           
-            null
+            "/assets/images/2019/05/DSCF6081.jpg"
           
       },
     
       
       {
         "title": "Lake Tahoe 2019",
-        "url": "/travel/lake-tahoe-2019/",
+        "url": "/lake-tahoe-2019/",
         "excerpt": "\n\nSnaps from our trip to Lake Tahoe\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n",
         "teaser":
           
-            null
+            "/assets/images/2019/06/DSCF6146.jpg"
           
       },
     
       
       {
         "title": "Ten Lessons I wish I had been Taught - Gian-Carlo Rota",
-        "url": "/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/",
+        "url": "/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/",
         "excerpt": "Interesting talk by the late MIT mathematician and philosopher https://www.ams.org/notices/199701/comm-rota.pdf Ten Lessons I wish I had been Taught Gian-Carlo Rota...",
         "teaser":
           

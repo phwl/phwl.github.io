@@ -11,6 +11,8 @@ categories:
 - fishing
 - Fly-fishing
 - travel
+header:
+  teaser: /assets/images/2019/03/IMG_0221.jpg
 ---
 
 

@@ -8,6 +8,8 @@ title: Tailor at the Spit Bridge 2017
 wordpress_id: 2776
 categories:
 - fishing
+header:
+  teaser: /assets/images/2017/01/spittailor17.jpg
 ---
 
 First fish of 2017 is a tailor (and it was a fluke).

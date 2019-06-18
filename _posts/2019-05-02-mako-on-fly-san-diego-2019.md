@@ -14,34 +14,17 @@ tags:
 - fly-fishing
 - mako shark
 - San Diego
+header:
+  teaser: /assets/images/2019/05/IMG_0832.jpg
 ---
-
-
-
 
 The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to 69 km/h (42 mph) and jump 6m (20 feet) in the air. There two species, the shortfin (_Isurus oxyrinchus_) and the longfin (_Isurus paucus), _the shortfin being more common. San Diego is the best place to fish for them, and so following the [FCCM Conference](https://www.fccm.org/), Ken and I went to fly-fish for them.
 
-
-
-
-
 ![](/assets/images/2019/05/IMG_0832.jpg){: .align-center}
-
-
-
-
-
 
 https://youtu.be/py-aq-s33mQ
 
-
-
-
-
-
 <!-- more -->
-
-
 
 ![](/assets/images/2019/05/IMG_0720.jpg){: .align-center}
 

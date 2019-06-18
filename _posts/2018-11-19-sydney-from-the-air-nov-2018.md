@@ -12,6 +12,8 @@ categories:
 - travel
 post_format:
 - Image
+header:
+  teaser: /assets/images/2018/11/sydney-aerialnov18.jpg
 ---
 
 ![](/assets/images/2018/11/sydney-aerialnov18.jpg){: .align-center}

@@ -8,6 +8,8 @@ title: Postcard from Kyoto and Osaka
 wordpress_id: 1191
 categories:
 - travel
+header:
+  teaser: /assets/images/2013/12/PC123629.jpg
 ---
 
 Following the [International Conference on Field Programmable Technology](http://www.icfpt.org) we spent some time in Kyoto and Osaka.

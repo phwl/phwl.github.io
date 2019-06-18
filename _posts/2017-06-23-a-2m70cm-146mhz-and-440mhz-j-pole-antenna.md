@@ -9,6 +9,8 @@ wordpress_id: 3037
 categories:
 - electronics
 - hobbies
+header:
+  teaser: /assets/images/2017/06/DSCF4455.jpg
 ---
 
 My electronics doesn't normally involve a hacksaw, hammer and propane torch but I had fun building this J-pole antenna from instructions by [N6JSX.](http://www.hamuniverse.com/n6jsx2mcopperjportable.html)

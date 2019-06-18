@@ -10,8 +10,9 @@ categories:
 - australia
 - electronics
 - photography
-post_format:
-- Image
+header:
+  teaser: /assets/images/2017/05/P5160020.jpg
 ---
 
-[caption id="attachment_3032" align="alignnone" width="1280"]![](/assets/images/2017/05/P5160020.jpg){: .align-center} The Dish[/caption]
+![](/assets/images/2017/05/P5160020.jpg){: .align-center} 
+The Dish

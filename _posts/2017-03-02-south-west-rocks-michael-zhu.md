@@ -10,6 +10,8 @@ categories:
 - australia
 - fishing
 - Fly-fishing
+header:
+  teaser: /assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg
 ---
 
 An awesome fishing report that Michael Zhu sent to me via Facebook Messenger.

@@ -8,6 +8,8 @@ title: Mooney Mooney Morning 2018
 wordpress_id: 4009
 categories:
 - fishing
+header:
+  teaser: /assets/images/2018/09/40515248_Unknown.jpg
 ---
 
 Couldn't believe this was the first time this year Warren and I fished Mooney Mooney. It was forecast to be 13-31 Celcius, 10 degrees above the average and the first warm day of spring. Wind was to pick up to 30 km/h in the afternoon.

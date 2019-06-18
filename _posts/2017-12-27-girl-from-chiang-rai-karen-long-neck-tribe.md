@@ -11,6 +11,8 @@ categories:
 - travel
 post_format:
 - Image
+header:
+  teaser: /assets/images/2018/01/DSCF5007.jpg
 ---
 
 [caption id="attachment_3447" align="alignnone" width="1280"]![](/assets/images/2018/01/DSCF5007.jpg){: .align-center} Girl from Karen Long Neck Hill Tribe[/caption]
