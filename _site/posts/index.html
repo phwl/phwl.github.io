@@ -1,39 +1,24 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.8.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
 
-<!-- begin SEO -->
+<!-- begin _includes/seo.html --><title>Posts by Year - Life, the Universe and Fishing</title>
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
 
 
 
-
-
-
-
-
-
-<title>Posts - Life, the Universe and Fishing</title>
-
-
-
-
-<meta name="description" content="An online diary of my experiences in life and academia.">
-
-
-
-
-<meta name="author" content="phwl">
-
-<meta property="og:locale" content="en">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Posts">
+<meta property="og:title" content="Posts by Year">
+<meta property="og:url" content="http://localhost:4000/posts/">
 
 
 
@@ -47,16 +32,7 @@
 
 
 
-
-
-
-
-
-
-
-  
-
-  
+<link rel="canonical" href="http://localhost:4000/posts/">
 
 
 
@@ -69,30 +45,13 @@
 
 
 
-  <script type="application/ld+json">
-    {
-      "@context" : "http://schema.org",
-      "@type" : "Person",
-      "name" : "phwl",
-      "url" : null,
-      "sameAs" : null
-    }
-  </script>
 
-
-
-
-
-
-
-<!-- end SEO -->
+<!-- end _includes/seo.html -->
 
 
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
 
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
+<!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
@@ -102,7 +61,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<!--[if lte IE 9]>
+<!--[if IE ]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -118,66 +77,56 @@
 <![endif]-->
 
 
+
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
-
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    tex2jax: {
-      inlineMath: [],
-      displayMath: [],
-      processEscapes: false,
-    }
-  });
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
-
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
 
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--posts">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
 
-    <div class="masthead">
+    
+
+<div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        
         <a class="site-title" href="/">Life, the Universe and Fishing</a>
-        <ul class="visible-links">
-          
-            
-            <li class="masthead__menu-item">
-              <a href="/about/" >About</a>
-            </li>
-          
-            
-            <li class="masthead__menu-item">
+        <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
-            </li>
-          
-        </ul>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/" >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li></ul>
         
         <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
           <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
             <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
           </svg>
         </button>
         
-        <button class="greedy-nav__toggle" type="button">
-          <span class="visually-hidden">Toggle Menu</span>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
@@ -185,6 +134,7 @@
     </div>
   </div>
 </div>
+
 
     <div class="initial-content">
       
@@ -196,8 +146,17 @@
   <div class="sidebar sticky">
   
 
-<div itemscope itemtype="http://schema.org/Person">
 
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/bio-photo.jpg" alt="phwl" itemprop="image">
+      
+    </div>
   
 
   <div class="author__content">
@@ -205,17 +164,35 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
+      <p class="author__bio" itemprop="description">
+        My awesome biography constrained to a sentence or two goes here.
+      </p>
+    
   </div>
 
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Sydney, Australia</span>
-        </li>
-      
 
+      
+        
+          
+            <li><a href="https://" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+            <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          
+        
       
 
       
@@ -268,8 +245,8 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
 -->
@@ -281,19 +258,169 @@
   </div>
 
 
-
   <div class="archive">
     
-      <h1 class="page__title">Posts</h1>
+      <h1 id="page-title" class="page__title">Posts by Year</h1>
     
     
 
+
+<ul class="taxonomy__index">
   
   
-    <h2 id="2019" class="archive__subtitle">2019</h2>
-    
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">17</span>
+      </a>
+    </li>
   
+    <li>
+      <a href="#2018">
+        <strong>2018</strong> <span class="taxonomy__count">31</span>
+      </a>
+    </li>
   
+    <li>
+      <a href="#2017">
+        <strong>2017</strong> <span class="taxonomy__count">22</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2016">
+        <strong>2016</strong> <span class="taxonomy__count">9</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2015">
+        <strong>2015</strong> <span class="taxonomy__count">10</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2014">
+        <strong>2014</strong> <span class="taxonomy__count">5</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2013">
+        <strong>2013</strong> <span class="taxonomy__count">18</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2012">
+        <strong>2012</strong> <span class="taxonomy__count">4</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2011">
+        <strong>2011</strong> <span class="taxonomy__count">5</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2010">
+        <strong>2010</strong> <span class="taxonomy__count">10</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2009">
+        <strong>2009</strong> <span class="taxonomy__count">7</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2008">
+        <strong>2008</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2007">
+        <strong>2007</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2006">
+        <strong>2006</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2005">
+        <strong>2005</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2004">
+        <strong>2004</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2002">
+        <strong>2002</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2001">
+        <strong>2001</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2000">
+        <strong>2000</strong> <span class="taxonomy__count">3</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#1999">
+        <strong>1999</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#1996">
+        <strong>1996</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#1994">
+        <strong>1994</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#1991">
+        <strong>1991</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#1900">
+        <strong>1900</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -302,10 +429,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="permalink">Ten Lessons I wish I had been Taught - Gian-Carlo Rota
+        <a href="/academia/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="permalink">Ten Lessons I wish I had been Taught - Gian-Carlo Rota
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  14 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Interesting talk by the late MIT mathematician and philosopher
 
@@ -313,10 +448,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -324,7 +457,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/lake-tahoe-2019/">
+      <a href="/travel/lake-tahoe-2019/">
         <img src=
           
             "/assets/images/2019/06/DSCF6146.jpg"
@@ -334,10 +467,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/lake-tahoe-2019/" rel="permalink">Lake Tahoe 2019
+        <a href="/travel/lake-tahoe-2019/" rel="permalink">Lake Tahoe 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -345,10 +486,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -356,7 +495,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sea-lion-santa-cruz-wharf/">
+      <a href="/photography/travel/sea-lion-santa-cruz-wharf/">
         <img src=
           
             "/assets/images/2019/05/DSCF6081.jpg"
@@ -366,20 +505,26 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sea-lion-santa-cruz-wharf/" rel="permalink">Sea lion, Santa Cruz Wharf
+        <a href="/photography/travel/sea-lion-santa-cruz-wharf/" rel="permalink">Sea lion, Santa Cruz Wharf
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -402,14 +547,20 @@
       
     </h2>
     
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
     <p class="archive__item-excerpt" itemprop="description">I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neur...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -418,19 +569,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/dropbox-dont-give-full-access-to-your-machine/" rel="permalink">Dropbox - don’t give full access to your machine
+        <a href="/software/dropbox-dont-give-full-access-to-your-machine/" rel="permalink">Dropbox - don’t give full access to your machine
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s  (good) security features. Upon startup, they ask for you to enter your administrator pa...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -438,7 +595,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/mako-on-fly-san-diego-2019/">
+      <a href="/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019/">
         <img src=
           
             "/assets/images/2019/05/IMG_0832.jpg"
@@ -448,19 +605,52 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mako-on-fly-san-diego-2019/" rel="permalink">Mako on Fly - San Diego 2019
+        <a href="/fff/fishing/fly-fishing/mako-on-fly-san-diego-2019/" rel="permalink">Mako on Fly - San Diego 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to 69 km/h (42 mph) and jump 6m (20 feet) in the air. There two species, the shortfin (Isurus oxyrinchus) a...</p>
   </article>
 </div>
 
+      
+        
 
-  
-  
-  
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/welcome-to-jekyll/" rel="permalink">Welcome to Jekyll!
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run je...</p>
+  </article>
+</div>
+
+      
+        
 
 
 
@@ -468,7 +658,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/yosemite-2019/">
+      <a href="/photography/travel/yosemite-2019/">
         <img src=
           
             "/assets/images/2019/04/IMG_0604.jpg"
@@ -478,10 +668,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/yosemite-2019/" rel="permalink">Yosemite 2019
+        <a href="/photography/travel/yosemite-2019/" rel="permalink">Yosemite 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went for a two day trip to Yosemite National Park, staying at Yosemite Cedar Lodge. It is such a magnificent place. Wish I had more time there to take photos.
 
@@ -489,10 +687,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -501,10 +697,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/macos-install/" rel="permalink">MacOS Install
+        <a href="/software/macos-install/" rel="permalink">MacOS Install
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:
 
@@ -512,10 +716,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -523,7 +725,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/blue-day-in-sydney/">
+      <a href="/photography/travel/blue-day-in-sydney/">
         <img src=
           
             "/assets/images/2019/04/7723722910698069406_IMG_0381.jpg"
@@ -533,20 +735,26 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/blue-day-in-sydney/" rel="permalink">Blue Day in Sydney
+        <a href="/photography/travel/blue-day-in-sydney/" rel="permalink">Blue Day in Sydney
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -554,7 +762,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/electronics-flea-market/">
+      <a href="/electronics/electronics-flea-market/">
         <img src=
           
             "/assets/images/2019/03/IMG_0335.jpg"
@@ -564,19 +772,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/electronics-flea-market/" rel="permalink">Electronics Flea Market
+        <a href="/electronics/electronics-flea-market/" rel="permalink">Electronics Flea Market
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">On the second weekend of Mar-Sep, the Electronics Flea Market runs in the carpark of Fry’s Electronics, Sunnyvale CA. I arrived at 8am because I thought I might be the only one there at the startin...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -584,7 +798,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/grass-valley-fishing-2019/">
+      <a href="/fff/fishing/fly-fishing/travel/grass-valley-fishing-2019/">
         <img src=
           
             "/assets/images/2019/03/IMG_0221.jpg"
@@ -594,10 +808,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/grass-valley-fishing-2019/" rel="permalink">Grass Valley Fly-Fishing 2019
+        <a href="/fff/fishing/fly-fishing/travel/grass-valley-fishing-2019/" rel="permalink">Grass Valley Fly-Fishing 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The FPGA Fly-Fishing Symposium 2019 (FFF’19) was a post-FPGA Conference workshop, attended by Guy, Ken and I.
 
@@ -605,10 +827,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -616,7 +836,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/death-of-a-canon-s120/">
+      <a href="/photography/death-of-a-canon-s120/">
         <img src=
           
             "/assets/images/2019/02/IMG_3107.jpg"
@@ -626,19 +846,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/death-of-a-canon-s120/" rel="permalink">Death of a Canon S120
+        <a href="/photography/death-of-a-canon-s120/" rel="permalink">Death of a Canon S120
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I really liked my Canon S120 but it met its demise by being drowned in coffee. Replaced it with a very similar Canon G9X mk II which has a larger, 1” sensor. From my limited time with the new camer...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -646,7 +872,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/berkeley-wireless-research-center-20-year-anniversary/">
+      <a href="/academia/electronics/fpga/berkeley-wireless-research-center-20-year-anniversary/">
         <img src=
           
             "/assets/images/2019/02/DSCF5968.jpg"
@@ -656,10 +882,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/berkeley-wireless-research-center-20-year-anniversary/" rel="permalink">Berkeley Wireless Research Center 20th Year Anniversary
+        <a href="/academia/electronics/fpga/berkeley-wireless-research-center-20-year-anniversary/" rel="permalink">Berkeley Wireless Research Center 20th Year Anniversary
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Photos from the Berkeley Wireless Research Center 20th Year Anniversary.
 
@@ -667,10 +901,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -678,7 +910,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/las-vegas-2019/">
+      <a href="/travel/las-vegas-2019/">
         <img src=
           
             "/assets/images/2019/02/DSCF5958.jpg"
@@ -688,10 +920,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/las-vegas-2019/" rel="permalink">Las Vegas 2019
+        <a href="/travel/las-vegas-2019/" rel="permalink">Las Vegas 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Made the 16 hour return drive to Las Vegas for a long weekend. Here are some photos.
 
@@ -699,10 +939,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -710,7 +948,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/snaps-from-berkeley/">
+      <a href="/academia/snaps-from-berkeley/">
         <img src=
           
             "/assets/images/2019/01/IMG_0034.jpg"
@@ -720,10 +958,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/snaps-from-berkeley/" rel="permalink">Snaps from Berkeley
+        <a href="/academia/snaps-from-berkeley/" rel="permalink">Snaps from Berkeley
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Sign says “Abolish the CIA and ICE”
 
@@ -731,10 +977,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -742,7 +986,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-harbour-kingfish-jan-2019/">
+      <a href="/australia/fishing/sydney-harbour-kingfish-jan-2019/">
         <img src=
           
             "/assets/images/2019/01/41418944_Unknown.jpg"
@@ -752,10 +996,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-harbour-kingfish-jan-2019/" rel="permalink">Sydney Harbour Kingfish Jan 2019
+        <a href="/australia/fishing/sydney-harbour-kingfish-jan-2019/" rel="permalink">Sydney Harbour Kingfish Jan 2019
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">It was cold and wet today but good to get out with Beard and son in Sydney Harbour. First time I can remember the temperature high and low being 21 C in the middle of summer.
 
@@ -763,13 +1015,16 @@
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2018" class="archive__subtitle">2018</h2>
-    
-  
-  
+  <section id="2018" class="taxonomy__section">
+    <h2 class="archive__subtitle">2018</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -777,7 +1032,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-2018/">
+      <a href="/australia/fishing/hawkesbury%20river/hawkesbury-2018/">
         <img src=
           
             "/assets/images/2018/12/IMG_2643.jpg"
@@ -787,19 +1042,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-2018/" rel="permalink">Hawkesbury 2018
+        <a href="/australia/fishing/hawkesbury%20river/hawkesbury-2018/" rel="permalink">Hawkesbury 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Returned to the Hawkesbury River (see here for reports on previous trips) with Warren and my daughter Nicole. Last time I was there camping with Nicole was in 2009. The fishing was tough and the tr...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -807,7 +1068,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/the-bar-hyatt-regency-okinawa-2018/">
+      <a href="/travel/the-bar-hyatt-regency-okinawa-2018/">
         <img src=
           
             "/assets/images/2018/12/DSCF5869.jpg"
@@ -817,10 +1078,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/the-bar-hyatt-regency-okinawa-2018/" rel="permalink">The Bar, Hyatt Regency Okinawa 2018
+        <a href="/travel/the-bar-hyatt-regency-okinawa-2018/" rel="permalink">The Bar, Hyatt Regency Okinawa 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Following the FPT conference, we had a great evening at The Bar on the top floor of the Hyatt Regency in Naha, Okinawa.
 
@@ -828,10 +1097,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -839,7 +1106,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/tokyo-institute-of-technology-tsubame-3-0-visit/">
+      <a href="/fpga/tokyo-institute-of-technology-tsubame-3-0-visit/">
         <img src=
           
             "/assets/images/2018/12/IMG_9636.jpg"
@@ -849,19 +1116,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/tokyo-institute-of-technology-tsubame-3-0-visit/" rel="permalink">Tokyo Institute of Technology Tsubame 3.0 Visit
+        <a href="/fpga/tokyo-institute-of-technology-tsubame-3-0-visit/" rel="permalink">Tokyo Institute of Technology Tsubame 3.0 Visit
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Hosted by Prof Hiroki Nakahara and Prof Yuko Hara-Azumi, I gave a talk entitled “Large Scale FPGA Implementations of Machine Learning Algorithms” (slides available at phwl.org/talks) at the Tokyo I...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -869,7 +1142,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/amateur-radio-shops-in-akihabara/">
+      <a href="/amateur%20radio/amateur-radio-shops-in-akihabara/">
         <img src=
           
             "/assets/images/2018/12/DSCF5835.jpg"
@@ -879,10 +1152,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/amateur-radio-shops-in-akihabara/" rel="permalink">Amateur Radio Shops in Akihabara
+        <a href="/amateur%20radio/amateur-radio-shops-in-akihabara/" rel="permalink">Amateur Radio Shops in Akihabara
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Passing through Tokyo this week and took the opportunity to visit a few amateur radio shops in Akihabara.
 
@@ -890,10 +1171,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -901,7 +1180,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/repair-of-a-marantz-74cd67-cd-player/">
+      <a href="/electronics/repair-of-a-marantz-74cd67-cd-player/">
         <img src=
           
             "/assets/images/2018/11/40784800_Unknown.jpg"
@@ -911,10 +1190,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/repair-of-a-marantz-74cd67-cd-player/" rel="permalink">Repair of a Marantz 74CD67 CD Player
+        <a href="/electronics/repair-of-a-marantz-74cd67-cd-player/" rel="permalink">Repair of a Marantz 74CD67 CD Player
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">My mother bought this Marantz 74CD67 CD player in 1996. Twenty years later, it was unable to read reliably.
 
@@ -922,10 +1209,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -933,7 +1218,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-from-the-air-nov-2018/">
+      <a href="/australia/photography/travel/sydney-from-the-air-nov-2018/">
         <img src=
           
             "/assets/images/2018/11/sydney-aerialnov18.jpg"
@@ -943,20 +1228,26 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-from-the-air-nov-2018/" rel="permalink">Sydney From the Air Nov 2018
+        <a href="/australia/photography/travel/sydney-from-the-air-nov-2018/" rel="permalink">Sydney From the Air Nov 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -965,10 +1256,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fpt18-workshop-on-embedded-machine-learning/" rel="permalink">FPT18 Workshop on Embedded Machine Learning
+        <a href="/academia/fly-fishing/fpga/fpt18-workshop-on-embedded-machine-learning/" rel="permalink">FPT18 Workshop on Embedded Machine Learning
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Embedded Machine Learning: Technology and Opportunities
 
@@ -976,10 +1275,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -987,7 +1284,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/shanghai-harbin-2018/">
+      <a href="/travel/shanghai-harbin-2018/">
         <img src=
           
             "/assets/images/2018/10/IMG_9441.jpg"
@@ -997,10 +1294,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/shanghai-harbin-2018/" rel="permalink">Shanghai Harbin 2018
+        <a href="/travel/shanghai-harbin-2018/" rel="permalink">Shanghai Harbin 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Had a short holiday prior to giving my 2018 Reconfigurable Computing course at Harbin Institute of Technology (HIT). Photos herein are mainly of food.
 
@@ -1008,10 +1313,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1020,10 +1323,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/harbin-intitute-of-technology-reconfigurable-computing-course-2018/" rel="permalink">Harbin Intitute of Technology Reconfigurable Computing Course 2018
+        <a href="/fpga/harbin-intitute-of-technology-reconfigurable-computing-course-2018/" rel="permalink">Harbin Intitute of Technology Reconfigurable Computing Course 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Lecture Notes (0-cel, 1-intro-cn, 1-lstm, 2-architecture, 3-exploration, 4-parallelism, 5-integration, 6-customisation, 7-precision, 8-mca, 9-kernelarch)
 
@@ -1031,10 +1342,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1042,7 +1351,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/mooney-mooney-morning-2018/">
+      <a href="/fishing/mooney-mooney-morning-2018/">
         <img src=
           
             "/assets/images/2018/09/40515248_Unknown.jpg"
@@ -1052,19 +1361,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mooney-mooney-morning-2018/" rel="permalink">Mooney Mooney Morning 2018
+        <a href="/fishing/mooney-mooney-morning-2018/" rel="permalink">Mooney Mooney Morning 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Couldn’t believe this was the first time this year Warren and I fished Mooney Mooney. It was forecast to be 13-31 Celcius, 10 degrees above the average and the first warm day of spring. Wind was to...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1073,10 +1388,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/dell-inspiron-13-7000/" rel="permalink">Dell Inspiron 13 7000
+        <a href="/software/dell-inspiron-13-7000/" rel="permalink">Dell Inspiron 13 7000
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd
 
@@ -1084,10 +1407,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1095,7 +1416,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/nobel-laureates-joachim-frank-and-dan-shechtman/">
+      <a href="/academia/nobel-laureates-joachim-frank-and-dan-shechtman/">
         <img src=
           
             "/assets/images/2018/09/img_2034.jpg"
@@ -1105,10 +1426,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/nobel-laureates-joachim-frank-and-dan-shechtman/" rel="permalink">Nobel laureates Joachim Frank and Dan Shechtman
+        <a href="/academia/nobel-laureates-joachim-frank-and-dan-shechtman/" rel="permalink">Nobel laureates Joachim Frank and Dan Shechtman
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Q&amp;A session with Nobel laureates Joachim Frank (Columbia) and Dan Shechtman (Technion, Israel), moderated by Julie Carney.
 
@@ -1116,10 +1445,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1127,7 +1454,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-university-open-day-2018/">
+      <a href="/academia/amateur%20radio/sydney-university-open-day-2018/">
         <img src=
           
             "/assets/images/2018/08/img_1989.jpg"
@@ -1137,10 +1464,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-university-open-day-2018/" rel="permalink">Sydney University Open Day 2018
+        <a href="/academia/amateur%20radio/sydney-university-open-day-2018/" rel="permalink">Sydney University Open Day 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1148,10 +1483,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1159,7 +1492,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/international-lighthouse-and-lightship-weekend-2018/">
+      <a href="/amateur%20radio/hobbies/photography/international-lighthouse-and-lightship-weekend-2018/">
         <img src=
           
             "/assets/images/2018/08/IMG_1946.jpg"
@@ -1169,10 +1502,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/international-lighthouse-and-lightship-weekend-2018/" rel="permalink">International Lighthouse and Lightship Weekend 2018
+        <a href="/amateur%20radio/hobbies/photography/international-lighthouse-and-lightship-weekend-2018/" rel="permalink">International Lighthouse and Lightship Weekend 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1180,10 +1521,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1197,16 +1536,22 @@
       
     </h2>
     
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
     <p class="archive__item-excerpt" itemprop="description">TED talks from some of the best documentary photographers.
 
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1214,7 +1559,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/chengdu-and-hong-kong-2018/">
+      <a href="/travel/chengdu-and-hong-kong-2018/">
         <img src=
           
             "/assets/images/2018/08/P7190077.jpg"
@@ -1224,10 +1569,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/chengdu-and-hong-kong-2018/" rel="permalink">Chengdu and Hong Kong 2018
+        <a href="/travel/chengdu-and-hong-kong-2018/" rel="permalink">Chengdu and Hong Kong 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Took a train trip to Chengdu for Sichuan food prior to the Performance-Aware Programming with Application Accelerators (PAPAA) 2018 Workshop in Hong Kong.
 
@@ -1235,10 +1588,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1246,7 +1597,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/frankfurt-2018/">
+      <a href="/travel/frankfurt-2018/">
         <img src=
           
             "/assets/images/2018/07/DSCF5430.jpg"
@@ -1256,10 +1607,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/frankfurt-2018/" rel="permalink">An Afternoon in Frankfurt 2018
+        <a href="/travel/frankfurt-2018/" rel="permalink">An Afternoon in Frankfurt 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Frankfurt street scene with multiple reflections: barber shop with guy’s ghostly head, girls walking  and shops.
 
@@ -1267,10 +1626,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1278,7 +1635,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/visit-to-kassel-university-amateur-radio-club/">
+      <a href="/amateur%20radio/hobbies/travel/visit-to-kassel-university-amateur-radio-club/">
         <img src=
           
             "/assets/images/2018/07/img_1601-1.jpg"
@@ -1288,10 +1645,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/visit-to-kassel-university-amateur-radio-club/" rel="permalink">Visit to University of Kassel Amateur Radio Club
+        <a href="/amateur%20radio/hobbies/travel/visit-to-kassel-university-amateur-radio-club/" rel="permalink">Visit to University of Kassel Amateur Radio Club
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">University of Kassel Amateur Radio Club station. Here I am with a sausage, received as honorarium for giving a lecture.
 
@@ -1299,10 +1664,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1310,7 +1673,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fishing-utah-2018/">
+      <a href="/fishing/fly-fishing/hobbies/travel/fishing-utah-2018/">
         <img src=
           
             "/assets/images/2018/06/IMG_8437.jpg"
@@ -1320,19 +1683,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fishing-utah-2018/" rel="permalink">Fishing Utah 2018
+        <a href="/fishing/fly-fishing/hobbies/travel/fishing-utah-2018/" rel="permalink">Fishing Utah 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Prior to the Computer Vision and Pattern Recognition conference in Salt Lake City, went on an awesome fly-fishing trip, hosted by Brent in Provo, Utah. My previous trip was in 2008 (http://phwl.org...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1340,7 +1709,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/wsjt-x-with-improved-antenna/">
+      <a href="/amateur%20radio/hobbies/wsjt-x-with-improved-antenna/">
         <img src=
           
             "/assets/images/2018/05/Screen-Shot-2018-05-26.jpg"
@@ -1350,10 +1719,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/wsjt-x-with-improved-antenna/" rel="permalink">WSJT-X with improved antenna
+        <a href="/amateur%20radio/hobbies/wsjt-x-with-improved-antenna/" rel="permalink">WSJT-X with improved antenna
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1361,10 +1738,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1372,7 +1747,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/installing-powerpoles/">
+      <a href="/amateur%20radio/hobbies/installing-powerpoles/">
         <img src=
           
             "https://powerwerx.azureedge.net/asset/image/assembly/PPpairOKN.jpg"
@@ -1382,19 +1757,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/installing-powerpoles/" rel="permalink">Installing powerpoles
+        <a href="/amateur%20radio/hobbies/installing-powerpoles/" rel="permalink">Installing powerpoles
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Anderson Powerpole connectors are the standard for 12V amateur radio equipment. Instructions are here: https://powerwerx.com/help/powerpole-assembly-instructions and this figure shows the correct o...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1403,19 +1784,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp/" rel="permalink">How to program Australian Repeaters into an Icom IC-2730A using Chirp
+        <a href="/amateur%20radio/hobbies/how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp/" rel="permalink">How to program Australian Repeaters into an Icom IC-2730A using Chirp
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I was not able to find much information on how to program Australian repeaters into my Icom IC-2730A. I did this under a Windows 7 VirtualBox virtual machine since I thought all I needed was the Ic...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1423,7 +1810,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/photo-from-karuah-jetty/">
+      <a href="/hobbies/photography/photo-from-karuah-jetty/">
         <img src=
           
             "/assets/images/2018/05/DSC_5851.jpg"
@@ -1433,20 +1820,26 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/photo-from-karuah-jetty/" rel="permalink">Photo from Karuah Jetty
+        <a href="/hobbies/photography/photo-from-karuah-jetty/" rel="permalink">Photo from Karuah Jetty
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1454,7 +1847,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">
+      <a href="/amateur%20radio/hobbies/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">
         <img src=
           
             "/assets/images/2018/04/Screen-Shot-2018-04-22-at-8.13.09-pm.png"
@@ -1464,10 +1857,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/" rel="permalink">Configuring WSJT-X on Ubuntu for an Icom IC-7200
+        <a href="/amateur%20radio/hobbies/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/" rel="permalink">Configuring WSJT-X on Ubuntu for an Icom IC-7200
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1475,10 +1876,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1487,10 +1886,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/kigumi-table/" rel="permalink">Kigumi table
+        <a href="/hobbies/woodwork/kigumi-table/" rel="permalink">Kigumi table
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Really amazing craftsmanship on this table.
 
@@ -1498,10 +1905,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1509,7 +1914,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/shanghai-2018/">
+      <a href="/travel/shanghai-2018/">
         <img src=
           
             "/assets/images/2018/07/39453904_unknown.jpg"
@@ -1519,10 +1924,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/shanghai-2018/" rel="permalink">Shanghai 2018
+        <a href="/travel/shanghai-2018/" rel="permalink">Shanghai 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went to Shanghai again to collaborate with Prof Lingli Wang at Fudan University.
 
@@ -1530,10 +1943,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1541,7 +1952,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/john-moyle-memorial-field-day-2018/">
+      <a href="/amateur%20radio/australia/hobbies/places/travel/john-moyle-memorial-field-day-2018/">
         <img src=
           
             "/assets/images/2018/03/DSCF5131.jpg"
@@ -1551,10 +1962,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/john-moyle-memorial-field-day-2018/" rel="permalink">John Moyle Memorial Field Day 2018
+        <a href="/amateur%20radio/australia/hobbies/places/travel/john-moyle-memorial-field-day-2018/" rel="permalink">John Moyle Memorial Field Day 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">[caption id=”attachment_3514” align=”alignnone” width=”1280”] Tim VK2BT, Dave VK2JDS and Owen VK2OL[/caption]
 
@@ -1562,10 +1981,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1573,7 +1990,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/refinishing-footstool/">
+      <a href="/hobbies/woodwork/refinishing-footstool/">
         <img src=
           
             "/assets/images/2018/01/IMG_0612.jpg"
@@ -1583,10 +2000,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/refinishing-footstool/" rel="permalink">Refinishing Footstool
+        <a href="/hobbies/woodwork/refinishing-footstool/" rel="permalink">Refinishing Footstool
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Refinishing a footstool I made about 5 years ago in Tasmanian Oak. It was my take on this elegant design published in Fine Woodworking http://www.finewoodworking.com/2002/02/01/a-sturdy-footstool.
 
@@ -1594,10 +2019,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1605,7 +2028,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/pittwater-jan-2018/">
+      <a href="/fishing/pittwater-jan-2018/">
         <img src=
           
             "/assets/images/2018/01/38662976_Unknown.jpg"
@@ -1615,10 +2038,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/pittwater-jan-2018/" rel="permalink">Pittwater Jan 2018
+        <a href="/fishing/pittwater-jan-2018/" rel="permalink">Pittwater Jan 2018
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Despite it being really windy, had a good day of fishing with Beard and his son Lachlan in Pittwater.
 
@@ -1626,10 +2057,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1638,19 +2067,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/" rel="permalink">How to apply to the Computer Engineering Lab at the University of Sydney
+        <a href="/academia/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/" rel="permalink">How to apply to the Computer Engineering Lab at the University of Sydney
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL), School of Electrical and Information Engineering, The University of Sydney. The...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1658,7 +2093,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hall-table/">
+      <a href="/hobbies/woodwork/hall-table/">
         <img src=
           
             "/assets/images/2018/01/IMG_0676.jpg"
@@ -1668,10 +2103,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hall-table/" rel="permalink">Camphor Laurel Timber Slab Hall Table
+        <a href="/hobbies/woodwork/hall-table/" rel="permalink">Camphor Laurel Timber Slab Hall Table
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">This nice camphor laurel slab was purchased at the Sydney Timber and Working with Wood Show.
 
@@ -1679,13 +2122,16 @@
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2017" class="archive__subtitle">2017</h2>
-    
-  
-  
+  <section id="2017" class="taxonomy__section">
+    <h2 class="archive__subtitle">2017</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -1693,7 +2139,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/girl-from-chiang-rai-karen-long-neck-tribe/">
+      <a href="/photography/travel/girl-from-chiang-rai-karen-long-neck-tribe/">
         <img src=
           
             "/assets/images/2018/01/DSCF5007.jpg"
@@ -1703,20 +2149,26 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/girl-from-chiang-rai-karen-long-neck-tribe/" rel="permalink">Girl from Chiang Rai Karen Long Neck Tribe
+        <a href="/photography/travel/girl-from-chiang-rai-karen-long-neck-tribe/" rel="permalink">Girl from Chiang Rai Karen Long Neck Tribe
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">[caption id=”attachment_3447” align=”alignnone” width=”1280”] Girl from Karen Long Neck Hill Tribe[/caption]
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1725,19 +2177,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/directions-to-cel/" rel="permalink">Directions to CEL
+        <a href="/academia/directions-to-cel/" rel="permalink">Directions to CEL
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building, University of Sydney. My office is inside Lab 840 and the entrance is on the balcony. Please call my ...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1745,7 +2203,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fly-fishing-for-kingfish-in-pittwater-sydney/">
+      <a href="/australia/fff/fishing/fly-fishing/hawkesbury%20river/hobbies/fly-fishing-for-kingfish-in-pittwater-sydney/">
         <img src=
           
             "/assets/images/2017/12/kingfish17-14.jpg"
@@ -1755,10 +2213,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fly-fishing-for-kingfish-in-pittwater-sydney/" rel="permalink">Fly-fishing for Kingfish in Pittwater, Sydney
+        <a href="/australia/fff/fishing/fly-fishing/hawkesbury%20river/hobbies/fly-fishing-for-kingfish-in-pittwater-sydney/" rel="permalink">Fly-fishing for Kingfish in Pittwater, Sydney
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Ken came from Seattle to Sydney for a few solid days of fishing. I’m going to call this FFF’18 (even though it was in 2017 and the real FFF’18 was Ken and Guy fishing in NZ).
 
@@ -1766,10 +2232,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1777,7 +2241,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/computer-engineering-lab-christmas-party-photo-2017/">
+      <a href="/academia/computer-engineering-lab-christmas-party-photo-2017/">
         <img src=
           
             "/assets/images/2017/11/celchristmas17.jpeg"
@@ -1787,10 +2251,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/computer-engineering-lab-christmas-party-photo-2017/" rel="permalink">Computer Engineering Lab Christmas Party Photo 2017
+        <a href="/academia/computer-engineering-lab-christmas-party-photo-2017/" rel="permalink">Computer Engineering Lab Christmas Party Photo 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">[caption id=”attachment_3352” align=”alignnone” width=”840”] CEL Party 2017[/caption]
 
@@ -1798,10 +2270,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1815,16 +2285,22 @@
       
     </h2>
     
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
     <p class="archive__item-excerpt" itemprop="description">The source code for the paper:
 
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1832,7 +2308,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/long-jetty-tuggerah-lake/">
+      <a href="/australia/photography/long-jetty-tuggerah-lake/">
         <img src=
           
             "/assets/images/2017/10/DSCF4677.jpg"
@@ -1842,10 +2318,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/long-jetty-tuggerah-lake/" rel="permalink">Long Jetty, Tuggerah Lake
+        <a href="/australia/photography/long-jetty-tuggerah-lake/" rel="permalink">Long Jetty, Tuggerah Lake
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1855,10 +2339,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1866,7 +2348,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/street-photos-from-beijing/">
+      <a href="/photography/travel/street-photos-from-beijing/">
         <img src=
           
             "/assets/images/2017/10/DSCF4583.jpg"
@@ -1876,10 +2358,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/street-photos-from-beijing/" rel="permalink">Street Photos from Beijing
+        <a href="/photography/travel/street-photos-from-beijing/" rel="permalink">Street Photos from Beijing
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -1887,10 +2377,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1899,10 +2387,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/forster-trip-with-ken/" rel="permalink">Forster trip with Ken
+        <a href="/australia/fishing/photography/forster-trip-with-ken/" rel="permalink">Forster trip with Ken
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Ken came to visit from Seattle so Beard and I took a day off on Friday to go car-camping in Forster.
 
@@ -1910,10 +2406,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1921,7 +2415,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/international-lighthouse-and-lightship-weekend-2017/">
+      <a href="/australia/electronics/travel/international-lighthouse-and-lightship-weekend-2017/">
         <img src=
           
             "/assets/images/2017/08/P8190063-1-1.jpg"
@@ -1931,19 +2425,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/international-lighthouse-and-lightship-weekend-2017/" rel="permalink">International Lighthouse and Lightship Weekend 2017
+        <a href="/australia/electronics/travel/international-lighthouse-and-lightship-weekend-2017/" rel="permalink">International Lighthouse and Lightship Weekend 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">At my first International Lighthouse and Lightship Weekend with the Manly Warringah Radio Society, operating from Barrenjoey Lighthouse. Here is their writeup: http://www.mwrs.org.au/lighthouse-ope...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1952,10 +2452,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/ettus-usrp-x310-installation-on-ubuntu/" rel="permalink">Ettus USRP x310 installation on Ubuntu
+        <a href="/fpga/ettus-usrp-x310-installation-on-ubuntu/" rel="permalink">Ettus USRP x310 installation on Ubuntu
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Vivado 2017.4 Version (Aug 2018)
 
@@ -1963,10 +2471,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1975,19 +2481,25 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/" rel="permalink">How to make a Ubuntu boot usb in OSX (don’t use the UNetbootin USB installer)
+        <a href="/software/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/" rel="permalink">How to make a Ubuntu boot usb in OSX (don’t use the UNetbootin USB installer)
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I had a lot of trouble making an Ubuntu boot USB drive from OSX. The instructions on https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0 don’t work in general. I think ther...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -1995,7 +2507,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/">
+      <a href="/electronics/hobbies/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/">
         <img src=
           
             "/assets/images/2017/06/DSCF4455.jpg"
@@ -2005,10 +2517,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/" rel="permalink">A 2m/70cm (146MHz and 440MHz) J-pole Antenna
+        <a href="/electronics/hobbies/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/" rel="permalink">A 2m/70cm (146MHz and 440MHz) J-pole Antenna
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">My electronics doesn’t normally involve a hacksaw, hammer and propane torch but I had fun building this J-pole antenna from instructions by N6JSX.
 
@@ -2016,10 +2536,8 @@
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2027,7 +2545,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/the-dish-parkes-nsw/">
+      <a href="/australia/electronics/photography/the-dish-parkes-nsw/">
         <img src=
           
             "/assets/images/2017/05/P5160020.jpg"
@@ -2037,10 +2555,18 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/the-dish-parkes-nsw/" rel="permalink">The Dish, Parkes NSW
+        <a href="/australia/electronics/photography/the-dish-parkes-nsw/" rel="permalink">The Dish, Parkes NSW
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description"> 
 The Dish
@@ -2048,10 +2574,8 @@ The Dish
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2059,7 +2583,7 @@ The Dish
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/balls-head-panorama/">
+      <a href="/australia/photography/balls-head-panorama/">
         <img src=
           
             "/assets/images/2017/05/P4300003-3.jpg"
@@ -2069,10 +2593,18 @@ The Dish
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/balls-head-panorama/" rel="permalink">Balls Head Panorama
+        <a href="/australia/photography/balls-head-panorama/" rel="permalink">Balls Head Panorama
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description"> 
 Sydney Skyline from Balls Head
@@ -2080,10 +2612,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2092,19 +2622,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fujifilm-x-links/" rel="permalink">Fujifilm X Links
+        <a href="/photography/fujifilm-x-links/" rel="permalink">Fujifilm X Links
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Wandering around Sim City in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first digital camera I really like as it is small, quiet and fast, making it really pleas...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2112,7 +2648,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-shanghai-2017/">
+      <a href="/photography/travel/postcard-from-shanghai-2017/">
         <img src=
           
             "/assets/images/2017/04/IMG_9415.jpg"
@@ -2122,10 +2658,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-shanghai-2017/" rel="permalink">Postcard from Shanghai 2017
+        <a href="/photography/travel/postcard-from-shanghai-2017/" rel="permalink">Postcard from Shanghai 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to Shanghai in 2014, 2013 and 2012.
 
@@ -2133,10 +2677,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2144,7 +2686,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/view-from-office/">
+      <a href="/australia/photography/view-from-office/">
         <img src=
           
             "/assets/images/2017/04/IMG_9416.jpg"
@@ -2154,20 +2696,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/view-from-office/" rel="permalink">View from Office
+        <a href="/australia/photography/view-from-office/" rel="permalink">View from Office
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2175,7 +2723,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/south-west-rocks-michael-zhu/">
+      <a href="/australia/fishing/fly-fishing/south-west-rocks-michael-zhu/">
         <img src=
           
             "/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"
@@ -2185,10 +2733,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/south-west-rocks-michael-zhu/" rel="permalink">South West Rocks (Michael Zhu)
+        <a href="/australia/fishing/fly-fishing/south-west-rocks-michael-zhu/" rel="permalink">South West Rocks (Michael Zhu)
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">An awesome fishing report that Michael Zhu sent to me via Facebook Messenger.
 
@@ -2196,10 +2752,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2207,7 +2761,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/trinity-river-2017/">
+      <a href="/fff/fishing/fly-fishing/travel/trinity-river-2017/">
         <img src=
           
             "/assets/images/2017/02/image1-e1487888764948.jpg"
@@ -2217,19 +2771,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/trinity-river-2017/" rel="permalink">Trinity River 2017
+        <a href="/fff/fishing/fly-fishing/travel/trinity-river-2017/" rel="permalink">Trinity River 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The 3rd annual FPGA Fly Fishing Workshop (FFF’17) was down on attendance, only Ken and myself participating from the 19-20th Feb, 2017. This year, it was on the Trinity River, California, fishing f...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2237,7 +2797,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-again-australia-day-2017/">
+      <a href="/australia/fishing/hawkesbury%20river/photography/hawkesbury-river-again-australia-day-2017/">
         <img src=
           
             "/assets/images/2017/01/IMG_5383.jpg"
@@ -2247,10 +2807,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-again-australia-day-2017/" rel="permalink">Hawkesbury River again Australia Day 2017
+        <a href="/australia/fishing/hawkesbury%20river/photography/hawkesbury-river-again-australia-day-2017/" rel="permalink">Hawkesbury River again Australia Day 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -2258,10 +2826,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2269,7 +2835,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/mungo-brush-beach/">
+      <a href="/australia/fly-fishing/photography/mungo-brush-beach/">
         <img src=
           
             "/assets/images/2017/01/mungobrush2.jpg"
@@ -2279,10 +2845,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mungo-brush-beach/" rel="permalink">Mungo Brush Beach
+        <a href="/australia/fly-fishing/photography/mungo-brush-beach/" rel="permalink">Mungo Brush Beach
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Photos from Mungo Brush beach.
 
@@ -2290,10 +2864,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2301,7 +2873,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/tailor-at-the-spit-bridge-2017/">
+      <a href="/fishing/tailor-at-the-spit-bridge-2017/">
         <img src=
           
             "/assets/images/2017/01/spittailor17.jpg"
@@ -2311,10 +2883,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/tailor-at-the-spit-bridge-2017/" rel="permalink">Tailor at the Spit Bridge 2017
+        <a href="/fishing/tailor-at-the-spit-bridge-2017/" rel="permalink">Tailor at the Spit Bridge 2017
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">First fish of 2017 is a tailor (and it was a fluke).
 
@@ -2322,13 +2902,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2016" class="archive__subtitle">2016</h2>
-    
-  
-  
+  <section id="2016" class="taxonomy__section">
+    <h2 class="archive__subtitle">2016</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -2336,7 +2919,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-2016/">
+      <a href="/australia/fishing/hawkesbury%20river/hawkesbury-2016/">
         <img src=
           
             "/assets/images/2016/12/PC235195.jpg"
@@ -2346,10 +2929,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-2016/" rel="permalink">Hawkesbury 2016
+        <a href="/australia/fishing/hawkesbury%20river/hawkesbury-2016/" rel="permalink">Hawkesbury 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Photos from another great trip to the Hawkesbury River.
 
@@ -2357,10 +2948,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2368,7 +2957,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/london-xian-and-macau-2016/">
+      <a href="/travel/london-xian-and-macau-2016/">
         <img src=
           
             "/assets/images/2016/12/IMG_4087.jpg"
@@ -2378,10 +2967,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/london-xian-and-macau-2016/" rel="permalink">London, Xi’an and Macau 2016
+        <a href="/travel/london-xian-and-macau-2016/" rel="permalink">London, Xi’an and Macau 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Departed on a beautiful early-summer Sydney morning in late Nov.
 
@@ -2389,10 +2986,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2400,7 +2995,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/olympic-peninsula-fly-fishing-2016/">
+      <a href="/fff/fishing/fly-fishing/photography/travel/olympic-peninsula-fly-fishing-2016/">
         <img src=
           
             "/assets/images/2016/10/IMG_3737.jpg"
@@ -2410,19 +3005,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/olympic-peninsula-fly-fishing-2016/" rel="permalink">Olympic Peninsula Fly-Fishing 2016
+        <a href="/fff/fishing/fly-fishing/photography/travel/olympic-peninsula-fly-fishing-2016/" rel="permalink">Olympic Peninsula Fly-Fishing 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I participated in the 2nd FPGA Fly-Fishing (FFF’16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron (not pictured below) and myself. The previous FFF was in New Zealand and is des...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2430,7 +3031,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/school-retreat-manly-2016/">
+      <a href="/australia/photography/school-retreat-manly-2016/">
         <img src=
           
             "/assets/images/2016/09/queencliffpano.jpg"
@@ -2440,10 +3041,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/school-retreat-manly-2016/" rel="permalink">School Retreat (Manly 2016)
+        <a href="/australia/photography/school-retreat-manly-2016/" rel="permalink">School Retreat (Manly 2016)
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some photos from the School of Electrical and Information Engineering retreat in Manly.
 
@@ -2451,10 +3060,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2463,10 +3070,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/papaa-2016/" rel="permalink">PAPAA 2016
+        <a href="/photography/travel/papaa-2016/" rel="permalink">PAPAA 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">We had a very successful Croucher PAPAA workshop at Hong Kong University.
 
@@ -2474,10 +3089,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2485,7 +3098,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/osaka-trip-2016/">
+      <a href="/photography/travel/osaka-trip-2016/">
         <img src=
           
             "/assets/images/2016/07/IMG_2849.jpg"
@@ -2495,10 +3108,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/osaka-trip-2016/" rel="permalink">Osaka trip 2016
+        <a href="/photography/travel/osaka-trip-2016/" rel="permalink">Osaka trip 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Spent a week in Osaka, the last time we were there was 2013.
 
@@ -2506,10 +3127,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2517,7 +3136,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/federal-election-2016/">
+      <a href="/photography/federal-election-2016/">
         <img src=
           
             "/assets/images/2016/07/IMG_2522.jpg"
@@ -2527,10 +3146,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/federal-election-2016/" rel="permalink">Federal Election 2016
+        <a href="/photography/federal-election-2016/" rel="permalink">Federal Election 2016
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -2538,10 +3165,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2549,7 +3174,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/danny-lim/">
+      <a href="/australia/photography/danny-lim/">
         <img src=
           
             "/assets/images/2016/05/IMG_7215-e1463299735771.jpg"
@@ -2559,10 +3184,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/danny-lim/" rel="permalink">Danny Lim
+        <a href="/australia/photography/danny-lim/" rel="permalink">Danny Lim
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Took this photo of Danny Lim, Activist, outside Redfern station. A nice guy and quite a character!
 
@@ -2570,10 +3203,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2581,7 +3212,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/luderick-fishing-sydney-harbour/">
+      <a href="/australia/fishing/luderick-fishing-sydney-harbour/">
         <img src=
           
             "/assets/images/2016/03/IMG_6937.jpg"
@@ -2591,22 +3222,33 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/luderick-fishing-sydney-harbour/" rel="permalink">Luderick Fishing Sydney Harbour
+        <a href="/australia/fishing/luderick-fishing-sydney-harbour/" rel="permalink">Luderick Fishing Sydney Harbour
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Luderick (otherwise known as blackfish) are among my favourite targets as they are quite plentiful in Sydney Harbour and the fishing is very visual. The rig involves a green weed or sea lettuce on ...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2015" class="archive__subtitle">2015</h2>
-    
-  
-  
+  <section id="2015" class="taxonomy__section">
+    <h2 class="archive__subtitle">2015</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -2614,7 +3256,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-2015/">
+      <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2015/">
         <img src=
           
             "/assets/images/2015/12/IMG_2416.jpg"
@@ -2624,19 +3266,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-2015/" rel="permalink">Hawkesbury River 2015
+        <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2015/" rel="permalink">Hawkesbury River 2015
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">A camping trip with Warren to the Hawkesbury has become an annual event (e.g. in 2014). Unfortunately, we couldn’t do it this year but went for a day trip, which was also our first fishing trip the...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2644,7 +3292,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/new-zealand-fly-fishing-2015/">
+      <a href="/fishing/new-zealand-fly-fishing-2015/">
         <img src=
           
             "/assets/images/2015/12/IMG_1615.jpg"
@@ -2654,19 +3302,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/new-zealand-fly-fishing-2015/" rel="permalink">New Zealand Fly-Fishing 2015
+        <a href="/fishing/new-zealand-fly-fishing-2015/" rel="permalink">New Zealand Fly-Fishing 2015
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">After attending the International Conference on Field Programmable Technology, Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We c...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2674,7 +3328,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-looking-west/">
+      <a href="/australia/photography/sydney-looking-west/">
         <img src=
           
             "/assets/images/2015/12/sydlookingwest.jpg"
@@ -2684,19 +3338,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-looking-west/" rel="permalink">Sydney looking west
+        <a href="/australia/photography/sydney-looking-west/" rel="permalink">Sydney looking west
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">A westward looking photograph of Sydney with the Eastern Suburbs in the foreground, Sydney CBD and Harbour in the middle, and the Blue Mountains in the distance. It is a post processed using techni...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2704,7 +3364,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/stacer-outlaw-429/">
+      <a href="/fishing/stacer-outlaw-429/">
         <img src=
           
             "/assets/images/2015/10/IMG_5965.jpg"
@@ -2714,10 +3374,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/stacer-outlaw-429/" rel="permalink">Stacer Outlaw 429
+        <a href="/fishing/stacer-outlaw-429/" rel="permalink">Stacer Outlaw 429
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Traded in the Quintrex for a new Stacer Outlaw 429 with Evinrude 50 hp at Huett Marine.  I highly recommend them as they are great people to deal with and very knowledgeable.
 
@@ -2725,10 +3393,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2736,7 +3402,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/boat-photos/">
+      <a href="/fishing/boat-photos/">
         <img src=
           
             "/assets/images/2015/08/R0015861.jpg"
@@ -2746,10 +3412,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/boat-photos/" rel="permalink">Quintrex Fishseeker Photos
+        <a href="/fishing/boat-photos/" rel="permalink">Quintrex Fishseeker Photos
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Didn’t realise that we have had this boat since 1993. It has performed faultlessly over this period and the Evinrude 30hp outboard still starts first pull.
 
@@ -2757,10 +3431,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2768,7 +3440,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/harbin-and-qingdao-2015/">
+      <a href="/travel/harbin-and-qingdao-2015/">
         <img src=
           
             "/assets/images/2015/07/P7170185.jpg"
@@ -2778,10 +3450,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/harbin-and-qingdao-2015/" rel="permalink">Harbin and Qingdao 2015
+        <a href="/travel/harbin-and-qingdao-2015/" rel="permalink">Harbin and Qingdao 2015
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -2789,10 +3469,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2800,7 +3478,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fishhook-removal/">
+      <a href="/fishing/fishhook-removal/">
         <img src=
           
             "http://www.aafp.org/afp/2001/0601/afp20010601p2231-f3.gif"
@@ -2810,19 +3488,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fishhook-removal/" rel="permalink">Fishhook removal
+        <a href="/fishing/fishhook-removal/" rel="permalink">Fishhook removal
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">In all my years of fishing, we were fortunate not to have had a bad injury. There was the time Beard, Warren and myself tried to run a rapid on the Katherine River in the Northern Territories in a ...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2831,10 +3515,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/tasmanian-holiday-2015/" rel="permalink">Tasmanian Holiday 2015
+        <a href="/australia/photography/travel/tasmanian-holiday-2015/" rel="permalink">Tasmanian Holiday 2015
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -2842,10 +3534,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2853,7 +3543,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/cradle-mountain-tasmania/">
+      <a href="/australia/photography/travel/cradle-mountain-tasmania/">
         <img src=
           
             "/assets/images/2015/02/cradlemtn-pano2.jpg"
@@ -2863,10 +3553,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cradle-mountain-tasmania/" rel="permalink">Cradle Mountain Tasmania
+        <a href="/australia/photography/travel/cradle-mountain-tasmania/" rel="permalink">Cradle Mountain Tasmania
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">A gallery of photographs taken around Cradle Mountain, Tasmania.
 
@@ -2874,10 +3572,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2885,7 +3581,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-2014/">
+      <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2014/">
         <img src=
           
             "/assets/images/2015/01/IMG_0079.jpg"
@@ -2895,10 +3591,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-2014/" rel="permalink">Hawkesbury River 2014
+        <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2014/" rel="permalink">Hawkesbury River 2014
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Much like previous years, went to do some fishing in the Hawkesbury River over the Christmas break. This time, Beard joined us. Nothing too different from other trips and a good time was had by all.
 
@@ -2906,13 +3610,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2014" class="archive__subtitle">2014</h2>
-    
-  
-  
+  <section id="2014" class="taxonomy__section">
+    <h2 class="archive__subtitle">2014</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -2920,7 +3627,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/london-shanghai-and-hong-kong-2014/">
+      <a href="/travel/london-shanghai-and-hong-kong-2014/">
         <img src=
           
             "/assets/images/2014/12/PC140137.jpg"
@@ -2930,10 +3637,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/london-shanghai-and-hong-kong-2014/" rel="permalink">London, Shanghai and Hong Kong 2014
+        <a href="/travel/london-shanghai-and-hong-kong-2014/" rel="permalink">London, Shanghai and Hong Kong 2014
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -2941,10 +3656,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2952,7 +3665,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/bondi-beach/">
+      <a href="/australia/photography/bondi-beach/">
         <img src=
           
             "/assets/images/2014/08/bondibeach.jpg"
@@ -2962,20 +3675,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/bondi-beach/" rel="permalink">Bondi Beach
+        <a href="/australia/photography/bondi-beach/" rel="permalink">Bondi Beach
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -2983,7 +3702,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hong-kong-aerial-photograph/">
+      <a href="/photography/travel/hong-kong-aerial-photograph/">
         <img src=
           
             "/assets/images/2014/07/P7030408.jpg"
@@ -2993,20 +3712,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hong-kong-aerial-photograph/" rel="permalink">Hong Kong Aerial Photograph
+        <a href="/photography/travel/hong-kong-aerial-photograph/" rel="permalink">Hong Kong Aerial Photograph
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3014,7 +3739,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/circular-quay/">
+      <a href="/australia/photography/circular-quay/">
         <img src=
           
             "/assets/images/2014/06/P6040022.jpg"
@@ -3024,20 +3749,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/circular-quay/" rel="permalink">Circular Quay
+        <a href="/australia/photography/circular-quay/" rel="permalink">Circular Quay
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3045,7 +3776,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fishing-with-friends/">
+      <a href="/fishing/fishing-with-friends/">
         <img src=
           
             "/assets/images/2014/04/P4241279.jpg"
@@ -3055,22 +3786,33 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fishing-with-friends/" rel="permalink">Fishing with friends
+        <a href="/fishing/fishing-with-friends/" rel="permalink">Fishing with friends
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Our boat was purchased around 1991 and has served us well. It is jointly owned with my close university friends, Beard and Warren. We were pleased to go out together for the first time in more than...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2013" class="archive__subtitle">2013</h2>
-    
-  
-  
+  <section id="2013" class="taxonomy__section">
+    <h2 class="archive__subtitle">2013</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -3078,7 +3820,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-2013/">
+      <a href="/australia/fishing/hawkesbury-river-2013/">
         <img src=
           
             "/assets/images/2013/12/PC2844061.jpg"
@@ -3088,10 +3830,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-2013/" rel="permalink">Hawkesbury River 2013
+        <a href="/australia/fishing/hawkesbury-river-2013/" rel="permalink">Hawkesbury River 2013
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Our trips to the Hawkesbury River have become an annual event (2012, 2011).
 
@@ -3099,10 +3849,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3110,7 +3858,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/girl-in-hong-kong-mtr/">
+      <a href="/travel/girl-in-hong-kong-mtr/">
         <img src=
           
             "/assets/images/2018/10/soldierset-front.jpg"
@@ -3120,20 +3868,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/girl-in-hong-kong-mtr/" rel="permalink">Girl in Hong Kong MTR
+        <a href="/travel/girl-in-hong-kong-mtr/" rel="permalink">Girl in Hong Kong MTR
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3141,7 +3895,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-kyoto-and-osaka/">
+      <a href="/travel/postcard-from-kyoto-and-osaka/">
         <img src=
           
             "/assets/images/2013/12/PC123629.jpg"
@@ -3151,10 +3905,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-kyoto-and-osaka/" rel="permalink">Postcard from Kyoto and Osaka
+        <a href="/travel/postcard-from-kyoto-and-osaka/" rel="permalink">Postcard from Kyoto and Osaka
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Following the International Conference on Field Programmable Technology we spent some time in Kyoto and Osaka.
 
@@ -3162,10 +3924,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3173,7 +3933,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/panorama-of-sydney-harbour/">
+      <a href="/australia/photography/panorama-of-sydney-harbour/">
         <img src=
           
             "/assets/images/2013/09/hbridge-pano24092013-lores.jpg"
@@ -3183,10 +3943,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/panorama-of-sydney-harbour/" rel="permalink">Panorama of Sydney Harbour
+        <a href="/australia/photography/panorama-of-sydney-harbour/" rel="permalink">Panorama of Sydney Harbour
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -3194,10 +3962,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3205,7 +3971,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-university-open-day-from-a-weather-balloon/">
+      <a href="/australia/photography/sydney-university-open-day-from-a-weather-balloon/">
         <img src=
           
             "/assets/images/2013/08/GOPR7514.jpg"
@@ -3215,19 +3981,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-university-open-day-from-a-weather-balloon/" rel="permalink">Sydney University Open Day (from a weather balloon)
+        <a href="/australia/photography/sydney-university-open-day-from-a-weather-balloon/" rel="permalink">Sydney University Open Day (from a weather balloon)
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">A photograph of the Sydney University Open Day from a weather balloon above the tower of the main quadrangle. This photo was made with Sydney University Electrical and Information Engineering stude...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3235,7 +4007,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/panorama-of-the-gap/">
+      <a href="/australia/photography/panorama-of-the-gap/">
         <img src=
           
             "/assets/images/2013/08/gappano.jpg"
@@ -3245,20 +4017,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/panorama-of-the-gap/" rel="permalink">Sydney Skyline from The Gap
+        <a href="/australia/photography/panorama-of-the-gap/" rel="permalink">Sydney Skyline from The Gap
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3266,7 +4044,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-harbin-summer-2013/">
+      <a href="/photography/travel/postcard-from-harbin-summer-2013/">
         <img src=
           
             "/assets/images/2013/08/P8183366.jpg"
@@ -3276,19 +4054,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-harbin-summer-2013/" rel="permalink">Postcard from Harbin Summer 2013
+        <a href="/photography/travel/postcard-from-harbin-summer-2013/" rel="permalink">Postcard from Harbin Summer 2013
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">After a superb trip to Harbin in winter, I returned in summer to attend the ICEMI conference, kindly hosted again by Prof Peng Yu, Prof Shaojun Wang and Mr Yeyong Pang from Harbin Institute of Tech...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3296,7 +4080,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/panorama-of-sydney-opera-house-and-the-harbour-bridge/">
+      <a href="/photography/panorama-of-sydney-opera-house-and-the-harbour-bridge/">
         <img src=
           
             "/assets/images/2013/08/hbridge-pano05082013.jpg"
@@ -3306,20 +4090,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/panorama-of-sydney-opera-house-and-the-harbour-bridge/" rel="permalink">Panorama of Sydney Opera House and the Harbour Bridge
+        <a href="/photography/panorama-of-sydney-opera-house-and-the-harbour-bridge/" rel="permalink">Panorama of Sydney Opera House and the Harbour Bridge
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3327,7 +4117,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/cowan-creek/">
+      <a href="/australia/fishing/cowan-creek/">
         <img src=
           
             "/assets/images/2013/07/P7282832.jpg"
@@ -3337,10 +4127,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cowan-creek/" rel="permalink">Cowan Creek
+        <a href="/australia/fishing/cowan-creek/" rel="permalink">Cowan Creek
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Photos from a short trip to Cowan Creek on a foggy morning. More after the jump.
 
@@ -3348,10 +4146,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3359,7 +4155,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/kangaroo-tagging-at-nelson-bay/">
+      <a href="/academia/australia/kangaroo-tagging-at-nelson-bay/">
         <img src=
           
             "/assets/images/2013/07/P7090917.jpg"
@@ -3369,19 +4165,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/kangaroo-tagging-at-nelson-bay/" rel="permalink">Kangaroo Tagging at Nelson Bay
+        <a href="/academia/australia/kangaroo-tagging-at-nelson-bay/" rel="permalink">Kangaroo Tagging at Nelson Bay
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I had the opportunity to visit the Nelson Bay Golf Course and observe the tagging programme of semi-wild Eastern Grey Kangaroos being conducted by a colleague in Veterinary Science. Our interest in...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3389,7 +4191,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/the-gap-watsons-bay-sydney/">
+      <a href="/australia/photography/the-gap-watsons-bay-sydney/">
         <img src=
           
             "/assets/images/2013/06/thegap-medpano2.jpg"
@@ -3399,10 +4201,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/the-gap-watsons-bay-sydney/" rel="permalink">The Gap, Watsons Bay, Sydney
+        <a href="/australia/photography/the-gap-watsons-bay-sydney/" rel="permalink">The Gap, Watsons Bay, Sydney
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Some photos from The Gap, Watsons Bay, Sydney this morning at sunrise.
 
@@ -3410,10 +4220,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3421,7 +4229,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/high-altitude-balloon-launch-1/">
+      <a href="/australia/photography/high-altitude-balloon-launch-1/">
         <img src=
           
             "/assets/images/2013/05/GOPR5590.jpg"
@@ -3431,10 +4239,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/high-altitude-balloon-launch-1/" rel="permalink">High Altitude Balloon Launch #1
+        <a href="/australia/photography/high-altitude-balloon-launch-1/" rel="permalink">High Altitude Balloon Launch #1
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Our Sydney University Electrical Engineering students, Stephen Tridgell and David Portelli successfully made a high-altitude balloon launch from Blayney, NSW. Stephen’s report is after the jump.
 
@@ -3442,10 +4258,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3453,7 +4267,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/mooney-mooney-boat-ramp/">
+      <a href="/photography/mooney-mooney-boat-ramp/">
         <img src=
           
             "/assets/images/2013/05/P5182434-lr.jpg"
@@ -3463,20 +4277,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/mooney-mooney-boat-ramp/" rel="permalink">Pelicans at Mooney Mooney boat ramp, Hawkesbury River
+        <a href="/photography/mooney-mooney-boat-ramp/" rel="permalink">Pelicans at Mooney Mooney boat ramp, Hawkesbury River
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3484,7 +4304,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/shanghai-april-2013/">
+      <a href="/travel/shanghai-april-2013/">
         <img src=
           
             "/assets/images/2013/04/P4242220.jpg"
@@ -3494,10 +4314,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/shanghai-april-2013/" rel="permalink">Shanghai April 2013
+        <a href="/travel/shanghai-april-2013/" rel="permalink">Shanghai April 2013
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I had an excellent trip to Shanghai last year and wrote about it in  http://www.phwl.org/postcard-from-shanghai/. I was fortunate enough to be invited back.
 
@@ -3505,10 +4333,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3516,7 +4342,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/panorama-at-akuna-bay/">
+      <a href="/australia/photography/panorama-at-akuna-bay/">
         <img src=
           
             "/assets/images/2013/04/akunabay.jpg"
@@ -3526,10 +4352,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/panorama-at-akuna-bay/" rel="permalink">Panorama at Akuna Bay
+        <a href="/australia/photography/panorama-at-akuna-bay/" rel="permalink">Panorama at Akuna Bay
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went for a drive this morning to Akuna Bay. Fog was coming off the river and this photograph was taken on the road between Akuna Bay and Church Point.
 
@@ -3537,10 +4371,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3548,7 +4380,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-harbin/">
+      <a href="/travel/postcard-from-harbin/">
         <img src=
           
             "/assets/images/2013/02/P2241417.jpg"
@@ -3558,10 +4390,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-harbin/" rel="permalink">Postcard from Harbin
+        <a href="/travel/postcard-from-harbin/" rel="permalink">Postcard from Harbin
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Had a really cool time in Harbin.
 
@@ -3569,10 +4409,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3580,7 +4418,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/luderick-sydney-harbour/">
+      <a href="/australia/fishing/luderick-sydney-harbour/">
         <img src=
           
             "/assets/images/2015/12/P1130251.jpg"
@@ -3590,10 +4428,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/luderick-sydney-harbour/" rel="permalink">Luderick Sydney Harbour
+        <a href="/australia/fishing/luderick-sydney-harbour/" rel="permalink">Luderick Sydney Harbour
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went for a fish in Sydney Harbour with my neighbour Michael. Had a great time catching luderick (otherwise known as blackfish).
 
@@ -3601,10 +4447,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3612,7 +4456,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/lake-eucumbene-2013/">
+      <a href="/australia/fishing/fly-fishing/lake-eucumbene-2013/">
         <img src=
           
             "/assets/images/2013/01/P1130242.jpg"
@@ -3622,22 +4466,33 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/lake-eucumbene-2013/" rel="permalink">Lake Eucumbene 2013
+        <a href="/australia/fishing/fly-fishing/lake-eucumbene-2013/" rel="permalink">Lake Eucumbene 2013
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Lake Eucumbene is an alpine lake about 500km south west of Sydney. My fishing mate, Beard (nickname which refered to his facial hair - he doesn’t have one anymore but the name stuck), and I made a ...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2012" class="archive__subtitle">2012</h2>
-    
-  
-  
+  <section id="2012" class="taxonomy__section">
+    <h2 class="archive__subtitle">2012</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -3645,7 +4500,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-2012-2/">
+      <a href="/fishing/hawkesbury-river-2012-2/">
         <img src=
           
             "/assets/images/2012/12/PC210130.jpg"
@@ -3655,19 +4510,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-2012-2/" rel="permalink">Hawkesbury River 2012
+        <a href="/fishing/hawkesbury-river-2012-2/" rel="permalink">Hawkesbury River 2012
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">In what has turned out to become an annual event (click on this link for the 2011 version), went on a 4 day camping trip to the Hawkesbury River with my high-school friend, Warren. We camp on a bea...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3675,7 +4536,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/molonglo-radio-observatory/">
+      <a href="/australia/photography/travel/molonglo-radio-observatory/">
         <img src=
           
             "/assets/images/2012/11/P1120459.jpg"
@@ -3685,10 +4546,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/molonglo-radio-observatory/" rel="permalink">Molonglo Radio Observatory
+        <a href="/australia/photography/travel/molonglo-radio-observatory/" rel="permalink">Molonglo Radio Observatory
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The University of Sydney’s Molonglo Radio Observatory is located about 3-4 hours south of Sydney. It is being used to prototype some of the technologies in the proposed Square Kilometer Array.
 
@@ -3696,10 +4565,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3707,7 +4574,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-shanghai/">
+      <a href="/photography/travel/postcard-from-shanghai/">
         <img src=
           
             "/assets/images/2012/04/P1110707.jpg"
@@ -3717,10 +4584,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-shanghai/" rel="permalink">Postcard from Shanghai
+        <a href="/photography/travel/postcard-from-shanghai/" rel="permalink">Postcard from Shanghai
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Spent a fortnight over Easter in Shanghai,
 
@@ -3728,10 +4603,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3740,23 +4613,34 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/guide-to-more-than-100-sydney-beaches/" rel="permalink">Guide to more than 100 Sydney Beaches
+        <a href="/australia/guide-to-more-than-100-sydney-beaches/" rel="permalink">Guide to more than 100 Sydney Beaches
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Graham Link was interviewed this morning on 702 ABC about his website on Sydney beaches. It is very informative and well worth visiting http://www.linkysbeachdays.com/.
 </p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2011" class="archive__subtitle">2011</h2>
-    
-  
-  
+  <section id="2011" class="taxonomy__section">
+    <h2 class="archive__subtitle">2011</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -3764,7 +4648,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/hawkesbury-river-2011/">
+      <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2011/">
         <img src=
           
             "/assets/images/2011/12/PC284255.jpg"
@@ -3774,10 +4658,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/hawkesbury-river-2011/" rel="permalink">Hawkesbury River 2011
+        <a href="/australia/fishing/hawkesbury%20river/hawkesbury-river-2011/" rel="permalink">Hawkesbury River 2011
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went with Warren to the Hawkesbury River for 3 days of fishing and camping.
 
@@ -3785,10 +4677,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3796,7 +4686,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/delhi/">
+      <a href="/travel/delhi/">
         <img src=
           
             "/assets/images/2014/11/P1100183.jpg"
@@ -3806,20 +4696,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/delhi/" rel="permalink">Delhi 2011
+        <a href="/travel/delhi/" rel="permalink">Delhi 2011
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3828,20 +4724,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-london-2011/" rel="permalink">Postcard from London 2011
+        <a href="/travel/postcard-from-london-2011/" rel="permalink">Postcard from London 2011
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I only have this as a pdf file but this link contains the story of my 2011 trip to London: london-2011.
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3849,7 +4751,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-monterey-2011/">
+      <a href="/travel/postcard-from-monterey-2011/">
         <img src=
           
             "/assets/images/2014/12/P1080702.jpg"
@@ -3859,20 +4761,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-monterey-2011/" rel="permalink">Postcard from Monterey 2011
+        <a href="/travel/postcard-from-monterey-2011/" rel="permalink">Postcard from Monterey 2011
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3880,7 +4788,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-ottawa-2011/">
+      <a href="/travel/postcard-from-ottawa-2011/">
         <img src=
           
             "/assets/images/2014/12/P1080551.jpg"
@@ -3890,23 +4798,34 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-ottawa-2011/" rel="permalink">Postcard from Ottawa 2011
+        <a href="/travel/postcard-from-ottawa-2011/" rel="permalink">Postcard from Ottawa 2011
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2010" class="archive__subtitle">2010</h2>
-    
-  
-  
+  <section id="2010" class="taxonomy__section">
+    <h2 class="archive__subtitle">2010</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -3914,7 +4833,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/elaines-off-road-trip/">
+      <a href="/australia/travel/elaines-off-road-trip/">
         <img src=
           
             "http://elainext.files.wordpress.com/2010/04/map.jpg"
@@ -3924,10 +4843,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/elaines-off-road-trip/" rel="permalink">Elaine’s (off) Road Trip
+        <a href="/australia/travel/elaines-off-road-trip/" rel="permalink">Elaine’s (off) Road Trip
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Check out Elaine’s amazing motorcycle trip around Australia here
 
@@ -3935,10 +4862,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3946,7 +4871,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/whale-beach/">
+      <a href="/australia/photography/whale-beach/">
         <img src=
           
             "/assets/images/2016/03/whalebeach.jpg"
@@ -3956,20 +4881,26 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/whale-beach/" rel="permalink">Whale Beach
+        <a href="/australia/photography/whale-beach/" rel="permalink">Whale Beach
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 </p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -3977,7 +4908,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/sydney-skyline-at-dusk/">
+      <a href="/australia/photography/sydney-skyline-at-dusk/">
         <img src=
           
             "/assets/images/2010/05/kirribilli.jpg"
@@ -3987,10 +4918,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/sydney-skyline-at-dusk/" rel="permalink">Sydney skyline at dusk
+        <a href="/australia/photography/sydney-skyline-at-dusk/" rel="permalink">Sydney skyline at dusk
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">This photo of Sydney was taken from Kirribilli, not too far from the Harbour Bridge.
 
@@ -3998,10 +4937,100 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+        
 
-  
-  
-  
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://github.com">Post: Link
+</a> <a href="/blog/post-link/" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">This theme supports link posts, made famous by John Gruber. To use, just add link: http://url-you-want-linked to the post’s YAML front matter and you’re done.
+
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/post-quote/" rel="permalink">Post: Quote
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  Only one thing is impossible for God: To find any sense in any copyright law on the planet.
+
+
+
+  Mark Twain
+
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/post-notice/" rel="permalink">Post: Notice
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">A notice displays information that explains nearby content. Often used to call attention to a particular detail.
+
+</p>
+  </article>
+</div>
+
+      
+        
 
 
 
@@ -4009,7 +5038,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/postcard-from-ottawa/">
+      <a href="/travel/postcard-from-ottawa/">
         <img src=
           
             "/assets/images/2010/02/4325453460_236ea51fbe_o.jpg"
@@ -4019,10 +5048,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/postcard-from-ottawa/" rel="permalink">Postcard from Ottawa
+        <a href="/travel/postcard-from-ottawa/" rel="permalink">Postcard from Ottawa
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">In return for my sins I was sent to Ottawa for the week.
 
@@ -4030,13 +5067,101 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+        
 
-  
-  
-    <h2 id="2009" class="archive__subtitle">2009</h2>
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-  
-  
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/post-chat/" rel="permalink">Post: Chat
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.
+
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/post-standard/" rel="permalink">Post: Standard
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another fl...</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/post-modified/" rel="permalink">Post: Modified Date
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post has been updated and should show a modified date if used in a layout.
+
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2009" class="taxonomy__section">
+    <h2 class="archive__subtitle">2009</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4044,7 +5169,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/blue-mountains/">
+      <a href="/australia/travel/blue-mountains/">
         <img src=
           
             "/assets/images/2009/12/4181431810_697e86c733_o.jpg"
@@ -4054,19 +5179,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/blue-mountains/" rel="permalink">Blue Mountains
+        <a href="/australia/travel/blue-mountains/" rel="permalink">Blue Mountains
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The 1 million hectare Blue Mountains is a World Heritage listed National Park in NSW Australia. Its name comes from the blueish haze that often appears above it due to evaporation of eucalyptus oil...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4074,7 +5205,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/a-gift-from-my-students/">
+      <a href="/academia/a-gift-from-my-students/">
         <img src=
           
             "/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg"
@@ -4084,10 +5215,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/a-gift-from-my-students/" rel="permalink">A Gift From my Students
+        <a href="/academia/a-gift-from-my-students/" rel="permalink">A Gift From my Students
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I was honoured to have received this pen from my ex-students at CUHK.
 
@@ -4095,10 +5234,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4106,7 +5243,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/the-chinese-university-of-hong-kong/">
+      <a href="/photography/the-chinese-university-of-hong-kong/">
         <img src=
           
             "/assets/images/2009/08/3732055986_9e2fbe4220.jpg"
@@ -4116,10 +5253,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/the-chinese-university-of-hong-kong/" rel="permalink">The Chinese University of Hong Kong
+        <a href="/photography/the-chinese-university-of-hong-kong/" rel="permalink">The Chinese University of Hong Kong
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The Chinese University of Hong Kong has a beautiful campus. Here are some photographs.
 
@@ -4127,10 +5272,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4138,7 +5281,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/street-photos-from-hong-kong/">
+      <a href="/photography/street-photos-from-hong-kong/">
         <img src=
           
             "/assets/images/2009/08/3818727575_13c777a19b.jpg"
@@ -4148,10 +5291,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/street-photos-from-hong-kong/" rel="permalink">Street photos from Hong Kong
+        <a href="/photography/street-photos-from-hong-kong/" rel="permalink">Street photos from Hong Kong
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some street photos from Hong Kong.
 
@@ -4159,10 +5310,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4170,7 +5319,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/kowloon-and-hong-kong-from-the-air/">
+      <a href="/photography/kowloon-and-hong-kong-from-the-air/">
         <img src=
           
             "/assets/images/2009/08/3777477460_3c36654fb6_o.jpg"
@@ -4180,10 +5329,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/kowloon-and-hong-kong-from-the-air/" rel="permalink">Hong Kong Skyline
+        <a href="/photography/kowloon-and-hong-kong-from-the-air/" rel="permalink">Hong Kong Skyline
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some photographs of Hong Kong.
 
@@ -4191,10 +5348,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4202,7 +5357,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/life-the-universe-and-fishing/">
+      <a href="/academia/fishing/fly-fishing/life-the-universe-and-fishing/">
         <img src=
           
             "/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg"
@@ -4212,10 +5367,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/life-the-universe-and-fishing/" rel="permalink">Life, the Universe and Fishing
+        <a href="/academia/fishing/fly-fishing/life-the-universe-and-fishing/" rel="permalink">Life, the Universe and Fishing
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  13 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I was asked by Prof Evangeline Young to give a “Lunchtime Pizza talk” on the 15th May. Here is the text of the talk which is not really about fishing but concerns graduate research.
 
@@ -4223,10 +5386,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4234,7 +5395,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/beijing-and-harbin/">
+      <a href="/travel/beijing-and-harbin/">
         <img src=
           
             "/assets/images/2009/02/dsc_2590_1.jpg"
@@ -4244,10 +5405,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/beijing-and-harbin/" rel="permalink">Beijing and Harbin
+        <a href="/travel/beijing-and-harbin/" rel="permalink">Beijing and Harbin
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some photos taken from a trip to Beijing and Harbin in 2009.
 
@@ -4255,13 +5424,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2008" class="archive__subtitle">2008</h2>
-    
-  
-  
+  <section id="2008" class="taxonomy__section">
+    <h2 class="archive__subtitle">2008</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4269,7 +5441,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/snowboard-fever/">
+      <a href="/photography/snowboard-fever/">
         <img src=
           
             "/assets/images/2016/01/3731258183_2af03d23cb_o.jpg"
@@ -4279,10 +5451,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/snowboard-fever/" rel="permalink">Snowboard Fever
+        <a href="/photography/snowboard-fever/" rel="permalink">Snowboard Fever
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Photo from Beijing ski trip.
 
@@ -4290,10 +5470,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4302,19 +5480,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/booti-booti-national-park-aug-2008/" rel="permalink">Forster 2008
+        <a href="/fishing/booti-booti-national-park-aug-2008/" rel="permalink">Forster 2008
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable tides and weather. Life’s too short to only go fishing when conditions are good. We we...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4322,7 +5506,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fishing-renovating-and-ballroom-dancing-in-utah-2008/">
+      <a href="/fishing/travel/fishing-renovating-and-ballroom-dancing-in-utah-2008/">
         <img src=
           
             "/assets/images/2015/12/p1000341.jpg"
@@ -4332,10 +5516,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fishing-renovating-and-ballroom-dancing-in-utah-2008/" rel="permalink">Fishing, Renovating and Ballroom Dancing in Utah 2008
+        <a href="/fishing/travel/fishing-renovating-and-ballroom-dancing-in-utah-2008/" rel="permalink">Fishing, Renovating and Ballroom Dancing in Utah 2008
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Introduction
 
@@ -4343,13 +5535,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2007" class="archive__subtitle">2007</h2>
-    
-  
-  
+  <section id="2007" class="taxonomy__section">
+    <h2 class="archive__subtitle">2007</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4357,7 +5552,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/forster/">
+      <a href="/australia/fishing/forster/">
         <img src=
           
             "/assets/images/2007/08/p1010269.jpg"
@@ -4367,10 +5562,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/forster/" rel="permalink">Forster 2007
+        <a href="/australia/fishing/forster/" rel="permalink">Forster 2007
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Forster is about a four hour drive from Sydney. Went on a very brief overnight camping/fishing trip with my good friends from Sydney University, Warren and Chris.
 
@@ -4378,10 +5581,8 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4389,7 +5590,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/a-trip-to-finland/">
+      <a href="/travel/fishing/a-trip-to-finland/">
         <img src=
           
             "/assets/images/2007/06/3794357585_f147b6519d_o2.jpg"
@@ -4399,10 +5600,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/a-trip-to-finland/" rel="permalink">A trip to Finland
+        <a href="/travel/fishing/a-trip-to-finland/" rel="permalink">A trip to Finland
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">My trip to Finland coincided with the Midsummer Festival, an event which I was lucky enough to share with my host Tero.
 
@@ -4410,13 +5619,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2006" class="archive__subtitle">2006</h2>
-    
-  
-  
+  <section id="2006" class="taxonomy__section">
+    <h2 class="archive__subtitle">2006</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4424,7 +5636,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/victorinox-swiss-army-knife-soldier-set/">
+      <a href="/outdoors/victorinox-swiss-army-knife-soldier-set/">
         <img src=
           
             "/assets/images/2018/10/soldierset-front.jpg"
@@ -4434,22 +5646,33 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/victorinox-swiss-army-knife-soldier-set/" rel="permalink">Victorinox Swiss Army Knife Soldier Set
+        <a href="/outdoors/victorinox-swiss-army-knife-soldier-set/" rel="permalink">Victorinox Swiss Army Knife Soldier Set
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from 1934, 1965, 1970 and 1997. Also note the evolution of the blade (from clip point to spear po...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2005" class="archive__subtitle">2005</h2>
-    
-  
-  
+  <section id="2005" class="taxonomy__section">
+    <h2 class="archive__subtitle">2005</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4457,7 +5680,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/walthamstow-reservoir/">
+      <a href="/fishing/walthamstow-reservoir/">
         <img src=
           
             "/assets/images/2005/09/waltham220905-trout.jpg"
@@ -4467,19 +5690,25 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/walthamstow-reservoir/" rel="permalink">Walthamstow Reservoir
+        <a href="/fishing/walthamstow-reservoir/" rel="permalink">Walthamstow Reservoir
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">From Sydney, going trout fishing requires commitment. It is either an 8 hour drive to the Snowy Mountains or a plane trip to New Zealand. From Hong Kong, it is even more difficult. In London, I fou...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4487,7 +5716,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/meon-springs/">
+      <a href="/fishing/meon-springs/">
         <img src=
           
             "/assets/images/2005/09/Tero05.jpg"
@@ -4497,22 +5726,33 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/meon-springs/" rel="permalink">Meon Springs
+        <a href="/fishing/meon-springs/" rel="permalink">Meon Springs
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Fished Meon Springs yesterday. It was my first fishing trip in the UK and my first experience fishing a managed, stocked fishery. Went with Tero Rissa who got the beautiful 6.5 pound hen rainbow tr...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2004" class="archive__subtitle">2004</h2>
-    
-  
-  
+  <section id="2004" class="taxonomy__section">
+    <h2 class="archive__subtitle">2004</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4520,7 +5760,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/weipa-may-2004/">
+      <a href="/australia/fishing/weipa-may-2004/">
         <img src=
           
             "/assets/images/2004/05/IMG_3774.jpg"
@@ -4530,10 +5770,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/weipa-may-2004/" rel="permalink">Weipa
+        <a href="/australia/fishing/weipa-may-2004/" rel="permalink">Weipa
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some photos taken from a fishing trip to Weipa in 2004 with Chris See.
 
@@ -4541,13 +5789,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2002" class="archive__subtitle">2002</h2>
-    
-  
-  
+  <section id="2002" class="taxonomy__section">
+    <h2 class="archive__subtitle">2002</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4555,7 +5806,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/london-lakes/">
+      <a href="/australia/fishing/london-lakes/">
         <img src=
           
             "/assets/images/2002/12/3794804597_870ea589a1_z.jpg"
@@ -4565,10 +5816,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/london-lakes/" rel="permalink">London Lakes
+        <a href="/australia/fishing/london-lakes/" rel="permalink">London Lakes
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some photos from a trip to London Lakes in Tasmania that I made in December 2002.
 
@@ -4576,13 +5835,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2001" class="archive__subtitle">2001</h2>
-    
-  
-  
+  <section id="2001" class="taxonomy__section">
+    <h2 class="archive__subtitle">2001</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4590,7 +5852,7 @@ Sydney Skyline from Balls Head
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/fishing-photos/">
+      <a href="/fishing/fishing-photos/">
         <img src=
           
             "/assets/images/2001/08/gt1.jpg"
@@ -4600,10 +5862,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/fishing-photos/" rel="permalink">Fishing Photos
+        <a href="/fishing/fishing-photos/" rel="permalink">Fishing Photos
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Here are some of my favourite fishing photos from the age before digital cameras.
 
@@ -4611,13 +5881,16 @@ Sydney Skyline from Balls Head
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="2000" class="archive__subtitle">2000</h2>
-    
-  
-  
+  <section id="2000" class="taxonomy__section">
+    <h2 class="archive__subtitle">2000</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4626,10 +5899,18 @@ Sydney Skyline from Balls Head
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/a-ballard-of-ducks/" rel="permalink">A Ballard of Ducks
+        <a href="/fishing/a-ballard-of-ducks/" rel="permalink">A Ballard of Ducks
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">The railway rattled and roared and swung
 With jolting carriage and bumping trucks.
@@ -4639,10 +5920,8 @@ Of the wild-eyed man in the co...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4651,19 +5930,25 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/testament-of-a-fisherman/" rel="permalink">Testament of a Fisherman
+        <a href="/fishing/testament-of-a-fisherman/" rel="permalink">Testament of a Fisherman
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">I fish because I love to; because I love the environs where trout are found, which are invariably beautiful and I hate the environs where crowds of people are found, which are invariably ugly; beca...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4671,7 +5956,7 @@ Of the wild-eyed man in the co...</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/telluride-2000/">
+      <a href="/photography/travel/telluride-2000/">
         <img src=
           
             "/assets/images/2015/12/telluride1_800.jpg"
@@ -4681,10 +5966,18 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/telluride-2000/" rel="permalink">Telluride 2000
+        <a href="/photography/travel/telluride-2000/" rel="permalink">Telluride 2000
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Town of Telluride taken from the Jud Wiebe Trail
 
@@ -4692,13 +5985,16 @@ Of the wild-eyed man in the co...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="1999" class="archive__subtitle">1999</h2>
-    
-  
-  
+  <section id="1999" class="taxonomy__section">
+    <h2 class="archive__subtitle">1999</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4706,7 +6002,7 @@ Of the wild-eyed man in the co...</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/stanwell-park/">
+      <a href="/australia/stanwell-park/">
         <img src=
           
             "/assets/images/2013/02/stanwell99.jpg"
@@ -4716,23 +6012,34 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/stanwell-park/" rel="permalink">Stanwell Park
+        <a href="/australia/stanwell-park/" rel="permalink">Stanwell Park
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">This photo of Stanwell Park was taken back in 1999.
 </p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="1996" class="archive__subtitle">1996</h2>
-    
-  
-  
+  <section id="1996" class="taxonomy__section">
+    <h2 class="archive__subtitle">1996</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4740,7 +6047,7 @@ Of the wild-eyed man in the co...</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/cessna-first-solo/">
+      <a href="/hobbies/cessna-first-solo/">
         <img src=
           
             "/assets/images/2015/12/plcessna.jpg"
@@ -4750,10 +6057,18 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/cessna-first-solo/" rel="permalink">Cessna first solo
+        <a href="/hobbies/cessna-first-solo/" rel="permalink">Cessna first solo
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Been taking flying lessons and took my first solo in a Cessna 152  in December 1996.
 
@@ -4761,10 +6076,8 @@ Of the wild-eyed man in the co...</p>
   </article>
 </div>
 
-
-  
-  
-  
+      
+        
 
 
 
@@ -4772,7 +6085,7 @@ Of the wild-eyed man in the co...</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/new-zealand-trip/">
+      <a href="/fishing/new-zealand-trip/">
         <img src=
           
             "/assets/images/2014/10/nz96-twizel3.jpg"
@@ -4782,10 +6095,18 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/new-zealand-trip/" rel="permalink">New Zealand Trip
+        <a href="/fishing/new-zealand-trip/" rel="permalink">New Zealand Trip
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the trip.
 
@@ -4793,13 +6114,16 @@ Of the wild-eyed man in the co...</p>
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="1994" class="archive__subtitle">1994</h2>
-    
-  
-  
+  <section id="1994" class="taxonomy__section">
+    <h2 class="archive__subtitle">1994</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4807,7 +6131,7 @@ Of the wild-eyed man in the co...</p>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/marlin-on-fly/">
+      <a href="/fishing/marlin-on-fly/">
         <img src=
           
             "/assets/images/1994/04/plmarlin1.jpg"
@@ -4817,10 +6141,18 @@ Of the wild-eyed man in the co...</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/marlin-on-fly/" rel="permalink">Marlin on Fly
+        <a href="/fishing/marlin-on-fly/" rel="permalink">Marlin on Fly
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  9 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -4831,13 +6163,16 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="1991" class="archive__subtitle">1991</h2>
-    
-  
-  
+  <section id="1991" class="taxonomy__section">
+    <h2 class="archive__subtitle">1991</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4845,7 +6180,7 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/barramundi-on-fly/">
+      <a href="/fishing/barramundi-on-fly/">
         <img src=
           
             "/assets/images/1991/08/plbarra1-horiz.jpg"
@@ -4855,10 +6190,18 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/barramundi-on-fly/" rel="permalink">Barramundi on Fly
+        <a href="/fishing/barramundi-on-fly/" rel="permalink">Barramundi on Fly
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  9 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">
 
@@ -4869,13 +6212,16 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
   </article>
 </div>
 
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
-  
-  
-    <h2 id="1900" class="archive__subtitle">1900</h2>
-    
-  
-  
+  <section id="1900" class="taxonomy__section">
+    <h2 class="archive__subtitle">1900</h2>
+    <div class="entries-list">
+      
+        
 
 
 
@@ -4884,16 +6230,29 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/welcome-to-minimal-mistakes-jekyll/" rel="permalink">Welcome to Minimal Mistakes Jekyll
+        <a href="/update/welcome-to-minimal-mistakes-jekyll/" rel="permalink">Welcome to Minimal Mistakes Jekyll
 </a>
       
     </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
     
     <p class="archive__item-excerpt" itemprop="description">Welcome to the first blog posts of Minimal Mistakes Jekyll. You may edit the title, date, categories, and tags of this blog post to be your own OR delete this post and create a new one.
 
 </p>
   </article>
 </div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
 
 
   </div>
@@ -4902,14 +6261,13 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap">
-  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  <div id="results" class="results"></div>
-</div>
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
       </div>
     
 
-    <div class="page__footer">
+    <div id="footer" class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
 
@@ -4917,14 +6275,24 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>Follow:</strong></li>
+
     
+      
+        
+          <li><a href="https://twitter.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://instagram.com/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
     
-    
-    
-    
-    
-    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -4935,11 +6303,15 @@ Black marlin on fly, Cape Bowling Green, Queensland, Mary River
 
     
   <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
 
 
 
-  <script src="/assets/js/lunr.min.js"></script>
-  <script src="/assets/js/lunr-en.js"></script>
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
 
 
 
