@@ -54,7 +54,7 @@ and browse to `localhost:4000`.
   * Copy wp-content files into `assets/images` on the Jekyll website.
   * To make publically available, type `bundle exec jekyll build` and then push the files up to Github (the repository is <https://github.com/phwl/phwl.github.io>)
 
-## Fix `_posts`
+## Fix `_posts` and `_pages`
   * This took the most time. The main changes I needed to do was to fix the headers: remove the old `link` header, add a teaser image. Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like
  
 ~~~~

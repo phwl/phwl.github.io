@@ -62,7 +62,15 @@ plugins:
 author:
   name   : "phwl"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Carbon-based lifeform."
+  location         : "Sydney, Australia"
+  bio    : "" # "Carbon-based lifeform."
+  links:
+    - label: "students"
+      url: "/students"
+    - label: "talks"
+      url: "/talks"
+    - label: "writing resources"
+      url: "/writing-resources"
 
 footer:
   links:
