@@ -69,7 +69,7 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 
 ## Customise website
   * Since I wanted teaser images appearing on the front page, I put a copy of <https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html> in `_includes/archive-single.html`
-  * To enable $$\LaTeX$$ rendering with mathjax, I created a file in `_includes/scripts.html` with
+  * To enable $$\LaTeX$$ rendering with mathjax, I created a file in `_includes/latex.html` with
 
 ~~~~
 {% if page.use_math %}
