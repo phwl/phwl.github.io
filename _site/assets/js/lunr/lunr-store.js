@@ -429,6 +429,11 @@ var store = [{
         "tags": [],
         "url": "/south-west-rocks-michael-zhu/",
         "teaser":"/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"},{
+        "title": "Gordon Bell talk at the University of Sydney",
+        "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["academia"],
+        "tags": ["jekyll"],
+        "url": "/gordon-bell-talk/",
+        "teaser":"/assets/images/2017/04/gordon_bell-2.jpg"},{
         "title": "View from Office",
         "excerpt":"  ","categories": ["australia","photography"],
         "tags": [],
