@@ -16,7 +16,7 @@ header:
   teaser: /assets/images/2018/03/DSCF5131.jpg
 ---
 
-{% picture /assets/images/2018/03/DSCF5131.jpg %}
+![](/assets/images/2018/03/DSCF5131.jpg)
 Tim VK2BT, Dave VK2JDS and Owen VK2OL
 
 The Manly Warringah Radio Society (MWRS) participated in the [2018 John Moyle Memorial Field Day](http://www.wia.org.au/members/contests/johnmoyle/), held 17-18 March. John Moyle(1908-1960) was an engineer, editor, music and art lover, and the following two-part biography by Neville Williams eloquently describes his significant contributions to radio in Australia: (1) <http://messui.polygonal-moogle.com/valves/NW198909.pdf>, and (2) <http://messui.polygonal-moogle.com/valves/NW198910.pdf>.
