@@ -8,6 +8,8 @@ title: Marlin on Fly
 wordpress_id: 76
 categories:
 - fishing
+- Fly-fishing
+- Australia
 header:
   teaser: /assets/images/1994/04/plmarlin1.jpg
 ---

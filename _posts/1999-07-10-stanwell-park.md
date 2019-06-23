@@ -8,6 +8,8 @@ title: Stanwell Park
 wordpress_id: 845
 categories:
 - australia
+- fishing
+- photography
 header:
   teaser: /assets/images/2013/02/stanwell99.jpg
 ---

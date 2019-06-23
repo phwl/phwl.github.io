@@ -8,6 +8,8 @@ title: Barramundi on Fly
 wordpress_id: 82
 categories:
 - fishing
+- Fly-fishing
+- Australia
 header:
   teaser: /assets/images/1991/08/plbarra1-horiz.jpg
 ---

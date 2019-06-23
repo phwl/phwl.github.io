@@ -8,6 +8,8 @@ title: New Zealand Trip
 wordpress_id: 1526
 categories:
 - fishing
+- Fly-fishing
+- travel
 header:
   teaser: /assets/images/2014/10/nz96-twizel3.jpg
 ---
