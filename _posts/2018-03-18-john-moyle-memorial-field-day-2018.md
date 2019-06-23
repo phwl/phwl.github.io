@@ -10,7 +10,6 @@ categories:
 - amateur radio
 - australia
 - hobbies
-- places
 - travel
 header:
   teaser: /assets/images/2018/03/DSC_5806.jpg
