@@ -14,5 +14,4 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
-  gem 'jekyll-picture-tag', git: 'https://github.com/rbuchberger/jekyll-picture-tag/'
 end

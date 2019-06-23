@@ -13,7 +13,7 @@ categories:
 - places
 - travel
 header:
-  teaser: /assets/images/2018/03/DSCF5131.jpg
+  teaser: /assets/images/2018/03/DSC_5806.jpg
 ---
 
 ![](/assets/images/2018/03/DSCF5131.jpg)
