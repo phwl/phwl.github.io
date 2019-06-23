@@ -430,7 +430,7 @@ var store = [{
         "url": "/south-west-rocks-michael-zhu/",
         "teaser":"/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"},{
         "title": "Gordon Bell talk at the University of Sydney",
-        "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["academia,","hardware"],
+        "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["academia,","electronics"],
         "tags": [],
         "url": "/gordon-bell-talk/",
         "teaser":"/assets/images/2017/04/gordon_bell-2.jpg"},{
@@ -540,7 +540,7 @@ var store = [{
         "url": "/refinishing-footstool/",
         "teaser":"/assets/images/2018/01/IMG_0612.jpg"},{
         "title": "John Moyle Memorial Field Day 2018",
-        "excerpt":" Tim VK2BT, Dave VK2JDS and Owen VK2OL   The Manly Warringah Radio Society (MWRS) participated in the 2018 John Moyle Memorial Field Day, held 17-18 March. John Moyle(1908-1960) was an engineer, editor, music and art lover, and the following two-part biography by Neville Williams eloquently describes his significant contributions to radio in Australia: (1) http://messui.polygonal-moogle.com/valves/NW198909.pdf, and (2) http://messui.polygonal-moogle.com/valves/NW198910.pdf.   A full writeup is available from the MWRS website: http://www.mwrs.org.au/2018/05/12/2018-john-moyle-memorial-field-day/.                                                                     ","categories": ["amateur radio","australia","hobbies","places","travel"],
+        "excerpt":" Tim VK2BT, Dave VK2JDS and Owen VK2OL   The Manly Warringah Radio Society (MWRS) participated in the 2018 John Moyle Memorial Field Day, held 17-18 March. John Moyle(1908-1960) was an engineer, editor, music and art lover, and the following two-part biography by Neville Williams eloquently describes his significant contributions to radio in Australia: (1) http://messui.polygonal-moogle.com/valves/NW198909.pdf, and (2) http://messui.polygonal-moogle.com/valves/NW198910.pdf.   A full writeup is available from the MWRS website: http://www.mwrs.org.au/2018/05/12/2018-john-moyle-memorial-field-day/.                                                                     ","categories": ["amateur radio","australia","hobbies","travel"],
         "tags": [],
         "url": "/john-moyle-memorial-field-day-2018/",
         "teaser":"/assets/images/2018/03/DSC_5806.jpg"},{
