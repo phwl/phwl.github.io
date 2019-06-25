@@ -1,7 +1,9 @@
 ---
 title:  "Gordon Bell talk at the University of Sydney"
 date:   2017-04-05 19:52:46 EST
-categories: academia, electronics
+categories: 
+ - electronics
+ - academia
 use_math: false
 header:
   teaser: /assets/images/2017/04/gordon_bell-2.jpg

@@ -430,7 +430,7 @@ var store = [{
         "url": "/south-west-rocks-michael-zhu/",
         "teaser":"/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"},{
         "title": "Gordon Bell talk at the University of Sydney",
-        "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["academia,","electronics"],
+        "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["electronics","academia"],
         "tags": [],
         "url": "/gordon-bell-talk/",
         "teaser":"/assets/images/2017/04/gordon_bell-2.jpg"},{
@@ -629,8 +629,8 @@ var store = [{
         "tags": [],
         "url": "/mooney-mooney-morning-2018/",
         "teaser":"/assets/images/2018/09/40515248_Unknown.jpg"},{
-        "title": "Harbin Intitute of Technology Reconfigurable Computing Course 2018",
-        "excerpt":"Lecture Notes (0-cel, 1-intro-cn, 1-lstm, 2-architecture, 3-exploration, 4-parallelism, 5-integration, 6-customisation, 7-precision, 8-mca, 9-kernelarch)   Tutorial Notes (lstmtut)  ","categories": ["FPGA"],
+        "title": "Harbin Intitute of Technology (HIT) Reconfigurable Computing Course 2018",
+        "excerpt":"Lecture Notes (0-cel, 1-intro-cn, 1-lstm, 2-architecture, 3-exploration, 4-parallelism, 5-integration, 6-customisation, 7-precision, 8-mca, 9-kernelarch)   Tutorial Notes (lstmtut)  ","categories": ["FPGA","academia"],
         "tags": [],
         "url": "/harbin-intitute-of-technology-reconfigurable-computing-course-2018/",
         "teaser":null},{
@@ -660,7 +660,7 @@ var store = [{
         "url": "/amateur-radio-shops-in-akihabara/",
         "teaser":"/assets/images/2018/12/DSCF5835.jpg"},{
         "title": "Tokyo Institute of Technology Tsubame 3.0 Visit",
-        "excerpt":"Hosted by Prof Hiroki Nakahara and Prof Yuko Hara-Azumi, I gave a talk entitled “Large Scale FPGA Implementations of Machine Learning Algorithms” (slides available at phwl.org/talks) at the Tokyo Institute of Technology. The highlight was a visit to the Tsubame 3.0 supercomputer. In the photo below, from left to right, myself, Prof Yuko Hara-Azumi (Tokyo Tech), Prof Nachiket Kapre (Waterloo) and Prof Hiroki Nakahara (Tokyo Tech).        The machine was ranked first in the Green 500 List (June 2017), in which it achieved 14.1 GFlops/Watt Linpack efficiency, and 13nd in the Top 500 (November 2017). It has 36,288 cores and has a Linpack performance of 1998 TFlop/s, drawing a remarkable 142 kW.         This is the entrance to the machine room.      Inside one of the cabinets.   Note the serious plumbing above the racks.   One of the compute nodes.         Another machine, Tsubame-KFC, a previous Green 500 winner, is immersed in oil.      It lives inside this container.                  Prof Nakahara in his office.   ","categories": ["FPGA"],
+        "excerpt":"Hosted by Prof Hiroki Nakahara and Prof Yuko Hara-Azumi, I gave a talk entitled “Large Scale FPGA Implementations of Machine Learning Algorithms” (slides available at phwl.org/talks) at the Tokyo Institute of Technology. The highlight was a visit to the Tsubame 3.0 supercomputer. In the photo below, from left to right, myself, Prof Yuko Hara-Azumi (Tokyo Tech), Prof Nachiket Kapre (Waterloo) and Prof Hiroki Nakahara (Tokyo Tech).        The machine was ranked first in the Green 500 List (June 2017), in which it achieved 14.1 GFlops/Watt Linpack efficiency, and 13nd in the Top 500 (November 2017). It has 36,288 cores and has a Linpack performance of 1998 TFlop/s, drawing a remarkable 142 kW.         This is the entrance to the machine room.      Inside one of the cabinets.   Note the serious plumbing above the racks.   One of the compute nodes.         Another machine, Tsubame-KFC, a previous Green 500 winner, is immersed in oil.      It lives inside this container.                  Prof Nakahara in his office.   ","categories": ["FPGA","academia"],
         "tags": [],
         "url": "/tokyo-institute-of-technology-tsubame-3-0-visit/",
         "teaser":"/assets/images/2018/12/IMG_9636.jpg"},{

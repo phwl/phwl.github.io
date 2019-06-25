@@ -8,6 +8,7 @@ title: Tokyo Institute of Technology Tsubame 3.0 Visit
 wordpress_id: 4321
 categories:
 - FPGA
+- academia
 header:
   teaser: /assets/images/2018/12/IMG_9636.jpg
 ---

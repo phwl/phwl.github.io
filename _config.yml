@@ -87,6 +87,10 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/phwl"
 
+# Staticman comments (full configuration in staticman.yml)
+staticman:
+  branch: "master"
+
 defaults:
   # _posts
   - scope:
