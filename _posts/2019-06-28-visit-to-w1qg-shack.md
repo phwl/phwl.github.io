@@ -13,7 +13,7 @@ header:
 ---
 
 Chris Dick was kind enough to introduce me to his friend, Dick Benson
-W1QG, a retired hardware development engineer. We went to visit his
+[W1QG](https://www.qrz.com/db/W1QG/), a retired hardware development engineer. We went to visit his
 very impressive shack (which was not difficult to spot from the
 road).
 
