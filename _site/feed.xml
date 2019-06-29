@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-06-24T20:13:26-07:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>A diary of my adventures in computer engineering, academia and, of course, fishing.</subtitle><author><name>phwl</name></author><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-18T10:52:46-07:00</published><updated>2019-06-18T10:52:46-07:00</updated><id>/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-06-28T22:51:32-07:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>A diary of my adventures in computer engineering, academia and, of course, fishing.</subtitle><author><name>phwl</name></author><entry><title type="html">Visit to W1QG’s shack</title><link href="/visit-to-w1qg-shack/" rel="alternate" type="text/html" title="Visit to W1QG's shack" /><published>2019-06-28T15:17:43-07:00</published><updated>2019-06-28T15:17:43-07:00</updated><id>/visit-to-w1qg-shack</id><content type="html" xml:base="/visit-to-w1qg-shack/">&lt;p&gt;Chris was kind enough to introduce me to his friend, Dick Benson
+W1QG, a retired hardware development engineer. We went to visit his
+very impressive shack (which was not difficult to spot from the
+road).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1033.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a high frequency (HF) software defined radio of his own
+design, based on a Xilinx Spartan FPGA. For the signal processing
+parts, he used Matlab and System Generator tools. It is documented
+at
+&lt;a href=&quot;http://k6jca.blogspot.com/2017/02/an-fpga-sdr-hf-transceiver-part-1.html&quot;&gt;http://k6jca.blogspot.com/2017/02/an-fpga-sdr-hf-transceiver-part-1.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1014.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On one side he had his radio gear, together with a very substantial
+collection of old test equipement.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1016.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1017.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1018.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1019.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1020.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1022.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;He told me this is the best receiver ever made. 
+&lt;img src=&quot;/assets/images/2019/06/IMG_1030.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Not everyone has a Caesium frequency standard at home. Dick
+picked it up, not working, for $300 and repaired it (had a screw
+loose). I later found out the original price was $32,000.
+&lt;img src=&quot;/assets/images/2019/06/IMG_1013.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;On the other side of the workshop was his mechanical stuff,
+ including a Harley
+that he restored and lots of home made  radio controlled planes.
+&lt;img src=&quot;/assets/images/2019/06/IMG_1023.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1027.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is an engine he made from scratch, using the mill in 
+the photo below.
+&lt;img src=&quot;/assets/images/2019/06/IMG_1028.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1029.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Chris was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-18T10:52:46-07:00</published><updated>2019-06-18T10:52:46-07:00</updated><id>/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years. 
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the 
 interface is all web-based meaning it is difficult to create
@@ -323,4 +374,4 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
   &lt;li&gt;Did brew install caskroom/cask/brew-cask and the following casks mactex, xquartz&lt;/li&gt;
   &lt;li&gt;Installed anaconda from anaconda.com&lt;/li&gt;
   &lt;li&gt;Installed Virtualbox from &lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;https://www.virtualbox.org/wiki/Downloads&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><summary type="html">It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</summary></entry><entry><title type="html">Blue Day in Sydney</title><link href="/blue-day-in-sydney/" rel="alternate" type="text/html" title="Blue Day in Sydney" /><published>2019-04-03T23:31:40-07:00</published><updated>2019-04-03T23:31:40-07:00</updated><id>/blue-day-in-sydney</id><content type="html" xml:base="/blue-day-in-sydney/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/04/7723722910698069406_IMG_0381.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry></feed>
+&lt;/ol&gt;</content><author><name>phwl</name></author><summary type="html">It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</summary></entry></feed>
