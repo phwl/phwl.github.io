@@ -1,0 +1,177 @@
+<h2 id="vivado-20174-version-aug-2018">Vivado 2017.4 Version (Aug 2018)</h2>
+
+<ul>
+  <li>
+    <p>Install Xilinx Vivado 2017.4 from https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2017-4.html</p>
+  </li>
+  <li>
+    <p>sudo apt install python-pip</p>
+  </li>
+  <li>
+    <p>Configure licence by putting the below in ~/.bashrc</p>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">export XILINXD_LICENSE_FILE=2100@tuna.staff.sydney.edu.au:/opt/Xilinx/13.4/license/Xilinx.lic</code></p>
+
+<p><code class="highlighter-rouge">source ~/.bashrc</code></p>
+
+<ul>
+  <li>
+    <p>Install UHD and GNU Radio by following instructions at https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux.</p>
+  </li>
+  <li>
+    <p>Install RFNoC files https://kb.ettus.com/Getting_Started_with_RFNoC_Development</p>
+  </li>
+</ul>
+
+<h2 id="vivado-20154-version-jun-2017">Vivado 2015.4 Version (Jun 2017)</h2>
+
+<p>Host computer requirements for installing the Ettus USRP x310 along with keras are:</p>
+
+<ul>
+  <li>
+    <p>The host machine must be 64-bit compatible (you can check under linux by typing <code class="highlighter-rouge">grep /proc/cpuinfo</code> which should have the “lm” flag present).</p>
+  </li>
+  <li>
+    <p>You also need about 50GB of free disk space for the Xilinx tools.</p>
+  </li>
+</ul>
+
+<p>The steps are:
+<!-- more --></p>
+
+<ol>
+  <li>
+    <p>(USRP hardware) Insert RF daughtercard and run cables from daughtercard to front panel</p>
+  </li>
+  <li>
+    <p>(Python) Install some basic development packages (<a href="https://files.ettus.com/manual/page_build_guide.html#build_dependencies">https://files.ettus.com/manual/page_build_guide.html#build_dependencies</a>)</p>
+  </li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;sudo apt-get install libboost-all-dev libusb-1.0-0-dev python-mako doxygen python-docutils cmake build-essential
+sudo apt-get install python-pip
+pip install --upgrade pip
+&lt;/code&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>(Tensorflow and Keras)Install according to <a href="http://www.pyimagesearch.com/2016/11/14/installing-keras-with-tensorflow-backend/">http://www.pyimagesearch.com/2016/11/14/installing-keras-with-tensorflow-backend/</a></li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+export WORKON_HOME=~/Envs # needed later for virtualenvwrapper
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+mkvirtualenv keras_tf
+workon keras_tf
+pip install tensorflow
+pip install keras
+pip install requests
+&lt;/code&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>(Xilinx) Download Xilinx software (<strong>must be version 2015.4</strong>) and install using sudo. While you are there also get the free licence for</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;ten_gig_eth_pcs_pma&lt;/code&gt;
+</code></pre></div></div>
+
+<p>. Put the following line in /etc/udev/rules.d/70-persistent-net.rules and reboot (this is needed to change the ethernet device from en0 to eth0 which is needed for the Xilinx license system</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="02:01:02:03:04:05", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="eth0"&lt;/code&gt;
+</code></pre></div></div>
+
+<p>then add the following line to ~/.bashrc</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;export XILINXD_LICENSE_FILE=2100@tuna.staff.sydney.edu.au:/opt/Xilinx/13.4/license/Xilinx.lic
+source ~/rfnoc/setup_env.sh
+&lt;/code&gt;
+</code></pre></div></div>
+
+<p>and reboot. This should change it in</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;ifconfig&lt;/code&gt;
+</code></pre></div></div>
+
+<p>.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;source ~/.bashrc
+# source /opt/Xilinx/Vivado/2015.4/settings64.sh
+# export WORKON_HOME=~/Envs # needed later for virtualenvwrapper
+# source /usr/local/bin/virtualenvwrapper.sh
+&lt;/code&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>(Network connection to x310) Install ethernet SFP and make sure you use a 1G ethernet crossover cable (supplied with the system) to connect to a PC. <strong>The Apple USB ethernet adaptor doesn’t appear to work with the USRP x310!</strong> Configure your machine with an ethernet port which has a static ip address of 192.168.10.1. Turn on the Ettus x310.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;ping 192.168.10.2
+&lt;/code&gt;
+</code></pre></div></div>
+
+<p>should work.</p>
+
+<ol>
+  <li>(PyBombs) Install pybombs and gnuradio (<a href="https://github.com/gnuradio/pybombs">https://github.com/gnuradio/pybombs</a>)</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;sudo apt-get install git
+sudo apt-get install python-setuptools python-dev python-pip build-essential
+sudo pip install git+https://github.com/gnuradio/pybombs.git
+pybombs recipes add gr-recipes git+https://github.com/gnuradio/gr-recipes.git
+pybombs recipes add ettus git+https://github.com/EttusResearch/ettus-pybombs.git
+pybombs prefix init ~/rfnoc -R rfnoc -a rfnoc
+source ~/rfnoc/setup_env.sh
+&lt;/code&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>(RFNoC tutorial) You should now be able to run the tutorial at <a href="https://kb.ettus.com/Getting_Started_with_RFNoC_Development">https://kb.ettus.com/Getting_Started_with_RFNoC_Development</a>.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*
+
+
+  * I changed rfnoc/src/uhd-fpga/usrp3/top/x300/setupenv.sh to reflect the version of Vivado being used.
+
+
+
+
+
+
+
+&lt;code&gt;
+cd ~/rfnoc
+source setup_env.sh
+cd ~/rfnoc/src/uhd-fpga/usrp3/top/x300
+source setupenv.sh
+make cleanall
+make X310_HG # progress and output files in ~/rfnoc/src/uhd-fpga/usrp3/top/x300/build-X310_HG
+&lt;/code&gt;
+</code></pre></div></div>
+
+<ol>
+  <li>Install and excecute <a href="https://github.com/Xilinx/RFNoC-HLS-NeuralNet">https://github.com/Xilinx/RFNoC-HLS-NeuralNet</a></li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* To generate a bitstream:
+
+
+&lt;code&gt;
+source ~/rfnoc/setup_env.sh
+cd ~/rfnoc/src/uhd-fpga/usrp3/tools/script
+./uhd_image_builder.py window fft exmodrec -d x310 -t X310_RFNOC_HLS_HG -m 5 -I /home/vivado/rfnoc/src/rfnoc-hls-neuralnet/ --fill-with-fifos -c
+&lt;/code&gt;
+
+
+
+
+
+* Note that device is xc7k410tffg900-2
+</code></pre></div></div>
+
