@@ -48,7 +48,7 @@ He told me this is the best receiver ever made.
 Not everyone has a Caesium frequency standard at home. Dick
 picked it up, not working, for $300 and repaired it (had a screw
 loose). I later found out the original price was $32,000 which would have
-been enough to buy a very nice house at the time.
+been enough to buy a house at the time.
 ![](/assets/images/2019/06/IMG_1013.jpg){: .align-center}
 
 On the other side of the workshop was his mechanical stuff,
