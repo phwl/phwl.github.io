@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/2019/06/IMG_1033.jpg
 ---
 
-Chris Dick was kind enough to introduce me to his friend, Dick Benson
+Chris Dick was kind enough to introduce me to his friend, Dick Benson 
 [W1QG](https://www.qrz.com/db/W1QG/), a retired hardware development engineer. We went to visit his
 very impressive shack (which was not difficult to spot from the
 road).
@@ -47,7 +47,8 @@ He told me this is the best receiver ever made.
 
 Not everyone has a Caesium frequency standard at home. Dick
 picked it up, not working, for $300 and repaired it (had a screw
-loose). I later found out the original price was $32,000.
+loose). I later found out the original price was $32,000 which would have
+been enough to buy a very nice house at the time.
 ![](/assets/images/2019/06/IMG_1013.jpg){: .align-center}
 
 On the other side of the workshop was his mechanical stuff,
