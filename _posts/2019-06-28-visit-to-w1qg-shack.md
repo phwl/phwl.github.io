@@ -28,7 +28,7 @@ at
 ![](/assets/images/2019/06/IMG_1014.jpg){: .align-center}
 
 On one side he had his radio gear, together with a very substantial
-collection of vintage test equipement. 
+collection of vintage test equipment. 
 
 ![](/assets/images/2019/06/IMG_1016.jpg){: .align-center}
 
