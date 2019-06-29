@@ -28,7 +28,7 @@ at
 ![](/assets/images/2019/06/IMG_1014.jpg){: .align-center}
 
 On one side he had his radio gear, together with a very substantial
-collection of old test equipement. 
+collection of vintage test equipement. 
 
 ![](/assets/images/2019/06/IMG_1016.jpg){: .align-center}
 
@@ -42,7 +42,7 @@ collection of old test equipement.
 
 ![](/assets/images/2019/06/IMG_1022.jpg){: .align-center}
 
-He told me this is the best receiver ever made. 
+He told me this is the best amateur receiver for its time. 
 ![](/assets/images/2019/06/IMG_1030.jpg){: .align-center}
 
 Not everyone has a Caesium frequency standard at home. Dick
