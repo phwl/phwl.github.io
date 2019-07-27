@@ -10,3 +10,4 @@ header:
   teaser: /assets/images/2019/07/DSCF0165.jpg
 ---
 
+![](/assets/images/2019/06/IMG_1033.jpg){: .align-center}

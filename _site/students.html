@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Students">
-<meta property="og:url" content="/students">
+<meta property="og:url" content="http://localhost:4000/students">
 
 
 
@@ -27,14 +27,14 @@
 
 
 
-  <meta property="article:published_time" content="2017-10-21T06:43:23-07:00">
+  <meta property="article:published_time" content="2017-10-21T21:43:23+08:00">
 
 
 
 
 
 
-<link rel="canonical" href="/students">
+<link rel="canonical" href="http://localhost:4000/students">
 
 
 
@@ -109,7 +109,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -338,7 +341,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-21T06:43:23-07:00">October 21, 2017</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-21T21:43:23+08:00">October 21, 2017</time></p>
         
       </footer>
 
@@ -358,8 +361,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

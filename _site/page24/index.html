@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Life, the Universe and Fishing">
-<meta property="og:url" content="/page24/">
+<meta property="og:url" content="http://localhost:4000/page24/">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-<link rel="canonical" href="/page24/">
+<link rel="canonical" href="http://localhost:4000/page24/">
 
 
-  <link rel="prev" href="/page23/">
+  <link rel="prev" href="http://localhost:4000/page23/">
 
 
-  <link rel="next" href="/page25/">
+  <link rel="next" href="http://localhost:4000/page25/">
 
 
 
@@ -111,7 +111,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -168,9 +171,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -283,6 +287,34 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/hawkesbury-river-2012-2/">
+        <img src=
+          
+            "/assets/images/2012/12/PC210130.jpg"
+          
+          alt="Hawkesbury River 2012"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/hawkesbury-river-2012-2/" rel="permalink">Hawkesbury River 2012
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">In what has turned out to become an annual event (click on this link for the 2011 version), went on a 4 day camping trip to the Hawkesbury River with my high-school friend, Warren. We camp on a bea...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/molonglo-radio-observatory/">
         <img src=
           
@@ -385,35 +417,6 @@
 </div>
 
 
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/delhi/">
-        <img src=
-          
-            "/assets/images/2014/11/P1100183.jpg"
-          
-          alt="Delhi 2011"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/delhi/" rel="permalink">Delhi 2011
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-</p>
-  </article>
-</div>
-
-
 
 
 <nav class="pagination">
@@ -500,8 +503,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

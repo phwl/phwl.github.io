@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Life, the Universe and Fishing">
-<meta property="og:url" content="/page13/">
+<meta property="og:url" content="http://localhost:4000/page13/">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-<link rel="canonical" href="/page13/">
+<link rel="canonical" href="http://localhost:4000/page13/">
 
 
-  <link rel="prev" href="/page12/">
+  <link rel="prev" href="http://localhost:4000/page12/">
 
 
-  <link rel="next" href="/page14/">
+  <link rel="next" href="http://localhost:4000/page14/">
 
 
 
@@ -111,7 +111,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -168,9 +171,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -282,6 +286,25 @@
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/" rel="permalink">How to make a Ubuntu boot usb in OSX (don’t use the UNetbootin USB installer)
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">I had a lot of trouble making an Ubuntu boot USB drive from OSX. The instructions on https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0 don’t work in general. I think ther...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
       <div class="archive__item-teaser">
       <a href="/a-2m70cm-146mhz-and-440mhz-j-pole-antenna/">
         <img src=
@@ -384,36 +407,6 @@ Sydney Skyline from Balls Head
 </div>
 
 
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/postcard-from-shanghai-2017/">
-        <img src=
-          
-            "/assets/images/2017/04/IMG_9415.jpg"
-          
-          alt="Postcard from Shanghai 2017"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/postcard-from-shanghai-2017/" rel="permalink">Postcard from Shanghai 2017
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to Shanghai in 2014, 2013 and 2012.
-
-</p>
-  </article>
-</div>
-
-
 
 
 <nav class="pagination">
@@ -500,8 +493,13 @@ Sydney Skyline from Balls Head
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

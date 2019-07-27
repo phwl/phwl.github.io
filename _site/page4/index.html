@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Life, the Universe and Fishing">
-<meta property="og:url" content="/page4/">
+<meta property="og:url" content="http://localhost:4000/page4/">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-<link rel="canonical" href="/page4/">
+<link rel="canonical" href="http://localhost:4000/page4/">
 
 
-  <link rel="prev" href="/page3/">
+  <link rel="prev" href="http://localhost:4000/page3/">
 
 
-  <link rel="next" href="/page5/">
+  <link rel="next" href="http://localhost:4000/page5/">
 
 
 
@@ -111,7 +111,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -168,9 +171,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -273,6 +277,36 @@
     
 
 <h3 class="archive__subtitle">Recent Posts</h3>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/berkeley-wireless-research-center-20-year-anniversary/">
+        <img src=
+          
+            "/assets/images/2019/02/DSCF5968.jpg"
+          
+          alt="Berkeley Wireless Research Center 20th Year Anniversary"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/berkeley-wireless-research-center-20-year-anniversary/" rel="permalink">Berkeley Wireless Research Center 20th Year Anniversary
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Photos from the Berkeley Wireless Research Center 20th Year Anniversary.
+
+</p>
+  </article>
+</div>
 
 
   
@@ -393,36 +427,6 @@
 </div>
 
 
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/the-bar-hyatt-regency-okinawa-2018/">
-        <img src=
-          
-            "/assets/images/2018/12/DSCF5869.jpg"
-          
-          alt="The Bar, Hyatt Regency Okinawa 2018"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/the-bar-hyatt-regency-okinawa-2018/" rel="permalink">The Bar, Hyatt Regency Okinawa 2018
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Following the FPT conference, we had a great evening at The Bar on the top floor of the Hyatt Regency in Naha, Okinawa.
-
-</p>
-  </article>
-</div>
-
-
 
 
 <nav class="pagination">
@@ -505,8 +509,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Life, the Universe and Fishing">
-<meta property="og:url" content="/page21/">
+<meta property="og:url" content="http://localhost:4000/page21/">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-<link rel="canonical" href="/page21/">
+<link rel="canonical" href="http://localhost:4000/page21/">
 
 
-  <link rel="prev" href="/page20/">
+  <link rel="prev" href="http://localhost:4000/page20/">
 
 
-  <link rel="next" href="/page22/">
+  <link rel="next" href="http://localhost:4000/page22/">
 
 
 
@@ -111,7 +111,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -168,9 +171,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -273,6 +277,36 @@
     
 
 <h3 class="archive__subtitle">Recent Posts</h3>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/panorama-of-sydney-harbour/">
+        <img src=
+          
+            "/assets/images/2013/09/hbridge-pano24092013-lores.jpg"
+          
+          alt="Panorama of Sydney Harbour"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/panorama-of-sydney-harbour/" rel="permalink">Panorama of Sydney Harbour
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
 
 
   
@@ -389,36 +423,6 @@
 </div>
 
 
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/cowan-creek/">
-        <img src=
-          
-            "/assets/images/2013/07/P7282832.jpg"
-          
-          alt="Cowan Creek"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/cowan-creek/" rel="permalink">Cowan Creek
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Photos from a short trip to Cowan Creek on a foggy morning. More after the jump.
-
-</p>
-  </article>
-</div>
-
-
 
 
 <nav class="pagination">
@@ -505,8 +509,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Page Not Found">
-<meta property="og:url" content="/404.html">
+<meta property="og:url" content="http://localhost:4000/404.html">
 
 
   <meta property="og:description" content="Page not found. Your pixels are in another canvas.">
@@ -34,7 +34,7 @@
 
 
 
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="http://localhost:4000/404.html">
 
 
 
@@ -109,7 +109,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -166,9 +169,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -285,7 +289,7 @@
 
 <script>
   var GOOG_FIXURL_LANG = 'en';
-  var GOOG_FIXURL_SITE = ''
+  var GOOG_FIXURL_SITE = 'http://localhost:4000'
 </script>
 
 <script src="https://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
@@ -319,8 +323,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     

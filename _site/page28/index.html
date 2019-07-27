@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.4 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Life, the Universe and Fishing">
-<meta property="og:url" content="/page28/">
+<meta property="og:url" content="http://localhost:4000/page28/">
 
 
 
@@ -32,13 +32,13 @@
 
 
 
-<link rel="canonical" href="/page28/">
+<link rel="canonical" href="http://localhost:4000/page28/">
 
 
-  <link rel="prev" href="/page27/">
+  <link rel="prev" href="http://localhost:4000/page27/">
 
 
-  <link rel="next" href="/page29/">
+  <link rel="next" href="http://localhost:4000/page29/">
 
 
 
@@ -111,7 +111,10 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Life, the Universe and Fishing</a>
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/posts/" >Posts</a>
             </li><li class="masthead__menu-item">
@@ -168,9 +171,10 @@
       <h3 class="author__name" itemprop="name">phwl</h3>
     
     
-      <p class="author__bio" itemprop="description">
+      <div class="author__bio" itemprop="description">
         
-      </p>
+
+      </div>
     
   </div>
 
@@ -282,6 +286,36 @@
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
+      <div class="archive__item-teaser">
+      <a href="/snowboard-fever/">
+        <img src=
+          
+            "/assets/images/2016/01/3731258183_2af03d23cb_o.jpg"
+          
+          alt="Snowboard Fever"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/snowboard-fever/" rel="permalink">Snowboard Fever
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Photo from Beijing ski trip.
+
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
     <h2 class="archive__item-title" itemprop="headline">
       
         <a href="/booti-booti-national-park-aug-2008/" rel="permalink">Forster 2008
@@ -384,34 +418,6 @@
 </div>
 
 
-  
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/victorinox-swiss-army-knife-soldier-set/">
-        <img src=
-          
-            "/assets/images/2018/10/soldierset-front.jpg"
-          
-          alt="Victorinox Swiss Army Knife Soldier Set"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/victorinox-swiss-army-knife-soldier-set/" rel="permalink">Victorinox Swiss Army Knife Soldier Set
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from 1934, 1965, 1970 and 1997. Also note the evolution of the blade (from clip point to spear po...</p>
-  </article>
-</div>
-
-
 
 
 <nav class="pagination">
@@ -496,8 +502,13 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     
