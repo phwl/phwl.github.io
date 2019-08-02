@@ -66,6 +66,3 @@ Morning fog.
 
 ![](/assets/images/2012/11/DSC_5158.jpg)
 
-**Gallery**
-
-[gallery]

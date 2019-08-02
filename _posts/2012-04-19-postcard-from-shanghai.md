@@ -94,4 +94,3 @@ I saved the best for last, pig face jerky - quite a delicacy.
 
 Thanks to the hospitality of my host, Professor Wang, and his students, particularly Mr Li and Mr Chen, I had a great time in Shanghai. This is the first opportunity I have had to explore this beautiful city. I look forward to my next visit.
 
-[gallery orderby="post_date"]

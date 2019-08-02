@@ -84,7 +84,6 @@ I had another wonderful trip, and the Hawkesbury River is only 30 min from home.
 
 
 
-[gallery ids="515,518,517,516,514,513,512,511,509,508,507,506,505,519,504,503,502,501,500,499,498,497"]
 
 
 
