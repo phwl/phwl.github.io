@@ -765,7 +765,7 @@ var store = [{
         "url": "http://localhost:4000/visit-to-w1qg-shack/",
         "teaser":"http://localhost:4000/assets/images/2019/06/IMG_1033.jpg"},{
         "title": "Hong Kong and Zhuhai 2019",
-        "excerpt":"  ","categories": ["travel"],
+        "excerpt":" Hong Kong approach    Hong Kong from Tsim Sha Tsui  ","categories": ["travel"],
         "tags": [],
         "url": "http://localhost:4000/hk-and-zhuhai19/",
         "teaser":"http://localhost:4000/assets/images/2019/07/DSCF0165.jpg"}]
