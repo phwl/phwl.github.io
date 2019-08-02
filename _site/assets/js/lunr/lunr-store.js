@@ -610,7 +610,7 @@ var store = [{
         "url": "/international-lighthouse-and-lightship-weekend-2018/",
         "teaser":"/assets/images/2018/08/IMG_1946.jpg"},{
         "title": "Sydney University Open Day 2018",
-        "excerpt":"     Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO.   [gallery link=”file” ids=”3953,3954,3955,3956,3957,3958,3959,3960,3961,3962,3963,3981,3980,3979,3978,3977,3976,3975”]   Here is the log, contacts include New Caledonia and New Zealand.     ","categories": ["academia","amateur radio"],
+        "excerpt":"     Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO.   [gallery link=”file” ids=”3953,3954,3955,3956,3957,3958,3959,3960,3961,3962,3963,3981,3980,3979,3978,3977,3976,3975”]                      Here is the log, contacts include New Caledonia and New Zealand.     ","categories": ["academia","amateur radio"],
         "tags": [],
         "url": "/sydney-university-open-day-2018/",
         "teaser":"/assets/images/2018/08/img_1989.jpg"},{
