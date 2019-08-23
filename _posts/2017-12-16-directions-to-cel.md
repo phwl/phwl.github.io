@@ -10,6 +10,6 @@ categories:
 - academia
 ---
 
-The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building, University of Sydney. My office is inside Lab 840 and the entrance is on the balcony. Please call my [office number](http://phwl.org/) when you reach level 8.
+The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building (Building J03), The University of Sydney. My office is Room 837 (inside Lab 840) and the entrance is on the balcony. Please call my [office number](http://phwl.org/) when you reach level 8.
 
 
