@@ -1,0 +1,40 @@
+---
+author: phwl
+comments: true
+date: 2019-08-26 09:51:57 AEST
+slug: ubuntu-nvdia-19
+title: Setting up some new Ubuntu/NVIDIA machines
+categories:
+- research
+header:
+  teaser: /assets/images/2019/08/Nvidia_logo.svg
+---
+
+Some new machines arrived in the lab including a Dell XPS 8930 Desktop with 
+Dell UltraSharp U2518D monitor.
+
+Here is how I addressed a few issues:
+ * Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.
+ * The NFS entry in /etc/fstab 
+<p><code>
+10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
+</code></p>
+did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing
+<p><code>
+#!/bin/sh
+mount -a
+</p></code>
+to /etc/network/if-up.d/fstab.
+
+For reference, the configuration of the machine is:
+ * XPS 8930 Base
+ * 9th Gen Intel(R) Core(TM) i7 9700 (8-Core, 12MB Cache, up to 4.7GHz with Intel(R) Turbo Boost
+Technology)
+ * XPS 8930, Mainstream Chassis (460W)
+ * 16GB, 2x8GB, DDR4, 2666MHz
+ * M.2 512GB PCIe x4 SSD + 2TB 7200 rpm Hard Drive
+ * Tray load DVD Drive (Reads and Writes to DVD/CD)
+ * NVIDIA(R) GeForce RTX(TM) 2060 6GB GDDR6
+ * Killer 1535 802.11ac 2x2 WiFi and Bluetooth 4.1
+ * Dell USB Mouse
+ * Dell Wired Keyboard KB216 Black (English)

@@ -1,6 +1,6 @@
 /* ========================================================================== Default skin ========================================================================== */
 /*!
- * Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+ * Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
  * Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)
 */
@@ -1047,6 +1047,8 @@ a.reversefootnote:hover { text-decoration: underline; }
 @media (min-width: 80em) { .archive { width: calc(100% - 300px); padding-right: 300px; } }
 
 .archive__item { position: relative; }
+.archive__item a { position: relative; z-index: 10; }
+.archive__item a[rel="permalink"] { position: static; }
 
 .archive__subtitle { margin: 1.414em 0 0; padding-bottom: 0.5em; font-size: 1em; color: #898c8f; border-bottom: 1px solid #f2f3f3; }
 .archive__subtitle + .list__item .archive__item-title { margin-top: 0.5em; }
