@@ -19,6 +19,7 @@ Here is how I addressed a few issues:
 ```
 127.0.1.1       trout.staff.sydney.edu.au trout
 ```
+
  * /etc/network/interfaces should be
 ```
 # interfaces(5) file used by ifup(8) and ifdown(8)
@@ -29,15 +30,18 @@ iface lo inet loopback
 auto enp4s0
 iface enp4s0 inet dhcp
 ```
+
  * The NFS entry in /etc/fstab 
 ```
 10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
 ```
+
 did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing
 ```
 #!/bin/sh
 mount -a
 ```
+
 to /etc/network/if-up.d/fstab.
 
 For reference, the configuration of the machine is:
