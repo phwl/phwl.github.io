@@ -1,34 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-08-26T16:06:27+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>A diary of my adventures in computer engineering, academia and, of course, fishing.</subtitle><author><name>phwl</name></author><entry><title type="html">Setting up some new Ubuntu/NVIDIA machines</title><link href="/ubuntu-nvdia-19/" rel="alternate" type="text/html" title="Setting up some new Ubuntu/NVIDIA machines" /><published>2019-08-26T09:51:57+10:00</published><updated>2019-08-26T09:51:57+10:00</updated><id>/ubuntu-nvdia-19</id><content type="html" xml:base="/ubuntu-nvdia-19/">&lt;p&gt;Some new machines arrived in the lab including a Dell XPS 8930 Desktop with 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-29T21:12:10+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>A diary of my adventures in computer engineering, academia and, of course, fishing.</subtitle><author><name>phwl</name></author><entry><title type="html">Setting up some new Ubuntu/NVIDIA machines</title><link href="http://localhost:4000/ubuntu-nvdia-19/" rel="alternate" type="text/html" title="Setting up some new Ubuntu/NVIDIA machines" /><published>2019-08-26T09:51:57+10:00</published><updated>2019-08-26T09:51:57+10:00</updated><id>http://localhost:4000/ubuntu-nvdia-19</id><content type="html" xml:base="http://localhost:4000/ubuntu-nvdia-19/">&lt;p&gt;Some new machines arrived in the lab including a Dell XPS 8930 Desktop with 
 Dell UltraSharp U2518D monitor.&lt;/p&gt;
 
-&lt;p&gt;Here is how I addressed a few issues:&lt;/p&gt;
+&lt;p&gt;Here is how I configured the machine:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.&lt;/li&gt;
+  &lt;li&gt;/etc/network/interfaces should be&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp4s0
+iface enp4s0 inet dhcp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;/etc/hosts should be&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;127.0.1.1       trout.staff.sydney.edu.au trout
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
   &lt;li&gt;The NFS entry in /etc/fstab&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;
-10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
-&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;
-#!/bin/sh
-mount -a
-&amp;lt;/p&amp;gt;&lt;/code&gt;
-to /etc/network/if-up.d/fstab.
 
-For reference, the configuration of the machine is:
- * XPS 8930 Base
- * 9th Gen Intel(R) Core(TM) i7 9700 (8-Core, 12MB Cache, up to 4.7GHz with Intel(R) Turbo Boost
-Technology)
- * XPS 8930, Mainstream Chassis (460W)
- * 16GB, 2x8GB, DDR4, 2666MHz
- * M.2 512GB PCIe x4 SSD + 2TB 7200 rpm Hard Drive
- * Tray load DVD Drive (Reads and Writes to DVD/CD)
- * NVIDIA(R) GeForce RTX(TM) 2060 6GB GDDR6
- * Killer 1535 802.11ac 2x2 WiFi and Bluetooth 4.1
- * Dell USB Mouse
- * Dell Wired Keyboard KB216 Black (English)
-&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Some new machines arrived in the lab including a Dell XPS 8930 Desktop with Dell UltraSharp U2518D monitor.</summary></entry><entry><title type="html">International Lighthouse and Lightship Weekend 2019</title><link href="/lighhouse19/" rel="alternate" type="text/html" title="International Lighthouse and Lightship Weekend 2019" /><published>2019-08-18T13:26:35+10:00</published><updated>2019-08-18T13:26:35+10:00</updated><id>/lighhouse19</id><content type="html" xml:base="/lighhouse19/">&lt;p&gt;Activation of Barrenjoey Lighthouse with the &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society (MWRS)&lt;/a&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/sh&lt;/span&gt;
+mount &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to /etc/network/if-up.d/fstab.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For reference, the configuration of the machine is:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;XPS 8930 Base&lt;/li&gt;
+  &lt;li&gt;9th Gen Intel(R) Core(TM) i7 9700 (8-Core, 12MB Cache, up to 4.7GHz with Intel(R) Turbo Boost
+Technology)&lt;/li&gt;
+  &lt;li&gt;XPS 8930, Mainstream Chassis (460W)&lt;/li&gt;
+  &lt;li&gt;16GB, 2x8GB, DDR4, 2666MHz&lt;/li&gt;
+  &lt;li&gt;M.2 512GB PCIe x4 SSD + 2TB 7200 rpm Hard Drive&lt;/li&gt;
+  &lt;li&gt;Tray load DVD Drive (Reads and Writes to DVD/CD)&lt;/li&gt;
+  &lt;li&gt;NVIDIA(R) GeForce RTX(TM) 2060 6GB GDDR6&lt;/li&gt;
+  &lt;li&gt;Killer 1535 802.11ac 2x2 WiFi and Bluetooth 4.1&lt;/li&gt;
+  &lt;li&gt;Dell USB Mouse&lt;/li&gt;
+  &lt;li&gt;Dell Wired Keyboard KB216 Black (English)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html">Some new machines arrived in the lab including a Dell XPS 8930 Desktop with Dell UltraSharp U2518D monitor.</summary></entry><entry><title type="html">International Lighthouse and Lightship Weekend 2019</title><link href="http://localhost:4000/lighhouse19/" rel="alternate" type="text/html" title="International Lighthouse and Lightship Weekend 2019" /><published>2019-08-18T13:26:35+10:00</published><updated>2019-08-18T13:26:35+10:00</updated><id>http://localhost:4000/lighhouse19</id><content type="html" xml:base="http://localhost:4000/lighhouse19/">&lt;p&gt;Activation of Barrenjoey Lighthouse with the &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society (MWRS)&lt;/a&gt;
 on the &lt;a href=&quot;https://www.facebook.com/ILLWeekend/&quot;&gt;International Lighthouse and Lightship Weekend&lt;/a&gt;. There are more photos at the &lt;a href=&quot;https://www.mwrs.org.au/2019/08/19/illw-2019-vk2mb-at-barrenjoey-lighthouse/&quot;&gt;MWRS writeup&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/08/IMG_4048.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
@@ -39,11 +64,11 @@ on the &lt;a href=&quot;https://www.facebook.com/ILLWeekend/&quot;&gt;Internatio
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/08/DSC_5985.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2019/08/IMG_1243.jpeg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.</summary></entry><entry><title type="html">Hong Kong and Zhuhai 2019</title><link href="/hk-and-zhuhai19/" rel="alternate" type="text/html" title="Hong Kong and Zhuhai 2019" /><published>2019-06-29T08:17:43+10:00</published><updated>2019-06-29T08:17:43+10:00</updated><id>/hk-and-zhuhai19</id><content type="html" xml:base="/hk-and-zhuhai19/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/07/IMG_1116.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019/08/IMG_1243.jpeg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.</summary></entry><entry><title type="html">Hong Kong and Zhuhai 2019</title><link href="http://localhost:4000/hk-and-zhuhai19/" rel="alternate" type="text/html" title="Hong Kong and Zhuhai 2019" /><published>2019-06-29T08:17:43+10:00</published><updated>2019-06-29T08:17:43+10:00</updated><id>http://localhost:4000/hk-and-zhuhai19</id><content type="html" xml:base="http://localhost:4000/hk-and-zhuhai19/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/07/IMG_1116.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
 Hong Kong approach&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/07/DSCF0165.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;
-Hong Kong from Tsim Sha Tsui&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Hong Kong approach</summary></entry><entry><title type="html">Visit to W1QG’s shack</title><link href="/visit-to-w1qg-shack/" rel="alternate" type="text/html" title="Visit to W1QG's shack" /><published>2019-06-29T08:17:43+10:00</published><updated>2019-06-29T08:17:43+10:00</updated><id>/visit-to-w1qg-shack</id><content type="html" xml:base="/visit-to-w1qg-shack/">&lt;p&gt;Chris Dick was kind enough to introduce me to his friend, Dick Benson 
+Hong Kong from Tsim Sha Tsui&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Hong Kong approach</summary></entry><entry><title type="html">Visit to W1QG’s shack</title><link href="http://localhost:4000/visit-to-w1qg-shack/" rel="alternate" type="text/html" title="Visit to W1QG's shack" /><published>2019-06-29T08:17:43+10:00</published><updated>2019-06-29T08:17:43+10:00</updated><id>http://localhost:4000/visit-to-w1qg-shack</id><content type="html" xml:base="http://localhost:4000/visit-to-w1qg-shack/">&lt;p&gt;Chris Dick was kind enough to introduce me to his friend, Dick Benson 
 &lt;a href=&quot;https://www.qrz.com/db/W1QG/&quot;&gt;W1QG&lt;/a&gt;, a retired hardware development engineer. We went to visit his
 very impressive shack (which was not difficult to spot from the
 road).&lt;/p&gt;
@@ -95,7 +120,7 @@ the photo below.
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/IMG_1029.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Chris Dick was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-19T03:52:46+10:00</published><updated>2019-06-19T03:52:46+10:00</updated><id>/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years. 
+&lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Chris Dick was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="http://localhost:4000/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-19T03:52:46+10:00</published><updated>2019-06-19T03:52:46+10:00</updated><id>http://localhost:4000/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="http://localhost:4000/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years. 
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the 
 interface is all web-based meaning it is difficult to create
@@ -172,7 +197,7 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
   src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&amp;gt;
 &amp;lt;/script&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="jekyll" /><summary type="html">I have been using Wordpress for many years. It produces good looking websites and is easy to install and maintain. Unfortunately, it isn’t easy at all to backup the website, and the interface is all web-based meaning it is difficult to create scripts which update the website. The old website is http://phwl.org/blog and the new website can be viewed at https://phwl.github.io. I will be switching them over at some point.</summary></entry><entry><title type="html">Ten Lessons I wish I had been Taught - Gian-Carlo Rota</title><link href="/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="alternate" type="text/html" title="Ten Lessons I wish I had been Taught - Gian-Carlo Rota" /><published>2019-06-12T06:50:41+10:00</published><updated>2019-06-12T06:50:41+10:00</updated><id>/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota</id><content type="html" xml:base="/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/">&lt;p&gt;Interesting talk by the late MIT mathematician and philosopher&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="jekyll" /><summary type="html">I have been using Wordpress for many years. It produces good looking websites and is easy to install and maintain. Unfortunately, it isn’t easy at all to backup the website, and the interface is all web-based meaning it is difficult to create scripts which update the website. The old website is http://phwl.org/blog and the new website can be viewed at https://phwl.github.io. I will be switching them over at some point.</summary></entry><entry><title type="html">Ten Lessons I wish I had been Taught - Gian-Carlo Rota</title><link href="http://localhost:4000/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/" rel="alternate" type="text/html" title="Ten Lessons I wish I had been Taught - Gian-Carlo Rota" /><published>2019-06-12T06:50:41+10:00</published><updated>2019-06-12T06:50:41+10:00</updated><id>http://localhost:4000/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota</id><content type="html" xml:base="http://localhost:4000/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/">&lt;p&gt;Interesting talk by the late MIT mathematician and philosopher&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.ams.org/notices/199701/comm-rota.pdf&quot;&gt;https://www.ams.org/notices/199701/comm-rota.pdf&lt;/a&gt;&lt;/p&gt;
 
@@ -276,7 +301,7 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 
 &lt;p&gt;I now realize how right he was. The etiquette of old age does not seem to have been written up, and we have to learn it the hard way. It depends on a basic realization, which takes time to adjust to. You must realize that, after reaching a certain age, you are no longer viewed as a person. You become an institution, and you are treated the way institutions are treated. You are expected to behave like a piece of period furniture, an architectural landmark, or an incunabulum.&lt;/p&gt;
 
-&lt;p&gt;It matters little whether you keep publishing or not. If your papers are no good, they will say, &lt;em&gt;“What did you expect? He is a fixture!”&lt;/em&gt; and if an occasional paper of yours is found to be interesting, they will say, &lt;em&gt;“What did you expect? He has been working at this all his life!”&lt;/em&gt; The only sensible response is to enjoy playing your newly-found role as an institution.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Interesting talk by the late MIT mathematician and philosopher</summary></entry><entry><title type="html">Lake Tahoe 2019</title><link href="/lake-tahoe-2019/" rel="alternate" type="text/html" title="Lake Tahoe 2019" /><published>2019-05-28T06:40:43+10:00</published><updated>2019-05-28T06:40:43+10:00</updated><id>/lake-tahoe-2019</id><content type="html" xml:base="/lake-tahoe-2019/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It matters little whether you keep publishing or not. If your papers are no good, they will say, &lt;em&gt;“What did you expect? He is a fixture!”&lt;/em&gt; and if an occasional paper of yours is found to be interesting, they will say, &lt;em&gt;“What did you expect? He has been working at this all his life!”&lt;/em&gt; The only sensible response is to enjoy playing your newly-found role as an institution.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Interesting talk by the late MIT mathematician and philosopher</summary></entry><entry><title type="html">Lake Tahoe 2019</title><link href="http://localhost:4000/lake-tahoe-2019/" rel="alternate" type="text/html" title="Lake Tahoe 2019" /><published>2019-05-28T06:40:43+10:00</published><updated>2019-05-28T06:40:43+10:00</updated><id>http://localhost:4000/lake-tahoe-2019</id><content type="html" xml:base="http://localhost:4000/lake-tahoe-2019/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6146.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Snaps from our trip to Lake Tahoe&lt;/p&gt;
 
@@ -293,7 +318,7 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
   &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6185.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6188.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src=&quot;/assets/images/2019/06/DSCF6191.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Sea lion, Santa Cruz Wharf</title><link href="/sea-lion-santa-cruz-wharf/" rel="alternate" type="text/html" title="Sea lion, Santa Cruz Wharf" /><published>2019-05-20T12:59:22+10:00</published><updated>2019-05-20T12:59:22+10:00</updated><id>/sea-lion-santa-cruz-wharf</id><content type="html" xml:base="/sea-lion-santa-cruz-wharf/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/DSCF6081.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Academic Genealogy</title><link href="/academic-genealogy/" rel="alternate" type="text/html" title="Academic Genealogy" /><published>2019-05-18T14:09:59+10:00</published><updated>2019-05-18T14:09:59+10:00</updated><id>/academic-genealogy</id><content type="html" xml:base="/academic-genealogy/">&lt;p&gt;I visited my PhD supervisor, &lt;a href=&quot;http://marwanjabri.com&quot;&gt;Dr Marwan Anwar Jabri&lt;/a&gt; last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Sea lion, Santa Cruz Wharf</title><link href="http://localhost:4000/sea-lion-santa-cruz-wharf/" rel="alternate" type="text/html" title="Sea lion, Santa Cruz Wharf" /><published>2019-05-20T12:59:22+10:00</published><updated>2019-05-20T12:59:22+10:00</updated><id>http://localhost:4000/sea-lion-santa-cruz-wharf</id><content type="html" xml:base="http://localhost:4000/sea-lion-santa-cruz-wharf/">&lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/DSCF6081.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Academic Genealogy</title><link href="http://localhost:4000/academic-genealogy/" rel="alternate" type="text/html" title="Academic Genealogy" /><published>2019-05-18T14:09:59+10:00</published><updated>2019-05-18T14:09:59+10:00</updated><id>http://localhost:4000/academic-genealogy</id><content type="html" xml:base="http://localhost:4000/academic-genealogy/">&lt;p&gt;I visited my PhD supervisor, &lt;a href=&quot;http://marwanjabri.com&quot;&gt;Dr Marwan Anwar Jabri&lt;/a&gt; last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/6700082371262977270_IMG_0887.jpg&quot; alt=&quot;&quot; /&gt;Myself and Dr Marwan Jabri&lt;/p&gt;
 
@@ -305,6 +330,6 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019/05/IMG_3505.jpg&quot; alt=&quot;&quot; /&gt;Bob Frater is second from the front on the left hand side of this photo.&lt;/p&gt;
 
-&lt;p&gt;Bob’s supervisor was &lt;a href=&quot;https://en.wikipedia.org/wiki/Wilbur_Norman_Christiansen&quot;&gt;Prof Wilbur Norman “Chris”  Christiansen&lt;/a&gt;. Chris was a radio astronomer and former Head of the Department of Electrical Engineering, The University of Sydney.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.</summary></entry><entry><title type="html">Dropbox - don’t give full access to your machine</title><link href="/dropbox-dont-give-full-access-to-your-machine/" rel="alternate" type="text/html" title="Dropbox - don't give full access to your machine" /><published>2019-05-16T01:41:18+10:00</published><updated>2019-05-16T01:41:18+10:00</updated><id>/dropbox-dont-give-full-access-to-your-machine</id><content type="html" xml:base="/dropbox-dont-give-full-access-to-your-machine/">&lt;p&gt;Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s  (good) security features. Upon startup, they ask for you to enter your administrator password into their dialog box. After that, they can do anything with your machine. If you just cancel the dialog and start Dropbox up manually, they have all your files, but at least they don’t own your machine.&lt;/p&gt;
+&lt;p&gt;Bob’s supervisor was &lt;a href=&quot;https://en.wikipedia.org/wiki/Wilbur_Norman_Christiansen&quot;&gt;Prof Wilbur Norman “Chris”  Christiansen&lt;/a&gt;. Chris was a radio astronomer and former Head of the Department of Electrical Engineering, The University of Sydney.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.</summary></entry><entry><title type="html">Dropbox - don’t give full access to your machine</title><link href="http://localhost:4000/dropbox-dont-give-full-access-to-your-machine/" rel="alternate" type="text/html" title="Dropbox - don't give full access to your machine" /><published>2019-05-16T01:41:18+10:00</published><updated>2019-05-16T01:41:18+10:00</updated><id>http://localhost:4000/dropbox-dont-give-full-access-to-your-machine</id><content type="html" xml:base="http://localhost:4000/dropbox-dont-give-full-access-to-your-machine/">&lt;p&gt;Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s  (good) security features. Upon startup, they ask for you to enter your administrator password into their dialog box. After that, they can do anything with your machine. If you just cancel the dialog and start Dropbox up manually, they have all your files, but at least they don’t own your machine.&lt;/p&gt;
 
 &lt;p&gt;https://applehelpwriter.com/2016/07/28/revealing-dropboxs-dirty-little-security-hack/#comment-27348&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Dropbox is a widely used program but they have a wide-open back door which allows them to circumvent Apple’s (good) security features. Upon startup, they ask for you to enter your administrator password into their dialog box. After that, they can do anything with your machine. If you just cancel the dialog and start Dropbox up manually, they have all your files, but at least they don’t own your machine.</summary></entry></feed>
