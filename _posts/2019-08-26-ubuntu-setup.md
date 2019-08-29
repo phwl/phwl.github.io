@@ -15,6 +15,16 @@ Dell UltraSharp U2518D monitor.
 
 Here is how I addressed a few issues:
  * Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.
+ * /etc/network/interfaces should be
+<p><code>
+# interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp4s0
+iface enp4s0 inet dhcp
+</code></p>
  * The NFS entry in /etc/fstab 
 <p><code>
 10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
