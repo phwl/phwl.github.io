@@ -45,7 +45,8 @@ collection of vintage test equipment.
 He told me this is the best amateur receiver for its time. 
 ![](/assets/images/2019/06/IMG_1030.jpg){: .align-center}
 
-Not everyone has a Caesium frequency standard at home. Dick
+Not everyone has a Caesium frequency standard at home (in fact 
+some countries don't have one). Dick
 picked it up, not working, for $300 and repaired it (had a screw
 loose). I later found out the original price was $32,000 which would have
 been enough to buy a house at the time.
