@@ -99,9 +99,10 @@ defaults:
       author_profile: true
       read_time: false
       comments: true
-      share: true
+      share: false
       related: true
       use_math: false
+      wide: true
   # _pages
   - scope:
       path: "_pages"
@@ -110,6 +111,7 @@ defaults:
       layout: single
       author_profile: true
       use_math: false
+      wide: true
 
 comments:
   provider: "disqus"
