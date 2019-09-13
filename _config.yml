@@ -66,7 +66,7 @@ author:
   bio    : "" # "Carbon-based lifeform."
   links:
     - label: "publications"
-      url: "/publications"
+      url: "/assets/papers"
     - label: "lectures"
       url: "/lectures"
     - label: "students"
