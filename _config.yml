@@ -66,7 +66,7 @@ author:
   location         : "Sydney, Australia"
   bio    : "" # "Carbon-based lifeform."
   links:
-    - label: "publications"
+    - label: "papers"
       url: "/assets/papers"
     - label: "lectures"
       url: "/lectures"
