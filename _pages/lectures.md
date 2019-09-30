@@ -6,7 +6,7 @@ date: 2017-10-21 09:16:08+00:00
 # link: http://phwl.org/lectures/
 permalink: lectures
 slug: lectures
-title: lectures
+title: Lectures
 wordpress_id: 3312
 ---
 
@@ -17,6 +17,8 @@ wordpress_id: 3312
 
 
  	
+  * 30th Sep 2019, [Multipliers for FPGA Machine Learning Applications](/assets/talks/ml-multipliers19.pdf), Fudan University
+
   * 10th May 2019, [Efficient FPGA implementations of Machine Learning Algorithms](/assets/images/2019/05/efficientML19.pdf), San Jose State University
 
 
