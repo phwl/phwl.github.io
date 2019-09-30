@@ -3,10 +3,10 @@ author: phwl
 comments: false
 date: 2017-10-21 09:16:08+00:00
 # layout: page
-# link: http://phwl.org/lectures/
-permalink: lectures
-slug: lectures
-title: Lectures
+# link: http://phwl.org/talks/
+permalink: talks
+slug: talks
+title: Talks
 wordpress_id: 3312
 ---
 

@@ -68,8 +68,8 @@ author:
   links:
     - label: "papers"
       url: "/assets/papers"
-    - label: "lectures"
-      url: "/lectures"
+    - label: "talks"
+      url: "/talks"
     - label: "students"
       url: "/students"
     - label: "writing resources"
