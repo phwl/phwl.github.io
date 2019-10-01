@@ -634,6 +634,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/research</loc>
+</url>
+<url>
 <loc>http://localhost:4000/students</loc>
 </url>
 <url>
