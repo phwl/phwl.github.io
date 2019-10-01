@@ -7,6 +7,7 @@ date: 2017-10-21 09:16:08+00:00
 permalink: talks
 slug: talks
 title: Talks
+classes: wide
 wordpress_id: 3312
 ---
 

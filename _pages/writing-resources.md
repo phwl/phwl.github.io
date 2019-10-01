@@ -7,6 +7,7 @@ date: 2019-04-16 03:39:44+00:00
 permalink: writing-resources
 slug: writing-resources
 title: writing-resources
+classes: wide
 wordpress_id: 4699
 ---
 

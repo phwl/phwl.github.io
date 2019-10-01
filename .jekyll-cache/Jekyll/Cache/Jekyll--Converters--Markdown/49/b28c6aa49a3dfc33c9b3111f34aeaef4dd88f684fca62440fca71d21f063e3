@@ -1,0 +1,57 @@
+I"|<p>Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
+Dell UltraSharp U2518D monitor.</p>
+
+<p>Here is how I configured the machine:</p>
+<ul>
+  <li>/etc/network/interfaces should be</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># interfaces(5) file used by ifup(8) and ifdown(8)
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp4s0
+iface enp4s0 inet dhcp
+</code></pre></div></div>
+
+<ul>
+  <li>/etc/hosts should be</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.1.1       trout.staff.sydney.edu.au trout
+</code></pre></div></div>
+
+<ul>
+  <li>The NFS entry in /etc/fstab</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
+</code></pre></div></div>
+
+<p>did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+mount <span class="nt">-a</span>
+</code></pre></div></div>
+
+<p>to /etc/network/if-up.d/fstab.</p>
+
+<ul>
+  <li>Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.</li>
+</ul>
+
+<p>For reference, the configuration of the machine is:</p>
+<ul>
+  <li>XPS 8930 Base</li>
+  <li>9th Gen Intel(R) Core(TM) i7 9700 (8-Core, 12MB Cache, up to 4.7GHz with Intel(R) Turbo Boost
+Technology)</li>
+  <li>XPS 8930, Mainstream Chassis (460W)</li>
+  <li>16GB, 2x8GB, DDR4, 2666MHz</li>
+  <li>M.2 512GB PCIe x4 SSD + 2TB 7200 rpm Hard Drive</li>
+  <li>Tray load DVD Drive (Reads and Writes to DVD/CD)</li>
+  <li>NVIDIA(R) GeForce RTX(TM) 2060 6GB GDDR6</li>
+  <li>Killer 1535 802.11ac 2x2 WiFi and Bluetooth 4.1</li>
+  <li>Dell USB Mouse</li>
+  <li>Dell Wired Keyboard KB216 Black (English)</li>
+</ul>
+:ET

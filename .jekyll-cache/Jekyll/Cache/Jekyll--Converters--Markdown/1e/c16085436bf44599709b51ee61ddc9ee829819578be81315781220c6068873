@@ -1,0 +1,37 @@
+I"±<p><img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" class="align-center" /></p>
+
+<p>Improving the antenna from <a href="http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
+
+<!-- more -->
+
+<p>Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
+ 2018-05-25 10:20 	 VK2APL 	 7.040019 	 -24 	 0 	 QF56 	 5 	 KC2STA1 	 FN22vx 	 15985 	 61
+ 2018-05-25 10:20 	 VK2APL 	 7.040008 	 -19 	 0 	 QF56 	 5 	 N1MCY 	 FN20fc 	 15859 	 66
+ 2018-05-25 10:12 	 VK2APL 	 7.040010 	 -25 	 0 	 QF56 	 5 	 N2HQI 	 FN13sa 	 15802 	 61
+ 2018-05-25 10:12 	 VK2APL 	 7.039988 	 -27 	 0 	 QF56 	 5 	 KB3EDF 	 FM18rh 	 15751 	 69
+ 2018-05-25 10:12 	 VK2APL 	 7.040005 	 -27 	 0 	 QF56 	 5 	 W3GXT 	 FM19ol 	 15746 	 67
+ 2018-05-25 10:12 	 VK2APL 	 7.040002 	 -27 	 0 	 QF56 	 5 	 KK4MBI 	 FM18kv 	 15710 	 68
+ 2018-05-25 10:20 	 VK2APL 	 7.039999 	 -28 	 0 	 QF56 	 5 	 K9AN 	 EN50wc 	 14801 	 64
+ 2018-05-25 10:12 	 VK2APL 	 7.040000 	 -28 	 0 	 QF56 	 5 	 N8AUM 	 EM70em 	 14737 	 77
+ 2018-05-25 10:20 	 VK2APL 	 7.040005 	 -24 	 0 	 QF56 	 5 	 KD6RF 	 EM22lr 	 13979 	 71
+ 2018-05-25 10:20 	 VK2APL 	 7.040006 	 -22 	 0 	 QF56 	 5 	 N5CEY 	 EL16gc 	 13479 	 78
+ 2018-05-25 10:20 	 VK2APL 	 7.040001 	 -25 	 0 	 QF56 	 5 	 AC0ZG 	 DN70km 	 13426 	 59
+ 2018-05-25 10:12 	 VK2APL 	 7.040010 	 -24 	 0 	 QF56 	 5 	 KF7VLT 	 DN40 	 12958 	 57
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -20 	 0 	 QF56 	 5 	 W7OWO 	 CN85lh 	 12297 	 49
+ 2018-05-25 10:12 	 VK2APL 	 7.040016 	 -25 	 0 	 QF56 	 5 	 KF6I 	 DM13bv 	 12097 	 61
+ 2018-05-25 10:20 	 VK2APL 	 7.040011 	 -22 	 0 	 QF56 	 5 	 VK6CQ 	 OF78wa 	 3270 	 263
+ 2018-05-25 10:12 	 VK2APL 	 7.040020 	 -2 	 0 	 QF56 	 5 	 VK5MR 	 PF89kk 	 1366 	 280
+ 2018-05-25 10:12 	 VK2APL 	 7.040008 	 -12 	 0 	 QF56 	 5 	 VK7KPC 	 QE38ok 	 953 	 199
+ 2018-05-25 10:12 	 VK2APL 	 7.040102 	 -4 	 0 	 QF56 	 5 	 VK7JJ 	 QE38lr 	 931 	 201
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -12 	 -1 	 QF56 	 5 	 VK3PYE 	 QF21 	 774 	 222
+ 2018-05-25 10:12 	 VK2APL 	 7.040000 	 -3 	 0 	 QF56 	 5 	 VK3MHY 	 QF22ma 	 728 	 225
+ 2018-05-25 10:12 	 VK2APL 	 7.039998 	 -10 	 0 	 QF56 	 5 	 VK3MI 	 QF22ne 	 711 	 226
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -13 	 0 	 QF56 	 5 	 VK4ZBV 	 QG62ml 	 696 	 17
+ 2018-05-25 11:32 	 VK2APL 	 7.039999 	 -19 	 0 	 QF56 	 5 	 VK4AAN 	 QG61ah 	 547 	 11
+ 2018-05-25 10:20 	 VK2APL 	 7.040000 	 -22 	 0 	 QF56 	 5 	 VK2COW 	 QF44ox 	 232 	 223</p>
+
+<p>Then I made my first decent <a href="https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8">FT8</a> contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners <a href="http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf">http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf</a>.</p>
+
+<p><img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" class="align-center" /></p>
+
+:ET
