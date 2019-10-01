@@ -5,7 +5,7 @@ date: 2015-12-15 07:47:15+00:00
 # link: http://phwl.org/new-zealand-fly-fishing-2015/
 slug: new-zealand-fly-fishing-2015
 title: New Zealand Fly-Fishing 2015
-wordpress_id: 2295
+classes: wide
 categories:
 - fishing
 header:

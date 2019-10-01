@@ -5,7 +5,7 @@ date: 1994-04-06 16:04:27+00:00
 #link: https://phwl.github.io/marlin-on-fly
 slug: marlin-on-fly
 title: Marlin on Fly
-wordpress_id: 76
+classes: wide
 categories:
 - fishing
 - Fly-fishing

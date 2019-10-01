@@ -5,7 +5,7 @@ date: 2019-01-10 06:38:07+00:00
 # link: http://phwl.org/sydney-harbour-kingfish-jan-2019/
 slug: sydney-harbour-kingfish-jan-2019
 title: Sydney Harbour Kingfish Jan 2019
-wordpress_id: 4402
+classes: wide
 categories:
 - australia
 - fishing

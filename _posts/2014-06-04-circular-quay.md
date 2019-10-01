@@ -5,7 +5,7 @@ date: 2014-06-04 10:46:50+00:00
 # link: http://phwl.org/circular-quay/
 slug: circular-quay
 title: Circular Quay
-wordpress_id: 1345
+classes: wide
 categories:
 - australia
 - photography

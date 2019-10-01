@@ -5,7 +5,7 @@ date: 2010-08-13 11:12:03+00:00
 # link: http://phwl.org/whale-beach/
 slug: whale-beach
 title: Whale Beach
-wordpress_id: 2424
+classes: wide
 categories:
 - australia
 - photography

@@ -5,7 +5,7 @@ date: 2013-07-30 07:30:20+00:00
 # link: http://phwl.org/cowan-creek/
 slug: cowan-creek
 title: Cowan Creek
-wordpress_id: 1088
+classes: wide
 categories:
 - australia
 - fishing

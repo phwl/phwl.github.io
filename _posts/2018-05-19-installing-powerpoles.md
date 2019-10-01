@@ -5,7 +5,7 @@ date: 2018-05-19 06:08:16+00:00
 # link: http://phwl.org/installing-powerpoles/
 slug: installing-powerpoles
 title: Installing powerpoles
-wordpress_id: 3624
+classes: wide
 categories:
 - amateur radio
 - hobbies

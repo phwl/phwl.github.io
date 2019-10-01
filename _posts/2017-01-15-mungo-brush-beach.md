@@ -5,7 +5,7 @@ date: 2017-01-15 08:15:40+00:00
 # link: http://phwl.org/mungo-brush-beach/
 slug: mungo-brush-beach
 title: Mungo Brush Beach
-wordpress_id: 2790
+classes: wide
 categories:
 - australia
 - Fly-fishing

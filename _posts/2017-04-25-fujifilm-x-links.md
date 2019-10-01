@@ -5,7 +5,7 @@ date: 2017-04-25 07:54:07+00:00
 # link: http://phwl.org/fujifilm-x-links/
 slug: fujifilm-x-links
 title: Fujifilm X Links
-wordpress_id: 3008
+classes: wide
 categories:
 - photography
 ---

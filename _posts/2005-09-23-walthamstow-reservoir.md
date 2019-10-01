@@ -5,7 +5,7 @@ date: 2005-09-23 14:59:57+00:00
 # link: http://phwl.org/walthamstow-reservoir/
 slug: walthamstow-reservoir
 title: Walthamstow Reservoir
-wordpress_id: 51
+classes: wide
 categories:
 - fishing
 header:

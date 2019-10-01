@@ -6,7 +6,7 @@ date: 2017-12-10 08:00:13+00:00
 published: false
 slug: guided-kingfish-trip-2018
 title: Guided kingfish trip 2018
-wordpress_id: 3697
+classes: wide
 categories:
 - Fly-fishing
 ---

@@ -5,7 +5,7 @@ date: 2000-08-06 13:24:10+00:00
 # link: http://phwl.org/testament-of-a-fisherman/
 slug: testament-of-a-fisherman
 title: Testament of a Fisherman
-wordpress_id: 12
+classes: wide
 categories:
 - fishing
 ---

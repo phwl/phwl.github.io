@@ -5,7 +5,7 @@ date: 2019-02-16 06:57:16+00:00
 # link: http://phwl.org/berkeley-wireless-research-center-20-year-anniversary/
 slug: berkeley-wireless-research-center-20-year-anniversary
 title: Berkeley Wireless Research Center 20th Year Anniversary
-wordpress_id: 4453
+classes: wide
 categories:
 - academia
 - electronics

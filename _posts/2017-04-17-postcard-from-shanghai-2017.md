@@ -5,7 +5,7 @@ date: 2017-04-17 13:18:10+00:00
 # link: http://phwl.org/postcard-from-shanghai-2017/
 slug: postcard-from-shanghai-2017
 title: Postcard from Shanghai 2017
-wordpress_id: 2922
+classes: wide
 categories:
 - photography
 - travel

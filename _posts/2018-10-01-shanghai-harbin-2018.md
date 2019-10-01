@@ -5,7 +5,7 @@ date: 2018-10-01 09:48:01+00:00
 # link: http://phwl.org/shanghai-harbin-2018/
 slug: shanghai-harbin-2018
 title: Shanghai Harbin 2018
-wordpress_id: 4070
+classes: wide
 categories:
 - travel
 header:

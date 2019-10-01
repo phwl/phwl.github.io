@@ -5,7 +5,7 @@ date: 2013-12-31 05:11:55+00:00
 # link: http://phwl.org/hawkesbury-river-2013/
 slug: hawkesbury-river-2013
 title: Hawkesbury River 2013
-wordpress_id: 1289
+classes: wide
 categories:
 - australia
 - fishing

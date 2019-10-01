@@ -5,7 +5,7 @@ date: 2013-01-09 09:58:07+00:00
 # link: http://phwl.org/luderick-sydney-harbour/
 slug: luderick-sydney-harbour
 title: Luderick Sydney Harbour
-wordpress_id: 2387
+classes: wide
 categories:
 - australia
 - fishing

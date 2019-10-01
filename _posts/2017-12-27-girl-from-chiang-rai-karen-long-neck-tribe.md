@@ -5,7 +5,7 @@ date: 2017-12-27 15:37:07+00:00
 # link: http://phwl.org/girl-from-chiang-rai-karen-long-neck-tribe/
 slug: girl-from-chiang-rai-karen-long-neck-tribe
 title: Girl from Chiang Rai Karen Long Neck Tribe
-wordpress_id: 3452
+classes: wide
 categories:
 - photography
 - travel

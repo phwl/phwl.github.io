@@ -5,7 +5,7 @@ date: 2018-04-21 06:51:46+00:00
 # link: http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/
 slug: configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200
 title: Configuring WSJT-X on Ubuntu for an Icom IC-7200
-wordpress_id: 3571
+classes: wide
 categories:
 - amateur radio
 - hobbies

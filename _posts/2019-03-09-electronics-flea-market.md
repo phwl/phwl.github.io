@@ -5,7 +5,7 @@ date: 2019-03-09 23:57:27+00:00
 # link: http://phwl.org/electronics-flea-market/
 slug: electronics-flea-market
 title: Electronics Flea Market
-wordpress_id: 4573
+classes: wide
 categories:
 - electronics
 header:

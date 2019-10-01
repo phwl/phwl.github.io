@@ -5,7 +5,7 @@ date: 2010-12-03 11:47:53+00:00
 # link: http://phwl.org/elaines-off-road-trip/
 slug: elaines-off-road-trip
 title: Elaine's (off) Road Trip
-wordpress_id: 277
+classes: wide
 categories:
 - australia
 - travel

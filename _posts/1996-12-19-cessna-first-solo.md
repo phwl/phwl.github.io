@@ -5,7 +5,7 @@ date: 1996-12-19 05:13:50+00:00
 #link: http://phwl.org/cessna-first-solo/
 slug: cessna-first-solo
 title: Cessna first solo
-wordpress_id: 2371
+classes: wide
 categories:
 - hobbies
 header:

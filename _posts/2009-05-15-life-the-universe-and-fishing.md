@@ -5,7 +5,7 @@ date: 2009-05-15 13:45:49+00:00
 # link: http://phwl.org/life-the-universe-and-fishing/
 slug: life-the-universe-and-fishing
 title: Life, the Universe and Fishing
-wordpress_id: 29
+classes: wide
 categories:
 - academia
 - fishing

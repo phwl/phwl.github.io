@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/2019/06/IMG_1033.jpg
 ---
 
-Chris Dick was kind enough to introduce me to his friend, Dick Benson 
+Chris Dick was kind enough to introduce me to his friend, Dick Benson
 [W1QG](https://www.qrz.com/db/W1QG/), a retired hardware development engineer. We went to visit his
 very impressive shack (which was not difficult to spot from the
 road).
@@ -28,7 +28,7 @@ at
 ![](/assets/images/2019/06/IMG_1014.jpg){: .align-center}
 
 On one side he had his radio gear, together with a very substantial
-collection of vintage test equipment. 
+collection of vintage test equipment.
 
 ![](/assets/images/2019/06/IMG_1016.jpg){: .align-center}
 
@@ -42,10 +42,10 @@ collection of vintage test equipment.
 
 ![](/assets/images/2019/06/IMG_1022.jpg){: .align-center}
 
-He told me this is the best amateur receiver for its time. 
+He told me this is the best amateur receiver for its time.
 ![](/assets/images/2019/06/IMG_1030.jpg){: .align-center}
 
-Not everyone has a Caesium frequency standard at home (in fact 
+Not everyone has a Caesium frequency standard at home (in fact
 some countries don't have one). Dick
 picked this up, not working, for $300 and repaired it (had a screw
 loose). I later found out the original price was $32,000 which would have
@@ -59,7 +59,7 @@ that he restored and lots of home made  radio controlled planes.
 
 ![](/assets/images/2019/06/IMG_1027.jpg){: .align-center}
 
-This is an engine he made from scratch, using the mill in 
+This is an engine he made from scratch, using the mill in
 the photo below.
 ![](/assets/images/2019/06/IMG_1028.jpg){: .align-center}
 

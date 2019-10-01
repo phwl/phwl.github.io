@@ -5,7 +5,7 @@ date: 2017-11-21 00:57:34+00:00
 # link: http://phwl.org/code-for-leong-and-carlile-methods-for-spherical-data-analysis-and-visualization/
 slug: code-for-leong-and-carlile-methods-for-spherical-data-analysis-and-visualization
 title: Code for Leong and Carlile, "Methods for spherical data analysis and visualization"
-wordpress_id: 3348
+classes: wide
 ---
 
 The source code for the paper:

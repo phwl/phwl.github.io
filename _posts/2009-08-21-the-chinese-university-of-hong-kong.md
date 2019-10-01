@@ -5,7 +5,7 @@ date: 2009-08-21 08:07:10+00:00
 # link: http://phwl.org/the-chinese-university-of-hong-kong/
 slug: the-chinese-university-of-hong-kong
 title: The Chinese University of Hong Kong
-wordpress_id: 163
+classes: wide
 categories:
 - photography
 header:

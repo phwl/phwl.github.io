@@ -6,13 +6,14 @@ title: Moving from Wordpress to Jekyll
 categories: website
 tags: jekyll
 use_math: true
+classes: wide
 header:
   teaser: https://jekyllrb.com/img/logo-2x.png
 ---
 
-I have been using [Wordpress](https://wordpress.com/) for many years. 
+I have been using [Wordpress](https://wordpress.com/) for many years.
 It produces good looking websites and is easy to install and maintain.
-Unfortunately, it isn't easy at all to backup the website, and the 
+Unfortunately, it isn't easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
 scripts which update the website. The old website is <http://phwl.org/blog>
 and the new website can be viewed at <https://phwl.github.io>.
@@ -56,12 +57,12 @@ and browse to `localhost:4000`.
 
 ## Fix `_posts` and `_pages`
   * This took the most time. The main changes I needed to do was to fix the headers: remove the old `link` header, add a teaser image. Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like
- 
+
 ~~~~
 import fileinput
 import re
 import sys
- 
+
 for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'![](\1){: .align-center}', line.rstrip())
     print(line)

@@ -5,7 +5,7 @@ date: 2000-08-06 13:26:05+00:00
 # link: http://phwl.org/a-ballard-of-ducks/
 slug: a-ballard-of-ducks
 title: A Ballard of Ducks
-wordpress_id: 14
+classes: wide
 categories:
 - fishing
 ---

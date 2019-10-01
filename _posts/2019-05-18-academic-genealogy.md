@@ -5,7 +5,7 @@ date: 2019-05-18 04:09:59+00:00
 # link: http://phwl.org/academic-genealogy/
 slug: academic-genealogy
 title: Academic Genealogy
-wordpress_id: 4783
+classes: wide
 header:
   teaser: /assets/images/2019/05/6700082371262977270_IMG_0887.jpg
 ---

@@ -5,7 +5,7 @@ date: 2018-04-15 11:09:40+00:00
 # link: http://phwl.org/kigumi-table/
 slug: kigumi-table
 title: Kigumi table
-wordpress_id: 3568
+classes: wide
 categories:
 - hobbies
 - woodwork

@@ -5,7 +5,7 @@ date: 2010-05-03 11:51:05+00:00
 # link: http://phwl.org/sydney-skyline-at-dusk/
 slug: sydney-skyline-at-dusk
 title: Sydney skyline at dusk
-wordpress_id: 268
+classes: wide
 categories:
 - australia
 - photography

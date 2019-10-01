@@ -5,7 +5,7 @@ date: 2016-07-02 01:30:19+00:00
 # link: http://phwl.org/federal-election-2016/
 slug: federal-election-2016
 title: Federal Election 2016
-wordpress_id: 2468
+classes: wide
 categories:
 - photography
 header:

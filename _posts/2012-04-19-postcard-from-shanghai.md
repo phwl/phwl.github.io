@@ -5,7 +5,7 @@ date: 2012-04-19 07:36:09+00:00
 # link: http://phwl.org/postcard-from-shanghai/
 slug: postcard-from-shanghai
 title: Postcard from Shanghai
-wordpress_id: 342
+classes: wide
 categories:
 - photography
 - travel

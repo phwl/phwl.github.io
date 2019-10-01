@@ -5,7 +5,7 @@ date: 2007-06-24 13:23:13+00:00
 # link: http://phwl.org/a-trip-to-finland/
 slug: a-trip-to-finland
 title: A trip to Finland
-wordpress_id: 10
+classes: wide
 categories:
 - travel
 - fishing

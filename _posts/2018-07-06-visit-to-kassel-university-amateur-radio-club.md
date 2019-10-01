@@ -5,7 +5,7 @@ date: 2018-07-06 05:24:32+00:00
 # link: http://phwl.org/visit-to-kassel-university-amateur-radio-club/
 slug: visit-to-kassel-university-amateur-radio-club
 title: Visit to University of Kassel Amateur Radio Club
-wordpress_id: 3768
+classes: wide
 categories:
 - amateur radio
 - hobbies

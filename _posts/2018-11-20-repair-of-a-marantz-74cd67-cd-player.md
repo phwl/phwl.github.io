@@ -5,7 +5,7 @@ date: 2018-11-20 12:00:16+00:00
 # link: http://phwl.org/repair-of-a-marantz-74cd67-cd-player/
 slug: repair-of-a-marantz-74cd67-cd-player
 title: Repair of a Marantz 74CD67 CD Player
-wordpress_id: 4240
+classes: wide
 categories:
 - electronics
 header:

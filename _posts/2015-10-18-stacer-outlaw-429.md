@@ -5,7 +5,7 @@ date: 2015-10-18 11:40:23+00:00
 # link: http://phwl.org/stacer-outlaw-429/
 slug: stacer-outlaw-429
 title: Stacer Outlaw 429
-wordpress_id: 2232
+classes: wide
 categories:
 - fishing
 header:

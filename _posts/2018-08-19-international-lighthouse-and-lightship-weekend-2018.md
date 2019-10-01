@@ -5,7 +5,7 @@ date: 2018-08-19 02:29:18+00:00
 # link: http://phwl.org/international-lighthouse-and-lightship-weekend-2018/
 slug: international-lighthouse-and-lightship-weekend-2018
 title: International Lighthouse and Lightship Weekend 2018
-wordpress_id: 3927
+classes: wide
 categories:
 - amateur radio
 - hobbies

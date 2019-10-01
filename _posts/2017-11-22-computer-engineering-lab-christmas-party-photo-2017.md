@@ -5,7 +5,7 @@ date: 2017-11-22 14:41:14+00:00
 # link: http://phwl.org/computer-engineering-lab-christmas-party-photo-2017/
 slug: computer-engineering-lab-christmas-party-photo-2017
 title: Computer Engineering Lab Christmas Party Photo 2017
-wordpress_id: 3351
+classes: wide
 categories:
 - academia
 post_format:

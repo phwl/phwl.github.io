@@ -5,7 +5,7 @@ date: 2008-08-17 13:20:34+00:00
 # link: http://phwl.org/booti-booti-national-park-aug-2008/
 slug: booti-booti-national-park-aug-2008
 title: Forster 2008
-wordpress_id: 8
+classes: wide
 categories:
 - fishing
 ---

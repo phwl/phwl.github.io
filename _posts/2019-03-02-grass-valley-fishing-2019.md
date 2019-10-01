@@ -5,7 +5,7 @@ date: 2019-03-02 20:07:17+00:00
 # link: http://phwl.org/grass-valley-fishing-2019/
 slug: grass-valley-fishing-2019
 title: Grass Valley Fly-Fishing 2019
-wordpress_id: 4526
+classes: wide
 categories:
 - FFF
 - fishing

@@ -5,7 +5,7 @@ date: 2016-10-26 23:15:19+00:00
 # link: http://phwl.org/olympic-peninsula-fly-fishing-2016/
 slug: olympic-peninsula-fly-fishing-2016
 title: Olympic Peninsula Fly-Fishing 2016
-wordpress_id: 2642
+classes: wide
 categories:
 - FFF
 - fishing

@@ -5,7 +5,7 @@ date: 2018-12-06 13:10:29+00:00
 # link: http://phwl.org/amateur-radio-shops-in-akihabara/
 slug: amateur-radio-shops-in-akihabara
 title: Amateur Radio Shops in Akihabara
-wordpress_id: 4264
+classes: wide
 categories:
 - amateur radio
 header:

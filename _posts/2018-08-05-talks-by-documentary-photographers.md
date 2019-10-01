@@ -5,7 +5,7 @@ date: 2018-08-05 10:12:56+00:00
 # link: http://phwl.org/talks-by-documentary-photographers/
 slug: talks-by-documentary-photographers
 title: Talks by documentary photographers
-wordpress_id: 3911
+classes: wide
 ---
 
 TED talks from some of the best documentary photographers.

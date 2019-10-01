@@ -5,7 +5,7 @@ date: 2017-03-02 20:24:45+00:00
 # link: http://phwl.org/south-west-rocks-michael-zhu/
 slug: south-west-rocks-michael-zhu
 title: South West Rocks (Michael Zhu)
-wordpress_id: 2891
+classes: wide
 categories:
 - australia
 - fishing

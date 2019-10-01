@@ -5,7 +5,7 @@ date: 2013-06-16 05:53:08+00:00
 # link: http://phwl.org/the-gap-watsons-bay-sydney/
 slug: the-gap-watsons-bay-sydney
 title: The Gap, Watsons Bay, Sydney
-wordpress_id: 1052
+classes: wide
 categories:
 - australia
 - photography

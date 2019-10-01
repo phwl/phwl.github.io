@@ -10,7 +10,7 @@ header:
   teaser: /assets/images/2019/08/Nvidia_logo.svg
 ---
 
-Some new machines arrived in the lab including a Dell XPS 8930 Desktop with 
+Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
 Dell UltraSharp U2518D monitor.
 
 Here is how I configured the machine:
@@ -32,7 +32,7 @@ iface enp4s0 inet dhcp
 127.0.1.1       trout.staff.sydney.edu.au trout
 ```
 
- * The NFS entry in /etc/fstab 
+ * The NFS entry in /etc/fstab
 
 ```
 10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0

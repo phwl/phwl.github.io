@@ -5,7 +5,7 @@ date: 2015-02-08 05:39:42+00:00
 # link: http://phwl.org/tasmanian-holiday-2015/
 slug: tasmanian-holiday-2015
 title: Tasmanian Holiday 2015
-wordpress_id: 2100
+classes: wide
 categories:
 - australia
 - photography

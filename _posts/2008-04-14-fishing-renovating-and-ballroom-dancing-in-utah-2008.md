@@ -5,7 +5,7 @@ date: 2008-04-14 11:10:13+00:00
 # link: http://phwl.org/fishing-renovating-and-ballroom-dancing-in-utah-2008/
 slug: fishing-renovating-and-ballroom-dancing-in-utah-2008
 title: Fishing, Renovating and Ballroom Dancing in Utah 2008
-wordpress_id: 2326
+classes: wide
 categories:
 - fishing
 - travel

@@ -5,7 +5,7 @@ date: 2013-01-08 07:36:51+00:00
 # link: http://phwl.org/lake-eucumbene-2013/
 slug: lake-eucumbene-2013
 title: Lake Eucumbene 2013
-wordpress_id: 533
+classes: wide
 categories:
 - australia
 - fishing

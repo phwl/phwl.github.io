@@ -5,7 +5,7 @@ date: 2019-02-22 04:14:22+00:00
 # link: http://phwl.org/death-of-a-canon-s120/
 slug: death-of-a-canon-s120
 title: Death of a Canon S120
-wordpress_id: 4469
+classes: wide
 categories:
 - photography
 header:

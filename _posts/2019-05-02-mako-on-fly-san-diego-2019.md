@@ -5,7 +5,7 @@ date: 2019-05-02 05:58:11+00:00
 # link: http://phwl.org/mako-on-fly-san-diego-2019/
 slug: mako-on-fly-san-diego-2019
 title: Mako on Fly - San Diego 2019
-wordpress_id: 4721
+classes: wide
 categories:
 - FFF
 - fishing

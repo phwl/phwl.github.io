@@ -5,7 +5,7 @@ date: 2009-08-09 09:08:45+00:00
 # link: http://phwl.org/kowloon-and-hong-kong-from-the-air/
 slug: kowloon-and-hong-kong-from-the-air
 title: Hong Kong Skyline
-wordpress_id: 128
+classes: wide
 categories:
 - photography
 header:

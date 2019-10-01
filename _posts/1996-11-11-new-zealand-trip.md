@@ -5,7 +5,7 @@ date: 1996-11-11 12:04:00+00:00
 #link: https://phwl.github.io/new-zealand-trip
 slug: new-zealand-trip
 title: New Zealand Trip
-wordpress_id: 1526
+classes: wide
 categories:
 - fishing
 - Fly-fishing

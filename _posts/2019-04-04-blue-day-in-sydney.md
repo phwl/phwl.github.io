@@ -5,7 +5,7 @@ date: 2019-04-04 06:31:40+00:00
 # link: http://phwl.org/blue-day-in-sydney/
 slug: blue-day-in-sydney
 title: Blue Day in Sydney
-wordpress_id: 4653
+classes: wide
 categories:
 - photography
 - travel

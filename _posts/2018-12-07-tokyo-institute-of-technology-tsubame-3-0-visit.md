@@ -5,7 +5,7 @@ date: 2018-12-07 13:18:38+00:00
 # link: http://phwl.org/tokyo-institute-of-technology-tsubame-3-0-visit/
 slug: tokyo-institute-of-technology-tsubame-3-0-visit
 title: Tokyo Institute of Technology Tsubame 3.0 Visit
-wordpress_id: 4321
+classes: wide
 categories:
 - FPGA
 - academia

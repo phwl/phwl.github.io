@@ -5,7 +5,7 @@ date: 2009-08-13 14:11:22+00:00
 # link: http://phwl.org/street-photos-from-hong-kong/
 slug: street-photos-from-hong-kong
 title: Street photos from Hong Kong
-wordpress_id: 151
+classes: wide
 categories:
 - photography
 header:

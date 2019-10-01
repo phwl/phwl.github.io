@@ -5,7 +5,7 @@ date: 2012-12-25 00:32:12+00:00
 # link: http://phwl.org/hawkesbury-river-2012-2/
 slug: hawkesbury-river-2012-2
 title: Hawkesbury River 2012
-wordpress_id: 495
+classes: wide
 categories:
 - fishing
 header:

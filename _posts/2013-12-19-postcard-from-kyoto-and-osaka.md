@@ -5,7 +5,7 @@ date: 2013-12-19 15:22:34+00:00
 # link: http://phwl.org/postcard-from-kyoto-and-osaka/
 slug: postcard-from-kyoto-and-osaka
 title: Postcard from Kyoto and Osaka
-wordpress_id: 1191
+classes: wide
 categories:
 - travel
 header:

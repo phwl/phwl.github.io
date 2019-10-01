@@ -5,7 +5,7 @@ date: 2018-05-06 07:02:48+00:00
 # link: http://phwl.org/photo-from-karuah-jetty/
 slug: photo-from-karuah-jetty
 title: Photo from Karuah Jetty
-wordpress_id: 3630
+classes: wide
 categories:
 - hobbies
 - photography

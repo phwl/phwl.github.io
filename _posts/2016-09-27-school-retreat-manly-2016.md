@@ -5,7 +5,7 @@ date: 2016-09-27 11:19:42+00:00
 # link: http://phwl.org/school-retreat-manly-2016/
 slug: school-retreat-manly-2016
 title: School Retreat (Manly 2016)
-wordpress_id: 2619
+classes: wide
 categories:
 - australia
 - photography

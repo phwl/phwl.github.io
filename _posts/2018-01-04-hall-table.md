@@ -5,7 +5,7 @@ date: 2018-01-04 09:52:13+00:00
 # link: http://phwl.org/hall-table/
 slug: hall-table
 title: Camphor Laurel Timber Slab Hall Table
-wordpress_id: 3420
+classes: wide
 categories:
 - hobbies
 - woodwork

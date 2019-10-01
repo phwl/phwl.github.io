@@ -5,7 +5,7 @@ date: 2013-04-07 07:47:54+00:00
 # link: http://phwl.org/panorama-at-akuna-bay/
 slug: panorama-at-akuna-bay
 title: Panorama at Akuna Bay
-wordpress_id: 955
+classes: wide
 categories:
 - australia
 - photography

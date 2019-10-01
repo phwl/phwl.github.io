@@ -5,7 +5,7 @@ date: 2018-03-18 08:45:05+00:00
 # link: http://phwl.org/john-moyle-memorial-field-day-2018/
 slug: john-moyle-memorial-field-day-2018
 title: John Moyle Memorial Field Day 2018
-wordpress_id: 3506
+classes: wide
 categories:
 - amateur radio
 - australia

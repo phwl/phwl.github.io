@@ -5,7 +5,7 @@ date: 2016-12-29 00:50:25+00:00
 # link: http://phwl.org/london-xian-and-macau-2016/
 slug: london-xian-and-macau-2016
 title: London, Xi'an and Macau 2016
-wordpress_id: 2689
+classes: wide
 categories:
 - travel
 header:

@@ -5,7 +5,7 @@ date: 2012-11-11 10:54:26+00:00
 # link: http://phwl.org/molonglo-radio-observatory/
 slug: molonglo-radio-observatory
 title: Molonglo Radio Observatory
-wordpress_id: 345
+classes: wide
 categories:
 - australia
 - photography

@@ -5,7 +5,7 @@ date: 2013-08-22 12:57:58+00:00
 # link: http://phwl.org/postcard-from-harbin-summer-2013/
 slug: postcard-from-harbin-summer-2013
 title: Postcard from Harbin Summer 2013
-wordpress_id: 1120
+classes: wide
 categories:
 - photography
 - travel

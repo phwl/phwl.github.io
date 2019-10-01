@@ -5,7 +5,7 @@ date: 2017-01-30 09:53:40+00:00
 # link: http://phwl.org/hawkesbury-river-again-australia-day-2017/
 slug: hawkesbury-river-again-australia-day-2017
 title: Hawkesbury River again Australia Day 2017
-wordpress_id: 2802
+classes: wide
 categories:
 - australia
 - fishing

@@ -5,7 +5,7 @@ date: 2010-02-02 16:24:26+00:00
 # link: http://phwl.org/postcard-from-ottawa/
 slug: postcard-from-ottawa
 title: Postcard from Ottawa
-wordpress_id: 231
+classes: wide
 categories:
 - travel
 header:

@@ -5,7 +5,7 @@ date: 2009-02-01 06:12:07+00:00
 # link: http://phwl.org/beijing-and-harbin/
 slug: beijing-and-harbin
 title: Beijing and Harbin
-wordpress_id: 775
+classes: wide
 categories:
 - travel
 post_format:

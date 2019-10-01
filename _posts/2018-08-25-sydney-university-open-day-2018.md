@@ -5,7 +5,7 @@ date: 2018-08-25 08:47:44+00:00
 # link: http://phwl.org/sydney-university-open-day-2018/
 slug: sydney-university-open-day-2018
 title: Sydney University Open Day 2018
-wordpress_id: 3966
+classes: wide
 categories:
 - academia
 - amateur radio

@@ -5,7 +5,7 @@ date: 2001-08-06 05:58:45+00:00
 # link: http://phwl.org/fishing-photos/
 slug: fishing-photos
 title: Fishing Photos
-wordpress_id: 70
+classes: wide
 categories:
 - fishing
 post_format:

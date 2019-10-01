@@ -5,7 +5,7 @@ date: 2008-12-28 12:33:53+00:00
 # link: http://phwl.org/snowboard-fever/
 slug: snowboard-fever
 title: Snowboard Fever
-wordpress_id: 2398
+classes: wide
 categories:
 - photography
 header:

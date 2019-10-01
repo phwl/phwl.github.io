@@ -5,7 +5,7 @@ date: 2017-12-16 21:16:48+00:00
 # link: http://phwl.org/directions-to-cel/
 slug: directions-to-cel
 title: Directions to CEL
-wordpress_id: 3411
+classes: wide
 categories:
 - academia
 ---

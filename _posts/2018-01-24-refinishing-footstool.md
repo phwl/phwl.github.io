@@ -5,7 +5,7 @@ date: 2018-01-24 05:48:16+00:00
 # link: http://phwl.org/refinishing-footstool/
 slug: refinishing-footstool
 title: Refinishing Footstool
-wordpress_id: 3483
+classes: wide
 categories:
 - hobbies
 - woodwork

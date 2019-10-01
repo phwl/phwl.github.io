@@ -5,7 +5,7 @@ date: 2018-11-08 22:34:51+00:00
 # link: http://phwl.org/fpt18-workshop-on-embedded-machine-learning/
 slug: fpt18-workshop-on-embedded-machine-learning
 title: FPT18 Workshop on Embedded Machine Learning
-wordpress_id: 4186
+classes: wide
 categories:
 - academia
 - Fly-fishing

@@ -4,7 +4,7 @@ date: 2019-06-11 20:50:41+00:00
 # link: http://phwl.org/ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota/
 slug: ten-lessons-i-wish-i-had-been-taught-gian-carlo-rota
 title: Ten Lessons I wish I had been Taught - Gian-Carlo Rota
-wordpress_id: 4815
+classes: wide
 categories:
 - academia
 header:

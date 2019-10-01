@@ -5,7 +5,7 @@ date: 2013-08-31 06:15:25+00:00
 # link: http://phwl.org/sydney-university-open-day-from-a-weather-balloon/
 slug: sydney-university-open-day-from-a-weather-balloon
 title: Sydney University Open Day (from a weather balloon)
-wordpress_id: 1165
+classes: wide
 categories:
 - australia
 - photography

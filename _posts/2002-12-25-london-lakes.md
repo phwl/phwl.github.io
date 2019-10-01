@@ -5,7 +5,7 @@ date: 2002-12-25 04:47:17+00:00
 # link: http://phwl.org/london-lakes/
 slug: london-lakes
 title: London Lakes
-wordpress_id: 67
+classes: wide
 categories:
 - australia
 - fishing

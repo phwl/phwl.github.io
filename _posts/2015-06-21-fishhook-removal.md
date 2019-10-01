@@ -5,7 +5,7 @@ date: 2015-06-21 11:41:53+00:00
 # link: http://phwl.org/fishhook-removal/
 slug: fishhook-removal
 title: Fishhook removal
-wordpress_id: 2166
+classes: wide
 categories:
 - fishing
 header:
