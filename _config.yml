@@ -296,7 +296,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: archive
+      layout: article
       author_profile: true
       read_time: #false
       comments: true
