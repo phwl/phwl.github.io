@@ -4,6 +4,7 @@ comments: true
 date: 2019-08-26 09:51:57 AEST
 slug: ubuntu-nvdia-19
 title: Setting up some new Ubuntu/NVIDIA machines
+classes: wide
 categories:
 - research
 header:
