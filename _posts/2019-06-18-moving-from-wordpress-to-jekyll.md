@@ -70,8 +70,27 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 
 ## Customise website
   * Since I wanted teaser images appearing on the front page, I put a copy of <https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html> in `_includes/archive-single.html`
-  * To enable $$\LaTeX$$ rendering with mathjax, I created a file in `_includes/latex.html` with
+  * To use a custom domain <https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site>
+  * To use single pages without sidebar <https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064>
+  * To change home to a grid layout
+~~~~
+---
+layout: archive
+---
 
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+<div class="grid__wrapper">
+{% for post in paginator.posts %}
+  {% include archive-single.html type="grid" %}
+{% endfor %}
+</div>
+
+{% include paginator.html %}
+~~~~
+  * To enable $$\LaTeX$$ rendering with mathjax, I created a file in `_includes/latex.html` with
 ~~~~
 {% if page.use_math %}
 <script type="text/javascript" async
