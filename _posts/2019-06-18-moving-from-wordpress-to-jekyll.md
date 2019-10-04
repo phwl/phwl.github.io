@@ -17,7 +17,8 @@ Unfortunately, it isn't easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
 scripts which update the website. The old website is <http://phwl.org/blog>
 and the new website can be viewed at <https://phwl.github.io>.
-I will be switching them over at some point.
+I will be switching them over at some point and moved the old
+domain to a spare <http://uxa.apl.mybluehost.me/>.
 
 Most programmers use [github](https://www.github.com) which offers
 [Github Pages](https://pages.github.com) for website hosting.
@@ -67,6 +68,7 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'![](\1){: .align-center}', line.rstrip())
     print(line)
 ~~~~
+ * I also used wide pages <https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/>
 
 ## Customise website
   * Since I wanted teaser images appearing on the front page, I put a copy of <https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html> in `_includes/archive-single.html`
@@ -98,3 +100,16 @@ layout: archive
 </script>
 {% endif %}
 ~~~~
+
+## Good resources
+I found the following sites helpful:
+ * <https://www.alexdglover.com/the-move-to-jekyll/>
+ * <http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/>
+ * <https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image>
+ * <https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/>
+ * <https://github.com/merlos/jekyll-auto-image>
+ * <http://lanyon.getpoole.com/>
+ * <http://drjekyllthemes.github.io/>
+ * <https://gykovacsblog.wordpress.com/tag/jekyll-scholar/>
+ * <https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#>
+ * <https://github.com/alshedivat/al-folio>
