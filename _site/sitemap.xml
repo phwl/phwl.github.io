@@ -640,6 +640,9 @@
 <loc>http://localhost:4000/papers</loc>
 </url>
 <url>
+<loc>http://localhost:4000/assets/papers</loc>
+</url>
+<url>
 <loc>http://localhost:4000/research</loc>
 </url>
 <url>
@@ -1256,10 +1259,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/iface_spl08.pdf</loc>
-<lastmod>2019-10-01T19:28:45+08:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/assets/papers/</loc>
 <lastmod>2019-10-01T19:28:45+08:00</lastmod>
 </url>
 <url>
