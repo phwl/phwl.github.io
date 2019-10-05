@@ -1,7 +1,7 @@
 ---
 comments: false
-permalink: papers
-slug: papers
+permalink: assets/papers
+slug: assets/papers
 title: Publications
 classes: wide
 ---
