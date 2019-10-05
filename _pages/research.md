@@ -8,7 +8,7 @@ title: Research
 classes: wide
 ---
 
-  * [Publications](assets/papers) - my publications list
+  * [Publications](papers) - my publications list
   * [Talks](talks) - slides from my public lectures
   * [Students](students) - dissertations of my students
   * [Writing Resources](writing-resources) - how to improve your reports
