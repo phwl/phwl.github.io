@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/1991/08/plbarra1-horiz.jpg
 ---
 
-![Barramundi](/assets/images/1991/08/plbarra1.jpg){: .align-center}
+[![Barramundi](/assets/images/1991/08/plbarra1.jpg){: .align-center}](/assets/images/1991/08/plbarra1.jpg)
 <figcaption style="text-align:center">
 Black marlin on fly, Cape Bowling Green, Queensland, Mary River
 </figcaption>

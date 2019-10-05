@@ -13,4 +13,4 @@ header:
   teaser: /assets/images/2017/04/IMG_9416.jpg
 ---
 
-![](/assets/images/2017/04/IMG_9416.jpg){: .align-center}
+[![](/assets/images/2017/04/IMG_9416.jpg){: .align-center}](/assets/images/2017/04/IMG_9416.jpg)

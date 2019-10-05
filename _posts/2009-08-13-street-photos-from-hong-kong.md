@@ -14,5 +14,5 @@ header:
 
 Here are some street photos from Hong Kong.
 
-![](/assets/images/2009/08/3818727575_13c777a19b.jpg){: .align-center}
-![](/assets/images/2009/08/3842363004_7cc122dc76.jpg){: .align-center}
+[![](/assets/images/2009/08/3818727575_13c777a19b.jpg){: .align-center}](/assets/images/2009/08/3818727575_13c777a19b.jpg)
+[![](/assets/images/2009/08/3842363004_7cc122dc76.jpg){: .align-center}](/assets/images/2009/08/3842363004_7cc122dc76.jpg)

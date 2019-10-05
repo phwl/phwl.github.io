@@ -6,6 +6,8 @@ date: 2017-06-28 23:36:53+00:00
 slug: how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer
 title: How to make a Ubuntu boot usb in OSX (don't use the UNetbootin USB installer)
 classes: wide
+header:
+  teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
 categories:
 - software
 ---

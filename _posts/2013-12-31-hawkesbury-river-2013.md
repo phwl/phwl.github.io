@@ -21,23 +21,23 @@ Our trips to the Hawkesbury River have become an annual event ([2012](http://www
 
 As usual, the boat ramp was at capacity.
 
-![](/assets/images/2013/12/PC2743471.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2743471.jpg){: .align-center}](/assets/images/2013/12/PC2743471.jpg)
 
 Went overboard with supplies, not much room for the passengers.
 
-![](/assets/images/2013/12/PC2743491.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2743491.jpg){: .align-center}](/assets/images/2013/12/PC2743491.jpg)
 
 Warren at the campsite.
 
-![](/assets/images/2013/12/PC2843921.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2843921.jpg){: .align-center}](/assets/images/2013/12/PC2843921.jpg)
 
 Campfire on the first night.
 
-![](/assets/images/2013/12/PC2743671.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2743671.jpg){: .align-center}](/assets/images/2013/12/PC2743671.jpg)
 
-Bandicoot hole, we saw it after dark but didn't get a photograph.![](/assets/images/2013/12/PC2843781.jpg){: .align-center}
+Bandicoot hole, we saw it after dark but didn't get a photograph.[![](/assets/images/2013/12/PC2843781.jpg){: .align-center}](/assets/images/2013/12/PC2843781.jpg)
 
-Cicada wing. The cicadas were really noisy and like an alarm clock set for the crack of dawn. Other insect life included ticks from which I received two bites.![](/assets/images/2013/12/PC2843941.jpg){: .align-center}
+Cicada wing. The cicadas were really noisy and like an alarm clock set for the crack of dawn. Other insect life included ticks from which I received two bites.[![](/assets/images/2013/12/PC2843941.jpg){: .align-center}](/assets/images/2013/12/PC2843941.jpg)
 
 These were baked in foil for dinner on the first night.
 
@@ -45,17 +45,17 @@ These were baked in foil for dinner on the first night.
 
 This trip, we had exceptional flathead fishing.
 
-![](/assets/images/2013/12/PC2844121.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2844121.jpg){: .align-center}](/assets/images/2013/12/PC2844121.jpg)
 
-The biggest was around 50 cm.![](/assets/images/2013/12/PC2844131.jpg){: .align-center}
+The biggest was around 50 cm.[![](/assets/images/2013/12/PC2844131.jpg){: .align-center}](/assets/images/2013/12/PC2844131.jpg)
 
 Mulloway just short of the 45 cm minimum.
 
-![](/assets/images/2013/12/PC2844081.jpg){: .align-center}
+[![](/assets/images/2013/12/PC2844081.jpg){: .align-center}](/assets/images/2013/12/PC2844081.jpg)
 
-On the way to the boat ramp at 6am to collect Barry for a day of fishing, our outboard started playing up and we had to restart about 10 times. Fortunately, we guessed that it was due to contaminated petrol and with a new tank, we were soon on our way. Unfortunately, that day, gale force winds were in place and the fishing was quiet. Fortunately, Barry managed to get this flattie.![](/assets/images/2013/12/PC294417.jpg){: .align-center}
+On the way to the boat ramp at 6am to collect Barry for a day of fishing, our outboard started playing up and we had to restart about 10 times. Fortunately, we guessed that it was due to contaminated petrol and with a new tank, we were soon on our way. Unfortunately, that day, gale force winds were in place and the fishing was quiet. Fortunately, Barry managed to get this flattie.[![](/assets/images/2013/12/PC294417.jpg){: .align-center}](/assets/images/2013/12/PC294417.jpg)
 
-Warren had the brilliant idea of putting the food in his tent so that animals wouldn't take it in the middle of the night. Something (probably a monitor lizard), made a hole in his tent and munched through half a loaf of bread. This photo shows the field repair in progress.![](/assets/images/2013/12/PC294423.jpg){: .align-center}
+Warren had the brilliant idea of putting the food in his tent so that animals wouldn't take it in the middle of the night. Something (probably a monitor lizard), made a hole in his tent and munched through half a loaf of bread. This photo shows the field repair in progress.[![](/assets/images/2013/12/PC294423.jpg){: .align-center}](/assets/images/2013/12/PC294423.jpg)
 
 Another enjoyable trip but nothing really that wasn't covered previously. Although most of our catch were flathead, we also caught bream, mulloway, catfish and a stingray.
 

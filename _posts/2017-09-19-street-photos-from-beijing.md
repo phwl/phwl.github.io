@@ -17,8 +17,8 @@ header:
 
 Some street photos from a visit to Beijing.
 
-![](/assets/images/2017/10/DSCF4570.jpg){: .align-center}
-![](/assets/images/2017/10/DSCF4583.jpg){: .align-center}
-![](/assets/images/2017/10/DSCF4591.jpg){: .align-center}
-![](/assets/images/2017/10/DSCF4599.jpg){: .align-center}
-![](/assets/images/2017/10/DSCF4618.jpg){: .align-center}
+[![](/assets/images/2017/10/DSCF4570.jpg){: .align-center}](/assets/images/2017/10/DSCF4570.jpg)
+[![](/assets/images/2017/10/DSCF4583.jpg){: .align-center}](/assets/images/2017/10/DSCF4583.jpg)
+[![](/assets/images/2017/10/DSCF4591.jpg){: .align-center}](/assets/images/2017/10/DSCF4591.jpg)
+[![](/assets/images/2017/10/DSCF4599.jpg){: .align-center}](/assets/images/2017/10/DSCF4599.jpg)
+[![](/assets/images/2017/10/DSCF4618.jpg){: .align-center}](/assets/images/2017/10/DSCF4618.jpg)

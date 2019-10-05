@@ -15,4 +15,4 @@ header:
 
 This photo of Sydney was taken from Kirribilli, not too far from the Harbour Bridge.
 
-![](/assets/images/2010/05/kirribilli.jpg){: .align-center}
+[![](/assets/images/2010/05/kirribilli.jpg){: .align-center}](/assets/images/2010/05/kirribilli.jpg)

@@ -6,13 +6,15 @@ date: 2015-02-08 05:39:42+00:00
 slug: tasmanian-holiday-2015
 title: Tasmanian Holiday 2015
 classes: wide
+header:
+  teaser: /assets/images/2015/02/P2040434.jpg
 categories:
 - australia
 - photography
 - travel
 ---
 
-![](/assets/images/2015/02/P2040434.jpg){: .align-center}
+[![](/assets/images/2015/02/P2040434.jpg){: .align-center}](/assets/images/2015/02/P2040434.jpg)
 
 Waited for ages for my beloved wife's bag then got that sinking feeling when the carousel stops turning. Everyone had gone and only a small purple bag with a pink ribbon remained. Went to the service counter and filled in all the forms for missing luggage. We flew the budget airline Jetstar, if the bag was not found within 24 hours, we'd get a total of $40 to cover expenses - wow. About to take off in the rental car when they called me and said they found the bag. Someone (presumably the owner of the purple bag), had mistakenly taken our black bag which was a totally different size and make. Anyway, things were looking better.
 
@@ -22,39 +24,39 @@ At about 7pm, the sealed road turned into gravel just as it started raining. Slo
 
 We stayed they night at [Bronte Park Village](http://www.bronteparkvillage.com.au/), which is primarily a fishing destination. I can't think of any other reason why someone would go there. There are four main lakes in the vicinity, Bronte Lagoon, Bradys Lake, Lake Binney and Tungatinah Lagoon. It was a typical one shop village, with the central attraction being the general store and service station.
 
-![](/assets/images/2015/02/P1310013.jpg){: .align-center}
+[![](/assets/images/2015/02/P1310013.jpg){: .align-center}](/assets/images/2015/02/P1310013.jpg)
 
-![](/assets/images/2015/02/P2010021.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010021.jpg){: .align-center}](/assets/images/2015/02/P2010021.jpg)
 
 
 
 The next day was a fine day and we passed through some nice scenery between Bronte Park and Cradle Mountain.
 
-![](/assets/images/2015/02/P2010042.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010042.jpg){: .align-center}](/assets/images/2015/02/P2010042.jpg)
 
-![](/assets/images/2015/02/P2010035.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010035.jpg){: .align-center}](/assets/images/2015/02/P2010035.jpg)
 
 We had lunch in the major town of Deloraine. The photo below shows the busiest part of the main street that day.
 
-![](/assets/images/2015/02/P2010053.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010053.jpg){: .align-center}](/assets/images/2015/02/P2010053.jpg)
 
 Deloraine is by the Meander River, a name which I find rather interesting.
 
-![](/assets/images/2015/02/P2010054.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010054.jpg){: .align-center}](/assets/images/2015/02/P2010054.jpg)
 
 We also stopped to pick up some strawberries at [Sheffield Berry Gardens](http://sheffieldberrygardens.com/).
 
-![](/assets/images/2015/02/P2010057.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010057.jpg){: .align-center}](/assets/images/2015/02/P2010057.jpg)
 
-![](/assets/images/2015/02/P2010058.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010058.jpg){: .align-center}](/assets/images/2015/02/P2010058.jpg)
 
-![](/assets/images/2015/02/P2010059.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010059.jpg){: .align-center}](/assets/images/2015/02/P2010059.jpg)
 
 The drive ended up taking most of the day and we didn't arrive until the late afternoon at the [Cradle Mountain Wilderness Village](http://www.cradlevillage.com.au/). We would be roughing it for a couple of days.
 
-![](/assets/images/2015/02/P2030402.jpg){: .align-center}
+[![](/assets/images/2015/02/P2030402.jpg){: .align-center}](/assets/images/2015/02/P2030402.jpg)
 
-![](/assets/images/2015/02/P2010083.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010083.jpg){: .align-center}](/assets/images/2015/02/P2010083.jpg)
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2015/02/P2010087.jpg)
 
@@ -62,15 +64,15 @@ Cradle Mountain-Lake St Clair national park is part of the Tasmanian Wildnerness
 
 It is truly unspoilt and although Cradle Mountain is a premier tourist destination, it is well managed with shuttle services reducing traffic in the park, toilets, strict limits on how many vehicles can be inside the park at any time, and well maintained walking tracks. We walked the Dove Lake Circuit, about a 6 km walk around the lake.
 
-[caption id="attachment_2091" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020192.jpg){: .align-center} Reflection of Cradle Mountain on Dove Lake[/caption]
+[caption id="attachment_2091" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020192.jpg){: .align-center}](/assets/images/2015/02/P2020192.jpg) Reflection of Cradle Mountain on Dove Lake[/caption]
 
-[caption id="attachment_2088" align="alignnone" width="1280"]![](/assets/images/2015/02/cradlemtn-pano2.jpg){: .align-center} Panorama of Dove Lake with Cradle Mountain in the Background[/caption]
+[caption id="attachment_2088" align="alignnone" width="1280"][![](/assets/images/2015/02/cradlemtn-pano2.jpg){: .align-center}](/assets/images/2015/02/cradlemtn-pano2.jpg) Panorama of Dove Lake with Cradle Mountain in the Background[/caption]
 
-[caption id="attachment_2093" align="alignnone" width="960"]![](/assets/images/2015/02/P2020252.jpg){: .align-center} Dove Lake Circuit[/caption]
+[caption id="attachment_2093" align="alignnone" width="960"][![](/assets/images/2015/02/P2020252.jpg){: .align-center}](/assets/images/2015/02/P2020252.jpg) Dove Lake Circuit[/caption]
 
-[caption id="attachment_2092" align="alignnone" width="960"]![](/assets/images/2015/02/P2020240.jpg){: .align-center} Tree by Dove Lake[/caption]
+[caption id="attachment_2092" align="alignnone" width="960"][![](/assets/images/2015/02/P2020240.jpg){: .align-center}](/assets/images/2015/02/P2020240.jpg) Tree by Dove Lake[/caption]
 
-[caption id="attachment_2089" align="alignnone" width="960"]![](/assets/images/2015/02/P2020262.jpg){: .align-center} Forest in Dove Lake Circuit[/caption]
+[caption id="attachment_2089" align="alignnone" width="960"][![](/assets/images/2015/02/P2020262.jpg){: .align-center}](/assets/images/2015/02/P2020262.jpg) Forest in Dove Lake Circuit[/caption]
 
 
 
@@ -78,19 +80,19 @@ It is truly unspoilt and although Cradle Mountain is a premier tourist destinati
 
 UI
 
-[caption id="attachment_2090" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020289.jpg){: .align-center} Built in 1940 by the first Ranger at Cradle Mountain, Lionell Connell[/caption]
+[caption id="attachment_2090" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020289.jpg){: .align-center}](/assets/images/2015/02/P2020289.jpg) Built in 1940 by the first Ranger at Cradle Mountain, Lionell Connell[/caption]
 
 We went back in the evening to take some photos at dusk.
 
-[caption id="attachment_2084" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020321.jpg){: .align-center} Waterfall near entrance to Cradle Mountain National Park[/caption]
+[caption id="attachment_2084" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020321.jpg){: .align-center}](/assets/images/2015/02/P2020321.jpg) Waterfall near entrance to Cradle Mountain National Park[/caption]
 
-[caption id="attachment_2085" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020324.jpg){: .align-center} Coral fern, button grass and gum trees at dusk, Cradle Mountain[/caption]
+[caption id="attachment_2085" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020324.jpg){: .align-center}](/assets/images/2015/02/P2020324.jpg) Coral fern, button grass and gum trees at dusk, Cradle Mountain[/caption]
 
-[caption id="attachment_2083" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020343.jpg){: .align-center} Dove Lake at Dusk[/caption]
+[caption id="attachment_2083" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020343.jpg){: .align-center}](/assets/images/2015/02/P2020343.jpg) Dove Lake at Dusk[/caption]
 
-[caption id="attachment_2086" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020333.jpg){: .align-center} Moonrise at Cradle Mountain[/caption]
+[caption id="attachment_2086" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020333.jpg){: .align-center}](/assets/images/2015/02/P2020333.jpg) Moonrise at Cradle Mountain[/caption]
 
-[caption id="attachment_2087" align="alignnone" width="1280"]![](/assets/images/2015/02/P2020399.jpg){: .align-center} Moonlit Photograph at Cradle Mountain[/caption]
+[caption id="attachment_2087" align="alignnone" width="1280"][![](/assets/images/2015/02/P2020399.jpg){: .align-center}](/assets/images/2015/02/P2020399.jpg) Moonlit Photograph at Cradle Mountain[/caption]
 
 We also met a couple of girls who were about to talk the Overland Track. This is a 6 day 65 km walk (although someone ran it in 7 hours 25 minutes) from Cradle Mountain to Lake St Clair.  There are huts along the way. You can normally tell the experience of a hiker by the condition of their packs. In the case of the girls, they were brand new so I hope they know what they are doing.
 
@@ -100,7 +102,7 @@ Our final days were in Hobart. We stayed at the Wrest Point Casino which doesn't
 
 ![IMG_0319](/assets/images/2015/02/IMG_0319.jpg)
 
-![](/assets/images/2015/02/P2040434.jpg){: .align-center}
+[![](/assets/images/2015/02/P2040434.jpg){: .align-center}](/assets/images/2015/02/P2040434.jpg)
 
 Lots of mussels and oysters growing just outside the hotel.
 
@@ -108,13 +110,13 @@ Lots of mussels and oysters growing just outside the hotel.
 
 They have lots of good food in Hobart, particularly seafood and steak.
 
-![](http://phwl.org/wp-content/uploads/2015/02/IMG_0268.jpg){: .align-center}
+[![](http://phwl.org/wp-content/uploads/2015/02/IMG_0268.jpg){: .align-center}](http://phwl.org/wp-content/uploads/2015/02/IMG_0268.jpg)
 
-![](/assets/images/2015/02/IMG_0272.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0272.jpg){: .align-center}](/assets/images/2015/02/IMG_0272.jpg)
 
 Spent the rest of the time sightseeing, most interesting was the Tasmanian Museum and Art Gallery. Lots to see there including this 500 year old Huon Pine slice
 
-![](/assets/images/2015/02/IMG_0290.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0290.jpg){: .align-center}](/assets/images/2015/02/IMG_0290.jpg)
 
 
 

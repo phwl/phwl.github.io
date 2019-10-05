@@ -15,9 +15,9 @@ header:
 
 Some photos from The Gap, Watsons Bay, Sydney this morning at sunrise.
 
-![](/assets/images/2013/06/thegap-medpano2.jpg){: .align-center}
+[![](/assets/images/2013/06/thegap-medpano2.jpg){: .align-center}](/assets/images/2013/06/thegap-medpano2.jpg)
 
 <!-- more -->
-![](/assets/images/2013/06/DSC_5172.jpg){: .align-center}
+[![](/assets/images/2013/06/DSC_5172.jpg){: .align-center}](/assets/images/2013/06/DSC_5172.jpg)
 
-![](/assets/images/2013/06/DSC_5176.jpg){: .align-center}
+[![](/assets/images/2013/06/DSC_5176.jpg){: .align-center}](/assets/images/2013/06/DSC_5176.jpg)

@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2018/05/Screen-Shot-2018-05-26.jpg
 ---
 
-![](/assets/images/2018/05/Screen-Shot-2018-05-26.jpg){: .align-center}
+[![](/assets/images/2018/05/Screen-Shot-2018-05-26.jpg){: .align-center}](/assets/images/2018/05/Screen-Shot-2018-05-26.jpg)
 
 Improving the antenna from [http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/](http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/) (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.
 
@@ -53,5 +53,5 @@ Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
 
 Then I made my first decent [FT8](https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8) contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners [http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf](http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf).
 
-![](/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png){: .align-center}
+[![](/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png){: .align-center}](/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png)
 

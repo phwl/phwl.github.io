@@ -16,20 +16,20 @@ header:
 
 Here are some of my favourite fishing photos from the age before digital cameras.
 
-![drummer](/assets/images/2001/08/csdrummer1.jpg){: .align-center}
+[![drummer](/assets/images/2001/08/csdrummer1.jpg){: .align-center}](/assets/images/2001/08/csdrummer1.jpg)
 Chris See with a drummer
 
-![Giant trevally](/assets/images/2001/08/gt1.jpg){: .align-center}
+[![Giant trevally](/assets/images/2001/08/gt1.jpg){: .align-center}](/assets/images/2001/08/gt1.jpg)
 Beard with a giant trevally
 
-![Bream](/assets/images/2001/08/imbream1.jpg){: .align-center}
+[![Bream](/assets/images/2001/08/imbream1.jpg){: .align-center}](/assets/images/2001/08/imbream1.jpg)
 Beard with a couple of nice bream
 
-![Trout](/assets/images/2001/08/imtrout1.jpg){: .align-center}
+[![Trout](/assets/images/2001/08/imtrout1.jpg){: .align-center}](/assets/images/2001/08/imtrout1.jpg)
 Beard with a trout
 
-![Flathead](/assets/images/2001/08/wmflathead03.jpg){: .align-center}
+[![Flathead](/assets/images/2001/08/wmflathead03.jpg){: .align-center}](/assets/images/2001/08/wmflathead03.jpg)
 Warren with a flathead
 
-![Trout](/assets/images/2001/08/pltrout1.jpg){: .align-center}
+[![Trout](/assets/images/2001/08/pltrout1.jpg){: .align-center}](/assets/images/2001/08/pltrout1.jpg)
 Me with a trout

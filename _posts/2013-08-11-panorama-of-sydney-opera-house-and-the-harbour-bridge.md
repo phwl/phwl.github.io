@@ -14,4 +14,4 @@ header:
   teaser: /assets/images/2013/08/hbridge-pano05082013.jpg
 ---
 
-![](/assets/images/2013/08/hbridge-pano05082013.jpg){: .align-center}
+[![](/assets/images/2013/08/hbridge-pano05082013.jpg){: .align-center}](/assets/images/2013/08/hbridge-pano05082013.jpg)

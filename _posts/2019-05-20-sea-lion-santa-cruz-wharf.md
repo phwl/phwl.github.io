@@ -14,5 +14,5 @@ header:
 ---
 
 
-![](/assets/images/2019/05/DSCF6081.jpg){: .align-center}
+[![](/assets/images/2019/05/DSCF6081.jpg){: .align-center}](/assets/images/2019/05/DSCF6081.jpg)
 

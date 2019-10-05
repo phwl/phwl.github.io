@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/1994/04/plmarlin1.jpg
 ---
 
-![Black marlin](/assets/images/1994/04/plmarlin1.jpg){: .align-center}
+[![Black marlin](/assets/images/1994/04/plmarlin1.jpg){: .align-center}](/assets/images/1994/04/plmarlin1.jpg)
 <figcaption style="text-align:center">
 Black marlin on fly, Cape Bowling Green, Queensland, Mary River
 </figcaption>
@@ -23,7 +23,7 @@ An edited version of this article appeared in (Australian) "Modern Fishing" maga
 
 <!-- more -->
 
-![Tagging marlin](/assets/images/1994/04/wmmarlin1.jpg){: .align-center}
+[![Tagging marlin](/assets/images/1994/04/wmmarlin1.jpg){: .align-center}](/assets/images/1994/04/wmmarlin1.jpg)
 <figcaption style="text-align:center">
 Warren, Tagging a black marlin, Cape Bowling Green, Queensland
 </figcaption>

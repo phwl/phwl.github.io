@@ -13,7 +13,7 @@ header:
 ---
 
 
-![](/assets/images/2019/01/IMG_0034.jpg){: .align-center}Sign says "Abolish the CIA and ICE"
+[![](/assets/images/2019/01/IMG_0034.jpg){: .align-center}](/assets/images/2019/01/IMG_0034.jpg)Sign says "Abolish the CIA and ICE"
 
 
 
@@ -22,33 +22,33 @@ header:
 
 
 
-![](/assets/images/2019/01/IMG_0038.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0038.jpg){: .align-center}](/assets/images/2019/01/IMG_0038.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0039.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0039.jpg){: .align-center}](/assets/images/2019/01/IMG_0039.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0041.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0041.jpg){: .align-center}](/assets/images/2019/01/IMG_0041.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0043.jpg){: .align-center}Only way to get a good parking spot
+[![](/assets/images/2019/01/IMG_0043.jpg){: .align-center}](/assets/images/2019/01/IMG_0043.jpg)Only way to get a good parking spot
 
 
 
-![](/assets/images/2019/01/IMG_0047.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0047.jpg){: .align-center}](/assets/images/2019/01/IMG_0047.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0048.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0048.jpg){: .align-center}](/assets/images/2019/01/IMG_0048.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0055.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0055.jpg){: .align-center}](/assets/images/2019/01/IMG_0055.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0058.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0058.jpg){: .align-center}](/assets/images/2019/01/IMG_0058.jpg)
 

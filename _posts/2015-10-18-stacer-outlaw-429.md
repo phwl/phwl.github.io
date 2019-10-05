@@ -14,7 +14,7 @@ header:
 
 Traded in the Quintrex for a new [Stacer Outlaw 429](http://www.stacer.com.au/Aluminium-Boat-Range1/429OutlawSideConsole?Particulars=429%20Outlaw%20Side%20Console) with Evinrude 50 hp at [Huett Marine](http://www.huettmarine.com.au/).  I highly recommend them as they are great people to deal with and very knowledgeable.
 
-![](/assets/images/2015/10/IMG_5965.jpg){: .align-center}
+[![](/assets/images/2015/10/IMG_5965.jpg){: .align-center}](/assets/images/2015/10/IMG_5965.jpg)
 
 <!-- more -->
 
@@ -26,7 +26,7 @@ I really like the 3mm top and bottom aluminum,  clean layout and the side conso
 
 This is the first fish caught. Since the legal limit for mulloway has been increased to 70cm, it went back.
 
-![](/assets/images/2015/10/IMG_5966.jpg){: .align-center}
+[![](/assets/images/2015/10/IMG_5966.jpg){: .align-center}](/assets/images/2015/10/IMG_5966.jpg)
 
 **Specifications**
 

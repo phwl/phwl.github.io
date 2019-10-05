@@ -16,7 +16,7 @@ header:
 
 University of Kassel Amateur Radio Club station. Here I am with a sausage, received as honorarium for giving a lecture.
 
-![](/assets/images/2018/07/img_1601-1.jpg){: .align-center}
+[![](/assets/images/2018/07/img_1601-1.jpg){: .align-center}](/assets/images/2018/07/img_1601-1.jpg)
 
 <!-- more -->
 
@@ -33,8 +33,8 @@ HP 694A being repaired.
 Schnitzel dinner. (clockwise) Martin, Peter, Axel DL1FAK, Marcel DC5MB, Martin DC3MKB and myself VK2APL. Axel is professor in microwave electronics and Martin visited the [MWRS](http://www.mwrs.org.au/) in Sydney earlier this year. I am collaborating in research with Peter and the two Martin's (which was the actual purpose of the visit).
 
 [
-](/assets/images/2018/07/IMG_8691.jpg)![](/assets/images/2018/07/IMG_8691.jpg){: .align-center}
+](/assets/images/2018/07/IMG_8691.jpg)[![](/assets/images/2018/07/IMG_8691.jpg){: .align-center}](/assets/images/2018/07/IMG_8691.jpg)
 
 Club antenna.
 
-![](/assets/images/2018/07/IMG_8694.jpg){: .align-center}
+[![](/assets/images/2018/07/IMG_8694.jpg){: .align-center}](/assets/images/2018/07/IMG_8694.jpg)

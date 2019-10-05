@@ -6,6 +6,8 @@ date: 2018-08-05 10:12:56+00:00
 slug: talks-by-documentary-photographers
 title: Talks by documentary photographers
 classes: wide
+header:
+  teaser: https://upload.wikimedia.org/wikipedia/commons/a/aa/TED_three_letter_logo.svg
 ---
 
 TED talks from some of the best documentary photographers.

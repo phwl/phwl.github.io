@@ -20,9 +20,9 @@ Photos from Mungo Brush beach.
 
 <!-- more -->
 
-![](/assets/images/2017/01/mungobrush1.jpg){: .align-center} [
-](/assets/images/2017/01/mungobrush2.jpg) ![](/assets/images/2017/01/mungobrush3.jpg){: .align-center}
+[![](/assets/images/2017/01/mungobrush1.jpg){: .align-center}](/assets/images/2017/01/mungobrush1.jpg) [
+](/assets/images/2017/01/mungobrush2.jpg) [![](/assets/images/2017/01/mungobrush3.jpg){: .align-center}](/assets/images/2017/01/mungobrush3.jpg)
 
-[caption id="attachment_2797" align="alignnone" width="1280"]![](/assets/images/2017/01/mungobrush-phwl.jpg){: .align-center} Exif_JPEG_PICTURE[/caption]
+[caption id="attachment_2797" align="alignnone" width="1280"][![](/assets/images/2017/01/mungobrush-phwl.jpg){: .align-center}](/assets/images/2017/01/mungobrush-phwl.jpg) Exif_JPEG_PICTURE[/caption]
 
-![](/assets/images/2017/01/mingobrush-wmtailor.jpg){: .align-center}A school of tailor appeared on the surface briefly before dark. Warren saved us from getting skunked and a photo was taken before it was released.
+[![](/assets/images/2017/01/mingobrush-wmtailor.jpg){: .align-center}](/assets/images/2017/01/mingobrush-wmtailor.jpg)A school of tailor appeared on the surface briefly before dark. Warren saved us from getting skunked and a photo was taken before it was released.

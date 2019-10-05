@@ -22,7 +22,7 @@ It was cold and wet today but good to get out with Beard and son in Sydney Harbo
 
 
 
-![](/assets/images/2019/01/41418944_Unknown.jpg){: .align-center}
+[![](/assets/images/2019/01/41418944_Unknown.jpg){: .align-center}](/assets/images/2019/01/41418944_Unknown.jpg)
 
 
 
@@ -34,7 +34,7 @@ There were fish everywhere.
 
 
 
-![](/assets/images/2019/01/IMG_0006.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0006.jpg){: .align-center}](/assets/images/2019/01/IMG_0006.jpg)
 
 
 
@@ -46,7 +46,7 @@ Beard's son with a tailor.
 
 
 
-![](/assets/images/2019/01/41419008_Unknown-1.jpg){: .align-center}
+[![](/assets/images/2019/01/41419008_Unknown-1.jpg){: .align-center}](/assets/images/2019/01/41419008_Unknown-1.jpg)
 
 
 
@@ -58,9 +58,9 @@ This was in its mouth.
 
 
 
-![](/assets/images/2019/01/41418992_Unknown-1.jpg){: .align-center}
+[![](/assets/images/2019/01/41418992_Unknown-1.jpg){: .align-center}](/assets/images/2019/01/41418992_Unknown-1.jpg)
 
 
 
-![](/assets/images/2019/01/IMG_0011.jpg){: .align-center}
+[![](/assets/images/2019/01/IMG_0011.jpg){: .align-center}](/assets/images/2019/01/IMG_0011.jpg)
 

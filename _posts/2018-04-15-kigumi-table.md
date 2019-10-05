@@ -11,6 +11,8 @@ categories:
 - woodwork
 post_format:
 - Video
+header:
+  teaser: https://icon-library.net/images/small-youtube-icon/small-youtube-icon-11.jpg
 ---
 
 Really amazing craftsmanship on this table.

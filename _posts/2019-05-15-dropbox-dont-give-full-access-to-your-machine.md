@@ -8,6 +8,8 @@ title: Dropbox - don't give full access to your machine
 classes: wide
 categories:
 - software
+header:
+  teaser: /assets/images/blank.png
 ---
 
 

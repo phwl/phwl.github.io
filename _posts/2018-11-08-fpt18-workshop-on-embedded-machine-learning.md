@@ -10,6 +10,8 @@ categories:
 - academia
 - Fly-fishing
 - FPGA
+header:
+  teaser: /assets/images/blank.png
 ---
 
 # **Embedded Machine Learning: Technology and Opportunities**

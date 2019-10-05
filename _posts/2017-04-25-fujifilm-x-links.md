@@ -5,13 +5,15 @@ date: 2017-04-25 07:54:07+00:00
 # link: http://phwl.org/fujifilm-x-links/
 slug: fujifilm-x-links
 title: Fujifilm X Links
+header:
+  teaser: /assets/images/2017/04/DSCF4152-bw.jpg
 classes: wide
 categories:
 - photography
 ---
 
 Wandering around [Sim City](http://www.allabouthongkong.com/?p=644) in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first digital camera I really like as it is small, quiet and fast, making it really pleasant to use. The experience is not unlike joining a cult.[
-](/assets/images/2017/04/DSCF4152.jpg)![](/assets/images/2017/04/DSCF4152-bw.jpg){: .align-center}
+](/assets/images/2017/04/DSCF4152.jpg)[![](/assets/images/2017/04/DSCF4152-bw.jpg){: .align-center}](/assets/images/2017/04/DSCF4152-bw.jpg)
 
 <!-- more -->
 

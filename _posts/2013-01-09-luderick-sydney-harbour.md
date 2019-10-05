@@ -15,8 +15,8 @@ header:
 
 Went for a fish in Sydney Harbour with my neighbour Michael. Had a great time catching luderick (otherwise known as blackfish).
 
-![](/assets/images/2015/12/P1130251.jpg){: .align-center}
+[![](/assets/images/2015/12/P1130251.jpg){: .align-center}](/assets/images/2015/12/P1130251.jpg)
 
 <!-- more -->
 
-![](/assets/images/2015/12/P1130254.jpg){: .align-center}
+[![](/assets/images/2015/12/P1130254.jpg){: .align-center}](/assets/images/2015/12/P1130254.jpg)

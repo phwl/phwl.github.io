@@ -15,4 +15,4 @@ header:
   teaser: /assets/images/2014/07/P7030408.jpg
 ---
 
-![](/assets/images/2014/07/P7030408.jpg){: .align-center}
+[![](/assets/images/2014/07/P7030408.jpg){: .align-center}](/assets/images/2014/07/P7030408.jpg)

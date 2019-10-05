@@ -9,6 +9,8 @@ classes: wide
 categories:
 - FPGA
 - academia
+header:
+  teaser: /assets/images/blank.png
 ---
 
 Lecture Notes ([0-cel](/assets/images/2018/09/0-cel.pdf), [1-intro-cn](/assets/images/2018/09/1-intro-cn.pdf), [1-lstm](/assets/images/2018/09/1-lstm.pdf), [2-architecture](/assets/images/2018/09/2-architecture.pdf), [3-exploration](/assets/images/2018/09/3-exploration.pdf), [4-parallelism](/assets/images/2018/09/4-parallelism.pdf), [5-integration](/assets/images/2018/09/5-integration.pdf), [6-customisation](/assets/images/2018/09/6-customisation.pdf), [7-precision](/assets/images/2018/09/7-precision.pdf), [8-mca](/assets/images/2018/09/8-mca.pdf), [9-kernelarch](/assets/images/2018/09/9-kernelarch.pdf))

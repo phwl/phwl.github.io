@@ -15,6 +15,6 @@ header:
 
 Refinishing a footstool I made about 5 years ago in Tasmanian Oak. It was my take on this elegant design published in Fine Woodworking [http://www.finewoodworking.com/2002/02/01/a-sturdy-footstool](http://www.finewoodworking.com/2002/02/01/a-sturdy-footstool).
 
-![](/assets/images/2018/01/IMG_0612.jpg){: .align-center}<!-- more -->
+[![](/assets/images/2018/01/IMG_0612.jpg){: .align-center}](/assets/images/2018/01/IMG_0612.jpg)<!-- more -->
 
-![](/assets/images/2018/01/IMG_0681.jpg){: .align-center}
+[![](/assets/images/2018/01/IMG_0681.jpg){: .align-center}](/assets/images/2018/01/IMG_0681.jpg)

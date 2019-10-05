@@ -8,6 +8,8 @@ title: MacOS Install
 classes: wide
 categories:
 - software
+header:
+  teaser: /assets/images/blank.png
 ---
 
 

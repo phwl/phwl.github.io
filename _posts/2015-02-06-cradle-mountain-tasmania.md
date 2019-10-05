@@ -16,72 +16,72 @@ header:
 
 A gallery of photographs taken around Cradle Mountain, Tasmania.
 
-![](/assets/images/2015/02/IMG_0260.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0260.jpg){: .align-center}](/assets/images/2015/02/IMG_0260.jpg)
 
-![](/assets/images/2015/02/IMG_0264.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0264.jpg){: .align-center}](/assets/images/2015/02/IMG_0264.jpg)
 
-![](/assets/images/2015/02/IMG_0266.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0266.jpg){: .align-center}](/assets/images/2015/02/IMG_0266.jpg)
 
-![](/assets/images/2015/02/IMG_0272.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0272.jpg){: .align-center}](/assets/images/2015/02/IMG_0272.jpg)
 
-![](/assets/images/2015/02/IMG_0283.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0283.jpg){: .align-center}](/assets/images/2015/02/IMG_0283.jpg)
 
-![](/assets/images/2015/02/IMG_0284.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0284.jpg){: .align-center}](/assets/images/2015/02/IMG_0284.jpg)
 
-![](/assets/images/2015/02/IMG_0290.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0290.jpg){: .align-center}](/assets/images/2015/02/IMG_0290.jpg)
 
-![](/assets/images/2015/02/IMG_0295.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0295.jpg){: .align-center}](/assets/images/2015/02/IMG_0295.jpg)
 
-![](/assets/images/2015/02/IMG_0319.jpg){: .align-center}
+[![](/assets/images/2015/02/IMG_0319.jpg){: .align-center}](/assets/images/2015/02/IMG_0319.jpg)
 
-![](/assets/images/2015/02/P1310013.jpg){: .align-center}
+[![](/assets/images/2015/02/P1310013.jpg){: .align-center}](/assets/images/2015/02/P1310013.jpg)
 
-![](/assets/images/2015/02/P2010021.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010021.jpg){: .align-center}](/assets/images/2015/02/P2010021.jpg)
 
-![](/assets/images/2015/02/P2010035.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010035.jpg){: .align-center}](/assets/images/2015/02/P2010035.jpg)
 
-![](/assets/images/2015/02/P2010042.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010042.jpg){: .align-center}](/assets/images/2015/02/P2010042.jpg)
 
-![](/assets/images/2015/02/P2010053.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010053.jpg){: .align-center}](/assets/images/2015/02/P2010053.jpg)
 
-![](/assets/images/2015/02/P2010054.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010054.jpg){: .align-center}](/assets/images/2015/02/P2010054.jpg)
 
-![](/assets/images/2015/02/P2010057.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010057.jpg){: .align-center}](/assets/images/2015/02/P2010057.jpg)
 
-![](/assets/images/2015/02/P2010058.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010058.jpg){: .align-center}](/assets/images/2015/02/P2010058.jpg)
 
-![](/assets/images/2015/02/P2010059.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010059.jpg){: .align-center}](/assets/images/2015/02/P2010059.jpg)
 
-![](/assets/images/2015/02/P2010060.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010060.jpg){: .align-center}](/assets/images/2015/02/P2010060.jpg)
 
-![](/assets/images/2015/02/P2010072.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010072.jpg){: .align-center}](/assets/images/2015/02/P2010072.jpg)
 
-![](/assets/images/2015/02/P2010083.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010083.jpg){: .align-center}](/assets/images/2015/02/P2010083.jpg)
 
-![](/assets/images/2015/02/P2010087.jpg){: .align-center}
+[![](/assets/images/2015/02/P2010087.jpg){: .align-center}](/assets/images/2015/02/P2010087.jpg)
 
-![](/assets/images/2015/02/P2020192.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020192.jpg){: .align-center}](/assets/images/2015/02/P2020192.jpg)
 
-![](/assets/images/2015/02/P2020240.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020240.jpg){: .align-center}](/assets/images/2015/02/P2020240.jpg)
 
-![](/assets/images/2015/02/P2020252.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020252.jpg){: .align-center}](/assets/images/2015/02/P2020252.jpg)
 
-![](/assets/images/2015/02/P2020262.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020262.jpg){: .align-center}](/assets/images/2015/02/P2020262.jpg)
 
-![](/assets/images/2015/02/P2020289.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020289.jpg){: .align-center}](/assets/images/2015/02/P2020289.jpg)
 
-![](/assets/images/2015/02/P2020321.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020321.jpg){: .align-center}](/assets/images/2015/02/P2020321.jpg)
 
-![](/assets/images/2015/02/P2020324.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020324.jpg){: .align-center}](/assets/images/2015/02/P2020324.jpg)
 
-![](/assets/images/2015/02/P2020333.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020333.jpg){: .align-center}](/assets/images/2015/02/P2020333.jpg)
 
-![](/assets/images/2015/02/P2020343.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020343.jpg){: .align-center}](/assets/images/2015/02/P2020343.jpg)
 
-![](/assets/images/2015/02/P2020399.jpg){: .align-center}
+[![](/assets/images/2015/02/P2020399.jpg){: .align-center}](/assets/images/2015/02/P2020399.jpg)
 
-![](/assets/images/2015/02/P2030402.jpg){: .align-center}
+[![](/assets/images/2015/02/P2030402.jpg){: .align-center}](/assets/images/2015/02/P2030402.jpg)
 
-![](/assets/images/2015/02/P2040434.jpg){: .align-center}
+[![](/assets/images/2015/02/P2040434.jpg){: .align-center}](/assets/images/2015/02/P2040434.jpg)
 
-![](/assets/images/2015/02/cradlemtn-pano2.jpg){: .align-center}
+[![](/assets/images/2015/02/cradlemtn-pano2.jpg){: .align-center}](/assets/images/2015/02/cradlemtn-pano2.jpg)

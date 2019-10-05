@@ -14,5 +14,5 @@ header:
 ---
 
 
-![](/assets/images/2019/04/7723722910698069406_IMG_0381.jpg){: .align-center}
+[![](/assets/images/2019/04/7723722910698069406_IMG_0381.jpg){: .align-center}](/assets/images/2019/04/7723722910698069406_IMG_0381.jpg)
 

@@ -13,5 +13,5 @@ header:
   teaser: /assets/images/2017/05/P4300003-3.jpg
 ---
 
-![](/assets/images/2017/05/P4300003-3.jpg){: .align-center}
+[![](/assets/images/2017/05/P4300003-3.jpg){: .align-center}](/assets/images/2017/05/P4300003-3.jpg)
 Sydney Skyline from Balls Head

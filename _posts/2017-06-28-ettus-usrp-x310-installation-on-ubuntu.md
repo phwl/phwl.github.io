@@ -6,6 +6,8 @@ date: 2017-06-28 23:51:01+00:00
 slug: ettus-usrp-x310-installation-on-ubuntu
 title: Ettus USRP x310 installation on Ubuntu
 classes: wide
+header:
+  teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
 categories:
 - FPGA
 ---

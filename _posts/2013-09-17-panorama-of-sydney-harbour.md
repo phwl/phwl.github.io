@@ -15,7 +15,7 @@ header:
   teaser: /assets/images/2013/09/hbridge-pano24092013-lores.jpg
 ---
 
-![](/assets/images/2013/09/hbridge-pano24092013-lores.jpg){: .align-center}
+[![](/assets/images/2013/09/hbridge-pano24092013-lores.jpg){: .align-center}](/assets/images/2013/09/hbridge-pano24092013-lores.jpg)
 
 <!-- more -->
 

@@ -16,7 +16,7 @@ Q&A session with Nobel laureates Joachim Frank (Columbia) and Dan Shechtman (Tec
 
 Professor Shechtman won the 2011 Nobel Prize in Chemistry for the discovery of quasicrystals. Professor Frank's Nobel Prize in Chemistry was awarded in 2017 for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution
 
-![](/assets/images/2018/09/img_2034.jpg){: .align-center}
+[![](/assets/images/2018/09/img_2034.jpg){: .align-center}](/assets/images/2018/09/img_2034.jpg)
 
 <!-- more -->
 

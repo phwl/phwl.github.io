@@ -21,7 +21,7 @@ On the second weekend of Mar-Sep, the [Electronics Flea Market](https://www.elec
 
 
 
-![](/assets/images/2019/03/IMG_0335.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0335.jpg){: .align-center}](/assets/images/2019/03/IMG_0335.jpg)
 
 
 
@@ -37,11 +37,11 @@ As expected, there was a lot of test equipment.
 
 
 
-![](/assets/images/2019/03/IMG_0308.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0308.jpg){: .align-center}](/assets/images/2019/03/IMG_0308.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0324.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0324.jpg){: .align-center}](/assets/images/2019/03/IMG_0324.jpg)
 
 
 
@@ -53,11 +53,11 @@ Microscopes.
 
 
 
-![](/assets/images/2019/03/IMG_0348.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0348.jpg){: .align-center}](/assets/images/2019/03/IMG_0348.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0332.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0332.jpg){: .align-center}](/assets/images/2019/03/IMG_0332.jpg)
 
 
 
@@ -69,11 +69,11 @@ Surprisingly not too many radios.
 
 
 
-![](/assets/images/2019/03/IMG_0315.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0315.jpg){: .align-center}](/assets/images/2019/03/IMG_0315.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0341.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0341.jpg){: .align-center}](/assets/images/2019/03/IMG_0341.jpg)
 
 
 
@@ -85,15 +85,15 @@ Components.
 
 
 
-![](/assets/images/2019/03/IMG_0309.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0309.jpg){: .align-center}](/assets/images/2019/03/IMG_0309.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0296.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0296.jpg){: .align-center}](/assets/images/2019/03/IMG_0296.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0337.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0337.jpg){: .align-center}](/assets/images/2019/03/IMG_0337.jpg)
 
 
 
@@ -109,7 +109,7 @@ Computers.
 
 
 
-![](/assets/images/2019/03/IMG_0317.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0317.jpg){: .align-center}](/assets/images/2019/03/IMG_0317.jpg)
 
 
 
@@ -125,23 +125,23 @@ A lot of other stuff.
 
 
 
-![](/assets/images/2019/03/IMG_0311.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0311.jpg){: .align-center}](/assets/images/2019/03/IMG_0311.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0339.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0339.jpg){: .align-center}](/assets/images/2019/03/IMG_0339.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0342.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0342.jpg){: .align-center}](/assets/images/2019/03/IMG_0342.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0316.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0316.jpg){: .align-center}](/assets/images/2019/03/IMG_0316.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0322.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0322.jpg){: .align-center}](/assets/images/2019/03/IMG_0322.jpg)
 
 
 
@@ -153,19 +153,19 @@ Interesting cars.
 
 
 
-![](/assets/images/2019/03/IMG_0353.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0353.jpg){: .align-center}](/assets/images/2019/03/IMG_0353.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0355.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0355.jpg){: .align-center}](/assets/images/2019/03/IMG_0355.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0346.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0346.jpg){: .align-center}](/assets/images/2019/03/IMG_0346.jpg)
 
 
 
-![](/assets/images/2019/03/IMG_0340.jpg){: .align-center}
+[![](/assets/images/2019/03/IMG_0340.jpg){: .align-center}](/assets/images/2019/03/IMG_0340.jpg)
 
 
 

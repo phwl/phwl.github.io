@@ -14,39 +14,39 @@ header:
   teaser: /assets/images/2018/08/IMG_1946.jpg
 ---
 
-![](/assets/images/2018/08/IMG_1946.jpg){: .align-center}
+[![](/assets/images/2018/08/IMG_1946.jpg){: .align-center}](/assets/images/2018/08/IMG_1946.jpg)
 
 The Manly Warringah Radio Society (VK2MB) has participated in the International Lighthouse and Lightship Weekend (https://illw.net/) since 2003. This year we hosted our friends Lindsay VK2AMV, Dave VK2JDS and Garry VK2FGAZ from the Amateur Radio Central West Group. As in previous years, we activated the historic Barrenjoey Lighthouse, 30 km north of Sydney (lighthouse code AU0046 https://illw.net/index.php/entrants-list-2018). We met in the beach carpark at 8:30 Saturday morning to distribute the gear for the trek up to the magnificent sandstone lighthouse and lighthouse keepers cottages. Also, as in previous years, it was extremely blustery from Saturday afternoon onwards and the 50 km/h winds were "strong enough to blow a dog off its chain" (as Dave was fond of telling our HF contacts).
 
 <!-- more -->The location has beautiful views at night.
 
-![](/assets/images/2018/08/DSC_5871.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5871.jpg){: .align-center}](/assets/images/2018/08/DSC_5871.jpg)
 
-![](/assets/images/2018/08/DSC_5886.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5886.jpg){: .align-center}](/assets/images/2018/08/DSC_5886.jpg)
 
 This is the same view (looking south) as the subsequent photo the next morning at sunrise.
 
-![](/assets/images/2018/08/DSC_5922.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5922.jpg){: .align-center}](/assets/images/2018/08/DSC_5922.jpg)
 
 The antenna used was an Off-Center Fed Dipole (OCFD) in an inverted V arrangement. The SWR with the OCFD oriented about N-W (long leg) to S-E (short leg) and the feed-point on the north-side of the lighthouse balustrade, the SWR was about 1.6 at 3.6MHz, but was 1.5 or less (1.3 minimum) on 40m to 15m.
 
-![](/assets/images/2018/08/antenna.png){: .align-center}
+[![](/assets/images/2018/08/antenna.png){: .align-center}](/assets/images/2018/08/antenna.png)
 
 Operations were from the comfort of the Caretaker's Cottage using the VK2MB callsign. We used an Icom IC7300 for our HF contacts and a Yaesu FT-7900 for 2m operation. Contacts were logged using the VKCL contest logging software (http://www.mnds.com.au/vkcl/). Here is a photo of Dave operating and Garry logging.
 
-![](/assets/images/2018/08/DSC_5905.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5905.jpg){: .align-center}](/assets/images/2018/08/DSC_5905.jpg)
 
 Five diehards operated from dusk.
 
-![](/assets/images/2018/08/DSC_5861.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5861.jpg){: .align-center}](/assets/images/2018/08/DSC_5861.jpg)
 
 All the way through the night.
 
-![](/assets/images/2018/08/DSC_5898.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5898.jpg){: .align-center}](/assets/images/2018/08/DSC_5898.jpg)
 
 To the morning.
 
-![](/assets/images/2018/08/DSC_5921.jpg){: .align-center}
+[![](/assets/images/2018/08/DSC_5921.jpg){: .align-center}](/assets/images/2018/08/DSC_5921.jpg)
 
 As usual there crowds of visitors walking up the hill to admire the lighthouse and surrounding view, literally from sunrise to after sunset on both days. On the Sunday the National Park volunteers were providing guided tours of the historic lighthouse, but unfortunately by midday they were forced to cancel their tours due to the high winds at the top of the lighthouse. By early afternoon, we too decided to pack our gear up and reluctantly leave this magnificent location for another year.
 
@@ -58,7 +58,7 @@ There were a total of 54 lighthouses around Australia were registered to partici
 
 This year we maintained our long standing tradition and also once again worked the unofficial/fun Todd River lighthouse in Alice Springs(!) that make an effort to participate every year. Horst (VK2HL) happened to be in Alice Springs on holidays at that time and sent us this photo of their operations (below). We later worked Horst from the caravan park.
 
-![](/assets/images/2018/08/capetodd.jpg){: .align-center}
+[![](/assets/images/2018/08/capetodd.jpg){: .align-center}](/assets/images/2018/08/capetodd.jpg)
 
 On the Saturday and Sunday various members of the Society trekked up the hill to pay us a day visit and also to act as pack horses to carry up/down all the various items of hardware and provisions that we needed to support our operations. Thanks goes to them for their efforts. As an aside we did observe that VK2GHB (by some unknown means) had persuaded a random tourist to carry up his pack for him! He must be management material!
 

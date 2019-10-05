@@ -13,4 +13,4 @@ header:
   teaser: /assets/images/2014/06/P6040022.jpg
 ---
 
-![](/assets/images/2014/06/P6040022.jpg){: .align-center}
+[![](/assets/images/2014/06/P6040022.jpg){: .align-center}](/assets/images/2014/06/P6040022.jpg)

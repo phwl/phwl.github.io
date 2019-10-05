@@ -14,4 +14,4 @@ header:
 
 Photo from Beijing ski trip.
 
-![](/assets/images/2016/01/3731258183_2af03d23cb_o.jpg){: .align-center}
+[![](/assets/images/2016/01/3731258183_2af03d23cb_o.jpg){: .align-center}](/assets/images/2016/01/3731258183_2af03d23cb_o.jpg)
