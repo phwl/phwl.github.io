@@ -1,10 +1,11 @@
-I"*<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"�<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
 scripts which update the website. The old website is <a href="http://phwl.org/blog">http://phwl.org/blog</a>
 and the new website can be viewed at <a href="https://phwl.github.io">https://phwl.github.io</a>.
-I will be switching them over at some point.</p>
+I will be switching them over at some point and moved the old
+domain to a spare <a href="http://uxa.apl.mybluehost.me/">http://uxa.apl.mybluehost.me/</a>.</p>
 
 <p>Most programmers use <a href="https://www.github.com">github</a> which offers
 <a href="https://pages.github.com">Github Pages</a> for website hosting.
@@ -63,11 +64,24 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'![](\1){: .align-center}', line.rstrip())
     print(line)
 </code></pre></div></div>
+<ul>
+  <li>I also used wide pages <a href="https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/">https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/</a></li>
+</ul>
 
 <h2 id="customise-website">Customise website</h2>
 <ul>
   <li>Since I wanted teaser images appearing on the front page, I put a copy of <a href="https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html">https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html</a> in <code class="highlighter-rouge">_includes/archive-single.html</code></li>
-  <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax, I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
+  <li>To use a custom domain <a href="https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site">https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site</a></li>
+  <li>To use single pages without sidebar <a href="https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064">https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064</a></li>
+  <li>To change home to a grid layout I changed home.html so the loop is in a grid wrapper</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
+
+&lt;/div&gt;
+</code></pre></div></div>
+<ul>
+  <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
 </ul>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -76,4 +90,21 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 &lt;/script&gt;
 
 </code></pre></div></div>
+<p>This is similar to the approach in <a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a>.</p>
+
+<h2 id="links">Links</h2>
+<p>I found the following sites helpful:</p>
+<ul>
+  <li><a href="https://www.alexdglover.com/the-move-to-jekyll/">https://www.alexdglover.com/the-move-to-jekyll/</a></li>
+  <li><a href="http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/">http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/</a></li>
+  <li><a href="https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image">https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image</a></li>
+  <li><a href="https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/">https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/</a></li>
+  <li><a href="https://github.com/merlos/jekyll-auto-image">https://github.com/merlos/jekyll-auto-image</a></li>
+  <li><a href="http://lanyon.getpoole.com/">http://lanyon.getpoole.com/</a></li>
+  <li><a href="http://drjekyllthemes.github.io/">http://drjekyllthemes.github.io/</a></li>
+  <li><a href="https://gykovacsblog.wordpress.com/tag/jekyll-scholar/">https://gykovacsblog.wordpress.com/tag/jekyll-scholar/</a></li>
+  <li><a href="https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#">https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#</a></li>
+  <li><a href="https://github.com/alshedivat/al-folio">https://github.com/alshedivat/al-folio</a></li>
+  <li><a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a></li>
+</ul>
 :ET

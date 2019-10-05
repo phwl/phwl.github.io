@@ -74,25 +74,17 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
   * Since I wanted teaser images appearing on the front page, I put a copy of <https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html> in `_includes/archive-single.html`
   * To use a custom domain <https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site>
   * To use single pages without sidebar <https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064>
-  * To change home to a grid layout
-~~~~
----
-layout: archive
----
+  * To change home to a grid layout I changed home.html so the loop is in a grid wrapper
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
+```
 <div class="grid__wrapper">
 {% for post in paginator.posts %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
 </div>
+```
+  * To enable $$\LaTeX$$ rendering with mathjax (if it didn't work the LaTeX symbol would not have appeared), I created a file in `_includes/latex.html` with
 
-{% include paginator.html %}
-~~~~
-  * To enable $$\LaTeX$$ rendering with mathjax, I created a file in `_includes/latex.html` with
 ~~~~
 {% if page.use_math %}
 <script type="text/javascript" async
@@ -100,8 +92,9 @@ layout: archive
 </script>
 {% endif %}
 ~~~~
+This is similar to the approach in <https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/>.
 
-## Good resources
+## Links
 I found the following sites helpful:
  * <https://www.alexdglover.com/the-move-to-jekyll/>
  * <http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/>
@@ -113,3 +106,4 @@ I found the following sites helpful:
  * <https://gykovacsblog.wordpress.com/tag/jekyll-scholar/>
  * <https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#>
  * <https://github.com/alshedivat/al-folio>
+ * <https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/>
