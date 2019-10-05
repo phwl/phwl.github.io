@@ -57,17 +57,27 @@ and browse to `localhost:4000`.
   * To make publically available, type `bundle exec jekyll build` and then push the files up to Github (the repository is <https://github.com/phwl/phwl.github.io>)
 
 ## Fix `_posts` and `_pages`
-  * This took the most time. The main changes I needed to do was to fix the headers: remove the old `link` header, add a teaser image. Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like
+  * This took the most time. The main changes I needed to do was to fix the headers: remove the old `link` header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like
 
 ~~~~
 import fileinput
 import re
-import sys
 
 for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
     print(line)
 ~~~~
+ * I later added links to the original image with this script.
+
+~~~~
+import fileinput
+import re
+ 
+for line in fileinput.input(inplace=1, backup='.bak'):
+    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
+    print(line)
+~~~~
+
  * I also used wide pages <https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/>
 
 ## Customise website

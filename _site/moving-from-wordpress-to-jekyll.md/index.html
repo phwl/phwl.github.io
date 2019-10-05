@@ -244,17 +244,28 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 
 <h2 id="fix-_posts-and-_pages">Fix <code class="highlighter-rouge">_posts</code> and <code class="highlighter-rouge">_pages</code></h2>
 <ul>
-  <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image. Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
+  <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
 </ul>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
 import re
-import sys
 
 for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
     print(line)
 </code></pre></div></div>
+<ul>
+  <li>I later added links to the original image with this script.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
+import re
+ 
+for line in fileinput.input(inplace=1, backup='.bak'):
+    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
+    print(line)
+</code></pre></div></div>
+
 <ul>
   <li>I also used wide pages <a href="https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/">https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/</a></li>
 </ul>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-05T11:05:29+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-05T11:10:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -184,17 +184,28 @@ and browse to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;
 
 &lt;h2 id=&quot;fix-_posts-and-_pages&quot;&gt;Fix &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages&lt;/code&gt;&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;This took the most time. The main changes I needed to do was to fix the headers: remove the old &lt;code class=&quot;highlighter-rouge&quot;&gt;link&lt;/code&gt; header, add a teaser image. Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like&lt;/li&gt;
+  &lt;li&gt;This took the most time. The main changes I needed to do was to fix the headers: remove the old &lt;code class=&quot;highlighter-rouge&quot;&gt;link&lt;/code&gt; header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import fileinput
 import re
-import sys
 
 for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
     print(line)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;I later added links to the original image with this script.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import fileinput
+import re
+ 
+for line in fileinput.input(inplace=1, backup='.bak'):
+    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
+    print(line)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;ul&gt;
   &lt;li&gt;I also used wide pages &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/&quot;&gt;https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
