@@ -763,7 +763,7 @@ var store = [{
         "excerpt":"[](/assets/images/2019/07/IMG_1116-large.jpg) Hong Kong approach   [](/assets/images/2019/07/DSCF0165-large.jpg) Hong Kong from Tsim Sha Tsui  ","categories": ["travel"],
         "tags": [],
         "url": "http://localhost:4000/hk-and-zhuhai19/",
-        "teaser":"http://localhost:4000/assets/images/2019/07/DSCF0165-large.jpg"},{
+        "teaser":"http://localhost:4000/assets/images/2019/07/DSCF0096.jpg"},{
         "title": "International Lighthouse and Lightship Weekend 2019",
         "excerpt":"Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.   [](/assets/images/2019/08/IMG_4048.jpg)               ","categories": ["travel"],
         "tags": [],
@@ -778,4 +778,9 @@ var store = [{
         "excerpt":"               ","categories": ["research"],
         "tags": [],
         "url": "http://localhost:4000/open-day-19/",
-        "teaser":"http://localhost:4000/assets/images/2019/08/openday-0.jpg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/08/openday-0.jpg"},{
+        "title": "Hong Kong and Shanghai Trip 2019",
+        "excerpt":"Shenzhen  I always look forward to visiting Hong Kong and Shanghai. Here are some photos from the trip.   Following my lecture on a Monday, I took the late night flight to Hong Kong.  Arrived at 5am and went straight to CTAccel in Shenzhen, founded by two of my ex-students, Haile Yu and Jackson Yeung. Shenzhen is an amazing city which only started being developed in the 1980s. This is the view from CTAccel.      In the afternoon, Haile, Jackson and myself went to visit Corerain, founded by my collaborators, Prof Wayne Luk of Imperial College, Dr Xinyu Niu and  ex-student Dr Kuen Hung Tsoi.   HKU and Movertical     The next stop was Hong Kong University (HKU) to visit A/Prof Hayden So. He had arranged an excursion with his colleagues to Movertical, an urban farm based on stackable containers. It is a laboratory environment for testing ideas in sustainable farming and we were asked for suggestions to better automate the farm.      I was there to see if we can help monitor fish behaviour using machine learning.    \\                                    Also listened to jazz at Ned Kelly’s Last Stand. I always have an enjoyable time there.    \\      Fudan University, Shanghai  Next stop was Fudan University. Due to the protests in Hong Kong, there was tight security at the airport.         I gave a lecture entitled Multipliers for FPGA Machine Learning Applications at the State Key Laboratory of ASIC and System, hosted by Prof Lingli Wang.      Here are some street photos from Shanghai.       National Day in Shanghai                    ","categories": ["travel"],
+        "tags": [],
+        "url": "http://localhost:4000/hkshanghai19/",
+        "teaser":"http://localhost:4000/assets/images/2019/10/DSCF0253.jpg"}]
