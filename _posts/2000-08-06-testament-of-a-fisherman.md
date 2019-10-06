@@ -6,6 +6,8 @@ date: 2000-08-06 13:24:10+00:00
 slug: testament-of-a-fisherman
 title: Testament of a Fisherman
 classes: wide
+header:
+  teaser: /assets/images/blank.png
 categories:
 - fishing
 ---

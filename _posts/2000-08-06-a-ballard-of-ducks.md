@@ -6,6 +6,8 @@ date: 2000-08-06 13:26:05+00:00
 slug: a-ballard-of-ducks
 title: A Ballard of Ducks
 classes: wide
+header:
+  teaser: /assets/images/blank.png
 categories:
 - fishing
 ---
