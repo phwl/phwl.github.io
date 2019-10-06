@@ -40,7 +40,7 @@ asked for suggestions to better automate the farm.
 I was there to see if we can help monitor fish behaviour
 using machine learning.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HrNJ5K1cTAE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include video id="HrNJ5K1cTAE" provider="youtube" %}
 
 {% include figure image_path="/assets/images/2019/10/IMG_1277.jpg" caption="Mr Arthur Lee, Founder, explaining the container system." %}
 
@@ -68,8 +68,7 @@ using machine learning.
 
 Also listened to jazz at Ned Kelly's Last Stand. I always have an enjoyable time there.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WJxrx42x6hI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+{% include video id="WJxrx42x6hI" provider="youtube" %}
 
 {% include figure image_path="/assets/images/2019/10/DSCF0215.jpg" caption="" %}
 

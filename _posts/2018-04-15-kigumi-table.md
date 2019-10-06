@@ -17,5 +17,5 @@ header:
 
 Really amazing craftsmanship on this table.
 
-[embed]https://www.youtube.com/watch?v=x51zMg7roIs[/embed]
+{% include video id="x51zMg7roIs" provider="youtube" %}
 

@@ -110,5 +110,5 @@ Bream steamed with shallots and ginger.
 
 Here is a video of Warren landing a fish:
 
-http://www.youtube.com/watch?v=Vvty1pfwl8Q
+{% include video id="Vvty1pfwl8Q" provider="youtube" %}
 

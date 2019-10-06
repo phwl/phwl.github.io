@@ -13,11 +13,11 @@ header:
 TED talks from some of the best documentary photographers.
 
 James Nachtwey 2007 TED Prize
-[embed]https://www.ted.com/talks/james_nachtwey_s_searing_pictures_of_war[/embed]
+{% include video id="AGKZhNK_pHw" provider="youtube" %}
 
 Josef Koudelka 2014
-[embed]https://www.youtube.com/watch?v=z_D5hLeQqHM[/embed]
+{% include video id="z_D5hLeQqHM" provider="youtube" %}
 
 David Alan Harvey Life is Art TEDxVerona 2015
-[embed]https://www.youtube.com/watch?v=BBk0GvNnFmw[/embed]
+{% include video id="BBk0GvNnFmw" provider="youtube" %}
 
