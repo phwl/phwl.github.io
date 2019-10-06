@@ -10,7 +10,7 @@ var store = [{
         "url": "http://localhost:4000/marlin-on-fly/",
         "teaser":"http://localhost:4000/assets/images/1994/04/plmarlin1.jpg"},{
         "title": "New Zealand Trip",
-        "excerpt":"Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the trip.                     Here is Beard casting to a fishy looking spot under willow trees on the Twizel River.             A picture of the Upper Ahuriri River.      Brownie caught on a cane rod, Twizel River.      Clay Cliffs by the Ahuriri River.      Releasing a nice brown trout.      The Twizel River again.      Beard landing a Twizel River brown trout.      The upper Ahuriri River - where the really big fish hang out!  ","categories": ["fishing","Fly-fishing","travel"],
+        "excerpt":"Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the trip.                     Here is Beard casting to a fishy looking spot under willow trees on the Twizel River.                            A picture of the Upper Ahuriri River.                          Brownie caught on a cane rod, Twizel River.                          Clay Cliffs by the Ahuriri River.                          Releasing a nice brown trout.                          Beard landing a Twizel River brown trout.                          The Twizel River again.                          The upper Ahuriri River - where the really big fish hang out!        ","categories": ["fishing","Fly-fishing","travel"],
         "tags": [],
         "url": "http://localhost:4000/new-zealand-trip/",
         "teaser":"http://localhost:4000/assets/images/2014/10/nz96-twizel3.jpg"},{

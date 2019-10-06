@@ -20,37 +20,17 @@ Fished the South Island of New Zealand in November 1996 with fishing buddy Beard
 
 <!-- more -->
 
-![nz96-uahuriri1](/assets/images/2014/10/nz96-uahuriri1.jpg)
-<figcaption style="text-align:center">
-A picture of the Upper Ahuriri River.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-uahuriri1.jpg" caption="A picture of the Upper Ahuriri River." %}
 
-![nz96-canetrout](/assets/images/2014/10/nz96-canetrout.jpg)
-<figcaption style="text-align:center">
-Brownie caught on a cane rod, Twizel River.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-canetrout.jpg" caption="Brownie caught on a cane rod, Twizel River." %}
 
-![nz96-claycliff](/assets/images/2014/10/nz96-claycliff.jpg)
-<figcaption style="text-align:center">
-Clay Cliffs by the Ahuriri River.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-claycliff.jpg" caption="Clay Cliffs by the Ahuriri River." %}
 
-![nz96-fish](/assets/images/2014/10/nz96-fish.jpg)
-<figcaption style="text-align:center">
-Releasing a nice brown trout.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-fish.jpg" caption="Releasing a nice brown trout." %}
 
-![nz96-twizel1](/assets/images/2014/10/nz96-twizel1.jpg)
-<figcaption style="text-align:center">
-The Twizel River again.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-twizel2.jpg" caption="Beard landing a Twizel River brown trout." %}
 
-![nz96-twizel2](/assets/images/2014/10/nz96-twizel2.jpg)
-<figcaption style="text-align:center">
-Beard landing a Twizel River brown trout.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-twizel1.jpg" caption="The Twizel River again." %}
 
-![nz96-uahuriri2](/assets/images/2014/10/nz96-uahuriri2.jpg)
-<figcaption style="text-align:center">
-The upper Ahuriri River - where the really big fish hang out!
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-uahuriri2.jpg" caption="The upper Ahuriri River - where the really big fish hang out!" %}
+
