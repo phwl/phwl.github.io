@@ -22,7 +22,7 @@ A camping trip with Warren to the Hawkesbury has become an annual event (e.g. in
 
 <!-- more -->
 
-[![](/assets/images/2015/12/IMG_2412.jpg){: .align-center}](/assets/images/2015/12/IMG_2412.jpg)
+{% include figure image_path="/assets/images/2015/12/IMG_2412.jpg" caption="" %}
 
 
 

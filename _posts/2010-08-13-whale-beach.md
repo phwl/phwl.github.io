@@ -15,4 +15,4 @@ header:
   teaser: /assets/images/2016/03/whalebeach.jpg
 ---
 
-[![](/assets/images/2016/03/whalebeach.jpg){: .align-center}](/assets/images/2016/03/whalebeach.jpg)
+{% include figure image_path="/assets/images/2016/03/whalebeach.jpg" caption="" %}

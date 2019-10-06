@@ -24,7 +24,7 @@ The FPGA Fly-Fishing Symposium 2019 ([FFF'19](http://phwl.org/category/hobbies/f
 
 
 
-[![](/assets/images/2019/03/IMG_0221.jpg){: .align-center}](/assets/images/2019/03/IMG_0221.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0221.jpg" caption="" %}
 
 
 
@@ -40,11 +40,11 @@ I am not the superstitious type but we received many encouraging signs in Monter
 
 
 
-[![](/assets/images/2019/03/IMG_0043.jpg){: .align-center}](/assets/images/2019/03/IMG_0043.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0043.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0045.jpg){: .align-center}](/assets/images/2019/03/IMG_0045.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0045.jpg" caption="" %}
 
 
 
@@ -56,7 +56,7 @@ We had planned to fish with a guide the first day of the trip and then do our ow
 
 
 
-[![](/assets/images/2019/03/IMG_0234.jpg){: .align-center}](/assets/images/2019/03/IMG_0234.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0234.jpg" caption="" %}
 
 
 
@@ -96,7 +96,7 @@ The next day got up at 5:30am to go fishing with [Chuck Ragan](http://www.crflyf
 
 
 
-[![](/assets/images/2019/03/IMG_0151.jpg){: .align-center}](/assets/images/2019/03/IMG_0151.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0151.jpg" caption="" %}
 
 
 
@@ -126,15 +126,15 @@ Chuck was really cool, laid back and even more enthusiastic than ourselves. He k
 
 
 
-[![](/assets/images/2019/03/IMG_0156.jpg){: .align-center}](/assets/images/2019/03/IMG_0156.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0156.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0161.jpg){: .align-center}](/assets/images/2019/03/IMG_0161.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0161.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0165.jpg){: .align-center}](/assets/images/2019/03/IMG_0165.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0165.jpg" caption="" %}
 
 
 
@@ -146,7 +146,7 @@ We were using #7 weight rods with floating lines. Due to miscommunication, I bro
 
 
 
-[![](/assets/images/2019/03/IMG_0200.jpg){: .align-center}](/assets/images/2019/03/IMG_0200.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0200.jpg" caption="" %}
 
 
 
@@ -182,11 +182,11 @@ It wasn't long before we were into fish.
 
 
 
-[![](/assets/images/2019/03/IMG_0211.jpg){: .align-center}](/assets/images/2019/03/IMG_0211.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0211.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0175.jpg){: .align-center}](/assets/images/2019/03/IMG_0175.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0175.jpg" caption="" %}
 
 
 
@@ -198,7 +198,7 @@ It wasn't long before we were into fish.
 
 
 
-[![](/assets/images/2019/03/IMG_0197.jpg){: .align-center}](/assets/images/2019/03/IMG_0197.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0197.jpg" caption="" %}
 
 
 
@@ -210,7 +210,7 @@ Things were going well, even the rain stopped for a bit and then Guy pulled out 
 
 
 
-[![](/assets/images/2019/03/IMG_0195.jpg){: .align-center}](/assets/images/2019/03/IMG_0195.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0195.jpg" caption="" %}
 
 
 
@@ -222,7 +222,7 @@ As mentioned earlier, I'm not superstitious and would even allow Banana Boat sun
 
 
 
-[![](/assets/images/2019/03/IMG_0202.jpg){: .align-center}](/assets/images/2019/03/IMG_0202.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0202.jpg" caption="" %}
 
 
 
@@ -230,7 +230,7 @@ As mentioned earlier, I'm not superstitious and would even allow Banana Boat sun
 
 
 
-[![](/assets/images/2019/03/IMG_0215.jpg){: .align-center}](/assets/images/2019/03/IMG_0215.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0215.jpg" caption="" %}
 
 
 
@@ -242,7 +242,7 @@ We ended up with about 2 dozen fish (all released). As Chuck predicted, the disc
 
 
 
-[![](/assets/images/2019/03/IMG_0232.jpg){: .align-center}](/assets/images/2019/03/IMG_0232.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0232.jpg" caption="" %}
 
 
 
@@ -254,15 +254,15 @@ We didn't have a plan for the next day and it was either going to the shopping m
 
 
 
-[![](/assets/images/2019/03/IMG_0243.jpg){: .align-center}](/assets/images/2019/03/IMG_0243.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0243.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0249.jpg){: .align-center}](/assets/images/2019/03/IMG_0249.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0249.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0258.jpg){: .align-center}](/assets/images/2019/03/IMG_0258.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0258.jpg" caption="" %}
 
 
 
@@ -274,7 +274,7 @@ Ken caught the first fish which was a nice fat spotted bass.
 
 
 
-[![](/assets/images/2019/03/IMG_0257.jpg){: .align-center}](/assets/images/2019/03/IMG_0257.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0257.jpg" caption="" %}
 
 
 
@@ -286,19 +286,19 @@ We caught a few more and they larger than the ones at Bullards.
 
 
 
-[![](/assets/images/2019/03/IMG_0260.jpg){: .align-center}](/assets/images/2019/03/IMG_0260.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0260.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0262.jpg){: .align-center}](/assets/images/2019/03/IMG_0262.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0262.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0272.jpg){: .align-center}](/assets/images/2019/03/IMG_0272.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0272.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0274.jpg){: .align-center}](/assets/images/2019/03/IMG_0274.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0274.jpg" caption="" %}
 
 
 
@@ -310,11 +310,11 @@ Ken took the largest fish of the trip.
 
 
 
-[![](/assets/images/2019/03/IMG_0267.jpg){: .align-center}](/assets/images/2019/03/IMG_0267.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0267.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/03/IMG_0269.jpg){: .align-center}](/assets/images/2019/03/IMG_0269.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0269.jpg" caption="" %}
 
 
 
@@ -326,7 +326,7 @@ We had another great day, catching about half a dozen fish. Hogan had a very col
 
 
 
-[![](/assets/images/2019/03/IMG_0277.jpg){: .align-center}](/assets/images/2019/03/IMG_0277.jpg)
+{% include figure image_path="/assets/images/2019/03/IMG_0277.jpg" caption="" %}
 
 
 

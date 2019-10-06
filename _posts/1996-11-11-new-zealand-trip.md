@@ -16,10 +16,7 @@ header:
 
 Fished the South Island of New Zealand in November 1996 with fishing buddy Beard. Here are some pictures of the trip.
 
-[![Twizel River](/assets/images/2014/10/nz96-twizel3.jpg){: .align-center}](/assets/images/2014/10/nz96-twizel3.jpg)
-<figcaption style="text-align:center">
-Here is Beard casting to a fishy looking spot under willow trees on the Twizel River.
-</figcaption>
+{% include figure image_path="/assets/images/2014/10/nz96-twizel3.jpg" caption="Here is Beard casting to a fishy looking spot under willow trees on the Twizel River." %}
 
 <!-- more -->
 

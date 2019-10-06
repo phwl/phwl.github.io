@@ -14,5 +14,5 @@ header:
   teaser: /assets/images/2017/05/P5160020.jpg
 ---
 
-[![](/assets/images/2017/05/P5160020.jpg){: .align-center}](/assets/images/2017/05/P5160020.jpg)
+{% include figure image_path="/assets/images/2017/05/P5160020.jpg" caption="" %}
 The Dish

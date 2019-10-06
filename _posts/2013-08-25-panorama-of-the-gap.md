@@ -15,4 +15,4 @@ header:
   teaser: /assets/images/2013/08/gappano.jpg
 ---
 
-[![](/assets/images/2013/08/gappano.jpg){: .align-center}](/assets/images/2013/08/gappano.jpg)
+{% include figure image_path="/assets/images/2013/08/gappano.jpg" caption="" %}

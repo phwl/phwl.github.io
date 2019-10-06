@@ -16,72 +16,72 @@ header:
 
 A gallery of photographs taken around Cradle Mountain, Tasmania.
 
-[![](/assets/images/2015/02/IMG_0260.jpg){: .align-center}](/assets/images/2015/02/IMG_0260.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0260.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0264.jpg){: .align-center}](/assets/images/2015/02/IMG_0264.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0264.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0266.jpg){: .align-center}](/assets/images/2015/02/IMG_0266.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0266.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0272.jpg){: .align-center}](/assets/images/2015/02/IMG_0272.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0272.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0283.jpg){: .align-center}](/assets/images/2015/02/IMG_0283.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0283.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0284.jpg){: .align-center}](/assets/images/2015/02/IMG_0284.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0284.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0290.jpg){: .align-center}](/assets/images/2015/02/IMG_0290.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0290.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0295.jpg){: .align-center}](/assets/images/2015/02/IMG_0295.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0295.jpg" caption="" %}
 
-[![](/assets/images/2015/02/IMG_0319.jpg){: .align-center}](/assets/images/2015/02/IMG_0319.jpg)
+{% include figure image_path="/assets/images/2015/02/IMG_0319.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P1310013.jpg){: .align-center}](/assets/images/2015/02/P1310013.jpg)
+{% include figure image_path="/assets/images/2015/02/P1310013.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010021.jpg){: .align-center}](/assets/images/2015/02/P2010021.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010021.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010035.jpg){: .align-center}](/assets/images/2015/02/P2010035.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010035.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010042.jpg){: .align-center}](/assets/images/2015/02/P2010042.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010042.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010053.jpg){: .align-center}](/assets/images/2015/02/P2010053.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010053.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010054.jpg){: .align-center}](/assets/images/2015/02/P2010054.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010054.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010057.jpg){: .align-center}](/assets/images/2015/02/P2010057.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010057.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010058.jpg){: .align-center}](/assets/images/2015/02/P2010058.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010058.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010059.jpg){: .align-center}](/assets/images/2015/02/P2010059.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010059.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010060.jpg){: .align-center}](/assets/images/2015/02/P2010060.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010060.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010072.jpg){: .align-center}](/assets/images/2015/02/P2010072.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010072.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010083.jpg){: .align-center}](/assets/images/2015/02/P2010083.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010083.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2010087.jpg){: .align-center}](/assets/images/2015/02/P2010087.jpg)
+{% include figure image_path="/assets/images/2015/02/P2010087.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020192.jpg){: .align-center}](/assets/images/2015/02/P2020192.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020192.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020240.jpg){: .align-center}](/assets/images/2015/02/P2020240.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020240.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020252.jpg){: .align-center}](/assets/images/2015/02/P2020252.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020252.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020262.jpg){: .align-center}](/assets/images/2015/02/P2020262.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020262.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020289.jpg){: .align-center}](/assets/images/2015/02/P2020289.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020289.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020321.jpg){: .align-center}](/assets/images/2015/02/P2020321.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020321.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020324.jpg){: .align-center}](/assets/images/2015/02/P2020324.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020324.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020333.jpg){: .align-center}](/assets/images/2015/02/P2020333.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020333.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020343.jpg){: .align-center}](/assets/images/2015/02/P2020343.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020343.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2020399.jpg){: .align-center}](/assets/images/2015/02/P2020399.jpg)
+{% include figure image_path="/assets/images/2015/02/P2020399.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2030402.jpg){: .align-center}](/assets/images/2015/02/P2030402.jpg)
+{% include figure image_path="/assets/images/2015/02/P2030402.jpg" caption="" %}
 
-[![](/assets/images/2015/02/P2040434.jpg){: .align-center}](/assets/images/2015/02/P2040434.jpg)
+{% include figure image_path="/assets/images/2015/02/P2040434.jpg" caption="" %}
 
-[![](/assets/images/2015/02/cradlemtn-pano2.jpg){: .align-center}](/assets/images/2015/02/cradlemtn-pano2.jpg)
+{% include figure image_path="/assets/images/2015/02/cradlemtn-pano2.jpg" caption="" %}

@@ -14,6 +14,6 @@ header:
 
 The Victorinox Soldier is the classic Swiss Army knife (SAK). Each has a date stamp and this set is from 1934, 1965, 1970 and 1997. Also note the evolution of the blade (from clip point to spear point), scales (from fiber to alox), the bail arm of the 1970 model and the hollow rivet in the 1965 version.
 
-[![](/assets/images/2018/10/soldierset-back.jpg){: .align-center}](/assets/images/2018/10/soldierset-back.jpg)
+{% include figure image_path="/assets/images/2018/10/soldierset-back.jpg" caption="" %}
 
-[![](/assets/images/2018/10/soliderset-front.jpg){: .align-center}](/assets/images/2018/10/soliderset-front.jpg)
+{% include figure image_path="/assets/images/2018/10/soliderset-front.jpg" caption="" %}

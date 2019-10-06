@@ -16,7 +16,7 @@ header:
 
 I was asked by [Prof Evangeline Young](http://www.cse.cuhk.edu.hk/~fyyoung) to give a "Lunchtime Pizza talk" on the 15th May. Here is the text of the talk which is not really about fishing but concerns graduate research.
 
-[![](/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg){: .align-center}](/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg)
+{% include figure image_path="/assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg" caption="" %}
 
 <!-- more -->
 

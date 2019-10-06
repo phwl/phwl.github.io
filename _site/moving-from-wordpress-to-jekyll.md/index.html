@@ -262,10 +262,18 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
 import re
- 
+
 for line in fileinput.input(inplace=1, backup='.bak'):
     line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
     print(line)
+</code></pre></div></div>
+<ul>
+  <li>and then changed them yet again to use the include form</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
+
 </code></pre></div></div>
 
 <ul>
@@ -435,6 +443,12 @@ Here are some photos from the trip.
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">
+  
+  
+    
+      
+
+    
 </p>
   </article>
 </div>

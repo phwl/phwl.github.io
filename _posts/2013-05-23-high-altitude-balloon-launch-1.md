@@ -15,25 +15,25 @@ header:
 
 Our [Sydney University Electrical Engineering ](http://www.ee.usyd.edu.au)students, Stephen Tridgell and David Portelli successfully made a high-altitude balloon launch from Blayney, NSW. Stephen's report is after the jump.
 
-[![](/assets/images/2013/05/GOPR5590.jpg){: .align-center}](/assets/images/2013/05/GOPR5590.jpg)
+{% include figure image_path="/assets/images/2013/05/GOPR5590.jpg" caption="" %}
 
 <!-- more -->
 
 Excellent job guys!
 
-[![](/assets/images/2013/05/936768_10200551479541477_289143142_n.jpg){: .align-center}](/assets/images/2013/05/936768_10200551479541477_289143142_n.jpg)
+{% include figure image_path="/assets/images/2013/05/936768_10200551479541477_289143142_n.jpg" caption="" %}
 
 <!-- more -->
 
-[![](/assets/images/2013/05/942112_10200551489181718_819025503_n.jpg){: .align-center}](/assets/images/2013/05/942112_10200551489181718_819025503_n.jpg)
+{% include figure image_path="/assets/images/2013/05/942112_10200551489181718_819025503_n.jpg" caption="" %}
 
-[![](/assets/images/2013/05/GOPR4668.jpg){: .align-center}](/assets/images/2013/05/GOPR4668.jpg)
+{% include figure image_path="/assets/images/2013/05/GOPR4668.jpg" caption="" %}
 
-[![](/assets/images/2013/05/GOPR4935.jpg){: .align-center}](/assets/images/2013/05/GOPR4935.jpg)
+{% include figure image_path="/assets/images/2013/05/GOPR4935.jpg" caption="" %}
 
-[![](/assets/images/2013/05/GOPR5590.jpg){: .align-center}](/assets/images/2013/05/GOPR5590.jpg)
+{% include figure image_path="/assets/images/2013/05/GOPR5590.jpg" caption="" %}
 
-[![](/assets/images/2013/05/942273_10200551505942137_1613835602_n.jpg){: .align-center}](/assets/images/2013/05/942273_10200551505942137_1613835602_n.jpg)
+{% include figure image_path="/assets/images/2013/05/942273_10200551505942137_1613835602_n.jpg" caption="" %}
 
 
 

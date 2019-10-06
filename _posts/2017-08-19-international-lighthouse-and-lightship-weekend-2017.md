@@ -16,7 +16,7 @@ header:
 
 At my first [International Lighthouse and Lightship Weekend](https://illw.net/) with the [Manly Warringah Radio Society](http://www.mwrs.org.au/), operating from Barrenjoey Lighthouse. Here is their writeup: [http://www.mwrs.org.au/lighthouse-operations/](http://www.mwrs.org.au/lighthouse-operations/). It was a great experience to stay there for the night.
 
-[caption id="attachment_3195" align="alignnone" width="840"][![](/assets/images/2017/08/P8190063-1-1.jpg){: .align-center}](/assets/images/2017/08/P8190063-1-1.jpg) OLYMPUS DIGITAL CAMERA[/caption]
+[caption id="attachment_3195" align="alignnone" width="840"]{% include figure image_path="/assets/images/2017/08/P8190063-1-1.jpg" caption="" %}
 
 <!-- more -->
 

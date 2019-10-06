@@ -15,19 +15,19 @@ header:
 
 Here are some photos from the School of Electrical and Information Engineering retreat in Manly.
 
-[caption id="attachment_2637" align="alignnone" width="8196"][![](/assets/images/2016/09/queencliffpano.jpg){: .align-center}](/assets/images/2016/09/queencliffpano.jpg) Panorama from Queenscliff Rockpool[/caption]
+[caption id="attachment_2637" align="alignnone" width="8196"]{% include figure image_path="/assets/images/2016/09/queencliffpano.jpg" caption="" %}
 
 <!-- more -->
 
-[![](/assets/images/2016/09/IMG_3647.jpg){: .align-center}](/assets/images/2016/09/IMG_3647.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_3647.jpg" caption="" %}
 
-[![](/assets/images/2016/09/IMG_3659.jpg){: .align-center}](/assets/images/2016/09/IMG_3659.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_3659.jpg" caption="" %}
 
-[![](/assets/images/2016/09/IMG_3673.jpg){: .align-center}](/assets/images/2016/09/IMG_3673.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_3673.jpg" caption="" %}
 
-[![](/assets/images/2016/09/IMG_3681.jpg){: .align-center}](/assets/images/2016/09/IMG_3681.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_3681.jpg" caption="" %}
 
-[![](/assets/images/2016/09/IMG_8119.jpg){: .align-center}](/assets/images/2016/09/IMG_8119.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_8119.jpg" caption="" %}
 
 
-[![](/assets/images/2016/09/IMG_8131.jpg){: .align-center}](/assets/images/2016/09/IMG_8131.jpg)
+{% include figure image_path="/assets/images/2016/09/IMG_8131.jpg" caption="" %}

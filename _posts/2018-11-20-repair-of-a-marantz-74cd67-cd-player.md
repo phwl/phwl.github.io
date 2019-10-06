@@ -14,7 +14,7 @@ header:
 
 My mother bought this Marantz 74CD67 CD player in 1996. Twenty years later, it was unable to read reliably.
 
-[![](/assets/images/2018/11/40784800_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784800_Unknown.jpg)
+{% include figure image_path="/assets/images/2018/11/40784800_Unknown.jpg" caption="" %}
 
 <!-- more -->
 
@@ -24,20 +24,20 @@ I also found this detailed guide to replacing the laser mechanism [https://www.
 
 Here is the player opened up.
 
-[![](/assets/images/2018/11/40784816_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784816_Unknown.jpg)
+{% include figure image_path="/assets/images/2018/11/40784816_Unknown.jpg" caption="" %}
 
-Undo the three connectors and unscrew the CD assembly.[![](/assets/images/2018/11/40784864_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784864_Unknown.jpg)
+Undo the three connectors and unscrew the CD assembly.{% include figure image_path="/assets/images/2018/11/40784864_Unknown.jpg" caption="" %}
 
-There is another connector for the daughter board.[![](/assets/images/2018/11/40784880_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784880_Unknown.jpg)
+There is another connector for the daughter board.{% include figure image_path="/assets/images/2018/11/40784880_Unknown.jpg" caption="" %}
 
-[![](/assets/images/2018/11/40784912_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784912_Unknown.jpg)
+{% include figure image_path="/assets/images/2018/11/40784912_Unknown.jpg" caption="" %}
 
-The CD mechanism in its plastic sled.[![](/assets/images/2018/11/40784928_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784928_Unknown.jpg)
+The CD mechanism in its plastic sled.{% include figure image_path="/assets/images/2018/11/40784928_Unknown.jpg" caption="" %}
 
-The new and old look very similar.[![](/assets/images/2018/11/40784960_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784960_Unknown.jpg)
+The new and old look very similar.{% include figure image_path="/assets/images/2018/11/40784960_Unknown.jpg" caption="" %}
 
-In fact, at this point I was very pleased I took the previous photo so I could double check I didn't mix up the old and new mechanisms :-)[![](/assets/images/2018/11/40784976_Unknown.jpg){: .align-center}](/assets/images/2018/11/40784976_Unknown.jpg)
+In fact, at this point I was very pleased I took the previous photo so I could double check I didn't mix up the old and new mechanisms :-){% include figure image_path="/assets/images/2018/11/40784976_Unknown.jpg" caption="" %}
 
 Put it back together and it works! Hopefully good for another 20 years.
 
-[![](/assets/images/2018/11/Screen-Shot-2018-11-20-at-10.51.34-pm.jpg){: .align-center}](/assets/images/2018/11/Screen-Shot-2018-11-20-at-10.51.34-pm.jpg)
+{% include figure image_path="/assets/images/2018/11/Screen-Shot-2018-11-20-at-10.51.34-pm.jpg" caption="" %}

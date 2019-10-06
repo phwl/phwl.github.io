@@ -13,20 +13,15 @@ categories:
 header:
   teaser: /assets/images/1994/04/plmarlin1.jpg
 ---
+# Black marlin on fly, Cape Bowling Green, Queensland
 
-[![Black marlin](/assets/images/1994/04/plmarlin1.jpg){: .align-center}](/assets/images/1994/04/plmarlin1.jpg)
-<figcaption style="text-align:center">
-Black marlin on fly, Cape Bowling Green, Queensland, Mary River
-</figcaption>
+{% include figure image_path="/assets/images/1994/04/plmarlin1.jpg" caption="Black marlin" %}
 
 An edited version of this article appeared in (Australian) "Modern Fishing" magazine, April 1994, pp. 50-53.
 
 <!-- more -->
 
-[![Tagging marlin](/assets/images/1994/04/wmmarlin1.jpg){: .align-center}](/assets/images/1994/04/wmmarlin1.jpg)
-<figcaption style="text-align:center">
-Warren, Tagging a black marlin, Cape Bowling Green, Queensland
-</figcaption>
+{% include figure image_path="/assets/images/1994/04/wmmarlin1.jpg" caption="Warren, Tagging a black marlin, Cape Bowling Green, Queensland" %}
 
 It is hard to explain to the non-flyfisherman what we are actually trying to prove when we go saltwater flyfishing. The mechanics of casting, the long rods, the special flylines etc. seem to serve to make it as hard as possible to catch a given fish. The flyfisherman goes out fishing, gets outfished five to one by his mates using conventional gear, and goes away feeling superior. I don't think I can explain why we do it, its just that when you catch a fish on a fly, the experience is so much more enjoyable.
 

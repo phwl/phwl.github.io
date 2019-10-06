@@ -28,7 +28,7 @@ My hotel room was upgraded to a Superior Room. The photograph below shows both w
 
 A hat shop in Convent Garden. Need to get a deerstalker some day.
 
-[![](/assets/images/2014/12/P1130495.jpg){: .align-center}](/assets/images/2014/12/P1130495.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130495.jpg" caption="" %}
 
 Sweet shop.
 
@@ -40,7 +40,7 @@ Also in Covent Garden.
 
 Foyle's is my favourite London bookshop. The new renovation is superb.
 
-[![](/assets/images/2014/12/P1130469.jpg){: .align-center}](/assets/images/2014/12/P1130469.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130469.jpg" caption="" %}
 
 I met this guy inside Foyles. Unfortunately, you can't tell the size from this photo but it was huge.
 
@@ -48,7 +48,7 @@ I met this guy inside Foyles. Unfortunately, you can't tell the size from this p
 
 Cafe Nero in South Kensington.
 
-[![](/assets/images/2014/12/IMG_0048.jpg){: .align-center}](/assets/images/2014/12/IMG_0048.jpg)
+{% include figure image_path="/assets/images/2014/12/IMG_0048.jpg" caption="" %}
 
 ![P1130557](/assets/images/2014/12/P1130557.jpg)
 
@@ -70,29 +70,29 @@ Gave a talk at Bristol University. I had thought Bristol would be a hick town wi
 
 This is the Bristol Museum. They made these planes there in the early days of aviation.
 
-[![](/assets/images/2014/12/P1130528.jpg){: .align-center}](/assets/images/2014/12/P1130528.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130528.jpg" caption="" %}
 
 Then it was to Hong Kong, their airport has a similar plane on display.
 
-[![](/assets/images/2014/12/PC080014.jpg){: .align-center}](/assets/images/2014/12/PC080014.jpg)
+{% include figure image_path="/assets/images/2014/12/PC080014.jpg" caption="" %}
 
 This is the approach to Pudong Airport, Shanghai.
 
-[![](/assets/images/2014/12/P1130585.jpg){: .align-center}](/assets/images/2014/12/P1130585.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130585.jpg" caption="" %}
 
 Shanghai at night.
 
-[![](/assets/images/2014/12/PC110102.jpg){: .align-center}](/assets/images/2014/12/PC110102.jpg)
+{% include figure image_path="/assets/images/2014/12/PC110102.jpg" caption="" %}
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2014/12/PC110103.jpg)
 
 The banquet at the International Conference on Field Programmable Technology was a cruise.
 
-[![](/assets/images/2014/12/PC110027.jpg){: .align-center}](/assets/images/2014/12/PC110027.jpg)
+{% include figure image_path="/assets/images/2014/12/PC110027.jpg" caption="" %}
 
 Near Fudan University (Pudong Zhangjiang campus).
 
-[![](/assets/images/2014/12/PC090020.jpg){: .align-center}](/assets/images/2014/12/PC090020.jpg)
+{% include figure image_path="/assets/images/2014/12/PC090020.jpg" caption="" %}
 
 We went to the Shanghai antiques market on Dongtai road.
 
@@ -100,27 +100,27 @@ We went to the Shanghai antiques market on Dongtai road.
 
 This Oba-mao t-shirt was popular.
 
-[![](/assets/images/2014/12/PC140158.jpg){: .align-center}](/assets/images/2014/12/PC140158.jpg)
+{% include figure image_path="/assets/images/2014/12/PC140158.jpg" caption="" %}
 
 Lunch at a noodle bar.
 
-[![](/assets/images/2014/12/PC140130.jpg){: .align-center}](/assets/images/2014/12/PC140130.jpg)
+{% include figure image_path="/assets/images/2014/12/PC140130.jpg" caption="" %}
 
 Stayed near the Shanghai Railway Station.
 
-[![](/assets/images/2014/12/PC140124.jpg){: .align-center}](/assets/images/2014/12/PC140124.jpg)
+{% include figure image_path="/assets/images/2014/12/PC140124.jpg" caption="" %}
 
 We made a day trip to Hangzhou.
 
-[![](/assets/images/2014/12/PC150181.jpg){: .align-center}](/assets/images/2014/12/PC150181.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150181.jpg" caption="" %}
 
-[![](/assets/images/2014/12/PC150197.jpg){: .align-center}](/assets/images/2014/12/PC150197.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150197.jpg" caption="" %}
 
 Biggest carp I've ever seen.
 
-[![](/assets/images/2014/12/PC150189.jpg){: .align-center}](/assets/images/2014/12/PC150189.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150189.jpg" caption="" %}
 
-[![](/assets/images/2014/12/PC150212.jpg){: .align-center}](/assets/images/2014/12/PC150212.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150212.jpg" caption="" %}
 
 West Lake, Hangzhou.
 
@@ -128,9 +128,9 @@ West Lake, Hangzhou.
 
 Visitors posing for a photo.
 
-[![](/assets/images/2014/12/PC150210.jpg){: .align-center}](/assets/images/2014/12/PC150210.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150210.jpg" caption="" %}
 
-[![](/assets/images/2014/12/PC150203.jpg){: .align-center}](/assets/images/2014/12/PC150203.jpg)
+{% include figure image_path="/assets/images/2014/12/PC150203.jpg" caption="" %}
 
 The Chinese University of Hong Kong ("Umbrella movement").
 
@@ -160,41 +160,41 @@ Of course, we had many wonderful meals.
 
 Mock shark's fin.
 
-[![](/assets/images/2014/12/P1130615.jpg){: .align-center}](/assets/images/2014/12/P1130615.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130615.jpg" caption="" %}
 
 Pigeon.
 
-[![](/assets/images/2014/12/P1130614.jpg){: .align-center}](/assets/images/2014/12/P1130614.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130614.jpg" caption="" %}
 
 Chinese lamb casserole.
 
-[![](/assets/images/2014/12/P1130612.jpg){: .align-center}](/assets/images/2014/12/P1130612.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130612.jpg" caption="" %}
 
 Peking duck.
 
-[![](/assets/images/2014/12/IMG_4801.jpg){: .align-center}](/assets/images/2014/12/IMG_4801.jpg)
+{% include figure image_path="/assets/images/2014/12/IMG_4801.jpg" caption="" %}
 
 Chiu Chow oyster pancake.
 
-[![](/assets/images/2014/12/P1130646.jpg){: .align-center}](/assets/images/2014/12/P1130646.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130646.jpg" caption="" %}
 
 Chiu Chow pepper and pig intestine soup.
 
-[![](/assets/images/2014/12/P1130645.jpg){: .align-center}](/assets/images/2014/12/P1130645.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130645.jpg" caption="" %}
 
 Vegetarian duck.
 
-[![](/assets/images/2014/12/P1130636.jpg){: .align-center}](/assets/images/2014/12/P1130636.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130636.jpg" caption="" %}
 
 Beef soup.
 
-[![](/assets/images/2014/12/P1130630.jpg){: .align-center}](/assets/images/2014/12/P1130630.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130630.jpg" caption="" %}
 
 Shredded duck with pocket bread.
 
-[![](/assets/images/2014/12/P1130699.jpg){: .align-center}](/assets/images/2014/12/P1130699.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130699.jpg" caption="" %}
 
-[![](/assets/images/2014/12/P1130698.jpg){: .align-center}](/assets/images/2014/12/P1130698.jpg)
+{% include figure image_path="/assets/images/2014/12/P1130698.jpg" caption="" %}
 
 Sweet and sour pork.
 
@@ -210,11 +210,11 @@ The two pandas and green "bamboo" in the foreground were a fancy desert.
 
 Shrimp dumplings.
 
-[![](/assets/images/2014/12/IMG_4822.jpg){: .align-center}](/assets/images/2014/12/IMG_4822.jpg)
+{% include figure image_path="/assets/images/2014/12/IMG_4822.jpg" caption="" %}
 
 Storm near Sydney.
 
-[![](/assets/images/2014/12/IMG_0031.jpg){: .align-center}](/assets/images/2014/12/IMG_0031.jpg)
+{% include figure image_path="/assets/images/2014/12/IMG_0031.jpg" caption="" %}
 
 Sydney skyline.
 

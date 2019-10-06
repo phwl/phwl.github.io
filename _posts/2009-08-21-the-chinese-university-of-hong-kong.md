@@ -14,13 +14,13 @@ header:
 
 The [Chinese University of Hong Kong](http://www.cuhk.edu.hk) has a beautiful campus. Here are some photographs.
 
-[![](/assets/images/2009/08/3732055986_9e2fbe4220.jpg){: .align-center}](/assets/images/2009/08/3732055986_9e2fbe4220.jpg)
+{% include figure image_path="/assets/images/2009/08/3732055986_9e2fbe4220.jpg" caption="" %}
 
-[![](/assets/images/2009/08/3842373966_99aa48fe22.jpg){: .align-center}](/assets/images/2009/08/3842373966_99aa48fe22.jpg)
+{% include figure image_path="/assets/images/2009/08/3842373966_99aa48fe22.jpg" caption="" %}
 
-[![](/assets/images/2009/08/3841481579_d9cb7449e2.jpg){: .align-center}](/assets/images/2009/08/3841481579_d9cb7449e2.jpg)
+{% include figure image_path="/assets/images/2009/08/3841481579_d9cb7449e2.jpg" caption="" %}
 
-[![](/assets/images/2009/08/3841565079_14947ff00d.jpg){: .align-center}](/assets/images/2009/08/3841565079_14947ff00d.jpg)
+{% include figure image_path="/assets/images/2009/08/3841565079_14947ff00d.jpg" caption="" %}
 
 
 

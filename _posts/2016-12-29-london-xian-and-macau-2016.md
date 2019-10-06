@@ -18,21 +18,21 @@ Departed on a beautiful early-summer Sydney morning in late Nov.
 
 <!-- more -->
 
-[![](/assets/images/2016/12/IMG_4132.jpg){: .align-center}](/assets/images/2016/12/IMG_4132.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4132.jpg" caption="" %}
 
 Was in London about a day later. This photo has the Rector's Residence of Imperial College in the background, with the Department of Computing just out of view further up the road.
 
-[![](/assets/images/2016/12/IMG_8415.jpg){: .align-center}](/assets/images/2016/12/IMG_8415.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_8415.jpg" caption="" %}
 
 One of the photographs from the "Soho" exhibition in London, with reflected buildings and people in the background.
 
-[![](/assets/images/2016/12/IMG_4158.jpg){: .align-center}](/assets/images/2016/12/IMG_4158.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4158.jpg" caption="" %}
 
 Exhibition at the Photographer's Gallery, Soho.
 
 
 
-[![](/assets/images/2016/12/IMG_4163.jpg){: .align-center}](/assets/images/2016/12/IMG_4163.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4163.jpg" caption="" %}
 
 Skating outside the National History Musuem.
 
@@ -40,7 +40,7 @@ Skating outside the National History Musuem.
 
 Guy on a horse in a funny hat.
 
-[![](/assets/images/2016/12/IMG_4282.jpg){: .align-center}](/assets/images/2016/12/IMG_4282.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4282.jpg" caption="" %}
 
 Discovered there really is a Platform 9 3/4 at King's Cross Station on my way to Cambridge.
 
@@ -76,7 +76,7 @@ Gave a talk the the Computer Laboratory.
 
 My favourite bookshop in London, Foyles.
 
-[![](/assets/images/2016/12/IMG_4176.jpg){: .align-center}](/assets/images/2016/12/IMG_4176.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4176.jpg" caption="" %}
 
 Enid Blyton is now addressing modern issues.
 
@@ -84,11 +84,11 @@ Enid Blyton is now addressing modern issues.
 
 Churchill War Rooms, the secret basement central to the English war effort.
 
-[![](/assets/images/2016/12/IMG_4266.jpg){: .align-center}](/assets/images/2016/12/IMG_4266.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4266.jpg" caption="" %}
 
 An Engima Machine.
 
-[![](/assets/images/2016/12/IMG_4267.jpg){: .align-center}](/assets/images/2016/12/IMG_4267.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4267.jpg" caption="" %}
 
 Falun Gong protestors.
 
@@ -120,23 +120,23 @@ Our hotel.
 
 We rode bikes around the Xi'an city wall.
 
-[![](/assets/images/2016/12/IMG_4551.jpg){: .align-center}](/assets/images/2016/12/IMG_4551.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4551.jpg" caption="" %}
 
 The Muslim Quarter (Huimin Jie).
 
-[![](/assets/images/2016/12/IMG_4734.jpg){: .align-center}](/assets/images/2016/12/IMG_4734.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4734.jpg" caption="" %}
 
 Making sweets.
 
-[![](/assets/images/2016/12/IMG_4752.jpg){: .align-center}](/assets/images/2016/12/IMG_4752.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4752.jpg" caption="" %}
 
 Rolling cigarettes.
 
-[![](/assets/images/2016/12/IMG_4760.jpg){: .align-center}](/assets/images/2016/12/IMG_4760.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4760.jpg" caption="" %}
 
 Bbq lamb skewers.
 
-[![](/assets/images/2016/12/IMG_4766.jpg){: .align-center}](/assets/images/2016/12/IMG_4766.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4766.jpg" caption="" %}
 
 Some of the other food in Xi'an.
 
@@ -164,74 +164,74 @@ Unfortunately, a bad pollution day. This was taken from the plane.
 
 Then spent a couple of days in Macau. Hadn't been to this former Portugese colony for many years.
 
-[![](/assets/images/2016/12/IMG_4928.jpg){: .align-center}](/assets/images/2016/12/IMG_4928.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4928.jpg" caption="" %}
 
-[![](/assets/images/2016/12/IMG_4995.jpg){: .align-center}](/assets/images/2016/12/IMG_4995.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4995.jpg" caption="" %}
 
-[![](/assets/images/2016/12/IMG_4938.jpg){: .align-center}](/assets/images/2016/12/IMG_4938.jpg)
-
-
-
-[![](/assets/images/2016/12/IMG_5007.jpg){: .align-center}](/assets/images/2016/12/IMG_5007.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4938.jpg" caption="" %}
 
 
 
-[![](/assets/images/2016/12/IMG_5009.jpg){: .align-center}](/assets/images/2016/12/IMG_5009.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5007.jpg" caption="" %}
+
+
+
+{% include figure image_path="/assets/images/2016/12/IMG_5009.jpg" caption="" %}
 
 
 
 ![img_4980](/assets/images/2016/12/IMG_4980.jpg)
 
-[![](/assets/images/2016/12/IMG_4948.jpg){: .align-center}](/assets/images/2016/12/IMG_4948.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4948.jpg" caption="" %}
 
-[![](/assets/images/2016/12/IMG_4951.jpg){: .align-center}](/assets/images/2016/12/IMG_4951.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4951.jpg" caption="" %}
 
 
 
-[![](/assets/images/2016/12/IMG_4896.jpg){: .align-center}](/assets/images/2016/12/IMG_4896.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4896.jpg" caption="" %}
 
 St Paul ruined church.
 
-[![](/assets/images/2016/12/IMG_4961.jpg){: .align-center}](/assets/images/2016/12/IMG_4961.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4961.jpg" caption="" %}
 
-[![](/assets/images/2016/12/IMG_5025.jpg){: .align-center}](/assets/images/2016/12/IMG_5025.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5025.jpg" caption="" %}
 
 Pork chop roll.
 
-[![](/assets/images/2016/12/IMG_4880.jpg){: .align-center}](/assets/images/2016/12/IMG_4880.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_4880.jpg" caption="" %}
 
 The excellent ALBERGUE 1601 ([http://www.albergue1601.com/](http://www.albergue1601.com/)) restaurant.
 
 ![img_5022](/assets/images/2016/12/IMG_5022.jpg)
 
-[![](/assets/images/2016/12/IMG_5015.jpg){: .align-center}](/assets/images/2016/12/IMG_5015.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5015.jpg" caption="" %}
 
 Baked crab shell.
 
-[![](/assets/images/2016/12/IMG_5017.jpg){: .align-center}](/assets/images/2016/12/IMG_5017.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5017.jpg" caption="" %}
 
 Suckling pig.
 
-[![](/assets/images/2016/12/IMG_5018.jpg){: .align-center}](/assets/images/2016/12/IMG_5018.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5018.jpg" caption="" %}
 
-[![](/assets/images/2016/12/IMG_5019.jpg){: .align-center}](/assets/images/2016/12/IMG_5019.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5019.jpg" caption="" %}
 
 Grilled sardines.
 
-[![](/assets/images/2016/12/IMG_5020.jpg){: .align-center}](/assets/images/2016/12/IMG_5020.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5020.jpg" caption="" %}
 
 African chicken.
 
-[![](/assets/images/2016/12/IMG_5021.jpg){: .align-center}](/assets/images/2016/12/IMG_5021.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5021.jpg" caption="" %}
 
 We had desert at this place below.
 
 
 
-[![](/assets/images/2016/12/IMG_5033.jpg){: .align-center}](/assets/images/2016/12/IMG_5033.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_5033.jpg" caption="" %}
 
 ![img_5031](/assets/images/2016/12/IMG_5031.jpg)
 
 The view from the plane over Hong Kong.
 
-[![](/assets/images/2016/12/IMG_8657.jpg){: .align-center}](/assets/images/2016/12/IMG_8657.jpg)
+{% include figure image_path="/assets/images/2016/12/IMG_8657.jpg" caption="" %}

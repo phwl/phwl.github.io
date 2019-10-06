@@ -72,10 +72,17 @@ for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
 ~~~~
 import fileinput
 import re
- 
+
 for line in fileinput.input(inplace=1, backup='.bak'):
     line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
     print(line)
+~~~~
+ * and then changed them yet again to use the include form
+
+~~~~
+{% raw %}
+{% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
+{% endraw %}
 ~~~~
 
  * I also used wide pages <https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/>

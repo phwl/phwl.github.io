@@ -16,4 +16,4 @@ header:
   teaser: /assets/images/2018/11/sydney-aerialnov18.jpg
 ---
 
-[![](/assets/images/2018/11/sydney-aerialnov18.jpg){: .align-center}](/assets/images/2018/11/sydney-aerialnov18.jpg)
+{% include figure image_path="/assets/images/2018/11/sydney-aerialnov18.jpg" caption="" %}

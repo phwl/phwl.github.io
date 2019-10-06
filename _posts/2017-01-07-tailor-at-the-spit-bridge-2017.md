@@ -14,4 +14,4 @@ header:
 
 First fish of 2017 is a tailor (and it was a fluke).
 
-[![](/assets/images/2017/01/spittailor17.jpg){: .align-center}](/assets/images/2017/01/spittailor17.jpg)
+{% include figure image_path="/assets/images/2017/01/spittailor17.jpg" caption="" %}

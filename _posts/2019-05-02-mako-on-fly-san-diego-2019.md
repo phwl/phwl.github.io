@@ -20,13 +20,13 @@ header:
 
 The mako shark is one of the fastest and most ferocious fish in the sea. They can swim up to 69 km/h (42 mph) and jump 6m (20 feet) in the air. There two species, the shortfin (_Isurus oxyrinchus_) and the longfin (_Isurus paucus), _the shortfin being more common. San Diego is the best place to fish for them, and so following the [FCCM Conference](https://www.fccm.org/), Ken and I went to fly-fish for them.
 
-[![](/assets/images/2019/05/IMG_0832.jpg){: .align-center}](/assets/images/2019/05/IMG_0832.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0832.jpg" caption="" %}
 
 https://youtu.be/py-aq-s33mQ
 
 <!-- more -->
 
-[![](/assets/images/2019/05/IMG_0720.jpg){: .align-center}](/assets/images/2019/05/IMG_0720.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0720.jpg" caption="" %}
 
 
 
@@ -38,7 +38,7 @@ We booked one of the pioneers of mako fly fishing, [Conway Bowman](http://conway
 
 
 
-[![](/assets/images/2019/05/IMG_0746.jpg){: .align-center}](/assets/images/2019/05/IMG_0746.jpg)W
+{% include figure image_path="/assets/images/2019/05/IMG_0746.jpg" caption="" %}
 
 
 
@@ -68,7 +68,7 @@ After setting up the burley (chum), we got our gear in order and made a few prac
 
 
 
-[![](/assets/images/2019/05/IMG_0740.jpg){: .align-center}](/assets/images/2019/05/IMG_0740.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0740.jpg" caption="" %}
 
 
 
@@ -80,7 +80,7 @@ Size #14 rod and reel with floating fly-line. Not sure what size hook, might hav
 
 
 
-[![](/assets/images/2019/05/IMG_0772.jpg){: .align-center}](/assets/images/2019/05/IMG_0772.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0772.jpg" caption="" %}
 
 
 
@@ -92,11 +92,11 @@ No problem seeing this fly, I think it is a bird imitation.
 
 
 
-[![](/assets/images/2019/05/IMG_0847.jpg){: .align-center}](/assets/images/2019/05/IMG_0847.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0847.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0762.jpg){: .align-center}](/assets/images/2019/05/IMG_0762.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0762.jpg" caption="" %}
 
 
 
@@ -116,15 +116,15 @@ Right on the low tide, a mako appeared. Conway teased it in and Ken had it take 
 
 
 
-[![](/assets/images/2019/05/IMG_0786.jpg){: .align-center}](/assets/images/2019/05/IMG_0786.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0786.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0787.jpg){: .align-center}](/assets/images/2019/05/IMG_0787.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0787.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0788.jpg){: .align-center}](/assets/images/2019/05/IMG_0788.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0788.jpg" caption="" %}
 
 
 
@@ -136,11 +136,11 @@ This time Ken was able to set the hook while it was moving away from the boat.
 
 
 
-[![](/assets/images/2019/05/IMG_0790.jpg){: .align-center}](/assets/images/2019/05/IMG_0790.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0790.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0801.jpg){: .align-center}](/assets/images/2019/05/IMG_0801.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0801.jpg" caption="" %}
 
 
 
@@ -152,11 +152,11 @@ and it was on ...
 
 
 
-[![](/assets/images/2019/05/IMG_0810.jpg){: .align-center}](/assets/images/2019/05/IMG_0810.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0810.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0812.jpg){: .align-center}](/assets/images/2019/05/IMG_0812.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0812.jpg" caption="" %}
 
 
 
@@ -186,11 +186,11 @@ Ken did a good job getting the fish to the boat.
 
 
 
-[![](/assets/images/2019/05/IMG_0831.jpg){: .align-center}](/assets/images/2019/05/IMG_0831.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0831.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0832.jpg){: .align-center}](/assets/images/2019/05/IMG_0832.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0832.jpg" caption="" %}
 
 
 
@@ -212,11 +212,11 @@ https://youtu.be/v907fdFlPqg
 
 
 
-[![](/assets/images/2019/05/IMG_0836.jpg){: .align-center}](/assets/images/2019/05/IMG_0836.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0836.jpg" caption="" %}
 
 
 
-[![](/assets/images/2019/05/IMG_0845.jpg){: .align-center}](/assets/images/2019/05/IMG_0845.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_0845.jpg" caption="" %}
 
 
 
@@ -228,7 +228,7 @@ About an hour later, a school of mackerel came by and for about 20 minutes, we c
 
 
 
-[![](/assets/images/2019/05/IMG_3480.jpg){: .align-center}](/assets/images/2019/05/IMG_3480.jpg)
+{% include figure image_path="/assets/images/2019/05/IMG_3480.jpg" caption="" %}
 
 
 

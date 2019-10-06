@@ -14,53 +14,53 @@ header:
 
 Took a train trip to Chengdu for Sichuan food prior to the [Performance-Aware Programming with Application Accelerators (PAPAA) 2018 Workshop](http://cscpapaa.eee.hku.hk/) in Hong Kong.
 
-[![](/assets/images/2018/08/P7190077.jpg){: .align-center}](/assets/images/2018/08/P7190077.jpg)
+{% include figure image_path="/assets/images/2018/08/P7190077.jpg" caption="" %}
 
-[![](/assets/images/2018/08/IMG_1758-2.jpg){: .align-center}](/assets/images/2018/08/IMG_1758-2.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_1758-2.jpg" caption="" %}
 
 <!-- more -->
 
-[![](/assets/images/2018/08/IMG_8777.jpg){: .align-center}](/assets/images/2018/08/IMG_8777.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8777.jpg" caption="" %}
 
 There was some beautiful scenery along the way.
-[![](/assets/images/2018/08/IMG_8770.jpg){: .align-center}](/assets/images/2018/08/IMG_8770.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8770.jpg" caption="" %}
 
-[![](/assets/images/2018/08/IMG_8773.jpg){: .align-center}](/assets/images/2018/08/IMG_8773.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8773.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7160007.jpg){: .align-center}](/assets/images/2018/08/P7160007.jpg)
+{% include figure image_path="/assets/images/2018/08/P7160007.jpg" caption="" %}
 
-[![](/assets/images/2018/08/IMG_8765.jpg){: .align-center}](/assets/images/2018/08/IMG_8765.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8765.jpg" caption="" %}
 
 About 14 hours later (Hong Kong - Shenzhen - Guangzhou - Chengdu) we arrived in Chengdu. Glad we took the fast train.
-[![](/assets/images/2018/08/IMG_1708.jpg){: .align-center}](/assets/images/2018/08/IMG_1708.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_1708.jpg" caption="" %}
 
 This is a photo of Chengdu from our hotel above the train station.
-[![](/assets/images/2018/08/IMG_8788.jpg){: .align-center}](/assets/images/2018/08/IMG_8788.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8788.jpg" caption="" %}
 
 We then moved to a hotel downtown and had Sichuan food.
 
 Spicy noodles.
-[![](/assets/images/2018/08/IMG_8797.jpg){: .align-center}](/assets/images/2018/08/IMG_8797.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8797.jpg" caption="" %}
 
-[![](/assets/images/2018/08/IMG_8793.jpg){: .align-center}](/assets/images/2018/08/IMG_8793.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8793.jpg" caption="" %}
 
-Spicy beef.[![](/assets/images/2018/08/IMG_8794.jpg){: .align-center}](/assets/images/2018/08/IMG_8794.jpg)
+Spicy beef.{% include figure image_path="/assets/images/2018/08/IMG_8794.jpg" caption="" %}
 
 Thanks Sarimah and David for a wonderful spicy hotpot dinner.
-[![](/assets/images/2018/08/39986768.jpg){: .align-center}](/assets/images/2018/08/39986768.jpg)
+{% include figure image_path="/assets/images/2018/08/39986768.jpg" caption="" %}
 
 Spicy fish
-[![](/assets/images/2018/08/IMG_1720-1.jpg){: .align-center}](/assets/images/2018/08/IMG_1720-1.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_1720-1.jpg" caption="" %}
 
 Spicy mapo tofu.
-[![](/assets/images/2018/08/IMG_1717.jpg){: .align-center}](/assets/images/2018/08/IMG_1717.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_1717.jpg" caption="" %}
 
-Assorted spicy food.[![](/assets/images/2018/08/P7170031.jpg){: .align-center}](/assets/images/2018/08/P7170031.jpg)
+Assorted spicy food.{% include figure image_path="/assets/images/2018/08/P7170031.jpg" caption="" %}
 
 One of the main attractions in Chengdu is the Giant Panda Breeding Research Base.
 
 Here is a Red Panda.
-[![](/assets/images/2018/08/P7190052.jpg){: .align-center}](/assets/images/2018/08/P7190052.jpg)
+{% include figure image_path="/assets/images/2018/08/P7190052.jpg" caption="" %}
 
 We were there the entire morning and this was the only photo I made of an animate panda.
 [
@@ -70,40 +70,40 @@ A highlight was the [Jinsha archaeological site](https://en.wikipedia.org/wiki/
 
 They chose to leave the site as it was found.
 
-[![](/assets/images/2018/08/IMG_8841.jpg){: .align-center}](/assets/images/2018/08/IMG_8841.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8841.jpg" caption="" %}
 
-[![](/assets/images/2018/08/IMG_8848.jpg){: .align-center}](/assets/images/2018/08/IMG_8848.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8848.jpg" caption="" %}
 
 There is also a museum where the stone, ivory, jade, bronze and gold artefacts were displayed.
-[![](/assets/images/2018/08/IMG_8868.jpg){: .align-center}](/assets/images/2018/08/IMG_8868.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8868.jpg" caption="" %}
 
 Shang Dynasty chariot.
-[![](/assets/images/2018/08/IMG_8899.jpg){: .align-center}](/assets/images/2018/08/IMG_8899.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8899.jpg" caption="" %}
 
 Probably the most well known exhibit, the [Golden Mask](http://www.chinadaily.com.cn/china/2012-05/20/content_15339234.htm).
-[![](/assets/images/2018/08/IMG_8891.jpg){: .align-center}](/assets/images/2018/08/IMG_8891.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8891.jpg" caption="" %}
 
 One thing that I like very much about Sichuan is that they still have a tea culture. This has vanished from places like Beijing and Shanghai. We had tea in this beautiful tea shop near the Jiasha site.
-[![](/assets/images/2018/08/IMG_8822.jpg){: .align-center}](/assets/images/2018/08/IMG_8822.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_8822.jpg" caption="" %}
 
 We then took the train back to Hong Kong for the PAPAA workshop.
 
-[![](/assets/images/2018/07/papaa2018.jpeg){: .align-center}](/assets/images/2018/07/papaa2018.jpeg)
+{% include figure image_path="/assets/images/2018/07/papaa2018.jpeg" caption="" %}
 
 The workshop was hosted by Prof Hayden So at HKU and we all thank him for a wonderful event with superb food.
-[![](/assets/images/2018/08/39988912.jpg){: .align-center}](/assets/images/2018/08/39988912.jpg)
+{% include figure image_path="/assets/images/2018/08/39988912.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7250090.jpg){: .align-center}](/assets/images/2018/08/P7250090.jpg)
+{% include figure image_path="/assets/images/2018/08/P7250090.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7250101.jpg){: .align-center}](/assets/images/2018/08/P7250101.jpg)
+{% include figure image_path="/assets/images/2018/08/P7250101.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7250092.jpg){: .align-center}](/assets/images/2018/08/P7250092.jpg)
+{% include figure image_path="/assets/images/2018/08/P7250092.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7250091.jpg){: .align-center}](/assets/images/2018/08/P7250091.jpg)
+{% include figure image_path="/assets/images/2018/08/P7250091.jpg" caption="" %}
 
-[![](/assets/images/2018/08/P7250099.jpg){: .align-center}](/assets/images/2018/08/P7250099.jpg)
+{% include figure image_path="/assets/images/2018/08/P7250099.jpg" caption="" %}
 
 One of the afternoons, I went to Shenzhen to visit [CTaccel](http://www.ct-accel.com/home-2/).
-[![](/assets/images/2018/08/IMG_1774-1.jpg){: .align-center}](/assets/images/2018/08/IMG_1774-1.jpg)
+{% include figure image_path="/assets/images/2018/08/IMG_1774-1.jpg" caption="" %}
 
 I often get asked which camera I use. For this post, it was a mix of iPhone, Xiaomi 6 pro phone, Canon Ixus S120 and Olympus E-PM2. It is usually a matter of convenience as I often find it hard to tell which photo was taken with what.

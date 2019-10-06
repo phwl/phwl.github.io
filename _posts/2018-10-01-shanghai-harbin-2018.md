@@ -16,41 +16,41 @@ Had a short holiday prior to giving my [2018 Reconfigurable Computing course](ht
 
 This is the street scene just outside the gates of HIT.
 
-[![](/assets/images/2018/10/IMG_9441.jpg){: .align-center}](/assets/images/2018/10/IMG_9441.jpg)
+{% include figure image_path="/assets/images/2018/10/IMG_9441.jpg" caption="" %}
 
 <!-- more -->
 
-Our Uncle Fred, who lives in Shanghai, kindly took us to the new [Guangfulin](https://en.wikipedia.org/wiki/Guangfulin) site in the Songjiang district.[![](/assets/images/2018/10/IMG_9187.jpg){: .align-center}](/assets/images/2018/10/IMG_9187.jpg)
+Our Uncle Fred, who lives in Shanghai, kindly took us to the new [Guangfulin](https://en.wikipedia.org/wiki/Guangfulin) site in the Songjiang district.{% include figure image_path="/assets/images/2018/10/IMG_9187.jpg" caption="" %}
 
-Rice bubbles with salty egg.[![](/assets/images/2018/10/IMG_9223.jpg){: .align-center}](/assets/images/2018/10/IMG_9223.jpg)Eel.
-[![](/assets/images/2018/10/IMG_9222.jpg){: .align-center}](/assets/images/2018/10/IMG_9222.jpg)
+Rice bubbles with salty egg.{% include figure image_path="/assets/images/2018/10/IMG_9223.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/10/IMG_9222.jpg" caption="" %}
 
-After dinner we went to buy more food.[![](/assets/images/2018/10/IMG_9233.jpg){: .align-center}](/assets/images/2018/10/IMG_9233.jpg)
+After dinner we went to buy more food.{% include figure image_path="/assets/images/2018/10/IMG_9233.jpg" caption="" %}
 
-The following day we sent to my favourite restaurant in Shanghai for crab-roe noodles that I wrote about [here](http://phwl.org/shanghai-2018/).[![](/assets/images/2018/10/IMG_9271.jpg){: .align-center}](/assets/images/2018/10/IMG_9271.jpg)
+The following day we sent to my favourite restaurant in Shanghai for crab-roe noodles that I wrote about [here](http://phwl.org/shanghai-2018/).{% include figure image_path="/assets/images/2018/10/IMG_9271.jpg" caption="" %}
 
-[![](/assets/images/2018/10/IMG_9268.jpg){: .align-center}](/assets/images/2018/10/IMG_9268.jpg)
+{% include figure image_path="/assets/images/2018/10/IMG_9268.jpg" caption="" %}
 
-One other morning we went for breakfast in a fusion old/new Shanghai place for sticky rice and bean curd.[![](/assets/images/2018/10/IMG_9286.jpg){: .align-center}](/assets/images/2018/10/IMG_9286.jpg)At the coffee shop, this couple was wearing matching T-shirts and shoes.[
+One other morning we went for breakfast in a fusion old/new Shanghai place for sticky rice and bean curd.{% include figure image_path="/assets/images/2018/10/IMG_9286.jpg" caption="" %}
 ![](/assets/images/2018/10/IMG_9288.jpg)](/assets/images/2018/10/IMG_9288.jpg)
 
-A majong desert.[![](/assets/images/2018/10/IMG_9291.jpg){: .align-center}](/assets/images/2018/10/IMG_9291.jpg)
+A majong desert.{% include figure image_path="/assets/images/2018/10/IMG_9291.jpg" caption="" %}
 
 I happened to be there at the same time as the Shanghai Photofair, which was at the Shanghai Exhibition Center. I've never seen so many people carrying fancy cameras in the one place.
 
-[![](/assets/images/2018/10/IMG_9377.jpg){: .align-center}](/assets/images/2018/10/IMG_9377.jpg)
+{% include figure image_path="/assets/images/2018/10/IMG_9377.jpg" caption="" %}
 
-[![](/assets/images/2018/10/IMG_9383.jpg){: .align-center}](/assets/images/2018/10/IMG_9383.jpg)
+{% include figure image_path="/assets/images/2018/10/IMG_9383.jpg" caption="" %}
 
-Porsche was an exhibitor and they had my favourite car, the 356, on display there.[![](/assets/images/2018/10/IMG_9355.jpg){: .align-center}](/assets/images/2018/10/IMG_9355.jpg)
+Porsche was an exhibitor and they had my favourite car, the 356, on display there.{% include figure image_path="/assets/images/2018/10/IMG_9355.jpg" caption="" %}
 
-Here are some random photos of ladies walking around.[![](/assets/images/2018/10/IMG_9276.jpg){: .align-center}](/assets/images/2018/10/IMG_9276.jpg)
+Here are some random photos of ladies walking around.{% include figure image_path="/assets/images/2018/10/IMG_9276.jpg" caption="" %}
 
-Went to Nanking Impressions, which is always packed.[![](/assets/images/2018/10/IMG_9412.jpg){: .align-center}](/assets/images/2018/10/IMG_9412.jpg)
+Went to Nanking Impressions, which is always packed.{% include figure image_path="/assets/images/2018/10/IMG_9412.jpg" caption="" %}
 
-Harbin.[![](/assets/images/2018/10/IMG_2108.jpg){: .align-center}](/assets/images/2018/10/IMG_2108.jpg)
+Harbin.{% include figure image_path="/assets/images/2018/10/IMG_2108.jpg" caption="" %}
 
 Lamb chops, ribs and fish at a Russian restaurant in Harbin.[
-](/assets/images/2018/10/IMG_9426.jpg)[![](/assets/images/2018/10/IMG_9426.jpg){: .align-center}](/assets/images/2018/10/IMG_9426.jpg)
+](/assets/images/2018/10/IMG_9426.jpg){% include figure image_path="/assets/images/2018/10/IMG_9426.jpg" caption="" %}
 
-Beijing-style charcoal hotpot with Mongolian mutton.[![](/assets/images/2018/10/mmexport1538388775061.jpg){: .align-center}](/assets/images/2018/10/mmexport1538388775061.jpg)
+Beijing-style charcoal hotpot with Mongolian mutton.{% include figure image_path="/assets/images/2018/10/mmexport1538388775061.jpg" caption="" %}

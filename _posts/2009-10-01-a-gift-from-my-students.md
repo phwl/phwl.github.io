@@ -16,4 +16,4 @@ header:
 
 I was honoured to have received this pen from my ex-students at CUHK.
 
-[![](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg){: .align-center}](/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg)
+{% include figure image_path="/assets/images/2016/01/4201211301_58b7b50ef4_o.jpg" caption="" %}

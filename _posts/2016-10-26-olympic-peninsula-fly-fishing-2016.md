@@ -31,7 +31,7 @@ The Olympic Peninsula lies across Puget Sound from Seattle, WA.
 
 Flew with Guy from San Jose to Seattle-Tacoma, arriving at 9pm. Aaron picked us up and we hurried to Fred Meyer (a huge, city-like supermarket) near the airport to buy fishing licenses. After some difficulty (the girl didn’t know what to do with someone that didn’t have a social security number), we purchased our $40 3 day licenses. Then a 2 hour drive to Diamond Point near Sequim. We were also surprised by Ken presenting us with a conference gift, the FFF landing net.
 
-[![](/assets/images/2016/10/fff16-swag.jpg){: .align-center}](/assets/images/2016/10/fff16-swag.jpg)
+{% include figure image_path="/assets/images/2016/10/fff16-swag.jpg" caption="" %}
 
 Before we arrrived, Ken caught a sea run cutthroat. He also saw up close, but didn't hook a coho. He originally thought it was an early-stage male chum, but more likely a very advanced-age male coho. This fish pulled tight but didn't get hooked as Ken had a bent-over hook point, likely damaged while casting.
 
@@ -61,11 +61,11 @@ Had lunch at the 101 Brewery, the type of diner you would walk in wearing waders
 
 ![IMG_3754](/assets/images/2016/10/IMG_3754.jpg)
 
-[![](/assets/images/2016/10/IMG_3753.jpg){: .align-center}](/assets/images/2016/10/IMG_3753.jpg)
+{% include figure image_path="/assets/images/2016/10/IMG_3753.jpg" caption="" %}
 
 In an effort to fit in, I had something not available down under, the “Timberman Grilled Beef”: roast beef, green pepper, mushroom, onion and cheddar melted on a hoagie roll (which was excellent).
 
-[![](/assets/images/2016/10/IMG_3757.jpg){: .align-center}](/assets/images/2016/10/IMG_3757.jpg)
+{% include figure image_path="/assets/images/2016/10/IMG_3757.jpg" caption="" %}
 
 In the afternoon we fished the Quilcene River. Upon arriving at 2pm, a group that was spinning came out with 4 nice cohos. The water was a bit fast and there weren't many places to fish. Drifted a few flies but didn't catch anything.
 

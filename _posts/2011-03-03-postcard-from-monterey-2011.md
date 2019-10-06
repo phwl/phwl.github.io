@@ -12,4 +12,4 @@ header:
   teaser: /assets/images/2014/12/P1080702.jpg
 ---
 
-[![](/assets/images/2014/12/P1080702.jpg){: .align-center}](/assets/images/2014/12/P1080702.jpg)
+{% include figure image_path="/assets/images/2014/12/P1080702.jpg" caption="" %}

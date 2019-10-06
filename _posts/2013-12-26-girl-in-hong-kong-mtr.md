@@ -14,4 +14,4 @@ header:
   teaser: /assets/images/2018/10/soldierset-front.jpg
 ---
 
-[![](/assets/images/2013/12/f0075200.jpg){: .align-center}](/assets/images/2013/12/f0075200.jpg)
+{% include figure image_path="/assets/images/2013/12/f0075200.jpg" caption="" %}

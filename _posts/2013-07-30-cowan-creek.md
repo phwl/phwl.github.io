@@ -15,22 +15,22 @@ header:
 
 Photos from a short trip to Cowan Creek on a foggy morning. More after the jump.
 
-[![](/assets/images/2013/07/P7282832.jpg){: .align-center}](/assets/images/2013/07/P7282832.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282832.jpg" caption="" %}
 
 <!-- more -->
 
-[![](/assets/images/2013/07/P7282800.jpg){: .align-center}](/assets/images/2013/07/P7282800.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282800.jpg" caption="" %}
 
 First time I've seen a Hobie kayak with outboard! He wasn't going too fast.
 
-[![](/assets/images/2013/07/P7282828.jpg){: .align-center}](/assets/images/2013/07/P7282828.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282828.jpg" caption="" %}
 
-[![](/assets/images/2013/07/P7282826.jpg){: .align-center}](/assets/images/2013/07/P7282826.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282826.jpg" caption="" %}
 
-[![](/assets/images/2013/07/P7282809.jpg){: .align-center}](/assets/images/2013/07/P7282809.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282809.jpg" caption="" %}
 
 
 
-[![](/assets/images/2013/07/P7282819.jpg){: .align-center}](/assets/images/2013/07/P7282819.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282819.jpg" caption="" %}
 
-[![](/assets/images/2013/07/P7282837.jpg){: .align-center}](/assets/images/2013/07/P7282837.jpg)
+{% include figure image_path="/assets/images/2013/07/P7282837.jpg" caption="" %}

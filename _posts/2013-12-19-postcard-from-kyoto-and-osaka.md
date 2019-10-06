@@ -14,7 +14,7 @@ header:
 
 Following the [International Conference on Field Programmable Technology](http://www.icfpt.org) we spent some time in Kyoto and Osaka.
 
-[![](/assets/images/2013/12/PC123629.jpg){: .align-center}](/assets/images/2013/12/PC123629.jpg)
+{% include figure image_path="/assets/images/2013/12/PC123629.jpg" caption="" %}
 
 
 
@@ -24,7 +24,7 @@ Clear Water Temple is a World Heritage Site. Here are some schoolgirls playing w
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123659.jpg)
 
-Prayer cards.[![](/assets/images/2013/12/PC123629.jpg){: .align-center}](/assets/images/2013/12/PC123629.jpg)
+Prayer cards.{% include figure image_path="/assets/images/2013/12/PC123629.jpg" caption="" %}
 
 Nice hat.![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC123575.jpg)
 
@@ -40,9 +40,9 @@ This picture is actually quite misleading as autumn was long over.[![](http://ph
 
 We then took the bus to nearby Gion.
 
-[![](/assets/images/2013/12/PC123779.jpg){: .align-center}](/assets/images/2013/12/PC123779.jpg)
+{% include figure image_path="/assets/images/2013/12/PC123779.jpg" caption="" %}
 
-Many tourists enjoy dressing up in kimonos and taking selfies.[![](/assets/images/2013/12/PC123757.jpg){: .align-center}](/assets/images/2013/12/PC123757.jpg)
+Many tourists enjoy dressing up in kimonos and taking selfies.{% include figure image_path="/assets/images/2013/12/PC123757.jpg" caption="" %}
 
 Japanese marbled beef restaurant.
 

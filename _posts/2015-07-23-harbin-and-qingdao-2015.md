@@ -12,13 +12,13 @@ header:
   teaser: /assets/images/2015/07/P7170185.jpg
 ---
 
-[![](/assets/images/2015/07/P7170185.jpg){: .align-center}](/assets/images/2015/07/P7170185.jpg)
+{% include figure image_path="/assets/images/2015/07/P7170185.jpg" caption="" %}
 
 <!-- more -->Went to teach a [summer course in reconfigurable computing](http://www.ee.usyd.edu.au/people/philip.leong/hit-rc15.html) again at Harbin Institute of Technology (HIT) and to also participate in the Global Innovations Forum on Technology and Science there.
 
 A new coffee shop appeared which is pretty good.
 
-[![](/assets/images/2015/07/IMG_5382.jpg){: .align-center}](/assets/images/2015/07/IMG_5382.jpg)
+{% include figure image_path="/assets/images/2015/07/IMG_5382.jpg" caption="" %}
 
 Streets of Harbin.
 
@@ -28,7 +28,7 @@ Of course, Chinese cuisine is the first choice.
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2015/07/P7140158.jpg)
 
-[![](/assets/images/2015/07/P7140159.jpg){: .align-center}](/assets/images/2015/07/P7140159.jpg)
+{% include figure image_path="/assets/images/2015/07/P7140159.jpg" caption="" %}
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2015/07/P7140167.jpg)
 
@@ -48,14 +48,14 @@ Apart from excellent dumplings, it is worthwhile just for the translations.
 
 Visited the [Siberian Tiger Park](http://www.dongbeihu.net.cn/) again which is always amazing.
 
-[![](/assets/images/2015/07/P7140099.jpg){: .align-center}](/assets/images/2015/07/P7140099.jpg)
+{% include figure image_path="/assets/images/2015/07/P7140099.jpg" caption="" %}
 
 
-[![](/assets/images/2015/07/P7140086.jpg){: .align-center}](/assets/images/2015/07/P7140086.jpg)
+{% include figure image_path="/assets/images/2015/07/P7140086.jpg" caption="" %}
 
 After about 10 days in Harbin, went to Qingdao to give a talk at the [IEEE International Conference on Electronic Measurement and Instruments](http://www.icemi.cn/). Here is the view from my room on the 48th Floor of the Duoyuan Jinjiang Hotel.
 
-[![](/assets/images/2015/07/P7180194.jpg){: .align-center}](/assets/images/2015/07/P7180194.jpg)
+{% include figure image_path="/assets/images/2015/07/P7180194.jpg" caption="" %}
 
 Then some Qingdao food.
 

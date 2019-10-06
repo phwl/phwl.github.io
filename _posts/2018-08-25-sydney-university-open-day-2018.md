@@ -15,32 +15,32 @@ header:
   teaser: /assets/images/2018/08/img_1989.jpg
 ---
 
-[![](/assets/images/2018/08/img_1989.jpg){: .align-center}](/assets/images/2018/08/img_1989.jpg)
+{% include figure image_path="/assets/images/2018/08/img_1989.jpg" caption="" %}
 
 <!-- more -->
 
 Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO.
 
-[![](/assets/images/2018/08/0840252096_unknown.jpg){: .align-center}](/assets/images/2018/08/0840252096_unknown.jpg)
-[![](/assets/images/2018/08/40252176_unknown.jpg){: .align-center}](/assets/images/2018/08/40252176_unknown.jpg)
-[![](/assets/images/2018/08/IMG_1719.IMG_.jpg){: .align-center}](/assets/images/2018/08/IMG_1719.IMG_.jpg)
-[![](/assets/images/2018/08/IMG_1720.jpg){: .align-center}](/assets/images/2018/08/IMG_1720.jpg)
-[![](/assets/images/2018/08/IMG_1721.jpg){: .align-center}](/assets/images/2018/08/IMG_1721.jpg)
-[![](/assets/images/2018/08/IMG_1723.jpg){: .align-center}](/assets/images/2018/08/IMG_1723.jpg)
-[![](/assets/images/2018/08/IMG_1728.jpg){: .align-center}](/assets/images/2018/08/IMG_1728.jpg)
-[![](/assets/images/2018/08/IMG_1731.jpg){: .align-center}](/assets/images/2018/08/IMG_1731.jpg)
-[![](/assets/images/2018/08/IMG_1736.jpg){: .align-center}](/assets/images/2018/08/IMG_1736.jpg)
-[![](/assets/images/2018/08/img_1973.jpg){: .align-center}](/assets/images/2018/08/img_1973.jpg)
-[![](/assets/images/2018/08/img_1974.jpg){: .align-center}](/assets/images/2018/08/img_1974.jpg)
-[![](/assets/images/2018/08/img_1985.jpg){: .align-center}](/assets/images/2018/08/img_1985.jpg)
-[![](/assets/images/2018/08/img_1987.jpg){: .align-center}](/assets/images/2018/08/img_1987.jpg)
-[![](/assets/images/2018/08/img_1989.jpg){: .align-center}](/assets/images/2018/08/img_1989.jpg)
-[![](/assets/images/2018/08/img_1990.jpg){: .align-center}](/assets/images/2018/08/img_1990.jpg)
-[![](/assets/images/2018/08/img_1991.jpg){: .align-center}](/assets/images/2018/08/img_1991.jpg)
-[![](/assets/images/2018/08/img_1993.jpg){: .align-center}](/assets/images/2018/08/img_1993.jpg)
-[![](/assets/images/2018/08/img_1994.jpg){: .align-center}](/assets/images/2018/08/img_1994.jpg)
-[![](/assets/images/2018/08/qsolog.jpg){: .align-center}](/assets/images/2018/08/qsolog.jpg)
+{% include figure image_path="/assets/images/2018/08/0840252096_unknown.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/40252176_unknown.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1719.IMG_.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1720.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1721.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1723.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1728.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1731.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/IMG_1736.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1973.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1974.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1985.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1987.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1989.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1990.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1991.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1993.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/img_1994.jpg" caption="" %}
+{% include figure image_path="/assets/images/2018/08/qsolog.jpg" caption="" %}
 
 Here is the log, contacts include New Caledonia and New Zealand.
 
-[![](/assets/images/2018/08/qsolog.jpg){: .align-center}](/assets/images/2018/08/qsolog.jpg)
+{% include figure image_path="/assets/images/2018/08/qsolog.jpg" caption="" %}

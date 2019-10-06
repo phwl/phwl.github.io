@@ -15,13 +15,13 @@ header:
 
 Travelled to Shanghai to visit my collaborators at Fudan University over Easter 2017. I have written about my previous trips to Shanghai in [2014](http://phwl.org/london-shanghai-and-hong-kong-2014/), [2013](http://phwl.org/shanghai-april-2013/) and [2012](http://phwl.org/postcard-from-shanghai/).
 
-[![](/assets/images/2017/04/IMG_9415.jpg){: .align-center}](/assets/images/2017/04/IMG_9415.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_9415.jpg" caption="" %}
 
 <!-- more -->
 
 Left Sydney on Good Friday.
 
-[![](/assets/images/2017/04/P4140135.jpg){: .align-center}](/assets/images/2017/04/P4140135.jpg)
+{% include figure image_path="/assets/images/2017/04/P4140135.jpg" caption="" %}
 
 As usual, we stayed at Fudan University, Zhangjiang Campus.
 
@@ -33,9 +33,9 @@ Expert building.![](/assets/images/2017/04/IMG_5571.jpg)
 
 On the first day we went to the Qibao Ancient Town from the Northern Song Dynasty (960-1126) and situated on the Puhui River.
 
-[![](/assets/images/2017/04/IMG_5582.jpg){: .align-center}](/assets/images/2017/04/IMG_5582.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_5582.jpg" caption="" %}
 
-[![](/assets/images/2017/04/IMG_5591.jpg){: .align-center}](/assets/images/2017/04/IMG_5591.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_5591.jpg" caption="" %}
 
 Hip lady.
 
@@ -65,17 +65,17 @@ View from the window.![](/assets/images/2017/04/P4160192.jpg)
 
 Outside there were people making jewellery.
 
-[![](/assets/images/2017/04/P4160198.jpg){: .align-center}](/assets/images/2017/04/P4160198.jpg)
+{% include figure image_path="/assets/images/2017/04/P4160198.jpg" caption="" %}
 
 Lady in traditional dress.
 
-[![](/assets/images/2017/04/IMG_5650.jpg){: .align-center}](/assets/images/2017/04/IMG_5650.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_5650.jpg" caption="" %}
 
 Bored people on the subway.![](/assets/images/2017/04/IMG_5608.jpg)
 
 Dinner with students from Fudan.
 
-[![](/assets/images/2017/04/IMG_9411.jpg){: .align-center}](/assets/images/2017/04/IMG_9411.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_9411.jpg" caption="" %}
 
 A prototype of the new Apple bike.
 
@@ -118,15 +118,15 @@ Xiaolongbao.
 ![](/assets/images/2017/04/IMG_5614.jpg)
 
 Spicy beef noodles.
-[![](/assets/images/2017/04/IMG_5648.jpg){: .align-center}](/assets/images/2017/04/IMG_5648.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_5648.jpg" caption="" %}
 
 Burrito.
 
-[![](/assets/images/2017/04/IMG_5574.jpg){: .align-center}](/assets/images/2017/04/IMG_5574.jpg)
+{% include figure image_path="/assets/images/2017/04/IMG_5574.jpg" caption="" %}
 
 Soup dumplings.
 
-[![](/assets/images/2017/04/P4160185.jpg){: .align-center}](/assets/images/2017/04/P4160185.jpg)
+{% include figure image_path="/assets/images/2017/04/P4160185.jpg" caption="" %}
 
 Handmade noodles from Fudan's canteen.
 
