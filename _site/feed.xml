@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T17:11:37+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hong Kong and Shanghai Trip 2019</title><link href="http://localhost:4000/hkshanghai19/" rel="alternate" type="text/html" title="Hong Kong and Shanghai Trip 2019" /><published>2019-10-06T10:51:57+08:00</published><updated>2019-10-06T10:51:57+08:00</updated><id>http://localhost:4000/hkshanghai19</id><content type="html" xml:base="http://localhost:4000/hkshanghai19/">&lt;h2 id=&quot;shenzhen&quot;&gt;Shenzhen&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T21:27:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hong Kong and Shanghai Trip 2019</title><link href="http://localhost:4000/hkshanghai19/" rel="alternate" type="text/html" title="Hong Kong and Shanghai Trip 2019" /><published>2019-10-06T10:51:57+08:00</published><updated>2019-10-06T10:51:57+08:00</updated><id>http://localhost:4000/hkshanghai19</id><content type="html" xml:base="http://localhost:4000/hkshanghai19/">&lt;h2 id=&quot;shenzhen&quot;&gt;Shenzhen&lt;/h2&gt;
 &lt;p&gt;I always look forward to visiting Hong Kong and Shanghai.
 Here are some photos from the trip.&lt;/p&gt;
 
@@ -9,56 +9,90 @@ my ex-students, Haile Yu and Jackson Yeung. Shenzhen is an amazing
 city which only started being developed in the 1980s. This is the
 view from CTAccel.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1268.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1268.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/2019/10/IMG_1268.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      Shenzhen
+
+    &lt;/figcaption&gt;&lt;/figure&gt;
 
 &lt;p&gt;In the afternoon, Haile, Jackson and myself went to visit
 &lt;a href=&quot;http://corerain.com&quot;&gt;Corerain&lt;/a&gt;, founded by my collaborators,
 Prof Wayne Luk of Imperial College, Dr Xinyu Niu and 
 ex-student Dr Kuen Hung Tsoi.&lt;/p&gt;
 
-&lt;h2 id=&quot;hku-and-movertical&quot;&gt;HKU and Movertical&lt;/h2&gt;
+&lt;h2 id=&quot;hku-and-movertical&quot;&gt;HKU and MoVertical&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_4214.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_4214.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The next stop was Hong Kong University (HKU) to visit A/Prof Hayden
-So. He had arranged an excursion with his colleagues to Movertical,
+So. He had arranged an excursion with his colleagues to &lt;a href=&quot;http://moverticalfarm.com&quot;&gt;MoVertical&lt;/a&gt; (more information is available from &lt;a href=&quot;https://www.facebook.com/verticalfarmhongkong/&quot;&gt;their Facebook page&lt;/a&gt;,
 an urban farm based on stackable containers. It is a laboratory
 environment for testing ideas in sustainable farming and we were
 asked for suggestions to better automate the farm.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I was there to see if we can help monitor fish behaviour
 using machine learning.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/HrNJ5K1cTAE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;\&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1277.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1277.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Mr Arthur Lee, Founder, explaining the container system.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1286.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1286.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+One of the fish they farm is Australian Jade Perch.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1287.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1287.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Models of their containers.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1288.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1288.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1292.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1292.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1321.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1321.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Fish tanks. 
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1347.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1347.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+There are only 3 pumps in the entire farm and circulation is via gravity.
+&lt;/figcaption&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1321.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1321.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Some of their crops.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1356.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1356.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Filtering system.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1364.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1364.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Mr Yan explaining shellfish farming.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1373.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1373.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1375.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1375.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Control room.
+&lt;/figcaption&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Group photo.
+&lt;/figcaption&gt;
 
 &lt;p&gt;Also listened to jazz at Ned Kelly’s Last Stand. I always have an enjoyable time there.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/WJxrx42x6hI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;\&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/DSCF0215.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/DSCF0215.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -74,16 +108,19 @@ was tight security at the airport.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_4273.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_4273.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Here are some street photos from Shanghai.&lt;/p&gt;
+&lt;p&gt;Uncle kindly took us around Shanghai. Here are some street photos.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1396.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1396.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1393.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1393.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;figcaption style=&quot;text-align:center&quot;&gt;
 National Day in Shanghai
 &lt;/figcaption&gt;
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1393.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1393.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1407.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1407.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+Looks like the Bad Turtle got what it deserved.
+&lt;/figcaption&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_1408.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_1408.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -91,7 +128,12 @@ National Day in Shanghai
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/DSCF0268.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/DSCF0268.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/DSCF0269.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/DSCF0269.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Shenzhen I always look forward to visiting Hong Kong and Shanghai. Here are some photos from the trip.</summary></entry><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/DSCF0269.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/DSCF0269.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/images/2019/10/IMG_4373.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/10/IMG_4373.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figcaption style=&quot;text-align:center&quot;&gt;
+We are so far behind in Australia, buskers in China now use Alipay.
+&lt;/figcaption&gt;</content><author><name>phwl</name></author><summary type="html">Shenzhen I always look forward to visiting Hong Kong and Shanghai. Here are some photos from the trip.</summary></entry><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot;&gt;&lt;img src=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
