@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T22:45:19+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hong Kong and Shanghai Trip 2019</title><link href="http://localhost:4000/hkshanghai19/" rel="alternate" type="text/html" title="Hong Kong and Shanghai Trip 2019" /><published>2019-10-06T10:51:57+08:00</published><updated>2019-10-06T10:51:57+08:00</updated><id>http://localhost:4000/hkshanghai19</id><content type="html" xml:base="http://localhost:4000/hkshanghai19/">&lt;h2 id=&quot;shenzhen&quot;&gt;Shenzhen&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T22:53:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hong Kong and Shanghai Trip 2019</title><link href="http://localhost:4000/hkshanghai19/" rel="alternate" type="text/html" title="Hong Kong and Shanghai Trip 2019" /><published>2019-10-06T10:51:57+08:00</published><updated>2019-10-06T10:51:57+08:00</updated><id>http://localhost:4000/hkshanghai19</id><content type="html" xml:base="http://localhost:4000/hkshanghai19/">&lt;h2 id=&quot;shenzhen&quot;&gt;Shenzhen&lt;/h2&gt;
 &lt;p&gt;I always look forward to visiting Hong Kong and Shanghai.
 Here are some photos from the trip.&lt;/p&gt;
 
@@ -10,12 +10,13 @@ city which only started being developed in the 1980s. This is the
 view from CTAccel.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1268.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1268.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Shenzhen
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;In the afternoon, Haile, Jackson and myself went to visit
 &lt;a href=&quot;http://corerain.com&quot;&gt;Corerain&lt;/a&gt;, founded by my collaborators,
@@ -24,12 +25,13 @@ ex-student Dr Kuen Hung Tsoi.&lt;/p&gt;
 
 &lt;h2 id=&quot;hku-and-movertical&quot;&gt;HKU and MoVertical&lt;/h2&gt;
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_4214.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_4214.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;The next stop was Hong Kong University (HKU) to visit A/Prof Hayden
 So. He had arranged an excursion with his colleagues to &lt;a href=&quot;http://moverticalfarm.com&quot;&gt;MoVertical&lt;/a&gt; (more information is available from &lt;a href=&quot;https://www.facebook.com/verticalfarmhongkong/&quot;&gt;their Facebook page&lt;/a&gt;,
@@ -48,100 +50,112 @@ using machine learning.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1277.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1277.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Mr Arthur Lee, Founder, explaining the container system.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1286.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1286.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       One of the fish they farm is Australian Jade Perch.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1287.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1287.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Models of their containers.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1288.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1288.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1292.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1292.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Fish tanks.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1347.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1347.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       There are only 3 pumps in the entire farm and circulation is via gravity.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1321.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1321.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Some of their crops.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1356.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1356.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Filtering system.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1364.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1364.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Mr Yan explaining shellfish farming.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1373.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1373.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1375.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1375.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Control room.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/b5d52b2a-d264-46be-a920-8ea72214c68d.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Group photo.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Also listened to jazz at Ned Kelly’s Last Stand. I always have an enjoyable time there.&lt;/p&gt;
 
@@ -153,146 +167,163 @@ using machine learning.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/DSCF0215.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/DSCF0215.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;fudan-university-shanghai&quot;&gt;Fudan University, Shanghai&lt;/h2&gt;
 &lt;p&gt;Next stop was Fudan University. Due to the protests in Hong Kong, there
 was tight security at the airport.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1385.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1385.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1387.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1387.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;I gave a lecture entitled &lt;a href=&quot;/assets/talks/ml-multipliers19.pdf&quot;&gt;Multipliers for FPGA Machine Learning Applications&lt;/a&gt; at the State Key Laboratory of ASIC and System, hosted by Prof Lingli Wang.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_4273.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_4273.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Uncle kindly took us around Shanghai. Here are some street photos.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1396.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1396.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1393.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1393.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       National Day in Shanghai
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1407.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1407.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       Looks like the Bad Turtle got what it deserved.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_1408.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_1408.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/DSCF0253.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/DSCF0253.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/DSCF0268.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/DSCF0268.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/DSCF0269.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/DSCF0269.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/10/IMG_4373.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/10/IMG_4373.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       We are so far behind in Australia, buskers in China now use Alipay.
 
-    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Shenzhen I always look forward to visiting Hong Kong and Shanghai. Here are some photos from the trip.</summary></entry><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;figure class=&quot;&quot;&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Shenzhen I always look forward to visiting Hong Kong and Shanghai. Here are some photos from the trip.</summary></entry><entry><title type="html">Sydney University Open Day 2019</title><link href="http://localhost:4000/open-day-19/" rel="alternate" type="text/html" title="Sydney University Open Day 2019" /><published>2019-08-31T17:51:57+08:00</published><updated>2019-08-31T17:51:57+08:00</updated><id>http://localhost:4000/open-day-19</id><content type="html" xml:base="http://localhost:4000/open-day-19/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/openday-IMG_1248.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/openday-IMG_1250.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/openday-IMG_1252.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/openday-IMG_1252.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/openday-IMG_1262.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/openday-IMG_1262.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/openday-0.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/openday-0.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Setting up some new Ubuntu/NVIDIA machines</title><link href="http://localhost:4000/ubuntu-nvdia-19/" rel="alternate" type="text/html" title="Setting up some new Ubuntu/NVIDIA machines" /><published>2019-08-26T09:51:57+08:00</published><updated>2019-08-26T09:51:57+08:00</updated><id>http://localhost:4000/ubuntu-nvdia-19</id><content type="html" xml:base="http://localhost:4000/ubuntu-nvdia-19/">&lt;p&gt;Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Setting up some new Ubuntu/NVIDIA machines</title><link href="http://localhost:4000/ubuntu-nvdia-19/" rel="alternate" type="text/html" title="Setting up some new Ubuntu/NVIDIA machines" /><published>2019-08-26T09:51:57+08:00</published><updated>2019-08-26T09:51:57+08:00</updated><id>http://localhost:4000/ubuntu-nvdia-19</id><content type="html" xml:base="http://localhost:4000/ubuntu-nvdia-19/">&lt;p&gt;Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
 Dell UltraSharp U2518D monitor.&lt;/p&gt;
 
 &lt;p&gt;Here is how I configured the machine:&lt;/p&gt;
@@ -351,88 +382,102 @@ Technology)&lt;/li&gt;
 on the &lt;a href=&quot;https://www.facebook.com/ILLWeekend/&quot;&gt;International Lighthouse and Lightship Weekend&lt;/a&gt;. There are more photos at the &lt;a href=&quot;https://www.mwrs.org.au/2019/08/19/illw-2019-vk2mb-at-barrenjoey-lighthouse/&quot;&gt;MWRS writeup&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;[&lt;figure class=&quot;&quot;&gt;
-  &amp;lt;img src=&lt;/figure&gt;&lt;/p&gt;
+  &amp;lt;a href=&lt;/figure&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &quot;/assets/images/2019/08/IMG_4048.jpg&quot;
+&amp;gt;   &amp;lt;img src=
+
+  &quot;/assets/images/2019/08/IMG_4048.jpg&quot;
 
 alt=&quot;&quot;&amp;gt;
   
 &amp;lt;figcaption&amp;gt;
   
 
-&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;
+&amp;lt;/figcaption&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/DSC_5942.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/DSC_5942.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/DSC_5976.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/DSC_5976.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/DSC_5985.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/DSC_5985.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/08/IMG_1243.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/08/IMG_1243.jpeg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.</summary></entry><entry><title type="html">Hong Kong and Zhuhai 2019</title><link href="http://localhost:4000/hk-and-zhuhai19/" rel="alternate" type="text/html" title="Hong Kong and Zhuhai 2019" /><published>2019-06-29T06:17:43+08:00</published><updated>2019-06-29T06:17:43+08:00</updated><id>http://localhost:4000/hk-and-zhuhai19</id><content type="html" xml:base="http://localhost:4000/hk-and-zhuhai19/">&lt;p&gt;[&lt;figure class=&quot;&quot;&gt;
-  &amp;lt;img src=&lt;/figure&gt;&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.</summary></entry><entry><title type="html">Hong Kong and Zhuhai 2019</title><link href="http://localhost:4000/hk-and-zhuhai19/" rel="alternate" type="text/html" title="Hong Kong and Zhuhai 2019" /><published>2019-06-29T06:17:43+08:00</published><updated>2019-06-29T06:17:43+08:00</updated><id>http://localhost:4000/hk-and-zhuhai19</id><content type="html" xml:base="http://localhost:4000/hk-and-zhuhai19/">&lt;p&gt;[&lt;figure class=&quot;&quot;&gt;
+  &amp;lt;a href=&lt;/figure&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &quot;/assets/images/2019/07/IMG_1116-large.jpg&quot;
+&amp;gt;   &amp;lt;img src=
+
+  &quot;/assets/images/2019/07/IMG_1116-large.jpg&quot;
 
 alt=&quot;&quot;&amp;gt;
   
 &amp;lt;figcaption&amp;gt;
   
 
-&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;
+&amp;lt;/figcaption&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Hong Kong approach&lt;/p&gt;
 
 &lt;p&gt;[&lt;figure class=&quot;&quot;&gt;
-  &amp;lt;img src=&lt;/figure&gt;&lt;/p&gt;
+  &amp;lt;a href=&lt;/figure&gt;&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &quot;/assets/images/2019/07/DSCF0096.jpg&quot;
+&amp;gt;   &amp;lt;img src=
+
+  &quot;/assets/images/2019/07/DSCF0096.jpg&quot;
 
 alt=&quot;&quot;&amp;gt;
   
 &amp;lt;figcaption&amp;gt;
   
 
-&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;
+&amp;lt;/figcaption&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Hong Kong from Tsim Sha Tsui&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">[ &amp;lt;img src= &quot;/assets/images/2019/07/IMG_1116-large.jpg&quot; alt=&quot;&quot;&amp;gt; &amp;lt;figcaption&amp;gt; &amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt; Hong Kong approach</summary></entry><entry><title type="html">Visit to W1QG’s shack</title><link href="http://localhost:4000/visit-to-w1qg-shack/" rel="alternate" type="text/html" title="Visit to W1QG's shack" /><published>2019-06-29T06:17:43+08:00</published><updated>2019-06-29T06:17:43+08:00</updated><id>http://localhost:4000/visit-to-w1qg-shack</id><content type="html" xml:base="http://localhost:4000/visit-to-w1qg-shack/">&lt;p&gt;Chris Dick was kind enough to introduce me to his friend, Dick Benson
+&lt;p&gt;Hong Kong from Tsim Sha Tsui&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">[ &amp;lt;a href= &quot;/assets/images/2019/07/IMG_1116-large.jpg&quot; &amp;gt; &amp;lt;img src= &quot;/assets/images/2019/07/IMG_1116-large.jpg&quot; alt=&quot;&quot;&amp;gt; &amp;lt;figcaption&amp;gt; &amp;lt;/figcaption&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt; Hong Kong approach</summary></entry><entry><title type="html">Visit to W1QG’s shack</title><link href="http://localhost:4000/visit-to-w1qg-shack/" rel="alternate" type="text/html" title="Visit to W1QG's shack" /><published>2019-06-29T06:17:43+08:00</published><updated>2019-06-29T06:17:43+08:00</updated><id>http://localhost:4000/visit-to-w1qg-shack</id><content type="html" xml:base="http://localhost:4000/visit-to-w1qg-shack/">&lt;p&gt;Chris Dick was kind enough to introduce me to his friend, Dick Benson
 &lt;a href=&quot;https://www.qrz.com/db/W1QG/&quot;&gt;W1QG&lt;/a&gt;, a retired hardware development engineer. We went to visit his
 very impressive shack (which was not difficult to spot from the
 road).&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1033.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1033.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;This is a high frequency (HF) software defined radio of his own
 design, based on a Xilinx Spartan FPGA. For the signal processing
@@ -441,72 +486,80 @@ at
 &lt;a href=&quot;http://k6jca.blogspot.com/2017/02/an-fpga-sdr-hf-transceiver-part-1.html&quot;&gt;http://k6jca.blogspot.com/2017/02/an-fpga-sdr-hf-transceiver-part-1.html&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1014.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1014.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;On one side he had his radio gear, together with a very substantial
 collection of vintage test equipment.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1016.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1016.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1017.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1017.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1018.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1018.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1019.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1019.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1020.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1020.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1022.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1022.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;He told me this is the best amateur receiver for its time.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1030.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1030.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Not everyone has a Caesium frequency standard at home (in fact
 some countries don’t have one). Dick
@@ -514,49 +567,54 @@ picked this up, not working, for $300 and repaired it (had a screw
 loose). I later found out the original price was $32,000 which would have
 been enough to buy a house at the time.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1013.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1013.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;On the other side of the workshop was his mechanical stuff,
  including a Harley
 that he restored and lots of home made  radio controlled planes.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1023.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1023.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1027.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1027.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;This is an engine he made from scratch, using the mill in
 the photo below.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1028.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1028.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/IMG_1029.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/IMG_1029.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Chris Dick was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="http://localhost:4000/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-19T01:52:46+08:00</published><updated>2019-06-19T01:52:46+08:00</updated><id>http://localhost:4000/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="http://localhost:4000/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years.
 It produces good looking websites and is easy to install and maintain.
@@ -592,11 +650,14 @@ steps below.&lt;/p&gt;
 &lt;h2 id=&quot;install-minimal-mistakes-jekyll-theme&quot;&gt;Install minimal-mistakes-jekyll theme&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Jekyll is not compatible with the stupid Dropbox directory name &lt;code class=&quot;highlighter-rouge&quot;&gt;'Dropbox\ \(Sydney\ Uni\)/'&lt;/code&gt;, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up&lt;/li&gt;
-  &lt;li&gt;Make a copy of &lt;a href=&quot;https://github.com/mmistakes/mm-github-pages-starter&quot;&gt;https://github.com/mmistakes/mm-github-pages-starter&lt;/a&gt;, edit the _config.yml
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle
+  &lt;li&gt;Make a copy of &lt;a href=&quot;https://github.com/mmistakes/mm-github-pages-starter&quot;&gt;https://github.com/mmistakes/mm-github-pages-starter&lt;/a&gt;, edit the _config.yml&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle
 bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
   &lt;li&gt;To use the local server, type &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve --incremental&lt;/code&gt;
 and browse to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -658,6 +719,31 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;grid__wrapper&quot;&amp;gt;
 
 &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Make figures linked to the image&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&amp;lt;figure class=&quot;{{ include.class }}&quot;&amp;gt;
+  &amp;lt;a href=
+    {% if include.image_path contains &quot;://&quot; %}
+      &quot;{{ include.image_path }}&quot;
+    {% else %}
+      &quot;{{ include.image_path | relative_url }}&quot;
+    {% endif %}&amp;gt;
+  &amp;lt;img src=
+    {% if include.image_path contains &quot;://&quot; %}
+      &quot;{{ include.image_path }}&quot;
+    {% else %}
+      &quot;{{ include.image_path | relative_url }}&quot;
+    {% endif %}
+    alt=&quot;{% if include.alt %}{{ include.alt }}{% endif %}&quot;&amp;gt;
+  {% if include.caption %}
+    &amp;lt;figcaption&amp;gt;
+      {{ include.caption | markdownify | remove: &quot;&amp;lt;p&amp;gt;&quot; | remove: &quot;&amp;lt;/p&amp;gt;&quot; }}
+    &amp;lt;/figcaption&amp;gt;{% endif %}&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;To enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/latex.html&lt;/code&gt; with&lt;/li&gt;
@@ -790,12 +876,13 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 &lt;p&gt;I now realize how right he was. The etiquette of old age does not seem to have been written up, and we have to learn it the hard way. It depends on a basic realization, which takes time to adjust to. You must realize that, after reaching a certain age, you are no longer viewed as a person. You become an institution, and you are treated the way institutions are treated. You are expected to behave like a piece of period furniture, an architectural landmark, or an incunabulum.&lt;/p&gt;
 
 &lt;p&gt;It matters little whether you keep publishing or not. If your papers are no good, they will say, &lt;em&gt;“What did you expect? He is a fixture!”&lt;/em&gt; and if an occasional paper of yours is found to be interesting, they will say, &lt;em&gt;“What did you expect? He has been working at this all his life!”&lt;/em&gt; The only sensible response is to enjoy playing your newly-found role as an institution.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">Interesting talk by the late MIT mathematician and philosopher</summary></entry><entry><title type="html">Lake Tahoe 2019</title><link href="http://localhost:4000/lake-tahoe-2019/" rel="alternate" type="text/html" title="Lake Tahoe 2019" /><published>2019-05-28T04:40:43+08:00</published><updated>2019-05-28T04:40:43+08:00</updated><id>http://localhost:4000/lake-tahoe-2019</id><content type="html" xml:base="http://localhost:4000/lake-tahoe-2019/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6146.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6146.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Snaps from our trip to Lake Tahoe&lt;/p&gt;
 
@@ -804,98 +891,109 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 &lt;ul&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6101.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6101.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6111.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6111.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6109.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6109.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6172.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6172.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6134.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6134.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6146.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6146.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6113.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6113.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6185.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6185.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6188.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6188.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/06/DSCF6191.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/06/DSCF6191.jpg&quot; alt=&quot;&quot; /&gt;
   
 &lt;figcaption&gt;
       
 
-&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry><entry><title type="html">Sea lion, Santa Cruz Wharf</title><link href="http://localhost:4000/sea-lion-santa-cruz-wharf/" rel="alternate" type="text/html" title="Sea lion, Santa Cruz Wharf" /><published>2019-05-20T10:59:22+08:00</published><updated>2019-05-20T10:59:22+08:00</updated><id>http://localhost:4000/sea-lion-santa-cruz-wharf</id><content type="html" xml:base="http://localhost:4000/sea-lion-santa-cruz-wharf/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/05/DSCF6081.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/05/DSCF6081.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html"></summary></entry></feed>

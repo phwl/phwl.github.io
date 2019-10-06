@@ -1,0 +1,145 @@
+I"�#<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+It produces good looking websites and is easy to install and maintain.
+Unfortunately, it isn’t easy at all to backup the website, and the
+interface is all web-based meaning it is difficult to create
+scripts which update the website. The old website is <a href="http://phwl.org/blog">http://phwl.org/blog</a>
+and the new website can be viewed at <a href="https://phwl.github.io">https://phwl.github.io</a>.
+I will be switching them over at some point and moved the old
+domain to a spare <a href="http://uxa.apl.mybluehost.me/">http://uxa.apl.mybluehost.me/</a>.</p>
+
+<p>Most programmers use <a href="https://www.github.com">github</a> which offers
+<a href="https://pages.github.com">Github Pages</a> for website hosting.
+The advantages over Wordpress plus hosting are:</p>
+<ul>
+  <li>It is free.</li>
+  <li>Websites can be edited with a normal text editor.</li>
+  <li>It is hosted by Github so version control etc is integrated.</li>
+  <li>A local copy is available so scripts to automate updating the
+website etc are simple and changes can be made while offline.</li>
+  <li>It is easy to make backups.</li>
+  <li>Latex rendering is easy.</li>
+  <li>Markdown makes code blocks easier.</li>
+</ul>
+
+<p>I managed to move <a href="http://phwl.org">phwl.org</a> to Github under MacOS using the
+steps below.</p>
+
+<h2 id="install-jekyll">Install Jekyll</h2>
+<ul>
+  <li>Install ruby, rbenv, bundler and jekyll (I used homebrew) <a href="https://jekyllrb.com/docs/installation/macos/">https://jekyllrb.com/docs/installation/macos/</a></li>
+</ul>
+
+<h2 id="install-minimal-mistakes-jekyll-theme">Install minimal-mistakes-jekyll theme</h2>
+<ul>
+  <li>Jekyll is not compatible with the stupid Dropbox directory name <code class="highlighter-rouge">'Dropbox\ \(Sydney\ Uni\)/'</code>, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up</li>
+  <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
+bundle update
+</code></pre></div>    </div>
+  </li>
+  <li>To use the local server, type <code class="highlighter-rouge">bundle exec jekyll serve --incremental</code>
+and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
+</ul>
+
+<h2 id="convert-website">Convert website</h2>
+<ul>
+  <li>Use the Wordpress exporter to export old website in xml format (tried the Jekyll converter plugin but that doesn’t work for large websites). This just gives the content, without attachments etc. Then</li>
+  <li>Use <a href="https://github.com/thomasf/exitwp">exitwp</a> to convert Wordpress to Jekyll</li>
+  <li>Copy all the images and documents from the Wordpress site (<code class="highlighter-rouge">wp-content</code> directory) using <code class="highlighter-rouge">ftp</code>. I used <code class="highlighter-rouge">FileZilla</code> from the App store for this.</li>
+  <li>Copy the _posts directory from <code class="highlighter-rouge">exitwp</code> into the Jekyll website.</li>
+  <li>Copy wp-content files into <code class="highlighter-rouge">assets/images</code> on the Jekyll website.</li>
+  <li>To make publically available, type <code class="highlighter-rouge">bundle exec jekyll build</code> and then push the files up to Github (the repository is <a href="https://github.com/phwl/phwl.github.io">https://github.com/phwl/phwl.github.io</a>)</li>
+</ul>
+
+<h2 id="fix-_posts-and-_pages">Fix <code class="highlighter-rouge">_posts</code> and <code class="highlighter-rouge">_pages</code></h2>
+<ul>
+  <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
+import re
+
+for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
+    line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
+    print(line)
+</code></pre></div></div>
+<ul>
+  <li>I later added links to the original image with this script.</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
+import re
+
+for line in fileinput.input(inplace=1, backup='.bak'):
+    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
+    print(line)
+</code></pre></div></div>
+<ul>
+  <li>and then changed them yet again to use the include form</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
+
+</code></pre></div></div>
+
+<ul>
+  <li>I also used wide pages <a href="https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/">https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/</a></li>
+</ul>
+
+<h2 id="customise-website">Customise website</h2>
+<ul>
+  <li>Since I wanted teaser images appearing on the front page, I put a copy of <a href="https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html">https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html</a> in <code class="highlighter-rouge">_includes/archive-single.html</code></li>
+  <li>To use a custom domain <a href="https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site">https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site</a></li>
+  <li>To use single pages without sidebar <a href="https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064">https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064</a></li>
+  <li>To change home to a grid layout I changed home.html so the loop is in a grid wrapper</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
+
+&lt;/div&gt;
+</code></pre></div></div>
+<ul>
+  <li>Make figures linked to the image</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;figure class=""&gt;
+  &lt;a href=
+    
+      ""
+    &gt;
+  &lt;img src=
+    
+      ""
+    
+    alt=""&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+</code></pre></div></div>
+<ul>
+  <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"&gt;
+&lt;/script&gt;
+
+</code></pre></div></div>
+<p>This is similar to the approach in <a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a>.</p>
+
+<h2 id="links">Links</h2>
+<p>I found the following sites helpful:</p>
+<ul>
+  <li><a href="https://www.alexdglover.com/the-move-to-jekyll/">https://www.alexdglover.com/the-move-to-jekyll/</a></li>
+  <li><a href="http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/">http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/</a></li>
+  <li><a href="https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image">https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image</a></li>
+  <li><a href="https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/">https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/</a></li>
+  <li><a href="https://github.com/merlos/jekyll-auto-image">https://github.com/merlos/jekyll-auto-image</a></li>
+  <li><a href="http://lanyon.getpoole.com/">http://lanyon.getpoole.com/</a></li>
+  <li><a href="http://drjekyllthemes.github.io/">http://drjekyllthemes.github.io/</a></li>
+  <li><a href="https://gykovacsblog.wordpress.com/tag/jekyll-scholar/">https://gykovacsblog.wordpress.com/tag/jekyll-scholar/</a></li>
+  <li><a href="https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#">https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#</a></li>
+  <li><a href="https://github.com/alshedivat/al-folio">https://github.com/alshedivat/al-folio</a></li>
+  <li><a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a></li>
+</ul>
+:ET

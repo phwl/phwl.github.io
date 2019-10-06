@@ -41,10 +41,12 @@ steps below.
 ## Install minimal-mistakes-jekyll theme
   * Jekyll is not compatible with the stupid Dropbox directory name `'Dropbox\ \(Sydney\ Uni\)/'`, and I don't think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up
   * Make a copy of <https://github.com/mmistakes/mm-github-pages-starter>, edit the _config.yml
+
 ~~~~
 bundle
 bundle update
 ~~~~
+
   * To use the local server, type `bundle exec jekyll serve --incremental`
 and browse to `localhost:4000`.
 
@@ -100,6 +102,30 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 {% endfor %}
 </div>
 ```
+  * Make figures linked to the image
+
+~~~~
+{% raw %}
+<figure class="{{ include.class }}">
+  <a href=
+    {% if include.image_path contains "://" %}
+      "{{ include.image_path }}"
+    {% else %}
+      "{{ include.image_path | relative_url }}"
+    {% endif %}>
+  <img src=
+    {% if include.image_path contains "://" %}
+      "{{ include.image_path }}"
+    {% else %}
+      "{{ include.image_path | relative_url }}"
+    {% endif %}
+    alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+  {% if include.caption %}
+    <figcaption>
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    </figcaption>{% endif %}</a></figure>
+{% endraw %}
+~~~~
   * To enable $$\LaTeX$$ rendering with mathjax (if it didn't work the LaTeX symbol would not have appeared), I created a file in `_includes/latex.html` with
 
 ~~~~

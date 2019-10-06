@@ -225,11 +225,14 @@ steps below.</p>
 <h2 id="install-minimal-mistakes-jekyll-theme">Install minimal-mistakes-jekyll theme</h2>
 <ul>
   <li>Jekyll is not compatible with the stupid Dropbox directory name <code class="highlighter-rouge">'Dropbox\ \(Sydney\ Uni\)/'</code>, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up</li>
-  <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
+  <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
 bundle update
-</code></pre></div>    </div>
-  </li>
+</code></pre></div></div>
+
+<ul>
   <li>To use the local server, type <code class="highlighter-rouge">bundle exec jekyll serve --incremental</code>
 and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 </ul>
@@ -291,6 +294,31 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
 
 &lt;/div&gt;
+</code></pre></div></div>
+<ul>
+  <li>Make figures linked to the image</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;figure class="{{ include.class }}"&gt;
+  &lt;a href=
+    {% if include.image_path contains "://" %}
+      "{{ include.image_path }}"
+    {% else %}
+      "{{ include.image_path | relative_url }}"
+    {% endif %}&gt;
+  &lt;img src=
+    {% if include.image_path contains "://" %}
+      "{{ include.image_path }}"
+    {% else %}
+      "{{ include.image_path | relative_url }}"
+    {% endif %}
+    alt="{% if include.alt %}{{ include.alt }}{% endif %}"&gt;
+  {% if include.caption %}
+    &lt;figcaption&gt;
+      {{ include.caption | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" }}
+    &lt;/figcaption&gt;{% endif %}&lt;/a&gt;&lt;/figure&gt;
+
 </code></pre></div></div>
 <ul>
   <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
@@ -445,10 +473,12 @@ Here are some photos from the trip.
     <p class="archive__item-excerpt" itemprop="description">
   
   
+  
     
       
 
     
+
 </p>
   </article>
 </div>
