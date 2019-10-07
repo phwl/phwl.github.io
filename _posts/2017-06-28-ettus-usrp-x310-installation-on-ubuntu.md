@@ -14,11 +14,6 @@ categories:
 
 ## Vivado 2017.4 Version (Aug 2018)
 
-
-
-
-
-
   * Install Xilinx Vivado 2017.4 from https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2017-4.html
 
 

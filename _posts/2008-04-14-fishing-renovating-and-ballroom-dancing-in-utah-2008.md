@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2015/12/p1000341.jpg
 ---
 
-**Introduction**
+## Introduction
 
 Some sections of the Green River in Utah have 22,000 trout per mile and it is arguably the best trout fishery in the US. When Prof Brent Nelson invited me to fish there it didn't take me long to accept.
 
@@ -30,7 +30,7 @@ Salt Lake City (SLC) is a vast desert surrounded by the rocky mountains. At this
 
 Upon arriving at Brent's house, we got straight into renovating his bathroom. This was necessary as they wanted to use it during my visit. Academics are theorists and shouldn't be allowed to do anything too practical. Yogi Berra said, "in theory there is no difference between theory and practice, in practice there is." All of the bathroom's electrical appliances worked properly except one set of lights. Also earlier, a large spark was inadvertently generated due to a short. After much bumbling around, we isolated the problem to a loose wire deep in the guts of the wiring. Quietly pleased that nobody got electrocuted, I helped Brent fix the rest of the bathroom, hang the door and everything was operational.
 
-**BYU and the Trip to the Green River**
+## BYU and the Trip to the Green River
 
 The next day, I gave a seminar at Brigham Young University (BYU). One of the best audiences I've spoken to, they asked very good questions about our work. Anyway, completed my talk without embarrassing myself too much and shortly after, we embarked on the 4 hour drive to the Green River.
 
@@ -56,7 +56,7 @@ Here is a picture of where we stayed, we don't get that much snow when we go sk
 
 ![p1000295](/assets/images/2015/12/p1000295.jpg)
 
-**Green River**
+## Green River
 
 Didn't sleep well that night, dreamt I lost my fishing rod. The next day we were at the Flaming Gorge boat ramp on the Green River. The weather was far from perfect. It was snowing, we had a force 10 gale and it was cold enough for the line to freeze in the guides. Even wearing all the clothes I brought (gloves, thermals, shirt, fleece and parka), I was still cold.
 
@@ -102,7 +102,7 @@ Ryan was a fantastic guide in all respects, a great fisherman, friendly
 and willing to give advice. He would often row upstream so we could
 fish the good drifts several times and always had the boat in the right position. He has the river completely wired and predicted everything that was going to happen before it actually did. His clients have never been skunked guiding on the Green, an amazing record considering the wide variety of abilities with which he must have to deal. If you ever fish the Green, I would highly recommend him.
 
-**Provo River**
+## Provo River
 
 The next morning we were to fish the Provo River which only has 3000 fish per mile. This beautiful river is right next to Brent's house and is smaller than the Green. We were expecting it to be
 a circus with lots people as it was a Saturday. It turned out that there were not very many at all but we later found that the highway leading in was closed due to a truck accident.

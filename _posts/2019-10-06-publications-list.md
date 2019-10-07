@@ -7,7 +7,6 @@ categories:
   - academia
   - latex
 use_math: true
-toc: true
 classes: wide
 header:
   teaser: https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/320px-LaTeX_logo.svg.png

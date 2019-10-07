@@ -14,6 +14,7 @@ header:
   teaser: /assets/images/1991/08/plbarra1-horiz.jpg
 ---
 
+## Introduction 
 {% include figure image_path="/assets/images/1991/08/plbarra1.jpg" caption="Barramundi" %}
 
 The Northern Territories (NT) of Australia is best known by fisherman for excellent barramundi fishing. The barramundi (or barra) can grow to enormous sizes (> 100 lb), but anything over 1m is considered a trophy fish. Barramundi are much like the American bass, they hide around snags and ambush their prey. They can be caught in both fresh and saltwater although the saltwater barramundi are usually better to eat. The barramundi is one of the premier Australian sportfish as when hooked it will usually make several headshaking jumps several feet about the water. For its size, it does not have the line pulling ability of fish such as tarpon, but the spectacular jumps, its predator instincts and its delicious flesh make up for this.
