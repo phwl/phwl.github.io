@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2013/12/PC2844061.jpg
 ---
 
-Our trips to the Hawkesbury River have become an annual event ([2012](http://www.phwl.org/hawkesbury-river-2012-2/), [2011](http://www.phwl.org/hawkesbury-river-2011/)).
+Our trips to the Hawkesbury River have become an annual event.
 
 ![OLYMPUS DIGITAL CAMERA](/assets/images/2013/12/PC2844061.jpg)
 

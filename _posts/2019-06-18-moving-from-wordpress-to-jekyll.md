@@ -41,10 +41,10 @@ steps below.
   * Jekyll is not compatible with the stupid Dropbox directory name `'Dropbox\ \(Sydney\ Uni\)/'`, and I don't think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up
   * Make a copy of <https://github.com/mmistakes/mm-github-pages-starter>, edit the _config.yml
 
-~~~~
+``` ruby
 bundle
 bundle update
-~~~~
+``` 
 
   * To use the local server, type `bundle exec jekyll serve --incremental`
 and browse to `localhost:4000`.
@@ -60,31 +60,32 @@ and browse to `localhost:4000`.
 ## Fix `_posts` and `_pages`
   * This took the most time. The main changes I needed to do was to fix the headers: remove the old `link` header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like
 
-~~~~
+``` python
 import fileinput
 import re
 
 for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
     line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
     print(line)
-~~~~
+```
+
  * I later added links to the original image with this script.
 
-~~~~
+``` python
 import fileinput
 import re
 
 for line in fileinput.input(inplace=1, backup='.bak'):
     line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
     print(line)
-~~~~
+```
  * and then changed them yet again to use the include form
 
-~~~~
+``` liquid
 {% raw %}
 {% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
 {% endraw %}
-~~~~
+```
 
  * I also used wide pages <https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/>
 
@@ -94,17 +95,19 @@ for line in fileinput.input(inplace=1, backup='.bak'):
   * To use single pages without sidebar <https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064>
   * To change home to a grid layout I changed home.html so the loop is in a grid wrapper
 
-```
+{% raw %}
+``` liquid
 <div class="grid__wrapper">
 {% for post in paginator.posts %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
 </div>
 ```
+{% endraw %}
   * Make figures linked to the image
 
-~~~~
 {% raw %}
+``` liquid
 <figure class="{{ include.class }}">
   <a href=
     {% if include.image_path contains "://" %}
@@ -123,17 +126,19 @@ for line in fileinput.input(inplace=1, backup='.bak'):
     <figcaption>
       {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
     </figcaption>{% endif %}</a></figure>
+```
 {% endraw %}
-~~~~
   * To enable $$\LaTeX$$ rendering with mathjax (if it didn't work the LaTeX symbol would not have appeared), I created a file in `_includes/latex.html` with
 
-~~~~
+{% raw %}
+``` liquid
 {% if page.use_math %}
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 {% endif %}
-~~~~
+```
+{% endraw %}
 This is similar to the approach in <https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/>.
 
 ## Links

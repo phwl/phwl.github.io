@@ -15,9 +15,9 @@ header:
 
 {% include figure image_path="/assets/images/2017/01/IMG_5383.jpg" caption="" %}
 
-<!-- more -->
-
 Went on a 2 night, 3 day trip to Mooney Mooney. Pretty much the same thing as previous trips except we caught larger fish than usual, with Warren landing this nice flathead on the last day (which was the Chinese New Year).
+
+<!-- more -->
 
 {% include figure image_path="/assets/images/2017/01/IMG_5393.jpg" caption="" %}
 

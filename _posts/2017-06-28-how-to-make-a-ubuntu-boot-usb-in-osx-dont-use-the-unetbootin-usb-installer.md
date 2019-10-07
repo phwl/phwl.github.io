@@ -31,24 +31,26 @@ The best way to do it is:
 
   1. Insert your usb and determine device using
 
-
-    <code>diskutil list</code>
-
+``` sh
+    diskutil list
+```
 
 In my case it was /dev/disk2
 
 
   2. Unmount using
 
-
-    <code>diskutil unmountDisk /dev/disk2</code>
-
+``` sh
+    diskutil unmountDisk /dev/disk2
+```
 
 
   3.  (BE CAREFUL YOU GET THE DISK NUMBER RIGHT IN THIS STEP) Assuming the ubuntu iso file is XX.iso, write to usb using
 
 
-    <code>sudo dd if=XX.iso of=/dev/rdisk2 bs=4m</code>
+``` sh
+    sudo dd if=XX.iso of=/dev/rdisk2 bs=4m
+```
 
 
 

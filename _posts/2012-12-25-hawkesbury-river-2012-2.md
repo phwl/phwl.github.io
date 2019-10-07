@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2012/12/PC210130.jpg
 ---
 
-In what has turned out to become an annual event (click on [this link](http://www.phwl.org/hawkesbury-river-2011/) for the 2011 version), went on a 4 day camping trip to the Hawkesbury River with my high-school friend, Warren. We camp on a beach which is only accessible by boat.
+In what has turned out to become an annual event, went on a 4 day camping trip to the Hawkesbury River with my high-school friend, Warren. We camp on a beach which is only accessible by boat.
 
 {% include figure image_path="/assets/images/2012/12/PC210130.jpg" caption="" %}
 

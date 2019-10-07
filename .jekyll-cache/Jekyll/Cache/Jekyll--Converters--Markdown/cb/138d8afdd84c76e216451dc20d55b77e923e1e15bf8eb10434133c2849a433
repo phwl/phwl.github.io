@@ -1,4 +1,4 @@
-I"Î%<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"Ã/<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isnâ€™t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -35,8 +35,8 @@ steps below.</p>
   <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
-bundle update
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bundle</span>
+<span class="n">bundle</span> <span class="n">update</span>
 </code></pre></div></div>
 
 <ul>
@@ -59,30 +59,31 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
   <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
-import re
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
-    line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
-    print(line)
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="s">r'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
+
 <ul>
   <li>I later added links to the original image with this script.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
-import re
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-for line in fileinput.input(inplace=1, backup='.bak'):
-    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
-    print(line)
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!</span><span class="err">\</span><span class="s">[(.*)</span><span class="err">\</span><span class="s">]</span><span class="err">\</span><span class="s">((.*)</span><span class="err">\</span><span class="s">)</span><span class="err">\</span><span class="s">{: .align-center</span><span class="err">\</span><span class="s">}'</span><span class="p">,</span><span class="s">r'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 <ul>
   <li>and then changed them yet again to use the include form</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">figure</span><span class="w"> </span><span class="nx">image_path="/assets/images/2019/10/IMG_1268.jpg</span><span class="s2">" caption="</span><span class="nv">Shenzhen</span>"<span class="w"> </span><span class="p">%}</span>
 
 </code></pre></div></div>
 
@@ -98,7 +99,7 @@ for line in fileinput.input(inplace=1, backup='.bak'):
   <li>To change home to a grid layout I changed home.html so the loop is in a grid wrapper</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
 
 &lt;/div&gt;
 </code></pre></div></div>

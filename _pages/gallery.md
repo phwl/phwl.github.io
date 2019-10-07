@@ -14,6 +14,8 @@ landscapes:
     url: /assets/gallery/landscape/hkaerial04.jpg
   - image_path: /assets/gallery/landscape/kirribilli10.jpg
     url: /assets/gallery/landscape/kirribilli10.jpg
+  - image_path: /assets/gallery/landscape/DSC_5806.jpg
+    url: /assets/gallery/landscape/DSC_5806.jpg
   - image_path: /assets/gallery/landscape/circularquay16.jpg
     url: /assets/gallery/landscape/circularquay16.jpg
   - image_path: /assets/gallery/landscape/ballshead16.jpg

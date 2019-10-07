@@ -22,7 +22,7 @@ which (unlike pandoc) understands BibTex bst files and can output
 markdown. This plus a little bit of python allowed me to generate
 papers.md directly from my .bib files.
 
-~~~~
+``` python
 import subprocess
 import re
 import os
@@ -72,4 +72,4 @@ with open("papers.md", "w") as out_file:
             text = text_file.read()
             print("# {}\n".format(bibs[k]), file=out_file)
             print(text, file=out_file)
-~~~~
+```

@@ -1,0 +1,62 @@
+I"�<p>For many years I’ve been using a convoluted process to generate my 
+<a href="/assets/papers">publications list</a> from separate BibTex files for
+journals, conferences, books, patents, etc. I thought I could do it
+using <a href="https://pandoc.org/">pandoc</a>, but it doesn’t appear that it
+parses bibtex files correctly.</p>
+
+<p>After quite a lot of searching, I found <a href="https://pybtex.org/">pybtex</a> 
+which (unlike pandoc) understands BibTex bst files and can output
+markdown. This plus a little bit of python allowed me to generate
+papers.md directly from my .bib files.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># different bibliography categories with their names
+</span><span class="n">bibs</span> <span class="o">=</span> <span class="p">{</span><span class="s">'journal'</span><span class="p">:</span> <span class="s">'Journals'</span><span class="p">,</span>
+    <span class="s">'conference'</span><span class="p">:</span> <span class="s">'Conference Papers'</span><span class="p">,</span>
+    <span class="s">'patent'</span><span class="p">:</span> <span class="s">'Patents'</span><span class="p">,</span>
+    <span class="s">'book'</span><span class="p">:</span> <span class="s">'Books'</span><span class="p">,</span>
+    <span class="s">'bookchap'</span><span class="p">:</span> <span class="s">'Chapters in Books'</span><span class="p">,</span>
+    <span class="s">'editor'</span><span class="p">:</span> <span class="s">'Edited Books'</span><span class="p">,</span>
+    <span class="s">'misc'</span><span class="p">:</span> <span class="s">'Miscellaneous'</span><span class="p">}</span>
+
+<span class="n">pretex</span> <span class="o">=</span> <span class="s">"""</span><span class="se">\\</span><span class="s">documentclass{article}
+</span><span class="se">\\</span><span class="s">usepackage{natbib}
+</span><span class="se">\\</span><span class="s">usepackage{hyperref}
+</span><span class="si">% </span><span class="s">whatever you need here, basically a good idea is to use your real thesis header
+</span><span class="se">\\</span><span class="s">begin{document}
+</span><span class="se">\\</span><span class="s">nocite{*}
+</span><span class="se">\\</span><span class="s">bibliographystyle{unsrt}
+"""</span>
+
+<span class="c1"># create the .tex and .md files for each category
+</span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">bibs</span><span class="p">:</span>
+    <span class="n">intex</span> <span class="o">=</span> <span class="n">pretex</span> <span class="o">+</span> <span class="s">'</span><span class="se">\\</span><span class="s">bibliography{../'</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="s">'}</span><span class="se">\n\\</span><span class="s">end{document}</span><span class="se">\n</span><span class="s">'</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="s">".tex"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">tex_file</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">intex</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">tex_file</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">"latex {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">"bibtex {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s">"latex {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="s">"pybtex --style-language python --output-backend markdown {}"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+
+<span class="n">out</span> <span class="o">=</span> <span class="s">"""---
+comments: false
+permalink: papers
+slug: papers
+title: Publications
+classes: wide
+---
+"""</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"papers.md"</span><span class="p">,</span> <span class="s">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">bibs</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="s">".md"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">text_file</span><span class="p">:</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">text_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"# {}</span><span class="se">\n</span><span class="s">"</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">bibs</span><span class="p">[</span><span class="n">k</span><span class="p">]),</span> <span class="nb">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="nb">file</span><span class="o">=</span><span class="n">out_file</span><span class="p">)</span>
+</code></pre></div></div>
+:ET

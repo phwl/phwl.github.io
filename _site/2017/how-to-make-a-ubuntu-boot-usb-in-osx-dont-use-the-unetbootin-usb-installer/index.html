@@ -200,7 +200,7 @@
   <li>Insert your usb and determine device using</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;diskutil list&lt;/code&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    diskutil list
 </code></pre></div></div>
 
 <p>In my case it was /dev/disk2</p>
@@ -209,14 +209,14 @@
   <li>Unmount using</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;diskutil unmountDisk /dev/disk2&lt;/code&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    diskutil unmountDisk /dev/disk2
 </code></pre></div></div>
 
 <ol>
   <li> (BE CAREFUL YOU GET THE DISK NUMBER RIGHT IN THIS STEP) Assuming the ubuntu iso file is XX.iso, write to usb using</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;sudo dd if=XX.iso of=/dev/rdisk2 bs=4m&lt;/code&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nb">sudo dd </span><span class="k">if</span><span class="o">=</span>XX.iso <span class="nv">of</span><span class="o">=</span>/dev/rdisk2 <span class="nv">bs</span><span class="o">=</span>4m
 </code></pre></div></div>
 
 

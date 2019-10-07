@@ -228,8 +228,8 @@ steps below.</p>
   <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
-bundle update
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bundle</span>
+<span class="n">bundle</span> <span class="n">update</span>
 </code></pre></div></div>
 
 <ul>
@@ -252,30 +252,31 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
   <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
-import re
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-for line in fileinput.input(sys.argv[1], inplace=1, backup='.bak'):
-    line = re.sub(r'\[!.*\((.+)\).*\]\(.*\)', r'[![](\1){: .align-center}](\1)', line.rstrip())
-    print(line)
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="s">r'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
+
 <ul>
   <li>I later added links to the original image with this script.</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import fileinput
-import re
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
-for line in fileinput.input(inplace=1, backup='.bak'):
-    line = re.sub('!\[(.*)\]\((.*)\)\{: .align-center\}',r'[![\1](\2){: .align-center}](\2)', line.rstrip())
-    print(line)
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!</span><span class="err">\</span><span class="s">[(.*)</span><span class="err">\</span><span class="s">]</span><span class="err">\</span><span class="s">((.*)</span><span class="err">\</span><span class="s">)</span><span class="err">\</span><span class="s">{: .align-center</span><span class="err">\</span><span class="s">}'</span><span class="p">,</span><span class="s">r'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 <ul>
   <li>and then changed them yet again to use the include form</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-{% include figure image_path="/assets/images/2019/10/IMG_1268.jpg" caption="Shenzhen" %}
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">figure</span><span class="w"> </span><span class="nx">image_path="/assets/images/2019/10/IMG_1268.jpg</span><span class="s2">" caption="</span><span class="nv">Shenzhen</span>"<span class="w"> </span><span class="p">%}</span>
 
 </code></pre></div></div>
 
@@ -291,45 +292,48 @@ for line in fileinput.input(inplace=1, backup='.bak'):
   <li>To change home to a grid layout I changed home.html so the loop is in a grid wrapper</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
-
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">paginator.posts</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nx">archive-single.html</span><span class="w"> </span><span class="na">type</span><span class="o">=</span><span class="s2">"grid"</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/div&gt;
 </code></pre></div></div>
+
 <ul>
   <li>Make figures linked to the image</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-&lt;figure class="{{ include.class }}"&gt;
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;figure class="<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">class</span><span class="w"> </span><span class="p">}}</span>"&gt;
   &lt;a href=
-    {% if include.image_path contains "://" %}
-      "{{ include.image_path }}"
-    {% else %}
-      "{{ include.image_path | relative_url }}"
-    {% endif %}&gt;
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"://"</span><span class="w"> </span><span class="p">%}</span>
+      "<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="p">}}</span>"
+    <span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+      "<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">relative_url</span><span class="w"> </span><span class="p">}}</span>"
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&gt;
   &lt;img src=
-    {% if include.image_path contains "://" %}
-      "{{ include.image_path }}"
-    {% else %}
-      "{{ include.image_path | relative_url }}"
-    {% endif %}
-    alt="{% if include.alt %}{{ include.alt }}{% endif %}"&gt;
-  {% if include.caption %}
+    <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="ow">contains</span><span class="w"> </span><span class="s2">"://"</span><span class="w"> </span><span class="p">%}</span>
+      "<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="p">}}</span>"
+    <span class="p">{%</span><span class="w"> </span><span class="kr">else</span><span class="w"> </span><span class="p">%}</span>
+      "<span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">image_path</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">relative_url</span><span class="w"> </span><span class="p">}}</span>"
+    <span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+    alt="<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">alt</span><span class="w"> </span><span class="p">%}{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">alt</span><span class="w"> </span><span class="p">}}{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>"&gt;
+  <span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">caption</span><span class="w"> </span><span class="p">%}</span>
     &lt;figcaption&gt;
-      {{ include.caption | markdownify | remove: "&lt;p&gt;" | remove: "&lt;/p&gt;" }}
-    &lt;/figcaption&gt;{% endif %}&lt;/a&gt;&lt;/figure&gt;
-
+      <span class="p">{{</span><span class="w"> </span><span class="nv">include</span><span class="p">.</span><span class="nv">caption</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">markdownify</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">remove</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;/p&gt;"</span><span class="w"> </span><span class="p">}}</span>
+    &lt;/figcaption&gt;<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>&lt;/a&gt;&lt;/figure&gt;
 </code></pre></div></div>
+
 <ul>
   <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">use_math</span><span class="w"> </span><span class="p">%}</span>
 &lt;script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"&gt;
 &lt;/script&gt;
-
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
 </code></pre></div></div>
+
 <p>This is similar to the approach in <a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a>.</p>
 
 <h2 id="links">Links</h2>

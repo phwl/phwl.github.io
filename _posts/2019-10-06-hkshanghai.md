@@ -32,10 +32,10 @@ ex-student Dr Kuen Hung Tsoi.
 {% include figure image_path="/assets/images/2019/10/IMG_4214.jpg" caption="" %}
 
 The next stop was Hong Kong University (HKU) to visit A/Prof Hayden
-So. He had arranged an excursion with his colleagues to [MoVertical](http://moverticalfarm.com) (more information is available from [their Facebook page](https://www.facebook.com/verticalfarmhongkong/),
+So. He had arranged an excursion with his colleagues to [MoVertical](http://moverticalfarm.com) (more information is available on [their Facebook page](https://www.facebook.com/verticalfarmhongkong/)),
 an urban farm based on stackable containers. It is a laboratory
-environment for testing ideas in sustainable farming and we were
-asked for suggestions to better automate the farm.
+environment for testing ideas in scalable, sustainable farming and we were
+asked for suggestions to improve automation.
 
 I was there to see if we can help monitor fish behaviour
 using machine learning.
