@@ -7,9 +7,8 @@ slug: mungo-brush-beach
 title: Mungo Brush Beach
 classes: wide
 categories:
-- australia
-- Fly-fishing
-- photography
+- fishing
+- Australia
 header:
   teaser: /assets/images/2017/01/mungobrush2.jpg
 ---

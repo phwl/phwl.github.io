@@ -9,7 +9,7 @@ classes: wide
 categories:
 - academia
 - fishing
-- Fly-fishing
+- fly-fishing
 header:
   teaser: /assets/images/2009/05/3795629664_bae4ae8ff7_o.jpg
 ---

@@ -8,6 +8,8 @@ title: New Zealand Fly-Fishing 2015
 classes: wide
 categories:
 - fishing
+- fly-fishing
+- travel
 header:
   teaser: /assets/images/2015/12/IMG_1615.jpg
 ---

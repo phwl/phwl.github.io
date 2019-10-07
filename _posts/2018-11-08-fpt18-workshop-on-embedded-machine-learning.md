@@ -7,9 +7,8 @@ slug: fpt18-workshop-on-embedded-machine-learning
 title: FPT18 Workshop on Embedded Machine Learning
 classes: wide
 categories:
+- travel
 - academia
-- Fly-fishing
-- FPGA
 header:
   teaser: /assets/images/blank.png
 ---

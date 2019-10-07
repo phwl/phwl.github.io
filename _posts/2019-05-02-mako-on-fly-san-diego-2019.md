@@ -7,13 +7,10 @@ slug: mako-on-fly-san-diego-2019
 title: Mako on Fly - San Diego 2019
 classes: wide
 categories:
-- FFF
 - fishing
-- Fly-fishing
-tags:
 - fly-fishing
-- mako shark
-- San Diego
+- travel
+- FFF
 header:
   teaser: /assets/images/2019/05/IMG_0832.jpg
 ---

@@ -1,5 +1,4 @@
 ---
-title:  "Welcome to Minimal Mistakes Jekyll"
 date:   2019-06-18 10:52:46 PDT
 slug: moving-from-wordpress-to-jekyll.md
 title: Moving from Wordpress to Jekyll

@@ -8,7 +8,7 @@ title: New Zealand Trip
 classes: wide
 categories:
 - fishing
-- Fly-fishing
+- fly-fishing
 - travel
 header:
   teaser: /assets/images/2014/10/nz96-twizel3.jpg

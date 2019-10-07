@@ -7,12 +7,10 @@ slug: fly-fishing-for-kingfish-in-pittwater-sydney
 title: Fly-fishing for Kingfish in Pittwater, Sydney
 classes: wide
 categories:
-- australia
-- FFF
 - fishing
-- Fly-fishing
-- Hawkesbury River
-- hobbies
+- fly-fishing
+- Australia
+- FFF
 header:
   teaser: /assets/images/2017/12/kingfish17-14.jpg
 ---

@@ -8,7 +8,7 @@ title: Marlin on Fly
 classes: wide
 categories:
 - fishing
-- Fly-fishing
+- fly-fishing
 - Australia
 header:
   teaser: /assets/images/1994/04/plmarlin1.jpg

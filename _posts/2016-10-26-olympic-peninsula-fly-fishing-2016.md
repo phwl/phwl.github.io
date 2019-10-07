@@ -9,8 +9,7 @@ classes: wide
 categories:
 - FFF
 - fishing
-- Fly-fishing
-- photography
+- fly-fishing
 - travel
 header:
   teaser: /assets/images/2016/10/IMG_3737.jpg

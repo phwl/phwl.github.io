@@ -7,9 +7,9 @@ slug: lake-eucumbene-2013
 title: Lake Eucumbene 2013
 classes: wide
 categories:
-- australia
 - fishing
-- Fly-fishing
+- fly-fishing
+- Australia
 header:
   teaser: /assets/images/2013/01/P1130242.jpg
 ---

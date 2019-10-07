@@ -9,7 +9,7 @@ classes: wide
 categories:
 - australia
 - fishing
-- Hawkesbury River
+- hawkesbury
 header:
   teaser: /assets/images/2011/12/PC284255.jpg
 ---
