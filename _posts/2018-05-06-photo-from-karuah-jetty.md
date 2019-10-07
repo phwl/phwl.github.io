@@ -7,8 +7,9 @@ slug: photo-from-karuah-jetty
 title: Photo from Karuah Jetty
 classes: wide
 categories:
-- hobbies
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

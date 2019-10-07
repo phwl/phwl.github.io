@@ -7,8 +7,9 @@ slug: girl-from-chiang-rai-karen-long-neck-tribe
 title: Girl from Chiang Rai Karen Long Neck Tribe
 classes: wide
 categories:
-- photography
 - travel
+tags:
+- photography
 post_format:
 - Image
 header:

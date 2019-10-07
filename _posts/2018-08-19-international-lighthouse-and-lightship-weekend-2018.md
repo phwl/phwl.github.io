@@ -8,8 +8,8 @@ title: International Lighthouse and Lightship Weekend 2018
 classes: wide
 categories:
 - amateur radio
+tags:
 - hobbies
-- photography
 header:
   teaser: /assets/images/2018/08/IMG_1946.jpg
 ---

@@ -8,7 +8,9 @@ title: Hawkesbury River again Australia Day 2017
 classes: wide
 categories:
 - fishing
+tags:
 - hawkesbury 
+- australia 
 header:
   teaser: /assets/images/2017/01/IMG_5383.jpg
 ---

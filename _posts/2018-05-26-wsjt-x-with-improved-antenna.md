@@ -8,6 +8,7 @@ title: WSJT-X with improved antenna
 classes: wide
 categories:
 - amateur radio
+tags:
 - hobbies
 header:
   teaser: /assets/images/2018/05/Screen-Shot-2018-05-26.jpg

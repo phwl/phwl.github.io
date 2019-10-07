@@ -8,6 +8,7 @@ title: Life, the Universe and Fishing
 classes: wide
 categories:
 - academia
+tags:
 - fishing
 - fly-fishing
 header:

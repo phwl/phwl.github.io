@@ -8,7 +8,9 @@ title: Installing powerpoles
 classes: wide
 categories:
 - amateur radio
+tags:
 - hobbies
+- electronics
 header:
   teaser: https://powerwerx.azureedge.net/asset/image/assembly/PPpairOKN.jpg
 ---

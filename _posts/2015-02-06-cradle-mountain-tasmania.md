@@ -7,9 +7,10 @@ slug: cradle-mountain-tasmania
 title: Cradle Mountain Tasmania
 classes: wide
 categories:
+- travel
+tags:
 - australia
 - photography
-- travel
 header:
   teaser: /assets/images/2015/02/cradlemtn-pano2.jpg
 ---

@@ -8,7 +8,9 @@ title: Hawkesbury River 2015
 classes: wide
 categories:
   - fishing
+tags:
   - hawkesbury
+  - australia
 header:
   teaser: /assets/images/2015/12/IMG_2416.jpg
 ---

@@ -8,6 +8,8 @@ title: Meon Springs
 classes: wide
 categories:
 - fishing
+tags:
+- fly-fishing
 header:
   teaser: /assets/images/2005/09/Tero05.jpg
 ---

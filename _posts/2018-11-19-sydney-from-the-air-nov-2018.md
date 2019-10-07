@@ -7,8 +7,9 @@ slug: sydney-from-the-air-nov-2018
 title: Sydney From the Air Nov 2018
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 - travel
 post_format:
 - Image

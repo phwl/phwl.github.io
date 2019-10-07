@@ -7,9 +7,9 @@ slug: stanwell-park
 title: Stanwell Park
 classes: wide
 categories:
-- australia
-- fishing
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2013/02/stanwell99.jpg
 ---

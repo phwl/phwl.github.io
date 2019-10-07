@@ -8,6 +8,7 @@ title: Berkeley Wireless Research Center 20th Year Anniversary
 classes: wide
 categories:
 - academia
+tags:
 - electronics
 - FPGA
 header:

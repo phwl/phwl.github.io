@@ -8,6 +8,8 @@ title: Walthamstow Reservoir
 classes: wide
 categories:
 - fishing
+tags:
+- fly-fishing
 header:
   teaser: /assets/images/2005/09/waltham220905-trout.jpg
 ---

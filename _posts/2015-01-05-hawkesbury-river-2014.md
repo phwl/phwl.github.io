@@ -7,8 +7,9 @@ slug: hawkesbury-river-2014
 title: Hawkesbury River 2014
 classes: wide
 categories:
-  - hawkesbury 
   - fishing
+tags:
+  - hawkesbury 
 header:
   teaser: /assets/images/2015/01/IMG_0079.jpg
 ---

@@ -7,8 +7,9 @@ slug: olympic-peninsula-fly-fishing-2016
 title: Olympic Peninsula Fly-Fishing 2016
 classes: wide
 categories:
-- FFF
 - fishing
+tags:
+- FFF
 - fly-fishing
 - travel
 header:

@@ -7,9 +7,10 @@ slug: international-lighthouse-and-lightship-weekend-2017
 title: International Lighthouse and Lightship Weekend 2017
 classes: wide
 categories:
+- amateur radio
+tags:
+- hobbies
 - australia
-- electronics
-- travel
 header:
   teaser: /assets/images/2017/08/P8190063-1-1.jpg
 ---

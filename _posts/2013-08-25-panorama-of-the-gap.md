@@ -7,8 +7,9 @@ slug: panorama-of-the-gap
 title: Sydney Skyline from The Gap
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

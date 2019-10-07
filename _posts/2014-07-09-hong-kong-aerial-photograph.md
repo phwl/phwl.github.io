@@ -7,8 +7,9 @@ slug: hong-kong-aerial-photograph
 title: Hong Kong Aerial Photograph
 classes: wide
 categories:
-- photography
 - travel
+tags:
+- photography
 post_format:
 - Image
 header:

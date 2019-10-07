@@ -8,6 +8,8 @@ title: Girl in Hong Kong MTR
 classes: wide
 categories:
 - travel
+tags:
+- photography
 post_format:
 - Image
 header:

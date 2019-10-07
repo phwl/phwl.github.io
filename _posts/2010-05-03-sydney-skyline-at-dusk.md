@@ -7,8 +7,9 @@ slug: sydney-skyline-at-dusk
 title: Sydney skyline at dusk
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2010/05/kirribilli.jpg
 ---

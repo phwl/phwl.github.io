@@ -7,8 +7,11 @@ slug: a-2m70cm-146mhz-and-440mhz-j-pole-antenna
 title: A 2m/70cm (146MHz and 440MHz) J-pole Antenna
 classes: wide
 categories:
-- electronics
+- amateur radio
+tags:
 - hobbies
+- electronics
+- radio
 header:
   teaser: /assets/images/2017/06/DSCF4455.jpg
 ---

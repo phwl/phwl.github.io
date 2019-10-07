@@ -8,6 +8,7 @@ title: The Bar, Hyatt Regency Okinawa 2018
 classes: wide
 categories:
 - travel
+- photography
 header:
   teaser: /assets/images/2018/12/DSCF5869.jpg
 ---

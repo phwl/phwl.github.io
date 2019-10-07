@@ -8,6 +8,7 @@ title: Mako on Fly - San Diego 2019
 classes: wide
 categories:
 - fishing
+tags:
 - fly-fishing
 - travel
 - FFF

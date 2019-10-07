@@ -7,6 +7,8 @@ slug: blue-mountains
 title: Blue Mountains
 classes: wide
 categories:
+- photography
+tags:
 - australia
 - travel
 header:

@@ -8,8 +8,9 @@ title: John Moyle Memorial Field Day 2018
 classes: wide
 categories:
 - amateur radio
-- australia
+tags:
 - hobbies
+- australia
 - travel
 header:
   teaser: /assets/images/2018/03/DSC_5806.jpg

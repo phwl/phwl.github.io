@@ -7,10 +7,10 @@ slug: london-lakes
 title: London Lakes
 classes: wide
 categories:
-- australia
 - fishing
-post_format:
-- Gallery
+tags:
+- fly-fishing
+- australia
 header:
   teaser: /assets/images/2002/12/3794804597_870ea589a1_z.jpg
 ---

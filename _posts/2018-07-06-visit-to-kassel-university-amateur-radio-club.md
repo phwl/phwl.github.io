@@ -8,6 +8,7 @@ title: Visit to University of Kassel Amateur Radio Club
 classes: wide
 categories:
 - amateur radio
+tags:
 - hobbies
 - travel
 header:

@@ -7,8 +7,9 @@ slug: cowan-creek
 title: Cowan Creek
 classes: wide
 categories:
-- australia
 - fishing
+tags:
+- australia
 header:
   teaser: /assets/images/2013/07/P7282832.jpg
 ---

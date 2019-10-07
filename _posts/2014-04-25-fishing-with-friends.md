@@ -8,6 +8,8 @@ title: Fishing with friends
 classes: wide
 categories:
 - fishing
+tags:
+- australia
 header:
   teaser: /assets/images/2014/04/P4241279.jpg
 ---

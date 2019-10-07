@@ -7,8 +7,9 @@ slug: postcard-from-harbin-summer-2013
 title: Postcard from Harbin Summer 2013
 classes: wide
 categories:
-- photography
 - travel
+tags:
+- photography
 header:
   teaser: /assets/images/2013/08/P8183366.jpg
 ---

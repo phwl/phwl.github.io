@@ -7,7 +7,9 @@ slug: victorinox-swiss-army-knife-soldier-set
 title: Victorinox Swiss Army Knife Soldier Set
 classes: wide
 categories:
-- outdoors
+- hobbies
+tags:
+- knives
 header:
   teaser: /assets/images/2018/10/soldierset-front.jpg
 ---

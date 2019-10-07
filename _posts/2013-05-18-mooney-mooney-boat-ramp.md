@@ -8,6 +8,8 @@ title: Pelicans at Mooney Mooney boat ramp, Hawkesbury River
 classes: wide
 categories:
 - photography
+tags:
+- australia
 - hawkesbury
 header:
   teaser: /assets/images/2013/05/P5182434-lr.jpg

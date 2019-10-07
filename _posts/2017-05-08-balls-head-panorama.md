@@ -7,8 +7,9 @@ slug: balls-head-panorama
 title: Balls Head Panorama
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2017/05/P4300003-3.jpg
 ---

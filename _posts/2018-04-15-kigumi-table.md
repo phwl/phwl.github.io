@@ -7,8 +7,9 @@ slug: kigumi-table
 title: Kigumi table
 classes: wide
 categories:
-- hobbies
 - woodwork
+tags:
+- hobbies
 post_format:
 - Video
 header:

@@ -7,8 +7,9 @@ slug: tokyo-institute-of-technology-tsubame-3-0-visit
 title: Tokyo Institute of Technology Tsubame 3.0 Visit
 classes: wide
 categories:
-- FPGA
 - academia
+tags:
+- FPGA
 header:
   teaser: /assets/images/2018/12/IMG_9636.jpg
 ---

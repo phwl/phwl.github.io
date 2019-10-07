@@ -8,6 +8,8 @@ title: Hawkesbury River 2012
 classes: wide
 categories:
   - fishing
+tags:
+  - outdoors
   - hawkesbury
 header:
   teaser: /assets/images/2012/12/PC210130.jpg

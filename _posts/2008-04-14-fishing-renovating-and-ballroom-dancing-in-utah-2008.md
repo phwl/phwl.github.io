@@ -8,6 +8,7 @@ title: Fishing, Renovating and Ballroom Dancing in Utah 2008
 classes: wide
 categories:
 - fishing
+tags:
 - fly-fishing
 - travel
 header:

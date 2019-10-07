@@ -7,8 +7,9 @@ slug: view-from-office
 title: View from Office
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2017/04/IMG_9416.jpg
 ---

@@ -6,5 +6,5 @@ classes: wide
 ---
 
  * [By Category](/categories)
-
+ * [By Tag](/tags)
  * [By Year](/posts)

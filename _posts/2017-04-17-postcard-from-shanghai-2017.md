@@ -7,8 +7,9 @@ slug: postcard-from-shanghai-2017
 title: Postcard from Shanghai 2017
 classes: wide
 categories:
-- photography
 - travel
+tags:
+- photography
 header:
   teaser: /assets/images/2017/04/IMG_9415.jpg
 ---

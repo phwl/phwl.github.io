@@ -7,8 +7,9 @@ slug: sydney-harbour-kingfish-jan-2019
 title: Sydney Harbour Kingfish Jan 2019
 classes: wide
 categories:
-- australia
 - fishing
+tags:
+- australia
 header:
   teaser: /assets/images/2019/01/41418944_Unknown.jpg
 ---

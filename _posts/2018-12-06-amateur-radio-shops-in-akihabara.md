@@ -8,6 +8,9 @@ title: Amateur Radio Shops in Akihabara
 classes: wide
 categories:
 - amateur radio
+tags:
+- travel
+- hobbies
 header:
   teaser: /assets/images/2018/12/DSCF5835.jpg
 ---

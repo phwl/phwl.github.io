@@ -7,8 +7,10 @@ slug: a-trip-to-finland
 title: A trip to Finland
 classes: wide
 categories:
-- travel
 - fishing
+tags:
+- fly-fishing
+- travel
 header:
   teaser: /assets/images/2007/06/3794357585_f147b6519d_o2.jpg
 ---

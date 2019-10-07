@@ -7,8 +7,9 @@ slug: circular-quay
 title: Circular Quay
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2014/06/P6040022.jpg
 ---

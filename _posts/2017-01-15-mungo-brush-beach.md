@@ -8,7 +8,8 @@ title: Mungo Brush Beach
 classes: wide
 categories:
 - fishing
-- Australia
+tags:
+- australia
 header:
   teaser: /assets/images/2017/01/mungobrush2.jpg
 ---

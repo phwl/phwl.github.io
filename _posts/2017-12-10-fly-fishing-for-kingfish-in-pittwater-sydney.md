@@ -8,8 +8,9 @@ title: Fly-fishing for Kingfish in Pittwater, Sydney
 classes: wide
 categories:
 - fishing
+tags:
 - fly-fishing
-- Australia
+- australia
 - FFF
 header:
   teaser: /assets/images/2017/12/kingfish17-14.jpg

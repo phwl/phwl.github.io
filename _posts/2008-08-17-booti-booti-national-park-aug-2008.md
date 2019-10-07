@@ -8,6 +8,8 @@ title: Forster 2008
 classes: wide
 categories:
 - fishing
+tags:
+- australia
 ---
 
 Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable tides and weather. Life's too short to only go fishing when conditions are good. We went on a [similar trip](http://www.phwl.org/forster/) almost exactly a year ago.

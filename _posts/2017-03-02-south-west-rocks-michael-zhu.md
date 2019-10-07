@@ -8,7 +8,8 @@ title: South West Rocks (Michael Zhu)
 classes: wide
 categories:
 - fishing
-- Australia
+tags:
+- australia
 header:
   teaser: /assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg
 ---

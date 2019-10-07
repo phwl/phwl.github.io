@@ -7,8 +7,9 @@ slug: the-gap-watsons-bay-sydney
 title: The Gap, Watsons Bay, Sydney
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2013/06/thegap-medpano2.jpg
 ---

@@ -8,8 +8,6 @@ title: Fishing Photos
 classes: wide
 categories:
 - fishing
-post_format:
-- Gallery
 header:
   teaser: /assets/images/2001/08/gt1.jpg
 ---

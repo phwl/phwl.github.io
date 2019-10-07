@@ -8,8 +8,6 @@ title: A Gift From my Students
 classes: wide
 categories:
 - academia
-post_format:
-- Image
 header:
   teaser: /assets/images/2016/01/4201211301_58b7b50ef4_o.jpg
 ---

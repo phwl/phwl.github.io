@@ -8,6 +8,8 @@ title: Repair of a Marantz 74CD67 CD Player
 classes: wide
 categories:
 - electronics
+tags:
+- repair
 header:
   teaser: /assets/images/2018/11/40784800_Unknown.jpg
 ---

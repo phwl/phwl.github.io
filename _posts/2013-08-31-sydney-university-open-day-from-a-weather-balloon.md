@@ -7,8 +7,9 @@ slug: sydney-university-open-day-from-a-weather-balloon
 title: Sydney University Open Day (from a weather balloon)
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2013/08/GOPR7514.jpg
 ---

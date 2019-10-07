@@ -8,6 +8,7 @@ title: Sea lion, Santa Cruz Wharf
 classes: wide
 categories:
 - photography
+tags:
 - travel
 header:
   teaser: /assets/images/2019/05/DSCF6081.jpg

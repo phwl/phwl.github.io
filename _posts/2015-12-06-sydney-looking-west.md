@@ -7,8 +7,9 @@ slug: sydney-looking-west
 title: Sydney looking west
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

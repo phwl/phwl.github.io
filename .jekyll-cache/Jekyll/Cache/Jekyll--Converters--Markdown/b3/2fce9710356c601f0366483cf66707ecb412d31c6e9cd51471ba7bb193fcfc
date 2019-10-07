@@ -1,7 +1,0 @@
-I"�<h1 id="publications-list-in-markdown">Publications list in Markdown</h1>
-<p>For many years I’ve been using a convoluted process to generate my 
-<a href="/assets/papers">publications list</a> from separate BibTex files for
-journals, conferences, books, patents, etc. I thought I could do it
-using <a href="https://pandoc.org/">pandoc</a>, but it doesn’t appear that it
-parses bibtex files correctly.</p>
-:ET

@@ -8,6 +8,8 @@ title: Mooney Mooney Morning 2018
 classes: wide
 categories:
 - fishing
+tags:
+- australia
 header:
   teaser: /assets/images/2018/09/40515248_Unknown.jpg
 ---

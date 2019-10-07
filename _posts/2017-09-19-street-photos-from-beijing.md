@@ -7,8 +7,9 @@ slug: street-photos-from-beijing
 title: Street Photos from Beijing
 classes: wide
 categories:
-- photography
 - travel
+tags:
+- photography
 header:
   teaser: /assets/images/2017/10/DSCF4583.jpg
 ---

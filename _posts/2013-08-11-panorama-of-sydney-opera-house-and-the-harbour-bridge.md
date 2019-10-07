@@ -8,8 +8,8 @@ title: Panorama of Sydney Opera House and the Harbour Bridge
 classes: wide
 categories:
 - photography
-post_format:
-- Image
+tags:
+- australia
 header:
   teaser: /assets/images/2013/08/hbridge-pano05082013.jpg
 ---

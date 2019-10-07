@@ -7,8 +7,9 @@ slug: luderick-fishing-sydney-harbour
 title: Luderick Fishing Sydney Harbour
 classes: wide
 categories:
-- australia
 - fishing
+tags:
+- australia
 header:
   teaser: /assets/images/2016/03/IMG_6937.jpg
 ---

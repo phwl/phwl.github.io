@@ -7,9 +7,10 @@ slug: the-dish-parkes-nsw
 title: The Dish, Parkes NSW
 classes: wide
 categories:
-- australia
-- electronics
 - photography
+tags:
+- australia
+- radio-telescope
 header:
   teaser: /assets/images/2017/05/P5160020.jpg
 ---

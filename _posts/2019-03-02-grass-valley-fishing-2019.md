@@ -7,8 +7,9 @@ slug: grass-valley-fishing-2019
 title: Grass Valley Fly-Fishing 2019
 classes: wide
 categories:
-- FFF
 - fishing
+tags:
+- FFF
 - fly-fishing
 - travel
 header:

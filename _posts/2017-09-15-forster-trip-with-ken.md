@@ -7,8 +7,9 @@ slug: forster-trip-with-ken
 title: Forster trip with Ken
 classes: wide
 categories:
-- australia
 - fishing
+tags:
+- australia
 - photography
 ---
 

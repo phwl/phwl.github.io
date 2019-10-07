@@ -7,6 +7,8 @@ slug: school-retreat-manly-2016
 title: School Retreat (Manly 2016)
 classes: wide
 categories:
+- academia
+tags:
 - australia
 - photography
 header:

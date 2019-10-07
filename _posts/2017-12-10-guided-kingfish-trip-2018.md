@@ -9,8 +9,9 @@ title: Guided kingfish trip 2018
 classes: wide
 categories:
 - fishing
+tags:
 - fly-fishing
-- Australia
+- australia
 ---
 
 1)      Casting practice with Enrico Enrico Puglasi Flex Calamari and some sort of white popper under and around moored boat at 33⁰ 38.324’S 151⁰ 18.229’E.  Had a fish follow the popper, but no takes.

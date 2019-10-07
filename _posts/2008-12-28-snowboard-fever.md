@@ -8,6 +8,8 @@ title: Snowboard Fever
 classes: wide
 categories:
 - photography
+tags:
+- travel
 header:
   teaser: /assets/images/2016/01/3731258183_2af03d23cb_o.jpg
 ---

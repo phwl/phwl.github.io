@@ -7,8 +7,9 @@ slug: long-jetty-tuggerah-lake
 title: Long Jetty, Tuggerah Lake
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

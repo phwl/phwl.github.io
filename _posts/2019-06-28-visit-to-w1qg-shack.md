@@ -7,6 +7,8 @@ slug: visit-to-w1qg-shack
 title: Visit to W1QG's shack
 categories:
 - amateur radio
+tags:
+- hobbies
 - electronics
 header:
   teaser: /assets/images/2019/06/IMG_1033.jpg

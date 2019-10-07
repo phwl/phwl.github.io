@@ -8,6 +8,8 @@ title: Cessna first solo
 classes: wide
 categories:
 - hobbies
+tags:
+- aviation
 header:
   teaser: /assets/images/2015/12/plcessna.jpg
 ---

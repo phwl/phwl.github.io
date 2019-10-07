@@ -7,8 +7,9 @@ slug: hawkesbury-river-2011
 title: Hawkesbury River 2011
 classes: wide
 categories:
-- australia
 - fishing
+tags:
+- australia
 - hawkesbury
 header:
   teaser: /assets/images/2011/12/PC284255.jpg

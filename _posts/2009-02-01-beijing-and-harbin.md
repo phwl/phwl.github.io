@@ -8,8 +8,6 @@ title: Beijing and Harbin
 classes: wide
 categories:
 - travel
-post_format:
-- Gallery
 header:
   teaser: /assets/images/2009/02/dsc_2590_1.jpg
 ---

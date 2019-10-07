@@ -7,8 +7,9 @@ slug: panorama-of-sydney-harbour
 title: Panorama of Sydney Harbour
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

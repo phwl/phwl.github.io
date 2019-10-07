@@ -6,6 +6,8 @@ date: 2019-05-18 04:09:59+00:00
 slug: academic-genealogy
 title: Academic Genealogy
 classes: wide
+categories:
+- academia
 header:
   teaser: /assets/images/2019/05/6700082371262977270_IMG_0887.jpg
 ---

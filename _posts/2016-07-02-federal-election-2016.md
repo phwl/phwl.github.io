@@ -8,6 +8,8 @@ title: Federal Election 2016
 classes: wide
 categories:
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2016/07/IMG_2522.jpg
 ---

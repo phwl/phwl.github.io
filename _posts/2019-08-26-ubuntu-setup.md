@@ -6,7 +6,10 @@ slug: ubuntu-nvdia-19
 title: Setting up some new Ubuntu/NVIDIA machines
 classes: wide
 categories:
-- research
+- software
+tags:
+- ubuntu
+- linux
 header:
   teaser: /assets/images/2019/08/Nvidia_logo.svg
 ---

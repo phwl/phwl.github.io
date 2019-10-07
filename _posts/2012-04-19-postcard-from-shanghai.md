@@ -7,7 +7,6 @@ slug: postcard-from-shanghai
 title: Postcard from Shanghai
 classes: wide
 categories:
-- photography
 - travel
 header:
   teaser: /assets/images/2012/04/P1110707.jpg

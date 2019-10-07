@@ -7,8 +7,9 @@ slug: elaines-off-road-trip
 title: Elaine's (off) Road Trip
 classes: wide
 categories:
-- australia
 - travel
+tags:
+- australia
 header:
   teaser: http://elainext.files.wordpress.com/2010/04/map.jpg
 ---

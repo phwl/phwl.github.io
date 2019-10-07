@@ -8,6 +8,7 @@ title: How to program Australian Repeaters into an Icom IC-2730A using Chirp
 classes: wide
 categories:
 - amateur radio
+tags:
 - hobbies
 header:
   teaser: https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Icom_logo.svg/640px-Icom_logo.svg.png

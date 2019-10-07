@@ -7,10 +7,9 @@ slug: whale-beach
 title: Whale Beach
 classes: wide
 categories:
-- australia
 - photography
-post_format:
-- Image
+tags:
+- australia
 header:
   teaser: /assets/images/2016/03/whalebeach.jpg
 ---

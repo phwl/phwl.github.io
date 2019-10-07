@@ -7,8 +7,9 @@ slug: high-altitude-balloon-launch-1
 title: 'High Altitude Balloon Launch #1'
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2013/05/GOPR5590.jpg
 ---

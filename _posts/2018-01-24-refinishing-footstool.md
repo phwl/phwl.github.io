@@ -7,8 +7,9 @@ slug: refinishing-footstool
 title: Refinishing Footstool
 classes: wide
 categories:
-- hobbies
 - woodwork
+tags:
+- hobbies
 header:
   teaser: /assets/images/2018/01/IMG_0612.jpg
 ---

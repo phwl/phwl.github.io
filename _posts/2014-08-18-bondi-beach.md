@@ -7,8 +7,9 @@ slug: bondi-beach
 title: Bondi Beach
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 post_format:
 - Image
 header:

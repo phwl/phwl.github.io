@@ -9,9 +9,10 @@ classes: wide
 header:
   teaser: /assets/images/2015/02/P2040434.jpg
 categories:
+- travel
+tags:
 - australia
 - photography
-- travel
 ---
 
 {% include figure image_path="/assets/images/2015/02/P2040434.jpg" caption="" %}

@@ -7,8 +7,9 @@ slug: panorama-at-akuna-bay
 title: Panorama at Akuna Bay
 classes: wide
 categories:
-- australia
 - photography
+tags:
+- australia
 header:
   teaser: /assets/images/2013/04/akunabay.jpg
 ---

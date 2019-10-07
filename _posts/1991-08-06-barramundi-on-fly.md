@@ -8,8 +8,9 @@ title: Barramundi on Fly
 classes: wide
 categories:
 - fishing
+tags:
 - fly-fishing
-- Australia
+- australia
 header:
   teaser: /assets/images/1991/08/plbarra1-horiz.jpg
 ---

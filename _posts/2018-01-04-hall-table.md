@@ -7,8 +7,9 @@ slug: hall-table
 title: Camphor Laurel Timber Slab Hall Table
 classes: wide
 categories:
-- hobbies
 - woodwork
+tags:
+- hobbies
 header:
   teaser: /assets/images/2018/01/IMG_0676.jpg
 ---

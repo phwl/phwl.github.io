@@ -7,9 +7,11 @@ slug: molonglo-radio-observatory
 title: Molonglo Radio Observatory
 classes: wide
 categories:
+- academia
+tags:
 - australia
-- photography
 - travel
+- radio-telescope
 header:
   teaser: /assets/images/2012/11/P1120459.jpg
 ---
