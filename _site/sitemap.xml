@@ -651,7 +651,7 @@
 <loc>http://localhost:4000/papers</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/papers</loc>
+<loc>http://localhost:4000/papers</loc>
 </url>
 <url>
 <loc>http://localhost:4000/research</loc>

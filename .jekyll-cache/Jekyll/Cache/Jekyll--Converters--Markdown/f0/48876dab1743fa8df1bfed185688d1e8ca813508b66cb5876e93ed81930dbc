@@ -1,184 +1,4 @@
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="en" class="no-js">
-  <head>
-    
-    <meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>Publications - Life, the Universe and Fishing</title>
-<meta name="description" content="Random things.">
-
-
-  <meta name="author" content="phwl">
-
-
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Publications">
-<meta property="og:url" content="http://localhost:4000/assets/papers">
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="http://localhost:4000/assets/papers">
-
-
-
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": "phwl",
-      "url": "http://localhost:4000/"
-    
-  }
-</script>
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-
-<!--[if IE ]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
-
-
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--single wide">
-    <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
-</nav>
-
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
-    
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        
-        <a class="site-title" href="/">
-          Life, the Universe and Fishing
-          
-        </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/archive" >Archive</a>
-            </li><li class="masthead__menu-item">
-              <a href="/gallery" >Gallery</a>
-            </li><li class="masthead__menu-item">
-              <a href="/research" >Research</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about" >About</a>
-            </li></ul>
-        
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
-        </button>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
-
-
-    <div class="initial-content">
-      
-
-
-
-<div id="main" role="main">
-  
-
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Publications">
-    
-    
-    
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Publications
-</h1>
-          
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-        <h1 id="journals">Journals</h1>
+I"<h1 id="journals">Journals</h1>
 
 <p>[1] Jason K. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al-Sarawi, Philip Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei.
 Nonlinear retinal response modeling for future neuromorphic instrumentation.
@@ -198,11 +18,11 @@ Residential battery sizing model using net meter energy data clustering.
 URL: <a href="rbat_ae19.pdf">rbat_ae19.pdf</a>, <a href="https://doi.org/10.1016/j.apenergy.2019.113324">doi:10.1016/j.apenergy.2019.113324</a>.<br />
 [5] D. J. M. Moss, D. Boland, and P. H. W. Leong.
 A two-speed, radix-4, serial–parallel multiplier.
-<em>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</em>, 27(4):769–777, April 2019.
+<em>IEEE Transactions on Very Large Scale Integration (VLSI) Systems</em>, 27(4):769–777, 4 2019.
 URL: <a href="tsm_tvlsi19.pdf">tsm_tvlsi19.pdf</a>, <a href="https://doi.org/10.1109/TVLSI.2018.2883645">doi:10.1109/TVLSI.2018.2883645</a>.<br />
 [6] Xiang Zhang, Bryn A. Bell, Andri Mahendra, Chunle Xiong, Philip H. W. Leong, and Benjamin J. Eggleton.
 Integrated silicon nitride time-bin entanglement circuits.
-<em>Opt. Lett.</em>, 43(15):3469–3472, Aug 2018.
+<em>Opt. Lett.</em>, 43(15):3469–3472, 8 2018.
 URL: <a href="isn_oletters18.pdf">isn_oletters18.pdf</a>, <a href="https://doi.org/10.1364/OL.43.003469">doi:10.1364/OL.43.003469</a>.<br />
 [7] Ning Ma, Yu Peng, Shaojun Wang, and Philip H. W. Leong.
 An unsupervised deep hyperspectral anomaly detector.
@@ -210,7 +30,7 @@ An unsupervised deep hyperspectral anomaly detector.
 URL: <a href="hsianom_sensors18.pdf">hsianom_sensors18.pdf</a>, <a href="https://doi.org/10.3390/s18030693">doi:10.3390/s18030693</a>.<br />
 [8] Yongfu He, Yu Peng, Shaojun Wang, Datong Liu, and Philip H.W. Leong.
 A structured sparse subspace learning algorithm for anomaly detection in UAV flight data.
-<em>IEEE Transactions on Instrumentation and Measurement</em>, 67(1):90–100, Jan 2018.
+<em>IEEE Transactions on Instrumentation and Measurement</em>, 67(1):90–100, 1 2018.
 URL: <a href="sssl_tim18.pdf">sssl_tim18.pdf</a>, <a href="https://doi.org/10.1109/TIM.2017.2754698">doi:10.1109/TIM.2017.2754698</a>.<br />
 [9] Nicholas J. Fraser, Junkyu Lee, Duncan J. M. Moss, Julian Faraone, Stephen Tridgell, Craig T. Jin, and Philip H. W. Leong.
 FPGA implementations of kernel normalised least mean squares processors.
@@ -234,7 +54,7 @@ Impact of series resistance on bulk CMOS current matching over the 5–300 K tem
 URL: <a href="match_edl17.pdf">match_edl17.pdf</a>, <a href="https://doi.org/10.1109/LED.2017.2709545">doi:10.1109/LED.2017.2709545</a>.<br />
 [14] Thuy T. Pham, Philip H.W. Leong, Paul D. Robinson, Thomas Gutzler, Adelle Jee, Gregory G. King, and Cindy Thamrin.
 Automated quality control of forced oscillation measurements: respiratory artifact detection with advanced feature extraction.
-<em>Journal of Applied Physiology</em>, 123:jap.00726.2016, may 2017.
+<em>Journal of Applied Physiology</em>, 123:jap.00726.2016, 5 2017.
 URL: <a href="fot_jappl17.pdf">fot_jappl17.pdf</a>, <a href="https://doi.org/10.1152/japplphysiol.00726.2016">doi:10.1152/japplphysiol.00726.2016</a>.<br />
 [15] Thuy T. Pham, Steven T. Moore, Simon J.G. Lewis, Diep N. Nguyen, Eryk Dutkiewicz, Andrew J. Fuglevand, Alistair L. McEwan, and Philip H.W. Leong.
 Freezing of gait detection in Parkinson’s disease: a subject-independent detector using anomaly scores.
@@ -242,7 +62,7 @@ Freezing of gait detection in Parkinson’s disease: a subject-independent detec
 URL: <a href="fog_tbme17.pdf">fog_tbme17.pdf</a>, <a href="https://doi.org/10.1109/TBME.2017.2665438">doi:10.1109/TBME.2017.2665438</a>.<br />
 [16] Andri Mahendra, Chunle Xiong, Xiang Zhang, Benjamin J. Eggleton, and Philip H. W. Leong.
 Multiwavelength stabilization control of a thermo-optic system with adaptive reconfiguration.
-<em>Appl. Opt.</em>, 56(4):1113–1118, Feb 2017.
+<em>Appl. Opt.</em>, 56(4):1113–1118, 2 2017.
 URL: <a href="mimo_ao17.pdf">mimo_ao17.pdf</a>, <a href="https://doi.org/10.1364/AO.56.001113">doi:10.1364/AO.56.001113</a>.<br />
 [17] Nguyen Cong Dao, Abdallah El Kass, Mostafa Rahimi Azghadi, Craig T. Jin, Jonathan Scott, and Philip H.W. Leong.
 An enhanced MOSFET threshold voltage model for the 6–300 K temperature range.
@@ -258,7 +78,7 @@ The first 25 years of the FPL conference: significant papers.
 URL: <a href="fplsig_trets16.pdf">fplsig_trets16.pdf</a>, <a href="https://doi.org/10.1145/2996468">doi:10.1145/2996468</a>.<br />
 [20] Farzad Noorian and Philip H.W. Leong.
 On time series forecasting error measures for finite horizon control.
-<em>IEEE Transactions on Control Systems Technology</em>, 25(2):736–743, March 2017.
+<em>IEEE Transactions on Control Systems Technology</em>, 25(2):736–743, 3 2017.
 URL: <a href="fhc_tcst17.pdf">fhc_tcst17.pdf</a>, <a href="https://doi.org/10.1109/TCST.2016.2571661">doi:10.1109/TCST.2016.2571661</a>.<br />
 [21] Harrison Ball, Trung Nguyen, Philip H. W. Leong, and Michael J. Biercuk.
 Functional basis for efficient physical layer classical control in quantum processors.
@@ -270,7 +90,7 @@ A microcoded kernel recursive least squares processor using FPGA technology.
 URL: <a href="kproc_trets16.pdf">kproc_trets16.pdf</a>, <a href="https://doi.org/10.1145/2950061">doi:10.1145/2950061</a>.<br />
 [23] Thuy T. Pham, Cindy Thamrin, Paul D. Robinson, Alistair L. McEwan, and Philip H.W. Leong.
 Respiratory artefact removal in forced oscillation measurements: a machine learning approach.
-<em>IEEE Transactions on Biomedical Engineering</em>, 64(8):1679–1687, Aug 2017.
+<em>IEEE Transactions on Biomedical Engineering</em>, 64(8):1679–1687, 8 2017.
 URL: <a href="fot_tbme16.pdf">fot_tbme16.pdf</a>, <a href="https://doi.org/10.1109/TBME.2016.2554599">doi:10.1109/TBME.2016.2554599</a>.<br />
 [24] Gabriel E. Machovsky-Capuska, David Priddel, Philip H.W. Leong, Peter Jones, Nicholas Carlile, Lesley Shannon, Dean Portelli, Alistair McEwan, Alexandre V. Chaves, and David Raubenheimer.
 Coupling bio-logging with nutritional geometry to reveal novel insights into the foraging behaviour of a plunge-diving marine predator.
@@ -460,11 +280,11 @@ In <em>Proc. IEEE Symposium on Field-Programmable Custom Computing Machines (FCC
 URL: <a href="pirdsp_fccm19.pdf">pirdsp_fccm19.pdf</a>, <a href="https://doi.org/10.1109/FCCM.2019.00015">doi:10.1109/FCCM.2019.00015</a>.<br />
 [2] Rui Tang, Philip H W Leong, Jonathon Dore, and Anthony Vassallo.
 Generating residential PV production and electricity consumption scenarios via generative adversarial networks.
-In <em>Proc. of The 2018 Asia-Pacific Solar Research Conference</em>. Dec 2018.
+In <em>Proc. of The 2018 Asia-Pacific Solar Research Conference</em>. 12 2018.
 URL: <a href="res_apsrc18.pdf">res_apsrc18.pdf</a>.<br />
 [3] Siddhartha, Steven J.E. Wilton, David Boland, Barry Flower, Perry Blackmore, and Philip H.W. Leong.
 Simultaneous inference and training using on-FPGA weight perturbation techniques.
-In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, to appear. Dec 2018.
+In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, to appear. 12 2018.
 URL: <a href="wp_fpt18.pdf">wp_fpt18.pdf</a>.<br />
 [4] Siddhartha, Yee Hui Lee, Duncan J.M. Moss, Julian Faraone, Perry Blackmore, Daniel Salmond, David Boland, and Philip H.W. Leong.
 Long short-term memory for radio frequency spectral prediction and its real-time FPGA implementation.
@@ -517,7 +337,7 @@ Source code available from \href https://github.com/Xilinx/BNN-PYNQhttps://githu
 URL: <a href="bnn_fpga17.pdf">bnn_fpga17.pdf</a>, <a href="https://doi.org/10.1145/3020078.3021744">doi:10.1145/3020078.3021744</a>.<br />
 [16] Sean Fox, Stephen Tridgell, Craig T. Jin, and Philip H. W. Leong.
 Random projections for scaling machine learning on FPGAs.
-In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, 85–92. Dec 2016.
+In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, 85–92. 12 2016.
 URL: <a href="rp_fpt16.pdf">rp_fpt16.pdf</a>, <a href="https://doi.org/10.1109/FPT.2016.7929193">doi:10.1109/FPT.2016.7929193</a>.<br />
 [17] Shaojun Wang, Xinyu Niu, Ning Ma, Wayne Luk, Philip Leong, and Yu Peng.
 A scalable dataflow accelerator for real time onboard hyperspectral image classification.
@@ -545,7 +365,7 @@ In <em>Proc. International IEEE Engineering in Medicine and Biology Conference (
 URL: <a href="lssa_embc15.pdf">lssa_embc15.pdf</a>, <a href="https://doi.org/10.1109/EMBC.2015.7318832">doi:10.1109/EMBC.2015.7318832</a>.<br />
 [23] C. Xiong, X. Zhang, Z. Liu, A. Mahendra, D.-Y. Choi, C. J. Chae, P. H. W. Leong, M. J. Collins, and B. J. Eggleton.
 Active temporal multiplexing of a silicon heralded single-photon source.
-In <em>2015 European Conference on Lasers and Electro-Optics - European Quantum Electronics Conference</em>, PD–B–4. Optical Society of America, 2015.
+In <em>2015 European Conference on Lasers and Electro-Optics - European Quantum Electronics Conference</em>, PD­B­4. Optical Society of America, 2015.
 URL: <a href="http://www.osapublishing.org/abstract.cfm?URI=CLEO_Europe-2015-PD_B_4">http://www.osapublishing.org/abstract.cfm?URI=CLEO_Europe-2015-PD_B_4</a>.<br />
 [24] Lesley Shannon, Veronica Cojocaru, Cong Nguyen Dao, and Philip H.W. Leong.
 Trends in reconfigurable computing: applications and architectures.
@@ -998,21 +818,21 @@ In <em>Proceedings of the International Symposium on Signal Processing and its A
 
 <p>[1] Philip Leong and Wen Li.
 Tire pressure system.
-US Patent 20070069876 A1, March 29, 2007.<br />
+US Patent 20070069876 A1, March 2007.<br />
 [2] C. Jin, P. Leong, J. Leung, S. Carlile, and A. van Schaik.
 The generation of customized three-dimensional sound effects for individuals.
-World Patent Office 01/54453, July 26, 2001.<br />
+World Patent Office 01/54453, July 2001.<br />
 [3] A. Kramer, R. Canegallo, M. Chinosi, G. Gozzini, P. Leong, P. L. Rolandi, and M. Sabatini.
 Voltage comparator with floating gate mos transistor.
-US Patent 6,014,044, January 11, 2000.
+US Patent 6,014,044, January 2000.
 SGS–Thomson Microelectronics S.r.l.<br />
 [4] A. Kramer, R. Canegallo, M. Chinosi, G. Gozzini, P. Leong, P. L. Rolandi, and M. Sabatini.
 Digital-to-analog current converter employing floating gate transistors.
-US Patent 5,990,816, September 30, 1997.
+US Patent 5,990,816, 9 1997.
 SGS–Thomson Microelectronics S.r.l.<br />
 [5] P.H.W. Leong and M.A. Jabri.
 A method and system for automatically classifying intracardiac electrograms.
-US Patent 5,280,792, January 25, 1994.
+US Patent 5,280,792, 1 1994.
 University of Sydney.</p>
 
 <h1 id="books">Books</h1>
@@ -1094,11 +914,11 @@ The University of Sydney, 1992.</p>
 <p>[1] P. Leong.
 Barramundi on fly.
 <em>www.flyfish.com</em>, 2004.
-http://www.flyfish.com/library/editorial.php?id=611.<br />
+URL: <a href="http://www.flyfish.com/library/editorial.php?id=611">http://www.flyfish.com/library/editorial.php?id=611</a>.<br />
 [2] P. Leong.
 Low-cost reconfigurable computing (FPGAs).
 <em>Slashdot</em>, 2001.
-http://slashdot.org/hardware/01/11/04/1947212.shtml.<br />
+URL: <a href="http://slashdot.org/hardware/01/11/04/1947212.shtml">http://slashdot.org/hardware/01/11/04/1947212.shtml</a>.<br />
 [3] P. Leong.
 Book review.
 <em>EA Electrical Engineering Review</em>, 1(3):34–35, 1995.<br />
@@ -1111,105 +931,4 @@ Current source scrounges parts.
 <em>EDN Magazine</em>, pages 182, June 6, 1991.
 URL: <a href="isrc_edn91.pdf">isrc_edn91.pdf</a>.</p>
 
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-
-
-        
-      </footer>
-
-      
-
-      
-    </div>
-
-    
-  </article>
-
-  
-  
-</div>
-
-    </div>
-
-    
-      <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
-
-      </div>
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-
-    
-      
-        
-      
-        
-      
-        
-      
-        
-          <li><a href="https://facebook.com/pleong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-        
-      
-        
-          <li><a href="https://github.com/phwl" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://linkedin.com/in/philip-h-w-leong-949484" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-f" aria-hidden="true"></i> LinkedIn</a></li>
-        
-      
-        
-      
-    
-
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2019 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
-    </div>
-
-    
-  <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-
-
-
-
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
-
-
-
-
-
-
-
-  </body>
-</html>
+:ET

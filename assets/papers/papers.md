@@ -1,7 +1,7 @@
 ---
 comments: false
-permalink: assets/papers
-slug: assets/papers
+permalink: papers
+slug: papers
 title: Publications
 classes: wide
 ---
@@ -26,11 +26,11 @@ Residential battery sizing model using net meter energy data clustering\.
 URL: [rbat\_ae19\.pdf](rbat_ae19.pdf), [doi:10\.1016/j\.apenergy\.2019\.113324](https://doi.org/10.1016/j.apenergy.2019.113324)\.  
 [5] D\. J\. M\. Moss, D\. Boland, and P\. H\. W\. Leong\.
 A two\-speed, radix\-4, serial–parallel multiplier\.
-*IEEE Transactions on Very Large Scale Integration \(VLSI\) Systems*, 27\(4\):769&ndash;777, April 2019\.
+*IEEE Transactions on Very Large Scale Integration \(VLSI\) Systems*, 27\(4\):769&ndash;777, 4 2019\.
 URL: [tsm\_tvlsi19\.pdf](tsm_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2018\.2883645](https://doi.org/10.1109/TVLSI.2018.2883645)\.  
 [6] Xiang Zhang, Bryn A\. Bell, Andri Mahendra, Chunle Xiong, Philip H\. W\. Leong, and Benjamin J\. Eggleton\.
 Integrated silicon nitride time\-bin entanglement circuits\.
-*Opt\. Lett\.*, 43\(15\):3469–3472, Aug 2018\.
+*Opt\. Lett\.*, 43\(15\):3469–3472, 8 2018\.
 URL: [isn\_oletters18\.pdf](isn_oletters18.pdf), [doi:10\.1364/OL\.43\.003469](https://doi.org/10.1364/OL.43.003469)\.  
 [7] Ning Ma, Yu Peng, Shaojun Wang, and Philip H\. W\. Leong\.
 An unsupervised deep hyperspectral anomaly detector\.
@@ -38,7 +38,7 @@ An unsupervised deep hyperspectral anomaly detector\.
 URL: [hsianom\_sensors18\.pdf](hsianom_sensors18.pdf), [doi:10\.3390/s18030693](https://doi.org/10.3390/s18030693)\.  
 [8] Yongfu He, Yu Peng, Shaojun Wang, Datong Liu, and Philip H\.W\. Leong\.
 A structured sparse subspace learning algorithm for anomaly detection in UAV flight data\.
-*IEEE Transactions on Instrumentation and Measurement*, 67\(1\):90&ndash;100, Jan 2018\.
+*IEEE Transactions on Instrumentation and Measurement*, 67\(1\):90&ndash;100, 1 2018\.
 URL: [sssl\_tim18\.pdf](sssl_tim18.pdf), [doi:10\.1109/TIM\.2017\.2754698](https://doi.org/10.1109/TIM.2017.2754698)\.  
 [9] Nicholas J\. Fraser, Junkyu Lee, Duncan J\. M\. Moss, Julian Faraone, Stephen Tridgell, Craig T\. Jin, and Philip H\. W\. Leong\.
 FPGA implementations of kernel normalised least mean squares processors\.
@@ -62,7 +62,7 @@ Impact of series resistance on bulk CMOS current matching over the 5–300 K tem
 URL: [match\_edl17\.pdf](match_edl17.pdf), [doi:10\.1109/LED\.2017\.2709545](https://doi.org/10.1109/LED.2017.2709545)\.  
 [14] Thuy T\. Pham, Philip H\.W\. Leong, Paul D\. Robinson, Thomas Gutzler, Adelle Jee, Gregory G\. King, and Cindy Thamrin\.
 Automated quality control of forced oscillation measurements: respiratory artifact detection with advanced feature extraction\.
-*Journal of Applied Physiology*, 123:jap\.00726\.2016, may 2017\.
+*Journal of Applied Physiology*, 123:jap\.00726\.2016, 5 2017\.
 URL: [fot\_jappl17\.pdf](fot_jappl17.pdf), [doi:10\.1152/japplphysiol\.00726\.2016](https://doi.org/10.1152/japplphysiol.00726.2016)\.  
 [15] Thuy T\. Pham, Steven T\. Moore, Simon J\.G\. Lewis, Diep N\. Nguyen, Eryk Dutkiewicz, Andrew J\. Fuglevand, Alistair L\. McEwan, and Philip H\.W\. Leong\.
 Freezing of gait detection in Parkinson's disease: a subject\-independent detector using anomaly scores\.
@@ -70,7 +70,7 @@ Freezing of gait detection in Parkinson's disease: a subject\-independent detect
 URL: [fog\_tbme17\.pdf](fog_tbme17.pdf), [doi:10\.1109/TBME\.2017\.2665438](https://doi.org/10.1109/TBME.2017.2665438)\.  
 [16] Andri Mahendra, Chunle Xiong, Xiang Zhang, Benjamin J\. Eggleton, and Philip H\. W\. Leong\.
 Multiwavelength stabilization control of a thermo\-optic system with adaptive reconfiguration\.
-*Appl\. Opt\.*, 56\(4\):1113–1118, Feb 2017\.
+*Appl\. Opt\.*, 56\(4\):1113–1118, 2 2017\.
 URL: [mimo\_ao17\.pdf](mimo_ao17.pdf), [doi:10\.1364/AO\.56\.001113](https://doi.org/10.1364/AO.56.001113)\.  
 [17] Nguyen Cong Dao, Abdallah El Kass, Mostafa Rahimi Azghadi, Craig T\. Jin, Jonathan Scott, and Philip H\.W\. Leong\.
 An enhanced MOSFET threshold voltage model for the 6–300 K temperature range\.
@@ -86,7 +86,7 @@ The first 25 years of the FPL conference: significant papers\.
 URL: [fplsig\_trets16\.pdf](fplsig_trets16.pdf), [doi:10\.1145/2996468](https://doi.org/10.1145/2996468)\.  
 [20] Farzad Noorian and Philip H\.W\. Leong\.
 On time series forecasting error measures for finite horizon control\.
-*IEEE Transactions on Control Systems Technology*, 25\(2\):736&ndash;743, March 2017\.
+*IEEE Transactions on Control Systems Technology*, 25\(2\):736&ndash;743, 3 2017\.
 URL: [fhc\_tcst17\.pdf](fhc_tcst17.pdf), [doi:10\.1109/TCST\.2016\.2571661](https://doi.org/10.1109/TCST.2016.2571661)\.  
 [21] Harrison Ball, Trung Nguyen, Philip H\. W\. Leong, and Michael J\. Biercuk\.
 Functional basis for efficient physical layer classical control in quantum processors\.
@@ -98,7 +98,7 @@ A microcoded kernel recursive least squares processor using FPGA technology\.
 URL: [kproc\_trets16\.pdf](kproc_trets16.pdf), [doi:10\.1145/2950061](https://doi.org/10.1145/2950061)\.  
 [23] Thuy T\. Pham, Cindy Thamrin, Paul D\. Robinson, Alistair L\. McEwan, and Philip H\.W\. Leong\.
 Respiratory artefact removal in forced oscillation measurements: a machine learning approach\.
-*IEEE Transactions on Biomedical Engineering*, 64\(8\):1679&ndash;1687, Aug 2017\.
+*IEEE Transactions on Biomedical Engineering*, 64\(8\):1679&ndash;1687, 8 2017\.
 URL: [fot\_tbme16\.pdf](fot_tbme16.pdf), [doi:10\.1109/TBME\.2016\.2554599](https://doi.org/10.1109/TBME.2016.2554599)\.  
 [24] Gabriel E\. Machovsky\-Capuska, David Priddel, Philip H\.W\. Leong, Peter Jones, Nicholas Carlile, Lesley Shannon, Dean Portelli, Alistair McEwan, Alexandre V\. Chaves, and David Raubenheimer\.
 Coupling bio\-logging with nutritional geometry to reveal novel insights into the foraging behaviour of a plunge\-diving marine predator\.
@@ -288,11 +288,11 @@ In *Proc\. IEEE Symposium on Field\-Programmable Custom Computing Machines \(FCC
 URL: [pirdsp\_fccm19\.pdf](pirdsp_fccm19.pdf), [doi:10\.1109/FCCM\.2019\.00015](https://doi.org/10.1109/FCCM.2019.00015)\.  
 [2] Rui Tang, Philip H W Leong, Jonathon Dore, and Anthony Vassallo\.
 Generating residential PV production and electricity consumption scenarios via generative adversarial networks\.
-In *Proc\. of The 2018 Asia\-Pacific Solar Research Conference*\. Dec 2018\.
+In *Proc\. of The 2018 Asia\-Pacific Solar Research Conference*\. 12 2018\.
 URL: [res\_apsrc18\.pdf](res_apsrc18.pdf)\.  
 [3] Siddhartha, Steven J\.E\. Wilton, David Boland, Barry Flower, Perry Blackmore, and Philip H\.W\. Leong\.
 Simultaneous inference and training using on\-FPGA weight perturbation techniques\.
-In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, to appear\. Dec 2018\.
+In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, to appear\. 12 2018\.
 URL: [wp\_fpt18\.pdf](wp_fpt18.pdf)\.  
 [4] Siddhartha, Yee Hui Lee, Duncan J\.M\. Moss, Julian Faraone, Perry Blackmore, Daniel Salmond, David Boland, and Philip H\.W\. Leong\.
 Long short\-term memory for radio frequency spectral prediction and its real\-time FPGA implementation\.
@@ -345,7 +345,7 @@ Source code available from \\href https://github\.com/Xilinx/BNN\-PYNQhttps://gi
 URL: [bnn\_fpga17\.pdf](bnn_fpga17.pdf), [doi:10\.1145/3020078\.3021744](https://doi.org/10.1145/3020078.3021744)\.  
 [16] Sean Fox, Stephen Tridgell, Craig T\. Jin, and Philip H\. W\. Leong\.
 Random projections for scaling machine learning on FPGAs\.
-In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, 85&ndash;92\. Dec 2016\.
+In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, 85&ndash;92\. 12 2016\.
 URL: [rp\_fpt16\.pdf](rp_fpt16.pdf), [doi:10\.1109/FPT\.2016\.7929193](https://doi.org/10.1109/FPT.2016.7929193)\.  
 [17] Shaojun Wang, Xinyu Niu, Ning Ma, Wayne Luk, Philip Leong, and Yu Peng\.
 A scalable dataflow accelerator for real time onboard hyperspectral image classification\.
@@ -373,7 +373,7 @@ In *Proc\. International IEEE Engineering in Medicine and Biology Conference \(E
 URL: [lssa\_embc15\.pdf](lssa_embc15.pdf), [doi:10\.1109/EMBC\.2015\.7318832](https://doi.org/10.1109/EMBC.2015.7318832)\.  
 [23] C\. Xiong, X\. Zhang, Z\. Liu, A\. Mahendra, D\.\-Y\. Choi, C\. J\. Chae, P\. H\. W\. Leong, M\. J\. Collins, and B\. J\. Eggleton\.
 Active temporal multiplexing of a silicon heralded single\-photon source\.
-In *2015 European Conference on Lasers and Electro\-Optics \- European Quantum Electronics Conference*, PD&ndash;B&ndash;4\. Optical Society of America, 2015\.
+In *2015 European Conference on Lasers and Electro\-Optics \- European Quantum Electronics Conference*, PD­B­4\. Optical Society of America, 2015\.
 URL: [http://www\.osapublishing\.org/abstract\.cfm?URI=CLEO\_Europe\-2015\-PD\_B\_4](http://www.osapublishing.org/abstract.cfm?URI=CLEO_Europe-2015-PD_B_4)\.  
 [24] Lesley Shannon, Veronica Cojocaru, Cong Nguyen Dao, and Philip H\.W\. Leong\.
 Trends in reconfigurable computing: applications and architectures\.
@@ -826,21 +826,21 @@ In *Proceedings of the International Symposium on Signal Processing and its Appl
 
 [1] Philip Leong and Wen Li\.
 Tire pressure system\.
-US Patent 20070069876 A1, March 29, 2007\.  
+US Patent 20070069876 A1, March 2007\.  
 [2] C\. Jin, P\. Leong, J\. Leung, S\. Carlile, and A\. van Schaik\.
 The generation of customized three\-dimensional sound effects for individuals\.
-World Patent Office 01/54453, July 26, 2001\.  
+World Patent Office 01/54453, July 2001\.  
 [3] A\. Kramer, R\. Canegallo, M\. Chinosi, G\. Gozzini, P\. Leong, P\. L\. Rolandi, and M\. Sabatini\.
 Voltage comparator with floating gate mos transistor\.
-US Patent 6,014,044, January 11, 2000\.
+US Patent 6,014,044, January 2000\.
 SGS–Thomson Microelectronics S\.r\.l\.  
 [4] A\. Kramer, R\. Canegallo, M\. Chinosi, G\. Gozzini, P\. Leong, P\. L\. Rolandi, and M\. Sabatini\.
 Digital\-to\-analog current converter employing floating gate transistors\.
-US Patent 5,990,816, September 30, 1997\.
+US Patent 5,990,816, 9 1997\.
 SGS–Thomson Microelectronics S\.r\.l\.  
 [5] P\.H\.W\. Leong and M\.A\. Jabri\.
 A method and system for automatically classifying intracardiac electrograms\.
-US Patent 5,280,792, January 25, 1994\.
+US Patent 5,280,792, 1 1994\.
 University of Sydney\.  
 
 # Books
@@ -922,11 +922,11 @@ The University of Sydney, 1992\.
 [1] P\. Leong\.
 Barramundi on fly\.
 *www\.flyfish\.com*, 2004\.
-http://www\.flyfish\.com/library/editorial\.php?id=611\.  
+URL: [http://www\.flyfish\.com/library/editorial\.php?id=611](http://www.flyfish.com/library/editorial.php?id=611)\.  
 [2] P\. Leong\.
 Low\-cost reconfigurable computing \(FPGAs\)\.
 *Slashdot*, 2001\.
-http://slashdot\.org/hardware/01/11/04/1947212\.shtml\.  
+URL: [http://slashdot\.org/hardware/01/11/04/1947212\.shtml](http://slashdot.org/hardware/01/11/04/1947212.shtml)\.  
 [3] P\. Leong\.
 Book review\.
 *EA Electrical Engineering Review*, 1\(3\):34–35, 1995\.  
