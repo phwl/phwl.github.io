@@ -45,22 +45,24 @@ portraits:
 fishing:
   - image_path: /assets/gallery/fishing/IMG_7711.JPG
     url: /assets/gallery/fishing/IMG_7711.JPG
-  - image_path: /assets/gallery/fishing/IMG_5383.JPG
-    url: /assets/gallery/fishing/IMG_5383.JPG
-  - image_path: /assets/gallery/fishing/IMG_6947.JPG
-    url: /assets/gallery/fishing/IMG_6947.JPG
+  - image_path: /assets/gallery/fishing/IMG_1615.JPG
+    url: /assets/gallery/fishing/IMG_1615.JPG
+  - image_path: /assets/gallery/fishing/plmack04.JPG
+    url: /assets/gallery/fishing/plmack04.JPG
   - image_path: /assets/gallery/fishing/IMG_7694.JPG
     url: /assets/gallery/fishing/IMG_7694.JPG
   - image_path: /assets/gallery/fishing/IMG_7735.JPG
     url: /assets/gallery/fishing/IMG_7735.JPG
   - image_path: /assets/gallery/fishing/IMG_8437.jpg
     url: /assets/gallery/fishing/IMG_8437.jpg
+  #- image_path: /assets/gallery/fishing/IMG_5383.JPG
+    #url: /assets/gallery/fishing/IMG_5383.JPG
   - image_path: /assets/gallery/fishing/IMG_3797.JPG
     url: /assets/gallery/fishing/IMG_3797.JPG
+  - image_path: /assets/gallery/fishing/IMG_6947.JPG
+    url: /assets/gallery/fishing/IMG_6947.JPG
   - image_path: /assets/gallery/fishing/Tero05.JPG
     url: /assets/gallery/fishing/Tero05.JPG
-  - image_path: /assets/gallery/fishing/plmack04.JPG
-    url: /assets/gallery/fishing/plmack04.JPG
   - image_path: /assets/gallery/fishing/plmarlin1.jpg
     url: /assets/gallery/fishing/plmarlin1.jpg
   - image_path: /assets/gallery/fishing/wmflathead03.jpg
