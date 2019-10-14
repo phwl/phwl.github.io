@@ -8,7 +8,7 @@ classes: wide
 
 # Journals
 
-[1] Jason K\. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al\-Sarawi, Philip Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei\.
+[1] Jason K\. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al\-Sarawi, Philip H\.W\. Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei\.
 Nonlinear retinal response modeling for future neuromorphic instrumentation\.
 *IEEE Instrumentation and Measurement Magazine*, pages to appear \(accepted 17 Sep 2019\), 2019\.
 URL: [nrrm\_imm19\.pdf](nrrm_imm19.pdf)\.  
