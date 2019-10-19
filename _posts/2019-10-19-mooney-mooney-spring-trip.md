@@ -18,7 +18,7 @@ way to Milson Island when the engine started hesitating and then stopped.
 
 {% include figure image_path="/assets/images/2019/10/IMG_4453.jpeg" caption="" %}
 
-Fortunately, it was not series. The fuel line had fallen off the tank and
+Fortunately, it was not serious. The fuel line had fallen off the tank and
 we were soon underway again.
 
 Caught a nice flathead on the second drift..
