@@ -10,6 +10,7 @@ categories:
 - fishing
 tags:
 - australia
+- hawkesbury
 header:
   teaser: /assets/images/2018/09/40515248_Unknown.jpg
 ---

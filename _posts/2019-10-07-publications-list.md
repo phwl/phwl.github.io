@@ -1,6 +1,6 @@
 ---
 title:  Generating a Publications List from BibTex files
-date:   2019-10-06 15:40:06 
+date:   2019-10-07 10:40:06 
 slug: generating-publications-list
 categories: 
   - academia
