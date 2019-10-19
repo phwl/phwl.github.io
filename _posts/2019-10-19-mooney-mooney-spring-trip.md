@@ -41,6 +41,7 @@ Houses around Milson Island.
 
 Not much was happening so we were back around midday, just as the wind was
 picking up (later in the day it was 40 km/h).
+{% include figure image_path="/assets/images/2019/10/IMG_1437.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2019/10/IMG_1438.jpeg" caption="" %}
 
 This pelican was well fed, took a flathead frame but didn't want any more.
