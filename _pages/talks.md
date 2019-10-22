@@ -10,6 +10,14 @@ classes: wide
 wordpress_id: 3312
 ---
 
+## 23rd Oct 2019, Lunchtime Tutorial
+[Python Map-Reduce tutorial](/assets/talks/mr-tutorial19.pdf), Computer Engineering Lab 
+
+This Python tutorial introduces the map-reduce programming model.
+Map-reduce can be used to simplify code as well as to parallelise
+computer programs. It is commonly used not only in Python programs, but
+also in reconfigurable computing and large-scale computing.
+
 ## 30th Sep 2019, Lecture
 [Multipliers for FPGA Machine Learning Applications](/assets/talks/ml-multipliers19.pdf), Fudan University
 
