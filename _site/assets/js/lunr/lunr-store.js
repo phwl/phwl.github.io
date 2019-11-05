@@ -798,4 +798,4 @@ var store = [{
         "excerpt":"Carried an electric stove all the way back from Shanghai only to drop  and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                ","categories": ["woodwork"],
         "tags": ["hobbies"],
         "url": "http://localhost:4000/2019/new-stove-case/",
-        "teaser":"http://localhost:4000/assets/images/2019/11/stove5.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/11/stove3.jpeg"}]
