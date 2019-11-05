@@ -765,7 +765,7 @@ var store = [{
         "url": "http://localhost:4000/2019/hk-and-zhuhai19/",
         "teaser":"http://localhost:4000/assets/images/2019/07/DSCF0096.jpg"},{
         "title": "International Lighthouse and Lightship Weekend 2019",
-        "excerpt":"Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.   [   &lt;a href=     \"/assets/images/2019/08/IMG_4048.jpg\" &gt;   &lt;img src=    \"/assets/images/2019/08/IMG_4048.jpg\"  alt=\"\"&gt;    &lt;figcaption&gt;     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;                                                                                                                       ","categories": ["amateur radio"],
+        "excerpt":"Activation of Barrenjoey Lighthouse with the Manly Warringah Radio Society (MWRS) on the International Lighthouse and Lightship Weekend. There are more photos at the MWRS writeup.                                                                                                                                                    ","categories": ["amateur radio"],
         "tags": ["hobbies"],
         "url": "http://localhost:4000/2019/lighhouse19/",
         "teaser":"http://localhost:4000/assets/images/2019/08/IMG_4048-large.jpg"},{
@@ -793,4 +793,9 @@ var store = [{
         "excerpt":"This was the first trip for Warren and I for the season. We were on the way to Milson Island when the engine started hesitating and then stopped.                                Fortunately, it was not serious. The fuel line had fallen off the tank and we were soon underway again.   Caught a nice flathead on the second drift..                               We were being blown straight into shore so we dropped the anchor and had coffee while fishing.                                                            We caught a succession of stingrays (4 in total for the day).                                                            The jellyfish were present in plague proportions.                               Houses around Milson Island.                               Not much was happening so we were back around midday, just as the wind was picking up (later in the day it was 40 km/h).                                                            At the boat ramp Warren kindly gave our remaining nippers to some guys heading out from the boat ramp. He didn’t realise they were from a  bait shop :-) This pelican was well fed, took a flathead frame but didn’t want any more.                               ","categories": ["fishing"],
         "tags": ["australia","hawkesbury"],
         "url": "http://localhost:4000/2019/mooney-mooney-spring-trip/",
-        "teaser":"http://localhost:4000/assets/images/2019/10/IMG_1433.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/10/IMG_1433.jpeg"},{
+        "title": "New Stove Case",
+        "excerpt":"Carried an electric stove all the way back from Shanghai only to drop it` and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                ","categories": ["woodwork"],
+        "tags": ["hobbies"],
+        "url": "http://localhost:4000/2019/new-stove-case/",
+        "teaser":"http://localhost:4000/assets/images/2019/11/stove5.jpeg"}]
