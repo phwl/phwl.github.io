@@ -10,6 +10,11 @@ classes: wide
 wordpress_id: 3312
 ---
 
+## 7th November 2019, Lecture
+[Computer Engineering Lab](/assets/talks/cel-tasforum19.pdf), Defence Innovation Network Industry Forum, University of Technology, Sydney
+
+The Computer Engineering Lab at the University of Sydney focusses on how to use FPGAs to solve demanding problems. We strive to develop novel architectures, applications and design techniques for problems combining signal processing and machine learning.
+
 ## 23rd Oct 2019, Lunchtime Tutorial
 [Python Map-Reduce tutorial](/assets/talks/mr-tutorial19.pdf), Computer Engineering Lab 
 
