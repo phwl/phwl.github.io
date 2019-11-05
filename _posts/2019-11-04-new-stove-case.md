@@ -9,7 +9,7 @@ categories:
 tags:
 - hobbies
 header:
-  teaser: /assets/images/2019/11/stove5.jpeg
+  teaser: /assets/images/2019/11/stove3.jpeg
 ---
 
 Carried an electric stove all the way back from Shanghai only to drop 

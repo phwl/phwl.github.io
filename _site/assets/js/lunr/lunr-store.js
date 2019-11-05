@@ -795,7 +795,7 @@ var store = [{
         "url": "http://localhost:4000/2019/mooney-mooney-spring-trip/",
         "teaser":"http://localhost:4000/assets/images/2019/10/IMG_1433.jpeg"},{
         "title": "New Stove Case",
-        "excerpt":"Carried an electric stove all the way back from Shanghai only to drop it` and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                ","categories": ["woodwork"],
+        "excerpt":"Carried an electric stove all the way back from Shanghai only to drop  and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                ","categories": ["woodwork"],
         "tags": ["hobbies"],
         "url": "http://localhost:4000/2019/new-stove-case/",
         "teaser":"http://localhost:4000/assets/images/2019/11/stove5.jpeg"}]
