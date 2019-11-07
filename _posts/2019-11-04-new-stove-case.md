@@ -26,3 +26,5 @@ This is a new case made with scrap wood.
 A few coats of varnish.
 
 {% include figure image_path="/assets/images/2019/11/stove4.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2019/11/stove5.jpeg" caption="" %}
