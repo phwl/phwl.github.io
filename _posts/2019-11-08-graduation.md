@@ -15,3 +15,6 @@ Sir Michael Hintze who received an honorary doctorate.
 
 {% include figure image_path="/assets/images/2019/11/IMG_4738.jpg" caption="" %}
 
+Here is a photo of myself with my colleagues, A/Prof Gregor Verbic, Dr Swamidoss Sathiakumar, Peter Tyree, Prof Jian Guo Zhu (Head of School), Prof Willy Zwaenepoel (Dean), Prof Xiaoke Yi and myself.
+
+{% include figure image_path="/assets/images/2019/11/IMG_4726.jpg" caption="" %}
