@@ -641,6 +641,10 @@
 <lastmod>2019-11-04T17:09:47+11:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2019/graduation/</loc>
+<lastmod>2019-11-08T18:54:36+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -732,6 +736,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page20/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page21/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>
@@ -1294,6 +1301,10 @@
 <lastmod>2019-10-01T21:28:45+10:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/assets/papers/kangaroo_austzoo19.pdf</loc>
+<lastmod>2019-11-07T18:37:25+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/papers/km_fpl10.pdf</loc>
 <lastmod>2019-10-01T21:28:45+10:00</lastmod>
 </url>
@@ -1752,6 +1763,10 @@
 <url>
 <loc>http://localhost:4000/assets/papers/zig_jss05.pdf</loc>
 <lastmod>2019-10-01T21:28:45+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/talks/cel-tasforum19.pdf</loc>
+<lastmod>2019-11-07T09:53:22+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/talks/ml-multipliers19.pdf</loc>

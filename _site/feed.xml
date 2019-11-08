@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-05T19:45:22+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">New Stove Case</title><link href="http://localhost:4000/2019/new-stove-case/" rel="alternate" type="text/html" title="New Stove Case" /><published>2019-11-04T17:09:47+11:00</published><updated>2019-11-04T17:09:47+11:00</updated><id>http://localhost:4000/2019/new-stove-case</id><content type="html" xml:base="http://localhost:4000/2019/new-stove-case/">&lt;p&gt;Carried an electric stove all the way back from Shanghai only to drop 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-08T19:00:29+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Graduation Ceremony</title><link href="http://localhost:4000/2019/graduation/" rel="alternate" type="text/html" title="Graduation Ceremony" /><published>2019-11-08T18:54:36+11:00</published><updated>2019-11-08T18:54:36+11:00</updated><id>http://localhost:4000/2019/graduation</id><content type="html" xml:base="http://localhost:4000/2019/graduation/">&lt;p&gt;Congratulations to Rijul Gupta who graduated today with First Class Honours. This photo shows him receiving his degree from the Chancellor, Belinda Hutchinson. In the foreground, from the right is Vice-Chancellor Dr Michael Spence and
+Sir Michael Hintze who received an honorary doctorate.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/11/IMG_4738.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2019/11/IMG_4738.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Congratulations to Rijul Gupta who graduated today with First Class Honours. This photo shows him receiving his degree from the Chancellor, Belinda Hutchinson. In the foreground, from the right is Vice-Chancellor Dr Michael Spence and Sir Michael Hintze who received an honorary doctorate.</summary></entry><entry><title type="html">New Stove Case</title><link href="http://localhost:4000/2019/new-stove-case/" rel="alternate" type="text/html" title="New Stove Case" /><published>2019-11-04T17:09:47+11:00</published><updated>2019-11-04T17:09:47+11:00</updated><id>http://localhost:4000/2019/new-stove-case</id><content type="html" xml:base="http://localhost:4000/2019/new-stove-case/">&lt;p&gt;Carried an electric stove all the way back from Shanghai only to drop 
 and break the plastic case.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -35,6 +45,15 @@ and break the plastic case.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2019/11/stove4.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/11/stove4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/11/stove5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2019/11/stove5.jpeg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
@@ -871,163 +890,4 @@ the photo below.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><category term="hobbies" /><category term="electronics" /><summary type="html">Chris Dick was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry><entry><title type="html">Moving from Wordpress to Jekyll</title><link href="http://localhost:4000/2019/moving-from-wordpress-to-jekyll.md/" rel="alternate" type="text/html" title="Moving from Wordpress to Jekyll" /><published>2019-06-19T03:52:46+10:00</published><updated>2019-06-19T03:52:46+10:00</updated><id>http://localhost:4000/2019/moving-from-wordpress-to-jekyll.md</id><content type="html" xml:base="http://localhost:4000/2019/moving-from-wordpress-to-jekyll.md/">&lt;p&gt;I have been using &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; for many years.
-It produces good looking websites and is easy to install and maintain.
-Unfortunately, it isn’t easy at all to backup the website, and the
-interface is all web-based meaning it is difficult to create
-scripts which update the website. The old website is &lt;a href=&quot;http://phwl.org/blog&quot;&gt;http://phwl.org/blog&lt;/a&gt;
-and the new website can be viewed at &lt;a href=&quot;https://phwl.github.io&quot;&gt;https://phwl.github.io&lt;/a&gt;.
-I will be switching them over at some point and moved the old
-domain to a spare &lt;a href=&quot;http://uxa.apl.mybluehost.me/&quot;&gt;http://uxa.apl.mybluehost.me/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Most programmers use &lt;a href=&quot;https://www.github.com&quot;&gt;github&lt;/a&gt; which offers
-&lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt; for website hosting.
-The advantages over Wordpress plus hosting are:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;It is free.&lt;/li&gt;
-  &lt;li&gt;Websites can be edited with a normal text editor.&lt;/li&gt;
-  &lt;li&gt;It is hosted by Github so version control etc is integrated.&lt;/li&gt;
-  &lt;li&gt;A local copy is available so scripts to automate updating the
-website etc are simple and changes can be made while offline.&lt;/li&gt;
-  &lt;li&gt;It is easy to make backups.&lt;/li&gt;
-  &lt;li&gt;Latex rendering is easy.&lt;/li&gt;
-  &lt;li&gt;Markdown makes code blocks easier.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I managed to move &lt;a href=&quot;http://phwl.org&quot;&gt;phwl.org&lt;/a&gt; to Github under MacOS using the
-steps below.&lt;/p&gt;
-
-&lt;h2 id=&quot;install-jekyll&quot;&gt;Install Jekyll&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Install ruby, rbenv, bundler and jekyll (I used homebrew) &lt;a href=&quot;https://jekyllrb.com/docs/installation/macos/&quot;&gt;https://jekyllrb.com/docs/installation/macos/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;install-minimal-mistakes-jekyll-theme&quot;&gt;Install minimal-mistakes-jekyll theme&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Jekyll is not compatible with the stupid Dropbox directory name &lt;code class=&quot;highlighter-rouge&quot;&gt;'Dropbox\ \(Sydney\ Uni\)/'&lt;/code&gt;, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up&lt;/li&gt;
-  &lt;li&gt;Make a copy of &lt;a href=&quot;https://github.com/mmistakes/mm-github-pages-starter&quot;&gt;https://github.com/mmistakes/mm-github-pages-starter&lt;/a&gt;, edit the _config.yml&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To use the local server, type &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve --incremental&lt;/code&gt;
-and browse to &lt;code class=&quot;highlighter-rouge&quot;&gt;localhost:4000&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;convert-website&quot;&gt;Convert website&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Use the Wordpress exporter to export old website in xml format (tried the Jekyll converter plugin but that doesn’t work for large websites). This just gives the content, without attachments etc. Then&lt;/li&gt;
-  &lt;li&gt;Use &lt;a href=&quot;https://github.com/thomasf/exitwp&quot;&gt;exitwp&lt;/a&gt; to convert Wordpress to Jekyll&lt;/li&gt;
-  &lt;li&gt;Copy all the images and documents from the Wordpress site (&lt;code class=&quot;highlighter-rouge&quot;&gt;wp-content&lt;/code&gt; directory) using &lt;code class=&quot;highlighter-rouge&quot;&gt;ftp&lt;/code&gt;. I used &lt;code class=&quot;highlighter-rouge&quot;&gt;FileZilla&lt;/code&gt; from the App store for this.&lt;/li&gt;
-  &lt;li&gt;Copy the _posts directory from &lt;code class=&quot;highlighter-rouge&quot;&gt;exitwp&lt;/code&gt; into the Jekyll website.&lt;/li&gt;
-  &lt;li&gt;Copy wp-content files into &lt;code class=&quot;highlighter-rouge&quot;&gt;assets/images&lt;/code&gt; on the Jekyll website.&lt;/li&gt;
-  &lt;li&gt;To make publically available, type &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll build&lt;/code&gt; and then push the files up to Github (the repository is &lt;a href=&quot;https://github.com/phwl/phwl.github.io&quot;&gt;https://github.com/phwl/phwl.github.io&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;fix-_posts-and-_pages&quot;&gt;Fix &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages&lt;/code&gt;&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;This took the most time. The main changes I needed to do was to fix the headers: remove the old &lt;code class=&quot;highlighter-rouge&quot;&gt;link&lt;/code&gt; header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fileinput&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileinput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inplace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'.bak'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'\[!.*\((.+)\).*\]\(.*\)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;r'[![](\1){: .align-center}](\1)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rstrip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I later added links to the original image with this script.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fileinput&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fileinput&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inplace&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;backup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'.bak'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'!&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[(.*)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;((.*)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{: .align-center&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'[![\1](\2){: .align-center}](\2)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rstrip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;and then changed them yet again to use the include form&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;image_path=&quot;/assets/images/2019/10/IMG_1268.jpg&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; caption=&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Shenzhen&lt;/span&gt;&quot;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I also used wide pages &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/&quot;&gt;https://mmistakes.github.io/minimal-mistakes/markup-text-readability-wide-page/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;customise-website&quot;&gt;Customise website&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Since I wanted teaser images appearing on the front page, I put a copy of &lt;a href=&quot;https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html&quot;&gt;https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html&lt;/a&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/archive-single.html&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;To use a custom domain &lt;a href=&quot;https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site&quot;&gt;https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;To use single pages without sidebar &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064&quot;&gt;https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;To change home to a grid layout I changed home.html so the loop is in a grid wrapper&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;grid__wrapper&quot;&amp;gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;paginator.posts&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;archive-single.html&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;grid&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Make figures linked to the image&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;figure class=&quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;&amp;gt;
-  &amp;lt;a href=
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;://&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-      &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-      &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;relative_url&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&amp;gt;
-  &amp;lt;img src=
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;://&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-      &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-      &quot;&lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;relative_url&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&quot;
-    &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-    alt=&quot;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&quot;&amp;gt;
-  &lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-    &amp;lt;figcaption&amp;gt;
-      &lt;span class=&quot;p&quot;&gt;{{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;markdownify&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;p&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/p&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;
-    &amp;lt;/figcaption&amp;gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&amp;lt;/a&amp;gt;&amp;lt;/figure&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;To enable &lt;script type=&quot;math/tex&quot;&gt;\LaTeX&lt;/script&gt; rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes/latex.html&lt;/code&gt; with&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;use_math&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&amp;lt;script type=&quot;text/javascript&quot; async
-  src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML&quot;&amp;gt;
-&amp;lt;/script&amp;gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This is similar to the approach in &lt;a href=&quot;https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/&quot;&gt;https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-&lt;p&gt;I found the following sites helpful:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.alexdglover.com/the-move-to-jekyll/&quot;&gt;https://www.alexdglover.com/the-move-to-jekyll/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/&quot;&gt;http://www.seanbuscay.com/blog/jekyll-teaser-pager-and-read-more/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image&quot;&gt;https://stackoverflow.com/questions/25463865/in-jekyll-how-do-i-grab-a-posts-first-image&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/&quot;&gt;https://www.vgemba.net/blog/Blog-Migration-Part-1-Setup/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/merlos/jekyll-auto-image&quot;&gt;https://github.com/merlos/jekyll-auto-image&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://lanyon.getpoole.com/&quot;&gt;http://lanyon.getpoole.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://drjekyllthemes.github.io/&quot;&gt;http://drjekyllthemes.github.io/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gykovacsblog.wordpress.com/tag/jekyll-scholar/&quot;&gt;https://gykovacsblog.wordpress.com/tag/jekyll-scholar/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#&quot;&gt;https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/alshedivat/al-folio&quot;&gt;https://github.com/alshedivat/al-folio&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/&quot;&gt;https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="jekyll" /><summary type="html">I have been using Wordpress for many years. It produces good looking websites and is easy to install and maintain. Unfortunately, it isn’t easy at all to backup the website, and the interface is all web-based meaning it is difficult to create scripts which update the website. The old website is http://phwl.org/blog and the new website can be viewed at https://phwl.github.io. I will be switching them over at some point and moved the old domain to a spare http://uxa.apl.mybluehost.me/.</summary></entry></feed>
+&lt;p&gt;Thanks for a wonderful visit Dick!&lt;/p&gt;</content><author><name>phwl</name></author><category term="hobbies" /><category term="electronics" /><summary type="html">Chris Dick was kind enough to introduce me to his friend, Dick Benson W1QG, a retired hardware development engineer. We went to visit his very impressive shack (which was not difficult to spot from the road).</summary></entry></feed>

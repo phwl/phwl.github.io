@@ -795,7 +795,12 @@ var store = [{
         "url": "http://localhost:4000/2019/mooney-mooney-spring-trip/",
         "teaser":"http://localhost:4000/assets/images/2019/10/IMG_1433.jpeg"},{
         "title": "New Stove Case",
-        "excerpt":"Carried an electric stove all the way back from Shanghai only to drop  and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                ","categories": ["woodwork"],
+        "excerpt":"Carried an electric stove all the way back from Shanghai only to drop  and break the plastic case.                                This is a new case made with scrap wood.                                                             A few coats of varnish.                                                             ","categories": ["woodwork"],
         "tags": ["hobbies"],
         "url": "http://localhost:4000/2019/new-stove-case/",
-        "teaser":"http://localhost:4000/assets/images/2019/11/stove3.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/11/stove3.jpeg"},{
+        "title": "Graduation Ceremony",
+        "excerpt":"Congratulations to Rijul Gupta who graduated today with First Class Honours. This photo shows him receiving his degree from the Chancellor, Belinda Hutchinson. In the foreground, from the right is Vice-Chancellor Dr Michael Spence and Sir Michael Hintze who received an honorary doctorate.                                ","categories": ["academia"],
+        "tags": [],
+        "url": "http://localhost:4000/2019/graduation/",
+        "teaser":"http://localhost:4000/assets/images/2019/11/IMG_4738.jpg"}]
