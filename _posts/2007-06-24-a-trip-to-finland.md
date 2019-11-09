@@ -50,13 +50,13 @@ That was the end of a long day
 Day 2
 
 The next day we did a little more pike fishing.
-[![](http://phwl.org/wp-content/uploads/2007/06/p1000556.jpg){: .align-center}](http://phwl.org/wp-content/uploads/2007/06/p1000556.jpg)
+{% include figure image_path="/assets/images/2007/06/p1000556.jpg" %}
 
 After which we cooked them while we were cooking ourselves in the sauna.
-[![](http://www.phwl.org/wp-content/uploads/2007/06/3794361275_c29b992456_o.jpg){: .align-center}](http://www.phwl.org/wp-content/uploads/2007/06/3794361275_c29b992456_o.jpg)
+{% include figure image_path="/assets/images/2007/06/3794361275_c29b992456_o.jpg" %}
 
 I checked the fish trap and we had a great catch.
-[![](http://www.phwl.org/wp-content/uploads/2007/06/3794360851_13446e91ea_o.jpg){: .align-center}](http://www.phwl.org/wp-content/uploads/2007/06/3794360851_13446e91ea_o.jpg)
+{% include figure image_path="/assets/images/2007/06/3794360851_13446e91ea_o.jpg" %}
 
 Then, back to fishing.
 {% include figure image_path="/assets/images/2007/06/p1000574.jpg" caption="" %}
@@ -67,7 +67,7 @@ Then, back to fishing.
 
 Here I am demonstrating how to walk on water.
 
-![p1000604](/assets/images/2007/06/p1000604.jpg)
+{% include figure image_path="/assets/images/2007/06/p1000604.jpg" %}
 
 Day 3
 
@@ -75,7 +75,7 @@ We started the day by retrieving nets we had previously set. I always thought th
 {% include figure image_path="/assets/images/2007/06/p1000641.jpg" caption="" %}
 Then we went fishing.
 {% include figure image_path="/assets/images/2007/06/p1000664.jpg" caption="" %}
-[![](http://www.phwl.org/wp-content/uploads/2007/06/3794364355_d1b1ae7341_o.jpg){: .align-center}](http://www.phwl.org/wp-content/uploads/2007/06/3794364355_d1b1ae7341_o.jpg)
+{% include figure image_path="/assets/images/2007/06/3794364355_d1b1ae7341_o.jpg" %}
 
 {% include figure image_path="/assets/images/2007/06/p1000669.jpg" caption="" %}
 
@@ -90,9 +90,9 @@ Day 4
 By the final day, we had caught lots of fish. Tero had a conference call and I was left to my own devices, a potentially dangerous situation. Decided to go fly fishing and within 10 minutes, this little pike scoffed my fly, probably the first fly-caught pike from Tero's lake.
 {% include figure image_path="/assets/images/2007/06/p1000693.jpg" caption="" %}
 A few minutes later, I was trying to reposition the boat and noticed my fly line moving off to the side. Fly must have accidentally dropped out and the pike took it right next to the boat. Here is that unlucky fish.
-![p1000696](/assets/images/2007/06/p1000696.jpg)
+{% include figure image_path="/assets/images/2007/06/p1000696.jpg" %}
 Tero put on his lucky jumper and soon caught his own.
-[![](http://www.phwl.org/wp-content/uploads/2007/06/3794366853_f18b62faa9_o.jpg){: .align-center}](http://www.phwl.org/wp-content/uploads/2007/06/3794366853_f18b62faa9_o.jpg)
+{% include figure image_path="/assets/images/2007/06/3794366853_f18b62faa9_o.jpg" %}
 
 All in all, we had a great time fishing. We caught lots of fish, mainly pike but also perch, flatfish, pike-perch (zander) and sarki. I like pike, they are the ultimate predator with lightening speed, sharp teeth and the personality of a psychotic stepmother. You can often see them shoot out from the reeds and take your fly or lure. When they hit, there is no mistaking it. I look forward to catching a large one some day, they can grow to more than 40lb.
 Here is the successful fly and some of the lures that we used.

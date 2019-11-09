@@ -573,10 +573,10 @@ URL: [nrrm\_imm19\.pdf](nrrm_imm19.pdf)\.
 AddNet: deep neural networks using FPGA\-optimized multipliers\.
 *IEEE Transactions on VLSI Systems*, pages to appear \(accepted 11 Aug 2019\), 2019\.
 URL: [addnet\_tvlsi19\.pdf](addnet_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2019\.2939429](https://doi.org/10.1109/TVLSI.2019.2939429)\.  
-[4] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland , Duncan Moss, Peter Zipf, and Philip H\. W\. Leong\.
+[4] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland, Duncan Moss, Peter Zipf, and Philip H\. W\. Leong\.
 Unrolling ternary neural networks\.
-*ACM Transactions on Reconfigurable Technology and Systems*, pages to appear \(accepted 30 Aug 2019\), 2019\.
-URL: [ternary\_trets19\.pdf](ternary_trets19.pdf)\.  
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, 12\(4\):22:1–22:23, October 2019\.
+URL: [ternary\_trets19\.pdf](ternary_trets19.pdf), [doi:10\.1145/3359983](https://doi.org/10.1145/3359983)\.  
 [5] Rui Tang, Baran Yildiz, Philip H\.W\. Leong, Anthony Vassallo, and Jonathon Dore\.
 Residential battery sizing model using net meter energy data clustering\.
 *Applied Energy*, 251:113324, 2019\.
@@ -951,6 +951,6 @@ Marlin on fly\.
 URL: [marlin\_mf94\.pdf](marlin_mf94.pdf)\.  
 [5] P\. Leong\.
 Current source scrounges parts\.
-*EDN Magazine*, pages 182, June 6, 1991\.
+*EDN Magazine*, pages 182, June 1991\.
 URL: [isrc\_edn91\.pdf](isrc_edn91.pdf)\.  
 

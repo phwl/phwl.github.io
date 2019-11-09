@@ -18,7 +18,7 @@ header:
 
 The Manly Warringah Radio Society (VK2MB) has participated in the International Lighthouse and Lightship Weekend (https://illw.net/) since 2003. This year we hosted our friends Lindsay VK2AMV, Dave VK2JDS and Garry VK2FGAZ from the Amateur Radio Central West Group. As in previous years, we activated the historic Barrenjoey Lighthouse, 30 km north of Sydney (lighthouse code AU0046 https://illw.net/index.php/entrants-list-2018). We met in the beach carpark at 8:30 Saturday morning to distribute the gear for the trek up to the magnificent sandstone lighthouse and lighthouse keepers cottages. Also, as in previous years, it was extremely blustery from Saturday afternoon onwards and the 50 km/h winds were "strong enough to blow a dog off its chain" (as Dave was fond of telling our HF contacts).
 
-<!-- more -->The location has beautiful views at night.
+The location has beautiful views at night.
 
 {% include figure image_path="/assets/images/2018/08/DSC_5871.jpg" caption="" %}
 
@@ -618,7 +618,7 @@ Received**
 </td>
 
 <td valign="bottom" >20180818
-</td>
+/td>
 
 <td valign="bottom" >064842
 </td>

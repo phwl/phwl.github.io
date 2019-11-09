@@ -22,18 +22,7 @@ header:
 The FPGA Fly-Fishing Symposium 2019 ([FFF'19](http://phwl.org/category/hobbies/fishing/fff/)) was a post-[FPGA Conference](http://isfpga.org/) workshop, attended by Guy, Ken and I.
 
 
-
-
-
 {% include figure image_path="/assets/images/2019/03/IMG_0221.jpg" caption="" %}
-
-
-
-<!-- more -->
-
-
-
-
 
 I am not the superstitious type but we received many encouraging signs in Monterey.
 
@@ -106,86 +95,27 @@ The next day got up at 5:30am to go fishing with [Chuck Ragan](http://www.crflyf
 There is a fine line between fishing and standing in the rain looking like an idiot. We were hoping it would be the latter but here is video of us doing the former.
 
 
-
-
-
-
-
-
-https://youtu.be/Kiej_pvAFFg
-
-
-
-
-
-
-
+{% include video id="Kiej_pvAFFg" provider="youtube" %}
 
 Chuck was really cool, laid back and even more enthusiastic than ourselves. He kept saying he was pleased to find people willing to go out in the pouring rain. Bullard's Bar was completely empty, no cars in the carpark and we didn't see any other people the entire day.
 
-
-
-
-
 {% include figure image_path="/assets/images/2019/03/IMG_0156.jpg" caption="" %}
-
-
 
 {% include figure image_path="/assets/images/2019/03/IMG_0161.jpg" caption="" %}
 
-
-
 {% include figure image_path="/assets/images/2019/03/IMG_0165.jpg" caption="" %}
-
-
-
-
 
 We were using #7 weight rods with floating lines. Due to miscommunication, I brought my #5 and #9 and left my #7 in San Jose. We fished weighted bait imitation wet flies about 12 ft under a small float.
 
-
-
-
-
 {% include figure image_path="/assets/images/2019/03/IMG_0200.jpg" caption="" %}
-
-
-
-
 
 Here is a nice slow motion video that Chuck took of Ken casting.
 
-
-
-
-
-
-
-
-https://youtu.be/oekFpU81NU4
-
-
-
-
-
-
-
-
-
-
-
-
-
+{% include video id="oekFpU81NU4" provider="youtube" %}
 
 It wasn't long before we were into fish.
 
-
-
-
-
 {% include figure image_path="/assets/images/2019/03/IMG_0211.jpg" caption="" %}
-
-
 
 {% include figure image_path="/assets/images/2019/03/IMG_0175.jpg" caption="" %}
 

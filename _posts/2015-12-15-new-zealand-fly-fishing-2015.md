@@ -15,11 +15,9 @@ header:
   teaser: /assets/images/2015/12/IMG_1615.jpg
 ---
 
-After attending the[ International Conference on Field Programmable Technology](http://fpt.massey.ac.nz/), Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We called this the 1st FPGA Fly-Fishing Symposium (FFF'15). Last time I was there was [Nov 1996](http://phwl.org/new-zealand-trip/), before web browers and digital cameras! I had previously fished with Brent in [Utah](http://phwl.org/fishing-renovating-and-ballroom-dancing-in-utah-2008/).
+After attending the [International Conference on Field Programmable Technology](http://fpt.massey.ac.nz/), Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We called this the 1st FPGA Fly-Fishing Symposium (FFF'15). Last time I was there was [Nov 1996](http://phwl.org/1996/new-zealand-trip/), before web browers and digital cameras! I had previously fished with Brent in [Utah](http://phwl.org/2015/fishing-renovating-and-ballroom-dancing-in-utah-2008/).
 
 {% include figure image_path="/assets/images/2015/12/IMG_1615.jpg" caption="" %}
-
-<!-- more -->
 
 {% include figure image_path="/assets/images/2015/12/IMG_1587.jpg" caption="" %}
 
@@ -42,8 +40,6 @@ It wasn't long before we went fishing in Lake Benmore. This is me with a brown t
 and here is Brent catching a fine brown.
 
 {% include figure image_path="/assets/images/2015/12/IMG_1547.jpg" caption="" %}
-
-
 
 {% include figure image_path="/assets/images/2015/12/IMG_2394.jpg" caption="" %}
 
@@ -79,17 +75,20 @@ Throughout the trip we had fine cuisine.
 
 {% include figure image_path="/assets/images/2015/12/IMG_1667.jpg" caption="" %}
 
-[![](http://phwl.org/wp-content/uploads/2015/12/IMG_1588.jpg){: .align-center}](http://phwl.org/wp-content/uploads/2015/12/IMG_1588.jpg)
+{% include figure image_path="/assets/images/2015/12/IMG_1588.jpg" %}
 
-Here I am netting my largest brown trout of the trip.  {% include figure image_path="/assets/images/2015/12/IMG_1610.jpg" caption="" %}
+Here I am netting my largest brown trout of the trip.  
+{% include figure image_path="/assets/images/2015/12/IMG_1610.jpg" caption="" %}
 
 These wild flowers are called lupins and were in full bloom.
 
 {% include figure image_path="/assets/images/2015/12/IMG_1602.jpg" caption="" %}
 
-Lower Ahuriri River.[![](http://phwl.org/wp-content/uploads/2015/12/IMG_1619.jpg){: .align-center}](http://phwl.org/wp-content/uploads/2015/12/IMG_1619.jpg)
+Lower Ahuriri River.
+{% include figure image_path="/assets/images/2015/12/IMG_1619.jpg" %}
 
-Brent in a selfie with an Ahuriri rainbow. {% include figure image_path="/assets/images/2015/12/IMG_2320.jpg" caption="" %}
+Brent in a selfie with an Ahuriri rainbow. 
+{% include figure image_path="/assets/images/2015/12/IMG_2320.jpg" caption="" %}
 
 Another Ahuriri River brown.
 
@@ -111,7 +110,8 @@ Ken casting on the Tekapo River.
 
 {% include figure image_path="/assets/images/2015/12/IMG_1663.jpg" caption="" %}
 
-Took a break from fishing to visit the Salmon Ponds salmon farm.{% include figure image_path="/assets/images/2015/12/IMG_1653.jpg" caption="" %}
+Took a break from fishing to visit the Salmon Ponds salmon farm.
+{% include figure image_path="/assets/images/2015/12/IMG_1653.jpg" caption="" %}
 
 Brent hooked up to a salmon.
 
@@ -121,7 +121,8 @@ Ohau Canal - it really is this colour. There are supposed to be 20 kg brown trou
 
 {% include figure image_path="/assets/images/2015/12/IMG_1646.jpg" caption="" %}
 
-Cows with Mount Cook in background (I think).{% include figure image_path="/assets/images/2015/12/IMG_1658.jpg" caption="" %}
+Cows with Mount Cook in background (I think).
+{% include figure image_path="/assets/images/2015/12/IMG_1658.jpg" caption="" %}
 
 Upper Ahuriri River.
 

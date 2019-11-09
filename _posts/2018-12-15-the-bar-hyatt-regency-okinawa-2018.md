@@ -21,4 +21,5 @@ Following the [FPT conference](http://icfpt.org), we had a great evening at The 
 
 {% include figure image_path="/assets/images/2018/12/DSCF5878.jpg" caption="" %}
 
-[![](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg){: .align-center}](http://phwl.org/wp-content/uploads/2018/12/DSCF5871.jpg)
+{% include figure image_path="/assets/images/2018/12/DSCF5871.jpg" caption="" %}
+

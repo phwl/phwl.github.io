@@ -8,23 +8,19 @@ title: Computer Engineering Lab Christmas Party Photo 2017
 classes: wide
 categories:
 - academia
-post_format:
-- Image
+tags:
+- celchristmas
 header:
   teaser: /assets/images/2017/11/celchristmas17.jpeg
 ---
 
-[caption id="attachment_3352" align="alignnone" width="840"]{% include figure image_path="/assets/images/2017/11/celchristmas17-1024x768.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2017/11/celchristmas17.jpeg" caption="2017" %}
+
 
 Photos from earlier years below.
 
-<!-- more -->
+{% include figure image_path="/assets/images/2017/11/celchristmas2016.jpg" caption="2016" %}
 
+{% include figure image_path="/assets/images/2017/11/celparty2015.jpg" caption="2015" %}
 
-
-
-[caption id="attachment_3354" align="alignnone" width="840"]{% include figure image_path="/assets/images/2017/11/celchristmas2016.jpg" caption="" %}
-
-[caption id="attachment_3357" align="alignnone" width="840"]{% include figure image_path="/assets/images/2017/11/celparty2015.jpg" caption="" %}
-
-[caption id="attachment_3355" align="alignnone" width="840"]{% include figure image_path="/assets/images/2017/11/celchristmas2014.jpg" caption="" %}
+{% include figure image_path="/assets/images/2017/11/celchristmas2014.jpg" caption="2014" %}

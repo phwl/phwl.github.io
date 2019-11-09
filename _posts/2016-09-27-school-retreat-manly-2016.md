@@ -17,10 +17,6 @@ header:
 
 Here are some photos from the School of Electrical and Information Engineering retreat in Manly.
 
-[caption id="attachment_2637" align="alignnone" width="8196"]{% include figure image_path="/assets/images/2016/09/queencliffpano.jpg" caption="" %}
-
-<!-- more -->
-
 {% include figure image_path="/assets/images/2016/09/IMG_3647.jpg" caption="" %}
 
 {% include figure image_path="/assets/images/2016/09/IMG_3659.jpg" caption="" %}

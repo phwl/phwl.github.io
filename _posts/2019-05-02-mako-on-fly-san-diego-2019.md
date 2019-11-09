@@ -20,10 +20,6 @@ The mako shark is one of the fastest and most ferocious fish in the sea. They ca
 
 {% include figure image_path="/assets/images/2019/05/IMG_0832.jpg" caption="" %}
 
-https://youtu.be/py-aq-s33mQ
-
-<!-- more -->
-
 {% include figure image_path="/assets/images/2019/05/IMG_0720.jpg" caption="" %}
 
 
@@ -51,8 +47,7 @@ The tides were perfect with the high at 8:30am and the low at 2:30pm. There was 
 
 
 
-https://youtu.be/LxtMuuAC-e0
-
+{% include video id="LxtMuuAC-e0" provider="youtube" %}
 
 
 
@@ -126,8 +121,6 @@ Right on the low tide, a mako appeared. Conway teased it in and Ken had it take 
 
 
 
-
-
 This time Ken was able to set the hook while it was moving away from the boat.
 
 
@@ -165,14 +158,7 @@ Here is a video.
 
 
 
-
-
-
-
-https://youtu.be/py-aq-s33mQ
-
-
-
+{% include video id="py-aq-s33mQ" provider="youtube" %}
 
 
 
@@ -203,7 +189,9 @@ Conway expertly unhooked and released the fish, estimated at about 25 lbs.
 
 
 
-https://youtu.be/v907fdFlPqg
+{% include video id="v907fdFlPqg" provider="youtube" %}
+
+
 
 
 
