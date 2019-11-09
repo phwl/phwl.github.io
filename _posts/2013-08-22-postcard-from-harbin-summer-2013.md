@@ -9,6 +9,7 @@ classes: wide
 categories:
 - travel
 tags:
+- harbin
 - photography
 header:
   teaser: /assets/images/2013/08/P8183366.jpg

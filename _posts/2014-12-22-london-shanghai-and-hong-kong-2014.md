@@ -8,6 +8,8 @@ title: London, Shanghai and Hong Kong 2014
 classes: wide
 categories:
 - travel
+tags:
+- hk
 header:
   teaser: /assets/images/2014/12/PC140137.jpg
 ---

@@ -8,6 +8,7 @@ title: The Chinese University of Hong Kong
 classes: wide
 categories:
 - photography
+- hk
 header:
   teaser: /assets/images/2009/08/3732055986_9e2fbe4220.jpg
 ---

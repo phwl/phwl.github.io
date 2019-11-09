@@ -10,6 +10,7 @@ categories:
 - travel
 tags:
 - photography
+- beijing
 header:
   teaser: /assets/images/2017/10/DSCF4583.jpg
 ---

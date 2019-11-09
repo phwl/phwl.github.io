@@ -10,6 +10,7 @@ categories:
 - travel
 tags:
 - photography
+- hk
 post_format:
 - Image
 header:

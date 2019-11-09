@@ -8,6 +8,8 @@ title: Harbin and Qingdao 2015
 classes: wide
 categories:
 - travel
+tags:
+- harbin
 header:
   teaser: /assets/images/2015/07/P7170185.jpg
 ---

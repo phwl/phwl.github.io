@@ -10,6 +10,8 @@ header:
 classes: wide
 categories:
 - photography
+tags:
+- hk
 ---
 
 ## Introduction

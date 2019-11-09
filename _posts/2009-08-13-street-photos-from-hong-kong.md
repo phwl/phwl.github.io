@@ -8,6 +8,7 @@ title: Street photos from Hong Kong
 classes: wide
 categories:
 - photography
+- hk
 header:
   teaser: /assets/images/2009/08/3818727575_13c777a19b.jpg
 ---

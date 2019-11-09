@@ -8,6 +8,8 @@ title: Chengdu and Hong Kong 2018
 classes: wide
 categories:
 - travel
+tags:
+- hk
 header:
   teaser: /assets/images/2018/08/P7190077.jpg
 ---

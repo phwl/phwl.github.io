@@ -9,6 +9,7 @@ classes: wide
 categories:
 - academia
 tags:
+- harbin
 - FPGA
 header:
   teaser: /assets/images/blank.png

@@ -8,6 +8,8 @@ title: Shanghai Harbin 2018
 classes: wide
 categories:
 - travel
+tags:
+- harbin
 header:
   teaser: /assets/images/2018/10/IMG_9441.jpg
 ---

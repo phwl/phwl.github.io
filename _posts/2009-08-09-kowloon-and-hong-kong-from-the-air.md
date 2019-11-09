@@ -8,6 +8,7 @@ title: Hong Kong Skyline
 classes: wide
 categories:
 - photography
+- hk
 header:
   teaser: /assets/images/2009/08/3777477460_3c36654fb6_o.jpg
 ---

@@ -6,6 +6,8 @@ slug: hkshanghai19
 title: Hong Kong and Shanghai Trip 2019
 categories:
 - travel
+tags:
+- hk
 header:
   teaser: /assets/images/2019/10/DSCF0253.jpg
 ---

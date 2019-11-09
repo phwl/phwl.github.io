@@ -8,6 +8,8 @@ title: Postcard from Harbin
 classes: wide
 categories:
 - travel
+tags:
+- harbin
 header:
   teaser: /assets/images/2013/02/P2241417.jpg
 ---

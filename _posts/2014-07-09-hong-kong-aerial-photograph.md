@@ -9,6 +9,7 @@ classes: wide
 categories:
 - travel
 tags:
+- hk
 - photography
 post_format:
 - Image

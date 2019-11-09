@@ -8,6 +8,8 @@ title: Electronics Flea Market
 classes: wide
 categories:
 - electronics
+tags:
+- hk
 header:
   teaser: /assets/images/2019/03/IMG_0335.jpg
 ---
