@@ -29,4 +29,4 @@ A few coats of varnish.
 
 {% include figure image_path="/assets/images/2019/11/stove5.jpeg" caption="" %}
 
-{% include figure image_path="/assets/images/2019/11/stove6.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2019/11/stove6.jpeg" caption="Testing." %}
