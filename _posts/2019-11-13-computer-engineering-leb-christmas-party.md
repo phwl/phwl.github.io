@@ -18,7 +18,7 @@ We continue to have the world's earlier Christmas party!
 
 {% include figure image_path="/assets/images/2019/11/celchristmas19.jpeg" caption="2019" %}
 
-{% include figure image_path="/assets/images/2019/11/DSCF5719.jpeg" caption="2018" %}
+{% include figure image_path="/assets/images/2018/11/DSCF5719.jpeg" caption="2018" %}
 
 {% include figure image_path="/assets/images/2017/11/celchristmas17.jpeg" caption="2017" %}
 
