@@ -505,7 +505,7 @@ var store = [{
         "url": "http://localhost:4000/2017/fly-fishing-for-kingfish-in-pittwater-sydney/",
         "teaser":"http://localhost:4000/assets/images/2017/12/kingfish17-14.jpg"},{
         "title": "Directions to CEL",
-        "excerpt":"The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building (Building J03), The University of Sydney. My office is Room 837 (inside Lab 840) and the entrance is on the balcony. Please call my office number when you reach level 8.    ","categories": ["academia"],
+        "excerpt":"The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building (Building J03), The University of Sydney. My office is Room 837 (inside Lab 840) and the entrance is on the balcony. Please either knock on the door or call my office number when you reach level 8.    ","categories": ["academia"],
         "tags": [],
         "url": "http://localhost:4000/2017/directions-to-cel/",
         "teaser":"http://localhost:4000/assets/images/2017/12/directions.png"},{
@@ -813,4 +813,9 @@ var store = [{
         "excerpt":"We continue to have the world’s earlier Christmas party!                        2019                             2018                             2017                             2016                             2015                             2014        ","categories": ["academia"],
         "tags": ["celchristmas"],
         "url": "http://localhost:4000/2019/computer-engineering-lab-christmas-party/",
-        "teaser":"http://localhost:4000/assets/images/2019/11/celchristmas19.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/11/celchristmas19.jpeg"},{
+        "title": "Spring VHF/UHF Field Day",
+        "excerpt":"                     2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019        ","categories": ["amateur radio"],
+        "tags": ["hobbies","travel"],
+        "url": "http://localhost:4000/2019/vhf-field-day/",
+        "teaser":"http://localhost:4000/assets/images/2019/11/DSCF6362.jpeg"}]
