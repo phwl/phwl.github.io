@@ -15,6 +15,9 @@ header:
   teaser: /assets/images/2019/11/DSCF6362.jpeg
 ---
 
+Photos from the 2019 Spring VHF/UHF Field Day. More information at the 
+[Manly Warringah Radio Society site](https://www.mwrs.org.au/2019/11/24/23-nov-2019-vhf-uhf-spring-field-day/).
+
 {% include figure image_path="/assets/images/2019/11/DSCF6240.jpeg" caption="2019" %}
 {% include figure image_path="/assets/images/2019/11/DSCF6243.jpeg" caption="2019" %}
 {% include figure image_path="/assets/images/2019/11/DSCF6258.jpeg" caption="2019" %}
