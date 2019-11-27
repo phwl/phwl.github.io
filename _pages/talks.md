@@ -9,6 +9,13 @@ title: Talks
 classes: wide
 wordpress_id: 3312
 ---
+## 26th November 2019, Lecture
+[Multipliers for FPGA Machine Learning Applications](/assets/talks/ml-multipliers-imperial19.pdf), Imperial College
+
+FPGA implementations of machine learning algorithms have received considerable interest, and multipliers are a key component for their efficient implementation. In this talk, four examples of our recent research efforts in customisation of FPGA architecture and designs using different approaches to multiplication be described. As the multipliers become more specialised, higher performance gains are possible.
+
+First we describe a two-speed multiplier (TSM) which offers improved average clock rate over a conventional multiplier by carefully considering the delay of two critical paths in a serial-parallel modified radix-4 Booth multiplier. Secondly, our joint research with Fudan University on a flexible precision, run-time decomposable DSP architecture for CNN implementations which optimises Precision, Interconnect, and Reuse (PIR-DSP) is presented. The resulting design offers a 6× improvement in multiply-accumulate operations per DSP in the 9 × 9-bit case, 12× for 4 × 4 bits, and 24× for 2 × 2 bits. Thirdly, we present AddNet which shows that reconfigurable constant coefficient multipliers (RCCMs) offer an alternative to low precision arithmetic for saving area. Finally, we describe a ternary neural network generator which can generate fully unrolled designs. The implementation of a VGG-style network achieves 90.9% accuracy and 122 k frames per second, with a latency of only 29 μs, which is the fastest CNN inference implementation reported so far on an FPGA.
+
 
 ## 7th November 2019, Lecture
 [Computer Engineering Lab](/assets/talks/cel-tasforum19.pdf), Defence Innovation Network Industry Forum, University of Technology, Sydney
