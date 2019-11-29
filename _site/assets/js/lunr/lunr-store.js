@@ -818,4 +818,9 @@ var store = [{
         "excerpt":"Photos from the 2019 Spring VHF/UHF Field Day. More information at the  Manly Warringah Radio Society site.                        2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019                             2019        ","categories": ["amateur radio"],
         "tags": ["hobbies","travel"],
         "url": "http://localhost:4000/2019/vhf-field-day/",
-        "teaser":"http://localhost:4000/assets/images/2019/11/DSCF6362.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2019/11/DSCF6362.jpeg"},{
+        "title": "London trip",
+        "excerpt":"Went to the Royal Opera House, Covent Garden to see the David McVicar production of The Magic Flute.              Elsa Dreisig making her Covent Garden debut as Pamina was fabulous and I was also impressed by Tuuli Takala as Queen of the Night.              I’ve been to London many times but never got a photo of the skyline. Wonderful views from the top floor of Tate Modern, London.                         This Great Dane is a regular at the MK Restaurant on Gloucester Rd in  South Kensington.              ","categories": ["photography"],
+        "tags": ["travel"],
+        "url": "http://localhost:4000/2019/london-trip/",
+        "teaser":"http://localhost:4000/assets/images/2019/11/tatepano-north.jpg"}]
