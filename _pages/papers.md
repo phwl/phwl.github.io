@@ -568,7 +568,7 @@ In *Proceedings of the International Symposium on Signal Processing and its Appl
 
 [1] Nicholas J\. Fraser and Philip H\. W\. Leong\.
 Kernel normalised least mean squares with delayed model adaptation\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, 2020\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, pages to appear \(accepted 17 Dec 2019\), 2020\.
 URL: [dknlms\_trets20\.pdf](dknlms_trets20.pdf)\.  
 [2] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky\-Capuska\.
 Development of light\-weight video\-tracking technology for use in wildlife research: a case study on kangaroos\.
