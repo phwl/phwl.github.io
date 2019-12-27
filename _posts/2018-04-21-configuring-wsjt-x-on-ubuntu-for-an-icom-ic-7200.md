@@ -53,12 +53,12 @@ Timestamp Call MHz SNR Drift Grid Pwr Reporter RGrid km az
 
 Installation of WSJT-X was done by:
 
-
-    <code>sudo add-apt-repository -y ppa:ki7mt/wsjtx-next
-    sudo apt-get update
-    sudo apt-get install wsjtx
-    sudo usermod -a -G dialout $USER # then need to logout and login again
-    </code>
+```
+sudo add-apt-repository -y ppa:ki7mt/wsjtx-next
+sudo apt-get update
+sudo apt-get install wsjtx
+sudo usermod -a -G dialout $USER # then need to logout and login again
+```
 
 
 Check using [http://time.is](http://time.is) that your clock is accurate (it should be automatically synced in Ubuntu).
@@ -66,9 +66,10 @@ Check using [http://time.is](http://time.is) that your clock is accurate (it sh
 In WSJT-X, the Radio settings are:
 
 
-    <code>Serial Port: /dev/ttyUSB0 (baud rate: 9600, Data: 8, Stop Bits: 2, Handshake: default)
-    PTT method: CAT. Mode: USB, Split operation: Rig
-    </code>
+```
+Serial Port: /dev/ttyUSB0 (baud rate: 9600, Data: 8, Stop Bits: 2, Handshake: default)
+PTT method: CAT. Mode: USB, Split operation: Rig
+```
 
 
 and the Audio settings need to be set to alsa_input.usb-Burr-Brown_from_TI_USB_audio_CODEC-00-CODEC.analog-stereo
@@ -77,8 +78,9 @@ with the Pwr slider all the way to the top.
 On the radio:
 
 
-    <code>Data: oF, MoD: U, D-MoD: MA, USB LVL: 80
-    </code>
+```
+Data: oF, MoD: U, D-MoD: MA, USB LVL: 80
+```
 
 
 _(13/10/2018 - Jimmy Capizzi on the 7200 Owners and Fans Facebook Group suggested to set the d-mod to usb and the regular mod to microphone. That way it's only one menu option to work voice ssb.)_

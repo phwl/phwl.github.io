@@ -226,20 +226,18 @@
 
 <p>Installation of WSJT-X was done by:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;sudo add-apt-repository -y ppa:ki7mt/wsjtx-next
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo add-apt-repository -y ppa:ki7mt/wsjtx-next
 sudo apt-get update
 sudo apt-get install wsjtx
 sudo usermod -a -G dialout $USER # then need to logout and login again
-&lt;/code&gt;
 </code></pre></div></div>
 
 <p>Check using <a href="http://time.is">http://time.is</a> that your clock is accurate (it should be automatically synced in Ubuntu).</p>
 
 <p>In WSJT-X, the Radio settings are:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;Serial Port: /dev/ttyUSB0 (baud rate: 9600, Data: 8, Stop Bits: 2, Handshake: default)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Serial Port: /dev/ttyUSB0 (baud rate: 9600, Data: 8, Stop Bits: 2, Handshake: default)
 PTT method: CAT. Mode: USB, Split operation: Rig
-&lt;/code&gt;
 </code></pre></div></div>
 
 <p>and the Audio settings need to be set to alsa_input.usb-Burr-Brown_from_TI_USB_audio_CODEC-00-CODEC.analog-stereo
@@ -247,8 +245,7 @@ with the Pwr slider all the way to the top.</p>
 
 <p>On the radio:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code&gt;Data: oF, MoD: U, D-MoD: MA, USB LVL: 80
-&lt;/code&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Data: oF, MoD: U, D-MoD: MA, USB LVL: 80
 </code></pre></div></div>
 
 <p><em>(13/10/2018 - Jimmy Capizzi on the 7200 Owners and Fans Facebook Group suggested to set the d-mod to usb and the regular mod to microphone. That way it’s only one menu option to work voice ssb.)</em></p>
