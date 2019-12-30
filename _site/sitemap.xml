@@ -761,6 +761,14 @@
 <loc>http://localhost:4000/page21/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/_pages/google7d75fb12d8f30f4c.html</loc>
+<lastmod>2019-12-31T10:16:54+11:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/test.html</loc>
+<lastmod>2019-12-31T10:27:27+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>
 <lastmod>2019-10-01T21:28:41+10:00</lastmod>
 </url>
@@ -1811,9 +1819,5 @@
 <url>
 <loc>http://localhost:4000/assets/tools/Bluehost%20Portal.pdf</loc>
 <lastmod>2019-12-27T07:54:43+11:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/google7d75fb12d8f30f4c.html</loc>
-<lastmod>2019-12-31T10:16:54+11:00</lastmod>
 </url>
 </urlset>

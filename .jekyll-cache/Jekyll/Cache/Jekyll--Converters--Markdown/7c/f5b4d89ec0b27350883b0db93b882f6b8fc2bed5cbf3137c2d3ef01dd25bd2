@@ -1,4 +1,4 @@
-I"A<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"B<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -157,5 +157,6 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
   <li><a href="https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#">https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#</a></li>
   <li><a href="https://github.com/alshedivat/al-folio">https://github.com/alshedivat/al-folio</a></li>
   <li><a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a></li>
+  <li><a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html">http://jekyllbootstrap.com/lessons/jekyll-introduction.html</a></li>
 </ul>
 :ET
