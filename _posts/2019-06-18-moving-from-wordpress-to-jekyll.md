@@ -154,3 +154,4 @@ I found the following sites helpful:
  * <https://www.aravindiyer.com/tech/how-i-made-my-website-with-jekyll/#>
  * <https://github.com/alshedivat/al-folio>
  * <https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/>
+ * <http://jekyllbootstrap.com/lessons/jekyll-introduction.html>
