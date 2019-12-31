@@ -154,6 +154,8 @@ analytics:
     anonymize_ip         : false # true, false (default)
 ```
 
+Reports will appear at <https://analytics.google.com/analytics/web/#/report-home>.
+
 ## Links
 I found the following sites helpful:
  * <https://www.alexdglover.com/the-move-to-jekyll/>
