@@ -154,7 +154,7 @@ analytics:
     anonymize_ip         : false # true, false (default)
 ```
 
-Reports will appear at <https://analytics.google.com/analytics/web/#/report-home>.
+Reports will appear at <https://analytics.google.com/analytics/web/#/report/visitors-overview>.
 
 ## Links
 I found the following sites helpful:
