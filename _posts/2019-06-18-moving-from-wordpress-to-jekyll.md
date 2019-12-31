@@ -141,6 +141,19 @@ for line in fileinput.input(inplace=1, backup='.bak'):
 {% endraw %}
 This is similar to the approach in <https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/>.
 
+## Google analytics
+Go to <https://analytics.google.com/analytics/web/> -> Admin and create an 
+account for website. Get the tracking ID from Admin -> Tracking Info -> Tracking Code and put it in _config.yml
+
+```
+# Analytics
+analytics:
+  provider               : google-gtag # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-155095246-1"
+    anonymize_ip         : false # true, false (default)
+```
+
 ## Links
 I found the following sites helpful:
  * <https://www.alexdglover.com/the-move-to-jekyll/>
