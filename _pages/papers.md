@@ -570,18 +570,18 @@ In *Proceedings of the International Symposium on Signal Processing and its Appl
 Kernel normalised least mean squares with delayed model adaptation\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, pages to appear \(accepted 17 Dec 2019\), 2020\.
 URL: [dknlms\_trets20\.pdf](dknlms_trets20.pdf)\.  
-[2] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky\-Capuska\.
+[2] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H\.W\. Leong\.
+AddNet: deep neural networks using FPGA\-optimized multipliers\.
+*IEEE Transactions on VLSI Systems*, 28\(1\):115&ndash;128, Jan 2020\.
+URL: [addnet\_tvlsi19\.pdf](addnet_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2019\.2939429](https://doi.org/10.1109/TVLSI.2019.2939429)\.  
+[3] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky\-Capuska\.
 Development of light\-weight video\-tracking technology for use in wildlife research: a case study on kangaroos\.
 *Australian Zoologist*, pages to appear \(accepted 28 Oct 2019\), 2019\.
 URL: [kangaroo\_austzoo19\.pdf](kangaroo_austzoo19.pdf)\.  
-[3] Jason K\. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al\-Sarawi, Philip H\.W\. Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei\.
+[4] Jason K\. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al\-Sarawi, Philip H\.W\. Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei\.
 Nonlinear retinal response modeling for future neuromorphic instrumentation\.
 *IEEE Instrumentation and Measurement Magazine*, pages to appear \(accepted 17 Sep 2019\), 2019\.
 URL: [nrrm\_imm19\.pdf](nrrm_imm19.pdf)\.  
-[4] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H\.W\. Leong\.
-AddNet: deep neural networks using FPGA\-optimized multipliers\.
-*IEEE Transactions on VLSI Systems*, pages to appear \(accepted 11 Aug 2019\), 2019\.
-URL: [addnet\_tvlsi19\.pdf](addnet_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2019\.2939429](https://doi.org/10.1109/TVLSI.2019.2939429)\.  
 [5] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland, Duncan Moss, Peter Zipf, and Philip H\. W\. Leong\.
 Unrolling ternary neural networks\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 12\(4\):22:1–22:23, October 2019\.
