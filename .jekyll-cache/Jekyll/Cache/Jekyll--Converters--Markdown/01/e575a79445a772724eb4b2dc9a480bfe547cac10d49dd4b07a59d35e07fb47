@@ -1,4 +1,4 @@
-I"B<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"TE<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -142,6 +142,20 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 </code></pre></div></div>
 
 <p>This is similar to the approach in <a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a>.</p>
+
+<h2 id="google-analytics">Google analytics</h2>
+<p>Go to <a href="https://analytics.google.com/analytics/web/">https://analytics.google.com/analytics/web/</a> -&gt; Admin and create an 
+account for website. Get the tracking ID from Admin -&gt; Tracking Info -&gt; Tracking Code and put it in _config.yml</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Analytics
+analytics:
+  provider               : google-gtag # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-155095246-1"
+    anonymize_ip         : false # true, false (default)
+</code></pre></div></div>
+
+<p>Reports will appear at <a href="https://analytics.google.com/analytics/web/#/report/visitors-overview">https://analytics.google.com/analytics/web/#/report/visitors-overview</a>.</p>
 
 <h2 id="links">Links</h2>
 <p>I found the following sites helpful:</p>

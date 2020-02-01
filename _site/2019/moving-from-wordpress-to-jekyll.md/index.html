@@ -336,6 +336,20 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 
 <p>This is similar to the approach in <a href="https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/">https://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/</a>.</p>
 
+<h2 id="google-analytics">Google analytics</h2>
+<p>Go to <a href="https://analytics.google.com/analytics/web/">https://analytics.google.com/analytics/web/</a> -&gt; Admin and create an 
+account for website. Get the tracking ID from Admin -&gt; Tracking Info -&gt; Tracking Code and put it in _config.yml</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Analytics
+analytics:
+  provider               : google-gtag # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-155095246-1"
+    anonymize_ip         : false # true, false (default)
+</code></pre></div></div>
+
+<p>Reports will appear at <a href="https://analytics.google.com/analytics/web/#/report/visitors-overview">https://analytics.google.com/analytics/web/#/report/visitors-overview</a>.</p>
+
 <h2 id="links">Links</h2>
 <p>I found the following sites helpful:</p>
 <ul>
@@ -448,6 +462,35 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2020/camden-haven/">
+        <img src=
+          
+            "/assets/images/2020/02/IMG_5691.jpeg"
+          
+          alt="Camden Haven"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/camden-haven/" rel="permalink">Camden Haven
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Photos from North Brother Lookout.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2019/fishing-trip-with-eden/">
         <img src=
           
@@ -531,35 +574,6 @@ Manly Warringah Radio Society site.
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2019/computer-engineering-lab-christmas-party/">
-        <img src=
-          
-            "/assets/images/2019/11/celchristmas19.jpeg"
-          
-          alt="Computer Engineering Lab Christmas Party Photo"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2019/computer-engineering-lab-christmas-party/" rel="permalink">Computer Engineering Lab Christmas Party Photo
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">We continue to have the world’s earlier Christmas party!
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
@@ -620,7 +634,7 @@ Manly Warringah Radio Society site.
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
