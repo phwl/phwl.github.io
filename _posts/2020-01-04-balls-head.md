@@ -13,8 +13,4 @@ header:
 ---
 Photos from Balls Head.
 
-![ballsh](/assets/images/2020/01/IMG_5543.jpeg)
-
-and
-
 {% include figure image_path="/assets/images/2020/01/IMG_5543.jpeg" %}
