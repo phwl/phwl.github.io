@@ -52,7 +52,7 @@ to /etc/network/if-up.d/fstab.
 
  * Monitor would never wake up after machine screen saver activated. This was because of the default open source Ubuntu Nouveau drivers. To fix, installing the NVIDIA drivers: https://medium.com/@zhanwenchen/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc.
 
- * 5/2/2020 - after an update the external monitor stopped working. I followed [https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04]<https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04> and installed nvidia-driver-440 to fix.
+ * 5/2/2020 - after an update the external monitor stopped working. I followed <https://www.linuxbabe.com/ubuntu/install-nvidia-driver-ubuntu-18-04> and installed nvidia-driver-440 to fix.
 
 For reference, the configuration of the machine is:
  * XPS 8930 Base
