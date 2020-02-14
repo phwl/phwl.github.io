@@ -14,14 +14,19 @@ landscapes:
     url: /assets/gallery/landscape/hkaerial04.jpg
   - image_path: /assets/gallery/landscape/kirribilli10.jpg
     url: /assets/gallery/landscape/kirribilli10.jpg
-  - image_path: /assets/gallery/landscape/DSC_5806.jpg
-    url: /assets/gallery/landscape/DSC_5806.jpg
   - image_path: /assets/gallery/landscape/circularquay16.jpg
     url: /assets/gallery/landscape/circularquay16.jpg
+  - image_path: /assets/gallery/landscape/DSC_5806.jpg
+    url: /assets/gallery/landscape/DSC_5806.jpg
   - image_path: /assets/gallery/landscape/ballshead16.jpg
     url: /assets/gallery/landscape/ballshead16.jpg
+panoramas:
   - image_path: /assets/gallery/landscape/gappano13.jpg
     url: /assets/gallery/landscape/gappano13.jpg
+  - image_path: /assets/gallery/landscape/tatepano-north19.jpg
+    url: /assets/gallery/landscape/tatepano-north19.jpg
+  - image_path: /assets/gallery/landscape/barrenjoeylighthouse19.jpg
+    url: /assets/gallery/landscape/barrenjoeylighthouse19.jpg
 travel:
   - image_path: /assets/gallery/travel/DSCF5007.JPG
     url: /assets/gallery/travel/DSCF5007.JPG
@@ -79,6 +84,9 @@ fishing:
 
 ## Landscapes
 {% include gallery id="landscapes" caption="Landscapes" %}
+
+## Panoramas
+{% include gallery id="panoramas" caption="Panoramas" %}
 
 ## Travel
 {% include gallery id="travel" caption="Travel" %}
