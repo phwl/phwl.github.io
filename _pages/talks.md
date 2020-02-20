@@ -9,6 +9,16 @@ title: Talks
 classes: wide
 wordpress_id: 3312
 ---
+## 19 March 2020, Lecture
+[Low-precision CNN Inference and Training for Edge Applications on FPGAs](/assets/talks/lpcnn-xsj20.pdf), Xilinx Research Labs, San Jose
+
+Much of the focus on FPGA-based implementation of convolutional neural networks (CNNs) has targeted server-based applications for which the primary benchmark set is Imagenet.
+In this talk, we discuss our research on FPGA-based inference and training for small convolutional neural networks, intended for edge applications such as radio frequency machine learning (RFML). 
+
+For inference, an open-source, ternary neural network generator which produces fully unrolled designs is presented. A VGG-style network implemented with this approach can achieve 90.9% accuracy for CIFAR10. On an Ultrascale+ VU9P, it achieves 122 k frames per second, with a latency of 29 μs. When applied to radio frequency modulation classification on a Xilinx ZCU111 board, we achieve 488 k classifications per second with a latency of 8 μs.
+
+We also present a mixed-precision training accelerator, where most of the computations are processed using 8-bit block floating point. The work includes modifications to the stochastic weight averaging low-precision (SWALP) algorithm to achieve a 0.5% accuracy improvement for the MNIST and CIFAR10 benchmarks, bringing it within 0.1% of floating-point.
+
 ## 26th November 2019, Lecture
 [Multipliers for FPGA Machine Learning Applications](/assets/talks/ml-multipliers-imperial19.pdf), Imperial College
 
