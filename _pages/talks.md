@@ -11,6 +11,7 @@ wordpress_id: 3312
 ---
 ## 24 Mar 2020, Lecture
 [LUXOR: An FPGA Logic Cell Architecture for Efficient Compressor Tree Implementations](/assets/talks/LUXOR-usyd-fpga20.pdf), 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA), Monterey
+
 We propose two tiers of modiications to FPGA logic cell architecture
 to deliver a variety of performance and utilization beneits with
 only minor area overheads. In the first tier, we augment existing
