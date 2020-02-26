@@ -9,7 +9,31 @@ title: Talks
 classes: wide
 wordpress_id: 3312
 ---
-## 19 March 2020, Lecture
+## 24 Mar 2020, Lecture
+[LUXOR: An FPGA Logic Cell Architecture for Efficient Compressor Tree Implementations](/assets/talks/LUXOR-usyd-fpga20.pdf), 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA), Monterey
+We propose two tiers of modiications to FPGA logic cell architecture
+to deliver a variety of performance and utilization beneits with
+only minor area overheads. In the first tier, we augment existing
+commercial logic cell datapaths with a 6-input XOR gate in order
+to improve the expressiveness of each element, while maintaining
+backward compatibility. This new architecture is vendor-agnostic,
+and we refer to it as LUXOR. We also consider a secondary tier of
+vendor-speciic modifications to both Xilinx and Intel FPGAs, which
+we refer to as X-LUXOR+ and I-LUXOR+ respectively. We demonstrate
+that compressor tree synthesis using generalized parallel
+counters (GPCs) is further improved with the proposed modiications.
+Using both the Intel adaptive logic module and the Xilinx
+slice at the 65nm technology node for a comparative study, it is
+shown that the silicon area overhead is less than 0.5% for LUXOR
+and 5-6% for LUXOR+, while the delay increments are 1-6% and
+3-9% respectively. We demonstrate that LUXOR can deliver an average
+reduction of 13-19% in logic utilization on micro-benchmarks
+from a variety of domains. BNN benchmarks benefit the most with
+an average reduction of 37-47% in logic utilization, which is due
+to the highly-efficient mapping of the XnorPopcount operation on
+our proposed LUXOR+ logic cells.
+
+## 19 Feb 2020, Lecture
 [Low-precision CNN Inference and Training for Edge Applications on FPGAs](/assets/talks/lpcnn-xsj20.pdf), Xilinx Research Labs, San Jose
 
 Much of the focus on FPGA-based implementation of convolutional neural networks (CNNs) has targeted server-based applications for which the primary benchmark set is Imagenet.
