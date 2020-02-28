@@ -8,6 +8,7 @@ title: Research
 classes: wide
 ---
 
+  * [Overview](/assets/papers/overview) - an overview of my research
   * [Publications](/assets/papers/papers) - my publications list
   * [Talks](talks) - slides from my public lectures
   * [Students](students) - dissertations of my students

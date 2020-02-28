@@ -322,7 +322,7 @@ Ultra\-low\-power alcohol vapor sensors based on multi\-walled carbon nanotube\.
 In *Proc\. IEEE International Conference on Nano/Micro Engineered and Molecular Systems \(NEMS\)*, 1198 &ndash; 1202\. 2006\.
 URL: [alcohol\_nems06\.pdf](alcohol_nems06.pdf)\.  
 [76] G\. L\. Zhang, P\. H\. W\. Leong, C\. H\. Ho, K\. H\. Tsoi, C\. C\. C\. Cheung, D\-U\. Lee, R\. C\. C\. Cheung, and W\. Luk\.
-Reconfigurable acceleration for monte carlo based financial simulation\.
+Reconfigurable acceleration for Monte Carlo based financial simulation\.
 In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, 215–222\. 2005\.
 URL: [bgm\_fpt05\.pdf](bgm_fpt05.pdf)\.  
 [77] C\.T\. Chow, L\.S\.M\. Tsui, P\.H\.W\. Leong, W\. Luk, and S\. Wilton\.

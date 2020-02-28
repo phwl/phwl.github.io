@@ -840,7 +840,7 @@ var store = [{
         "url": "http://localhost:4000/2020/camden-haven/",
         "teaser":"http://localhost:4000/assets/images/2020/02/IMG_5691.jpeg"},{
         "title": "Linux and Docker links",
-        "excerpt":"Some interesting links.   = Docker =     Reducing docker image size https://www.ardanlabs.com/blog/2020/02/docker-images-part1-reducing-image-size.html   = Linux =     Unix toolbox http://cb.vu/unixtoolbox.xhtml  ","categories": ["software"],
+        "excerpt":"Some interesting links.   = Docker =     Reducing docker image size https://www.ardanlabs.com/blog/2020/02/docker-images-part1-reducing-image-size.html   = Linux =     Unix toolbox http://cb.vu/unixtoolbox.xhtml   59 Linux networking commands and scripts https://haydenjames.io/linux-networking-commands-scripts/  ","categories": ["software"],
         "tags": [],
         "url": "http://localhost:4000/2020/os-links/",
         "teaser":"https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png"}]
