@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T16:52:56+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T16:54:08+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
@@ -101,8 +101,7 @@ the connectors.&lt;/p&gt;
 
 &lt;p&gt;Replace the drive and put everything back together.  After I did
 this, of course the display didn’t work. Had to unassemble the
-machine again, play around with the display connector, and it
-came alive!&lt;/p&gt;
+machine again and play around with the display connector.&lt;/p&gt;
 
 &lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
 &lt;p&gt;Next you need to download the High Sierra image (the latest version
