@@ -1,4 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-01T15:33:15+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T16:12:14+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hard disk replacement for a mid-2011 imac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 imac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.
+I didn’t want to repair this at first since Apple no longer supports
+operating system updates, but I had an old 2TB Seagate backup disk that should
+work just fine. Moreover, I always liked the beautiful industrial design
+of an iMac.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
+
+&lt;p&gt;iFixit has a set of instructions (
+&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;), but you don’t need so many steps.&lt;/p&gt;
+
+&lt;p&gt;The non-obvious step is how to open the case. It is held in with magnets
+and you need a glass lifter remove the front glass assembly. Mine was from
+Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
+(8 in total). Remove those with tweezers and a T10 Torx driver.
+The display assembly fits tightly in the case. I used a right
+angle pick to get under the assembly and first lift up the top left
+hand side, and then the top right hand side.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Prop open the macbook.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove the the two 
+T20 screws that secure the hard disk assembly to the iMac and remove
+the connectors.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Replace the drive and put everything back together.  After I did
+this, the display didn’t work.  Unscrewed the thing again, played
+around with the connector, and things came alive again!&lt;/p&gt;
+
+&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
+&lt;p&gt;Next you need to download the High Sierra image (the latest version
+of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;.
+Then simply boot from the USB and install to the hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk. I didn’t want to repair this at first since Apple no longer supports operating system updates, but I had an old 2TB Seagate backup disk that should work just fine. Moreover, I always liked the beautiful industrial design of an iMac.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
 
 &lt;p&gt;= Docker =&lt;/p&gt;
 &lt;ul&gt;
@@ -448,119 +560,4 @@ and break the plastic case.&lt;/p&gt;
     &lt;figcaption&gt;
       Testing.
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Carried an electric stove all the way back from Shanghai only to drop and break the plastic case.</summary></entry><entry><title type="html">Mooney Mooney Spring Trip 2019</title><link href="http://localhost:4000/2019/mooney-mooney-spring-trip/" rel="alternate" type="text/html" title="Mooney Mooney Spring Trip 2019" /><published>2019-10-19T21:24:10+11:00</published><updated>2019-10-19T21:24:10+11:00</updated><id>http://localhost:4000/2019/mooney-mooney-spring-trip</id><content type="html" xml:base="http://localhost:4000/2019/mooney-mooney-spring-trip/">&lt;p&gt;This was the first trip for Warren and I for the season. We were on the
-way to Milson Island when the engine started hesitating and then stopped.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_4453.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_4453.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Fortunately, it was not serious. The fuel line had fallen off the tank and
-we were soon underway again.&lt;/p&gt;
-
-&lt;p&gt;Caught a nice flathead on the second drift..&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1416.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1416.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We were being blown straight into shore so we dropped the anchor and had
-coffee while fishing.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1427.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1427.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1428.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1428.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We caught a succession of stingrays (4 in total for the day).&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1418.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1418.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1422.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1422.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The jellyfish were present in plague proportions.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1424.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1424.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Houses around Milson Island.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1429.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1429.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Not much was happening so we were back around midday, just as the wind was
-picking up (later in the day it was 40 km/h).&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1437.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1437.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1438.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1438.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;At the boat ramp Warren kindly gave our remaining nippers to some guys
-heading out from the boat ramp. He didn’t realise they were from a 
-bait shop :-)
-This pelican was well fed, took a flathead frame but didn’t want any more.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/10/IMG_1440.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/10/IMG_1440.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><category term="hawkesbury" /><summary type="html">This was the first trip for Warren and I for the season. We were on the way to Milson Island when the engine started hesitating and then stopped.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Carried an electric stove all the way back from Shanghai only to drop and break the plastic case.</summary></entry></feed>

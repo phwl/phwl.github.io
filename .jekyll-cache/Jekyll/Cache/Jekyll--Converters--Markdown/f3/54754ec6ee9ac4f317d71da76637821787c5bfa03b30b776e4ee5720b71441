@@ -1,0 +1,116 @@
+I"{<p>Today on the operating table we have a mid-2011 iMac with a dead hard disk.
+I didn’t want to repair this at first since Apple no longer supports
+operating system updates, but I had an old 2TB Seagate backup disk that should
+work just fine. Moreover, I always liked the beautiful industrial design
+of an iMac.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac7.jpeg">
+  <img src="/assets/images/2020/03/imac7.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<!-- more -->
+
+<ul>
+  <li>Hardware</li>
+</ul>
+
+<p>iFixit has a set of instructions (
+<a href="https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555">https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555</a>), but you don’t need so many steps.</p>
+
+<p>The non-obvious step is how to open the case. It is held in with magnets
+and you need a glass lifter remove the front glass assembly. Mine was from
+Harbour Freight <a href="https://www.harborfreight.com/dual-cup-suction-lifter-46134.html">https://www.harborfreight.com/dual-cup-suction-lifter-46134.html</a>.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac1.jpeg">
+  <img src="/assets/images/2020/03/imac1.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>There are 4 screws down each vertical edge of the display assembly
+(8 in total). Remove those with tweezers and a T10 Torx driver.
+The display assembly fits tightly in the case. I used a right
+angle pick to get under the assembly and first lift up the top left
+hand side, and then the top right hand side.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac2.jpeg">
+  <img src="/assets/images/2020/03/imac2.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Next remove the connector for the shortest cable so you can tilt the display.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac3.jpeg">
+  <img src="/assets/images/2020/03/imac3.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Prop open the macbook.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac4.jpeg">
+  <img src="/assets/images/2020/03/imac4.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Remove the the two 
+T20 screws that secure the hard disk assembly to the iMac and remove
+the connectors.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac5.jpeg">
+  <img src="/assets/images/2020/03/imac5.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Hard disk assembly can come out now.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac6.jpeg">
+  <img src="/assets/images/2020/03/imac6.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Replace the drive and put everything back together.  After I did
+this, the display didn’t work.  Unscrewed the thing again, played
+around with the connector, and things came alive again!</p>
+
+<p>Next you need to download the High Sierra image (the latest version
+of MacOS that supports this iMac) <a href="https://support.apple.com/en-au/HT208969">https://support.apple.com/en-au/HT208969</a>.
+Boot from the USB and install MacOS to the hard disk.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/03/imac8.jpeg">
+  <img src="/assets/images/2020/03/imac8.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+:ET
