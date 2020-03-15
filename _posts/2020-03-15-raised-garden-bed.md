@@ -12,26 +12,28 @@ header:
   teaser: /assets/images/2020/03/gbed14.jpeg
 ---
 
-Over a couple of weekends, made a raised garden bed in the back garden. 
-.
+Over a couple of weekends, made a raised garden bed for the back garden. 
 
 <!-- more -->
-I chose ACQ treated pine as other types of treatment such as CCA treated
-pine is preserved with copper and chrome arsenate and the arsenic can
-be absorbed by vegetables.
+I used alkaline copper quarternary (ACQ) treated pine as other types
+of treatment such as chromated copper arsenate (CCA) uses copper
+and chrome arsenate, and traces of arsenic may be absorbed by the
+vegetables. Bunnings let me cut 4m lengths down so it would fit in
+the car.
 
 {% include figure image_path="/assets/images/2020/03/gbed1.jpeg" caption="" %}
 
 Box went together quickly.
+We weren't making furniture so it was held together with screws.
 
 {% include figure image_path="/assets/images/2020/03/gbed2.jpeg" caption="" %}
 
-We weren't making furniture so it was held together with screws.
-
 {% include figure image_path="/assets/images/2020/03/gbed3.jpeg" caption="" %}
+
 {% include figure image_path="/assets/images/2020/03/gbed4.jpeg" caption="" %}
 
-Then a couple of coats of Dulux Mission Brown left over from the fence.
+Then a couple of coats of Dulux Mission Brown which was left over from 
+painting the fence.
 
 {% include figure image_path="/assets/images/2020/03/gbed5.jpeg" caption="" %}
 
