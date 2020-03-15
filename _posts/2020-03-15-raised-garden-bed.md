@@ -18,8 +18,8 @@ Over a couple of weekends, made a raised garden bed for the back garden.
 I used alkaline copper quarternary (ACQ) treated pine as other types
 of treatment such as chromated copper arsenate (CCA) uses copper
 and chrome arsenate, and traces of arsenic may be absorbed by the
-vegetables. Bunnings let me cut 4m lengths down so it would fit in
-the car.
+vegetables. Bunnings lent me a handsaw to cut down the 3.6~m lengths 
+so it would fit in the car.
 
 {% include figure image_path="/assets/images/2020/03/gbed1.jpeg" caption="" %}
 
