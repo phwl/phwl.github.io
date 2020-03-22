@@ -1,0 +1,16 @@
+I"_<p>Here is how I configured Anaconda and Pytorch on the Ubuntu 18.04 system
+mentioned here <a href="http://phwl.org/2019/ubuntu-nvdia-19/">http://phwl.org/2019/ubuntu-nvdia-19/</a>.</p>
+
+<ul>
+  <li>Install Anaconda from <a href="https://www.anaconda.com/distribution">https://www.anaconda.com/distribution</a>, then
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda update -n base -c defaults conda
+conda create --name dtw
+conda activate dtw
+conda install pytorch=0.4
+pip install Cython
+pip install 'torchvision=0.2.1'
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+:ET
