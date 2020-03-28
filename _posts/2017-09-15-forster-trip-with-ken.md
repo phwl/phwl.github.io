@@ -11,6 +11,8 @@ categories:
 tags:
 - australia
 - photography
+header:
+   teaser: /assets/images/2017/09/IMG_0053.jpg
 ---
 
 Ken came to visit from Seattle so Beard and I took a day off on Friday to go car-camping in Forster.

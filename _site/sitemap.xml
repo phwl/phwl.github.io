@@ -58,7 +58,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/2006/ln2-ice-cream/</loc>
-<lastmod>2006-03-04T05:31:54+11:00</lastmod>
+<lastmod>2006-06-23T01:31:54+10:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2007/a-trip-to-finland/</loc>
@@ -571,6 +571,10 @@
 <url>
 <loc>http://localhost:4000/2019/electronics-flea-market/</loc>
 <lastmod>2019-03-10T10:57:27+11:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/intel-nuc/</loc>
+<lastmod>2019-03-19T20:22:50+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2019/blue-day-in-sydney/</loc>
