@@ -1,0 +1,5 @@
+I"Q<p>When doing a <code class="highlighter-rouge">bundle update</code> I got an error telling me that 
+installing ffi failed and that the following has to be fixed.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install ffi -v '1.12.2' --source 'https://rubygems.org/'
+</code></pre></div></div>
+:ET

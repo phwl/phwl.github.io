@@ -4,7 +4,7 @@ comments: true
 date: 2019-04-13 02:30:33+00:00
 # link: http://phwl.org/macos-install/
 slug: macos-install
-title: MacOS Install
+title: macOS Install
 classes: wide
 categories:
 - software
@@ -33,9 +33,9 @@ It seemed like a good idea to remove all the accumulated rubbish on my MacBook P
   2. Created a bootable USB ([https://support.apple.com/en-us/HT201372).](https://support.apple.com/en-us/HT201372)
   3. Rebooted using the bootable USB
   4. Reformatted disk as APFS (Encrypted), Case Insensitive to avoid problems with matching file names
-  5. Install MacOS, use iCloud to restore Contacts, Notes and Keychain. In Settings, make secondary click right side of trackpad.
+  5. Install macOS, use iCloud to restore Contacts, Notes and Keychain. In Settings, make secondary click right side of trackpad.
   6. Copy music and iphoto library over.
-  7. Using the MacOS Migration Assistant, transfer computer and network settings from Time Machine backup
+  7. Using the macOS Migration Assistant, transfer computer and network settings from Time Machine backup
   8. To see files in Time Machine: "defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder". Then copy .ssh .bash_profile and any other Unix files needed over. Type "defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder" to undo.
   9. Downloaded and installed Dropbox, Firefox, Skype, Chrome, Acrobat Reader, vlc
   10. From University machines download and install Cisco Anyconnect (VPN) and Adobe Acrobat. Connect to vpn.sydney.edu.au

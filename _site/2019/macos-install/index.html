@@ -10,7 +10,7 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>MacOS Install - Life, the Universe and Fishing</title>
+<!-- begin _includes/seo.html --><title>macOS Install - Life, the Universe and Fishing</title>
 <meta name="description" content="It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:">
 
 
@@ -18,7 +18,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="MacOS Install">
+<meta property="og:title" content="macOS Install">
 <meta property="og:url" content="http://localhost:4000/2019/macos-install/">
 
 
@@ -166,7 +166,7 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="MacOS Install">
+    <meta itemprop="headline" content="macOS Install">
     <meta itemprop="description" content="It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:">
     <meta itemprop="datePublished" content="April 13, 2019">
     
@@ -174,7 +174,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">MacOS Install
+          <h1 id="page-title" class="page__title" itemprop="headline">macOS Install
 </h1>
           
         </header>
@@ -191,9 +191,9 @@
   <li>Created a bootable USB (<a href="https://support.apple.com/en-us/HT201372">https://support.apple.com/en-us/HT201372).</a></li>
   <li>Rebooted using the bootable USB</li>
   <li>Reformatted disk as APFS (Encrypted), Case Insensitive to avoid problems with matching file names</li>
-  <li>Install MacOS, use iCloud to restore Contacts, Notes and Keychain. In Settings, make secondary click right side of trackpad.</li>
+  <li>Install macOS, use iCloud to restore Contacts, Notes and Keychain. In Settings, make secondary click right side of trackpad.</li>
   <li>Copy music and iphoto library over.</li>
-  <li>Using the MacOS Migration Assistant, transfer computer and network settings from Time Machine backup</li>
+  <li>Using the macOS Migration Assistant, transfer computer and network settings from Time Machine backup</li>
   <li>To see files in Time Machine: “defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder”. Then copy .ssh .bash_profile and any other Unix files needed over. Type “defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder” to undo.</li>
   <li>Downloaded and installed Dropbox, Firefox, Skype, Chrome, Acrobat Reader, vlc</li>
   <li>From University machines download and install Cisco Anyconnect (VPN) and Adobe Acrobat. Connect to vpn.sydney.edu.au</li>
@@ -262,7 +262,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=MacOS+Install%20http%3A%2F%2Flocalhost%3A4000%2F2019%2Fmacos-install%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=macOS+Install%20http%3A%2F%2Flocalhost%3A4000%2F2019%2Fmacos-install%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2019%2Fmacos-install%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -301,6 +301,38 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2020/update-jekyll/">
+        <img src=
+          
+            "https://jekyllrb.com/img/logo-2x.png"
+          
+          alt="Updating jekyll on macOS"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/update-jekyll/" rel="permalink">Updating jekyll on macOS
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">When doing a bundle update I got an error telling me that 
+installing ffi failed and that the following has to be fixed.
+gem install ffi -v '1.12.2' --source 'https://rubygems.org/'
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2020/vpn-to-usyd-on-ubuntu/">
         <img src=
           
@@ -316,8 +348,7 @@
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">It is easy to log onto the University of Sydney via VPN on Ubuntu using
-Openconnect.
+    <p class="archive__item-excerpt" itemprop="description">Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.
 </p>
   </article>
 </div>
@@ -379,35 +410,6 @@ Barrington Tops in the John Moyle Memorial Field Day this year.
     <p class="archive__item-excerpt" itemprop="description">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
 mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running
 DTWnet.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/raised-garden-bed/">
-        <img src=
-          
-            "/assets/images/2020/03/gbed14.jpeg"
-          
-          alt="Raised Garden Bed"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/raised-garden-bed/" rel="permalink">Raised Garden Bed
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Over a couple of weekends, made a raised garden bed for the back garden.
 </p>
   </article>
 </div>

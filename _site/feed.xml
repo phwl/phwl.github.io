@@ -1,5 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-29T16:44:55+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">VPN to the University of Sydney on Ubuntu</title><link href="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/" rel="alternate" type="text/html" title="VPN to the University of Sydney on Ubuntu" /><published>2020-03-29T16:20:35+11:00</published><updated>2020-03-29T16:20:35+11:00</updated><id>http://localhost:4000/2020/vpn-to-usyd-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/">&lt;p&gt;It is easy to log onto the University of Sydney via VPN on Ubuntu using
-Openconnect.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-29T18:04:29+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Updating jekyll on macOS</title><link href="http://localhost:4000/2020/update-jekyll/" rel="alternate" type="text/html" title="Updating jekyll on macOS" /><published>2020-03-29T17:50:13+11:00</published><updated>2020-03-29T17:50:13+11:00</updated><id>http://localhost:4000/2020/update-jekyll</id><content type="html" xml:base="http://localhost:4000/2020/update-jekyll/">&lt;p&gt;When doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; I got an error telling me that 
+installing ffi failed and that the following has to be fixed.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install ffi -v '1.12.2' --source 'https://rubygems.org/'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When I ran it I got&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/bin/sh ./libtool  --tag=CC   --mode=link clang  -Wall -fexceptions  -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo   src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
+libtool: link: libtool -static cru .libs/libffi_convenience.a src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/x86/.libs/ffi64.o src/x86/.libs/unix64.o src/x86/.libs/ffiw64.o src/x86/.libs/win64.o 
+error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: no output file specified (specify with -o output)
+Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT] [-no_warning_for_no_symbols]
+Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table &amp;lt;filename&amp;gt;] [-seg_addr_table_filename &amp;lt;file_system_path&amp;gt;] [-all_load] [-noall_load]
+make[3]: *** [Makefile:1072: libffi_convenience.la] Error 1
+make[3]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
+make[2]: *** [Makefile:1348: all-recursive] Error 1
+make[2]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
+make[1]: *** [Makefile:623: all] Error 2
+make[1]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
+make: *** [libffi.darwin.mk:33: &quot;/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18&quot;/.libs/libffi_convenience.a] Error 2
+
+make failed, exit code 2
+Gem files will remain installed in /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2 for inspection.
+Results logged to /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/extensions/x86_64-darwin-18/2.6.0-static/ffi-1.12.2/gem_make.out
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I think this is because the macOS ruby and the homebrew ones
+are different. It was fixed with:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew reinstall libffi
+export LDFLAGS=&quot;-L/usr/local/opt/libffi/lib&quot;
+export PKG_CONFIG_PATH=&quot;/usr/local/opt/libffi/lib/pkgconfig&quot;
+gem install jekyll
+bundle update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><summary type="html">When doing a bundle update I got an error telling me that installing ffi failed and that the following has to be fixed. gem install ffi -v '1.12.2' --source 'https://rubygems.org/'</summary></entry><entry><title type="html">VPN to the University of Sydney on Ubuntu</title><link href="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/" rel="alternate" type="text/html" title="VPN to the University of Sydney on Ubuntu" /><published>2020-03-29T16:20:35+11:00</published><updated>2020-03-29T16:20:35+11:00</updated><id>http://localhost:4000/2020/vpn-to-usyd-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/">&lt;p&gt;Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -29,7 +59,7 @@ Connected as 10.48.18.235, using SSL
 Established DTLS connection (using GnuTLS). Ciphersuite (DTLS0.9)-(DHE-RSA-4294967237)-(AES-256-CBC)-(SHA1).
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;That’s all!&lt;/p&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">It is easy to log onto the University of Sydney via VPN on Ubuntu using Openconnect.</summary></entry><entry><title type="html">John Moyle Memorial Field Day 2020</title><link href="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/" rel="alternate" type="text/html" title="John Moyle Memorial Field Day 2020" /><published>2020-03-22T20:22:50+11:00</published><updated>2020-03-22T20:22:50+11:00</updated><id>http://localhost:4000/2020/John%20Moyle%20Memorial%20Field%20Day%202020</id><content type="html" xml:base="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/">&lt;p&gt;The &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society&lt;/a&gt; activated
+&lt;p&gt;That’s all!&lt;/p&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.</summary></entry><entry><title type="html">John Moyle Memorial Field Day 2020</title><link href="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/" rel="alternate" type="text/html" title="John Moyle Memorial Field Day 2020" /><published>2020-03-22T20:22:50+11:00</published><updated>2020-03-22T20:22:50+11:00</updated><id>http://localhost:4000/2020/John%20Moyle%20Memorial%20Field%20Day%202020</id><content type="html" xml:base="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/">&lt;p&gt;The &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society&lt;/a&gt; activated
 Barrington Tops in the John Moyle Memorial Field Day this year.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -253,130 +283,7 @@ git clone https://github.com/TideDancer/DTWNet.git
 cd DTWnet`
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
-
-&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
-it runs hot and noisy, and is a pain to repair. 
-So when this mid-2011 iMac crossed my path, I wasn’t sure whether
-it would be worth fixing, particularly since Apple
-longer provides operating system updates. 
-However, I had
-an old 2TB Seagate Barracuda disk and it would be a shame to throw
-it away.&lt;/p&gt;
-
-&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
-&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
-but I think the sequence below is simplier.&lt;/p&gt;
-
-&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
-and you need a glass lifter remove the front glass assembly. Mine was from
-Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
-them afterwards!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
-(8 in total). Remove those with tweezers and a T10 Torx driver.
-The display assembly fits tightly in the case. I used a right
-angle pick to get under the assembly and first lift up the top left
-hand side, and then the top right hand side.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Prop open the macbook.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Remove the the two 
-T20 screws that secure the hard disk assembly to the iMac and remove
-the connectors.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Replace the drive and put everything back together.  After I did
-this, of course the display didn’t work. Had to unassemble the
-machine again and play around with the display connector.&lt;/p&gt;
-
-&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
-&lt;p&gt;Next you need to download the High Sierra image (the latest version
-of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
-and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
-are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
-&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 &lt;p&gt;I used alkaline copper quarternary (ACQ) treated pine as other types
@@ -508,7 +415,130 @@ painting the fence.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
+
+&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
+it runs hot and noisy, and is a pain to repair. 
+So when this mid-2011 iMac crossed my path, I wasn’t sure whether
+it would be worth fixing, particularly since Apple
+longer provides operating system updates. 
+However, I had
+an old 2TB Seagate Barracuda disk and it would be a shame to throw
+it away.&lt;/p&gt;
+
+&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
+&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
+but I think the sequence below is simplier.&lt;/p&gt;
+
+&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
+and you need a glass lifter remove the front glass assembly. Mine was from
+Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
+them afterwards!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
+(8 in total). Remove those with tweezers and a T10 Torx driver.
+The display assembly fits tightly in the case. I used a right
+angle pick to get under the assembly and first lift up the top left
+hand side, and then the top right hand side.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Prop open the macbook.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove the the two 
+T20 screws that secure the hard disk assembly to the iMac and remove
+the connectors.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Replace the drive and put everything back together.  After I did
+this, of course the display didn’t work. Had to unassemble the
+machine again and play around with the display connector.&lt;/p&gt;
+
+&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
+&lt;p&gt;Next you need to download the High Sierra image (the latest version
+of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
+and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
+are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
+&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
 
 &lt;p&gt;= Docker =&lt;/p&gt;
 &lt;ul&gt;
@@ -596,42 +626,4 @@ but this was one of them!&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2019/12/IMG_1508.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/12/IMG_1508.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><category term="hawkesbury" /><summary type="html">Warren’s brother, Derek and his son Eden were visiting from Broome and we took them out on the Hawkesbury. We only had a few hours and the tides were not quite right.</summary></entry><entry><title type="html">London trip</title><link href="http://localhost:4000/2019/london-trip/" rel="alternate" type="text/html" title="London trip" /><published>2019-11-30T05:27:30+11:00</published><updated>2019-11-30T05:27:30+11:00</updated><id>http://localhost:4000/2019/london-trip</id><content type="html" xml:base="http://localhost:4000/2019/london-trip/">&lt;p&gt;Went to the Royal Opera House, Covent Garden to see the David McVicar
-production of The Magic Flute.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6403.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6403.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Elsa Dreisig making her Covent Garden debut as Pamina was fabulous
-and I was also impressed by Tuuli Takala as Queen of the Night.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/IMG_4878.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/IMG_4878.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;I waited for a good day and took the Victoria Line to the Tate
-Modern. There is an excellent viewing platform on the top floor.
-This north-west view has One Blackfriers on the left, then the Blackfriers Bridge, St Paul’s Cathedral just right of center, and the chimney of the Tate Modern on the right.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/tatepano-nw.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/tatepano-nw.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Looking north-east, one can see St Paul’s on the left. Some key tall buildings in the middle include 22 Bishopgate, 122 Leadenhall (Cheesgrater), The Scalpel and 20 Fenchurch St (Walkie Talkie). On the right, the tallest building the the Shard, which is the tallest building in the EU.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/tatepano-ne.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/tatepano-ne.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This Great Dane is a regular at the MK Restaurant on Gloucester Rd in 
-South Kensington.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/IMG_4912.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/IMG_4912.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><summary type="html">Went to the Royal Opera House, Covent Garden to see the David McVicar production of The Magic Flute.</summary></entry></feed>
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><category term="hawkesbury" /><summary type="html">Warren’s brother, Derek and his son Eden were visiting from Broome and we took them out on the Hawkesbury. We only had a few hours and the tides were not quite right.</summary></entry></feed>

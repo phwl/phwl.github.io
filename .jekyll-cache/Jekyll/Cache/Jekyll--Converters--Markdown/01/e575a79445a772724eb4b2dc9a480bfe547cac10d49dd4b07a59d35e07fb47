@@ -1,4 +1,4 @@
-I"TE<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"™E<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isnâ€™t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -83,7 +83,7 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 </ul>
 
 <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">figure</span><span class="w"> </span><span class="nx">image_path="/assets/images/2019/10/IMG_1268.jpg</span><span class="s2">" caption="</span><span class="nv">Shenzhen</span>"<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">figure</span><span class="w"> </span><span class="na">image_path</span><span class="o">=</span><span class="s2">"/assets/images/2019/10/IMG_1268.jpg"</span><span class="w"> </span><span class="na">caption</span><span class="o">=</span><span class="s2">"Shenzhen"</span><span class="w"> </span><span class="p">%}</span>
 
 </code></pre></div></div>
 
@@ -101,7 +101,7 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 
 <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid__wrapper"&gt;
 <span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span><span class="nv">post</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nv">paginator.posts</span><span class="w"> </span><span class="p">%}</span>
-  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nx">archive-single.html</span><span class="w"> </span><span class="na">type</span><span class="o">=</span><span class="s2">"grid"</span><span class="w"> </span><span class="p">%}</span>
+  <span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>archive-single.html<span class="w"> </span><span class="na">type</span><span class="o">=</span><span class="s2">"grid"</span><span class="w"> </span><span class="p">%}</span>
 <span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
 &lt;/div&gt;
 </code></pre></div></div>
