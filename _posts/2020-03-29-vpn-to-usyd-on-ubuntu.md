@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-03-29 16:20:35 AEDT
-title: Setting up VPN to the University of Sydney on Ubuntu
+title: VPN to the University of Sydney on Ubuntu
 classes: wide
 categories:
 - software
