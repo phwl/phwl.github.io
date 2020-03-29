@@ -865,7 +865,7 @@ var store = [{
         "url": "http://localhost:4000/2020/raised-garden-bed/",
         "teaser":"http://localhost:4000/assets/images/2020/03/gbed14.jpeg"},{
         "title": "Installing Anaconda and Pytorch",
-        "excerpt":"Here is how I configured Anaconda and Pytorch on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/.      Install Anaconda from https://www.anaconda.com/distribution, then     conda update -n base -c defaults conda conda create --name dtw conda activate dtw conda install pytorch=0.4.1 cuda92 -c pytorch pip install 'torch==0.4.1' pip install Cython pip install 'torchvision==0.2.1' pip install visdom conda install gcc_linux-64 conda install -c anaconda cudatoolkit cd ~/src git clone https://github.com/TideDancer/DTWNet.git cd DTWnet`           ","categories": ["software"],
+        "excerpt":"Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.      Install Anaconda from https://www.anaconda.com/distribution, then     conda update -n base -c defaults conda conda create --name dtw conda activate dtw conda install pytorch=0.4.1 cuda92 -c pytorch pip install 'torch==0.4.1' pip install Cython pip install 'torchvision==0.2.1' pip install visdom conda install gcc_linux-64 conda install -c anaconda cudatoolkit cd ~/src git clone https://github.com/TideDancer/DTWNet.git cd DTWnet`           ","categories": ["software"],
         "tags": ["ubuntu","linux"],
         "url": "http://localhost:4000/2020/install-anaconda/",
         "teaser":"http://localhost:4000/assets/images/2020/03/Anaconda_Logo.png"},{
