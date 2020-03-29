@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-28T21:22:11+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">John Moyle Memorial Field Day 2020</title><link href="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/" rel="alternate" type="text/html" title="John Moyle Memorial Field Day 2020" /><published>2020-03-22T20:22:50+11:00</published><updated>2020-03-22T20:22:50+11:00</updated><id>http://localhost:4000/2020/John%20Moyle%20Memorial%20Field%20Day%202020</id><content type="html" xml:base="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/">&lt;p&gt;The &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society&lt;/a&gt; activated
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-29T16:33:44+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Setting up VPN to the University of Sydney on Ubuntu</title><link href="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/" rel="alternate" type="text/html" title="Setting up VPN to the University of Sydney on Ubuntu" /><published>2020-03-29T16:20:35+11:00</published><updated>2020-03-29T16:20:35+11:00</updated><id>http://localhost:4000/2020/vpn-to-usyd-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/">&lt;p&gt;It is easy to log onto the University of Sydney via VPN on Ubuntu using
+Openconnect.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&quot;install-openconnect&quot;&gt;Install Openconnect&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+sudo apt-get install openconnect
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;connect&quot;&gt;Connect&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo openconnect -u &amp;lt;unikey&amp;gt; --passwd-on-stdin vpn.sydney.edu.au
+&amp;lt;type your password here there is no prompt&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see something like this&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;POST https://vpn.sydney.edu.au/
+Connected to 129.78.42.50:443
+SSL negotiation with vpn.sydney.edu.au
+Connected to HTTPS on vpn.sydney.edu.au
+XML POST enabled
+Please enter your username and password.
+POST https://vpn.sydney.edu.au/
+Got CONNECT response: HTTP/1.1 200 OK
+CSTP connected. DPD 30, Keepalive 20
+Connected as 10.48.18.235, using SSL
+Established DTLS connection (using GnuTLS). Ciphersuite (DTLS0.9)-(DHE-RSA-4294967237)-(AES-256-CBC)-(SHA1).
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s all!&lt;/p&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">It is easy to log onto the University of Sydney via VPN on Ubuntu using Openconnect.</summary></entry><entry><title type="html">John Moyle Memorial Field Day 2020</title><link href="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/" rel="alternate" type="text/html" title="John Moyle Memorial Field Day 2020" /><published>2020-03-22T20:22:50+11:00</published><updated>2020-03-22T20:22:50+11:00</updated><id>http://localhost:4000/2020/John%20Moyle%20Memorial%20Field%20Day%202020</id><content type="html" xml:base="http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/">&lt;p&gt;The &lt;a href=&quot;https://www.mwrs.org.au/&quot;&gt;Manly Warringah Radio Society&lt;/a&gt; activated
 Barrington Tops in the John Moyle Memorial Field Day this year.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -221,7 +252,130 @@ git clone https://github.com/TideDancer/DTWNet.git
 cd DTWnet`
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
+
+&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
+it runs hot and noisy, and is a pain to repair. 
+So when this mid-2011 iMac crossed my path, I wasn’t sure whether
+it would be worth fixing, particularly since Apple
+longer provides operating system updates. 
+However, I had
+an old 2TB Seagate Barracuda disk and it would be a shame to throw
+it away.&lt;/p&gt;
+
+&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
+&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
+but I think the sequence below is simplier.&lt;/p&gt;
+
+&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
+and you need a glass lifter remove the front glass assembly. Mine was from
+Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
+them afterwards!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
+(8 in total). Remove those with tweezers and a T10 Torx driver.
+The display assembly fits tightly in the case. I used a right
+angle pick to get under the assembly and first lift up the top left
+hand side, and then the top right hand side.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Prop open the macbook.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove the the two 
+T20 screws that secure the hard disk assembly to the iMac and remove
+the connectors.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Replace the drive and put everything back together.  After I did
+this, of course the display didn’t work. Had to unassemble the
+machine again and play around with the display connector.&lt;/p&gt;
+
+&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
+&lt;p&gt;Next you need to download the High Sierra image (the latest version
+of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
+and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
+are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
+&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 &lt;p&gt;I used alkaline copper quarternary (ACQ) treated pine as other types
@@ -353,130 +507,7 @@ painting the fence.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
-
-&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
-it runs hot and noisy, and is a pain to repair. 
-So when this mid-2011 iMac crossed my path, I wasn’t sure whether
-it would be worth fixing, particularly since Apple
-longer provides operating system updates. 
-However, I had
-an old 2TB Seagate Barracuda disk and it would be a shame to throw
-it away.&lt;/p&gt;
-
-&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
-&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
-but I think the sequence below is simplier.&lt;/p&gt;
-
-&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
-and you need a glass lifter remove the front glass assembly. Mine was from
-Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
-them afterwards!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
-(8 in total). Remove those with tweezers and a T10 Torx driver.
-The display assembly fits tightly in the case. I used a right
-angle pick to get under the assembly and first lift up the top left
-hand side, and then the top right hand side.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Prop open the macbook.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Remove the the two 
-T20 screws that secure the hard disk assembly to the iMac and remove
-the connectors.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Replace the drive and put everything back together.  After I did
-this, of course the display didn’t work. Had to unassemble the
-machine again and play around with the display connector.&lt;/p&gt;
-
-&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
-&lt;p&gt;Next you need to download the High Sierra image (the latest version
-of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
-and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
-are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
-&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
 
 &lt;p&gt;= Docker =&lt;/p&gt;
 &lt;ul&gt;
@@ -602,194 +633,4 @@ South Kensington.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2019/11/IMG_4912.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2019/11/IMG_4912.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><summary type="html">Went to the Royal Opera House, Covent Garden to see the David McVicar production of The Magic Flute.</summary></entry><entry><title type="html">Spring VHF/UHF Field Day</title><link href="http://localhost:4000/2019/vhf-field-day/" rel="alternate" type="text/html" title="Spring VHF/UHF Field Day" /><published>2019-11-23T17:10:10+11:00</published><updated>2019-11-23T17:10:10+11:00</updated><id>http://localhost:4000/2019/vhf-field-day</id><content type="html" xml:base="http://localhost:4000/2019/vhf-field-day/">&lt;p&gt;Photos from the 2019 Spring VHF/UHF Field Day. More information at the 
-&lt;a href=&quot;https://www.mwrs.org.au/2019/11/24/23-nov-2019-vhf-uhf-spring-field-day/&quot;&gt;Manly Warringah Radio Society site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6240.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6240.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6243.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6243.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6258.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6258.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6275.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6275.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6285.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6285.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6289.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6289.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6306.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6306.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6314.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6314.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6320.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6320.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6324.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6324.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6327.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6327.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6328.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6328.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6331.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6331.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6332.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6332.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6345.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6345.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6346.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6346.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6350.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6350.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6354.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6354.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6362.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6362.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6367.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6367.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/DSCF6369.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/DSCF6369.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><category term="travel" /><summary type="html">Photos from the 2019 Spring VHF/UHF Field Day. More information at the Manly Warringah Radio Society site.</summary></entry></feed>
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><summary type="html">Went to the Royal Opera House, Covent Garden to see the David McVicar production of The Magic Flute.</summary></entry></feed>

@@ -1,0 +1,14 @@
+I"J<p>It is easy to log onto the University of Sydney via VPN on Ubuntu using
+Openconnect.</p>
+
+<!-- more -->
+
+<ul>
+  <li>First install openconnect
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+sudo apt-get install openconnect
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+:ET
