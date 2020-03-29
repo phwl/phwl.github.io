@@ -13,8 +13,7 @@ header:
   teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
 ---
 
-It is easy to log onto the University of Sydney via VPN on Ubuntu using
-Openconnect.
+Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.
 
 <!-- more -->
 

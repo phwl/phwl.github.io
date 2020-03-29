@@ -874,7 +874,7 @@ var store = [{
         "tags": ["hobbies","australia","travel"],
         "url": "http://localhost:4000/2020/John-Moyle-Memorial-Field-Day-2020/",
         "teaser":"http://localhost:4000/assets/images/2020/03/jmfd5.jpeg"},{
-        "title": "Setting up VPN to the University of Sydney on Ubuntu",
+        "title": "VPN to the University of Sydney on Ubuntu",
         "excerpt":"It is easy to log onto the University of Sydney via VPN on Ubuntu using Openconnect.     Install Openconnect  sudo apt-get update sudo apt-get install openconnect   Connect   sudo openconnect -u &lt;unikey&gt; --passwd-on-stdin vpn.sydney.edu.au &lt;type your password here there is no prompt&gt;   You should see something like this   POST https://vpn.sydney.edu.au/ Connected to 129.78.42.50:443 SSL negotiation with vpn.sydney.edu.au Connected to HTTPS on vpn.sydney.edu.au XML POST enabled Please enter your username and password. POST https://vpn.sydney.edu.au/ Got CONNECT response: HTTP/1.1 200 OK CSTP connected. DPD 30, Keepalive 20 Connected as 10.48.18.235, using SSL Established DTLS connection (using GnuTLS). Ciphersuite (DTLS0.9)-(DHE-RSA-4294967237)-(AES-256-CBC)-(SHA1).   That’s all!   ","categories": ["software"],
         "tags": ["ubuntu","linux"],
         "url": "http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/",
