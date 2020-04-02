@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-29T18:15:41+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Updating jekyll on macOS</title><link href="http://localhost:4000/2020/update-jekyll/" rel="alternate" type="text/html" title="Updating jekyll on macOS" /><published>2020-03-29T17:50:13+11:00</published><updated>2020-03-29T17:50:13+11:00</updated><id>http://localhost:4000/2020/update-jekyll</id><content type="html" xml:base="http://localhost:4000/2020/update-jekyll/">&lt;p&gt;When doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; I got an error telling me that 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-02T20:37:57+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04</title><link href="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/" rel="alternate" type="text/html" title="Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04" /><published>2020-04-02T13:20:35+11:00</published><updated>2020-04-02T13:20:35+11:00</updated><id>http://localhost:4000/2020/installing-gnuradio-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/">&lt;p&gt;Installation of software for Ettus B210.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Follow instructions at &lt;a href=&quot;https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux&quot;&gt;https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux&lt;/a&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;For UHD
+        &lt;ul&gt;
+          &lt;li&gt;git checkout v3.15.0.0-rc3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;For GNU radio
+        &lt;ul&gt;
+          &lt;li&gt;&lt;span style=&quot;color:red&quot;&gt; Don’t do the below as it is more complicated and you don’t get the Instrumentation blocks in gnuradio-companion&lt;/span&gt;
+            &lt;ul&gt;
+              &lt;li&gt;git checkout v3.8.1.0-rc1&lt;/li&gt;
+              &lt;li&gt;
+                &lt;p&gt;Since Ubuntu puts liblog4cpp in &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/lib/x86_64-linux-gnu&lt;/code&gt;, I had to modify &lt;code class=&quot;highlighter-rouge&quot;&gt;gnuradio/cmake/Modules/FindLOG4CPP.cmake:&lt;/code&gt; (before running &lt;code class=&quot;highlighter-rouge&quot;&gt;cmake ../&lt;/code&gt;):&lt;/p&gt;
+
+                &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PATHS /usr/lib /usr/lib64 /usr/local/lib  /usr/local/lib64 /opt/local/lib /opt/local/lib64 /usr/lib/x86_64-linux-gnu
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;                &lt;/div&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/lib/x86_64-linux-gnu&lt;/code&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python3/dist-packages&lt;/code&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Do this &lt;a href=&quot;https://launchpad.net/~gnuradio/+archive/ubuntu/gnuradio-releases&quot;&gt;https://launchpad.net/~gnuradio/+archive/ubuntu/gnuradio-releases&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install Pothosware using instructions from &lt;a href=&quot;https://github.com/pothosware/PothosCore/wiki/Ubuntu&quot;&gt;https://github.com/pothosware/PothosCore/wiki/Ubuntu&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;export UHD_IMAGES_DIR=/usr/local/share/uhd/images&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Then I got the error &lt;code class=&quot;highlighter-rouge&quot;&gt;RuntimeError: Expected FPGA compatibility number 14, but got 16&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;So I installed UHD v3.12.0.0 instead as it is the latest version with compatibility number 14, cycled the Ettus radio and rebooted the Ubuntu machine&lt;/li&gt;
+      &lt;li&gt;That finally worked and I could include a UHD source block in gnuradio-companion&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Installation of software for Ettus B210.</summary></entry><entry><title type="html">Updating jekyll on macOS</title><link href="http://localhost:4000/2020/update-jekyll/" rel="alternate" type="text/html" title="Updating jekyll on macOS" /><published>2020-03-29T17:50:13+11:00</published><updated>2020-03-29T17:50:13+11:00</updated><id>http://localhost:4000/2020/update-jekyll</id><content type="html" xml:base="http://localhost:4000/2020/update-jekyll/">&lt;p&gt;When doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; I got an error telling me that 
 installing ffi failed, and the following had to be fixed:&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v '1.12.2' --source 'https://rubygems.org/'
 Building native extensions. This could take a while...
@@ -353,7 +396,130 @@ git clone https://github.com/TideDancer/DTWNet.git
 cd DTWnet`
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
+
+&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
+it runs hot and noisy, and is a pain to repair. 
+So when this mid-2011 iMac crossed my path, I wasn’t sure whether
+it would be worth fixing, particularly since Apple
+longer provides operating system updates. 
+However, I had
+an old 2TB Seagate Barracuda disk and it would be a shame to throw
+it away.&lt;/p&gt;
+
+&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
+&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
+but I think the sequence below is simplier.&lt;/p&gt;
+
+&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
+and you need a glass lifter remove the front glass assembly. Mine was from
+Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
+them afterwards!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
+(8 in total). Remove those with tweezers and a T10 Torx driver.
+The display assembly fits tightly in the case. I used a right
+angle pick to get under the assembly and first lift up the top left
+hand side, and then the top right hand side.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Prop open the macbook.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Remove the the two 
+T20 screws that secure the hard disk assembly to the iMac and remove
+the connectors.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Replace the drive and put everything back together.  After I did
+this, of course the display didn’t work. Had to unassemble the
+machine again and play around with the display connector.&lt;/p&gt;
+
+&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
+&lt;p&gt;Next you need to download the High Sierra image (the latest version
+of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
+and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
+are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
+&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Raised Garden Bed</title><link href="http://localhost:4000/2020/raised-garden-bed/" rel="alternate" type="text/html" title="Raised Garden Bed" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/raised-garden-bed</id><content type="html" xml:base="http://localhost:4000/2020/raised-garden-bed/">&lt;p&gt;Over a couple of weekends, made a raised garden bed for the back garden.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 &lt;p&gt;I used alkaline copper quarternary (ACQ) treated pine as other types
@@ -485,130 +651,7 @@ painting the fence.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Hard disk replacement for a mid-2011 iMac</title><link href="http://localhost:4000/2020/hard-disk-2011-imac/" rel="alternate" type="text/html" title="Hard disk replacement for a mid-2011 iMac" /><published>2020-03-07T15:22:50+11:00</published><updated>2020-03-07T15:22:50+11:00</updated><id>http://localhost:4000/2020/hard-disk-2011-imac</id><content type="html" xml:base="http://localhost:4000/2020/hard-disk-2011-imac/">&lt;p&gt;Today on the operating table we have a mid-2011 iMac with a dead hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac7.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac7.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h1 id=&quot;hardware&quot;&gt;Hardware&lt;/h1&gt;
-
-&lt;p&gt;Although I always liked the design, display and speakers in an iMac,
-it runs hot and noisy, and is a pain to repair. 
-So when this mid-2011 iMac crossed my path, I wasn’t sure whether
-it would be worth fixing, particularly since Apple
-longer provides operating system updates. 
-However, I had
-an old 2TB Seagate Barracuda disk and it would be a shame to throw
-it away.&lt;/p&gt;
-
-&lt;p&gt;iFixit has a set of instructions for replacing the hard drive (
-&lt;a href=&quot;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&quot;&gt;https://www.ifixit.com/Guide/iMac+Intel+27-Inch+EMC+2429+Hard+Drive+Replacement/7555&lt;/a&gt;),
-but I think the sequence below is simplier.&lt;/p&gt;
-
-&lt;p&gt;The non-obvious step is opening the case. It is held in with magnets
-and you need a glass lifter remove the front glass assembly. Mine was from
-Harbour Freight &lt;a href=&quot;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&quot;&gt;https://www.harborfreight.com/dual-cup-suction-lifter-46134.html&lt;/a&gt;. Try not to touch the internal glass surfaces as you’ll have to clean 
-them afterwards!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac1.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;There are 4 screws down each vertical edge of the display assembly
-(8 in total). Remove those with tweezers and a T10 Torx driver.
-The display assembly fits tightly in the case. I used a right
-angle pick to get under the assembly and first lift up the top left
-hand side, and then the top right hand side.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac2.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Next remove the connector for the shortest cable so you can tilt the display.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac3.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac3.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Prop open the macbook.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac4.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac4.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Remove the the two 
-T20 screws that secure the hard disk assembly to the iMac and remove
-the connectors.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac5.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac5.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Hard disk assembly can come out now.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac6.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac6.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Replace the drive and put everything back together.  After I did
-this, of course the display didn’t work. Had to unassemble the
-machine again and play around with the display connector.&lt;/p&gt;
-
-&lt;h1 id=&quot;operating-system&quot;&gt;Operating System&lt;/h1&gt;
-&lt;p&gt;Next you need to download the High Sierra image (the latest version
-of MacOS that supports this machine) &lt;a href=&quot;https://support.apple.com/en-au/HT208969&quot;&gt;https://support.apple.com/en-au/HT208969&lt;/a&gt;
-and create a bootable USB. Then boot from the USB and install to the hard disk.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/03/imac8.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/03/imac8.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Following that, there is an issue of fan control. It’s an easy fix if you 
-are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&quot;&gt;https://eshop.macsales.com/item/OWC/DIDIMACHDD12/&lt;/a&gt;. My solution was to use this
-&lt;a href=&quot;https://www.crystalidea.com/macs-fan-control&quot;&gt;https://www.crystalidea.com/macs-fan-control&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Today on the operating table we have a mid-2011 iMac with a dead hard disk.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="hobbies" /><summary type="html">Over a couple of weekends, made a raised garden bed for the back garden.</summary></entry><entry><title type="html">Linux and Docker links</title><link href="http://localhost:4000/2020/os-links/" rel="alternate" type="text/html" title="Linux and Docker links" /><published>2020-02-22T10:39:18+11:00</published><updated>2020-02-22T10:39:18+11:00</updated><id>http://localhost:4000/2020/os-links</id><content type="html" xml:base="http://localhost:4000/2020/os-links/">&lt;p&gt;Some interesting links.&lt;/p&gt;
 
 &lt;p&gt;= Docker =&lt;/p&gt;
 &lt;ul&gt;
@@ -641,59 +684,4 @@ are prepared to get the cable &lt;a href=&quot;https://eshop.macsales.com/item/O
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/01/IMG_5543.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/01/IMG_5543.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Photos from Balls Head.</summary></entry><entry><title type="html">Fishing trip with Eden</title><link href="http://localhost:4000/2019/fishing-trip-with-eden/" rel="alternate" type="text/html" title="Fishing trip with Eden" /><published>2019-12-23T15:47:48+11:00</published><updated>2019-12-23T15:47:48+11:00</updated><id>http://localhost:4000/2019/fishing-trip-with-eden</id><content type="html" xml:base="http://localhost:4000/2019/fishing-trip-with-eden/">&lt;p&gt;Warren’s brother, Derek and his son Eden were visiting from Broome
-and we took them out on the Hawkesbury. We only had a few hours 
-and the tides were not quite right.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/12/IMG_1496.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/12/IMG_1496.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Anyway, we started with soft plastics.  Derek got the first fish
-right on cue, about 10 seconds after I announced we should catch a
-fish soon. Next drift, I caught another in my first minute of fishing.&lt;/p&gt;
-
-&lt;p&gt;After making coffee we pumped some nippers.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/12/IMG_1498.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/12/IMG_1498.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/12/IMG_1499.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/12/IMG_1499.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;In the first drift with the nippers, Eden caught his first flathead.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-
-  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/bh1WLmD4fH0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;We then had this double hookup of
-soapy jewfish right in front of another boat.&lt;/p&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-
-  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/6v3IWyv4GDs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;/div&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/12/IMG_1504.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/12/IMG_1504.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;It isn’t often that everything goes according to plan,
-but this was one of them!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/12/IMG_1508.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/12/IMG_1508.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><category term="hawkesbury" /><summary type="html">Warren’s brother, Derek and his son Eden were visiting from Broome and we took them out on the Hawkesbury. We only had a few hours and the tides were not quite right.</summary></entry></feed>
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Photos from Balls Head.</summary></entry></feed>

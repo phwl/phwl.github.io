@@ -1,0 +1,19 @@
+I"’<p>Installation of software for Ettus B210.</p>
+
+<!-- more -->
+
+<ol>
+  <li>
+    <p>Follow instructions at <a href="https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux">https://kb.ettus.com/Building_and_Installing_the_USRP_Open-Source_Toolchain_(UHD_and_GNU_Radio)_on_Linux</a>.</p>
+
+    <ul>
+      <li>
+        <p>Since Ubuntu puts liblog4cpp.a in <code class="highlighter-rouge">/usr/lib/x86_64-linux-gnu</code>, I had to modify <code class="highlighter-rouge">gnuradio/cmake/Modules/FindLOG4CPP.cmake:</code> (before running <code class="highlighter-rouge">cmake ../</code>):</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PATHS /usr/lib /usr/lib64 /usr/local/lib  /usr/local/lib64 /opt/local/lib /opt/local/lib64 /usr/lib/x86_64-linux-gnu
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ol>
+:ET
