@@ -22,8 +22,7 @@ the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
 While there are lots of good videos on this (such as
 [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)
 and [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
-that prefer to read, here are step by step instructions. I estimate
-that having this done outside would be about $200.
+that prefer to read, here are step by step instructions. 
 
 In the past year, this mower has become hard to start. Needs a carby
 clean and while I'm at it, might as well service everything.
@@ -33,7 +32,7 @@ clean and while I'm at it, might as well service everything.
 ## Carburettor
 ### Step 1 Air filter
 Shut off the fuel valve on the hose that runs into the carby.
-Take off the air filter cover and the 2 10mm bolts that go into the
+Take off the air filter cover and the 2x 10mm bolts that go into the
 engine. Examine air filter and replace if bad.
 
 {% include figure image_path="/assets/images/2020/04/mower2.jpeg" caption="" %}
@@ -80,7 +79,7 @@ After some more tapping the main nozzle should come out.
 {% include figure image_path="/assets/images/2020/04/mower17.jpeg" caption="" %}
 
 ### Step 9 Clean
-Clean everything with carby cleaner spray. Pay particular attention
+Clean everything with carburettor cleaner spray. Pay particular attention
 to the air flow and fuel flow paths indicated in the figure below.
 {% include figure image_path="/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png" caption="" %}
 {% include figure image_path="/assets/images/2020/04/mower20.jpeg" caption="" %}
@@ -136,6 +135,9 @@ socket, undo the nut for the blade disc.
 Mine were in bad shape. 
 {% include figure image_path="/assets/images/2020/04/blade4.jpeg" caption="" %}
 
+The part number for 4x the normal height blades is 06720-VK0-600. It took me a while to
+find this handy table.
+{% include figure image_path="/assets/images/2020/04/hondablades.jpeg" caption="" %}
 I purchased 
 [new blades](https://www.ebay.com.au/itm/Genuine-Honda-Blades-19-Blade-kit-set-of-4-06720-VK0-600/323806462925?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
 from [Online Mower
@@ -145,9 +147,6 @@ for $30) who I highly recommend.
 {% include figure image_path="/assets/images/2020/04/blade5.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/blade10.jpeg" caption="" %}
 
-The part number for the normal height is 06720-VK0-600. Took me a while to
-find this table.
-{% include figure image_path="/assets/images/2020/04/hondablades.jpeg" caption="" %}
 ### Step 3 Remove blade nuts
 These were 17 mm.
 {% include figure image_path="/assets/images/2020/04/blade7.jpeg" caption="" %}
