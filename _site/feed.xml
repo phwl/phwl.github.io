@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T06:35:52+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;My Honda HRU19D has gone 10 years without a service.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T06:38:31+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blades)</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blades)" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;My Honda HRU19D has gone 10 years without a service.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -21,7 +21,7 @@ clean and while I’m at it, might as well service everything.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;carburettor&quot;&gt;Carburettor&lt;/h2&gt;
+&lt;h2 id=&quot;carburettor-and-air-filter&quot;&gt;Carburettor and Air Filter&lt;/h2&gt;
 &lt;h3 id=&quot;step-1-air-filter&quot;&gt;Step 1 Air filter&lt;/h3&gt;
 &lt;p&gt;Shut off the fuel valve on the hose that runs into the carby.
 Take off the air filter cover and the 2x 10mm bolts that go into the
@@ -422,7 +422,7 @@ I used the shadow of the old blade for alignment.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-7-put-it-back-together&quot;&gt;Step 7 Put it Back Together&lt;/h3&gt;
+&lt;h3 id=&quot;step-7-put-back-together&quot;&gt;Step 7 Put Back Together&lt;/h3&gt;
 &lt;p&gt;Put the cutter disc back on the mower. Replace the spark plug cable and 
 open the fuel valve.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
@@ -435,7 +435,7 @@ open the fuel valve.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;try-it-out&quot;&gt;Try it Out&lt;/h2&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7TlB4mk6WFM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">My Honda HRU19D has gone 10 years without a service.</summary></entry><entry><title type="html">Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04</title><link href="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/" rel="alternate" type="text/html" title="Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04" /><published>2020-04-02T13:20:35+11:00</published><updated>2020-04-02T13:20:35+11:00</updated><id>http://localhost:4000/2020/installing-gnuradio-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/">&lt;h1 id=&quot;installation-of-software-for-ettus-b210&quot;&gt;Installation of software for Ettus B210.&lt;/h1&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7TlB4mk6WFM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">My Honda HRU19D has gone 10 years without a service.</summary></entry><entry><title type="html">Installing USRP Toolchain (UHD and GNU Radio) for Ettus B210 (on Ubuntu 18.04)</title><link href="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/" rel="alternate" type="text/html" title="Installing USRP Toolchain (UHD and GNU Radio) for Ettus B210 (on Ubuntu 18.04)" /><published>2020-04-02T13:20:35+11:00</published><updated>2020-04-02T13:20:35+11:00</updated><id>http://localhost:4000/2020/installing-gnuradio-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/">&lt;h1 id=&quot;installation-of-software-for-ettus-b210&quot;&gt;Installation of software for Ettus B210.&lt;/h1&gt;
 
 &lt;h2 id=&quot;part-1-2-april-2020&quot;&gt;Part 1 2 April, 2020&lt;/h2&gt;
 

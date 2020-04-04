@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-04-04 17:38:50 AEDT
-title: Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)
+title: Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blades)
 classes: wide
 toc: true
 categories:
@@ -29,7 +29,7 @@ clean and while I'm at it, might as well service everything.
 
 {% include figure image_path="/assets/images/2020/04/mower1.jpeg" caption="" %}
 
-## Carburettor
+## Carburettor and Air Filter
 ### Step 1 Air filter
 Shut off the fuel valve on the hose that runs into the carby.
 Take off the air filter cover and the 2x 10mm bolts that go into the
@@ -169,10 +169,12 @@ put everything back together).
 I used the shadow of the old blade for alignment.
 {% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
 
-### Step 7 Put it Back Together
+### Step 7 Put Back Together
 Put the cutter disc back on the mower. Replace the spark plug cable and 
 open the fuel valve.
 {% include figure image_path="/assets/images/2020/04/blade11.jpeg" caption="" %}
 
 ## Try it Out
+Works really well now, like new. It starts easily, cuts cleanly and even
+the sound is different after I cleaned off the caked-on grass.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7TlB4mk6WFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
