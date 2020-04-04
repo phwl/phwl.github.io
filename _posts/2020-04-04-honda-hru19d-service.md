@@ -106,21 +106,21 @@ Remove spark plug cable.
 {% include figure image_path="/assets/images/2020/04/plug1.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
 
-## Step 2 Remove Plug
+### Step 2 Remove Plug
 Remove spark plug. It is a NGK BPR5ES.
 {% include figure image_path="/assets/images/2020/04/plug3.jpeg" caption="" %}
 
 Socket is 13/16".
 {% include figure image_path="/assets/images/2020/04/plug4.jpeg" caption="" %}
 
-## Step 2 Check Plug
+### Step 3 Check Plug
 Examine electrode, looks good.
 {% include figure image_path="/assets/images/2020/04/plug5.jpeg" caption="" %}
 
 Gap is supposed to be 0.7-0.8 mm so let's go with 0.75 mm.
 {% include figure image_path="/assets/images/2020/04/plug6.jpeg" caption="" %}
 
-## Step 3 Put Back Together
+### Step 4 Put Back Together
 Put everything back. Don't overtighten.
 {% include figure image_path="/assets/images/2020/04/plug7.jpeg" caption="" %}
 
@@ -130,13 +130,13 @@ Put everything back. Don't overtighten.
 Remove spark plug cable (so engine can't start on you).
 {% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
 
-### Step 1 Turn on Side and Remove Blade Disc
+### Step 2 Turn on Side and Remove Blade Disc
 Turn off the fuel valve and turn on its side with the air filter facing up.
 Use a block of wood to wedge the blade so it won't turn. Using a 14 mm
 socket, undo the nut for the blade disc.
 {% include figure image_path="/assets/images/2020/04/blade1.jpeg" caption="" %}
 
-### Step 2 Examine blade
+### Step 3 Examine blade
 Mine were in bad shape. 
 {% include figure image_path="/assets/images/2020/04/blade4.jpeg" caption="" %}
 
@@ -152,15 +152,15 @@ for $30) who I highly recommend.
 {% include figure image_path="/assets/images/2020/04/blade5.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/blade10.jpeg" caption="" %}
 
-### Step 3 Remove blade nuts
+### Step 4 Remove blade nuts
 These were 17 mm.
 {% include figure image_path="/assets/images/2020/04/blade7.jpeg" caption="" %}
 
-### Step 4 Clean
+### Step 5 Clean
 I used a wire brush to clean the blade disc.
 {% include figure image_path="/assets/images/2020/04/blade8.jpeg" caption="" %}
 
-### Step 5 Attach New Blades
+### Step 6 Attach New Blades
 One thing that I didn't know is that the blades are not perpendicular 
 to the disc. They are at a slightly acute angle. If you make them
 perpendicular, they hit the side of the mower (only found out after I
@@ -168,7 +168,7 @@ put everything back together).
 I used the shadow of the old blade for alignment.
 {% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
 
-### Step 6 Put it Back Together
+### Step 7 Put it Back Together
 Put the cutter disc back on the mower. Replace the spark plug cable and 
 open the fuel valve.
 {% include figure image_path="/assets/images/2020/04/blade11.jpeg" caption="" %}

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-04T22:07:02+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;My Honda HRU19D has gone 10 years without a service.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-04T22:11:35+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Full Service (Carburettor, Blades, Oil, Spark Plugs)" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;My Honda HRU19D has gone 10 years without a service.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -236,7 +236,8 @@ used much the previous summer and looked good so I’ll change it next year.&lt;
 
 &lt;h3 id=&quot;step-2-change-oil&quot;&gt;Step 2 Change oil&lt;/h3&gt;
 &lt;p&gt;If you need to change the oil, do so when it is warm. Close the fuel 
-valve and tip the oil out at the dipstick opening. Use SAE 10W-30.&lt;/p&gt;
+valve and tip the oil out at the dipstick opening. Use SAE 10W-30 
+4 stroke oil.&lt;/p&gt;
 
 &lt;h2 id=&quot;spark-plugs&quot;&gt;Spark Plugs&lt;/h2&gt;
 &lt;h3 id=&quot;step-1-remove-cable&quot;&gt;Step 1 Remove Cable&lt;/h3&gt;
@@ -259,8 +260,8 @@ valve and tip the oil out at the dipstick opening. Use SAE 10W-30.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;step-2-remove-plug&quot;&gt;Step 2 Remove Plug&lt;/h2&gt;
-&lt;p&gt;Remove spark plug.&lt;/p&gt;
+&lt;h3 id=&quot;step-2-remove-plug&quot;&gt;Step 2 Remove Plug&lt;/h3&gt;
+&lt;p&gt;Remove spark plug. It is a NGK BPR5ES.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/plug3.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/plug3.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -280,7 +281,7 @@ valve and tip the oil out at the dipstick opening. Use SAE 10W-30.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;step-2-check-plug&quot;&gt;Step 2 Check Plug&lt;/h2&gt;
+&lt;h3 id=&quot;step-3-check-plug&quot;&gt;Step 3 Check Plug&lt;/h3&gt;
 &lt;p&gt;Examine electrode, looks good.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/plug5.jpeg&quot;&gt;
@@ -301,7 +302,7 @@ valve and tip the oil out at the dipstick opening. Use SAE 10W-30.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;step-3-put-back-together&quot;&gt;Step 3 Put Back Together&lt;/h2&gt;
+&lt;h3 id=&quot;step-4-put-back-together&quot;&gt;Step 4 Put Back Together&lt;/h3&gt;
 &lt;p&gt;Put everything back. Don’t overtighten.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/plug7.jpeg&quot;&gt;
@@ -324,7 +325,7 @@ valve and tip the oil out at the dipstick opening. Use SAE 10W-30.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-1-turn-on-side-and-remove-blade-disc&quot;&gt;Step 1 Turn on Side and Remove Blade Disc&lt;/h3&gt;
+&lt;h3 id=&quot;step-2-turn-on-side-and-remove-blade-disc&quot;&gt;Step 2 Turn on Side and Remove Blade Disc&lt;/h3&gt;
 &lt;p&gt;Turn off the fuel valve and turn on its side with the air filter facing up.
 Use a block of wood to wedge the blade so it won’t turn. Using a 14 mm
 socket, undo the nut for the blade disc.&lt;/p&gt;
@@ -337,7 +338,7 @@ socket, undo the nut for the blade disc.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-2-examine-blade&quot;&gt;Step 2 Examine blade&lt;/h3&gt;
+&lt;h3 id=&quot;step-3-examine-blade&quot;&gt;Step 3 Examine blade&lt;/h3&gt;
 &lt;p&gt;Mine were in bad shape.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/blade4.jpeg&quot;&gt;
@@ -383,7 +384,7 @@ Spares&lt;/a&gt; who I highly recommend.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-3-remove-blade-nuts&quot;&gt;Step 3 Remove blade nuts&lt;/h3&gt;
+&lt;h3 id=&quot;step-4-remove-blade-nuts&quot;&gt;Step 4 Remove blade nuts&lt;/h3&gt;
 &lt;p&gt;These were 17 mm.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/blade7.jpeg&quot;&gt;
@@ -394,7 +395,7 @@ Spares&lt;/a&gt; who I highly recommend.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-4-clean&quot;&gt;Step 4 Clean&lt;/h3&gt;
+&lt;h3 id=&quot;step-5-clean&quot;&gt;Step 5 Clean&lt;/h3&gt;
 &lt;p&gt;I used a wire brush to clean the blade disc.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/blade8.jpeg&quot;&gt;
@@ -405,7 +406,7 @@ Spares&lt;/a&gt; who I highly recommend.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-5-attach-new-blades&quot;&gt;Step 5 Attach New Blades&lt;/h3&gt;
+&lt;h3 id=&quot;step-6-attach-new-blades&quot;&gt;Step 6 Attach New Blades&lt;/h3&gt;
 &lt;p&gt;One thing that I didn’t know is that the blades are not perpendicular 
 to the disc. They are at a slightly acute angle. If you make them
 perpendicular, they hit the side of the mower (only found out after I
@@ -420,7 +421,7 @@ I used the shadow of the old blade for alignment.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;step-6-put-it-back-together&quot;&gt;Step 6 Put it Back Together&lt;/h3&gt;
+&lt;h3 id=&quot;step-7-put-it-back-together&quot;&gt;Step 7 Put it Back Together&lt;/h3&gt;
 &lt;p&gt;Put the cutter disc back on the mower. Replace the spark plug cable and 
 open the fuel valve.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
