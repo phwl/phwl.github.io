@@ -40,7 +40,8 @@ engine. Examine air filter and replace if bad.
 {% include figure image_path="/assets/images/2020/04/mower4.jpeg" caption="" %}
 
 ### Step 2 Fuel Hose
-Undo the hose underneath (fuel line).
+Undo the hose underneath (fuel line). You need to pull the retaining
+clip out of the way with pliers and then slide off the hose.
 {% include figure image_path="/assets/images/2020/04/mower5.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/mower6.jpeg" caption="" %}
 
