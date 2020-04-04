@@ -19,10 +19,9 @@ My Honda HRU19D has gone 10 years without a service.
 
 The closest manual I could find is
 the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
-While there are lots of good videos on this (such as the pretty professional
-approach
+While there are lots of good videos on this (such as 
 [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)
-and this more backyard one [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
+and [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
 that prefer to read, here are step by step instructions. 
 
 In the past year, this mower has become hard to start. Needs a carby
