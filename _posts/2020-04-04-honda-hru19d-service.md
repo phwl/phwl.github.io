@@ -19,9 +19,10 @@ My Honda HRU19D has gone 10 years without a service.
 
 The closest manual I could find is
 the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
-While there are lots of good videos on this (such as
+While there are lots of good videos on this (such as the pretty professional
+approach
 [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)
-and [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
+and this more backyard one [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
 that prefer to read, here are step by step instructions. 
 
 In the past year, this mower has become hard to start. Needs a carby
@@ -80,7 +81,7 @@ After some more tapping the main nozzle should come out.
 {% include figure image_path="/assets/images/2020/04/mower17.jpeg" caption="" %}
 
 ### Step 9 Clean
-Everything looked relatively clean and nothing was clogged, so I didn't take it down any further (see [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)).
+Everything looked relatively clean and nothing was clogged, so I didn't want to mess with the idle screw etc to take it down further (see for how to do this [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)).
 Clean everything with carburettor cleaner, paying particular attention
 to the air flow and fuel flow paths indicated in the figure below.
 {% include figure image_path="/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png" caption="" %}
