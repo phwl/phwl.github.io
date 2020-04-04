@@ -93,7 +93,7 @@ Put everything back together.
 
 ## Oil Change
 ### Step 1 Check Oil
-Remove the dip stick and look at the colour of the oil. Mine had not been
+Remove the dip stick, check the oil level and look at the colour of the oil. Mine had not been
 used much the previous summer and looked good so I'll change it next year.
 {% include figure image_path="/assets/images/2020/04/blade12.jpeg" caption="" %}
 
