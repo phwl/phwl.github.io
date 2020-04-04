@@ -89,11 +89,16 @@ to the air flow and fuel flow paths indicated in the figure below.
 Put everything back together.
 {% include figure image_path="/assets/images/2020/04/mower21.jpeg" caption="" %}
 
-## Oil
+## Oil Change
 ### Step 1 Check Oil
 Remove the dip stick and look at the colour of the oil. Mine had not been
 used much the previous summer and looked good so I'll change it next year.
 {% include figure image_path="/assets/images/2020/04/blade12.jpeg" caption="" %}
+
+### Step 2 Change oil
+If you need to change the oil, do so when it is warm. Close the fuel 
+valve and tip the oil out at the dipstick opening. Use SAE 10W-30 
+4 stroke oil.
 
 ## Spark Plugs
 ### Step 1 Remove Cable
@@ -102,7 +107,7 @@ Remove spark plug cable.
 {% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
 
 ## Step 2 Remove Plug
-Remove spark plug.
+Remove spark plug. It is a NGK BPR5ES.
 {% include figure image_path="/assets/images/2020/04/plug3.jpeg" caption="" %}
 
 Socket is 13/16".
