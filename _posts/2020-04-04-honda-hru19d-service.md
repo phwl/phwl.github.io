@@ -13,26 +13,26 @@ header:
   teaser: /assets/images/2020/04/mower9.jpeg
 ---
 
-Lawnmower has gone 10 years without a service.
+My Honda HRU19D has gone 10 years without a service.
 
 <!-- more -->
 
-The mower is a Honda HRU19D, the closest manual I coukd find is
+The closest manual I could find is
 the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
-While there are lots of good videos (such as
-<https://www.youtube.com/watch?v=s2NcBVRMvKs>), for those of us
+While there are lots of good videos on this (such as
+[eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)
+and [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
 that prefer to read, here are step by step instructions. I estimate
 that having this done outside would be about $200.
 
-This mower has run flawlessly for 10 years but in the past year
-has become hard to start. Needs a carby clean and while I'm at
-it, might as well service everything.
+In the past year, this mower has become hard to start. Needs a carby
+clean and while I'm at it, might as well service everything.
 
 {% include figure image_path="/assets/images/2020/04/mower1.jpeg" caption="" %}
 
 ## Carburettor
 ### Step 1 Air filter
-Shut off the fuel tap on the hose that runs into the carby.
+Shut off the fuel valve on the hose that runs into the carby.
 Take off the air filter cover and the 2 10mm bolts that go into the
 engine. Examine air filter and replace if bad.
 
@@ -127,7 +127,7 @@ Remove spark plug cable (so engine can't start on you).
 {% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
 
 ### Step 1 Turn on Side and Remove Blade Disc
-Turn off the fuel tap and turn on its side with the air filter facing up.
+Turn off the fuel valve and turn on its side with the air filter facing up.
 Use a block of wood to wedge the blade so it won't turn. Using a 14 mm
 socket, undo the nut for the blade disc.
 {% include figure image_path="/assets/images/2020/04/blade1.jpeg" caption="" %}
@@ -161,7 +161,8 @@ alignment.
 {% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
 
 ### Step 6 Put it Back Together
-Put the cutter disc back on the mower.
+Put the cutter disc back on the mower. Replace the spark plug cable and 
+open the fuel valve.
 {% include figure image_path="/assets/images/2020/04/blade11.jpeg" caption="" %}
 
 ## Try it Out
