@@ -1,4 +1,425 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-02T20:37:57+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04</title><link href="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/" rel="alternate" type="text/html" title="Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04" /><published>2020-04-02T13:20:35+11:00</published><updated>2020-04-02T13:20:35+11:00</updated><id>http://localhost:4000/2020/installing-gnuradio-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/">&lt;p&gt;Installation of software for Ettus B210.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-04T20:51:56+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Honda HRU19D Lawnmower Service</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Service" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;Lawnmower has gone 10 years without a service.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The mower is a Honda HRU19D, the closest manual I coukd find is
+the one for the &lt;a href=&quot;/assets/images/2020/04/hru19k1.pdf&quot;&gt;HRU19K1&lt;/a&gt;.
+While there are lots of good videos (such as
+&lt;a href=&quot;https://www.youtube.com/watch?v=s2NcBVRMvKs&quot;&gt;https://www.youtube.com/watch?v=s2NcBVRMvKs&lt;/a&gt;), for those of us
+that prefer to read, here are step by step instructions. I estimate
+that having this done outside would be about $200.&lt;/p&gt;
+
+&lt;p&gt;This mower has run flawlessly for 10 years but in the past year
+has become hard to start. Needs a carby clean and while I’m at
+it, might as well service everything.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;carburettor&quot;&gt;Carburettor&lt;/h2&gt;
+&lt;h3 id=&quot;step-1-air-filter&quot;&gt;Step 1 Air filter&lt;/h3&gt;
+&lt;p&gt;Shut off the fuel tap on the hose that runs into the carby.
+Take off the air filter cover and the 2 10mm bolts that go into the
+engine. Examine air filter and replace if bad.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-2-fuel-hose&quot;&gt;Step 2 Fuel Hose&lt;/h3&gt;
+&lt;p&gt;Undo the hose underneath (fuel line).&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-3-linkages&quot;&gt;Step 3 Linkages&lt;/h3&gt;
+&lt;p&gt;Tilt the carby and undo the 3 linkages.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-4-remove-carby&quot;&gt;Step 4 Remove carby&lt;/h3&gt;
+&lt;p&gt;It should come out now. It’s pretty dirty.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower9.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower9.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-5-float-bowl&quot;&gt;Step 5 Float Bowl&lt;/h3&gt;
+&lt;p&gt;Turn it upside down and undo the 10mm nut. Remove the bowl.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower10.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower10.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower11.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower11.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-6-float&quot;&gt;Step 6 Float&lt;/h3&gt;
+&lt;p&gt;Remove the float pin and then the float.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower14.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower14.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;It is at this point I removed the front and rear gaskets but I should have done
+it at the end of Step 4.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower19.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower19.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Don’t lose the needle valve that attaches to the float.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower18.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower18.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-7-main-jet&quot;&gt;Step 7 Main Jet&lt;/h3&gt;
+&lt;p&gt;Using a flat blade screwdriver, unscrew the main jet and tap the size of the carby until it comes out..&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower16.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower16.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-8-main-nozzle&quot;&gt;Step 8 Main Nozzle&lt;/h3&gt;
+&lt;p&gt;After some more tapping the main nozzle should come out.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower17.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower17.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-9-clean&quot;&gt;Step 9 Clean&lt;/h3&gt;
+&lt;p&gt;Clean everything with carby cleaner spray. Pay particular attention
+to the air flow and fuel flow paths indicated in the figure below.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower20.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower20.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower22.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower22.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-10-put-back-together&quot;&gt;Step 10 Put Back Together&lt;/h3&gt;
+&lt;p&gt;Put everything back together.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mower21.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mower21.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;oil&quot;&gt;Oil&lt;/h2&gt;
+&lt;h3 id=&quot;step-1-check-oil&quot;&gt;Step 1 Check Oil&lt;/h3&gt;
+&lt;p&gt;Remove the dip stick and look at the colour of the oil. Mine had not been
+used much the previous summer and looked good so I’ll change it next year.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade12.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade12.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;spark-plugs&quot;&gt;Spark Plugs&lt;/h2&gt;
+&lt;h3 id=&quot;step-1-remove-cable&quot;&gt;Step 1 Remove Cable&lt;/h3&gt;
+&lt;p&gt;Remove spark plug cable.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;step-2-remove-plug&quot;&gt;Step 2 Remove Plug&lt;/h2&gt;
+&lt;p&gt;Remove spark plug.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Socket is 13/16”.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;step-2-check-plug&quot;&gt;Step 2 Check Plug&lt;/h2&gt;
+&lt;p&gt;Examine electrode, looks good.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Gap is supposed to be 0.7-0.8 mm so let’s go with 0.75 mm.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;step-3-put-back-together&quot;&gt;Step 3 Put Back Together&lt;/h2&gt;
+&lt;p&gt;Put everything back. Don’t overtighten.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;blade-replacement&quot;&gt;Blade replacement&lt;/h2&gt;
+&lt;h3 id=&quot;step-1-remove-cable-1&quot;&gt;Step 1 Remove Cable&lt;/h3&gt;
+&lt;p&gt;Remove spark plug cable (so engine can’t start on you).&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/plug2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/plug2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-1-turn-on-side-and-remove-blade-disc&quot;&gt;Step 1 Turn on Side and Remove Blade Disc&lt;/h3&gt;
+&lt;p&gt;Turn off the fuel tap and turn on its side with the air filter facing up.
+Use a block of wood to wedge the blade so it won’t turn. Using a 14 mm
+socket, undo the nut for the blade disc.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-2-examine-blade&quot;&gt;Step 2 Examine blade&lt;/h3&gt;
+&lt;p&gt;Mine were in bad shape.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;I purchased 
+&lt;a href=&quot;https://www.ebay.com.au/itm/Genuine-Honda-Blades-19-Blade-kit-set-of-4-06720-VK0-600/323806462925?ssPageName=STRK%3AMEBIDX%3AIT&amp;amp;_trksid=p2057872.m2749.l2649&quot;&gt;new blades&lt;/a&gt;
+from &lt;a href=&quot;https://www.ebay.com.au/str/Online-Mower-Spares?_trksid=p2047675.l2563&amp;gt;
+for $30&quot;&gt;Online Mower
+Spares&lt;/a&gt; who I highly recommend. The part number is 06720-VK0-600.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade10.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade10.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-3-remove-blade-nuts&quot;&gt;Step 3 Remove blade nuts&lt;/h3&gt;
+&lt;p&gt;These were 17 mm.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-4-clean&quot;&gt;Step 4 Clean&lt;/h3&gt;
+&lt;p&gt;I used a wire brush to clean the blade disc.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade8.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade8.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-5-attach-new-blades&quot;&gt;Step 5 Attach New Blades&lt;/h3&gt;
+&lt;p&gt;One thing that I didn’t know is that the blades are not perpendicular 
+to the disc. They are at a slightly acute angle. If you make them
+perpendicular, they hit the side of the mower. I used the shadow of the old blade for
+alignment.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade9.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade9.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-6-put-it-back-together&quot;&gt;Step 6 Put it Back Together&lt;/h3&gt;
+&lt;p&gt;Put the cutter disc back on the mower.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/blade11.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/blade11.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;try-it-out&quot;&gt;Try it Out&lt;/h2&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7TlB4mk6WFM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">Lawnmower has gone 10 years without a service.</summary></entry><entry><title type="html">Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04</title><link href="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/" rel="alternate" type="text/html" title="Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04" /><published>2020-04-02T13:20:35+11:00</published><updated>2020-04-02T13:20:35+11:00</updated><id>http://localhost:4000/2020/installing-gnuradio-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/installing-gnuradio-on-ubuntu/">&lt;h1 id=&quot;installation-of-software-for-ettus-b210&quot;&gt;Installation of software for Ettus B210.&lt;/h1&gt;
+
+&lt;h2 id=&quot;part-1-2-april-2020&quot;&gt;Part 1 2 April, 2020&lt;/h2&gt;
 
 &lt;!-- more --&gt;
 
@@ -40,6 +461,34 @@
       &lt;li&gt;So I installed UHD v3.12.0.0 instead as it is the latest version with compatibility number 14, cycled the Ettus radio and rebooted the Ubuntu machine&lt;/li&gt;
       &lt;li&gt;That finally worked and I could include a UHD source block in gnuradio-companion&lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;part-2-3-april-2020&quot;&gt;Part 2 3 April, 2020&lt;/h2&gt;
+&lt;p&gt;All was well but I couldn’t make gr-specest work so let’s try using PyBombs.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Remove UHD and GNU radio
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/src/ettus/uhd/host/build/
+sudo make uninstall
+sudo apt-get uninstall gnuradio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install PyBombs
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 install --upgrade git+https://github.com/gnuradio/pybombs.git
+pybombs auto-config
+pybombs recipes add-defaults
+pybombs prefix init ~/gnuradio
+source ~/gnuradio/setup_env.sh
+# Edit ~/.pybombs/recipes/gr-recipes/gnuradio.lwr and add &quot;-DENABLE_CTRLPORT_THRIFT=OFF&quot; in &quot;config_opt&quot;
+pybombs install uhd
+sudo apt install git cmake g++ libboost-all-dev libgmp-dev \
+   swig python3-numpy python3-mako python3-sphinx python3-lxml \
+   doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev \
+   libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev \
+   libzmq3-dev python3-yaml python3-click python3-click-plugins
+pybombs install gnuradio
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Installation of software for Ettus B210.</summary></entry><entry><title type="html">Updating jekyll on macOS</title><link href="http://localhost:4000/2020/update-jekyll/" rel="alternate" type="text/html" title="Updating jekyll on macOS" /><published>2020-03-29T17:50:13+11:00</published><updated>2020-03-29T17:50:13+11:00</updated><id>http://localhost:4000/2020/update-jekyll</id><content type="html" xml:base="http://localhost:4000/2020/update-jekyll/">&lt;p&gt;When doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; I got an error telling me that 
 installing ffi failed, and the following had to be fixed:&lt;/p&gt;
@@ -679,9 +1128,4 @@ painting the fence.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/02/IMG_5688.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/02/IMG_5688.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Photos from North Brother Lookout.</summary></entry><entry><title type="html">Balls Head</title><link href="http://localhost:4000/2020/balls-head/" rel="alternate" type="text/html" title="Balls Head" /><published>2020-01-04T08:47:48+11:00</published><updated>2020-01-04T08:47:48+11:00</updated><id>http://localhost:4000/2020/balls-head</id><content type="html" xml:base="http://localhost:4000/2020/balls-head/">&lt;p&gt;Photos from Balls Head.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/01/IMG_5543.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/01/IMG_5543.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Photos from Balls Head.</summary></entry></feed>
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Photos from North Brother Lookout.</summary></entry></feed>

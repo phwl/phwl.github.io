@@ -13,7 +13,9 @@ header:
   teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
 ---
 
-Installation of software for Ettus B210.
+# Installation of software for Ettus B210.
+
+## Part 1 2 April, 2020
 
 <!-- more -->
 
@@ -38,3 +40,30 @@ Installation of software for Ettus B210.
 1. Then I got the error ```RuntimeError: Expected FPGA compatibility number 14, but got 16```
      * So I installed UHD v3.12.0.0 instead as it is the latest version with compatibility number 14, cycled the Ettus radio and rebooted the Ubuntu machine
      * That finally worked and I could include a UHD source block in gnuradio-companion
+
+## Part 2 3 April, 2020
+All was well but I couldn't make gr-specest work so let's try using PyBombs.
+
+1. Remove UHD and GNU radio
+   ~~~
+   cd ~/src/ettus/uhd/host/build/
+   sudo make uninstall
+   sudo apt-get uninstall gnuradio
+   ~~~
+
+2. Install PyBombs
+   ~~~
+   pip3 install --upgrade git+https://github.com/gnuradio/pybombs.git
+   pybombs auto-config
+   pybombs recipes add-defaults
+   pybombs prefix init ~/gnuradio
+   source ~/gnuradio/setup_env.sh
+   # Edit ~/.pybombs/recipes/gr-recipes/gnuradio.lwr and add "-DENABLE_CTRLPORT_THRIFT=OFF" in "config_opt"
+   pybombs install uhd
+   sudo apt install git cmake g++ libboost-all-dev libgmp-dev \
+      swig python3-numpy python3-mako python3-sphinx python3-lxml \
+      doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev \
+      libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev \
+      libzmq3-dev python3-yaml python3-click python3-click-plugins
+   pybombs install gnuradio
+   ~~~

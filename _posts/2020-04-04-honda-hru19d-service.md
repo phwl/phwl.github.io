@@ -1,0 +1,168 @@
+---
+author: phwl
+comments: true
+date: 2020-04-04 17:38:50 AEDT
+title: Honda HRU19D Lawnmower Service
+classes: wide
+toc: true
+categories:
+- home
+tags:
+- repair
+header:
+  teaser: /assets/images/2020/04/mower9.jpeg
+---
+
+Lawnmower has gone 10 years without a service.
+
+<!-- more -->
+
+The mower is a Honda HRU19D, the closest manual I coukd find is
+the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
+While there are lots of good videos (such as
+<https://www.youtube.com/watch?v=s2NcBVRMvKs>), for those of us
+that prefer to read, here are step by step instructions. I estimate
+that having this done outside would be about $200.
+
+This mower has run flawlessly for 10 years but in the past year
+has become hard to start. Needs a carby clean and while I'm at
+it, might as well service everything.
+
+{% include figure image_path="/assets/images/2020/04/mower1.jpeg" caption="" %}
+
+## Carburettor
+### Step 1 Air filter
+Shut off the fuel tap on the hose that runs into the carby.
+Take off the air filter cover and the 2 10mm bolts that go into the
+engine. Examine air filter and replace if bad.
+
+{% include figure image_path="/assets/images/2020/04/mower2.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower3.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower4.jpeg" caption="" %}
+
+### Step 2 Fuel Hose
+Undo the hose underneath (fuel line).
+{% include figure image_path="/assets/images/2020/04/mower5.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower6.jpeg" caption="" %}
+
+### Step 3 Linkages
+Tilt the carby and undo the 3 linkages. 
+{% include figure image_path="/assets/images/2020/04/mower7.jpeg" caption="" %}
+
+### Step 4 Remove carby
+It should come out now. It's pretty dirty.
+{% include figure image_path="/assets/images/2020/04/mower8.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower9.jpeg" caption="" %}
+
+### Step 5 Float Bowl 
+Turn it upside down and undo the 10mm nut. Remove the bowl.
+{% include figure image_path="/assets/images/2020/04/mower10.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower11.jpeg" caption="" %}
+
+### Step 6 Float
+Remove the float pin and then the float.
+{% include figure image_path="/assets/images/2020/04/mower14.jpeg" caption="" %}
+
+It is at this point I removed the front and rear gaskets but I should have done
+it at the end of Step 4.
+
+{% include figure image_path="/assets/images/2020/04/mower19.jpeg" caption="" %}
+
+Don't lose the needle valve that attaches to the float.
+{% include figure image_path="/assets/images/2020/04/mower18.jpeg" caption="" %}
+
+### Step 7 Main Jet
+Using a flat blade screwdriver, unscrew the main jet and tap the size of the carby until it comes out..
+{% include figure image_path="/assets/images/2020/04/mower16.jpeg" caption="" %}
+
+### Step 8 Main Nozzle
+After some more tapping the main nozzle should come out.
+{% include figure image_path="/assets/images/2020/04/mower17.jpeg" caption="" %}
+
+### Step 9 Clean
+Clean everything with carby cleaner spray. Pay particular attention
+to the air flow and fuel flow paths indicated in the figure below.
+{% include figure image_path="/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower20.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/mower22.jpeg" caption="" %}
+
+### Step 10 Put Back Together
+Put everything back together.
+{% include figure image_path="/assets/images/2020/04/mower21.jpeg" caption="" %}
+
+## Oil
+### Step 1 Check Oil
+Remove the dip stick and look at the colour of the oil. Mine had not been
+used much the previous summer and looked good so I'll change it next year.
+{% include figure image_path="/assets/images/2020/04/blade12.jpeg" caption="" %}
+
+## Spark Plugs
+### Step 1 Remove Cable
+Remove spark plug cable.
+{% include figure image_path="/assets/images/2020/04/plug1.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
+
+## Step 2 Remove Plug
+Remove spark plug.
+{% include figure image_path="/assets/images/2020/04/plug3.jpeg" caption="" %}
+
+Socket is 13/16".
+{% include figure image_path="/assets/images/2020/04/plug4.jpeg" caption="" %}
+
+## Step 2 Check Plug
+Examine electrode, looks good.
+{% include figure image_path="/assets/images/2020/04/plug5.jpeg" caption="" %}
+
+Gap is supposed to be 0.7-0.8 mm so let's go with 0.75 mm.
+{% include figure image_path="/assets/images/2020/04/plug6.jpeg" caption="" %}
+
+## Step 3 Put Back Together
+Put everything back. Don't overtighten.
+{% include figure image_path="/assets/images/2020/04/plug7.jpeg" caption="" %}
+
+
+## Blade replacement
+### Step 1 Remove Cable
+Remove spark plug cable (so engine can't start on you).
+{% include figure image_path="/assets/images/2020/04/plug2.jpeg" caption="" %}
+
+### Step 1 Turn on Side and Remove Blade Disc
+Turn off the fuel tap and turn on its side with the air filter facing up.
+Use a block of wood to wedge the blade so it won't turn. Using a 14 mm
+socket, undo the nut for the blade disc.
+{% include figure image_path="/assets/images/2020/04/blade1.jpeg" caption="" %}
+
+### Step 2 Examine blade
+Mine were in bad shape. 
+{% include figure image_path="/assets/images/2020/04/blade4.jpeg" caption="" %}
+
+I purchased 
+[new blades](https://www.ebay.com.au/itm/Genuine-Honda-Blades-19-Blade-kit-set-of-4-06720-VK0-600/323806462925?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
+from [Online Mower
+Spares](https://www.ebay.com.au/str/Online-Mower-Spares?_trksid=p2047675.l2563>
+for $30) who I highly recommend. The part number is 06720-VK0-600.
+
+{% include figure image_path="/assets/images/2020/04/blade5.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/04/blade10.jpeg" caption="" %}
+
+### Step 3 Remove blade nuts
+These were 17 mm.
+{% include figure image_path="/assets/images/2020/04/blade7.jpeg" caption="" %}
+
+### Step 4 Clean
+I used a wire brush to clean the blade disc.
+{% include figure image_path="/assets/images/2020/04/blade8.jpeg" caption="" %}
+
+### Step 5 Attach New Blades
+One thing that I didn't know is that the blades are not perpendicular 
+to the disc. They are at a slightly acute angle. If you make them
+perpendicular, they hit the side of the mower. I used the shadow of the old blade for
+alignment.
+{% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
+
+### Step 6 Put it Back Together
+Put the cutter disc back on the mower.
+{% include figure image_path="/assets/images/2020/04/blade11.jpeg" caption="" %}
+
+## Try it Out
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7TlB4mk6WFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

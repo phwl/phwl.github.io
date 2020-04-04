@@ -182,7 +182,9 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Installation of software for Ettus B210.</p>
+        <h1 id="installation-of-software-for-ettus-b210">Installation of software for Ettus B210.</h1>
+
+<h2 id="part-1-2-april-2020">Part 1 2 April, 2020</h2>
 
 <!-- more -->
 
@@ -224,6 +226,34 @@
       <li>So I installed UHD v3.12.0.0 instead as it is the latest version with compatibility number 14, cycled the Ettus radio and rebooted the Ubuntu machine</li>
       <li>That finally worked and I could include a UHD source block in gnuradio-companion</li>
     </ul>
+  </li>
+</ol>
+
+<h2 id="part-2-3-april-2020">Part 2 3 April, 2020</h2>
+<p>All was well but I couldn’t make gr-specest work so let’s try using PyBombs.</p>
+
+<ol>
+  <li>Remove UHD and GNU radio
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/src/ettus/uhd/host/build/
+sudo make uninstall
+sudo apt-get uninstall gnuradio
+</code></pre></div>    </div>
+  </li>
+  <li>Install PyBombs
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 install --upgrade git+https://github.com/gnuradio/pybombs.git
+pybombs auto-config
+pybombs recipes add-defaults
+pybombs prefix init ~/gnuradio
+source ~/gnuradio/setup_env.sh
+# Edit ~/.pybombs/recipes/gr-recipes/gnuradio.lwr and add "-DENABLE_CTRLPORT_THRIFT=OFF" in "config_opt"
+pybombs install uhd
+sudo apt install git cmake g++ libboost-all-dev libgmp-dev \
+   swig python3-numpy python3-mako python3-sphinx python3-lxml \
+   doxygen libfftw3-dev libcomedi-dev libsdl1.2-dev libgsl-dev \
+   libqwt-qt5-dev libqt5opengl5-dev python3-pyqt5 liblog4cpp5-dev \
+   libzmq3-dev python3-yaml python3-click python3-click-plugins
+pybombs install gnuradio
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -302,7 +332,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2020/honda-hru19d-service/" class="pagination--pager" title="Honda HRU19D Lawnmower Service
+">Next</a>
     
   </nav>
 
@@ -316,6 +347,35 @@
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2020/honda-hru19d-service/">
+        <img src=
+          
+            "/assets/images/2020/04/mower9.jpeg"
+          
+          alt="Honda HRU19D Lawnmower Service"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/honda-hru19d-service/" rel="permalink">Honda HRU19D Lawnmower Service
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Lawnmower has gone 10 years without a service.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -402,37 +462,6 @@ phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v ‘1.12.2’ –s
     
     <p class="archive__item-excerpt" itemprop="description">The Manly Warringah Radio Society activated
 Barrington Tops in the John Moyle Memorial Field Day this year.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/install-anaconda/">
-        <img src=
-          
-            "/assets/images/2020/03/Anaconda_Logo.png"
-          
-          alt="Installing Anaconda and Pytorch"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/install-anaconda/" rel="permalink">Installing Anaconda and Pytorch
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
-mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running
-DTWnet.
 </p>
   </article>
 </div>

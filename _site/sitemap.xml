@@ -713,6 +713,10 @@
 <lastmod>2020-04-02T13:20:35+11:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/honda-hru19d-service/</loc>
+<lastmod>2020-04-04T17:38:50+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -1041,6 +1045,10 @@
 <url>
 <loc>http://localhost:4000/assets/images/2019/12/stridgell19.pdf</loc>
 <lastmod>2019-12-19T15:41:27+11:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/images/2020/04/hru19k1.pdf</loc>
+<lastmod>2020-04-04T19:08:03+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/aam_el12.pdf</loc>
