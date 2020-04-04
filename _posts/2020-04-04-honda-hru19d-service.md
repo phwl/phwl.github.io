@@ -140,11 +140,14 @@ I purchased
 [new blades](https://www.ebay.com.au/itm/Genuine-Honda-Blades-19-Blade-kit-set-of-4-06720-VK0-600/323806462925?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2057872.m2749.l2649)
 from [Online Mower
 Spares](https://www.ebay.com.au/str/Online-Mower-Spares?_trksid=p2047675.l2563>
-for $30) who I highly recommend. The part number is 06720-VK0-600.
+for $30) who I highly recommend. 
 
 {% include figure image_path="/assets/images/2020/04/blade5.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/blade10.jpeg" caption="" %}
 
+The part number for the normal height is 06720-VK0-600. Took me a while to
+find this table.
+{% include figure image_path="/assets/images/2020/04/hondablades.jpeg" caption="" %}
 ### Step 3 Remove blade nuts
 These were 17 mm.
 {% include figure image_path="/assets/images/2020/04/blade7.jpeg" caption="" %}
@@ -156,8 +159,9 @@ I used a wire brush to clean the blade disc.
 ### Step 5 Attach New Blades
 One thing that I didn't know is that the blades are not perpendicular 
 to the disc. They are at a slightly acute angle. If you make them
-perpendicular, they hit the side of the mower. I used the shadow of the old blade for
-alignment.
+perpendicular, they hit the side of the mower (only found out after I
+put everything back together). 
+I used the shadow of the old blade for alignment.
 {% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
 
 ### Step 6 Put it Back Together
