@@ -79,7 +79,8 @@ After some more tapping the main nozzle should come out.
 {% include figure image_path="/assets/images/2020/04/mower17.jpeg" caption="" %}
 
 ### Step 9 Clean
-Clean everything with carburettor cleaner spray. Pay particular attention
+Everything looked relatively clean and nothing was clogged, so I didn't take it apart any further.
+Clean everything with carburettor cleaner, paying particular attention
 to the air flow and fuel flow paths indicated in the figure below.
 {% include figure image_path="/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png" caption="" %}
 {% include figure image_path="/assets/images/2020/04/mower20.jpeg" caption="" %}
