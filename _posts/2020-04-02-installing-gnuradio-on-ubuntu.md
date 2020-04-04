@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-04-02 13:20:35 AEDT
-title: Installing USRP Toolchain (UHD and GNU Radio) on Ubuntu 18.04
+title: Installing USRP Toolchain (UHD and GNU Radio) for Ettus B210 (on Ubuntu 18.04)
 classes: wide
 categories:
 - radio
@@ -10,7 +10,7 @@ tags:
 - ubuntu
 - linux
 header:
-  teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
+  teaser: /assets/images/2020/04/ettus-b210.jpg
 ---
 
 # Installation of software for Ettus B210.
