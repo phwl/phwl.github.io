@@ -177,5 +177,5 @@ open the fuel valve.
 
 ## Try it Out
 Works really well now, like new. It starts easily, cuts cleanly and even
-the sound is different after I cleaned off the caked-on grass.
+the sound is different from having cleaned off the caked-on grass.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7TlB4mk6WFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
