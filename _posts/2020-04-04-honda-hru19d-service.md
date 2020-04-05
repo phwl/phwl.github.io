@@ -68,7 +68,7 @@ it at the end of Step 4.
 
 {% include figure image_path="/assets/images/2020/04/mower19.jpeg" caption="" %}
 
-Don't lose the needle valve that attaches to the float.
+Don't lose the float valve that attaches to the float.
 {% include figure image_path="/assets/images/2020/04/mower18.jpeg" caption="" %}
 
 ### Step 7 Main Jet
@@ -176,6 +176,8 @@ open the fuel valve.
 {% include figure image_path="/assets/images/2020/04/blade11.jpeg" caption="" %}
 
 ## Try it Out
-Works really well now, like new. It starts easily, cuts cleanly and even
-the sound is different from having cleaned off the caked-on grass.
+Works like new now. Since the main jet and main nozzle looked clean, I 
+suspect the problem was the float not moving properly. The mower now 
+starts easily and cuts cleanly. Even the sound is different from having 
+cleaned off the caked-on grass.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7TlB4mk6WFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
