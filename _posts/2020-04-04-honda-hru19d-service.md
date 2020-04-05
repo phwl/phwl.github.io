@@ -20,7 +20,8 @@ My Honda HRU19D has gone 10 years without a service.
 The closest manual I could find is
 the one for the [HRU19K1](/assets/images/2020/04/hru19k1.pdf).
 While there are lots of good videos on this (such as 
-[eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)
+[eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs),
+[Steve's Small Engine Saloon](https://www.youtube.com/watch?v=uAHdhuDpeKw&t=646s)
 and [Bruce Pender](https://www.youtube.com/watch?v=qkRnySSd5hA)), for those of us
 that prefer to read, here are step by step instructions. 
 
