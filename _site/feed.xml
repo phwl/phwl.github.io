@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T12:46:47+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T13:03:19+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
 via USB.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -8,7 +8,7 @@ via USB.&lt;/p&gt;
 
 &lt;p&gt;The symptoms were that when I plugged in the camera, it would 
 come up in Play mode and the charging light never comes on.
-Checking the current, it was 0.06 and clearly not charging.&lt;/p&gt;
+Checking the current, it was 0.06A and clearly not charging.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/g9x2.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/g9x2.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -28,7 +28,7 @@ Checking the current, it was 0.06 and clearly not charging.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;I then used the same cable to charge an Android phone and it worked.&lt;/p&gt;
+&lt;p&gt;I then used the same cable to successfully charge an Android phone.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/g9x6.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/g9x6.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -38,8 +38,8 @@ Checking the current, it was 0.06 and clearly not charging.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;I tried a different cable which worked. The camera started charging 
-with 0.39A and the orange charging light came one.&lt;/p&gt;
+&lt;p&gt;I switched to a different cable, which worked. The camera started charging 
+with 0.39A and the orange charging light came on as expected.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/g9x1.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/g9x1.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -49,7 +49,7 @@ with 0.39A and the orange charging light came one.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;A different cable also worked.&lt;/p&gt;
+&lt;p&gt;A third USB-A to micro USB cable also worked.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/g9x5.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/g9x5.jpeg&quot; alt=&quot;&quot; /&gt;

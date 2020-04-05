@@ -1,0 +1,79 @@
+I"�<p>I was having problems charging my <a href="/2019/death-of-a-canon-s120/">Canon G9x</a> 
+via USB.</p>
+
+<!-- more -->
+
+<p>A Google search shows that I’m not the only one, e.g.
+<a href="https://www.dpreview.com/forums/thread/3947126">https://www.dpreview.com/forums/thread/3947126</a>.</p>
+
+<p>The symptoms were that when I plugged in the camera, it would 
+come up in Play mode and the charging light never comes on.
+Checking the current, it was 0.06A and clearly not charging.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x2.jpeg">
+  <img src="/assets/images/2020/04/g9x2.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Switching the camera off didn’t help.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x3.jpeg">
+  <img src="/assets/images/2020/04/g9x3.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>I then used the same cable to charge an Android phone and it worked.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x6.jpeg">
+  <img src="/assets/images/2020/04/g9x6.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>I tried a different cable which worked. The camera started charging 
+with 0.39A and the orange charging light came one.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x1.jpeg">
+  <img src="/assets/images/2020/04/g9x1.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>A different cable also worked.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x5.jpeg">
+  <img src="/assets/images/2020/04/g9x5.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>I also tried an Apple 5W power adaptor which outputs a maximum of 1A (the 
+one previously could output 4.8A. That worked as well.</p>
+<figure class="">
+  <a href="/assets/images/2020/04/g9x4.jpeg">
+  <img src="/assets/images/2020/04/g9x4.jpeg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>In summary, I think that:</p>
+<ul>
+  <li>Cases where the G9x doesn’t charge via USB are due to the cable,
+not the charger or anything else.</li>
+  <li>A 5W USB power adaptor is sufficient.</li>
+</ul>
+:ET
