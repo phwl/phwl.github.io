@@ -82,7 +82,7 @@ After some more tapping the main nozzle should come out.
 {% include figure image_path="/assets/images/2020/04/mower17.jpeg" caption="" %}
 
 ### Step 9 Clean
-Everything looked relatively clean and nothing was clogged, so I didn't want to mess with the idle screw etc to take it down further (see for how to do this [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)).
+Everything looked relatively clean and so I didn't want to mess with the idle screw and clean the pilot jet which affects idle and not my starting problem (see for how to do this [eReplacementParts.com](https://www.youtube.com/watch?v=s2NcBVRMvKs)).
 Clean everything with carburettor cleaner, paying particular attention
 to the air flow and fuel flow paths indicated in the figure below.
 {% include figure image_path="/assets/images/2020/04/full-2772-7121-honda_carburetor_check_sheet.png" caption="" %}
@@ -179,7 +179,7 @@ open the fuel valve.
 
 ## Try it Out
 Works like new now. Since the main jet and main nozzle looked clean, I 
-suspect the problem was the float not moving properly. The mower now 
+suspect the problem was the float not moving properly so either the pin or the seat. The mower now 
 starts easily and cuts cleanly. Even the sound is different from having 
 cleaned off the caked-on grass.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7TlB4mk6WFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

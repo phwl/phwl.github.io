@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T13:05:44+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T17:09:35+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
 via USB.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -183,6 +183,9 @@ clip out of the way with pliers and then slide off the hose.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
+&lt;p&gt;At this point I should have removed the front and read gaskets but I did
+this in the middle of Step 6.&lt;/p&gt;
+
 &lt;h3 id=&quot;step-5-float-bowl&quot;&gt;Step 5 Float Bowl&lt;/h3&gt;
 &lt;p&gt;Turn it upside down and undo the 10mm nut. Remove the bowl.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
@@ -214,8 +217,7 @@ clip out of the way with pliers and then slide off the hose.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;It is at this point I removed the front and rear gaskets but I should have done
-it at the end of Step 4.&lt;/p&gt;
+&lt;p&gt;It is at this point I removed the front and rear gaskets.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/mower19.jpeg&quot;&gt;
@@ -259,7 +261,7 @@ it at the end of Step 4.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;h3 id=&quot;step-9-clean&quot;&gt;Step 9 Clean&lt;/h3&gt;
-&lt;p&gt;Everything looked relatively clean and nothing was clogged, so I didn’t want to mess with the idle screw etc to take it down further (see for how to do this &lt;a href=&quot;https://www.youtube.com/watch?v=s2NcBVRMvKs&quot;&gt;eReplacementParts.com&lt;/a&gt;).
+&lt;p&gt;Everything looked relatively clean and so I didn’t want to mess with the idle screw and clean the pilot jet which affects idle and not my starting problem (see for how to do this &lt;a href=&quot;https://www.youtube.com/watch?v=s2NcBVRMvKs&quot;&gt;eReplacementParts.com&lt;/a&gt;).
 Clean everything with carburettor cleaner, paying particular attention
 to the air flow and fuel flow paths indicated in the figure below.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
