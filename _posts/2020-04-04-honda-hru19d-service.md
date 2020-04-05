@@ -54,6 +54,9 @@ It should come out now. It's pretty dirty.
 {% include figure image_path="/assets/images/2020/04/mower8.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/mower9.jpeg" caption="" %}
 
+At this point I should have removed the front and read gaskets but I did
+this in the middle of Step 6.
+
 ### Step 5 Float Bowl 
 Turn it upside down and undo the 10mm nut. Remove the bowl.
 {% include figure image_path="/assets/images/2020/04/mower10.jpeg" caption="" %}
@@ -63,8 +66,7 @@ Turn it upside down and undo the 10mm nut. Remove the bowl.
 Remove the float pin and then the float.
 {% include figure image_path="/assets/images/2020/04/mower14.jpeg" caption="" %}
 
-It is at this point I removed the front and rear gaskets but I should have done
-it at the end of Step 4.
+It is at this point I removed the front and rear gaskets.
 
 {% include figure image_path="/assets/images/2020/04/mower19.jpeg" caption="" %}
 
