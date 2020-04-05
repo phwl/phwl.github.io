@@ -34,7 +34,8 @@ with 0.39A and the orange charging light came one.
 {% include figure image_path="/assets/images/2020/04/g9x1.jpeg" caption="" %}
 A different cable also worked.
 {% include figure image_path="/assets/images/2020/04/g9x5.jpeg" caption="" %}
-I also tried an Apple 5W iphone charger which outputs a maximum of 1A (the 
+
+I also tried an Apple 5W power adaptor which outputs a maximum of 1A (the 
 one previously could output 4.8A. That worked as well.
 {% include figure image_path="/assets/images/2020/04/g9x4.jpeg" caption="" %}
 
