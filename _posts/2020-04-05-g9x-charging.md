@@ -22,7 +22,7 @@ A Google search shows that I'm not the only one, e.g.
 
 The symptoms were that when I plugged in the camera, it would 
 come up in Play mode and the charging light never comes on.
-Checking the current, it was 0.06 and clearly not charging.
+Checking the current, it was 0.06A and clearly not charging.
 {% include figure image_path="/assets/images/2020/04/g9x2.jpeg" caption="" %}
 Switching the camera off didn't help.
 {% include figure image_path="/assets/images/2020/04/g9x3.jpeg" caption="" %}
