@@ -38,8 +38,7 @@ I also tried an Apple 5W iphone charger which outputs a maximum of 1A (the
 one previously could output 4.8A. That worked as well.
 {% include figure image_path="/assets/images/2020/04/g9x4.jpeg" caption="" %}
 
-In summary:
-* I think that cases where the G9x doesn't charge via USB are due to the cable,
+In summary, I think that:
+* Cases where the G9x doesn't charge via USB are due to the cable,
 not the charger or anything else.
-* The cable that couldn't charge the G9x was not faulty so it must be
-something else.
+* A 5W USB power adaptor is sufficient.
