@@ -39,7 +39,8 @@ I then tried an Apple 5W power adaptor which outputs a maximum of 1A (the
 one previously could output 4.8A. That worked as well.
 {% include figure image_path="/assets/images/2020/04/g9x4.jpeg" caption="" %}
 
-In summary, I think that:
-* Cases where the G9x doesn't charge via USB are due to the cable,
-not the charger or anything else.
-* A 5W USB power adaptor is sufficient.
+In summary:
+* My G9x not charging via USB was because of the cable, not the
+charger or anything else.
+* I could not find a USB power adaptor that didn't work and a 5W one
+is sufficient.
