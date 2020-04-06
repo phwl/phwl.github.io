@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-05T17:30:29+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-06T08:45:55+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Canon G9x charging via USB</title><link href="http://localhost:4000/2020/g9x-charging/" rel="alternate" type="text/html" title="Canon G9x charging via USB" /><published>2020-04-05T10:15:30+10:00</published><updated>2020-04-05T10:15:30+10:00</updated><id>http://localhost:4000/2020/g9x-charging</id><content type="html" xml:base="http://localhost:4000/2020/g9x-charging/">&lt;p&gt;I was having problems charging my &lt;a href=&quot;/2019/death-of-a-canon-s120/&quot;&gt;Canon G9x&lt;/a&gt; 
 via USB.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -70,11 +70,12 @@ one previously could output 4.8A. That worked as well.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;In summary, I think that:&lt;/p&gt;
+&lt;p&gt;In summary:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Cases where the G9x doesn’t charge via USB are due to the cable,
-not the charger or anything else.&lt;/li&gt;
-  &lt;li&gt;A 5W USB power adaptor is sufficient.&lt;/li&gt;
+  &lt;li&gt;My G9x not charging via USB was because of the cable, not the
+charger or anything else.&lt;/li&gt;
+  &lt;li&gt;I could not find a USB power adaptor that didn’t work and a 5W one
+is sufficient.&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">I was having problems charging my Canon G9x via USB.</summary></entry><entry><title type="html">Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blades)</title><link href="http://localhost:4000/2020/honda-hru19d-service/" rel="alternate" type="text/html" title="Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blades)" /><published>2020-04-04T17:38:50+11:00</published><updated>2020-04-04T17:38:50+11:00</updated><id>http://localhost:4000/2020/honda-hru19d-service</id><content type="html" xml:base="http://localhost:4000/2020/honda-hru19d-service/">&lt;p&gt;My Honda HRU19D has gone 10 years without a service.&lt;/p&gt;
 
 &lt;!-- more --&gt;
