@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2020/04/campkitchen18.jpeg
 ---
 
-Wanted to make a box for my camp kitchen for a while.
+Wanted to make a camp kitchen for a while to use on the boat.
 
 <!-- more -->
 
