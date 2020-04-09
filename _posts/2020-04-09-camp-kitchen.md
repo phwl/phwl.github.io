@@ -40,7 +40,7 @@ Cut the top and bottom.
 {% include figure image_path="/assets/images/2020/04/campkitchen7.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/campkitchen8.jpeg" caption="" %}
 
-Glue and nail together. A bit ugly but it's a box, not furniture.
+Glue and nail together. A bit ugly but it will do.
 {% include figure image_path="/assets/images/2020/04/campkitchen9.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/04/campkitchen10.jpeg" caption="" %}
 
