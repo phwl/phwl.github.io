@@ -18,7 +18,7 @@ Wanted to make a box for my camp kitchen for a while.
 
 <!-- more -->
 
-This is a more utilitarian version of <https://www.popularwoodworking.com/woodworking-blogs/326395/>.
+This is a more utilitarian version of <https://www.popularwoodworking.com/woodworking-blogs/326395/>, and less elaborate than <https://www.rei.com/blog/camp/how-to-build-your-own-camp-kitchen-chuck-box>.
 Starting with a piece of plywood that had been lying in the garage for 
 so long it had a suntan. First cut the sides.
 {% include figure image_path="/assets/images/2020/04/campkitchen1.jpeg" caption="" %}
