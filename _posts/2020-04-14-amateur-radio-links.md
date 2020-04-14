@@ -32,5 +32,7 @@ Here is a collection of amateur radio links.
 1. VK3HN's website (links to the sites above and more) - <https://vk3hn.wordpress.com/am/>
 
 ## General
-### Blogs
-1. marxy's musing on technology - <http://blog.marxy.org/>
+### Homebrew Blogs
+1. Peter B Marks VK2TPM marxy's musing on technology - <http://blog.marxy.org/>
+1. Owen Duffy VK2OMD - <https://owenduffy.net>
+1. Peter Parker VK3YE - <http://vk3ye.com/>
