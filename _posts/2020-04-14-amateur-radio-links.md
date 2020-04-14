@@ -14,19 +14,18 @@ header:
   teaser: http://phwl.org/assets/images/2018/12/IMG_9577.jpg
 ---
 
-There is a lot of good amateur radio information scattered around the internet.
-Here is a collection of links that will be updated.
+Here is a collection of amateur radio links.
 
 <!-- more -->
 
 ## Antennas
 ### End fed half wave
-1. End Fed Half Wave (EFHW) antenna construction with links - <https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm>
+1. End Fed Half Wave (EFHW) antenna construction with links - <https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm> (added 14/4/20)
 
 ## Electronics
 ### Calculators
-1. Filter design, Skin depth, Smith Charts etc - <https://leleivre.com/rftools.html>
+1. Filter design, Skin depth, Smith Charts etc - <https://leleivre.com/rftools.html> (added 14/4/20)
 
 ### Class D/E Amplifiers
-1. Class E amplifier design and construction - <http://www.classeradio.com/>
-1. AMfone Class E forum - <http://amfone.net/Amforum/index.php?board=76.0>
+1. Class E amplifier design and construction - <http://www.classeradio.com/> (added 14/4/20)
+1. AMfone Class E forum - <http://amfone.net/Amforum/index.php?board=76.0> (added 14/4/20)
