@@ -14,14 +14,14 @@ header:
   teaser: http://phwl.org/assets/images/2018/12/IMG_9577.jpg
 ---
 
-There is a lot of good information scattered around the internet on
-amateur radio. Here is a collection of links that will be updated.
+There is a lot of good amateur radio information scattered around the internet.
+Here is a collection of links that will be updated.
 
 <!-- more -->
 
 ## Antennas
 ### End fed half wave
-1. A good description of End Fed Half Wave (EFHW) antenna construction - <https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm>
+1. End Fed Half Wave (EFHW) antenna construction with links - <https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm>
 
 ## Electronics
 ### Calculators
