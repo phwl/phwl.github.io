@@ -29,3 +29,8 @@ Here is a collection of amateur radio links.
 ### Class D/E Amplifiers
 1. Class E amplifier design and construction - <http://www.classeradio.com/> (added 14/4/20)
 1. AMfone Class E forum - <http://amfone.net/Amforum/index.php?board=76.0> (added 14/4/20)
+1. VK3HN's website (links to the sites above and more) - <https://vk3hn.wordpress.com/am/>
+
+## General
+### Blogs
+1. marxy's musing on technology - <http://blog.marxy.org/>
