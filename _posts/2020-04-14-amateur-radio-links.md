@@ -36,3 +36,4 @@ Here is a collection of amateur radio links.
 1. Peter B Marks VK2TPM marxy's musing on technology - <http://blog.marxy.org/>
 1. Owen Duffy VK2OMD - <https://owenduffy.net>
 1. Peter Parker VK3YE - <http://vk3ye.com/>
+1. Charlie Morris ZL2CTM - <http://zl2ctm.blogspot.com/>
