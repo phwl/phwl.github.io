@@ -68,6 +68,6 @@ as the Burrows.
 {% include figure image_path="/assets/images/2020/04/stapler3.jpeg" %}
 
 The difference was even more apparent from the bottom. The best is the Burrows,
-next the Rapid (they managed to fool by using "Strong" in
-their product name) and last was the Celco brand.
+next the Rapid (they managed to fool me by using "Strong" in
+the name) and last was the Celco brand.
 {% include figure image_path="/assets/images/2020/04/stapler4.jpeg" %}
