@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-17T16:38:54+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Herber Hoover on Engineering</title><link href="http://localhost:4000/2020/on-engineering/" rel="alternate" type="text/html" title="Herber Hoover on Engineering" /><published>2020-04-17T16:32:36+10:00</published><updated>2020-04-17T16:32:36+10:00</updated><id>http://localhost:4000/2020/on-engineering</id><content type="html" xml:base="http://localhost:4000/2020/on-engineering/">&lt;h2 id=&quot;on-engineering---herbert-hoover&quot;&gt;On Engineering - Herbert Hoover&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-18T14:49:32+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Staple Review</title><link href="http://localhost:4000/2020/staple-review/" rel="alternate" type="text/html" title="Staple Review" /><published>2020-04-18T13:23:34+10:00</published><updated>2020-04-18T13:23:34+10:00</updated><id>http://localhost:4000/2020/staple-review</id><content type="html" xml:base="http://localhost:4000/2020/staple-review/">&lt;p&gt;A stapler is one of the more important pieces of academic equipment.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;PaperPro make excellent staplers but it appears they don’t exist any more, 
+current versions being badged under
+&lt;a href=&quot;https://www.amazon.com/gp/product/B00149ZVTG&quot;&gt;Bostitch&lt;/a&gt;.  Wired
+had a &lt;a href=&quot;https://www.wired.com/2010/10/paperpro-makes-quite-possibly-the-best-staplers-ever/&quot;&gt;blog
+post&lt;/a&gt;
+on the PaperPro , referencing Office Supply Geek’s
+&lt;a href=&quot;http://officesupplygeek.com/desk-accessories/paper-fasteners/paperpro-staplers-quite-possibly-the-best-staplers-ever/&quot;&gt;review&lt;/a&gt;
+(and with a name like that you would expect them to take their
+staplers seriously) says it is one of the best staplers ever.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;https://images-na.ssl-images-amazon.com/images/I/61EuFLiJKrL._AC_SL1000_.jpg&quot;&gt;
+  &lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/61EuFLiJKrL._AC_SL1000_.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;The reason they are good is because they employ a spring to drive the 
+stapler through the paper. The earliest patent for a spring loaded
+stapler appears to be
+&lt;a href=&quot;https://patents.google.com/patent/US7681771B2&quot;&gt;US7681771B2 Stapler&lt;/a&gt;
+which is relatively recent (2006).&lt;/p&gt;
+
+&lt;h2 id=&quot;three-brands-of-staples&quot;&gt;Three brands of staples&lt;/h2&gt;
+&lt;p&gt;Having a fine stapler is not sufficient. My
+stapler was not up to the task of tens of sheets of paper even
+though it was supposed to be able to do 25 or more. Maybe it was
+the Celco staples I was using? At &lt;a href=&quot;https://www.officeworks.com.au/&quot;&gt;Officeworks&lt;/a&gt;,
+there were a number of choices, but which one? Should I purchase
+the $2.78 “J. Burrows Size 26/6 Staples 5000 pack”, or the 5x more expensive
+$2.55 “Rapid 26/6 Strong Staples 1000 pack”? I purchased both to compare.&lt;/p&gt;
+
+&lt;p&gt;Staples are often described as X/Y type, with X being the gauge and
+Y being the length of the leg. Thus 26/6 means that the diameter is
+26 AWG (0.405 mm) and the leg is 6 mm.
+Having three different types of staples, I first verified their diameter.
+All three were fine.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/stapler2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/stapler2.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;So how well do they work? I took a 50 page (25 sheet) draft paper that
+we are working on and tried all three. In all the figures below, we have
+the J. Burrows (left), Celco (middle) and Rapid (right) staples. All
+three are made in China.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/stapler1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/stapler1.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Clearly the middle Celco, which were the original ones that I wasn’t
+happy with, were not up to the task. The Rapid is also
+slightly higher than the Burrows.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/stapler3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/stapler3.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;It is even more apparent from the bottom. The best is the Burrows,
+next is the Rapid (they managed to fool by using “Strong” in
+their product name) and last was Celco.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/stapler4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/stapler4.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">A stapler is one of the more important pieces of academic equipment.</summary></entry><entry><title type="html">Herber Hoover on Engineering</title><link href="http://localhost:4000/2020/on-engineering/" rel="alternate" type="text/html" title="Herber Hoover on Engineering" /><published>2020-04-17T16:32:36+10:00</published><updated>2020-04-17T16:32:36+10:00</updated><id>http://localhost:4000/2020/on-engineering</id><content type="html" xml:base="http://localhost:4000/2020/on-engineering/">&lt;h2 id=&quot;on-engineering---herbert-hoover&quot;&gt;On Engineering - Herbert Hoover&lt;/h2&gt;
 
 &lt;p&gt;It is a great profession. There is the fascination of watching a figment of the imagination emerge through the aid of science to a plan on paper. Then it moves to realization in stone or metal or energy. Then it brings jobs and homes to men. Then it elevates the standards of living and adds to the comforts of life. That is the engineer’s high privilege.&lt;/p&gt;
 
@@ -1176,25 +1247,4 @@ to make most of the club’s 229 contacts.&lt;/p&gt;
   &lt;li&gt;The video below.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/szkRF45tKyQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="hobbies" /><category term="australia" /><category term="travel" /><summary type="html">The Manly Warringah Radio Society activated Barrington Tops in the John Moyle Memorial Field Day this year.</summary></entry><entry><title type="html">Installing Anaconda and Pytorch</title><link href="http://localhost:4000/2020/install-anaconda/" rel="alternate" type="text/html" title="Installing Anaconda and Pytorch" /><published>2020-03-18T10:53:07+11:00</published><updated>2020-03-18T10:53:07+11:00</updated><id>http://localhost:4000/2020/install-anaconda</id><content type="html" xml:base="http://localhost:4000/2020/install-anaconda/">&lt;p&gt;Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
-mentioned here &lt;a href=&quot;http://phwl.org/2019/ubuntu-nvdia-19/&quot;&gt;http://phwl.org/2019/ubuntu-nvdia-19/&lt;/a&gt;. This was for running
-&lt;a href=&quot;https://github.com/TideDancer/DTWNet.git&quot;&gt;DTWnet&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install Anaconda from &lt;a href=&quot;https://www.anaconda.com/distribution&quot;&gt;https://www.anaconda.com/distribution&lt;/a&gt;, then
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda update -n base -c defaults conda
-conda create --name dtw
-conda activate dtw
-conda install pytorch=0.4.1 cuda92 -c pytorch
-pip install 'torch==0.4.1'
-pip install Cython
-pip install 'torchvision==0.2.1'
-pip install visdom
-conda install gcc_linux-64
-conda install -c anaconda cudatoolkit
-cd ~/src
-git clone https://github.com/TideDancer/DTWNet.git
-cd DTWnet`
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system mentioned here http://phwl.org/2019/ubuntu-nvdia-19/. This was for running DTWnet.</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/szkRF45tKyQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="hobbies" /><category term="australia" /><category term="travel" /><summary type="html">The Manly Warringah Radio Society activated Barrington Tops in the John Moyle Memorial Field Day this year.</summary></entry></feed>
