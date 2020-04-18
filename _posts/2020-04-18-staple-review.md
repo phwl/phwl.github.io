@@ -7,7 +7,7 @@ classes: wide
 categories:
 - academia
 header:
-  teaser: /assets/images/2020/04/stapler2.jpeg
+  teaser: /assets/images/2020/04/stapler1.jpeg
 ---
 
 A stapler is one of the more important pieces of academic equipment.
