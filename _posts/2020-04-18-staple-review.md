@@ -61,14 +61,14 @@ the J. Burrows (left), Celco (middle) and Rapid (right).
 {% include figure image_path="/assets/images/2020/04/stapler1.jpeg" %}
 
 Clearly the middle Celco (the original ones I wasn't
-happy with) were not up to the task. The Rapid not punched in as far
-as the Burrows.
+happy with) was not up to the task. The Rapid (right) was also slightly buckled while
+the Burrows (left) looked the best.
 
 {% include figure image_path="/assets/images/2020/04/stapler3.jpeg" %}
 
-The difference was even more apparent from the bottom. The best was
-the Burrows.  Rapid managed to fool me by using "Strong" in the
-name. They are no better than the Burrows but a lot more expensive.
-Last was the Celco brand.
+The difference was even more apparent from underneath. The best was
+clearly the Burrows (on the left below).  Rapid (right) managed to fool me by using "Strong" in the product
+name. They are a lot more expensive but no better than the Burrows.
+Last was the Celco brand which are terrible.
 
 {% include figure image_path="/assets/images/2020/04/stapler4.jpeg" %}
