@@ -38,7 +38,6 @@ which is relatively recent (2006).
 Having a fine stapler is not enough. My PaperPro
 couldn't even go through tens of sheets of paper, but
 it's supposed to do 25. Was it my Celco brand staples? 
-
 At [Officeworks](https://www.officeworks.com.au/),
 there are a number of choices, but which one? Should I get
 the $2.78 "J. Burrows Size 26/6 Staples 5000 pack", or the 5x more expensive
