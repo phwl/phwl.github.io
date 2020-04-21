@@ -1,4 +1,4 @@
-I"�$<ul id="markdown-toc">
+I"g%<ul id="markdown-toc">
   <li><a href="#journals" id="markdown-toc-journals">Journals</a></li>
   <li><a href="#conferences" id="markdown-toc-conferences">Conferences</a></li>
   <li><a href="#patents" id="markdown-toc-patents">Patents</a></li>
@@ -13,23 +13,23 @@
 <p>[1] Johan Saltin, Nguyen Cong Dao, Philip H. W. Leong, and Hiu Yung Wong.
 Energy filtering effect at source contact on ultra-scaled mosfets.
 <em>IEEE Journal of the Electron Devices Society</em>, pages to appear (accepted 13 Feb 2020), 2020.
-URL: <a href="sc_jeds20.pdf">sc_jeds20.pdf</a>.<br />
+URL: <a href="sc_jeds20.pdf">sc_jeds20.pdf</a>, <a href="https://doi.org/10.1109/JEDS.2020.2981251">doi:10.1109/JEDS.2020.2981251</a>.<br />
 [2] Nicholas J. Fraser and Philip H. W. Leong.
 Kernel normalised least mean squares with delayed model adaptation.
-<em>ACM Trans. Reconfigurable Technol. Syst.</em>, pages to appear (accepted 17 Dec 2019), 2020.
-URL: <a href="dknlms_trets20.pdf">dknlms_trets20.pdf</a>.<br />
-[3] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H.W. Leong.
+<em>ACM Trans. Reconfigurable Technol. Syst.</em>, February 2020.
+URL: <a href="dknlms_trets20.pdf">dknlms_trets20.pdf</a>, <a href="https://doi.org/10.1145/3376924">doi:10.1145/3376924</a>.<br />
+[3] CA Herbert, M Dassis, M Pye, PW Jones, PHW Leong, G Thomas, H Cope, A Jarman, R Hobbs, PE Murray, and GE Machovsky Capuska.
+Development of light-weight video-tracking technology for use in wildlife research: a case study on kangaroos.
+<em>Australian Zoologist</em>, pages in–press, 2020.
+URL: <a href="kangaroo_austzoo20.pdf">kangaroo_austzoo20.pdf</a>, <a href="https://doi.org/10.7882/AZ.2020.001">doi:10.7882/AZ.2020.001</a>.<br />
+[4] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H.W. Leong.
 AddNet: deep neural networks using FPGA-optimized multipliers.
 <em>IEEE Transactions on VLSI Systems</em>, 28(1):115–128, Jan 2020.
-URL: <a href="addnet_tvlsi19.pdf">addnet_tvlsi19.pdf</a>, <a href="https://doi.org/10.1109/TVLSI.2019.2939429">doi:10.1109/TVLSI.2019.2939429</a>.<br />
-[4] C.A. Herbert, M. Dassis, M. Pye, P.W. Jones, P.H.W. Leong, G. Thomas, H. Cope, A. Jarman, R. Hobbs, P.E. Murray, and G.E. Machovsky-Capuska.
-Development of light-weight video-tracking technology for use in wildlife research: a case study on kangaroos.
-<em>Australian Zoologist</em>, pages to appear (accepted 28 Oct 2019), 2019.
-URL: <a href="kangaroo_austzoo19.pdf">kangaroo_austzoo19.pdf</a>.<br />
-[5] Jason K. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al-Sarawi, Philip H.W. Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei.
+URL: <a href="addnet_tvlsi20.pdf">addnet_tvlsi20.pdf</a>, <a href="https://doi.org/10.1109/TVLSI.2019.2939429">doi:10.1109/TVLSI.2019.2939429</a>.<br />
+[5] Jason Kamran Eshraghian, Seungbum Baek, Timothée Levi, Takashi Kohno, Said F. Al-Sarawi, Philip H. W. Leong, Kyoung-Rok Cho, Derek Abbott, and Omid Kavehei.
 Nonlinear retinal response modeling for future neuromorphic instrumentation.
-<em>IEEE Instrumentation and Measurement Magazine</em>, pages to appear (accepted 17 Sep 2019), 2019.
-URL: <a href="nrrm_imm19.pdf">nrrm_imm19.pdf</a>.<br />
+<em>IEEE Instrum. Meas. Mag.</em>, 23(1):21–29, 2020.
+URL: <a href="nrrm_imm20.pdf">nrrm_imm20.pdf</a>, <a href="https://doi.org/10.1109/MIM.2020.8979519">doi:10.1109/MIM.2020.8979519</a>.<br />
 [6] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland, Duncan Moss, Peter Zipf, and Philip H. W. Leong.
 Unrolling ternary neural networks.
 <em>ACM Trans. Reconfigurable Technol. Syst.</em>, 12(4):22:1–22:23, October 2019.

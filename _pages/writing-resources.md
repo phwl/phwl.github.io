@@ -10,7 +10,7 @@ classes: wide
 wordpress_id: 4699
 ---
 
-## Conferences
+## Reviews
  * How to review conference papers <https://www.markbernstein.org/elements/Reviewing.pdf>
 
 ## Dissertations
