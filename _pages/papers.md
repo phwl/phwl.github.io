@@ -14,7 +14,7 @@ classes: wide
 [1] Johan Saltin, Nguyen Cong Dao, Philip H\. W\. Leong, and Hiu Yung Wong\.
 Energy filtering effect at source contact on ultra\-scaled mosfets\.
 *IEEE Journal of the Electron Devices Society*, pages to appear \(accepted 13 Feb 2020\), 2020\.
-URL: [sc\_jeds20\.pdf](sc_jeds20.pdf)\.  
+URL: [sc\_jeds20\.pdf](sc_jeds20.pdf), [doi:10\.1109/JEDS\.2020\.2981251](https://doi.org/10.1109/JEDS.2020.2981251)\.  
 [2] Nicholas J\. Fraser and Philip H\. W\. Leong\.
 Kernel normalised least mean squares with delayed model adaptation\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, pages to appear \(accepted 17 Dec 2019\), 2020\.
