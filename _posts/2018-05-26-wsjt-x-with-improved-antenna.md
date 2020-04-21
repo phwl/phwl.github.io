@@ -7,7 +7,7 @@ slug: wsjt-x-with-improved-antenna
 title: WSJT-X with improved antenna
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 header:

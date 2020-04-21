@@ -7,7 +7,7 @@ slug: vhf-field-day
 title: Spring VHF/UHF Field Day
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 - travel

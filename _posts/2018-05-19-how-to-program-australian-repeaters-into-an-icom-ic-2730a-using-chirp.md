@@ -7,7 +7,7 @@ slug: how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp
 title: How to program Australian Repeaters into an Icom IC-2730A using Chirp
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 header:

@@ -7,8 +7,9 @@ slug: cessna-first-solo
 title: Cessna first solo
 classes: wide
 categories:
-- hobbies
+- travel
 tags:
+- hobbies
 - aviation
 header:
   teaser: /assets/images/2015/12/plcessna.jpg

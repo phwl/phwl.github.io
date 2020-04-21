@@ -7,7 +7,7 @@ slug: configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200
 title: Configuring WSJT-X on Ubuntu for an Icom IC-7200
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 header:

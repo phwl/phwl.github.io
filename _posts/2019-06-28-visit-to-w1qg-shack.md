@@ -6,7 +6,7 @@ date: 2019-06-28 22:17:43+00:00
 slug: visit-to-w1qg-shack
 title: Visit to W1QG's shack
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 - electronics

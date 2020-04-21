@@ -8,7 +8,7 @@ title: Sydney University Open Day 2018
 classes: wide
 categories:
 - academia
-- amateur radio
+- radio
 post_format:
 - Gallery
 header:

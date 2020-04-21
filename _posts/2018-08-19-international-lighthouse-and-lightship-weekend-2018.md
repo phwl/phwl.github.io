@@ -7,7 +7,7 @@ slug: international-lighthouse-and-lightship-weekend-2018
 title: International Lighthouse and Lightship Weekend 2018
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 header:

@@ -7,7 +7,7 @@ slug: john-moyle-memorial-field-day-2018
 title: John Moyle Memorial Field Day 2018
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 - australia

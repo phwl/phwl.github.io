@@ -7,7 +7,7 @@ slug: installing-powerpoles
 title: Installing powerpoles
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 - electronics

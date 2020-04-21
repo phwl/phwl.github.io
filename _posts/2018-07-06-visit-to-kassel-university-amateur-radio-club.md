@@ -7,7 +7,7 @@ slug: visit-to-kassel-university-amateur-radio-club
 title: Visit to University of Kassel Amateur Radio Club
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - hobbies
 - travel

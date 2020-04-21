@@ -7,7 +7,7 @@ slug: amateur-radio-shops-in-akihabara
 title: Amateur Radio Shops in Akihabara
 classes: wide
 categories:
-- amateur radio
+- radio
 tags:
 - travel
 - hobbies
