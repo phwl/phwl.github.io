@@ -12,14 +12,12 @@ tags:
 header:
   teaser: https://upload.wikimedia.org/wikipedia/commons/0/03/Jascha_Heifetz_-_Carnegie_Hall_1947_%2804%29_wmplayer_2013-04-16.jpg
 ---
-Links to Jascha Heifetz's documentaries, masterclasses and performances on youtube.
+Links to [Jascha Heifetz](https://en.wikipedia.org/wiki/Jascha_Heifetz) documentaries, masterclasses and performances.
 <!-- more -->
 
 ## Documentary
 ### God's Fiddler
-A wonderful documentary by Peter Rosen on
-the violinist, [Jascha Heifetz](https://en.wikipedia.org/wiki/Jascha_Heifetz).
-
+A wonderful documentary by Peter Rosen on Heifetz.
 Here is the description from <https://www.medici.tv/en/documentaries/jascha-heifetz-god-s-fiddler-peter-rosen/>.
 
 The only film biography of the world's most renowned violinist, featuring family home movies in Los Angeles and all over the world.
