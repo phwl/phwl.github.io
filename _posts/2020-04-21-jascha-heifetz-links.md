@@ -3,7 +3,7 @@ author: phwl
 comments: true
 toc: true
 date: 2020-04-21 21:44:13 AEST
-title: Heifetz God's Fiddler
+title: Jascha Heifetz links
 classes: wide
 categories:
 - music
