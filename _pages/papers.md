@@ -23,10 +23,10 @@ URL: [dknlms\_trets20\.pdf](dknlms_trets20.pdf)\.
 AddNet: deep neural networks using FPGA\-optimized multipliers\.
 *IEEE Transactions on VLSI Systems*, 28\(1\):115&ndash;128, Jan 2020\.
 URL: [addnet\_tvlsi19\.pdf](addnet_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2019\.2939429](https://doi.org/10.1109/TVLSI.2019.2939429)\.  
-[4] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky\-Capuska\.
+[4] CA Herbert, M Dassis, M Pye, PW Jones, PHW Leong, G Thomas, H Cope, A Jarman, R Hobbs, PE Murray, and GE Machovsky Capuska\.
 Development of light\-weight video\-tracking technology for use in wildlife research: a case study on kangaroos\.
-*Australian Zoologist*, pages to appear \(accepted 28 Oct 2019\), 2019\.
-URL: [kangaroo\_austzoo19\.pdf](kangaroo_austzoo19.pdf)\.  
+*Australian Zoologist*, pages in&ndash;press, 2020\.
+URL: [https://doi\.org/10\.7882/AZ\.2020\.001](https://doi.org/10.7882/AZ.2020.001), [arXiv:https://doi\.org/10\.7882/AZ\.2020\.001](https://arxiv.org/abs/https://doi.org/10.7882/AZ.2020.001), [doi:10\.7882/AZ\.2020\.001](https://doi.org/10.7882/AZ.2020.001)\.  
 [5] Jason K\. Eshraghian, Seungbum Baek, Timothee Levi, Takashi Kohno, Said Al\-Sarawi, Philip H\.W\. Leong, Kyoungrok Cho, Derek Abbott, and Omid Kavehei\.
 Nonlinear retinal response modeling for future neuromorphic instrumentation\.
 *IEEE Instrumentation and Measurement Magazine*, pages to appear \(accepted 17 Sep 2019\), 2019\.
