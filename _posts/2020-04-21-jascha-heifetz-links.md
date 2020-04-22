@@ -91,3 +91,6 @@ Heifetz answers questions by a group of college students and performs Mendelssoh
 
 ### Tchaikovsky Violin Concerto in D Major, Op. 35: I. Allegro moderato
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kFaq9kTlcaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Jascha Heifetz in Performance (Mozart, Prokofiev, Debussy, Rachmaninov, Gershwin, Bach)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5lPJCRBqUB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
