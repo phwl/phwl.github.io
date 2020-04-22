@@ -15,7 +15,7 @@ header:
 Links to [Jascha Heifetz](https://en.wikipedia.org/wiki/Jascha_Heifetz) documentaries, masterclasses and performances.
 <!-- more -->
 
-## Documentary
+## Documentaries
 ### God's Fiddler
 A wonderful documentary by Peter Rosen on Heifetz.
 Here is the description from <https://www.medici.tv/en/documentaries/jascha-heifetz-god-s-fiddler-peter-rosen/>.
@@ -89,3 +89,5 @@ Heifetz answers questions by a group of college students and performs Mendelssoh
 ### Hora Staccato
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mag2mc5Vva0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### Tchaikovsky Violin Concerto in D Major, Op. 35: I. Allegro moderato
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kFaq9kTlcaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
