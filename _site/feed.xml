@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-24T12:27:17+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Jascha Heifetz links</title><link href="http://localhost:4000/2020/jascha-heifetz-links/" rel="alternate" type="text/html" title="Jascha Heifetz links" /><published>2020-04-21T21:44:13+10:00</published><updated>2020-04-21T21:44:13+10:00</updated><id>http://localhost:4000/2020/jascha-heifetz-links</id><content type="html" xml:base="http://localhost:4000/2020/jascha-heifetz-links/">&lt;p&gt;Links to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jascha_Heifetz&quot;&gt;Jascha Heifetz&lt;/a&gt; documentaries, masterclasses and performances.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-29T22:20:50+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Loose mattock head</title><link href="http://localhost:4000/2020/mattock/" rel="alternate" type="text/html" title="Loose mattock head" /><published>2020-04-29T22:10:13+10:00</published><updated>2020-04-29T22:10:13+10:00</updated><id>http://localhost:4000/2020/mattock</id><content type="html" xml:base="http://localhost:4000/2020/mattock/">&lt;p&gt;This Stanley mattock has had a loose head for a few years now. Time to fix it 
+properly.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mattock1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mattock1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;No wonder it came loose, it was only secured with a dowel. It should
+have been wedged in but I guess that’s too much labour these days.
+Just cut down the middle with a saw.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mattock2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mattock2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then drive wedges into the groove to secure the head.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mattock3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mattock3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Should be solid for a long time.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/04/mattock4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/04/mattock4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">This Stanley mattock has had a loose head for a few years now. Time to fix it properly.</summary></entry><entry><title type="html">Jascha Heifetz links</title><link href="http://localhost:4000/2020/jascha-heifetz-links/" rel="alternate" type="text/html" title="Jascha Heifetz links" /><published>2020-04-21T21:44:13+10:00</published><updated>2020-04-21T21:44:13+10:00</updated><id>http://localhost:4000/2020/jascha-heifetz-links</id><content type="html" xml:base="http://localhost:4000/2020/jascha-heifetz-links/">&lt;p&gt;Links to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jascha_Heifetz&quot;&gt;Jascha Heifetz&lt;/a&gt; documentaries, masterclasses and performances.
 &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;documentaries&quot;&gt;Documentaries&lt;/h2&gt;
@@ -1098,34 +1141,4 @@ export LDFLAGS=&quot;-L/usr/local/opt/libffi/lib&quot;
 export PKG_CONFIG_PATH=&quot;/usr/local/opt/libffi/lib/pkgconfig&quot;
 gem install jekyll
 bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><summary type="html">When doing a bundle update I got an error telling me that installing ffi failed, and the following had to be fixed: ``` phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v ‘1.12.2’ –source ‘https://rubygems.org/’ Building native extensions. This could take a while… ERROR: Error installing ffi: ERROR: Failed to build gem native extension.</summary></entry><entry><title type="html">VPN to the University of Sydney on Ubuntu</title><link href="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/" rel="alternate" type="text/html" title="VPN to the University of Sydney on Ubuntu" /><published>2020-03-29T16:20:35+11:00</published><updated>2020-03-29T16:20:35+11:00</updated><id>http://localhost:4000/2020/vpn-to-usyd-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/vpn-to-usyd-on-ubuntu/">&lt;p&gt;Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;install-openconnect&quot;&gt;Install Openconnect&lt;/h2&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
-sudo apt-get install openconnect
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;connect&quot;&gt;Connect&lt;/h2&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo openconnect -u &amp;lt;unikey&amp;gt; --passwd-on-stdin vpn.sydney.edu.au
-&amp;lt;type your password here there is no prompt&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should see something like this&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;POST https://vpn.sydney.edu.au/
-Connected to 129.78.42.50:443
-SSL negotiation with vpn.sydney.edu.au
-Connected to HTTPS on vpn.sydney.edu.au
-XML POST enabled
-Please enter your username and password.
-POST https://vpn.sydney.edu.au/
-Got CONNECT response: HTTP/1.1 200 OK
-CSTP connected. DPD 30, Keepalive 20
-Connected as 10.48.18.235, using SSL
-Established DTLS connection (using GnuTLS). Ciphersuite (DTLS0.9)-(DHE-RSA-4294967237)-(AES-256-CBC)-(SHA1).
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s all!&lt;/p&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Openconnect makes it easy to use the University of Sydney VPN on Ubuntu.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><summary type="html">When doing a bundle update I got an error telling me that installing ffi failed, and the following had to be fixed: ``` phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v ‘1.12.2’ –source ‘https://rubygems.org/’ Building native extensions. This could take a while… ERROR: Error installing ffi: ERROR: Failed to build gem native extension.</summary></entry></feed>
