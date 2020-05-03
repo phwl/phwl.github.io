@@ -925,7 +925,7 @@ var store = [{
         "url": "http://localhost:4000/2020/jascha-heifetz-links/",
         "teaser":"https://upload.wikimedia.org/wikipedia/commons/0/03/Jascha_Heifetz_-_Carnegie_Hall_1947_%2804%29_wmplayer_2013-04-16.jpg"},{
         "title": "Loose mattock head",
-        "excerpt":"This Stanley mattock has had a loose head for a few years now. Time to fix it  properly.                               No wonder it came loose, it was only secured with a dowel. It should have been wedged in but I guess that’s too much labour these days. Just cut down the middle with a saw.                                Then drive wedges into the groove with a hammer. I was planning to  use PVA glue here but forgot.                                Should be solid for a long time.                                ","categories": ["home"],
+        "excerpt":"This Stanley mattock has had a loose head for a few years now. Time to fix it  properly.                               No wonder it came loose, it was only secured with a dowel. It should have been wedged in but I guess that’s too much labour these days. Just cut down the middle with a saw.                                Then drive wedges into the groove with a hammer. I was planning to  use PVA glue here but forgot.                                Any then clean up the head.                                Should be solid for a long time.                                ","categories": ["home"],
         "tags": ["repair"],
         "url": "http://localhost:4000/2020/mattock/",
         "teaser":"http://localhost:4000/assets/images/2020/04/mattock1.jpeg"}]
