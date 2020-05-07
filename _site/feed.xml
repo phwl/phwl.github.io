@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-03T16:28:47+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Loose mattock head</title><link href="http://localhost:4000/2020/mattock/" rel="alternate" type="text/html" title="Loose mattock head" /><published>2020-04-29T22:10:13+10:00</published><updated>2020-04-29T22:10:13+10:00</updated><id>http://localhost:4000/2020/mattock</id><content type="html" xml:base="http://localhost:4000/2020/mattock/">&lt;p&gt;This Stanley mattock has had a loose head for a few years now. Time to fix it 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-07T14:06:01+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">TP Link TL-WPA4220 problem and fix</title><link href="http://localhost:4000/2020/tplink-wpa4220-fix/" rel="alternate" type="text/html" title="TP Link TL-WPA4220 problem and fix" /><published>2020-05-07T13:10:54+10:00</published><updated>2020-05-07T13:10:54+10:00</updated><id>http://localhost:4000/2020/tplink-wpa4220-fix</id><content type="html" xml:base="http://localhost:4000/2020/tplink-wpa4220-fix/">&lt;p&gt;I purchased a
+&lt;a href=&quot;https://www.tp-link.com/au/home-networking/powerline/tl-wpa4220/&quot;&gt;TL-WPA4220&lt;/a&gt;
+which turns out to be unreliable, with the connection not staying up more than
+a day or so.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;Firmware version: 4.0.3 Build 20190326 Rel.43406 
+&lt;br /&gt;
+Hardware version: TL-WPA4220 v4.0&lt;/p&gt;
+
+&lt;p&gt;After a bit of browsing I found this &lt;a href=&quot;https://community.tp-link.com/en/home/forum/topic/78910&quot;&gt;https://community.tp-link.com/en/home/forum/topic/78910&lt;/a&gt;. After adding
+a script on the other end of the powerline adaptor&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;while true
+do
+	date
+	ping -c 1 192.168.0.1
+	sleep 60
+done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;the problem has gone away.&lt;/p&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">I purchased a TL-WPA4220 which turns out to be unreliable, with the connection not staying up more than a day or so.</summary></entry><entry><title type="html">Loose mattock head</title><link href="http://localhost:4000/2020/mattock/" rel="alternate" type="text/html" title="Loose mattock head" /><published>2020-04-29T22:10:13+10:00</published><updated>2020-04-29T22:10:13+10:00</updated><id>http://localhost:4000/2020/mattock</id><content type="html" xml:base="http://localhost:4000/2020/mattock/">&lt;p&gt;This Stanley mattock has had a loose head for a few years now. Time to fix it 
 properly.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/mattock1.jpeg&quot;&gt;
@@ -33,8 +54,6 @@ use PVA glue here but forgot.&lt;/p&gt;
       
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Any then clean up the head.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/mattock4.jpeg&quot;&gt;
@@ -1053,105 +1072,4 @@ sudo apt install git cmake g++ libboost-all-dev libgmp-dev \
 pybombs install gnuradio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Installation of software for Ettus B210.</summary></entry><entry><title type="html">Updating jekyll on macOS</title><link href="http://localhost:4000/2020/update-jekyll/" rel="alternate" type="text/html" title="Updating jekyll on macOS" /><published>2020-03-29T17:50:13+11:00</published><updated>2020-03-29T17:50:13+11:00</updated><id>http://localhost:4000/2020/update-jekyll</id><content type="html" xml:base="http://localhost:4000/2020/update-jekyll/">&lt;p&gt;When doing a &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle update&lt;/code&gt; I got an error telling me that 
-installing ffi failed, and the following had to be fixed:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v '1.12.2' --source 'https://rubygems.org/'
-Building native extensions. This could take a while...
-ERROR:  Error installing ffi:
-	ERROR: Failed to build gem native extension.
-
-    current directory: /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c
-/Users/phwl/.rbenv/versions/2.6.3/bin/ruby -I /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200329-12274-1mw6aa1.rb extconf.rb
-checking for ffi.h... no
-checking for ffi.h in /usr/local/include,/usr/include/ffi... no
-checking for shlwapi.h... no
-checking for rb_thread_call_without_gvl()... yes
-checking for ruby_native_thread_p()... yes
-checking for ruby_thread_has_gvl_p()... yes
-creating extconf.h
-creating Makefile
-
-current directory: /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c
-make &quot;DESTDIR=&quot; clean
-
-current directory: /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c
-make &quot;DESTDIR=&quot;
-Configuring libffi
-clang-4.0: error: unsupported option '-print-multi-os-directory'
-clang-4.0: error: no input files
-cd &quot;/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18&quot; &amp;amp;&amp;amp; make
-make[1]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-make  all-recursive
-make[2]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-Making all in include
-make[3]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/include'
-make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/include'
-Making all in testsuite
-make[3]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/testsuite'
-make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/testsuite'
-Making all in man
-make[3]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/man'
-make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18/man'
-make[3]: Entering directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/prep_cif.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/prep_cif.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/prep_cif.c  -fno-common -DPIC -o src/.libs/prep_cif.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/types.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/types.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/types.c  -fno-common -DPIC -o src/.libs/types.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/raw_api.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/raw_api.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/raw_api.c  -fno-common -DPIC -o src/.libs/raw_api.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/java_raw_api.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c  -fno-common -DPIC -o src/.libs/java_raw_api.o
-/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c:328:46: warning: 'ffi_java_raw_size' is deprecated [-Wdeprecated-declarations]
-  ffi_java_raw *raw = (ffi_java_raw*)alloca (ffi_java_raw_size (cif));
-                                             ^
-/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c:45:1: note: 'ffi_java_raw_size' has been explicitly marked deprecated here
-ffi_java_raw_size (ffi_cif *cif)
-^
-/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c:331:3: warning: 'ffi_java_ptrarray_to_raw' is deprecated [-Wdeprecated-declarations]
-  ffi_java_ptrarray_to_raw (cif, avalue, raw);
-  ^
-/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/java_raw_api.c:157:1: note: 'ffi_java_ptrarray_to_raw' has been explicitly marked deprecated here
-ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw)
-^
-2 warnings generated.
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/closures.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/closures.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/closures.c  -fno-common -DPIC -o src/.libs/closures.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/x86/ffi64.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/ffi64.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/ffi64.c  -fno-common -DPIC -o src/x86/.libs/ffi64.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src  -c -o src/x86/unix64.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/unix64.S
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/unix64.S  -fno-common -DPIC -o src/x86/.libs/unix64.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -Wall -fexceptions -c -o src/x86/ffiw64.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/ffiw64.c
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -Wall -fexceptions -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/ffiw64.c  -fno-common -DPIC -o src/x86/.libs/ffiw64.o
-/bin/sh ./libtool  --tag=CC   --mode=compile clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi  -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src  -c -o src/x86/win64.lo /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/win64.S
-libtool: compile:  clang -DHAVE_CONFIG_H -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -DRUBY_EXTCONF_H=\&quot;extconf.h\&quot; -I/Users/phwl/.rbenv/versions/2.6.3/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT -I. -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/include -Iinclude -I/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src -c /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi/src/x86/win64.S  -fno-common -DPIC -o src/x86/.libs/win64.o
-/bin/sh ./libtool  --tag=CC   --mode=link clang  -Wall -fexceptions  -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -o libffi_convenience.la  src/prep_cif.lo src/types.lo src/raw_api.lo src/java_raw_api.lo src/closures.lo   src/x86/ffi64.lo src/x86/unix64.lo src/x86/ffiw64.lo src/x86/win64.lo 
-libtool: link: libtool -static cru .libs/libffi_convenience.a src/.libs/prep_cif.o src/.libs/types.o src/.libs/raw_api.o src/.libs/java_raw_api.o src/.libs/closures.o src/x86/.libs/ffi64.o src/x86/.libs/unix64.o src/x86/.libs/ffiw64.o src/x86/.libs/win64.o 
-error: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: no output file specified (specify with -o output)
-Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-sacLT] [-no_warning_for_no_symbols]
-Usage: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -dynamic [-] file [...] [-filelist listfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] [-compatibility_version #] [-current_version #] [-seg1addr 0x#] [-segs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table &amp;lt;filename&amp;gt;] [-seg_addr_table_filename &amp;lt;file_system_path&amp;gt;] [-all_load] [-noall_load]
-make[3]: *** [Makefile:1072: libffi_convenience.la] Error 1
-make[3]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-make[2]: *** [Makefile:1348: all-recursive] Error 1
-make[2]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-make[1]: *** [Makefile:623: all] Error 2
-make[1]: Leaving directory '/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18'
-make: *** [libffi.darwin.mk:33: &quot;/Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2/ext/ffi_c/libffi-x86_64-darwin18&quot;/.libs/libffi_convenience.a] Error 2
-
-make failed, exit code 2
-
-Gem files will remain installed in /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/ffi-1.12.2 for inspection.
-Results logged to /Users/phwl/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/extensions/x86_64-darwin-18/2.6.0-static/ffi-1.12.2/gem_make.out
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This was because it was not using the homebrew libffi and
-fixed with:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew reinstall libffi
-export LDFLAGS=&quot;-L/usr/local/opt/libffi/lib&quot;
-export PKG_CONFIG_PATH=&quot;/usr/local/opt/libffi/lib/pkgconfig&quot;
-gem install jekyll
-bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><summary type="html">When doing a bundle update I got an error telling me that installing ffi failed, and the following had to be fixed: ``` phwl@x86_64-apple-darwin13 phwl.github.io % gem install ffi -v ‘1.12.2’ –source ‘https://rubygems.org/’ Building native extensions. This could take a while… ERROR: Error installing ffi: ERROR: Failed to build gem native extension.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Installation of software for Ettus B210.</summary></entry></feed>

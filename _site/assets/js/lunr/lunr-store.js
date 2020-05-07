@@ -925,7 +925,12 @@ var store = [{
         "url": "http://localhost:4000/2020/jascha-heifetz-links/",
         "teaser":"https://upload.wikimedia.org/wikipedia/commons/0/03/Jascha_Heifetz_-_Carnegie_Hall_1947_%2804%29_wmplayer_2013-04-16.jpg"},{
         "title": "Loose mattock head",
-        "excerpt":"This Stanley mattock has had a loose head for a few years now. Time to fix it  properly.                               No wonder it came loose, it was only secured with a dowel. It should have been wedged in but I guess that’s too much labour these days. Just cut down the middle with a saw.                                Then drive wedges into the groove with a hammer. I was planning to  use PVA glue here but forgot.                                Any then clean up the head.                                Should be solid for a long time.                                ","categories": ["home"],
+        "excerpt":"This Stanley mattock has had a loose head for a few years now. Time to fix it  properly.                               No wonder it came loose, it was only secured with a dowel. It should have been wedged in but I guess that’s too much labour these days. Just cut down the middle with a saw.                                Then drive wedges into the groove with a hammer. I was planning to  use PVA glue here but forgot.                                                             Should be solid for a long time.                                ","categories": ["home"],
         "tags": ["repair"],
         "url": "http://localhost:4000/2020/mattock/",
-        "teaser":"http://localhost:4000/assets/images/2020/04/mattock1.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2020/04/mattock1.jpeg"},{
+        "title": "TP Link TL-WPA4220 problem and fix",
+        "excerpt":"I purchased a TL-WPA4220 which turns out to be unreliable, with the connection not staying up more than a day or so.     Firmware version: 4.0.3 Build 20190326 Rel.43406    Hardware version: TL-WPA4220 v4.0   After a bit of browsing I found this https://community.tp-link.com/en/home/forum/topic/78910. After adding a script on the other end of the powerline adaptor   while true do \tdate \tping -c 1 192.168.0.1 \tsleep 60 done  the problem has gone away.   ","categories": ["radio"],
+        "tags": ["ubuntu","linux"],
+        "url": "http://localhost:4000/2020/tplink-wpa4220-fix/",
+        "teaser":"http://localhost:4000/assets/images/2020/05/TL-WPA4220_AU_4.0_01_normal_1529456768328k.jpg"}]
