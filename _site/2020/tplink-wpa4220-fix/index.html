@@ -194,18 +194,16 @@ Firmware version: 4.0.3 Build 20190326 Rel.43406
 <br />
 Hardware version: TL-WPA4220 v4.0</p>
 
-<p>After a bit of browsing I found this <a href="https://community.tp-link.com/en/home/forum/topic/78910">https://community.tp-link.com/en/home/forum/topic/78910</a>. I added
-this script on the Ubuntu Linux machine at the other end of the powerline adaptor</p>
+<p>After a bit of browsing I found this <a href="https://community.tp-link.com/en/home/forum/topic/78910">https://community.tp-link.com/en/home/forum/topic/78910</a>. Adding
+the following script on the Ubuntu Linux machine at the other end of the powerline adaptor solved the problem
+and it has been up for a week now.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while true
 do
-	date
 	ping -c 1 192.168.0.1
 	sleep 60
 done
 </code></pre></div></div>
-<p>and the problem has gone away.</p>
-
 
         
       </section>

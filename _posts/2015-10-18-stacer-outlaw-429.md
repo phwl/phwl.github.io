@@ -34,6 +34,9 @@ Beam: 2.08m Bottomsides: 3.00mm Depth: 1.08m Height on Trailer: 1.60m Length Max
 
 Trailer tyre is a 155R13LT. Pressure should be minimum 40 lb/sq in preferably 50.
 
+***Battery***
+Evinrude ETEC 640 CCA (800 MCA) (actually it was supplied with a CCA550 battery which has worked well for 4.5 years)
+
 **Features**
 3 Year Warranty Accessory Kit Alloy Cleat On Front Deck Anchorwell Battery Tray in Casting Platform Bow Roller & Yaw Locking Plate Console: Side Console Evo Advance Hull Extruded Side Decks Floor: Carpeted Floor: Front Casting Platform + Storage Bin Floor: Rear Casting Platform & Live Bait Tank Rails: Aft Short side Rails: Forward Side Rails Rod Holders (4) Seat: Positions (3) Seat: Sea Pro Side Pockets (2) Transducer Brackets x 2 Transom Step & Rail
 

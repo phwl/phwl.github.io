@@ -930,7 +930,7 @@ var store = [{
         "url": "http://localhost:4000/2020/mattock/",
         "teaser":"http://localhost:4000/assets/images/2020/04/mattock1.jpeg"},{
         "title": "TP Link TL-WPA4220 problem and fix",
-        "excerpt":"I purchased a TL-WPA4220 was unreliable. The connection did not stay up more than a day or so.     The device came with   Firmware version: 4.0.3 Build 20190326 Rel.43406    Hardware version: TL-WPA4220 v4.0   After a bit of browsing I found this https://community.tp-link.com/en/home/forum/topic/78910. I added this script on the Ubuntu Linux machine at the other end of the powerline adaptor   while true do \tdate \tping -c 1 192.168.0.1 \tsleep 60 done  and the problem has gone away.   ","categories": ["computers"],
+        "excerpt":"I purchased a TL-WPA4220 was unreliable. The connection did not stay up more than a day or so.     The device came with   Firmware version: 4.0.3 Build 20190326 Rel.43406    Hardware version: TL-WPA4220 v4.0   After a bit of browsing I found this https://community.tp-link.com/en/home/forum/topic/78910. Adding the following script on the Ubuntu Linux machine at the other end of the powerline adaptor solved the problem and it has been up for a week now.   while true do \tping -c 1 192.168.0.1 \tsleep 60 done  ","categories": ["computers"],
         "tags": ["software"],
         "url": "http://localhost:4000/2020/tplink-wpa4220-fix/",
         "teaser":"http://localhost:4000/assets/images/2020/05/TL-WPA4220_AU_4.0_01_normal_1529456768328k.jpg"}]
