@@ -19,6 +19,7 @@
 .cmbx-10x-x-109{ font-weight: bold;}  
 .cmti-10x-x-109{ font-style: italic;}  
 .cmcsc-10x-x-109{}  
+.cmmi-10x-x-109{font-style: italic;}  
 .cmsy-10x-x-109{}  
 .small-caps{font-variant: small-caps; }  
 p.noindent { text-indent: 0em }  
@@ -149,7 +150,7 @@ dt.thebibliography {float:left; clear:left; margin-right:1em;}
 <h2 class="titleHead">Research in the Computer Engineering Lab</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">April 3, 2020</span></div>
+class="cmr-12">May 13, 2020</span></div>
 </div>
 <!--l. 27--><p class="noindent" >The Computer Engineering Lab focuses on how to use field programmable
 gate array, VLSI and parallel processor technologies to solve difficult
@@ -367,8 +368,18 @@ href="overview.html" id="X4-" ></a>Nicholas J. Fraser and Philip H. W. Leong. &#
     Mean  Squares  with  Delayed  Model  Adaptation&#8221;.  In:  <span 
 class="cmti-10x-x-109">ACM  Trans.</span>
     <span 
-class="cmti-10x-x-109">Reconfigurable Technol. Syst. </span>(2020), to appear (accepted 17 Dec 2019).
-    <span 
+class="cmti-10x-x-109">Reconfigurable Technol. Syst. </span>13.2 (Feb. 2020). <span 
+class="cmcsc-10x-x-109"><span 
+class="small-caps">i</span><span 
+class="small-caps">s</span><span 
+class="small-caps">s</span><span 
+class="small-caps">n</span></span>: 1936-7406. <span 
+class="cmcsc-10x-x-109"><span 
+class="small-caps">d</span><span 
+class="small-caps">o</span><span 
+class="small-caps">i</span></span>:
+    <a 
+href="https://doi.org/10.1145/3376924" >10.1145/3376924</a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
@@ -507,19 +518,69 @@ href="ofpu_tvlsi12.pdf" class="url" ><span
 class="cmtt-10x-x-109">ofpu_tvlsi12.pdf</span></a>.</dd></dl>
 <!--l. 120--><p class="noindent" >
 <h4 class="subsectionHead"><span class="titlemark">2.2   </span> <a 
- id="x1-80002.2"></a>Random Number Generators</h4>
-<!--l. 121--><p class="noindent" >We proposed compact true and pseudo random number generators which can be
-efficiently implemented on FPGAs&#x00A0;[<a 
-href="overview.html#X6-TLL:03" >2</a>]. Seminal work on Gaussian number
-generators on FPGAs were also reviewed and state of the art implementations
-based on different techniques proposed&#x00A0;[<a 
-href="overview.html#X6-TLLV:07" >1</a>].
-<!--l. 127--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X6-TLLV:07" class="thebibliography">
+ id="x1-80002.2"></a>Radio Frequency Machine Learning</h4>
+<!--l. 121--><p class="noindent" >FPGAs enable the integration of radio and machine learning on a single device.
+This minimises latency and makes them an excellent platform for physical layer
+radio frequency applications. We have developed a high performance modulation
+classification system using the Xilinx RFSoC platform&#x00A0;[<a 
+href="overview.html#X6-TBLKKS:20" >2</a>], which utilises a
+ternary neural network to achieve throughput of 488K classifications per second.
+We have also implemented a long short-term memory based spectral prediction
+system with 4.5&#x00A0;<span 
+class="cmmi-10x-x-109">&#x03BC;</span>S latency&#x00A0;[<a 
+href="overview.html#X6-SLMFBSBL:18" >1</a>].
+<!--l. 130--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X6-SLMFBSBL:18" class="thebibliography">
 [1]  </dt><dd 
 id="bib-14" class="thebibliography">
-    <!--l. 127--><p class="noindent" ><a 
-href="overview.html" id="X6-" ></a>David                B.                Thomas                et                al.
+    <!--l. 130--><p class="noindent" ><a 
+href="overview.html" id="X6-" ></a>Siddhartha  et  al.  &#8220;Long  Short-term  Memory  for  Radio  Frequency
+    Spectral   Prediction   and   its   Real-time   FPGA   Implementation&#8221;.
+    In:  <span 
+class="cmti-10x-x-109">Proc.  MILCOM</span>.  Los  Angeles,  US,  Oct.  2018,  pp.  1&#8211;9.  <span 
+class="cmcsc-10x-x-109"><span 
+class="small-caps">d</span><span 
+class="small-caps">o</span><span 
+class="small-caps">i</span></span>:
+    <a 
+href="https://doi.org/10.1109/MILCOM.2018.8599833" >10.1109/MILCOM.2018.8599833</a>. <span 
+class="cmcsc-10x-x-109"><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">l</span></span>: <a 
+href="lstm_milcom18.pdf" class="url" ><span 
+class="cmtt-10x-x-109">lstm_milcom18.pdf</span></a>.
+    </dd><dt id="X6-TBLKKS:20" class="thebibliography">
+[2]  </dt><dd 
+id="bib-15" class="thebibliography">
+    <!--l. 130--><p class="noindent" >Stephen Tridgell et al. &#8220;Real-time Automatic Modulation Classification
+    using FSoC&#8221;. In: <span 
+class="cmti-10x-x-109">Proc. Reconfigurable Architectures Workshop (RAW)</span>.
+    2020, to appear. <span 
+class="cmcsc-10x-x-109"><span 
+class="small-caps">u</span><span 
+class="small-caps">r</span><span 
+class="small-caps">l</span></span>: <a 
+href="amc_raw20.pdf" class="url" ><span 
+class="cmtt-10x-x-109">amc_raw20.pdf</span></a>.</dd></dl>
+                                                                     
+
+                                                                     
+<!--l. 133--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
+ id="x1-90002.3"></a>Random Number Generators</h4>
+<!--l. 134--><p class="noindent" >We proposed compact true and pseudo random number generators which can be
+efficiently implemented on FPGAs&#x00A0;[<a 
+href="overview.html#X7-TLL:03" >2</a>]. Seminal work on Gaussian number
+generators on FPGAs were also reviewed and state of the art implementations
+based on different techniques proposed&#x00A0;[<a 
+href="overview.html#X7-TLLV:07" >1</a>].
+<!--l. 140--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X7-TLLV:07" class="thebibliography">
+[1]  </dt><dd 
+id="bib-16" class="thebibliography">
+    <!--l. 140--><p class="noindent" ><a id="page.8"></a><a 
+href="overview.html" id="X7-" ></a>David                B.                Thomas                et                al.
     &#8220;Gaussian random number generators&#8221;. In: <span 
 class="cmti-10x-x-109">ACM Computing Surveys</span>
     39.4 (2007), 11:1&#8211;11:38. <span 
@@ -529,10 +590,10 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="grng_acmcs07.pdf" class="url" ><span 
 class="cmtt-10x-x-109">grng_acmcs07.pdf</span></a>.
-    </dd><dt id="X6-TLL:03" class="thebibliography">
+    </dd><dt id="X7-TLL:03" class="thebibliography">
 [2]  </dt><dd 
-id="bib-15" class="thebibliography">
-    <!--l. 127--><p class="noindent" >K.H. Tsoi, K.H. Leung, and P.H.W. Leong. &#8220;Compact FPGA-based
+id="bib-17" class="thebibliography">
+    <!--l. 140--><p class="noindent" >K.H. Tsoi, K.H. Leung, and P.H.W. Leong. &#8220;Compact FPGA-based
     True  and  Pseudo  Random  Number  Generators&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc.  IEEE</span>
     <span 
@@ -545,27 +606,24 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="tprng_fccm03.pdf" class="url" ><span 
 class="cmtt-10x-x-109">tprng_fccm03.pdf</span></a>.</dd></dl>
-<!--l. 130--><p class="noindent" >
-<h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
- id="x1-90002.3"></a>System Implementation (Board and VLSI Level)</h4>
-                                                                     
-
-                                                                     
-<!--l. 131--><p class="noindent" >We recognised that FPGA to processor transfers via the PCI-bus introduced
+<!--l. 143--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
+ id="x1-100002.4"></a>System Implementation (Board and VLSI Level)</h4>
+<!--l. 144--><p class="noindent" >We recognised that FPGA to processor transfers via the PCI-bus introduced
 substantial latency to many applications, and addressed it by proposing
 Pilchard, an FPGA card which plugged directly into a memory slot of a
 high-performance processor&#x00A0;[<a 
-href="overview.html#X7-LLCTKWL:01" >2</a>]. We developed the highest performance
+href="overview.html#X8-LLCTKWL:01" >2</a>]. We developed the highest performance
 structured ASIC with a 26/5x improvement in area/delay compared to an
 FPGA, which is customised using a minimum of 3 masks, i.e. two metals and one
 via&#x00A0;[<a 
-href="overview.html#X7-HACYCLP:13" >1</a>].
-<!--l. 140--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X7-HACYCLP:13" class="thebibliography">
+href="overview.html#X8-HACYCLP:13" >1</a>].
+<!--l. 153--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X8-HACYCLP:13" class="thebibliography">
 [1]  </dt><dd 
-id="bib-16" class="thebibliography">
-    <!--l. 140--><p class="noindent" ><a id="page.8"></a><a 
-href="overview.html" id="X7-" ></a>Man-Ho Ho et al. &#8220;Architecture and Design Flow for a Highly Efficient
+id="bib-18" class="thebibliography">
+    <!--l. 153--><p class="noindent" ><a 
+href="overview.html" id="X8-" ></a>Man-Ho Ho et al. &#8220;Architecture and Design Flow for a Highly Efficient
     Structured  ASIC&#8221;.  In:  <span 
 class="cmti-10x-x-109">IEEE  Transactions  on  VLSI  Systems  </span>21.3
     (2013), pp. 424&#8211;433. <span 
@@ -575,10 +633,10 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="sasic_tvlsi12.pdf" class="url" ><span 
 class="cmtt-10x-x-109">sasic_tvlsi12.pdf</span></a>.
-    </dd><dt id="X7-LLCTKWL:01" class="thebibliography">
+    </dd><dt id="X8-LLCTKWL:01" class="thebibliography">
 [2]  </dt><dd 
-id="bib-17" class="thebibliography">
-    <!--l. 140--><p class="noindent" >P.H.W.  Leong  et  al.  &#8220;Pilchard  -  A  Reconfigurable  Computing
+id="bib-19" class="thebibliography">
+    <!--l. 153--><p class="noindent" >P.H.W.  Leong  et  al.  &#8220;Pilchard  -  A  Reconfigurable  Computing
     Platform with Memory Slot Interface&#8221;. In: <span 
 class="cmti-10x-x-109">Proc. IEEE Symposium on</span>
     <span 
@@ -591,21 +649,24 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="pilchard_fccm01.pdf" class="url" ><span 
 class="cmtt-10x-x-109">pilchard_fccm01.pdf</span></a>.</dd></dl>
-<!--l. 143--><p class="noindent" >
-<h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
- id="x1-100002.4"></a>Financial Engineering</h4>
-<!--l. 144--><p class="noindent" >We were the first to demonstrate acceleration of Monte Carlo (MC) techniques
-for the pricing of complex derivatives using FPGAs&#x00A0;[<a 
-href="overview.html#X8-ZLHTCLCL:05" >1</a>]. Our pipelined MC core
+                                                                     
+
+                                                                     
+<!--l. 156--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
+ id="x1-110002.5"></a>Financial Engineering</h4>
+<!--l. 157--><p class="noindent" >We were the first to demonstrate acceleration of Monte Carlo (MC) techniques
+for the pricing of complex derivatives using FPGAs&#x00A0;[<a id="page.9"></a><a 
+href="overview.html#X9-ZLHTCLCL:05" >1</a>]. Our pipelined MC core
 implemented the Brace, Gatarek and Musiela (BGM) interest rate model
 and was 25 times faster than a software implementation on a desktop
 processor.
-<!--l. 150--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X8-ZLHTCLCL:05" class="thebibliography">
+<!--l. 163--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X9-ZLHTCLCL:05" class="thebibliography">
 [1]  </dt><dd 
-id="bib-18" class="thebibliography">
-    <!--l. 150--><p class="noindent" ><a 
-href="overview.html" id="X8-" ></a>G. L. Zhang et al. &#8220;Reconfigurable Acceleration for Monte Carlo based
+id="bib-20" class="thebibliography">
+    <!--l. 163--><p class="noindent" ><a 
+href="overview.html" id="X9-" ></a>G. L. Zhang et al. &#8220;Reconfigurable Acceleration for Monte Carlo based
     Financial  Simulation&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc.  International  Conference  on  Field</span>
     <span 
@@ -617,27 +678,24 @@ class="small-caps">l</span></span>:
     <a 
 href="bgm_fpt05.pdf" class="url" ><span 
 class="cmtt-10x-x-109">bgm_fpt05.pdf</span></a>.</dd></dl>
-<!--l. 153--><p class="noindent" >
-<h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
- id="x1-110002.5"></a>Cryptography</h4>
-                                                                     
-
-                                                                     
-<!--l. 154--><p class="noindent" >We reported the most efficient FPGA implementations of an elliptic curve
+<!--l. 166--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">2.6   </span> <a 
+ id="x1-120002.6"></a>Cryptography</h4>
+<!--l. 167--><p class="noindent" >We reported the most efficient FPGA implementations of an elliptic curve
 processor&#x00A0;[<a 
-href="overview.html#X9-LL:02" >1</a>], the IDEA algorithm&#x00A0;[<span 
+href="overview.html#X10-LL:02" >1</a>], the IDEA algorithm&#x00A0;[<span 
 class="cmbx-10x-x-109">LCTL:00</span>], Montgomery multiplication&#x00A0;[<a 
-href="overview.html#X9-TCL:02" >2</a>]
+href="overview.html#X10-TCL:02" >2</a>]
 and RC4&#x00A0;[<a 
-href="overview.html#X9-TLL:02" >3</a>]. We also novel techniques to implement physically uncloneable
+href="overview.html#X10-TLL:02" >3</a>]. We also novel techniques to implement physically uncloneable
 functions (PUFs)&#x00A0;[<a 
-href="overview.html#X9-YLX:12" >4</a>].
-<!--l. 160--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X9-LL:02" class="thebibliography">
+href="overview.html#X10-YLX:12" >4</a>].
+<!--l. 173--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X10-LL:02" class="thebibliography">
 [1]  </dt><dd 
-id="bib-19" class="thebibliography">
-    <!--l. 160--><p class="noindent" ><a id="page.9"></a><a 
-href="overview.html" id="X9-" ></a>P.H.W. Leong and K.H. Leung. &#8220;A Microcoded Elliptic Curve Processor
+id="bib-21" class="thebibliography">
+    <!--l. 173--><p class="noindent" ><a 
+href="overview.html" id="X10-" ></a>P.H.W. Leong and K.H. Leung. &#8220;A Microcoded Elliptic Curve Processor
     using FPGA Technology&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE Transactions on VLSI Systems</span>
     10.5 (2002), pp. 550&#8211;559. <span 
@@ -647,10 +705,10 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="ecc_tvlsi02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">ecc_tvlsi02.pdf</span></a>.
-    </dd><dt id="X9-TCL:02" class="thebibliography">
+    </dd><dt id="X10-TCL:02" class="thebibliography">
 [2]  </dt><dd 
-id="bib-20" class="thebibliography">
-    <!--l. 160--><p class="noindent" >K.H.  Tsoi,  O.Y.H.  Cheung,  and  P.H.W.  Leong.  &#8220;A  Variable-Radix
+id="bib-22" class="thebibliography">
+    <!--l. 173--><p class="noindent" >K.H.  Tsoi,  O.Y.H.  Cheung,  and  P.H.W.  Leong.  &#8220;A  Variable-Radix
     Systolic  Montgomery  Multiplier&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc.  IEEE  Symposium  on</span>
     <span 
@@ -662,10 +720,10 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="mm_fccm02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">mm_fccm02.pdf</span></a>.
-    </dd><dt id="X9-TLL:02" class="thebibliography">
+    </dd><dt id="X10-TLL:02" class="thebibliography">
 [3]  </dt><dd 
-id="bib-21" class="thebibliography">
-    <!--l. 160--><p class="noindent" >K.H. Tsoi, K.H. Lee, and P.H.W. Leong. &#8220;A Massively Parallel RC4 Key
+id="bib-23" class="thebibliography">
+    <!--l. 173--><p class="noindent" >K.H. Tsoi, K.H. Lee, and P.H.W. Leong. &#8220;A Massively Parallel RC4 Key
     Search  Engine&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc. IEEE Symposium on Field-Programmable</span>
     <span 
@@ -677,10 +735,13 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="rc4_fccm02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">rc4_fccm02.pdf</span></a>.
-    </dd><dt id="X9-YLX:12" class="thebibliography">
+                                                                     
+
+                                                                     
+    </dd><dt id="X10-YLX:12" class="thebibliography">
 [4]  </dt><dd 
-id="bib-22" class="thebibliography">
-    <!--l. 160--><p class="noindent" >Haile  Yu,  Philip  H.W.  Leong,  and  Qiang  Xu.  &#8220;An  FPGA  Chip
+id="bib-24" class="thebibliography">
+    <!--l. 173--><p class="noindent" >Haile  Yu,  Philip  H.W.  Leong,  and  Qiang  Xu.  &#8220;An  FPGA  Chip
     Identification Generator Using Configurable Ring Oscillator&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE</span>
     <span 
@@ -692,28 +753,25 @@ class="small-caps">l</span></span>:
     <a 
 href="id_tvlsi12.pdf" class="url" ><span 
 class="cmtt-10x-x-109">id_tvlsi12.pdf</span></a>.</dd></dl>
-<!--l. 163--><p class="noindent" >
-<h4 class="subsectionHead"><span class="titlemark">2.6   </span> <a 
- id="x1-120002.6"></a>Quantum Photonics</h4>
-<!--l. 164--><p class="noindent" >We demonstrated the multiplexing of photons from four temporal modes solely
+<!--l. 176--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">2.7   </span> <a 
+ id="x1-130002.7"></a>Quantum Photonics</h4>
+<!--l. 177--><p class="noindent" >We demonstrated the multiplexing of photons from four temporal modes solely
 using fiber-integrated optics and off-the-shelf FPGAs, achieving a 100%
 enhancement to the single photon output probability without introducing
-additional multi-photon noise&#x00A0;[<a 
-href="overview.html#X10-XZLCMHSCLE:16" >1</a>]. Time-bin entangled photons allow robust
+additional multi-photon noise&#x00A0;[<a id="page.10"></a><a 
+href="overview.html#X11-XZLCMHSCLE:16" >1</a>]. Time-bin entangled photons allow robust
 entanglement distribution over quantum networks. We also demonstrated
 time-bin entangled photon generation, noise suppression, wavelength division,
 and entanglement analysis on a single photonic chip utilizing low-loss
 double-stripe silicon nitride waveguide structures&#x00A0;[<a 
-href="overview.html#X10-Zhang:18b" >2</a>].
-<!--l. 174--><p class="noindent" >
-                                                                     
-
-                                                                     
-    <dl class="thebibliography"><dt id="X10-XZLCMHSCLE:16" class="thebibliography">
+href="overview.html#X11-Zhang:18b" >2</a>].
+<!--l. 187--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X11-XZLCMHSCLE:16" class="thebibliography">
 [1]  </dt><dd 
-id="bib-23" class="thebibliography">
-    <!--l. 174--><p class="noindent" ><a id="page.10"></a><a 
-href="overview.html" id="X10-" ></a>C.  Xiong  et  al.  &#8220;Active  temporal  multiplexing  of  indistinguishable
+id="bib-25" class="thebibliography">
+    <!--l. 187--><p class="noindent" ><a 
+href="overview.html" id="X11-" ></a>C.  Xiong  et  al.  &#8220;Active  temporal  multiplexing  of  indistinguishable
     heralded single photons&#8221;. In: <span 
 class="cmti-10x-x-109">Nature Communications </span>7.10853 (2016).
     <span 
@@ -728,10 +786,10 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="atm_ncomms16.pdf" class="url" ><span 
 class="cmtt-10x-x-109">atm_ncomms16.pdf</span></a>.
-    </dd><dt id="X10-Zhang:18b" class="thebibliography">
+    </dd><dt id="X11-Zhang:18b" class="thebibliography">
 [2]  </dt><dd 
-id="bib-24" class="thebibliography">
-    <!--l. 174--><p class="noindent" >Xiang Zhang et al. &#8220;Integrated silicon nitride time-bin entanglement
+id="bib-26" class="thebibliography">
+    <!--l. 187--><p class="noindent" >Xiang Zhang et al. &#8220;Integrated silicon nitride time-bin entanglement
     circuits&#8221;.                      In:                      <span 
 class="cmti-10x-x-109">Opt.                   Lett.</span>
     43.15 (Aug. 2018), pp. 3469&#8211;3472. <span 
@@ -747,29 +805,32 @@ class="small-caps">l</span></span>:
     <a 
 href="http://ol.osa.org/abstract.cfm?URI=ol-43-15-3469" class="url" ><span 
 class="cmtt-10x-x-109">http://ol.osa.org/abstract.cfm?URI=ol-43-15-3469</span></a>.</dd></dl>
-<!--l. 176--><p class="noindent" >
+<!--l. 189--><p class="noindent" >
 <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
- id="x1-130003"></a>Biomedical Engineering</h3>
-<!--l. 178--><p class="noindent" >
+ id="x1-140003"></a>Biomedical Engineering</h3>
+<!--l. 191--><p class="noindent" >
 <h4 class="subsectionHead"><span class="titlemark">3.1   </span> <a 
- id="x1-140003.1"></a>Arrhythmia Classification</h4>
-<!--l. 180--><p class="noindent" >We showed that the morphology of intracardiac electrocardiogram signals can be
+ id="x1-150003.1"></a>Arrhythmia Classification</h4>
+<!--l. 193--><p class="noindent" >We showed that the morphology of intracardiac electrocardiogram signals can be
 used to improve classification accuracy in implantable cardiac defibrillators
 (ICD)&#x00A0;[<a 
-href="overview.html#X11-LJ:92" >2</a>], and that it could be implemented in low-power analogue VLSI&#x00A0;[<a 
-href="overview.html#X11-L:92" >4</a>, <a 
-href="overview.html#X11-LJ:95" >1</a>].
+href="overview.html#X12-LJ:92" >2</a>], and that it could be implemented in low-power analogue VLSI&#x00A0;[<a 
+href="overview.html#X12-L:92" >4</a>, <a 
+href="overview.html#X12-LJ:95" >1</a>].
+                                                                     
+
+                                                                     
 This led to a patent&#x00A0;[<a 
-href="overview.html#X11-LJ:94" >3</a>] that has been cited by all of the major ICD
+href="overview.html#X12-LJ:94" >3</a>] that has been cited by all of the major ICD
 manufacturers such as Medtronic, Cardiac Pacemakers and Siemens, St.
 Jude Medical, and Pacesetter, and is being used in their commercial
 devices.
-<!--l. 189--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X11-LJ:95" class="thebibliography">
+<!--l. 202--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X12-LJ:95" class="thebibliography">
 [1]  </dt><dd 
-id="bib-25" class="thebibliography">
-    <!--l. 189--><p class="noindent" ><a 
-href="overview.html" id="X11-" ></a>P. H. W. Leong and M.A. Jabri. &#8220;A Low Power VLSI Arrhythmia
+id="bib-27" class="thebibliography">
+    <!--l. 202--><p class="noindent" ><a id="page.11"></a><a 
+href="overview.html" id="X12-" ></a>P. H. W. Leong and M.A. Jabri. &#8220;A Low Power VLSI Arrhythmia
     Classifier&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE Transactions on Neural Networks </span>6.6 (Nov. 1995),
     pp. 1435&#8211;1445. <span 
@@ -779,29 +840,26 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="matic_tnn95.pdf" class="url" ><span 
 class="cmtt-10x-x-109">matic_tnn95.pdf</span></a>.
-    </dd><dt id="X11-LJ:92" class="thebibliography">
+    </dd><dt id="X12-LJ:92" class="thebibliography">
 [2]  </dt><dd 
-id="bib-26" class="thebibliography">
-    <!--l. 189--><p class="noindent" >P.H.W. Leong and M. Jabri. &#8220;MATIC - an intracardiac tachycardia
+id="bib-28" class="thebibliography">
+    <!--l. 202--><p class="noindent" >P.H.W. Leong and M. Jabri. &#8220;MATIC - an intracardiac tachycardia
     classification   system&#8221;.   In:   <span 
 class="cmti-10x-x-109">Pacing  and  Clinical  Electrophysiology</span>
     <span 
 class="cmti-10x-x-109">(PACE) </span>15 (Sept. 1992), pp. 1317&#8211;1331.
-    </dd><dt id="X11-LJ:94" class="thebibliography">
+    </dd><dt id="X12-LJ:94" class="thebibliography">
 [3]  </dt><dd 
-id="bib-27" class="thebibliography">
-    <!--l. 189--><p class="noindent" >P.H.W. Leong and M.A. Jabri. <span 
+id="bib-29" class="thebibliography">
+    <!--l. 202--><p class="noindent" >P.H.W. Leong and M.A. Jabri. <span 
 class="cmti-10x-x-109">A method and system for automatically</span>
     <span 
 class="cmti-10x-x-109">classifying intracardiac electrograms</span>. US Patent 5,280,792. University
     of Sydney. Jan. 1994.
-                                                                     
-
-                                                                     
-    </dd><dt id="X11-L:92" class="thebibliography">
+    </dd><dt id="X12-L:92" class="thebibliography">
 [4]  </dt><dd 
-id="bib-28" class="thebibliography">
-    <!--l. 189--><p class="noindent" >Philip Leong. &#8220;Arrhythmia classification using low power VLSI&#8221;. PhD
+id="bib-30" class="thebibliography">
+    <!--l. 202--><p class="noindent" >Philip Leong. &#8220;Arrhythmia classification using low power VLSI&#8221;. PhD
     thesis. University of Sydney, 1992. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
@@ -809,23 +867,23 @@ class="small-caps">r</span><span
 class="small-caps">l</span></span>: <a 
 href="phdthesis.pdf" class="url" ><span 
 class="cmtt-10x-x-109">phdthesis.pdf</span></a>.</dd></dl>
-<!--l. 192--><p class="noindent" >
+<!--l. 205--><p class="noindent" >
 <h4 class="subsectionHead"><span class="titlemark">3.2   </span> <a 
- id="x1-150003.2"></a>Respiratory Artefact Removal</h4>
-<!--l. 193--><p class="noindent" >We have developed feature selection techniques for time series problems, and
+ id="x1-160003.2"></a>Respiratory Artefact Removal</h4>
+<!--l. 206--><p class="noindent" >We have developed feature selection techniques for time series problems, and
 applied them to a number of different applications including respiratory artefact
-removal&#x00A0;[<a id="page.11"></a><a 
-href="overview.html#X12-PTRML:16" >2</a>, <a 
-href="overview.html#X12-PLRGJKT:17" >1</a>]. A parameterised generator is used to produce a large set of
+removal&#x00A0;[<a 
+href="overview.html#X13-PTRML:16" >2</a>, <a 
+href="overview.html#X13-PLRGJKT:17" >1</a>]. A parameterised generator is used to produce a large set of
 candidate features, and a number of complementary metrics used to select a
 subset. This technique was found to produce significantly improved results in the
 abovementioned application domains.
-<!--l. 201--><p class="noindent" >
-    <dl class="thebibliography"><dt id="X12-PLRGJKT:17" class="thebibliography">
+<!--l. 214--><p class="noindent" >
+    <dl class="thebibliography"><dt id="X13-PLRGJKT:17" class="thebibliography">
 [1]  </dt><dd 
-id="bib-29" class="thebibliography">
-    <!--l. 201--><p class="noindent" ><a 
-href="overview.html" id="X12-" ></a>Thuy  T.  Pham  et  al.  &#8220;Automated  Quality  Control  of  Forced
+id="bib-31" class="thebibliography">
+    <!--l. 214--><p class="noindent" ><a 
+href="overview.html" id="X13-" ></a>Thuy  T.  Pham  et  al.  &#8220;Automated  Quality  Control  of  Forced
     Oscillation   Measurements:   Respiratory   Artifact   Detection   with
     Advanced Feature Extraction&#8221;. In: <span 
 class="cmti-10x-x-109">Journal of Applied Physiology </span>123 (4
@@ -842,10 +900,13 @@ class="small-caps">l</span></span>:
     <a 
 href="fot_jappl17.pdf" class="url" ><span 
 class="cmtt-10x-x-109">fot_jappl17.pdf</span></a>.
-    </dd><dt id="X12-PTRML:16" class="thebibliography">
+                                                                     
+
+                                                                     
+    </dd><dt id="X13-PTRML:16" class="thebibliography">
 [2]  </dt><dd 
-id="bib-30" class="thebibliography">
-    <!--l. 201--><p class="noindent" >Thuy  T.  Pham  et  al.  &#8220;Respiratory  Artefact  Removal  in  Forced
+id="bib-32" class="thebibliography">
+    <!--l. 214--><p class="noindent" >Thuy  T.  Pham  et  al.  &#8220;Respiratory  Artefact  Removal  in  Forced
     Oscillation   Measurements:   A   Machine   Learning   Approach&#8221;.   In:
     <span 
 class="cmti-10x-x-109">IEEE  Transactions  on  Biomedical  Engineering  </span>64.8  (Aug.  2017),
