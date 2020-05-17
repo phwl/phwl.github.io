@@ -9,6 +9,7 @@ categories:
 tags:
 - outdoors
 - hobbies
+- stoves
 header:
   teaser: /assets/images/2020/05/stove14.jpeg
 ---

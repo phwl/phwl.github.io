@@ -6,7 +6,7 @@ title: Honda HRU19D Lawnmower Full Service (Carburettor, Oil, Spark Plugs, Blade
 classes: wide
 toc: true
 categories:
-- home
+- diy
 tags:
 - repair
 header:

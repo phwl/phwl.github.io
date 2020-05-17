@@ -8,6 +8,7 @@ categories:
 - woodwork
 tags:
 - hobbies
+- stoves
 header:
   teaser: /assets/images/2019/11/stove3.jpeg
 ---

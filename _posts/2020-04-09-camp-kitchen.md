@@ -10,6 +10,7 @@ categories:
 tags:
 - outdoors
 - hobbies
+- stoves
 header:
   teaser: /assets/images/2020/04/campkitchen18.jpeg
 ---
