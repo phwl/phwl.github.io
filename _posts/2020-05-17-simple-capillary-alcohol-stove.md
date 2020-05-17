@@ -66,7 +66,12 @@ light. Flames should come out of the jets after about 15 seconds.
 
 {% include figure image_path="/assets/images/2020/05/stove15.jpeg" caption="" %}
 
-Here is an earlier one I made with bigger jets.
+Extinguish using an old tuna can.
+
+{% include figure image_path="/assets/images/2020/05/stove16.jpeg" caption="" %}
+
+Here is an earlier one I made with bigger jets. The tuna can makes a good base
+but you can't use it to extinguish in that case.
 
 {% include figure image_path="/assets/images/2020/05/stove14.jpeg" caption="" %}
 
