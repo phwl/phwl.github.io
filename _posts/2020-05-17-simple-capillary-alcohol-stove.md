@@ -60,7 +60,8 @@ shim saved from the waste made the job easier.
 
 {% include figure image_path="/assets/images/2020/05/stove12.jpeg" caption="" %}
 
-Then put a little methylated spirits into tbe bottom of the stove and
+Then put a little methylated spirits into tbe bottom of the stove (about
+a quarter full will boil 500 ml of water) and
 light. Flames should come out of the jets after about 15 seconds.
 
 {% include figure image_path="/assets/images/2020/05/stove13.jpeg" caption="" %}
