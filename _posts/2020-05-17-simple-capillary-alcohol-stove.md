@@ -17,7 +17,8 @@ It only takes about 10 min to make a stove that burns methylated spirits from a 
 
 <!-- more -->
 
-There are several variations but I wanted to use a standard 375 ml can and 
+There are several variations but I wanted to use a standard 375 ml can, the
+stove be operable without an additional stand and 
 for it to be as simple as possible. The stove below is based on a
 video linked at the end of this post.
 
