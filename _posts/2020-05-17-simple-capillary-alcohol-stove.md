@@ -21,10 +21,11 @@ It only takes about 10 min to make a stove that burns methylated spirits from a 
 
 # Instructions
 
-There are several variations but I wanted to use a standard 375 ml can, the
-stove be operable without an additional stand and 
-for it to be as simple as possible. The stove below is based on a
-video linked at the end of this post.
+There are several variations but I wanted to use a standard 375 ml
+can, the stove be operable without an additional stand and for it
+to be as simple as possible. The stove below is based on a video
+linked at the end of this post. While I used a number of tools,
+you can get by with just a can and multitool with knife, scissors and awl.
 
 First score the top of the can as shown, keep doing it until you can break
 through and neatly cut off the top of the can. Smooth the sharp edges
