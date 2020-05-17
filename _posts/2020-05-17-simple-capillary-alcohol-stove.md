@@ -4,6 +4,7 @@ comments: true
 date: 2020-05-17 16:02:15 AEST
 title: Simple capillary alcohol stove from 375 ml coke can
 classes: wide
+toc: true
 categories:
 - diy
 tags:
@@ -17,6 +18,8 @@ header:
 It only takes about 10 min to make a stove that burns methylated spirits from a coke can.
 
 <!-- more -->
+
+# Instructions
 
 There are several variations but I wanted to use a standard 375 ml can, the
 stove be operable without an additional stand and 
@@ -78,6 +81,7 @@ but you can't use it to extinguish in that case.
 
 {% include figure image_path="/assets/images/2020/05/stove14.jpeg" caption="" %}
 
+# Link
 This youtube video shows the process.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R5kdvVsnJhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
