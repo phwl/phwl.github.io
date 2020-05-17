@@ -10,7 +10,7 @@ tags:
 - outdoors
 - hobbies
 header:
-  teaser: /assets/images/2020/05/stove0.jpeg
+  teaser: /assets/images/2020/05/stove14.jpeg
 ---
 
 It only takes about 10 min to make a stove that burns methylated spirits from a coke can.
@@ -61,11 +61,14 @@ shim saved from the waste made the job easier.
 
 Then put a little methylated spirits into tbe bottom of the stove and
 light. Flames should come out of the jets after about 15 seconds.
+
 {% include figure image_path="/assets/images/2020/05/stove13.jpeg" caption="" %}
 
-Here's a second one with larger jets.
+{% include figure image_path="/assets/images/2020/05/stove15.jpeg" caption="" %}
 
-{% include figure image_path="/assets/images/2020/05/stove0.jpeg" caption="" %}
+Here is an earlier one I made with bigger jets.
+
+{% include figure image_path="/assets/images/2020/05/stove14.jpeg" caption="" %}
 
 This youtube video shows the process.
 
