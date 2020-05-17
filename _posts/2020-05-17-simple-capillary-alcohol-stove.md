@@ -27,7 +27,8 @@ for it to be as simple as possible. The stove below is based on a
 video linked at the end of this post.
 
 First score the top of the can as shown, keep doing it until you can break
-through and neatly cut off the top of the can.
+through and neatly cut off the top of the can. Smooth the sharp edges
+with a file.
 
 {% include figure image_path="/assets/images/2020/05/stove1.jpeg" caption="" %}
 
