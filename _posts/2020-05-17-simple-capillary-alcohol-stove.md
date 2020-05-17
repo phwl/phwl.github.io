@@ -66,10 +66,12 @@ shim saved from the waste made the job easier.
 
 {% include figure image_path="/assets/images/2020/05/stove12.jpeg" caption="" %}
 
-Then put a little methylated spirits in tbe bottom of the stove (about
+**Don't use anything more volatile than alcohol as it may be dangerous.**
+Put a little methylated spirits in tbe bottom of the stove (about
 a quarter full will boil 500 ml of water) and
 light. Flames should come out of the jets after about 15 seconds.
-**Don't use anything more volatile than alcohol as it may be dangerous.**
+A nice blue flame indicates good combustion which should not leave soot 
+on the pot. Yellow would indicate insufficient oxygen.
 
 {% include figure image_path="/assets/images/2020/05/stove13.jpeg" caption="" %}
 
