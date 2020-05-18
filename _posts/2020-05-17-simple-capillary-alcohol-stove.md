@@ -55,7 +55,7 @@ creates a channel for the gas to flow from the bottom of the can.
 At the top of each fold, make an indentation. This will be the jets of the stove.
 {% include figure image_path="/assets/images/2020/05/stove9.jpeg" caption="" %}
 
-Make a hole near the top so some gas can escape.
+Make an air vent near the top which prevents the fuel from overflowing.
 
 {% include figure image_path="/assets/images/2020/05/stove10.jpeg" caption="" %}
 
