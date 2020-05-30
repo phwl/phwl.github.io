@@ -40,7 +40,7 @@ Wipe dry the duck and rub Sichuan pepper powder and paprika onto the surface
 of the duck. Put in wok rack and put lid on wok.
 {% include figure image_path="/assets/images/2020/05/duck6.jpeg" caption="" %}
 
-We use an outside stove to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium heat. 
+We use an outside stove to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
 Smoke for 30 minutes.
 {% include figure image_path="/assets/images/2020/05/duck7.jpeg" caption="" %}
 
