@@ -944,7 +944,7 @@ var store = [{
         "tags": ["outdoors","hobbies","stoves"],
         "url": "http://localhost:4000/2020/simple-capillary-alcohol-stove/",
         "teaser":"http://localhost:4000/assets/images/2020/05/stove14.jpeg"},{
-        "title": "Spicy smoked duck",
+        "title": "Chinese smoked duck",
         "excerpt":"One of my life ambitions was to cook smoked duck.    Our recipe was based on this.     First clean duck. We were worried it wouldn’t fit in the steaming  wok and cut it in half.                                Make spiced water using 1 cinamon stick, bay leaves, 1/4 cup of salt and 3 star anise in a pot with 500 ml of water. Boil for 5-10 min.                               Put duck in large pot and cover with 1500 ml of water. The add the  spiced water and put pot fridge for 6 hours, making sure the duck is fully submerged. After that, add 600 ml of water and boil for 1 hour. In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay leaves.                                Wipe dry the duck and rub Sichuan pepper powder and paprika onto the surface  of the duck. Put in wok rack and put lid on wok.                               We use an outside stove to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium.  Smoke for 30 minutes.                               Smoked duck!                                                            ","categories": ["diy"],
         "tags": ["cooking"],
         "url": "http://localhost:4000/2020/smoked-duck/",

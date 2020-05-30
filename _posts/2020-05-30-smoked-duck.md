@@ -13,10 +13,10 @@ header:
   teaser: /assets/images/2020/05/duck9.jpeg
 ---
 
-One of my life ambitions was to cook smoked duck.
+One of my ambitions was to learn to cook smoked duck.
 <!-- more -->
 
-Our recipe was based on this.
+Our recipe was based on this one.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/isjysADRUx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
