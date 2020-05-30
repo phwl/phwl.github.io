@@ -16,7 +16,7 @@ header:
 One of my favorite dishes is smoked duck.
 <!-- more -->
 
-Our recipe was based on this one.
+We made it based on this recipe.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/isjysADRUx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -30,18 +30,18 @@ Make spiced water using 1 cinamon stick, bay leaves,
 1/4 cup of salt and 3 star anise in a pot with 500 ml of water. Boil for 5-10 min.
 {% include figure image_path="/assets/images/2020/05/duck4.jpeg" caption="" %}
 
-Put duck in large pot and cover with 1500 ml of water. The add the 
+Put duck in large pot and cover with 1500 ml of cold water. The add the 
 spiced water and put pot fridge for 6 hours, making sure the duck is fully
 submerged. After that, add 600 ml of water and boil for 1 hour.
 In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay leaves.
 
 {% include figure image_path="/assets/images/2020/05/duck5.jpeg" caption="" %}
 
-Wipe dry the duck and rub Sichuan pepper powder and paprika onto the surface 
-of the duck. Put in wok rack and put lid on wok.
+Wipe the duck dry. Rub Sichuan pepper powder and paprika onto the surface 
+of the duck. Put in wok rack and use a lid.
 {% include figure image_path="/assets/images/2020/05/duck6.jpeg" caption="" %}
 
-We use an outside stove to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
+We did the smoking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
 Smoke for 30 minutes.
 {% include figure image_path="/assets/images/2020/05/duck7.jpeg" caption="" %}
 
