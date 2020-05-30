@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-05-30 19:25:29 AEST
-title: Spicy smoked duck
+title: Chinese smoked duck
 classes: wide
 toc: true
 categories:
