@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-05-30 19:25:29 AEST
-title: Chinese smoked duck
+title: Smoked duck
 classes: wide
 toc: true
 categories:
@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2020/05/duck9.jpeg
 ---
 
-One of my ambitions was to make Chinese smoked duck.
+One of my favorite dishes is smoked duck.
 <!-- more -->
 
 Our recipe was based on this one.
