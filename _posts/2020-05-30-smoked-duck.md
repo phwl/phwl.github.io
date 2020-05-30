@@ -20,8 +20,9 @@ Our recipe was based on this one.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/isjysADRUx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-First clean duck. We were worried it wouldn't fit in the steaming 
-wok and cut it in half.
+<br>
+First clean duck. We were worried it wouldn't fit in the 
+wok so we cut it in half.
 
 {% include figure image_path="/assets/images/2020/05/duck1.jpeg" caption="" %}
 
