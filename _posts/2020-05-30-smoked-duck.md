@@ -16,7 +16,7 @@ header:
 One of my life ambitions was to cook smoked duck.
 <!-- more -->
 
-The recipe is based on this one but without the chilies.
+Our recipe was based on this.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/isjysADRUx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
