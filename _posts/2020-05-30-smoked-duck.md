@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2020/05/duck9.jpeg
 ---
 
-One of my ambitions was to learn to cook smoked duck.
+One of my ambitions was to make Chinese smoked duck.
 <!-- more -->
 
 Our recipe was based on this one.
