@@ -30,9 +30,11 @@ Make brine using 1 cinamon stick, bay leaves,
 1/4 cup of salt and 3 star anise in a pot with 500 ml of water. Boil for 5-10 min.
 {% include figure image_path="/assets/images/2020/05/duck4.jpeg" caption="" %}
 
-Put duck in large pot and cover with 1500 ml of cold water. The add the 
-brine and put pot fridge for 6 hours, making sure the duck is fully
-submerged. After that, add 600 ml of water and boil for 1 hour.
+Put duck in large pot and cover with 1500 ml of cold water. Then add the 
+brine, making make sure the duck is fully submerged. 
+Put pot in the fridge. 
+
+After 6 hours, add 600 ml of water and boil for 1 hour.
 In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay leaves.
 
 {% include figure image_path="/assets/images/2020/05/duck5.jpeg" caption="" %}
