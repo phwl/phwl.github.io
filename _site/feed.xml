@@ -1,7 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-30T20:35:34+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Smoked duck</title><link href="http://localhost:4000/2020/smoked-duck/" rel="alternate" type="text/html" title="Smoked duck" /><published>2020-05-30T19:25:29+10:00</published><updated>2020-05-30T19:25:29+10:00</updated><id>http://localhost:4000/2020/smoked-duck</id><content type="html" xml:base="http://localhost:4000/2020/smoked-duck/">&lt;p&gt;One of my favorite dishes is smoked duck.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-31T15:26:34+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;It’s a quarter mile siren (you can hear it from that far away, illegal now because of noise pollution laws). It was part of the burglar alarm system my dad made and why I got interested in electronics. The relay was protected from the
+elements by an upside-down glass jar attached to the lid.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/05/wailingjoe.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/05/wailingjoe.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Cleaning up some old stuff and found this from the 70’s.</summary></entry><entry><title type="html">Smoked duck</title><link href="http://localhost:4000/2020/smoked-duck/" rel="alternate" type="text/html" title="Smoked duck" /><published>2020-05-30T19:25:29+10:00</published><updated>2020-05-30T19:25:29+10:00</updated><id>http://localhost:4000/2020/smoked-duck</id><content type="html" xml:base="http://localhost:4000/2020/smoked-duck/">&lt;p&gt;One of my favorite dishes is smoked duck.
 &lt;!-- more --&gt;&lt;/p&gt;
 
-&lt;p&gt;Our recipe was based on this one.&lt;/p&gt;
+&lt;p&gt;We made it based on this recipe.&lt;/p&gt;
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/isjysADRUx8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
@@ -29,7 +43,7 @@ wok so we cut it in half.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Put duck in large pot and cover with 1500 ml of water. The add the 
+&lt;p&gt;Put duck in large pot and cover with 1500 ml of cold water. The add the 
 spiced water and put pot fridge for 6 hours, making sure the duck is fully
 submerged. After that, add 600 ml of water and boil for 1 hour.
 In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay leaves.&lt;/p&gt;
@@ -43,8 +57,8 @@ In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay le
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Wipe dry the duck and rub Sichuan pepper powder and paprika onto the surface 
-of the duck. Put in wok rack and put lid on wok.&lt;/p&gt;
+&lt;p&gt;Wipe the duck dry. Rub Sichuan pepper powder and paprika onto the surface 
+of the duck. Put in wok rack and use a lid.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/05/duck6.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/05/duck6.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -54,7 +68,7 @@ of the duck. Put in wok rack and put lid on wok.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;We use an outside stove to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
+&lt;p&gt;We did the smoking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
 Smoke for 30 minutes.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/05/duck7.jpeg&quot;&gt;
@@ -568,197 +582,4 @@ By: Tom Longden for Famous Iowans Des Moines Register series on April 20, 2008&l
   &lt;li&gt;Owen Duffy VK2OMD - &lt;a href=&quot;https://owenduffy.net&quot;&gt;https://owenduffy.net&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Peter Parker VK3YE - &lt;a href=&quot;http://vk3ye.com/&quot;&gt;http://vk3ye.com/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Charlie Morris ZL2CTM - &lt;a href=&quot;http://zl2ctm.blogspot.com/&quot;&gt;http://zl2ctm.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is a collection of amateur radio links.</summary></entry><entry><title type="html">Camp Kitchen (chuck box)</title><link href="http://localhost:4000/2020/camp-kitchen/" rel="alternate" type="text/html" title="Camp Kitchen (chuck box)" /><published>2020-04-09T17:48:50+10:00</published><updated>2020-04-09T17:48:50+10:00</updated><id>http://localhost:4000/2020/camp-kitchen</id><content type="html" xml:base="http://localhost:4000/2020/camp-kitchen/">&lt;p&gt;Wanted to make a camp kitchen for a while to use on the boat.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;This is a more utilitarian version of &lt;a href=&quot;https://www.popularwoodworking.com/woodworking-blogs/326395/&quot;&gt;https://www.popularwoodworking.com/woodworking-blogs/326395/&lt;/a&gt;, and less elaborate than &lt;a href=&quot;https://www.rei.com/blog/camp/how-to-build-your-own-camp-kitchen-chuck-box&quot;&gt;https://www.rei.com/blog/camp/how-to-build-your-own-camp-kitchen-chuck-box&lt;/a&gt;.
-I started with a piece of plywood that had been lying in the garage for 
-so long it had a suntan. I first cut the box sides.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen1.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen2.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Then a rough size check.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen3.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen3.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Using a router, I made dados (grooves) to get a better gluing surface
-and to align the box.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen4.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen4.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Glued up the 4 sides.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen5.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen5.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Then clamped.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen6.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen6.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Cut pieces for the top and bottom.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen7.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen7.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen8.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen8.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Glued and nailed together. A bit ugly but it will do.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen9.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen9.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen10.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen10.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Made the handles.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen12.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen12.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen13.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen13.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen14.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen14.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Some light sanding to clean up the plywood.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen11.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen11.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;A few coats of marine varnish to protect.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen15.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen15.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen16.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen16.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Here we have: 2 plates, cup and pot (there is a small gas stove in
-the pot on the left), knife, 2 cutlery sets, another pot, 2 cups, 
-fuel and main stove.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen17.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen17.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;That’s more than I would usually take and it all fit easily in the box.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen18.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen18.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/campkitchen19.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/campkitchen19.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;I’m looking forward to using it outdoors.&lt;/p&gt;</content><author><name>phwl</name></author><category term="outdoors" /><category term="hobbies" /><category term="stoves" /><summary type="html">Wanted to make a camp kitchen for a while to use on the boat.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is a collection of amateur radio links.</summary></entry></feed>
