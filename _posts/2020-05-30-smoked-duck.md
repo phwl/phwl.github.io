@@ -40,10 +40,11 @@ In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay le
 {% include figure image_path="/assets/images/2020/05/duck5.jpeg" caption="" %}
 
 Wipe the duck dry. Rub Sichuan pepper powder and paprika onto the surface 
-of the duck. Put in wok rack and use a lid.
+of the duck. Put on top of a stand over the steaming ingredients and use a lid
+on the wok.
 {% include figure image_path="/assets/images/2020/05/duck6.jpeg" caption="" %}
 
-We did the smoking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
+We did the rest of the cooking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
 Smoke for 30 minutes.
 {% include figure image_path="/assets/images/2020/05/duck7.jpeg" caption="" %}
 
