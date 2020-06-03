@@ -765,6 +765,14 @@
 <lastmod>2020-05-31T15:23:18+10:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/codan-6924/</loc>
+<lastmod>2020-06-01T19:59:48+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2020/rtamc/</loc>
+<lastmod>2020-06-01T19:59:48+10:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -868,6 +876,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page24/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page25/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>

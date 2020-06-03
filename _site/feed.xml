@@ -1,8 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-31T16:00:06+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-03T10:18:50+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a 7 minute video on our recent work on FPGA-based machine learning
+for real-time automatic modulation classification (AMC).&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
-&lt;p&gt;It’s a quarter mile siren (you can hear it from that far away, illegal now because of noise pollution laws). It was part of the burglar alarm system my dad made and why I got interested in electronics. The relay was protected from the
+&lt;ul&gt;
+  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;http://phwl.org/assets/papers/amc_raw20.pdf&quot;&gt;http://phwl.org/assets/papers/amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a 7 minute video on our recent work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-2.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-2.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;It’s a quarter mile siren (you can hear it from that far away). It was part of the burglar alarm system my dad made and why I got interested in electronics. The relay was protected from the
 elements by an upside-down glass jar attached to the lid.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -32,7 +61,7 @@ wok so we cut it in half.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Make spiced water using 1 cinamon stick, bay leaves,
+&lt;p&gt;Make brine using 1 cinamon stick, bay leaves,
 1/4 cup of salt and 3 star anise in a pot with 500 ml of water. Boil for 5-10 min.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/05/duck4.jpeg&quot;&gt;
@@ -43,9 +72,11 @@ wok so we cut it in half.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Put duck in large pot and cover with 1500 ml of cold water. The add the 
-spiced water and put pot fridge for 6 hours, making sure the duck is fully
-submerged. After that, add 600 ml of water and boil for 1 hour.
+&lt;p&gt;Put duck in large pot and cover with 1500 ml of cold water. Then add the 
+brine, making make sure the duck is fully submerged. 
+Put pot in the fridge.&lt;/p&gt;
+
+&lt;p&gt;After 6 hours, add 600 ml of water and boil for 1 hour.
 In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay leaves.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -58,7 +89,8 @@ In a wok lined with foil, put 1/2 cup of rice, 4 tablespoons of tea and 6 bay le
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Wipe the duck dry. Rub Sichuan pepper powder and paprika onto the surface 
-of the duck. Put in wok rack and use a lid.&lt;/p&gt;
+of the duck. Put on top of a stand over the steaming ingredients and use a lid
+on the wok.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/05/duck6.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/05/duck6.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -68,7 +100,7 @@ of the duck. Put in wok rack and use a lid.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;We did the smoking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
+&lt;p&gt;We did the rest of the cooking outside to avoid smoking our entire house. Start with a high heat and when it starts smoking, go to medium. 
 Smoke for 30 minutes.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/05/duck7.jpeg&quot;&gt;
@@ -528,58 +560,4 @@ Last was the Celco brand which are terrible.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/04/stapler4.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/04/stapler4.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">A stapler is one of the more important pieces of academic equipment.</summary></entry><entry><title type="html">Herber Hoover on Engineering</title><link href="http://localhost:4000/2020/on-engineering/" rel="alternate" type="text/html" title="Herber Hoover on Engineering" /><published>2020-04-17T16:32:36+10:00</published><updated>2020-04-17T16:32:36+10:00</updated><id>http://localhost:4000/2020/on-engineering</id><content type="html" xml:base="http://localhost:4000/2020/on-engineering/">&lt;h2 id=&quot;on-engineering---herbert-hoover&quot;&gt;On Engineering - Herbert Hoover&lt;/h2&gt;
-
-&lt;p&gt;It is a great profession. There is the fascination of watching a figment of the imagination emerge through the aid of science to a plan on paper. Then it moves to realization in stone or metal or energy. Then it brings jobs and homes to men. Then it elevates the standards of living and adds to the comforts of life. That is the engineer’s high privilege.&lt;/p&gt;
-
-&lt;p&gt;The great liability of the engineer compared to men of other professions is that his works are out in the open where all can see them. His acts, step by step, are in hard substance. He cannot bury his mistakes in the grave like the doctors. He cannot argue them into thin air or blame the judge like the lawyers. He cannot, like the architects, cover his failures with trees and vines. He cannot, like the politicians, screen his shortcomings by blaming his opponents and hope the people will forget. The engineer simply cannot deny he did it. If his works do not work, he is damned…&lt;/p&gt;
-
-&lt;p&gt;On the other hand, unlike the doctor his is not a life among the weak. Unlike the soldier, destruction is not his purpose. Unlike the lawyer, quarrels are not his daily bread. To the engineer falls the job of clothing the bare bones of science with life, comfort, and hope. No doubt as years go by the people forget which engineer did it, even if they ever knew. Or some politician puts his name on it. Or they credit it to some promoter who used other people’s money . . . But the engineer himself looks back at the unending stream of goodness which flows from his successes with satisfactions that few professions may know. And the verdict of his fellow professionals is all the accolade he wants.&lt;/p&gt;
-
-&lt;h2 id=&quot;biography&quot;&gt;Biography&lt;/h2&gt;
-&lt;p&gt;1874 – 1964
-By: Tom Longden for Famous Iowans Des Moines Register series on April 20, 2008&lt;/p&gt;
-
-&lt;p&gt;Before he was president, Herbert Clark Hoover was an extraordinary humanitarian with an international reputation. Before that he was an engineer who built a fortune. Before that he was a simple Iowa farm boy.&lt;/p&gt;
-
-&lt;p&gt;Hoover, the son of a Quaker blacksmith named Jesse and his wife, Hulda, was born at West Branch and orphaned at age 10. He was raised by uncles, first in Iowa and then in Oregon.&lt;/p&gt;
-
-&lt;p&gt;He worked his way through Stanford University, earning a degree in engineering, and by 23 was managing mines in Australia. Then, with his bride Lou, whom he had met at Stanford, he went to work for the Chinese Imperial Bureau of Mines. The Hoovers’ two sons became accustomed to traveling the globe.&lt;/p&gt;
-
-&lt;p&gt;By 1914, Hoover had a chain of offices all over the world and a $5 million fortune amassed by financing mining operations. He turned to public service, organizing an effort to feed starving masses in war-torn Belgium, at great risk to his own life.&lt;/p&gt;
-
-&lt;p&gt;Called “The Great Engineer,” Hoover saw his prestige grow as he became secretary of commerce under Presidents Harding and Coolidge. In 1928, he was elected the 31st president, carrying all but eight states­ a huge Republican victory.&lt;/p&gt;
-
-&lt;p&gt;Hoover took the oath of office in March 1929, when the nation was prospering, but the stock market crashed the following October, and he was blamed as the economy plummeted and unemployment soared. It was a national crisis with no precedent, and Hoover was vilified.&lt;/p&gt;
-
-&lt;p&gt;Defeated in the next election by Franklin D. Roosevelt, Hoover retired quietly to his home in Palo Alto to write. He regained stature as the years went by and he became the nation’s respected elder statesman, counseling leaders of both political parties. Hoover, who was the first president born west of the Mississippi River, and his first lady are buried at West Branch.&lt;/p&gt;</content><author><name>phwl</name></author><summary type="html">On Engineering - Herbert Hoover</summary></entry><entry><title type="html">Amateur Radio Links</title><link href="http://localhost:4000/2020/amateur-radio-links/" rel="alternate" type="text/html" title="Amateur Radio Links" /><published>2020-04-14T15:34:34+10:00</published><updated>2020-04-14T15:34:34+10:00</updated><id>http://localhost:4000/2020/amateur-radio-links</id><content type="html" xml:base="http://localhost:4000/2020/amateur-radio-links/">&lt;p&gt;Here is a collection of amateur radio links.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;antennas&quot;&gt;Antennas&lt;/h2&gt;
-&lt;h3 id=&quot;end-fed-half-wave&quot;&gt;End fed half wave&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;End Fed Half Wave (EFHW) antenna construction with links - &lt;a href=&quot;https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm&quot;&gt;https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm&lt;/a&gt; (added 14/4/20)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;electronics&quot;&gt;Electronics&lt;/h2&gt;
-&lt;h3 id=&quot;calculators&quot;&gt;Calculators&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Filter design, Skin depth, Smith Charts etc - &lt;a href=&quot;https://leleivre.com/rftools.html&quot;&gt;https://leleivre.com/rftools.html&lt;/a&gt; (added 14/4/20)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;class-de-amplifiers&quot;&gt;Class D/E Amplifiers&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Class E amplifier design and construction - &lt;a href=&quot;http://www.classeradio.com/&quot;&gt;http://www.classeradio.com/&lt;/a&gt; (added 14/4/20)&lt;/li&gt;
-  &lt;li&gt;AMfone Class E forum - &lt;a href=&quot;http://amfone.net/Amforum/index.php?board=76.0&quot;&gt;http://amfone.net/Amforum/index.php?board=76.0&lt;/a&gt; (added 14/4/20)&lt;/li&gt;
-  &lt;li&gt;VK3HN’s website (links to the sites above and more) - &lt;a href=&quot;https://vk3hn.wordpress.com/am/&quot;&gt;https://vk3hn.wordpress.com/am/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
-&lt;h3 id=&quot;homebrew-blogs&quot;&gt;Homebrew Blogs&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Peter B Marks VK2TPM marxy’s musing on technology - &lt;a href=&quot;http://blog.marxy.org/&quot;&gt;http://blog.marxy.org/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Owen Duffy VK2OMD - &lt;a href=&quot;https://owenduffy.net&quot;&gt;https://owenduffy.net&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Peter Parker VK3YE - &lt;a href=&quot;http://vk3ye.com/&quot;&gt;http://vk3ye.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Charlie Morris ZL2CTM - &lt;a href=&quot;http://zl2ctm.blogspot.com/&quot;&gt;http://zl2ctm.blogspot.com/&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Here is a collection of amateur radio links.</summary></entry></feed>
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">A stapler is one of the more important pieces of academic equipment.</summary></entry></feed>
