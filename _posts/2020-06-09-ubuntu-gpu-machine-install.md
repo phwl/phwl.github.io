@@ -29,7 +29,7 @@ and then
 sudo ubuntu-drivers autoinstall
 ```
 
-* edit /etc/hosts to be 
+* Edit /etc/hosts to be 
 
 ```
 127.0.0.1	localhost
@@ -43,28 +43,28 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
 
-* edit /etc/hostname to be
+* Edit /etc/hostname to be
 
 ```
 machinename
 ```
 
- * install packages
+ * Install packages
 
 ```
 sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
 sudo sysemctl start ssh
 ```
 
- * edit /etc/fstab to mount disks
+ * Edit /etc/fstab to mount disks
 
 ```
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 ```
 
- * reboot and you should be able to ssh to the machine (and the display manager should work)
+ * Reboot and you should be able to ssh to the machine (and the display manager should work)
 
- * Here is the configuration
+ * Here are the machine details
 
 ```
 Power Supply : Gigabyte AORUS AP750GM
