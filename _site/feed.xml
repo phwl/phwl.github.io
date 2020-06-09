@@ -1,13 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-03T10:18:50+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a 7 minute video on our recent work on FPGA-based machine learning
-for real-time automatic modulation classification (AMC).&lt;/p&gt;
-
-&lt;!-- more --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-09T13:03:54+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Another Ubuntu GPU machine</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Another Ubuntu GPU machine" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;http://phwl.org/assets/papers/amc_raw20.pdf&quot;&gt;http://phwl.org/assets/papers/amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Configure BIOS to boot on power failure&lt;/li&gt;
+  &lt;li&gt;Install Ubuntu 18.04&lt;/li&gt;
+  &lt;li&gt;Note can’t log in using the display manager so ctrl-alt-F3 to get a tty and install NVidia drivers.  First check default install is ok&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a 7 minute video on our recent work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ubuntu-drivers devices
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and then&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ubuntu-drivers autoinstall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;edit /etc/hosts to be&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;127.0.0.1	localhost
+127.0.1.1	machinename.staff.sydney.edu.au machinename
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;edit /etc/hostname to be&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;machinename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;install packages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
+sudo sysemctl start ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;edit /etc/fstab to mount disks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;reboot and you should be able to ssh to the machine (and the display manager should work)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here is the configuration&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Power Supply : Gigabyte AORUS AP750GM
+Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
+AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
+AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 
+AC16770 Cooler Master MasterLiquid ML360R ARGB AIO Liquid CPU Cooler 
+AC18159 ASUS GeForce RTX 2080 Ti ROG Strix Advanced 11GB Video Card 
+AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8 
+AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5&quot; 7200RPM SATA3 Desktop Hard Drive 
+AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
+AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -27,7 +90,16 @@ for real-time automatic modulation classification (AMC).&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a 7 minute video on our recent work on FPGA-based machine learning
+for real-time automatic modulation classification (AMC).&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;http://phwl.org/assets/papers/amc_raw20.pdf&quot;&gt;http://phwl.org/assets/papers/amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a 7 minute video on our recent work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -486,78 +558,4 @@ A mother (Marsha Hunt) wants her son (William Prince) to grow up to be a pianist
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kFaq9kTlcaY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;jascha-heifetz-in-performance-mozart-prokofiev-debussy-rachmaninov-gershwin-bach&quot;&gt;Jascha Heifetz in Performance (Mozart, Prokofiev, Debussy, Rachmaninov, Gershwin, Bach)&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5lPJCRBqUB8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="hobbies`" /><summary type="html">Links to Jascha Heifetz documentaries, masterclasses and performances.</summary></entry><entry><title type="html">Staple Review</title><link href="http://localhost:4000/2020/staple-review/" rel="alternate" type="text/html" title="Staple Review" /><published>2020-04-18T13:23:34+10:00</published><updated>2020-04-18T13:23:34+10:00</updated><id>http://localhost:4000/2020/staple-review</id><content type="html" xml:base="http://localhost:4000/2020/staple-review/">&lt;p&gt;A stapler is one of the more important pieces of academic equipment.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
-&lt;p&gt;PaperPro made excellent staplers but it appears the company doesn’t exist any more and 
-current versions are badged under
-&lt;a href=&quot;https://www.amazon.com/gp/product/B00149ZVTG&quot;&gt;Bostitch&lt;/a&gt;.  Wired
-had a &lt;a href=&quot;https://www.wired.com/2010/10/paperpro-makes-quite-possibly-the-best-staplers-ever/&quot;&gt;blog
-post&lt;/a&gt;
-on the PaperPro , referencing Office Supply Geek’s
-&lt;a href=&quot;http://officesupplygeek.com/desk-accessories/paper-fasteners/paperpro-staplers-quite-possibly-the-best-staplers-ever/&quot;&gt;review&lt;/a&gt;
-(with a name like that you expect them to take their
-staplers seriously) which says it is one of the best staplers ever.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;https://images-na.ssl-images-amazon.com/images/I/61EuFLiJKrL._AC_SL1000_.jpg&quot;&gt;
-  &lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/61EuFLiJKrL._AC_SL1000_.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The reason they are good is because they employ a spring to drive the 
-staple through the paper. The earliest patent for a spring loaded
-stapler appears to be
-&lt;a href=&quot;https://patents.google.com/patent/US7681771B2&quot;&gt;US7681771B2 Stapler&lt;/a&gt;,
-which is relatively recent (2006).&lt;/p&gt;
-
-&lt;h2 id=&quot;three-brands-of-staples&quot;&gt;Three brands of staples&lt;/h2&gt;
-&lt;p&gt;Having a fine stapler is not enough. My PaperPro
-couldn’t even go through tens of sheets of paper, but
-it’s supposed to do 25. Was it my Celco brand staples? 
-At &lt;a href=&quot;https://www.officeworks.com.au/&quot;&gt;Officeworks&lt;/a&gt;,
-there are a number of choices, but which one? Should I get
-the $2.78 “J. Burrows Size 26/6 Staples 5000 pack”, or the 5x more expensive
-$2.55 “Rapid 26/6 Strong Staples 1000 pack”? 
-Both are made in China as is the Celco.&lt;/p&gt;
-
-&lt;p&gt;Staples are specified as X/Y type, with X being the gauge and
-Y being the length of the leg. The 26/6 size is the most common,
-and this means that the diameter
-is 26 AWG (0.405 mm) and the leg is 6 mm (note that the diameter
-gets bigger as the gauge gets smaller).  I first 
-verified the diameter of the three types of staples.  All were the same.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/stapler2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/stapler2.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;So how well did they work? I took a 50 page (25 sheet) draft manuscript that
-we are working on and tried them out. In the figure below, we have
-the J. Burrows (left), Celco (middle) and Rapid (right).&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/stapler1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/stapler1.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Clearly the middle Celco (the original ones I wasn’t
-happy with) was not up to the task. The Rapid (right) was also slightly buckled while
-the Burrows (left) looked the best.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/stapler3.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/stapler3.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The difference was even more apparent from underneath. The best was
-clearly the Burrows (on the left below).  Rapid (right) managed to fool me by using “Strong” in the product
-name. They are a lot more expensive but no better than the Burrows.
-Last was the Celco brand which are terrible.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/04/stapler4.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/04/stapler4.jpeg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">A stapler is one of the more important pieces of academic equipment.</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5lPJCRBqUB8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="hobbies`" /><summary type="html">Links to Jascha Heifetz documentaries, masterclasses and performances.</summary></entry></feed>

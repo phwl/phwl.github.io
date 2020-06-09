@@ -1,0 +1,80 @@
+---
+author: phwl
+comments: true
+date: 2020-06-09 11:56:56 AEST
+title: Another Ubuntu GPU machine
+classes: wide
+categories:
+- software
+tags:
+- ubuntu
+- linux
+header:
+  teaser: /assets/images/2019/08/Nvidia_logo.svg
+---
+
+Another new machine in the lab, here is the configuration.
+
+* Configure BIOS to boot on power failure
+* Install Ubuntu 18.04
+* Note can't log in using the display manager so ctrl-alt-F3 to get a tty and install NVidia drivers.  First check default install is ok 
+
+```
+ubuntu-drivers devices
+```
+
+and then
+
+```
+sudo ubuntu-drivers autoinstall
+```
+
+* edit /etc/hosts to be 
+
+```
+127.0.0.1	localhost
+127.0.1.1	machinename.staff.sydney.edu.au machinename
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+```
+
+* edit /etc/hostname to be
+
+```
+machinename
+```
+
+ * install packages
+
+```
+sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
+sudo sysemctl start ssh
+```
+
+ * edit /etc/fstab to mount disks
+
+```
+fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
+```
+
+ * reboot and you should be able to ssh to the machine (and the display manager should work)
+
+ * Here is the configuration
+
+```
+Power Supply : Gigabyte AORUS AP750GM
+Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
+AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
+AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 
+AC16770 Cooler Master MasterLiquid ML360R ARGB AIO Liquid CPU Cooler 
+AC18159 ASUS GeForce RTX 2080 Ti ROG Strix Advanced 11GB Video Card 
+AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8 
+AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5" 7200RPM SATA3 Desktop Hard Drive 
+AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
+AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
+```
