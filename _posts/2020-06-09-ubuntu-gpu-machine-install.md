@@ -15,6 +15,8 @@ header:
 
 Another new machine in the lab, here is the configuration.
 
+## Installation
+
 * Configure BIOS to boot on power failure
 * Install Ubuntu 18.04
 * Note can't log in using the display manager so ctrl-alt-F3 to get a tty and install NVidia drivers.  First check default install is ok 
@@ -84,6 +86,8 @@ ln -s /media/seagate2g/home home
 sudo rm -rf home.old
 ```
 
+ * Reboot and you should be able to ssh to the machine (and the display manager should work)
+
  * Create users
 
  * Install anaconda (locally, download from <https://www.anaconda.com/products/individual>)
@@ -94,9 +98,7 @@ sudo rm -rf home.old
 conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 ```
 
- * Reboot and you should be able to ssh to the machine (and the display manager should work)
-
- * Here are the machine details
+## Machine Details
 
 ```
 Power Supply : Gigabyte AORUS AP750GM
