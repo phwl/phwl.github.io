@@ -71,7 +71,7 @@ UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 ```
 
- * Move /home to a different partition
+ * Move /home to the other partition
 
 ```
 sudo mount -a
