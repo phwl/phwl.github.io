@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-06-09 11:56:56 AEST
-title: Another Ubuntu GPU machine
+title: Ubuntu GPU Machine Install
 classes: wide
 categories:
 - software
