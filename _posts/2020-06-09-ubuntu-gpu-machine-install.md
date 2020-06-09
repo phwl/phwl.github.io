@@ -71,7 +71,13 @@ UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 ```
 
- * 
+ * Install anaconda (locally)
+
+ * Install pytorch 
+
+```
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+```
 
  * Reboot and you should be able to ssh to the machine (and the display manager should work)
 
