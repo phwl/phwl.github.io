@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-09T13:03:54+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Another Ubuntu GPU machine</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Another Ubuntu GPU machine" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-09T21:11:56+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Configure BIOS to boot on power failure&lt;/li&gt;
@@ -15,7 +15,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;edit /etc/hosts to be&lt;/li&gt;
+  &lt;li&gt;Edit /etc/hosts to be&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;127.0.0.1	localhost
@@ -30,14 +30,14 @@ ff02::2 ip6-allrouters
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;edit /etc/hostname to be&lt;/li&gt;
+  &lt;li&gt;Edit /etc/hostname to be&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;machinename
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;install packages&lt;/li&gt;
+  &lt;li&gt;Install packages&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
@@ -45,18 +45,40 @@ sudo sysemctl start ssh
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;edit /etc/fstab to mount disks&lt;/li&gt;
+  &lt;li&gt;Create partition and figure out blkid&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo fdisk /dev/sda
+sudo mkfs -t ext4 /dev/sda1
+sudo blkid
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Edit /etc/fstab to mount disks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
+fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;reboot and you should be able to ssh to the machine (and the display manager should work)&lt;/p&gt;
+    &lt;p&gt;Install anaconda (locally, download from &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;https://www.anaconda.com/products/individual&lt;/a&gt;)&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Here is the configuration&lt;/p&gt;
+    &lt;p&gt;Install pytorch&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reboot and you should be able to ssh to the machine (and the display manager should work)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here are the machine details&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
