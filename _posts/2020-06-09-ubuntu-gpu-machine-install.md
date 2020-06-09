@@ -71,6 +71,21 @@ UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 ```
 
+ * Move /home to a different partition
+
+```
+sudo mount -a
+cd /home
+sudo rsync -av . /media/seagate2g/home
+cd /
+mv home home.old
+ln -s /media/seagate2g/home home
+# check everything is ok before
+sudo rm -rf home.old
+```
+
+ * Create users
+
  * Install anaconda (locally, download from <https://www.anaconda.com/products/individual>)
 
  * Install pytorch 

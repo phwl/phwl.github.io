@@ -246,8 +246,25 @@ fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,default
 </code></pre></div></div>
 
 <ul>
+  <li>Move /home to a different partition</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
+cd /home
+sudo rsync -av . /media/seagate2g/home
+cd /
+mv home home.old
+ln -s /media/seagate2g/home home
+# check everything is ok before
+sudo rm -rf home.old
+</code></pre></div></div>
+
+<ul>
   <li>
-    <p>Install anaconda (locally)</p>
+    <p>Create users</p>
+  </li>
+  <li>
+    <p>Install anaconda (locally, download from <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>)</p>
   </li>
   <li>
     <p>Install pytorch</p>
