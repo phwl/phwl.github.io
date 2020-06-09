@@ -56,11 +56,22 @@ sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
 sudo sysemctl start ssh
 ```
 
+ * Create partition and figure out blkid
+
+```
+sudo fdisk /dev/sda
+sudo mkfs -t ext4 /dev/sda1
+sudo blkid
+```
+
  * Edit /etc/fstab to mount disks
 
 ```
+UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 ```
+
+ * 
 
  * Reboot and you should be able to ssh to the machine (and the display manager should work)
 
