@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 1999-07-10 23:20:07+00:00
-# link: http://phwl.org/stanwell-park/
 slug: stanwell-park
 title: Stanwell Park
 classes: wide

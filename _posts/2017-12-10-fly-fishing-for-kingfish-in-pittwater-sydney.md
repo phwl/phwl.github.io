@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-12-10 06:12:27+00:00
-# link: http://phwl.org/fly-fishing-for-kingfish-in-pittwater-sydney/
 slug: fly-fishing-for-kingfish-in-pittwater-sydney
 title: Fly-fishing for Kingfish in Pittwater, Sydney
 classes: wide

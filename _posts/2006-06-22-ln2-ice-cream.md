@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2006-06-22 15:31:54+00:00
-# link: http://phwl.org/victorinox-swiss-army-knife-soldier-set/
 title: Liquid Nitrogen Ice Cream
 classes: wide
 categories:

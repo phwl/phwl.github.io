@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2007-06-24 13:23:13+00:00
-# link: http://phwl.org/a-trip-to-finland/
 slug: a-trip-to-finland
 title: A trip to Finland
 classes: wide

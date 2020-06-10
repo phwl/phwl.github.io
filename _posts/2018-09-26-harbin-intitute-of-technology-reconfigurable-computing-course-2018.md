@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-09-26 02:29:10+00:00
-# link: http://phwl.org/harbin-intitute-of-technology-reconfigurable-computing-course-2018/
 slug: harbin-intitute-of-technology-reconfigurable-computing-course-2018
 title: Harbin Intitute of Technology (HIT) Reconfigurable Computing Course 2018
 classes: wide

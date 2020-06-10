@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-12-06 23:16:58+00:00
-# link: http://phwl.org/sydney-looking-west/
 slug: sydney-looking-west
 title: Sydney looking west
 classes: wide

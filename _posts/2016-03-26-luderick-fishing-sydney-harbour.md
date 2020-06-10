@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2016-03-26 05:14:21+00:00
-# link: http://phwl.org/luderick-fishing-sydney-harbour/
 slug: luderick-fishing-sydney-harbour
 title: Luderick Fishing Sydney Harbour
 classes: wide

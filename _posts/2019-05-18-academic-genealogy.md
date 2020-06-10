@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-05-18 04:09:59+00:00
-# link: http://phwl.org/academic-genealogy/
 slug: academic-genealogy
 title: Academic Genealogy
 classes: wide

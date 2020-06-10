@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-05-23 13:21:52+00:00
-# link: http://phwl.org/high-altitude-balloon-launch-1/
 slug: high-altitude-balloon-launch-1
 title: 'High Altitude Balloon Launch #1'
 classes: wide

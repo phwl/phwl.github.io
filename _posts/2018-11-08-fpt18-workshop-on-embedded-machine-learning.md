@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-11-08 22:34:51+00:00
-# link: http://phwl.org/fpt18-workshop-on-embedded-machine-learning/
 slug: fpt18-workshop-on-embedded-machine-learning
 title: FPT18 Workshop on Embedded Machine Learning
 classes: wide

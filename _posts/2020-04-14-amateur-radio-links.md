@@ -11,7 +11,7 @@ tags:
 - ubuntu
 - linux
 header:
-  teaser: http://phwl.org/assets/images/2018/12/IMG_9577.jpg
+  teaser: /assets/images/2018/12/IMG_9577.jpg
 ---
 
 Here is a collection of amateur radio links.

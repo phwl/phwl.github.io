@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-09-15 01:09:15+00:00
-# link: http://phwl.org/forster-trip-with-ken/
 slug: forster-trip-with-ken
 title: Forster trip with Ken
 classes: wide

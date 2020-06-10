@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-11-23 17:10:10 AEDT
-# link: http://phwl.org/computer-engineering-lab-christmas-party/
 slug: vhf-field-day
 title: Spring VHF/UHF Field Day
 classes: wide

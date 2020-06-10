@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-04-13 02:30:33+00:00
-# link: http://phwl.org/macos-install/
 slug: macos-install
 title: macOS Install
 classes: wide

@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2014-12-22 11:06:45+00:00
-# link: http://phwl.org/london-shanghai-and-hong-kong-2014/
 slug: london-shanghai-and-hong-kong-2014
 title: London, Shanghai and Hong Kong 2014
 classes: wide

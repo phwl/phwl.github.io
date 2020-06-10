@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-09-19 19:01:14+00:00
-# link: http://phwl.org/street-photos-from-beijing/
 slug: street-photos-from-beijing
 title: Street Photos from Beijing
 classes: wide

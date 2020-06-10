@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-12-15 07:47:15+00:00
-# link: http://phwl.org/new-zealand-fly-fishing-2015/
 slug: new-zealand-fly-fishing-2015
 title: New Zealand Fly-Fishing 2015
 classes: wide
@@ -15,7 +14,7 @@ header:
   teaser: /assets/images/2015/12/IMG_1615.jpg
 ---
 
-After attending the [International Conference on Field Programmable Technology](http://fpt.massey.ac.nz/), Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We called this the 1st FPGA Fly-Fishing Symposium (FFF'15). Last time I was there was [Nov 1996](http://phwl.org/1996/new-zealand-trip/), before web browers and digital cameras! I had previously fished with Brent in [Utah](http://phwl.org/2015/fishing-renovating-and-ballroom-dancing-in-utah-2008/).
+After attending the [International Conference on Field Programmable Technology](http://fpt.massey.ac.nz/), Brent, Ken and myself took a 5-day fly-fishing trip around the Omarama region of the South Island in New Zealand. We called this the 1st FPGA Fly-Fishing Symposium (FFF'15). Last time I was there was [Nov 1996](/1996/new-zealand-trip/), before web browers and digital cameras! I had previously fished with Brent in [Utah](/2015/fishing-renovating-and-ballroom-dancing-in-utah-2008/).
 
 {% include figure image_path="/assets/images/2015/12/IMG_1615.jpg" caption="" %}
 

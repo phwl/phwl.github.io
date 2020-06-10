@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2006-02-25 18:31:54+00:00
-# link: http://phwl.org/victorinox-swiss-army-knife-soldier-set/
 slug: victorinox-swiss-army-knife-soldier-set
 title: Victorinox Swiss Army Knife Soldier Set
 classes: wide

@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2005-09-09 15:05:46+00:00
-# link: http://phwl.org/meon-springs/
 slug: meon-springs
 title: Meon Springs
 classes: wide

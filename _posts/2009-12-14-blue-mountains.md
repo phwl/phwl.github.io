@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2009-12-14 09:54:29+00:00
-# link: http://phwl.org/blue-mountains/
 slug: blue-mountains
 title: Blue Mountains
 classes: wide

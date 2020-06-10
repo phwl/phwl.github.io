@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-06-28 23:36:53+00:00
-# link: http://phwl.org/how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer/
 slug: how-to-make-a-ubuntu-boot-usb-in-osx-dont-use-the-unetbootin-usb-installer
 title: How to make a Ubuntu boot usb in OSX (don't use the UNetbootin USB installer)
 classes: wide

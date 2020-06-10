@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-01-25 06:22:53+00:00
-# link: http://phwl.org/snaps-from-berkeley/
 slug: snaps-from-berkeley
 title: Snaps from Berkeley
 classes: wide

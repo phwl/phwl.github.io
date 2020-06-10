@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-05-26 10:25:06+00:00
-# link: http://phwl.org/wsjt-x-with-improved-antenna/
 slug: wsjt-x-with-improved-antenna
 title: WSJT-X with improved antenna
 classes: wide

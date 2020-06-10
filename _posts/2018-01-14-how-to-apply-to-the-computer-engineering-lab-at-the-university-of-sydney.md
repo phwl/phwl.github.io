@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-01-14 22:50:04+00:00
-# link: http://phwl.org/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/
 slug: how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney
 title: How to apply to the Computer Engineering Lab at the University of Sydney
 classes: wide

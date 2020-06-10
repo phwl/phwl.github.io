@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-10-01 09:48:01+00:00
-# link: http://phwl.org/shanghai-harbin-2018/
 slug: shanghai-harbin-2018
 title: Shanghai Harbin 2018
 classes: wide
@@ -14,7 +13,7 @@ header:
   teaser: /assets/images/2018/10/IMG_9441.jpg
 ---
 
-Had a short holiday prior to giving my [2018 Reconfigurable Computing course](http://phwl.org/harbin-intitute-of-technology-reconfigurable-computing-course-2018/) at Harbin Institute of Technology (HIT). Photos herein are mainly of food.
+Had a short holiday prior to giving my [2018 Reconfigurable Computing course](/2018/harbin-intitute-of-technology-reconfigurable-computing-course-2018/) at Harbin Institute of Technology (HIT). Photos herein are mainly of food.
 
 This is the street scene just outside the gates of HIT.
 
@@ -29,7 +28,7 @@ Rice bubbles with salty egg.{% include figure image_path="/assets/images/2018/10
 
 After dinner we went to buy more food.{% include figure image_path="/assets/images/2018/10/IMG_9233.jpg" caption="" %}
 
-The following day we sent to my favourite restaurant in Shanghai for crab-roe noodles that I wrote about [here](http://phwl.org/shanghai-2018/).{% include figure image_path="/assets/images/2018/10/IMG_9271.jpg" caption="" %}
+The following day we sent to my favourite restaurant in Shanghai for crab-roe noodles that I wrote about [here](/2018/shanghai-2018/).{% include figure image_path="/assets/images/2018/10/IMG_9271.jpg" caption="" %}
 
 {% include figure image_path="/assets/images/2018/10/IMG_9268.jpg" caption="" %}
 

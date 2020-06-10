@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-11-29 18:27:30 GMT
-# link: http://phwl.org/computer-engineering-lab-christmas-party/
 slug: london-trip
 title: London trip
 classes: wide

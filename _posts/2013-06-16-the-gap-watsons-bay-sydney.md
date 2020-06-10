@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-06-16 05:53:08+00:00
-# link: http://phwl.org/the-gap-watsons-bay-sydney/
 slug: the-gap-watsons-bay-sydney
 title: The Gap, Watsons Bay, Sydney
 classes: wide

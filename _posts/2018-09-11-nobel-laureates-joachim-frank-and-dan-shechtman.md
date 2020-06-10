@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-09-11 05:37:21+00:00
-# link: http://phwl.org/nobel-laureates-joachim-frank-and-dan-shechtman/
 slug: nobel-laureates-joachim-frank-and-dan-shechtman
 title: Nobel laureates Joachim Frank and Dan Shechtman
 classes: wide

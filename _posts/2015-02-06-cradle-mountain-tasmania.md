@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-02-06 04:04:55+00:00
-# link: http://phwl.org/cradle-mountain-tasmania/
 slug: cradle-mountain-tasmania
 title: Cradle Mountain Tasmania
 classes: wide

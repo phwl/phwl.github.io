@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-06-21 11:41:53+00:00
-# link: http://phwl.org/fishhook-removal/
 slug: fishhook-removal
 title: Fishhook removal
 classes: wide

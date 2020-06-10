@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-07-23 05:51:15+00:00
-# link: http://phwl.org/harbin-and-qingdao-2015/
 slug: harbin-and-qingdao-2015
 title: Harbin and Qingdao 2015
 classes: wide

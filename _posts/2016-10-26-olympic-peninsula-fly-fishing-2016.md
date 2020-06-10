@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2016-10-26 23:15:19+00:00
-# link: http://phwl.org/olympic-peninsula-fly-fishing-2016/
 slug: olympic-peninsula-fly-fishing-2016
 title: Olympic Peninsula Fly-Fishing 2016
 classes: wide
@@ -16,7 +15,7 @@ header:
   teaser: /assets/images/2016/10/IMG_3737.jpg
 ---
 
-I participated in the 2nd FPGA Fly-Fishing (FFF'16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron (not pictured below) and myself. The previous FFF was in New Zealand and is described here [http://phwl.org/new-zealand-fly-fishing-2015/](http://phwl.org/new-zealand-fly-fishing-2015/).
+I participated in the 2nd FPGA Fly-Fishing (FFF'16) Symposium in Seattle WA, hosted by Ken and attended by Guy, Aaron (not pictured below) and myself. The previous FFF was in New Zealand and is described here [/2015/new-zealand-fly-fishing-2015/](/2015/new-zealand-fly-fishing-2015/).
 
 ![IMG_3737](/assets/images/2016/10/IMG_3737.jpg)
 

@@ -1,0 +1,12 @@
+I"<p>Here is a 7 minute video on our recent work on FPGA-based machine learning
+for real-time automatic modulation classification (AMC).</p>
+
+<!-- more -->
+
+<p>It was presented (virtually) at the RAW workshop <a href="https://raw.necst.it/">https://raw.necst.it/</a>.</p>
+<ul>
+  <li>Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. <a href="/assets/papers/amc_raw20.pdf">amc_raw20.pdf</a></li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V92rmJ3-p-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

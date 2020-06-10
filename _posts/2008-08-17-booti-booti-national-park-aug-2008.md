@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2008/08/P1010626.jpg
 ---
 
-Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable tides and weather. Life's too short to only go fishing when conditions are good. We went on a [similar trip](http://www.phwl.org/2007/forster/) almost exactly a year ago.
+Went on a 4 day fishing trip to Booti Booti National Park with my mates, Warren and Chris despite unfavourable tides and weather. Life's too short to only go fishing when conditions are good. We went on a [similar trip](/2007/forster/) almost exactly a year ago.
 
 {% include figure image_path="/assets/images/2008/08/P1010540.jpg" caption="" %}
 

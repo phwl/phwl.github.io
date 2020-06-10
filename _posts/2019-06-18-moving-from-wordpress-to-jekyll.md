@@ -14,8 +14,7 @@ I have been using [Wordpress](https://wordpress.com/) for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn't easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
-scripts which update the website. The old website is <http://phwl.org/blog>
-and the new website can be viewed at <https://phwl.github.io>.
+scripts which update the website. 
 I will be switching them over at some point and moved the old
 domain to a spare <http://uxa.apl.mybluehost.me/>.
 

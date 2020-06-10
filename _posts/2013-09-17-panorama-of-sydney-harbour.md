@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-09-17 09:50:01+00:00
-# link: http://phwl.org/panorama-of-sydney-harbour/
 slug: panorama-of-sydney-harbour
 title: Panorama of Sydney Harbour
 classes: wide

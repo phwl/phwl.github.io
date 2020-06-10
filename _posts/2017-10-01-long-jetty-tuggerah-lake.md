@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-10-01 11:34:52+00:00
-# link: http://phwl.org/long-jetty-tuggerah-lake/
 slug: long-jetty-tuggerah-lake
 title: Long Jetty, Tuggerah Lake
 classes: wide

@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-07-11 02:26:34+00:00
-# link: http://phwl.org/kangaroo-tagging-at-nelson-bay/
 slug: kangaroo-tagging-at-nelson-bay
 title: Kangaroo Tagging at Nelson Bay
 classes: wide

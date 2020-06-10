@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-07-29 00:48:20+00:00
-# link: http://phwl.org/chengdu-and-hong-kong-2018/
 slug: chengdu-and-hong-kong-2018
 title: Chengdu and Hong Kong 2018
 classes: wide

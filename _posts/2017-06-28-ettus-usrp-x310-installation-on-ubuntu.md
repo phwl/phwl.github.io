@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-06-28 23:51:01+00:00
-# link: http://phwl.org/ettus-usrp-x310-installation-on-ubuntu/
 slug: ettus-usrp-x310-installation-on-ubuntu
 title: Ettus USRP x310 installation on Ubuntu
 classes: wide

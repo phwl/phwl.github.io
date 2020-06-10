@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2010-02-02 16:24:26+00:00
-# link: http://phwl.org/postcard-from-ottawa/
 slug: postcard-from-ottawa
 title: Postcard from Ottawa
 classes: wide

@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2010-12-03 11:47:53+00:00
-# link: http://phwl.org/elaines-off-road-trip/
 slug: elaines-off-road-trip
 title: Elaine's (off) Road Trip
 classes: wide

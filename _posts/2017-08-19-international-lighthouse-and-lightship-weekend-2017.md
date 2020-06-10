@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2017-08-19 12:22:43+00:00
-# link: http://phwl.org/international-lighthouse-and-lightship-weekend-2017/
 slug: international-lighthouse-and-lightship-weekend-2017
 title: International Lighthouse and Lightship Weekend 2017
 classes: wide

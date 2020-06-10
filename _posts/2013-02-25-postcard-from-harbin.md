@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-02-25 13:33:21+00:00
-# link: http://phwl.org/postcard-from-harbin/
 slug: postcard-from-harbin
 title: Postcard from Harbin
 classes: wide

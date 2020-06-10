@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-01-05 07:37:31+00:00
-# link: http://phwl.org/hawkesbury-river-2014/
 slug: hawkesbury-river-2014
 title: Hawkesbury River 2014
 classes: wide

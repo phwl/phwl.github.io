@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2013-04-30 11:27:14+00:00
-# link: http://phwl.org/shanghai-april-2013/
 slug: shanghai-april-2013
 title: Shanghai April 2013
 classes: wide

@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-05-15 15:41:18+00:00
-# link: http://phwl.org/dropbox-dont-give-full-access-to-your-machine/
 slug: dropbox-dont-give-full-access-to-your-machine
 title: Dropbox - don't give full access to your machine
 classes: wide

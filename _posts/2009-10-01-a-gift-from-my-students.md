@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2009-10-01 07:42:08+00:00
-# link: http://phwl.org/a-gift-from-my-students/
 slug: a-gift-from-my-students
 title: A Gift From my Students
 classes: wide

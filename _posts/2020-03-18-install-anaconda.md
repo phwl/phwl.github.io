@@ -14,7 +14,7 @@ header:
 ---
 
 Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
-mentioned here <http://phwl.org/2019/ubuntu-nvdia-19/>. This was for running
+mentioned [here](/2019/ubuntu-nvdia-19). This was for running
 [DTWnet](https://github.com/TideDancer/DTWNet.git).
 
  * Install Anaconda from <https://www.anaconda.com/distribution>, then

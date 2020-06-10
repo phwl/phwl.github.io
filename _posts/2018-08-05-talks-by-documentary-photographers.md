@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-08-05 10:12:56+00:00
-# link: http://phwl.org/talks-by-documentary-photographers/
 slug: talks-by-documentary-photographers
 title: Talks by documentary photographers
 classes: wide

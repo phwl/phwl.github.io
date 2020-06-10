@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-11-13 21:48:29 AEDT
-# link: http://phwl.org/computer-engineering-lab-christmas-party/
 slug: computer-engineering-lab-christmas-party
 title: Computer Engineering Lab Christmas Party Photo 
 classes: wide

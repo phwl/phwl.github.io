@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2002-12-25 04:47:17+00:00
-# link: http://phwl.org/london-lakes/
 slug: london-lakes
 title: London Lakes
 classes: wide

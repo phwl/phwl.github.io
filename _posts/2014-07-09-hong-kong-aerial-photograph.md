@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2014-07-09 11:35:15+00:00
-# link: http://phwl.org/hong-kong-aerial-photograph/
 slug: hong-kong-aerial-photograph
 title: Hong Kong Aerial Photograph
 classes: wide

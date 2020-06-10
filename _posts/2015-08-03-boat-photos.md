@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2015-08-03 12:05:28+00:00
-# link: http://phwl.org/boat-photos/
 slug: boat-photos
 title: Quintrex Fishseeker Photos
 classes: wide

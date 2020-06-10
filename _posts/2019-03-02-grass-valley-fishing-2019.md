@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-03-02 20:07:17+00:00
-# link: http://phwl.org/grass-valley-fishing-2019/
 slug: grass-valley-fishing-2019
 title: Grass Valley Fly-Fishing 2019
 classes: wide
@@ -19,7 +18,7 @@ header:
 
 
 
-The FPGA Fly-Fishing Symposium 2019 ([FFF'19](http://phwl.org/category/hobbies/fishing/fff/)) was a post-[FPGA Conference](http://isfpga.org/) workshop, attended by Guy, Ken and I.
+The FPGA Fly-Fishing Symposium 2019 ([FFF'19](/tags/#fff)) was a post-[FPGA Conference](http://isfpga.org/) workshop, attended by Guy, Ken and I.
 
 
 {% include figure image_path="/assets/images/2019/03/IMG_0221.jpg" caption="" %}
@@ -52,7 +51,7 @@ We had planned to fish with a guide the first day of the trip and then do our ow
 
 
 
-Of course the weather didn't cooperate. The day before the trip, apocalyptic rains were being forecast, with our fishing spot being at the center of the circle. The guide said it could be as bad as 2017, which strangely enough was the [previous time](http://phwl.org/trinity-river-2017/) we planned to fish the Yuba. As it turned out, they had 6 inches of rain, 7ft of snow in the mountains, [roads were flooded and schools closed](http://www.capradio.org/articles/2019/02/26/storm-slams-western-us-raises-flood-fears-to-california/).
+Of course the weather didn't cooperate. The day before the trip, apocalyptic rains were being forecast, with our fishing spot being at the center of the circle. The guide said it could be as bad as 2017, which strangely enough was the [previous time](/2017/trinity-river-2017/) we planned to fish the Yuba. As it turned out, they had 6 inches of rain, 7ft of snow in the mountains, [roads were flooded and schools closed](http://www.capradio.org/articles/2019/02/26/storm-slams-western-us-raises-flood-fears-to-california/).
 
 
 

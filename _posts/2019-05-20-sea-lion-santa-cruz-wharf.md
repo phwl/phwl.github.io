@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-05-20 02:59:22+00:00
-# link: http://phwl.org/sea-lion-santa-cruz-wharf/
 slug: sea-lion-santa-cruz-wharf
 title: Sea lion, Santa Cruz Wharf
 classes: wide

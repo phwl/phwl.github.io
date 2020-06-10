@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2005-09-23 14:59:57+00:00
-# link: http://phwl.org/walthamstow-reservoir/
 slug: walthamstow-reservoir
 title: Walthamstow Reservoir
 classes: wide

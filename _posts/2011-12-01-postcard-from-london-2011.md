@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2011-12-01 21:49:04+00:00
-# link: http://phwl.org/postcard-from-london-2011/
 slug: postcard-from-london-2011
 title: Postcard from London 2011
 header:

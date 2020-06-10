@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2019-06-28 22:17:43+00:00
-# link: http://phwl.org/lake-tahoe-2019/
 slug: visit-to-w1qg-shack
 title: Visit to W1QG's shack
 categories:

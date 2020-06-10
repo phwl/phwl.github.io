@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-05-19 06:05:43+00:00
-# link: http://phwl.org/how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp/
 slug: how-to-program-australian-repeaters-into-an-icom-ic-2730a-using-chirp
 title: How to program Australian Repeaters into an Icom IC-2730A using Chirp
 classes: wide
