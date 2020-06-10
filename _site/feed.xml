@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-09T21:29:36+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-11T09:08:23+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Configure BIOS to boot on power failure&lt;/li&gt;
@@ -77,6 +79,9 @@ sudo rm -rf home.old
 
 &lt;ul&gt;
   &lt;li&gt;
+    &lt;p&gt;Reboot and you should be able to ssh to the machine (and the display manager should work)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;p&gt;Create users&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -90,14 +95,7 @@ sudo rm -rf home.old
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Reboot and you should be able to ssh to the machine (and the display manager should work)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Here are the machine details&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;machine-details&quot;&gt;Machine Details&lt;/h2&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Power Supply : Gigabyte AORUS AP750GM
 Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
@@ -112,6 +110,10 @@ AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
 
 &lt;!-- more --&gt;
+
+&lt;h2 id=&quot;1-june-2020&quot;&gt;1 June, 2020&lt;/h2&gt;
+&lt;p&gt;Radio appears to be powering up and I hear static so the receive and
+RF paths seem fine.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/06/codan6924-1.jpeg&quot;&gt;
@@ -129,7 +131,71 @@ AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a 7 minute video on our recent work on FPGA-based machine learning
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;10-june-2020&quot;&gt;10 June, 2020&lt;/h2&gt;
+&lt;p&gt;Brought the radio over to Tim’s (VK2BT) place to check out properly.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-6.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-6.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-7.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-7.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-4.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-4.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-3.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-3.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;The radio receive sensitivity was fine down to 100 dBm although the volume 
+in the speaker was low. However, transmit in SSB didn’t make it past a 
+watt and we only got about 4W for the carrier on AM. Also, we get a feedback
+squeal after releasing the PTT.&lt;/p&gt;
+
+&lt;p&gt;Probably something wrong with the audio path as the radio uses the
+same circuit in both rx and tx directions. That also explains the
+low speaker volume.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/codan6924-5.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/codan6924-5.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;So out with the service manuals from Bruce.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6942-manual.pdf&quot;&gt;Service manual&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/coda-6924-powersupplymods.pdf&quot;&gt;Power supply mods&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6924-mute.pdf&quot;&gt;Mute mod&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-dds.pdf&quot;&gt;DDS mod&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a 7 minute video on our recent work on FPGA-based machine learning
 for real-time automatic modulation classification (AMC).&lt;/p&gt;
 
 &lt;!-- more --&gt;
