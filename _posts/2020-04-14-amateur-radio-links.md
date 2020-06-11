@@ -31,6 +31,12 @@ Here is a collection of amateur radio links.
 1. AMfone Class E forum - <http://amfone.net/Amforum/index.php?board=76.0> (added 14/4/20)
 1. VK3HN's website (links to the sites above and more) - <https://vk3hn.wordpress.com/am/>
 
+
+## Transceivers
+### QRP SDR
+1. Transform QCX into an SDR SSB transceiver <https://github.com/threeme3/QCX-SSB>
+1. Micro software defined transceiver (uSDX) group <https://groups.io/g/ucx/topics>
+
 ## General
 ### Homebrew Blogs
 1. Peter B Marks VK2TPM marxy's musing on technology - <http://blog.marxy.org/>
