@@ -38,8 +38,9 @@ Here is a collection of amateur radio links.
 1. Micro software defined transceiver (uSDX) group <https://groups.io/g/ucx/topics>
 
 ## General
-### Homebrew Blogs
+### Homebrew 
 1. Peter B Marks VK2TPM marxy's musing on technology - <http://blog.marxy.org/>
 1. Owen Duffy VK2OMD - <https://owenduffy.net>
 1. Peter Parker VK3YE - <http://vk3ye.com/>
 1. Charlie Morris ZL2CTM - <http://zl2ctm.blogspot.com/>
+1. EDN Create radio receiver circuits with the LM386 audio amplifier - <https://www.edn.com/create-radio-receiver-circuits-with-the-lm386-audio-amplifier/>
