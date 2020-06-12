@@ -10,12 +10,13 @@ tags:
 - woodwork
 - hobbies
 header:
-  teaser: /assets/images/2020/03/gbed14.jpeg
+  teaser: /assets/images/2020/06/gbed-070620.jpeg
 ---
 
 Over a couple of weekends, made a raised garden bed for the back garden. 
 
 <!-- more -->
+## 7th March 2020
 I used alkaline copper quarternary (ACQ) treated pine as other types
 of treatment such as chromated copper arsenate (CCA) uses copper
 and chrome arsenate, and traces of arsenic may be absorbed by the
@@ -48,3 +49,8 @@ Then into the garden.
 {% include figure image_path="/assets/images/2020/03/gbed12.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/03/gbed13.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/03/gbed14.jpeg" caption="" %}
+
+## 7th June, 2020 
+Main crop is kale.
+
+{% include figure image_path="/assets/images/2020/06/gbed-070620.jpeg" caption="" %}
