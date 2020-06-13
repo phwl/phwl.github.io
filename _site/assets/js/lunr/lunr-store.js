@@ -324,6 +324,11 @@ var store = [{
         "tags": ["australia","photography"],
         "url": "http://localhost:4000/2015/tasmanian-holiday-2015/",
         "teaser":"http://localhost:4000/assets/images/2015/02/P2040434.jpg"},{
+        "title": "Meeting Dr Karl",
+        "excerpt":"A great honour to hang out with the inimitable Dr Karl Kruszelnicki (and Taylor Swift) this morning. A real gentleman.                                 ","categories": ["academia"],
+        "tags": ["people"],
+        "url": "http://localhost:4000/2015/drkarl/",
+        "teaser":"http://localhost:4000/assets/images/2015/03/drkarl.jpeg"},{
         "title": "Fishhook removal",
         "excerpt":"In all my years of fishing, we were fortunate not to have had a bad injury. There was the time Beard, Warren and myself tried to run a rapid on the Katherine River in the Northern Territories in a triple kayak, went upside down and Warren had a treble embedded in his foot, but fortunately it had been debarbed. There was also the time I was fishing by myself and had a hook embedded down to the barb in my tongue (long story), but I managed to get it out without much damage.   Anyway, here is a good article from the American Family Physician on hook removal (link, local).     ","categories": ["fishing"],
         "tags": [],
@@ -905,7 +910,7 @@ var store = [{
         "url": "http://localhost:4000/2020/camp-kitchen/",
         "teaser":"http://localhost:4000/assets/images/2020/04/campkitchen18.jpeg"},{
         "title": "Amateur Radio Links",
-        "excerpt":"Here is a collection of amateur radio links.     Antennas  End fed half wave     End Fed Half Wave (EFHW) antenna construction with links - https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm (added 14/4/20)   Electronics  Calculators     Filter design, Skin depth, Smith Charts etc - https://leleivre.com/rftools.html (added 14/4/20)   Class D/E Amplifiers     Class E amplifier design and construction - http://www.classeradio.com/ (added 14/4/20)   AMfone Class E forum - http://amfone.net/Amforum/index.php?board=76.0 (added 14/4/20)   VK3HN’s website (links to the sites above and more) - https://vk3hn.wordpress.com/am/   Transceivers  QRP SDR     Transform QCX into an SDR SSB transceiver https://github.com/threeme3/QCX-SSB   Micro software defined transceiver (uSDX) group https://groups.io/g/ucx/topics   General  Homebrew Blogs     Peter B Marks VK2TPM marxy’s musing on technology - http://blog.marxy.org/   Owen Duffy VK2OMD - https://owenduffy.net   Peter Parker VK3YE - http://vk3ye.com/   Charlie Morris ZL2CTM - http://zl2ctm.blogspot.com/  ","categories": ["radio"],
+        "excerpt":"Here is a collection of amateur radio links.     Antennas  End fed half wave     End Fed Half Wave (EFHW) antenna construction with links - https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm (added 14/4/20)   Electronics  Calculators     Filter design, Skin depth, Smith Charts etc - https://leleivre.com/rftools.html (added 14/4/20)   Class D/E Amplifiers     Class E amplifier design and construction - http://www.classeradio.com/ (added 14/4/20)   AMfone Class E forum - http://amfone.net/Amforum/index.php?board=76.0 (added 14/4/20)   VK3HN’s website (links to the sites above and more) - https://vk3hn.wordpress.com/am/   Transceivers  QRP SDR     Transform QCX into an SDR SSB transceiver https://github.com/threeme3/QCX-SSB   Micro software defined transceiver (uSDX) group https://groups.io/g/ucx/topics   General  Homebrew     Peter B Marks VK2TPM marxy’s musing on technology - http://blog.marxy.org/   Owen Duffy VK2OMD - https://owenduffy.net   Peter Parker VK3YE - http://vk3ye.com/   Charlie Morris ZL2CTM - http://zl2ctm.blogspot.com/   EDN Create radio receiver circuits with the LM386 audio amplifier - https://www.edn.com/create-radio-receiver-circuits-with-the-lm386-audio-amplifier/  ","categories": ["radio"],
         "tags": ["ubuntu","linux"],
         "url": "http://localhost:4000/2020/amateur-radio-links/",
         "teaser":"http://localhost:4000/assets/images/2018/12/IMG_9577.jpg"},{
