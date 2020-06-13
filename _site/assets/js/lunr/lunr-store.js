@@ -684,6 +684,11 @@ var store = [{
         "tags": ["hawkesbury","australia"],
         "url": "http://localhost:4000/2018/hawkesbury-2018/",
         "teaser":"http://localhost:4000/assets/images/2018/12/IMG_2643.jpg"},{
+        "title": "EDC",
+        "excerpt":"Thought I’d take a photo of what I carry around, i.e. “every day carry” or EFDC.                                 ","categories": ["travel"],
+        "tags": ["EDC"],
+        "url": "http://localhost:4000/2019/edc/",
+        "teaser":"http://localhost:4000/assets/images/2019/01/IMG_2742.jpg"},{
         "title": "Sydney Harbour Kingfish Jan 2019",
         "excerpt":"It was cold and wet today but good to get out with Beard and son in Sydney Harbour. First time I can remember the temperature high and low being 21 C in the middle of summer.                                There were fish everywhere.                                Beard’s son with a tailor.                                This was in its mouth.                                                             ","categories": ["fishing"],
         "tags": ["australia"],
