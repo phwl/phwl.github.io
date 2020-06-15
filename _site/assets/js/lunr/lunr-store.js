@@ -685,7 +685,7 @@ var store = [{
         "url": "http://localhost:4000/2018/hawkesbury-2018/",
         "teaser":"http://localhost:4000/assets/images/2018/12/IMG_2643.jpg"},{
         "title": "EDC",
-        "excerpt":"Thought I’d take a photo of what I’m going to take on my upcoming 6 month trip the US for my “every day carry” or EDC.                                 ","categories": ["travel"],
+        "excerpt":"Thought I’d post a photo of what I’m going to take on my upcoming 6 month trip the US for my “every day carry” or EDC.                                 ","categories": ["travel"],
         "tags": ["EDC"],
         "url": "http://localhost:4000/2019/edc/",
         "teaser":"http://localhost:4000/assets/images/2019/01/IMG_2742.jpg"},{
