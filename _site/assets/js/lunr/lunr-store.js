@@ -980,7 +980,7 @@ var store = [{
         "url": "http://localhost:4000/2020/ubuntu-gpu-machine-install/",
         "teaser":"http://localhost:4000/assets/images/2019/08/Nvidia_logo.svg"},{
         "title": "Dubbo trip",
-        "excerpt":"Went for a drive to Dubbo as a cure for cabin fever.     I hadn’t seen the devastation of the summer bushfires until now. At least things are starting to grow back. Normally you would not be able to see through the trees because they’d have leaves.                               Had a good lunch at the Dancing Goat Cafe.                               Unexpectedly came across this sign, it’s a long way from home.                               ","categories": ["travel"],
+        "excerpt":"Went for a drive to Dubbo as a cure for cabin fever.     I hadn’t seen the devastation of the summer bushfires until now. At least things are starting to grow back. Normally you would not be able to see through the trees because they’d have leaves.                                                            Had a good lunch at the Dancing Goat Cafe.                               Unexpectedly came across this sign, it’s a long way from home.                               ","categories": ["travel"],
         "tags": ["photography"],
         "url": "http://localhost:4000/2020/dubbo-trip/",
         "teaser":"http://localhost:4000/assets/images/2020/06/bushfire1.jpeg"}]

@@ -19,6 +19,7 @@ Went for a drive to Dubbo as a cure for cabin fever.
 I hadn't seen the devastation of the summer bushfires until now. At least things are starting to grow back.
 Normally you would not be able to see through the trees because they'd have leaves.
 {% include figure image_path="/assets/images/2020/06/bushfire1.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/06/bushfire2.jpeg" caption="" %}
 
 Had a good lunch at the [Dancing Goat Cafe](https://www.tripadvisor.com.au/ShowUserReviews-g262066-d3297071-r185040862-The_Dancing_Goat_Cafe-Mudgee_New_South_Wales.html).
 {% include figure image_path="/assets/images/2020/06/mudgee-burger.jpeg" caption="" %}
