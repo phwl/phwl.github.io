@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-13T14:09:36+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-25T22:21:42+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Dubbo trip</title><link href="http://localhost:4000/2020/dubbo-trip/" rel="alternate" type="text/html" title="Dubbo trip" /><published>2020-06-25T21:45:34+10:00</published><updated>2020-06-25T21:45:34+10:00</updated><id>http://localhost:4000/2020/dubbo-trip</id><content type="html" xml:base="http://localhost:4000/2020/dubbo-trip/">&lt;p&gt;Went for a drive to Dubbo as a cure for cabin fever.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;I hadn’t seen the devastation of the summer bushfires until now. At least things are starting to grow back.
+Normally you would not be able to see through the trees because they’d have leaves.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/bushfire1.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/bushfire1.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Had a good lunch at the &lt;a href=&quot;https://www.tripadvisor.com.au/ShowUserReviews-g262066-d3297071-r185040862-The_Dancing_Goat_Cafe-Mudgee_New_South_Wales.html&quot;&gt;Dancing Goat Cafe&lt;/a&gt;.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/mudgee-burger.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/mudgee-burger.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Unexpectedly came across this sign, it’s a long way from home.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/06/mudgee-earlscourt.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/06/mudgee-earlscourt.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="photography" /><summary type="html">Went for a drive to Dubbo as a cure for cabin fever.</summary></entry><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -107,7 +140,17 @@ AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8
 AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5&quot; 7200RPM SATA3 Desktop Hard Drive 
 AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
 AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
+for real-time automatic modulation classification (AMC).&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;It was presented (virtually) at the RAW workshop &lt;a href=&quot;https://raw.necst.it/&quot;&gt;https://raw.necst.it/&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -189,23 +232,13 @@ low speaker volume.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;So out with the service manuals from Bruce.&lt;/p&gt;
+&lt;p&gt;So out with the service manuals from Bruce (Vk4MQ).&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6942-manual.pdf&quot;&gt;Service manual&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/coda-6924-powersupplymods.pdf&quot;&gt;Power supply mods&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6924-mute.pdf&quot;&gt;Mute mod&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-dds.pdf&quot;&gt;DDS mod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
-for real-time automatic modulation classification (AMC).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;It was presented (virtually) at the RAW workshop &lt;a href=&quot;https://raw.necst.it/&quot;&gt;https://raw.necst.it/&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -583,85 +616,4 @@ use PVA glue here but forgot.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">This Stanley mattock has had a loose head for a few years now. Time to fix it properly.</summary></entry><entry><title type="html">Jascha Heifetz links</title><link href="http://localhost:4000/2020/jascha-heifetz-links/" rel="alternate" type="text/html" title="Jascha Heifetz links" /><published>2020-04-21T21:44:13+10:00</published><updated>2020-04-21T21:44:13+10:00</updated><id>http://localhost:4000/2020/jascha-heifetz-links</id><content type="html" xml:base="http://localhost:4000/2020/jascha-heifetz-links/">&lt;p&gt;Links to &lt;a href=&quot;https://en.wikipedia.org/wiki/Jascha_Heifetz&quot;&gt;Jascha Heifetz&lt;/a&gt; documentaries, masterclasses and performances.
-&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;documentaries&quot;&gt;Documentaries&lt;/h2&gt;
-&lt;h3 id=&quot;gods-fiddler&quot;&gt;God’s Fiddler&lt;/h3&gt;
-&lt;p&gt;A wonderful documentary by Peter Rosen on Heifetz.
-Here is the description from &lt;a href=&quot;https://www.medici.tv/en/documentaries/jascha-heifetz-god-s-fiddler-peter-rosen/&quot;&gt;https://www.medici.tv/en/documentaries/jascha-heifetz-god-s-fiddler-peter-rosen/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The only film biography of the world’s most renowned violinist, featuring family home movies in Los Angeles and all over the world.&lt;/p&gt;
-
-&lt;p&gt;Not since Paganini had there been such a magician on the violin. The first modern violin virtuoso, about whom Itzhak Perlman says in the films, “When I spoke with him, I thought ‘I can’t believe it. I’m talking with God’.”&lt;/p&gt;
-
-&lt;p&gt;A musical wunderkind, he went on to set the standard in violin playing for nearly a century. This film portrays an artist for whom only perfection would do, so well known in popular culture that his name became shorthand for excellence for everyone from Jack Benny to The Muppets, to Woody Allen.&lt;/p&gt;
-
-&lt;p&gt;Heifetz was a legendary but mysterious figure whose story embodies the dual nature of artistic genius: the paradox of how a mortal man lives with immortal gifts – gifts he must honor, but which extract a lifelong price. Is the man and the artist the same person? What is the price each pays? And who was the man behind the music?&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/hOthENqJuZI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/_kKsUTkcWSo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;jascha-heifetz-iconic-violinist&quot;&gt;Jascha Heifetz Iconic Violinist&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/RgODGAqX1Jo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;violinmaker-hans-benning-remembers-violinist-jascha-heifetz&quot;&gt;Violinmaker Hans Benning Remembers Violinist Jascha Heifetz&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IlU9BTYnxdM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;movies&quot;&gt;Movies&lt;/h2&gt;
-&lt;h3 id=&quot;carnegie-hall-1947-heifetz-piatigorsky-rubinstein-reiner-walter&quot;&gt;Carnegie Hall 1947 Heifetz, Piatigorsky, Rubinstein, Reiner, Walter&lt;/h3&gt;
-&lt;p&gt;Jascha Heifetz (violinist) Tchaikovsky - “Violin Concerto in D, First Movement” - New York Philharmonic, Fritz Reiner, conductor
-Harry James (trumpeter)
-Vaughn Monroe (band leader)
-Jan Peerce (vocalist)
-Gregor Piatigorsky (cellist)
-Ezio Pinza (vocalist)
-Lily Pons (vocalist)
-Fritz Reiner (conductor)
-Artur Rodzinski (conductor)
-Arthur Rubinstein (pianist)
-Rise Stevens (vocalist)
-Leopold Stokowski (conductor)
-Bruno Walter (conductor)
-Walter Damrosch (conductor)
-Olin Downes (music critic)
-New York Philharmonic Quintette (John Corigliano Sr., William Lincer, Nadia Reisenberg, Leonard Rose, Michael Rosenker)
-New York Philharmonic&lt;/p&gt;
-
-&lt;p&gt;Storyline:
-A mother (Marsha Hunt) wants her son (William Prince) to grow up to be a pianist good enough to play at Carnegie Hall but, when grown, the son prefers to play with Vaughan Monroe’s orchestra. But Mama’s wishes prevail and the son appears at Carnegie Hall as the composer-conductor-pianist of a modern horn concerto, with Harry James as the soloist. Frank McHugh is along as a Carnegie Hall porter and doorman, and Martha O’Driscoll is a singer who provides the love interest for Prince. Meanwhile and between while a brigade of classical music names from the 1940’s (and earlier and later)appear; the conductors Walter Damrosch, Bruno Walter, Artur Rodzinski, Fritz Reiner and Leopold Stokowski; singers Rise Stevens, Lily Pons, Jan Peerce and Ezio Pinza, plus pianist Arthur Rubinstein, cellist Gregor Piatigorsky and violinist Jascha Heifetz.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ruvljAjzscg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;jascha-heifetz---portrait-of-an-artist&quot;&gt;Jascha Heifetz - Portrait of an Artist&lt;/h3&gt;
-&lt;p&gt;Heifetz answers questions by a group of college students and performs Mendelssohn’s ‘SWEET REMEMBRANCE,’ Brahms’ ‘SCHERZO’ and ‘HUNGARIAN DANCE NO. 7,’ Gluck’s ‘MELODY,’ Prokofieff’s ‘MARCH,’ Wieniawski’s ‘POLONAISE’ and Dinicu’s ‘HORA STACCATO.’.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/LRUPV2M9pMk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h2 id=&quot;masterclasses&quot;&gt;Masterclasses&lt;/h2&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/szXaTRE3tL0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/d3pLwVhm7xY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kAMhxFEGsns&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/-DtMiuPusFY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;performances&quot;&gt;Performances&lt;/h2&gt;
-&lt;h3 id=&quot;jascha-heifetz-plays-paganini-caprice-no-24&quot;&gt;Jascha Heifetz plays Paganini Caprice No. 24&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/vPcnGrie__M&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;hora-staccato&quot;&gt;Hora Staccato&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Mag2mc5Vva0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;tchaikovsky-violin-concerto-in-d-major-op-35-i-allegro-moderato&quot;&gt;Tchaikovsky Violin Concerto in D Major, Op. 35: I. Allegro moderato&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kFaq9kTlcaY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;jascha-heifetz-in-performance-mozart-prokofiev-debussy-rachmaninov-gershwin-bach&quot;&gt;Jascha Heifetz in Performance (Mozart, Prokofiev, Debussy, Rachmaninov, Gershwin, Bach)&lt;/h3&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5lPJCRBqUB8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="hobbies`" /><summary type="html">Links to Jascha Heifetz documentaries, masterclasses and performances.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="repair" /><summary type="html">This Stanley mattock has had a loose head for a few years now. Time to fix it properly.</summary></entry></feed>
