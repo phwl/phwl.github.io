@@ -26,3 +26,13 @@ Had a good lunch at the [Dancing Goat Cafe](https://www.tripadvisor.com.au/ShowU
 
 Unexpectedly came across this sign, it's a long way from home.
 {% include figure image_path="/assets/images/2020/06/mudgee-earlscourt.jpeg" caption="" %}
+
+Went for a long walk around the Macquarie River.
+
+{% include figure image_path="/assets/images/2020/06/dubbo1.jpg" caption="" %}
+
+A good breakfast at [Press Cafe](https://www.pressdubbo.com.au/)
+{% include figure image_path="/assets/images/2020/06/dubbo2.jpg" caption="" %}
+
+Lunch at [Gerard's Place](https://www.facebook.com/GerardsPlaceDenman/?rf=593336600746440) in Denman which was supposed to be good but we were not too impressed. I did like the cake name.
+{% include figure image_path="/assets/images/2020/06/dubbo3.jpg" caption="" %}

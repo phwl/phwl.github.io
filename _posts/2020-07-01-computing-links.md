@@ -1,0 +1,22 @@
+---
+author: phwl
+comments: true
+date: 2020-07-01 11:46:18 AEST
+title: Computing links
+classes: wide
+toc: true
+categories:
+- academia
+tags:
+- software
+header:
+  teaser: /assets/images/2020/07/exp.png
+---
+A collection of interesting computing links.
+
+<!-- more -->
+
+## Function Approximation
+* Approximating the exponential function <https://www.pseudorandom.com/implementing-exp>
+
+
