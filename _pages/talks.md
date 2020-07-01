@@ -9,6 +9,26 @@ title: Talks
 classes: wide
 wordpress_id: 3312
 ---
+## 1 June 2020, Lecture (Stephen Tridgell)
+[Real-time automatic modulation classification using RFSoC](http://phwl.org/2020/rtamc/) 27th Reconfigurable Architectures Workshop (RAW)
+
+The computational complexity of deep learning has
+led to research efforts to reduce the computation required.
+The use of low precision is particularly effective on FPGAs as
+they are not restricted to byte addressable operations. Very low
+precision activations and weights can have a significant impact
+on the accuracy however. This work demonstrates by exploiting
+throughput matching that higher precision on certain layers
+can be used to recover this accuracy. This is applied to the
+domain of automatic modulation classification for radio signals
+leveraging the RF capabilities offered by the Xilinx ZCU111
+RFSoC platform. The implemented networks achieve high-speed
+real-time performance with a classification latency of ≈8µs, and
+an operational throughput of 488k classifications per second.
+On the open-source RadioML dataset, we demonstrate how to
+recover 4.3% in accuracy with the same hardware usage with
+our technique.
+
 ## 24 Mar 2020, Lecture
 [LUXOR: An FPGA Logic Cell Architecture for Efficient Compressor Tree Implementations](/assets/talks/LUXOR-usyd-fpga20.pdf), 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA), Monterey
 
