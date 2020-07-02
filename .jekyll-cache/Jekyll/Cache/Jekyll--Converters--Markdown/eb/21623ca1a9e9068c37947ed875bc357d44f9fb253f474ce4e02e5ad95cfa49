@@ -1,4 +1,29 @@
-I":B<h2 id="24-mar-2020-lecture">24 Mar 2020, Lecture</h2>
+I"YK<h2 id="9-july-2020-lecture">9 July 2020, Lecture</h2>
+<p><a href="assets/talks/rcintro20-nbn.pdf">FPGAs - EPIC Benefits</a>, NBN</p>
+
+<p>A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. Since their introduction in the 1980’s, these devices have dramatically increased in capacity and functionality, with the recent Xilinx ZU29DR FPGA integrating a 1.5 GHz Quad-core ARM Cortex-A53 processor; Dual-core ARM Cortex-R5; 16x 14-bit, 6.6 GSPS digital-to-analog converters; 16x 12-bit, 2.1 GSPS analog-to-digital converters; 4K DSP slices and 930K system logic gates on a single device. This presentation will first provide an overview of FPGA architectures and describe their Energy, Parallelism, Integration and Customisation (EPIC) benefits over other technologies such as microprocessors, digital signal processors and graphics processing units (GPUs). This will be followed with examples of interesting FPGA-based computing applications, including my own research in the Computer Engineering Lab at the University of Sydney. </p>
+
+<h2 id="1-june-2020-lecture-stephen-tridgell">1 June 2020, Lecture (Stephen Tridgell)</h2>
+<p><a href="http://phwl.org/2020/rtamc/">Real-time automatic modulation classification using RFSoC</a>, 27th Reconfigurable Architectures Workshop (RAW)</p>
+
+<p>The computational complexity of deep learning has
+led to research efforts to reduce the computation required.
+The use of low precision is particularly effective on FPGAs as
+they are not restricted to byte addressable operations. Very low
+precision activations and weights can have a significant impact
+on the accuracy however. This work demonstrates by exploiting
+throughput matching that higher precision on certain layers
+can be used to recover this accuracy. This is applied to the
+domain of automatic modulation classification for radio signals
+leveraging the RF capabilities offered by the Xilinx ZCU111
+RFSoC platform. The implemented networks achieve high-speed
+real-time performance with a classification latency of ≈8µs, and
+an operational throughput of 488k classifications per second.
+On the open-source RadioML dataset, we demonstrate how to
+recover 4.3% in accuracy with the same hardware usage with
+our technique.</p>
+
+<h2 id="24-mar-2020-lecture">24 Mar 2020, Lecture</h2>
 <p><a href="/assets/talks/LUXOR-usyd-fpga20.pdf">LUXOR: An FPGA Logic Cell Architecture for Efficient Compressor Tree Implementations</a>, 28th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA), Monterey</p>
 
 <p>We propose two tiers of modiications to FPGA logic cell architecture
