@@ -10,7 +10,7 @@ classes: wide
 wordpress_id: 3312
 ---
 ## 9 July 2020, Lecture 
-[FPGAs - EPIC Benefits](assets/talks/rcintro20-nbn.pdf), NBN 
+[FPGAs - EPIC Benefits](assets/talks/rcintro20-nbn.pdf), NBN CTO Office
 
 A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. Since their introduction in the 1980’s, these devices have dramatically increased in capacity and functionality, with the recent Xilinx ZU29DR FPGA integrating a 1.5 GHz Quad-core ARM Cortex-A53 processor; Dual-core ARM Cortex-R5; 16x 14-bit, 6.6 GSPS digital-to-analog converters; 16x 12-bit, 2.1 GSPS analog-to-digital converters; 4K DSP slices and 930K system logic gates on a single device. This presentation will first provide an overview of FPGA architectures and describe their Energy, Parallelism, Integration and Customisation (EPIC) benefits over other technologies such as microprocessors, digital signal processors and graphics processing units (GPUs). This will be followed with examples of interesting FPGA-based computing applications, including my own research in the Computer Engineering Lab at the University of Sydney. 
 
