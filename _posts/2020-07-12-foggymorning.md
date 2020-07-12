@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-07-12 18:25:23 AEST
-title: Foggy morning (and other random stuff)
+title: Foggy morning and other random stuff
 classes: wide
 categories:
 - photography
