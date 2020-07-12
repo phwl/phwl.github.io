@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T19:10:21+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T20:40:24+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning (and other random stuff)</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning (and other random stuff)" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
+&lt;h2 id=&quot;morning-photo&quot;&gt;Morning photo&lt;/h2&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/07/foggymorning.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/07/foggymorning.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -9,7 +10,17 @@
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;making-crackling&quot;&gt;Making crackling&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&quot;&gt;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;manly-warringah-radio-society-agm&quot;&gt;Manly Warringah Radio Society AGM&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&quot;&gt;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 

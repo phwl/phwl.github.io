@@ -19,8 +19,9 @@ Early walk on a very foggy morning.
 ## Morning photo
 {% include figure image_path="/assets/images/2020/07/foggymorning.jpeg" caption="" %}
 
-## Making crackling
-* <https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/>
+## Making pork crackling
+* The first law of thermodynamics as it relates to delicious swine: <https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/>
 
 ## Manly Warringah Radio Society AGM
 * <https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/>
+{% include figure image_path="/assets/images/2020/07/foggymorning.jpeg" caption="" %}
