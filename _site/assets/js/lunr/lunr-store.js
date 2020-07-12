@@ -989,8 +989,8 @@ var store = [{
         "tags": ["software"],
         "url": "http://localhost:4000/2020/computing-links/",
         "teaser":"http://localhost:4000/assets/images/2020/07/exp.png"},{
-        "title": "Foggy morning (and other random stuff)",
-        "excerpt":"Early walk on a very foggy morning.     Morning photo                               Making crackling     https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/   Manly Warringah Radio Society AGM     https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/  ","categories": ["photography"],
+        "title": "Foggy morning and other random stuff",
+        "excerpt":"Early walk on a very foggy morning.     Morning photo                               Making pork crackling     The first law of thermodynamics as it relates to delicious swine: https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/   Manly Warringah Radio Society AGM     https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/                               ","categories": ["photography"],
         "tags": ["australia"],
         "url": "http://localhost:4000/2020/foggymorning/",
         "teaser":"http://localhost:4000/assets/images/2020/07/foggymorning.jpeg"}]

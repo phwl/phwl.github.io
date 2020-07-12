@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T20:40:24+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning (and other random stuff)</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning (and other random stuff)" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T21:10:28+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning and other random stuff</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning and other random stuff" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -12,22 +12,30 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;making-crackling&quot;&gt;Making crackling&lt;/h2&gt;
+&lt;h2 id=&quot;making-pork-crackling&quot;&gt;Making pork crackling&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&quot;&gt;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The first law of thermodynamics as it relates to delicious swine: &lt;a href=&quot;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&quot;&gt;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;manly-warringah-radio-society-agm&quot;&gt;Manly Warringah Radio Society AGM&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&quot;&gt;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/07/foggymorning.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/07/foggymorning.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="photography" /><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
 &lt;h2 id=&quot;function-approximation&quot;&gt;Function Approximation&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Approximating the exponential function &lt;a href=&quot;https://www.pseudorandom.com/implementing-exp&quot;&gt;https://www.pseudorandom.com/implementing-exp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><summary type="html">A collection of interesting computing links.</summary></entry><entry><title type="html">Dubbo trip</title><link href="http://localhost:4000/2020/dubbo-trip/" rel="alternate" type="text/html" title="Dubbo trip" /><published>2020-06-25T21:45:34+10:00</published><updated>2020-06-25T21:45:34+10:00</updated><id>http://localhost:4000/2020/dubbo-trip</id><content type="html" xml:base="http://localhost:4000/2020/dubbo-trip/">&lt;p&gt;Went for a drive to Dubbo as a cure for cabin fever.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><summary type="html">A collection of interesting computing links.</summary></entry><entry><title type="html">Dubbo trip</title><link href="http://localhost:4000/2020/dubbo-trip/" rel="alternate" type="text/html" title="Dubbo trip" /><published>2020-06-25T21:45:34+10:00</published><updated>2020-06-25T21:45:34+10:00</updated><id>http://localhost:4000/2020/dubbo-trip</id><content type="html" xml:base="http://localhost:4000/2020/dubbo-trip/">&lt;p&gt;Went for a drive to Dubbo as a cure for cabin fever.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -100,7 +108,7 @@ Normally you would not be able to see through the trees because they’d have le
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Went for a drive to Dubbo as a cure for cabin fever.</summary></entry><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="photography" /><category term="travel" /><category term="australia" /><summary type="html">Went for a drive to Dubbo as a cure for cabin fever.</summary></entry><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -209,7 +217,7 @@ AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8
 AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5&quot; 7200RPM SATA3 Desktop Hard Drive 
 AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
 AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="software" /><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
 for real-time automatic modulation classification (AMC).&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -219,7 +227,7 @@ for real-time automatic modulation classification (AMC).&lt;/p&gt;
   &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="radio" /><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -307,7 +315,7 @@ low speaker volume.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/coda-6924-powersupplymods.pdf&quot;&gt;Power supply mods&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6924-mute.pdf&quot;&gt;Mute mod&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-dds.pdf&quot;&gt;DDS mod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="radio" /><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -321,7 +329,7 @@ elements by an upside-down glass jar attached to the lid.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Cleaning up some old stuff and found this from the 70’s.</summary></entry><entry><title type="html">Smoked duck</title><link href="http://localhost:4000/2020/smoked-duck/" rel="alternate" type="text/html" title="Smoked duck" /><published>2020-05-30T19:25:29+10:00</published><updated>2020-05-30T19:25:29+10:00</updated><id>http://localhost:4000/2020/smoked-duck</id><content type="html" xml:base="http://localhost:4000/2020/smoked-duck/">&lt;p&gt;One of my favorite dishes is smoked duck.
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="electronics" /><summary type="html">Cleaning up some old stuff and found this from the 70’s.</summary></entry><entry><title type="html">Smoked duck</title><link href="http://localhost:4000/2020/smoked-duck/" rel="alternate" type="text/html" title="Smoked duck" /><published>2020-05-30T19:25:29+10:00</published><updated>2020-05-30T19:25:29+10:00</updated><id>http://localhost:4000/2020/smoked-duck</id><content type="html" xml:base="http://localhost:4000/2020/smoked-duck/">&lt;p&gt;One of my favorite dishes is smoked duck.
 &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;We made it based on this recipe.&lt;/p&gt;
@@ -408,7 +416,7 @@ Smoke for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="cooking" /><summary type="html">One of my favorite dishes is smoked duck.</summary></entry><entry><title type="html">Simple capillary alcohol stove from 375 ml coke can</title><link href="http://localhost:4000/2020/simple-capillary-alcohol-stove/" rel="alternate" type="text/html" title="Simple capillary alcohol stove from 375 ml coke can" /><published>2020-05-17T16:02:15+10:00</published><updated>2020-05-17T16:02:15+10:00</updated><id>http://localhost:4000/2020/simple-capillary-alcohol-stove</id><content type="html" xml:base="http://localhost:4000/2020/simple-capillary-alcohol-stove/">&lt;p&gt;It only takes about 10 min to make a stove that burns methylated spirits from a coke can.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="cooking" /><summary type="html">One of my favorite dishes is smoked duck.</summary></entry><entry><title type="html">Simple capillary alcohol stove from 375 ml coke can</title><link href="http://localhost:4000/2020/simple-capillary-alcohol-stove/" rel="alternate" type="text/html" title="Simple capillary alcohol stove from 375 ml coke can" /><published>2020-05-17T16:02:15+10:00</published><updated>2020-05-17T16:02:15+10:00</updated><id>http://localhost:4000/2020/simple-capillary-alcohol-stove</id><content type="html" xml:base="http://localhost:4000/2020/simple-capillary-alcohol-stove/">&lt;p&gt;It only takes about 10 min to make a stove that burns methylated spirits from a coke can.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -596,7 +604,7 @@ but you can’t use it to extinguish in that case.&lt;/p&gt;
 &lt;h1 id=&quot;link&quot;&gt;Link&lt;/h1&gt;
 &lt;p&gt;This youtube video shows the process.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/R5kdvVsnJhs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="outdoors" /><category term="hobbies" /><category term="stoves" /><summary type="html">It only takes about 10 min to make a stove that burns methylated spirits from a coke can.</summary></entry><entry><title type="html">EIE graduation class</title><link href="http://localhost:4000/2020/EIE-gradphoto/" rel="alternate" type="text/html" title="EIE graduation class" /><published>2020-05-16T13:02:15+10:00</published><updated>2020-05-16T13:02:15+10:00</updated><id>http://localhost:4000/2020/EIE-gradphoto</id><content type="html" xml:base="http://localhost:4000/2020/EIE-gradphoto/">&lt;p&gt;Photo of my undergraduate graduation class, Department of Electrical Engineering,
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/R5kdvVsnJhs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="outdoors" /><category term="hobbies" /><category term="stoves" /><summary type="html">It only takes about 10 min to make a stove that burns methylated spirits from a coke can.</summary></entry><entry><title type="html">EIE graduation class</title><link href="http://localhost:4000/2020/EIE-gradphoto/" rel="alternate" type="text/html" title="EIE graduation class" /><published>2020-05-16T13:02:15+10:00</published><updated>2020-05-16T13:02:15+10:00</updated><id>http://localhost:4000/2020/EIE-gradphoto</id><content type="html" xml:base="http://localhost:4000/2020/EIE-gradphoto/">&lt;p&gt;Photo of my undergraduate graduation class, Department of Electrical Engineering,
 The University of Sydney.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -610,4 +618,4 @@ The University of Sydney.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Photo of my undergraduate graduation class, Department of Electrical Engineering, The University of Sydney.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html">Photo of my undergraduate graduation class, Department of Electrical Engineering, The University of Sydney.</summary></entry></feed>
