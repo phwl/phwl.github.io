@@ -793,6 +793,10 @@
 <lastmod>2020-07-01T11:46:18+10:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/foggymorning/</loc>
+<lastmod>2020-07-12T18:25:23+10:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -1994,7 +1998,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/talks/rcintro20-nbn.pdf</loc>
-<lastmod>2020-07-02T10:21:01+10:00</lastmod>
+<lastmod>2020-07-09T10:47:40+10:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/tools/Bluehost%20Portal.pdf</loc>

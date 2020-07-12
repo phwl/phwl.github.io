@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-02T10:23:54+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-12T19:10:21+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/07/foggymorning.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/07/foggymorning.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry><entry><title type="html">Computing links</title><link href="http://localhost:4000/2020/computing-links/" rel="alternate" type="text/html" title="Computing links" /><published>2020-07-01T11:46:18+10:00</published><updated>2020-07-01T11:46:18+10:00</updated><id>http://localhost:4000/2020/computing-links</id><content type="html" xml:base="http://localhost:4000/2020/computing-links/">&lt;p&gt;A collection of interesting computing links.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -78,7 +89,7 @@ Normally you would not be able to see through the trees because they’d have le
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="photography" /><summary type="html">Went for a drive to Dubbo as a cure for cabin fever.</summary></entry><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="australia" /><summary type="html">Went for a drive to Dubbo as a cure for cabin fever.</summary></entry><entry><title type="html">Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/ubuntu-gpu-machine-install/" rel="alternate" type="text/html" title="Ubuntu GPU Machine Install" /><published>2020-06-09T11:56:56+10:00</published><updated>2020-06-09T11:56:56+10:00</updated><id>http://localhost:4000/2020/ubuntu-gpu-machine-install</id><content type="html" xml:base="http://localhost:4000/2020/ubuntu-gpu-machine-install/">&lt;p&gt;Another new machine in the lab, here is the configuration.&lt;/p&gt;
 
 &lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
 
@@ -187,7 +198,17 @@ AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8
 AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5&quot; 7200RPM SATA3 Desktop Hard Drive 
 AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
 AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="ubuntu" /><category term="linux" /><summary type="html">Another new machine in the lab, here is the configuration.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
+for real-time automatic modulation classification (AMC).&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;It was presented (virtually) at the RAW workshop &lt;a href=&quot;https://raw.necst.it/&quot;&gt;https://raw.necst.it/&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Codan 6924</title><link href="http://localhost:4000/2020/codan-6924/" rel="alternate" type="text/html" title="Codan 6924" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/codan-6924</id><content type="html" xml:base="http://localhost:4000/2020/codan-6924/">&lt;p&gt;Picked up this “not working” Codan radio on Gumtree.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -275,17 +296,7 @@ low speaker volume.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/coda-6924-powersupplymods.pdf&quot;&gt;Power supply mods&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-6924-mute.pdf&quot;&gt;Mute mod&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/assets/images/2020/06/codan-dds.pdf&quot;&gt;DDS mod&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Real-time automatic modulation classification using RFSoC</title><link href="http://localhost:4000/2020/rtamc/" rel="alternate" type="text/html" title="Real-time automatic modulation classification using RFSoC" /><published>2020-06-01T19:59:48+10:00</published><updated>2020-06-01T19:59:48+10:00</updated><id>http://localhost:4000/2020/rtamc</id><content type="html" xml:base="http://localhost:4000/2020/rtamc/">&lt;p&gt;Here is a short video describing our work on FPGA-based machine learning
-for real-time automatic modulation classification (AMC).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;It was presented (virtually) at the RAW workshop &lt;a href=&quot;https://raw.necst.it/&quot;&gt;https://raw.necst.it/&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="electronics" /><summary type="html">Picked up this “not working” Codan radio on Gumtree.</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -588,25 +599,4 @@ The University of Sydney.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Photo of my undergraduate graduation class, Department of Electrical Engineering, The University of Sydney.</summary></entry><entry><title type="html">TP Link TL-WPA4220 problem and fix</title><link href="http://localhost:4000/2020/tplink-wpa4220-fix/" rel="alternate" type="text/html" title="TP Link TL-WPA4220 problem and fix" /><published>2020-05-07T13:10:54+10:00</published><updated>2020-05-07T13:10:54+10:00</updated><id>http://localhost:4000/2020/tplink-wpa4220-fix</id><content type="html" xml:base="http://localhost:4000/2020/tplink-wpa4220-fix/">&lt;p&gt;I purchased a
-&lt;a href=&quot;https://www.tp-link.com/au/home-networking/powerline/tl-wpa4220/&quot;&gt;TL-WPA4220&lt;/a&gt;
-was unreliable. The connection did not stay up more than a day or so.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;The device came with
-&lt;br /&gt;
-Firmware version: 4.0.3 Build 20190326 Rel.43406 
-&lt;br /&gt;
-Hardware version: TL-WPA4220 v4.0&lt;/p&gt;
-
-&lt;p&gt;After a bit of browsing I found this &lt;a href=&quot;https://community.tp-link.com/en/home/forum/topic/78910&quot;&gt;https://community.tp-link.com/en/home/forum/topic/78910&lt;/a&gt;. Adding
-the following script on the Ubuntu Linux machine at the other end of the powerline adaptor solved the problem
-and it has been up for a week now.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;while true
-do
-	ping -c 1 192.168.0.1
-	sleep 60
-done
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="software" /><summary type="html">I purchased a TL-WPA4220 was unreliable. The connection did not stay up more than a day or so.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><summary type="html">Photo of my undergraduate graduation class, Department of Electrical Engineering, The University of Sydney.</summary></entry></feed>

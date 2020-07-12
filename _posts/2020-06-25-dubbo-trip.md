@@ -5,9 +5,10 @@ date: 2020-06-25 21:45:34 AEST
 title: Dubbo trip
 classes: wide
 categories:
+- photography
 - travel
 tags:
-- photography
+- australia
 header:
   teaser: /assets/images/2020/06/bushfire1.jpeg
 ---
