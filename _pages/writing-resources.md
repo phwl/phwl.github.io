@@ -17,6 +17,7 @@ wordpress_id: 4699
   * Preparing your thesis: [https://sydney.edu.au/students/prepare-thesis.html](https://sydney.edu.au/students/prepare-thesis.html)
   * Research skills for HDR students: [https://sydney.edu.au/students/hdr-research-skills.html](https://sydney.edu.au/students/hdr-research-skills.html)
   * How to write a thesis: [http://www.phys.unsw.edu.au/~jw/thesis.html](http://www.phys.unsw.edu.au/~jw/thesis.html)
+  * Warwick University (good information on introductions and conclusions) <https://warwick.ac.uk/fac/soc/al/globalpad/openhouse/academicenglishskills/writing/>
 
 ## Papers and Reports
   * Sanity check your papers: [http://aberger.site/checks/](http://aberger.site/checks/)
