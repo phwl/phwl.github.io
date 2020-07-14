@@ -1,4 +1,4 @@
-I"/<p>It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</p>
+I"B<p>It seemed like a good idea to remove all the accumulated rubbish on my MacBook Pro and install what I really needed. Here are the steps:</p>
 
 <!-- more -->
 
@@ -15,7 +15,7 @@
   <li>From University machines download and install Cisco Anyconnect (VPN) and Adobe Acrobat. Connect to vpn.sydney.edu.au</li>
   <li>Installed MS Office</li>
   <li>Installed Apple’s xcode command line tools: “xcode-select –install”</li>
-  <li>Installed homebrew <code class="highlighter-rouge">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>and the wget, curl, rsync, git</li>
+  <li>Installed homebrew <code class="language-plaintext highlighter-rouge">/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>and the wget, curl, rsync, git</li>
   <li>Did brew install caskroom/cask/brew-cask and the following casks mactex, xquartz</li>
   <li>Installed anaconda from anaconda.com</li>
   <li>Installed Virtualbox from <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></li>

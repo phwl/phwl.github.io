@@ -4,6 +4,7 @@ comments: true
 date: 2020-06-09 11:56:56 AEST
 title: Ubuntu GPU Machine Install
 classes: wide
+toc: true
 categories:
 - software
 tags:
@@ -15,7 +16,7 @@ header:
 
 Another new machine in the lab, here is the configuration.
 
-## Installation
+## Ubuntu Installation
 
 * Configure BIOS to boot on power failure
 * Install Ubuntu 18.04
@@ -90,12 +91,56 @@ sudo rm -rf home.old
 
  * Create users
 
+## CUDA 
+ * Install cuda following instructions at <https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html>. I used the package manager method and version 10.2-89.1. 
+
+ * Reboot
+
+```
+sudo shutdown -r now
+```
+
+## Anaconda Pytorch
  * Install anaconda (locally, download from <https://www.anaconda.com/products/individual>)
+
+Put the below in ~/.bashrc and ```source ~/.bashrc```.
+
+```
+export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
 
  * Install pytorch 
 
 ```
 conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+```
+
+ * Check driver
+
+```
+(base) phwl@dust2:~$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.05  Sun Jun 28 10:33:40 UTC 2020
+GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+```
+
+ * Check pytorch
+
+```
+(base) phwl@dust2:~$ python
+Python 3.7.6 (default, Jan  8 2020, 19:59:22) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.cuda.current_device()
+0
+>>> torch.cuda.device(0)
+<torch.cuda.device object at 0x7f345859e790>
+>>> torch.cuda.get_device_name(0)
+'GeForce RTX 2080 Ti'
+>>> 
+
 ```
 
 ## Machine Details

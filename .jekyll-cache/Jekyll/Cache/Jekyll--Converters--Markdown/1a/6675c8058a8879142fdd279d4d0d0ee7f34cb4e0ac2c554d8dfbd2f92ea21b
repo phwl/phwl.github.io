@@ -1,4 +1,4 @@
-I"¯	<p>Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
+I"Ì	<p>Some new machines arrived in the lab including a Dell XPS 8930 Desktop with
 Dell UltraSharp U2518D monitor.</p>
 
 <p>Here is how I configured the machine:</p>
@@ -6,7 +6,7 @@ Dell UltraSharp U2518D monitor.</p>
   <li>/etc/network/interfaces should be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># interfaces(5) file used by ifup(8) and ifdown(8)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># interfaces(5) file used by ifup(8) and ifdown(8)
 auto lo
 iface lo inet loopback
 
@@ -19,19 +19,19 @@ iface enp4s0 inet dhcp
   <li>/etc/hosts should be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.1.1       trout.staff.sydney.edu.au trout
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.1.1       trout.staff.sydney.edu.au trout
 </code></pre></div></div>
 
 <ul>
   <li>The NFS entry in /etc/fstab</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10.65.xx.yy:/volume1/homes /nfs/homes   nfs   vers=4.1,defaults    0       0
 </code></pre></div></div>
 
 <p>did not mount upon booting. I think this is because the order was wrong. This can be fixed by adding a file containing</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
-mount <span class="nt">-a</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh
+mount -a
 </code></pre></div></div>
 
 <p>to /etc/network/if-up.d/fstab.</p>

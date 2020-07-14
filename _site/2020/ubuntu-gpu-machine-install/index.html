@@ -182,9 +182,21 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#ubuntu-installation">Ubuntu Installation</a></li>
+  <li><a href="#cuda">CUDA</a></li>
+  <li><a href="#anaconda-pytorch">Anaconda Pytorch</a></li>
+  <li><a href="#machine-details">Machine Details</a></li>
+</ul>
+            </nav>
+          </aside>
+        
         <p>Another new machine in the lab, here is the configuration.</p>
 
-<h2 id="installation">Installation</h2>
+<h2 id="ubuntu-installation">Ubuntu Installation</h2>
 
 <ul>
   <li>Configure BIOS to boot on power failure</li>
@@ -192,19 +204,19 @@
   <li>Note can’t log in using the display manager so ctrl-alt-F3 to get a tty and install NVidia drivers.  First check default install is ok</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu-drivers devices
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu-drivers devices
 </code></pre></div></div>
 
 <p>and then</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ubuntu-drivers autoinstall
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ubuntu-drivers autoinstall
 </code></pre></div></div>
 
 <ul>
   <li>Edit /etc/hosts to be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost
 127.0.1.1	machinename.staff.sydney.edu.au machinename
 
 # The following lines are desirable for IPv6 capable hosts
@@ -219,14 +231,14 @@ ff02::2 ip6-allrouters
   <li>Edit /etc/hostname to be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>machinename
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>machinename
 </code></pre></div></div>
 
 <ul>
   <li>Install packages</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
 sudo sysemctl start ssh
 </code></pre></div></div>
 
@@ -234,7 +246,7 @@ sudo sysemctl start ssh
   <li>Create partition and figure out blkid</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fdisk /dev/sda
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fdisk /dev/sda
 sudo mkfs -t ext4 /dev/sda1
 sudo blkid
 </code></pre></div></div>
@@ -243,7 +255,7 @@ sudo blkid
   <li>Edit /etc/fstab to mount disks</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 </code></pre></div></div>
 
@@ -251,7 +263,7 @@ fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,default
   <li>Move /home to the other partition</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
 cd /home
 sudo rsync -av . /media/seagate2g/home
 cd /
@@ -268,20 +280,71 @@ sudo rm -rf home.old
   <li>
     <p>Create users</p>
   </li>
+</ul>
+
+<h2 id="cuda">CUDA</h2>
+<ul>
   <li>
-    <p>Install anaconda (locally, download from <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>)</p>
+    <p>Install cuda following instructions at <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html</a>. I used the package manager method and version 10.2-89.1.</p>
   </li>
   <li>
-    <p>Install pytorch</p>
+    <p>Reboot</p>
   </li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo shutdown -r now
+</code></pre></div></div>
+
+<h2 id="anaconda-pytorch">Anaconda Pytorch</h2>
+<ul>
+  <li>Install anaconda (locally, download from <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>)</li>
+</ul>
+
+<p>Put the below in ~/.bashrc and <code class="language-plaintext highlighter-rouge">source ~/.bashrc</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+</code></pre></div></div>
+
+<ul>
+  <li>Install pytorch</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+</code></pre></div></div>
+
+<ul>
+  <li>Check driver</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) phwl@dust2:~$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.05  Sun Jun 28 10:33:40 UTC 2020
+GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+</code></pre></div></div>
+
+<ul>
+  <li>Check pytorch</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) phwl@dust2:~$ python
+Python 3.7.6 (default, Jan  8 2020, 19:59:22) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import torch
+&gt;&gt;&gt; torch.cuda.current_device()
+0
+&gt;&gt;&gt; torch.cuda.device(0)
+&lt;torch.cuda.device object at 0x7f345859e790&gt;
+&gt;&gt;&gt; torch.cuda.get_device_name(0)
+'GeForce RTX 2080 Ti'
+&gt;&gt;&gt; 
+
 </code></pre></div></div>
 
 <h2 id="machine-details">Machine Details</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Power Supply : Gigabyte AORUS AP750GM
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Power Supply : Gigabyte AORUS AP750GM
 Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
 AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
 AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 

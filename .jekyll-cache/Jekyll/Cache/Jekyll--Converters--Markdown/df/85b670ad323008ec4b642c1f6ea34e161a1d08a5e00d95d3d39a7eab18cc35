@@ -1,10 +1,10 @@
-I"N<p>Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
+I"a<p>Here is how I configured Anaconda and Pytorch 0.4.1 on the Ubuntu 18.04 system
 mentioned <a href="/2019/ubuntu-nvdia-19">here</a>. This was for running
 <a href="https://github.com/TideDancer/DTWNet.git">DTWnet</a>.</p>
 
 <ul>
   <li>Install Anaconda from <a href="https://www.anaconda.com/distribution">https://www.anaconda.com/distribution</a>, then
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda update -n base -c defaults conda
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda update -n base -c defaults conda
 conda create --name dtw
 conda activate dtw
 conda install pytorch=0.4.1 cuda92 -c pytorch

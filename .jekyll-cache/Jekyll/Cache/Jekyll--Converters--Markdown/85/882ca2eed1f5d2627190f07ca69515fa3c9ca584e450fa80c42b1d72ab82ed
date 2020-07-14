@@ -1,4 +1,4 @@
-I"Å<p>Another new machine in the lab, here is the configuration.</p>
+I"$<p>Another new machine in the lab, here is the configuration.</p>
 
 <h2 id="installation">Installation</h2>
 
@@ -8,19 +8,19 @@
   <li>Note canâ€™t log in using the display manager so ctrl-alt-F3 to get a tty and install NVidia drivers.  First check default install is ok</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu-drivers devices
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ubuntu-drivers devices
 </code></pre></div></div>
 
 <p>and then</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ubuntu-drivers autoinstall
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ubuntu-drivers autoinstall
 </code></pre></div></div>
 
 <ul>
   <li>Edit /etc/hosts to be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost
 127.0.1.1	machinename.staff.sydney.edu.au machinename
 
 # The following lines are desirable for IPv6 capable hosts
@@ -35,14 +35,14 @@ ff02::2 ip6-allrouters
   <li>Edit /etc/hostname to be</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>machinename
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>machinename
 </code></pre></div></div>
 
 <ul>
   <li>Install packages</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install net-tools openssh-server nfs-kernel-server nfs-common
 sudo sysemctl start ssh
 </code></pre></div></div>
 
@@ -50,7 +50,7 @@ sudo sysemctl start ssh
   <li>Create partition and figure out blkid</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fdisk /dev/sda
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fdisk /dev/sda
 sudo mkfs -t ext4 /dev/sda1
 sudo blkid
 </code></pre></div></div>
@@ -59,7 +59,7 @@ sudo blkid
   <li>Edit /etc/fstab to mount disks</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /media/seagate2g ext4 defaults 0 1
 fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
 </code></pre></div></div>
 
@@ -67,7 +67,7 @@ fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,default
   <li>Move /home to the other partition</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
 cd /home
 sudo rsync -av . /media/seagate2g/home
 cd /
@@ -88,16 +88,25 @@ sudo rm -rf home.old
     <p>Install anaconda (locally, download from <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>)</p>
   </li>
   <li>
-    <p>Install pytorch</p>
+    <p>Install cuda following instructions at <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html</a>. I used the package manager method and version 10.2. Put the below in ~/.bashrc and <code class="language-plaintext highlighter-rouge">source .bashrc</code>.</p>
   </li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+</code></pre></div></div>
+
+<ul>
+  <li>Install pytorch</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 </code></pre></div></div>
 
 <h2 id="machine-details">Machine Details</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Power Supply : Gigabyte AORUS AP750GM
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Power Supply : Gigabyte AORUS AP750GM
 Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
 AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
 AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 

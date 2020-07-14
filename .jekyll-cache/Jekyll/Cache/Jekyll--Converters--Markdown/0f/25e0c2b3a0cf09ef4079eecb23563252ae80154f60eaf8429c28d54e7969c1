@@ -1,4 +1,4 @@
-I"�D<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"�D<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isn’t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -30,7 +30,7 @@ steps below.</p>
 
 <h2 id="install-minimal-mistakes-jekyll-theme">Install minimal-mistakes-jekyll theme</h2>
 <ul>
-  <li>Jekyll is not compatible with the stupid Dropbox directory name <code class="highlighter-rouge">'Dropbox\ \(Sydney\ Uni\)/'</code>, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up</li>
+  <li>Jekyll is not compatible with the stupid Dropbox directory name <code class="language-plaintext highlighter-rouge">'Dropbox\ \(Sydney\ Uni\)/'</code>, and I don’t think there is a way to change it. To get around this I put my website directory outside of Dropbox and made a symbolic link (inside Dropbox) so it would be backed up</li>
   <li>Make a copy of <a href="https://github.com/mmistakes/mm-github-pages-starter">https://github.com/mmistakes/mm-github-pages-starter</a>, edit the _config.yml</li>
 </ul>
 
@@ -39,30 +39,30 @@ steps below.</p>
 </code></pre></div></div>
 
 <ul>
-  <li>To use the local server, type <code class="highlighter-rouge">bundle exec jekyll serve --incremental</code>
-and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
+  <li>To use the local server, type <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve --incremental</code>
+and browse to <code class="language-plaintext highlighter-rouge">localhost:4000</code>.</li>
 </ul>
 
 <h2 id="convert-website">Convert website</h2>
 <ul>
   <li>Use the Wordpress exporter to export old website in xml format (tried the Jekyll converter plugin but that doesn’t work for large websites). This just gives the content, without attachments etc. Then</li>
   <li>Use <a href="https://github.com/thomasf/exitwp">exitwp</a> to convert Wordpress to Jekyll</li>
-  <li>Copy all the images and documents from the Wordpress site (<code class="highlighter-rouge">wp-content</code> directory) using <code class="highlighter-rouge">ftp</code>. I used <code class="highlighter-rouge">FileZilla</code> from the App store for this.</li>
-  <li>Copy the _posts directory from <code class="highlighter-rouge">exitwp</code> into the Jekyll website.</li>
-  <li>Copy wp-content files into <code class="highlighter-rouge">assets/images</code> on the Jekyll website.</li>
-  <li>To make publically available, type <code class="highlighter-rouge">bundle exec jekyll build</code> and then push the files up to Github (the repository is <a href="https://github.com/phwl/phwl.github.io">https://github.com/phwl/phwl.github.io</a>)</li>
+  <li>Copy all the images and documents from the Wordpress site (<code class="language-plaintext highlighter-rouge">wp-content</code> directory) using <code class="language-plaintext highlighter-rouge">ftp</code>. I used <code class="language-plaintext highlighter-rouge">FileZilla</code> from the App store for this.</li>
+  <li>Copy the _posts directory from <code class="language-plaintext highlighter-rouge">exitwp</code> into the Jekyll website.</li>
+  <li>Copy wp-content files into <code class="language-plaintext highlighter-rouge">assets/images</code> on the Jekyll website.</li>
+  <li>To make publically available, type <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> and then push the files up to Github (the repository is <a href="https://github.com/phwl/phwl.github.io">https://github.com/phwl/phwl.github.io</a>)</li>
 </ul>
 
-<h2 id="fix-_posts-and-_pages">Fix <code class="highlighter-rouge">_posts</code> and <code class="highlighter-rouge">_pages</code></h2>
+<h2 id="fix-_posts-and-_pages">Fix <code class="language-plaintext highlighter-rouge">_posts</code> and <code class="language-plaintext highlighter-rouge">_pages</code></h2>
 <ul>
-  <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
+  <li>This took the most time. The main changes I needed to do was to fix the headers: remove the old <code class="language-plaintext highlighter-rouge">link</code> header, add a teaser image (blank one if unneeded). Then I edited the image insertion code, which involved the extensive use of Python scripts to do global replacements like</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
 <span class="kn">import</span> <span class="nn">re</span>
 
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="s">r'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="p">.</span><span class="nb">input</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="s">r'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
     <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -73,8 +73,8 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">fileinput</span>
 <span class="kn">import</span> <span class="nn">re</span>
 
-<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="o">.</span><span class="nb">input</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!</span><span class="err">\</span><span class="s">[(.*)</span><span class="err">\</span><span class="s">]</span><span class="err">\</span><span class="s">((.*)</span><span class="err">\</span><span class="s">)</span><span class="err">\</span><span class="s">{: .align-center</span><span class="err">\</span><span class="s">}'</span><span class="p">,</span><span class="s">r'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="p">.</span><span class="nb">input</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!\[(.*)\]\((.*)\)\{: .align-center\}'</span><span class="p">,</span><span class="s">r'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
     <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 <ul>
@@ -92,7 +92,7 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 
 <h2 id="customise-website">Customise website</h2>
 <ul>
-  <li>Since I wanted teaser images appearing on the front page, I put a copy of <a href="https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html">https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html</a> in <code class="highlighter-rouge">_includes/archive-single.html</code></li>
+  <li>Since I wanted teaser images appearing on the front page, I put a copy of <a href="https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html">https://github.com/justinrummel/jr.com-mm/blob/jr-branch/_includes/archive-single.html</a> in <code class="language-plaintext highlighter-rouge">_includes/archive-single.html</code></li>
   <li>To use a custom domain <a href="https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site">https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site</a></li>
   <li>To use single pages without sidebar <a href="https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064">https://github.com/mmistakes/minimal-mistakes/issues/1322#issuecomment-521386064</a></li>
   <li>To change home to a grid layout I changed home.html so the loop is in a grid wrapper</li>
@@ -130,7 +130,7 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 </code></pre></div></div>
 
 <ul>
-  <li>To enable <script type="math/tex">\LaTeX</script> rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="highlighter-rouge">_includes/latex.html</code> with</li>
+  <li>To enable \(\LaTeX\) rendering with mathjax (if it didn’t work the LaTeX symbol would not have appeared), I created a file in <code class="language-plaintext highlighter-rouge">_includes/latex.html</code> with</li>
 </ul>
 
 <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">use_math</span><span class="w"> </span><span class="p">%}</span>
@@ -146,7 +146,7 @@ and browse to <code class="highlighter-rouge">localhost:4000</code>.</li>
 <p>Go to <a href="https://analytics.google.com/analytics/web/">https://analytics.google.com/analytics/web/</a> -&gt; Admin and create an 
 account for website. Get the tracking ID from Admin -&gt; Tracking Info -&gt; Tracking Code and put it in _config.yml</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Analytics
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Analytics
 analytics:
   provider               : google-gtag # false (default), "google", "google-universal", "custom"
   google:
