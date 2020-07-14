@@ -14,6 +14,8 @@ header:
   teaser: /assets/images/2019/08/Nvidia_logo.svg
 ---
 
+(last update 14/7/2020)  
+
 Another new machine in the lab, here is the configuration.
 
 ## Ubuntu Installation
