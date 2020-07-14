@@ -16,7 +16,22 @@ header:
 
 (last update 14/7/2020)  
 
-Another new machine in the lab, here is the configuration.
+Another new machine in the lab, here are my setup notes.
+
+## Machine Details
+
+```
+Power Supply : Gigabyte AORUS AP750GM
+Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
+AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
+AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 
+AC16770 Cooler Master MasterLiquid ML360R ARGB AIO Liquid CPU Cooler 
+AC18159 ASUS GeForce RTX 2080 Ti ROG Strix Advanced 11GB Video Card 
+AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8 
+AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5" 7200RPM SATA3 Desktop Hard Drive 
+AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
+AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
+```
 
 ## Ubuntu Installation
 
@@ -145,17 +160,3 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 
-## Machine Details
-
-```
-Power Supply : Gigabyte AORUS AP750GM
-Motherboard : MSI MPG X570 GAMING PRO CARBON WIFI AM4 ATX Motherboard          
-AB58526 Fractal Design Define R5 Mid-Tower ATX Case - Black 
-AC15551 Cooler Master MasterFan MF120R ARGB 120mm Fan - 3 Pack + LED Controller 
-AC16770 Cooler Master MasterLiquid ML360R ARGB AIO Liquid CPU Cooler 
-AC18159 ASUS GeForce RTX 2080 Ti ROG Strix Advanced 11GB Video Card 
-AC19488 Crucial P1 1TB NVMe M.2 PCIe 3D NAND SSD CT1000P1SSD8 
-AC20161 Seagate ST2000DM008 2TB BarraCuda 3.5" 7200RPM SATA3 Desktop Hard Drive 
-AMD Ryzen 9 3900X 12 Core Socket AM4 3.8GHz CPU Processor + Wraith Prism Cooler
-AC29335 G.Skill Ripjaws V 64GB (2x 32GB) DDR4 3200MHz CL16 Memory - Black 
-```
