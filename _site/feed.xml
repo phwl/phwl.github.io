@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-14T18:36:08+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning and other random stuff</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning and other random stuff" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-14T19:22:02+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Foggy morning and other random stuff</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning and other random stuff" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -215,7 +215,7 @@ sudo rm -rf home.old
 &lt;h2 id=&quot;cuda&quot;&gt;CUDA&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;Install cuda following instructions at &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&lt;/a&gt;. I used the package manager method and version 10.2-89.1.&lt;/p&gt;
+    &lt;p&gt;Install cuda following instructions at &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&lt;/a&gt;. I used the package manager method and installed both version 11.0 and 10.2-89.1 (because pytorch only supports 10.2 at present).&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Reboot&lt;/p&gt;

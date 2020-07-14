@@ -109,7 +109,7 @@ sudo rm -rf home.old
  * Create users
 
 ## CUDA 
- * Install cuda following instructions at <https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html>. I used the package manager method and version 10.2-89.1. 
+ * Install cuda following instructions at <https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html>. I used the package manager method and installed both version 11.0 and 10.2-89.1 (because pytorch only supports 10.2 at present). 
 
  * Reboot
 
