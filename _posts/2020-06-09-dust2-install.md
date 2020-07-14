@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-06-09 11:56:56 AEST
-title: Ubuntu GPU Machine Install
+title: DUST2 Ubuntu GPU Machine Install
 classes: wide
 toc: true
 categories:
