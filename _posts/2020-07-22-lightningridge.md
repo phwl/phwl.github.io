@@ -10,10 +10,11 @@ tags:
 - australia
 - photography
 header:
-  teaser: /assets/images/2020/07/lrtrip.png
+  teaser: /assets/images/2020/07/DSCF0542.jpeg
 ---
 
-Went for a drive to Lightning Ridge.
+Went for a drive to Lightning Ridge in the central north of NSW. It is an opal mining town and 
+the major source of the rare *black opal*.
 
 {% include figure image_path="/assets/images/2020/07/lrtrip.png" caption="" %}
 <!-- more -->
@@ -42,18 +43,32 @@ COVID-19 social distancing was being enforced at the Artesian Bore Baths.
 Great to soak in the baths after 1000 km of driving.
 {% include figure image_path="/assets/images/2020/07/IMG_6328.jpeg" caption="" %}
 
-Sunset at Nettleton's First Shaft Lookout.
+### Nettleton's First Shaft Lookout.
+This is the site of the first opal mine in Lightning Ridge
+made by Charlie Nettleton in 1903.
 {% include figure image_path="/assets/images/2020/07/DSCF0484.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0482.jpeg" caption="" %}
-{% include figure image_path="/assets/images/2020/07/IMG_6337.jpeg" caption="" %}
+
+Beer can house. Quite a few were consumed to get the inspiration.
+
+{% include figure image_path="/assets/images/2020/07/DSCF0499.jpeg" caption="" %}
+
+Keen miner.
+{% include figure image_path="/assets/images/2020/07/DSCF0541.jpeg" caption="" %}
+### Sunset at Nettleton's First Shaft Lookout.
+A good view from the lookout.
 {% include figure image_path="/assets/images/2020/07/DSCF0486.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0488.jpeg" caption="" %}
+
+Stone labyrinth.
 {% include figure image_path="/assets/images/2020/07/DSCF0492.jpeg" caption="" %}
-{% include figure image_path="/assets/images/2020/07/DSCF0499.jpeg" caption="" %}
-{% include figure image_path="/assets/images/2020/07/DSCF0519.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0528.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/07/IMG_6337.jpeg" caption="" %}
+
+The view looking back up to the lookout.
 {% include figure image_path="/assets/images/2020/07/DSCF0529.jpeg" caption="" %}
-{% include figure image_path="/assets/images/2020/07/DSCF0541.jpeg" caption="" %}
+
+Filled in mines are indicated by a pile of rubble but there are plenty of open ones in which to fall.
 {% include figure image_path="/assets/images/2020/07/DSCF0542.jpeg" caption="" %}
 
 ## Day 3 Lightning Ridge
@@ -70,6 +85,8 @@ Went to Lunatic Lookout.
 {% include figure image_path="/assets/images/2020/07/IMG_6369.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0551.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0559.jpeg" caption="" %}
+
+Cactus tequila growing outside this house.
 {% include figure image_path="/assets/images/2020/07/DSCF0562.jpeg" caption="" %}
 
 This is Stanley the Emu. His body is a car.
@@ -95,7 +112,7 @@ This is the Bottle House Mining Museum.
 {% include figure image_path="/assets/images/2020/07/IMG_1818.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/IMG_1822.jpeg" caption="" %}
 
-A miner's hut.
+A miner's shack.
 {% include figure image_path="/assets/images/2020/07/DSCF0574.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0570.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/07/DSCF0571.jpeg" caption="" %}
