@@ -124,3 +124,5 @@ Big guitar, Tamworth.
 Impressive view from Oxley Lookout, Tamworth.
 {% include figure image_path="/assets/images/2020/07/IMG_6397.jpeg" caption="" %}
 
+## DAY 6 Tamworth to Sydney
+Came back via the Hunter Valley, stopping in Singleton for lunch.
