@@ -37,7 +37,8 @@ Finally made it to Lightning Ridge.
 We stayed at the Lightning Ridge Outback Resort.
 {% include figure image_path="/assets/images/2020/07/IMG_6359.jpeg" caption="" %}
 
-COVID-19 social distancing was being enforced at the Artesian Bore Baths.
+COVID-19 social distancing was being enforced at the Artesian Bore Baths. Water
+comes from the Great Artesian Basin, about 1km underground.
 {% include figure image_path="/assets/images/2020/07/IMG_6327.jpeg" caption="" %}
 
 Great to soak in the baths after 1000 km of driving.
