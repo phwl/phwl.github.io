@@ -414,7 +414,7 @@ URL: [http://www\.osapublishing\.org/abstract\.cfm?URI=CLEO\_Europe\-2015\-PD\_B
 [29] Lesley Shannon, Veronica Cojocaru, Cong Nguyen Dao, and Philip H\.W\. Leong\.
 Trends in reconfigurable computing: applications and architectures\.
 In *Proc\. IEEE Symposium on Field\-Programmable Custom Computing Machines \(FCCM\)*, 1–8\. 2015\.
-Data available from \\href http://www\.ee\.usyd\.edu\.au/ phwl/UserFiles/File/misc/trends\_fccm15\.ziphttp://www\.ee\.usyd\.edu\.au/people/philip\.leong/UserFiles/File/misc/trends\_fccm15\.zip\.
+Data available from \\href http://phwl\.org/assets/papers/trends\_fccm15\.ziphttp://phwl\.org/assets/papers/trends\_fccm15\.zip\.
 URL: [trends\_fccm15\.pdf](trends_fccm15.pdf), [doi:10\.1109/FCCM\.2015\.11](https://doi.org/10.1109/FCCM.2015.11)\.  
 [30] Kevin Nguyen, David Humphrey, Mark Hedley, and Philip H\.W Leong\.
 Phase recovery for time of arrival estimation in the presence of interference\.
