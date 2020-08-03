@@ -377,7 +377,7 @@ URL: [lp\_iconip17\.pdf](lp_iconip17.pdf), [doi:10\.1007/978\-3\-319\-70096\-0\_
 [20] Yaman Umuroglu, Nicholas J\. Fraser, Giulio Gambardella, Michaela Blott, Philip Leong, Magnus Jahre, and Kees Vissers\.
 FINN: a framework for fast, scalable binarized neural network inference\.
 In *Proc\. ACM/SIGDA International Symposium on Field\-Programmable Gate Arrays \(FPGA\)*, 65–74\. 2017\.
-Source code available from \\href https://github\.com/Xilinx/BNN\-PYNQhttps://github\.com/Xilinx/BNN\-PYNQ\.
+Source code available from <https://github\.com/Xilinx/BNN\-PYNQ>.
 URL: [bnn\_fpga17\.pdf](bnn_fpga17.pdf), [doi:10\.1145/3020078\.3021744](https://doi.org/10.1145/3020078.3021744)\.  
 [21] Sean Fox, Stephen Tridgell, Craig T\. Jin, and Philip H\. W\. Leong\.
 Random projections for scaling machine learning on FPGAs\.
@@ -414,7 +414,7 @@ URL: [http://www\.osapublishing\.org/abstract\.cfm?URI=CLEO\_Europe\-2015\-PD\_B
 [29] Lesley Shannon, Veronica Cojocaru, Cong Nguyen Dao, and Philip H\.W\. Leong\.
 Trends in reconfigurable computing: applications and architectures\.
 In *Proc\. IEEE Symposium on Field\-Programmable Custom Computing Machines \(FCCM\)*, 1–8\. 2015\.
-Data available from \\href http://phwl\.org/assets/papers/trends\_fccm15\.zip\.
+Data available from <http://phwl\.org/assets/papers/trends\_fccm15\.zip>.
 URL: [trends\_fccm15\.pdf](trends_fccm15.pdf), [doi:10\.1109/FCCM\.2015\.11](https://doi.org/10.1109/FCCM.2015.11)\.  
 [30] Kevin Nguyen, David Humphrey, Mark Hedley, and Philip H\.W Leong\.
 Phase recovery for time of arrival estimation in the presence of interference\.
