@@ -36,6 +36,8 @@ Trailer tyre is a 155R13LT. Pressure should be minimum 40 lb/sq in preferably 50
 ***Battery***
 Evinrude ETEC 640 CCA (800 MCA) (actually it was supplied with a CCA550 battery which has worked well for 4.5 years)
 
+(6/8/2020 - Repco had a 30% off sale so I purchased a Repco Marine Battery 680CCA - NS70M MF for $180)
+
 **Features**
 3 Year Warranty Accessory Kit Alloy Cleat On Front Deck Anchorwell Battery Tray in Casting Platform Bow Roller & Yaw Locking Plate Console: Side Console Evo Advance Hull Extruded Side Decks Floor: Carpeted Floor: Front Casting Platform + Storage Bin Floor: Rear Casting Platform & Live Bait Tank Rails: Aft Short side Rails: Forward Side Rails Rod Holders (4) Seat: Positions (3) Seat: Sea Pro Side Pockets (2) Transducer Brackets x 2 Transom Step & Rail
 
