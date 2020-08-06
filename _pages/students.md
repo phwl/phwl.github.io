@@ -11,7 +11,7 @@ wordpress_id: 3338
 ---
 
 
-  1. Stephen TRIDGELL, [Low Latency Machine Learning on FPGAs](/assets/images/2019/12/stridgell19.pdf), PhD (under review), 2019.
+  1. Stephen TRIDGELL, [Low Latency Machine Learning on FPGAs](/assets/images/2019/12/stridgell19.pdf), PhD, 2020.
 
  	
   1. Duncan MOSS, [FPGA Architectures for Low Precision Machine Learning](/assets/images/2018/01/moss18.pdf), PhD, 2018.
