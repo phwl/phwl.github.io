@@ -19,9 +19,11 @@ It was a rainy day but fortunately not too windy.
 Beard casting near the dam wall.
 {% include figure image_path="/assets/images/2020/08/IMG_6443.jpeg" caption="" %}
 
-The first took the treble very deep (and I left my pliers in the car)
-so decided to keep it.  Next came on the following cast, and shortly after
-a third, smaller one which I let go.
+The first took my Mepps lure in the brown trout pattern very deep
+(and I left my pliers in the car) so decided to keep it.  The next
+came on the following cast, and shortly after I caught a third,
+smaller one which was let go. After 15 minutes of action, not
+much else happened.
 {% include figure image_path="/assets/images/2020/08/IMG_6435.jpeg" caption="" %}
 
 
