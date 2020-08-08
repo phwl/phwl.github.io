@@ -801,6 +801,10 @@
 <lastmod>2020-07-22T22:00:13+10:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/lake-wallace/</loc>
+<lastmod>2020-08-08T21:00:13+10:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -907,6 +911,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page25/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page26/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>
