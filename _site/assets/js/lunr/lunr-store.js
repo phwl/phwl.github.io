@@ -1000,7 +1000,7 @@ var store = [{
         "url": "http://localhost:4000/2020/lightningridge/",
         "teaser":"http://localhost:4000/assets/images/2020/07/DSCF0542.jpeg"},{
         "title": "Lake Wallace",
-        "excerpt":"Went with Beard for a day trip to Lake Wallace in the Blue Mountains. It was a rainy day but fortunately not too windy.     Beard casting near the dam wall.                               Didn’t take long to catch a brace of rainbows. Was going to let the first one go but took my lure very deep so I kept them.                               On the way back, took more photos of the bushfire devastation near Bell.                                                            ","categories": ["fishing"],
+        "excerpt":"Went with Beard for a day trip to Lake Wallace in the Blue Mountains. It was a rainy day but fortunately not too windy.     Beard casting near the dam wall.                               The first took the treble very deep (and I left my pliers in the car) so decided to keep it.  Next came on the following cast, and shortly after a third, smaller one which I let go.                               On the way back, took more photos of the bushfire devastation near Bell.                                                            ","categories": ["fishing"],
         "tags": ["australia"],
         "url": "http://localhost:4000/2020/lake-wallace/",
         "teaser":"http://localhost:4000/assets/images/2020/08/IMG_6435.jpeg"}]

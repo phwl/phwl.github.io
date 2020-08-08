@@ -19,8 +19,9 @@ It was a rainy day but fortunately not too windy.
 Beard casting near the dam wall.
 {% include figure image_path="/assets/images/2020/08/IMG_6443.jpeg" caption="" %}
 
-Didn't take long to catch a brace of rainbows. Was going to let the first one
-go but took my lure very deep so I kept them.
+The first took the treble very deep (and I left my pliers in the car)
+so decided to keep it.  Next came on the following cast, and shortly after
+a third, smaller one which I let go.
 {% include figure image_path="/assets/images/2020/08/IMG_6435.jpeg" caption="" %}
 
 
