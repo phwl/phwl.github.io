@@ -51,7 +51,7 @@ Dried the fish and covered them with salt, including the cavity. On the bottom
 of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.
 {% include figure image_path="/assets/images/2020/08/IMG_6458.jpg" caption="" %}
 
-The fish was smoked for 30 minutes, turning it over once as it was a very windy 
+The fish was hot smoked for 30 minutes, turning it over once as it was a very windy 
 day and it wasn't cooking evenly. Don't use your good wok as it will be
 ruined. We have an old one dedicated to this.
 {% include figure image_path="/assets/images/2020/08/IMG_6464.jpg" caption="" %}
