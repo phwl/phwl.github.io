@@ -19,7 +19,7 @@ It was a rainy day but fortunately not too windy.
 I started spinning with a Mepps lure in the brown trout pattern.
 {% include figure image_path="/assets/images/2020/08/IMG_6457.jpeg" caption="" %}
 
-The first took my lure very deep
+The first rainbow trout took my lure very deep
 down its mouth (and I left my pliers in the car) so decided to keep
 it.  
 The next came on the following cast, and shortly after I caught
@@ -28,7 +28,7 @@ the wind changed direction and not much else happened that afternoon.
 {% include figure image_path="/assets/images/2020/08/IMG_6435.jpeg" caption="" %}
 
 I also had a good chat with an arborist who was locking one of the gates. He, along
-with other volunteers were planting trees along the lake.
+with other volunteers, were planting trees along the lake shore.
 
 Beard casting near the dam wall.
 {% include figure image_path="/assets/images/2020/08/IMG_6443.jpeg" caption="" %}
