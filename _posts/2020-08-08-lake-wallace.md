@@ -42,3 +42,7 @@ tagged (sometimes, I'm not very observant). These were reported to the
 [Department of Primary Industries Tagging Program](https://www.dpi.nsw.gov.au/fishing/recreational/resources/fish-tagging/recapture-form). One was 30cm and the 
 other 31cm.
 {% include figure image_path="/assets/images/2020/08/IMG_6453.jpeg" caption="" %}
+
+Dried the fish and covered them with salt, including the cavity. On the bottom
+of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.
+{% include figure image_path="/assets/images/2020/08/IMG_6458.jpg" caption="" %}
