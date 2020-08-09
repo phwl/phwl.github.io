@@ -56,5 +56,5 @@ day and it wasn't cooking evenly. Don't use your good wok as it will be
 ruined. We have an old one dedicated to this.
 {% include figure image_path="/assets/images/2020/08/IMG_6464.jpg" caption="" %}
 
-Very tasty but next time will put some oil on the fish prior to smoking.
+Very tasty!
 {% include figure image_path="/assets/images/2020/08/IMG_6465.jpg" caption="" %}
