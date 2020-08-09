@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-08-08 21:00:13 AEST
-title: Lake Wallace
+title: Lake Wallace Smoked Rainbow Trout
 classes: wide
 categories:
 - fishing
