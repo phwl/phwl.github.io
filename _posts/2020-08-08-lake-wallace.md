@@ -1,5 +1,6 @@
 ---
 author: phwl
+toc: true
 comments: true
 date: 2020-08-08 21:00:13 AEST
 title: Lake Wallace Smoked Rainbow Trout
@@ -16,6 +17,7 @@ It was a rainy day but fortunately not too windy.
 
 <!-- more -->
 
+## Fishing
 I started spinning with a Celta lure in the brown trout pattern.
 {% include figure image_path="/assets/images/2020/08/IMG_6457.jpeg" caption="" %}
 
@@ -33,10 +35,12 @@ with other volunteers, were planting trees along the lake shore.
 Beard casting near the dam wall.
 {% include figure image_path="/assets/images/2020/08/IMG_6443.jpeg" caption="" %}
 
-On the way back, took more photos of the bushfire devastation near Bell.
+## Blue Mountains Bushfire Damage
+On the way back, took photos of the bushfire damage from 2019 near Bell.
 {% include figure image_path="/assets/images/2020/08/IMG_6447.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/08/IMG_6449.jpeg" caption="" %}
 
+## Smoked Rainbow Trout
 It was only the next day, while preparing the fish, that I noticed both were
 tagged (sometimes, I'm not very observant). These were reported to the 
 [Department of Primary Industries Tagging Program](https://www.dpi.nsw.gov.au/fishing/recreational/resources/fish-tagging/recapture-form). One was 30cm and the 
