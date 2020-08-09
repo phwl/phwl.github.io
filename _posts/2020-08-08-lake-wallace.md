@@ -24,7 +24,7 @@ down its mouth (and I left my pliers in the car) so decided to keep
 it.  
 The next came on the following cast, and shortly after I caught
 a third, smaller one which was let go. After 15 minutes of action,
-not much else happened.  
+the wind changed direction and not much else happened that afternoon.  
 {% include figure image_path="/assets/images/2020/08/IMG_6435.jpeg" caption="" %}
 
 I also had a good chat with an arborist who was locking one of the gates. He, along
