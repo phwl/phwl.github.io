@@ -16,7 +16,7 @@ It was a rainy day but fortunately not too windy.
 
 <!-- more -->
 
-I started spinning with a Mepps lure in the brown trout pattern.
+I started spinning with a Celta lure in the brown trout pattern.
 {% include figure image_path="/assets/images/2020/08/IMG_6457.jpeg" caption="" %}
 
 The first rainbow trout took my lure very deep
