@@ -25,8 +25,12 @@ for my [ELEC3608 Computer Architecture course](https://cusp.sydney.edu.au/studen
 ## 1. Install Virtualbox (not necessary if you are running Windows)
  * Follow instructions at <https://www.virtualbox.org/wiki/Linux_Downloads> to install VirtualBox
 
-## 2. Install Windows 10 Education, Version 1809
+## 2. Install Windows 10 Education
  * Download and install/upgrade to Windows 10 Education, Version 1809 iso file from [Microsoft Azure link](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software). The Product Key is available from the same site.
+ * Run Windows Update via Start->Settings->Windows Update (this takes a long time)
 
 ## 3. Install Docker
  * Use instructions at <https://docs.docker.com/docker-for-windows/install/>
+   to install Docker Desktop for Windows
+ * Run Docker Desktop as administrator (right click on icon)
+ * Open a Windows Powershell and type ``` docker run hello-world '''

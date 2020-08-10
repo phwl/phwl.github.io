@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-10T17:03:26+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Virtualbox VM on Ubuntu</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Virtualbox VM on Ubuntu" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here is how I installed
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-10T18:22:42+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Virtualbox VM on Ubuntu</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Virtualbox VM on Ubuntu" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here is how I installed
 Docker in Windows 10 Education using an Ubuntu machine running Virtualbox
 for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
 
@@ -8,14 +8,18 @@ for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha
   &lt;li&gt;Follow instructions at &lt;a href=&quot;https://www.virtualbox.org/wiki/Linux_Downloads&quot;&gt;https://www.virtualbox.org/wiki/Linux_Downloads&lt;/a&gt; to install VirtualBox&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;2-install-windows-10-education-version-1809&quot;&gt;2. Install Windows 10 Education, Version 1809&lt;/h2&gt;
+&lt;h2 id=&quot;2-install-windows-10-education&quot;&gt;2. Install Windows 10 Education&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Download and install/upgrade to Windows 10 Education, Version 1809 iso file from &lt;a href=&quot;https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software&quot;&gt;Microsoft Azure link&lt;/a&gt;. The Product Key is available from the same site.&lt;/li&gt;
+  &lt;li&gt;Run Windows Update via Start-&amp;gt;Settings-&amp;gt;Windows Update (this takes a long time)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;3-install-docker&quot;&gt;3. Install Docker&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;
+to install Docker Desktop for Windows&lt;/li&gt;
+  &lt;li&gt;Run Docker Desktop as administrator (right click on icon)&lt;/li&gt;
+  &lt;li&gt;Open a Windows Powershell and type ``` docker run hello-world ‘’’&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I installed Docker in Windows 10 Education using an Ubuntu machine running Virtualbox for my ELEC3608 Computer Architecture course.</summary></entry><entry><title type="html">Lake Wallace Smoked Rainbow Trout</title><link href="http://localhost:4000/2020/lake-wallace-smoked-trout/" rel="alternate" type="text/html" title="Lake Wallace Smoked Rainbow Trout" /><published>2020-08-08T21:00:13+10:00</published><updated>2020-08-08T21:00:13+10:00</updated><id>http://localhost:4000/2020/lake-wallace-smoked-trout</id><content type="html" xml:base="http://localhost:4000/2020/lake-wallace-smoked-trout/">&lt;p&gt;Went with Beard for a day trip to Lake Wallace in the Blue Mountains.
 It was a rainy day but fortunately not too windy.&lt;/p&gt;
 

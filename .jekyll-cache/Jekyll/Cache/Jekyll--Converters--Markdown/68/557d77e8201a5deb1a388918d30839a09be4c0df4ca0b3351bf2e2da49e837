@@ -1,0 +1,23 @@
+I"K<p>Here is how I installed
+Docker in Windows 10 Education using an Ubuntu machine running Virtualbox
+for my <a href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608">ELEC3608 Computer Architecture course</a>.</p>
+
+<!-- more -->
+<h2 id="1-install-virtualbox-not-necessary-if-you-are-running-windows">1. Install Virtualbox (not necessary if you are running Windows)</h2>
+<ul>
+  <li>Follow instructions at <a href="https://www.virtualbox.org/wiki/Linux_Downloads">https://www.virtualbox.org/wiki/Linux_Downloads</a> to install VirtualBox</li>
+</ul>
+
+<h2 id="2-install-windows-10-education-version-1809">2. Install Windows 10 Education, Version 1809</h2>
+<ul>
+  <li>Download and install/upgrade to Windows 10 Education, Version 1809 iso file from <a href="https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software">Microsoft Azure link</a>. The Product Key is available from the same site.</li>
+</ul>
+
+<h2 id="3-install-docker">3. Install Docker</h2>
+<ul>
+  <li>Use instructions at <a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>
+to install Docker Desktop for Windows</li>
+  <li>Start Docker Desktop in Administrator mode</li>
+  <li>In Windows Powershekl</li>
+</ul>
+:ET
