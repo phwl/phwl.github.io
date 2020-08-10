@@ -1,4 +1,7 @@
+---
+author: phwl
 comments: true
+toc: true
 date: 2020-08-10 15:40:00 AEDT
 title: Docker under Virtualbox VM on Ubuntu
 
