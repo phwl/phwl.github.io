@@ -5,6 +5,7 @@ title: Docker under Virtualbox VM on Ubuntu
 classes: wide
 categories:
 - software
+- academia
 tags:
 - ubuntu
 - linux
@@ -18,10 +19,11 @@ for my [ELEC3608 Computer Architecture course](https://cusp.sydney.edu.au/studen
 
 
 <!-- more -->
-## Install Virtualbox (not necessary if you are running Windows)
+## 1. Install Virtualbox (not necessary if you are running Windows)
  * Follow instructions at <https://www.virtualbox.org/wiki/Linux_Downloads> to install VirtualBox
 
-## Install Windows 10 Education, Version 1809
+## 2. Install Windows 10 Education, Version 1809
  * Download and install/upgrade to Windows 10 Education, Version 1809 iso file from [Microsoft Azure link](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software). The Product Key is available from the same site.
- * Install Windows 10 Education using Product Key
 
+## 3. Install Docker
+ * Use instructions at <https://docs.docker.com/docker-for-windows/install/>
