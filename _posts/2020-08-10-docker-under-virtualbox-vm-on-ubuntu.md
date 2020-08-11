@@ -94,7 +94,7 @@ If everything works, the Modelsim window should appear.
 {% include figure image_path="/assets/images/2020/08/vsim-screenshot.png" caption="" %}
 
 # 3 Docker image
-The Docker image is based on one kindly provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). The scripts used to create it is available [here](https://github.com/phwl/elec3608-vsim).  
+The Docker image is based on one kindly provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). The scripts used to create it are available [here](https://github.com/phwl/elec3608-github).
 
 # 4 Troubleshooting
  1. Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).
