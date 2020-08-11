@@ -282,6 +282,18 @@ tests X Windows basic functionality.</p>
   <li>Open a Windows Powershell window</li>
   <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
   <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
+</ul>
+
+<figure class="">
+  <a href="/assets/images/2020/08/ipconfig-screenshot.png">
+  <img src="/assets/images/2020/08/ipconfig-screenshot.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<ul>
   <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
 </ul>
 
@@ -324,7 +336,7 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <h1 id="3-docker-image">3 Docker image</h1>
-<p>The Docker image is based on one kindly provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it is available <a href="https://github.com/phwl/elec3608-vsim">here</a>.</p>
+<p>The Docker image is based on one kindly provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it are available <a href="https://github.com/phwl/elec3608-github">here</a>.</p>
 
 <h1 id="4-troubleshooting">4 Troubleshooting</h1>
 <ol>

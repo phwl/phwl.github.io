@@ -71,6 +71,9 @@ tests X Windows basic functionality.
  * Open a Windows Powershell window
  * Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1
  * Type ```set-variable -name DISPLAY -value 172.18.240.1:0.0```
+
+{% include figure image_path="/assets/images/2020/08/ipconfig-screenshot.png" caption="" %}
+
  * Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
 
 ### 2.1.2 MacOS
