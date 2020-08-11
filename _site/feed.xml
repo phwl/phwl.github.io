@@ -1,22 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-10T21:41:25+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Virtualbox VM on Ubuntu</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Virtualbox VM on Ubuntu" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here is how I installed
-Docker in Windows 10 Education using an Ubuntu machine running Virtualbox
-for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-11T20:19:12+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Windows 10 and MacOS</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Windows 10 and MacOS" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
-&lt;h2 id=&quot;1-install-windows-10-education-under-virtualbox-not-necessary-if-you-are-running-windows&quot;&gt;1. Install Windows 10 Education under Virtualbox (not necessary if you are running Windows)&lt;/h2&gt;
+
+&lt;h1 id=&quot;1-installation&quot;&gt;1. Installation&lt;/h1&gt;
+&lt;h2 id=&quot;11-windows&quot;&gt;1.1 Windows&lt;/h2&gt;
+
+&lt;h3 id=&quot;install-xcxsrv&quot;&gt;Install XcXsrv&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Follow instructions at &lt;a href=&quot;https://www.virtualbox.org/wiki/Linux_Downloads&quot;&gt;https://www.virtualbox.org/wiki/Linux_Downloads&lt;/a&gt; to install VirtualBox&lt;/li&gt;
-  &lt;li&gt;Download and install/upgrade to Windows 10 Education, from &lt;a href=&quot;https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software&quot;&gt;Azure portal&lt;/a&gt;. The Product Key is available from the same site.&lt;/li&gt;
-  &lt;li&gt;Run Windows Update via Start-&amp;gt;Settings-&amp;gt;Windows Update (this takes a long time and requires several reboots). I updated to version 1909.&lt;/li&gt;
+  &lt;li&gt;Install the VcXsrv X windows server &lt;a href=&quot;https://sourceforge.net/projects/vcxsrv/&quot;&gt;https://sourceforge.net/projects/vcxsrv/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Run XLaunch and configure “Multiple Windows” and “Start no client”&lt;/li&gt;
+  &lt;li&gt;You will get an alert from Windows Defender. Allow access for Private Networks.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;3-install-docker&quot;&gt;3. Install Docker&lt;/h2&gt;
+&lt;h3 id=&quot;install-docker&quot;&gt;Install Docker&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;
-to install Docker Desktop for Windows (follow them carefully)&lt;/li&gt;
-  &lt;li&gt;Run Docker Desktop&lt;/li&gt;
-  &lt;li&gt;Open a Windows Powershell and type ``` docker run hello-world ‘’’&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="ubuntu" /><category term="linux" /><summary type="html">Here is how I installed Docker in Windows 10 Education using an Ubuntu machine running Virtualbox for my ELEC3608 Computer Architecture course.</summary></entry><entry><title type="html">Lake Wallace Smoked Rainbow Trout</title><link href="http://localhost:4000/2020/lake-wallace-smoked-trout/" rel="alternate" type="text/html" title="Lake Wallace Smoked Rainbow Trout" /><published>2020-08-08T21:00:13+10:00</published><updated>2020-08-08T21:00:13+10:00</updated><id>http://localhost:4000/2020/lake-wallace-smoked-trout</id><content type="html" xml:base="http://localhost:4000/2020/lake-wallace-smoked-trout/">&lt;p&gt;Went with Beard for a day trip to Lake Wallace in the Blue Mountains.
+  &lt;li&gt;(Windows 10 Professional, Consumer and Education) Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;
+to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that “Enable WEL 2 Windows Features” and “Add shortcut to desktop” are selected.&lt;/li&gt;
+  &lt;li&gt;(Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install-windows-home/&quot;&gt;https://docs.docker.com/docker-for-windows/install-windows-home/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Run Docker Desktop by double-clicking the icon on the desktop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;12-macos&quot;&gt;1.2 MacOS&lt;/h2&gt;
+&lt;h3 id=&quot;install-docker-1&quot;&gt;Install Docker&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Download and install stable version from &lt;a href=&quot;https://docs.docker.com/docker-for-mac/install/&quot;&gt;https://docs.docker.com/docker-for-mac/install/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;2-testing&quot;&gt;2 Testing&lt;/h1&gt;
+&lt;h2 id=&quot;21-hello-world&quot;&gt;2.1 Hello world&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run hello-world&lt;/code&gt; in the command window. Your output should be something like:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;21-modelsim&quot;&gt;2.1 Modelsim&lt;/h2&gt;
+&lt;h3 id=&quot;211-windows&quot;&gt;2.1.1 Windows&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open a Windows Powershell window&lt;/li&gt;
+  &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1&lt;/li&gt;
+  &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set-variable -name DISPLAY -value 172.18.240.1:0.0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;If your home directory is C:\Users\XX, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;211-macos&quot;&gt;2.1.1 MacOS&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open a terminal&lt;/li&gt;
+  &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;3-how-did-i-create-the-docker-image&quot;&gt;3 How did I Create the Docker image?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;The Docker image is based on one kindly provided by Nachiket Kapre (U Waterloo) and available &lt;a href=&quot;https://github.com/phwl/elec3608-vsim&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;4-if-things-dont-work&quot;&gt;4 If things don’t work&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).&lt;/li&gt;
+  &lt;li&gt;Check you have virtualization enabled in your BIOS
+    &lt;ul&gt;
+      &lt;li&gt;Reboot the computer and open the system’s BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.&lt;/li&gt;
+      &lt;li&gt;Enabling the virtualization extensions in BIOS.  Open the Processor submenu The processor settings menu may be hidden in the Chipset, Advanced CPU Configuration or Northbridge.  Enable Intel Virtualization Technology (also known as Intel VT-x). AMD-V extensions cannot be disabled in the BIOS and should already be enabled. The virtualization extensions may be labeled Virtualization Extensions, Vanderpool or various other names depending on the OEM and system BIOS.  Enable Intel VT-d or AMD IOMMU, if the options are available. Intel VT-d and AMD IOMMU are used for PCI device assignment.&lt;/li&gt;
+      &lt;li&gt;Select Save &amp;amp; Exit.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="windows" /><summary type="html">Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.</summary></entry><entry><title type="html">Lake Wallace Smoked Rainbow Trout</title><link href="http://localhost:4000/2020/lake-wallace-smoked-trout/" rel="alternate" type="text/html" title="Lake Wallace Smoked Rainbow Trout" /><published>2020-08-08T21:00:13+10:00</published><updated>2020-08-08T21:00:13+10:00</updated><id>http://localhost:4000/2020/lake-wallace-smoked-trout</id><content type="html" xml:base="http://localhost:4000/2020/lake-wallace-smoked-trout/">&lt;p&gt;Went with Beard for a day trip to Lake Wallace in the Blue Mountains.
 It was a rainy day but fortunately not too windy.&lt;/p&gt;
 
 &lt;!-- more --&gt;
