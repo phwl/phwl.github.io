@@ -38,7 +38,7 @@ Here are installation instructions for installing Docker and running Modelsim fo
 
 # 2 Testing
 ## 2.1 Hello world
- * Type ```docker run hello-world``` in the command window. Your output should be something like:
+To test basic Docker functionality, type ```docker run hello-world``` in the command window. Your output should be something like:
 
 ```
 Hello from Docker!
@@ -63,23 +63,40 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-## 2.1 Modelsim
+## 2.2 Xeyes
+We need to use the X Server to display graphical output. This
+tests X Windows basic functionality.
+
 ### 2.1.1 Windows
  * Open a Windows Powershell window
  * Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1
  * Type ```set-variable -name DISPLAY -value 172.18.240.1:0.0```
- * If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
+ * Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
 
-### 2.1.1 MacOS
+### 2.1.2 MacOS
  * Open a terminal
  * Type ```export DISPLAY=`hostname`:0.0```
- * You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
+ * Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
 
+You should see the window below and the eyes should move with your mouse.
 
-# 3 How did I Create the Docker image?
- * The Docker image is based on one kindly provided by Nachiket Kapre (U Waterloo) and available [here](https://github.com/phwl/elec3608-vsim).
+{% include figure image_path="/assets/images/2020/08/xeyes-screenshot.png" max-width="200px" caption="" %}
 
-# 4 If things don't work
+## 2.3 Modelsim
+Finally, this tests the Docker image for Modelsim (the executable is called
+```vsim```).
+
+ * (Windows) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
+ * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
+
+If everything works, the Modelsim window should appear.
+
+{% include figure image_path="/assets/images/2020/08/vsim-screenshot.png" caption="" %}
+
+# 3 Docker image
+The Docker image is based on one kindly provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). The scripts used to create it is available [here](https://github.com/phwl/elec3608-vsim).  
+
+# 4 Troubleshooting
  1. Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).
  1. Check you have virtualization enabled in your BIOS
    * Reboot the computer and open the system's BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.

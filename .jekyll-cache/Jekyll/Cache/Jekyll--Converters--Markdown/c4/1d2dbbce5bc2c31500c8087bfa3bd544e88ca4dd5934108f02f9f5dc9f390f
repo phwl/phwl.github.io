@@ -1,0 +1,31 @@
+I"œ<ul class="toc__menu">
+  <li><a href="#1-installation">1. Installation</a>
+    <ul>
+      <li><a href="#11-windows">1.1 Windows</a>
+        <ul>
+          <li><a href="#install-xcxsrv">Install XcXsrv</a></li>
+          <li><a href="#install-docker">Install Docker</a></li>
+        </ul>
+      </li>
+      <li><a href="#12-macos">1.2 MacOS</a>
+        <ul>
+          <li><a href="#install-docker-1">Install Docker</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#2-testing">2 Testing</a>
+    <ul>
+      <li><a href="#21-hello-world">2.1 Hello world</a></li>
+      <li><a href="#21-modelsim">2.1 Modelsim</a>
+        <ul>
+          <li><a href="#211-windows">2.1.1 Windows</a></li>
+          <li><a href="#211-macos">2.1.1 MacOS</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#3-docker-image">3 Docker image</a></li>
+  <li><a href="#4-troubleshooting">4 Troubleshooting</a></li>
+</ul>
+:ET

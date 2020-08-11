@@ -204,16 +204,17 @@
   <li><a href="#2-testing">2 Testing</a>
     <ul>
       <li><a href="#21-hello-world">2.1 Hello world</a></li>
-      <li><a href="#21-modelsim">2.1 Modelsim</a>
+      <li><a href="#22-xeyes">2.2 Xeyes</a>
         <ul>
           <li><a href="#211-windows">2.1.1 Windows</a></li>
-          <li><a href="#211-macos">2.1.1 MacOS</a></li>
+          <li><a href="#212-macos">2.1.2 MacOS</a></li>
         </ul>
       </li>
+      <li><a href="#23-modelsim">2.3 Modelsim</a></li>
     </ul>
   </li>
-  <li><a href="#3-how-did-i-create-the-docker-image">3 How did I Create the Docker image?</a></li>
-  <li><a href="#4-if-things-dont-work">4 If things don’t work</a></li>
+  <li><a href="#3-docker-image">3 Docker image</a></li>
+  <li><a href="#4-troubleshooting">4 Troubleshooting</a></li>
 </ul>
             </nav>
           </aside>
@@ -248,9 +249,7 @@ to install Stable version of Docker Desktop for Windows (follow them carefully).
 
 <h1 id="2-testing">2 Testing</h1>
 <h2 id="21-hello-world">2.1 Hello world</h2>
-<ul>
-  <li>Type <code class="language-plaintext highlighter-rouge">docker run hello-world</code> in the command window. Your output should be something like:</li>
-</ul>
+<p>To test basic Docker functionality, type <code class="language-plaintext highlighter-rouge">docker run hello-world</code> in the command window. Your output should be something like:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -274,28 +273,60 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 </code></pre></div></div>
 
-<h2 id="21-modelsim">2.1 Modelsim</h2>
+<h2 id="22-xeyes">2.2 Xeyes</h2>
+<p>We need to use the X Server to display graphical output. This
+tests X Windows basic functionality.</p>
+
 <h3 id="211-windows">2.1.1 Windows</h3>
 <ul>
   <li>Open a Windows Powershell window</li>
   <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
   <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
-  <li>If your home directory is C:\Users\XX, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
 </ul>
 
-<h3 id="211-macos">2.1.1 MacOS</h3>
+<h3 id="212-macos">2.1.2 MacOS</h3>
 <ul>
   <li>Open a terminal</li>
   <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code></li>
-  <li>You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
 </ul>
 
-<h1 id="3-how-did-i-create-the-docker-image">3 How did I Create the Docker image?</h1>
+<p>You should see the window below and the eyes should move with your mouse.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/08/xeyes-screenshot.png">
+  <img src="/assets/images/2020/08/xeyes-screenshot.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<h2 id="23-modelsim">2.3 Modelsim</h2>
+<p>Finally, this tests the Docker image for Modelsim (the executable is called
+<code class="language-plaintext highlighter-rouge">vsim</code>).</p>
+
 <ul>
-  <li>The Docker image is based on one kindly provided by Nachiket Kapre (U Waterloo) and available <a href="https://github.com/phwl/elec3608-vsim">here</a>.</li>
+  <li>(Windows) If your home directory is C:\Users\XX, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(MacOS) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
 </ul>
 
-<h1 id="4-if-things-dont-work">4 If things don’t work</h1>
+<p>If everything works, the Modelsim window should appear.</p>
+
+<figure class="">
+  <a href="/assets/images/2020/08/vsim-screenshot.png">
+  <img src="/assets/images/2020/08/vsim-screenshot.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<h1 id="3-docker-image">3 Docker image</h1>
+<p>The Docker image is based on one kindly provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it is available <a href="https://github.com/phwl/elec3608-vsim">here</a>.</p>
+
+<h1 id="4-troubleshooting">4 Troubleshooting</h1>
 <ol>
   <li>Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).</li>
   <li>Check you have virtualization enabled in your BIOS
