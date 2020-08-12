@@ -186,30 +186,11 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
               <ul class="toc__menu">
-  <li><a href="#1-installation">1. Installation</a>
-    <ul>
-      <li><a href="#11-windows">1.1 Windows</a>
-        <ul>
-          <li><a href="#install-xcxsrv">Install XcXsrv</a></li>
-          <li><a href="#install-docker">Install Docker</a></li>
-        </ul>
-      </li>
-      <li><a href="#12-macos">1.2 MacOS</a>
-        <ul>
-          <li><a href="#install-docker-1">Install Docker</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <li><a href="#1-installation">1. Installation</a></li>
   <li><a href="#2-testing">2 Testing</a>
     <ul>
       <li><a href="#21-hello-world">2.1 Hello world</a></li>
-      <li><a href="#22-xeyes">2.2 Xeyes</a>
-        <ul>
-          <li><a href="#211-windows">2.1.1 Windows</a></li>
-          <li><a href="#212-macos">2.1.2 MacOS</a></li>
-        </ul>
-      </li>
+      <li><a href="#22-xeyes">2.2 Xeyes</a></li>
       <li><a href="#23-modelsim">2.3 Modelsim</a></li>
     </ul>
   </li>
@@ -224,27 +205,23 @@
 <!-- more -->
 
 <h1 id="1-installation">1. Installation</h1>
-<h2 id="11-windows">1.1 Windows</h2>
-
-<h3 id="install-xcxsrv">Install XcXsrv</h3>
 <ul>
-  <li>Install the VcXsrv X windows server <a href="https://sourceforge.net/projects/vcxsrv/">https://sourceforge.net/projects/vcxsrv/</a></li>
-  <li>Run XLaunch and configure “Multiple Windows” and “Start no client”</li>
-  <li>You will get an alert from Windows Defender. Allow access for Private Networks.</li>
-</ul>
-
-<h3 id="install-docker">Install Docker</h3>
-<ul>
-  <li>(Windows 10 Professional, Consumer and Education) Use instructions at <a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>
+  <li>(Windows)
+    <ol>
+      <li>Install the VcXsrv X windows server <a href="https://sourceforge.net/projects/vcxsrv/">https://sourceforge.net/projects/vcxsrv/</a></li>
+      <li>Run XLaunch and configure “Multiple Windows” and “Start no client”</li>
+      <li>You will get an alert from Windows Defender. Allow access for Private Networks.</li>
+      <li>(Windows 10 Professional, Consumer and Education) Use instructions at <a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>
 to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that “Enable WEL 2 Windows Features” and “Add shortcut to desktop” are selected.</li>
-  <li>(Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions <a href="https://docs.docker.com/docker-for-windows/install-windows-home/">https://docs.docker.com/docker-for-windows/install-windows-home/</a></li>
-  <li>Run Docker Desktop by double-clicking the icon on the desktop</li>
-</ul>
-
-<h2 id="12-macos">1.2 MacOS</h2>
-<h3 id="install-docker-1">Install Docker</h3>
-<ul>
-  <li>Download and install stable version from <a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></li>
+      <li>(Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions <a href="https://docs.docker.com/docker-for-windows/install-windows-home/">https://docs.docker.com/docker-for-windows/install-windows-home/</a></li>
+      <li>Run Docker Desktop by double-clicking the icon on the desktop</li>
+    </ol>
+  </li>
+  <li>(MacOS)
+    <ol>
+      <li>Download and install stable version from <a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></li>
+    </ol>
+  </li>
 </ul>
 
 <h1 id="2-testing">2 Testing</h1>
@@ -277,11 +254,14 @@ For more examples and ideas, visit:
 <p>We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.</p>
 
-<h3 id="211-windows">2.1.1 Windows</h3>
 <ul>
-  <li>Open a Windows Powershell window</li>
-  <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
-  <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
+  <li>(Windows)
+    <ol>
+      <li>Open a Windows Powershell window</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
+    </ol>
+  </li>
 </ul>
 
 <figure class="">
@@ -294,17 +274,16 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <ul>
-  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
+  <li>(MacOS)
+    <ol>
+      <li>Open a terminal</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code></li>
+      <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
+    </ol>
+  </li>
+  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>
+You should see the window below and the eyes should move with your mouse.</li>
 </ul>
-
-<h3 id="212-macos">2.1.2 MacOS</h3>
-<ul>
-  <li>Open a terminal</li>
-  <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code></li>
-  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
-</ul>
-
-<p>You should see the window below and the eyes should move with your mouse.</p>
 
 <figure class="">
   <a href="/assets/images/2020/08/xeyes-screenshot.png">
@@ -336,20 +315,20 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <h1 id="3-docker-image">3 Docker image</h1>
-<p>The Docker image is based on one kindly provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it are available <a href="https://github.com/phwl/elec3608-github">here</a>.</p>
+<p>The Docker image is derived from one provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it are available <a href="https://github.com/phwl/elec3608-github">here</a>.</p>
 
 <h1 id="4-troubleshooting">4 Troubleshooting</h1>
-<ol>
+<ul>
   <li>Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).</li>
   <li>Check you have virtualization enabled in your BIOS
-    <ul>
+    <ol>
       <li>Reboot the computer and open the system’s BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.</li>
       <li>Enabling the virtualization extensions in BIOS.  Open the Processor submenu The processor settings menu may be hidden in the Chipset, Advanced CPU Configuration or Northbridge.  Enable Intel Virtualization Technology (also known as Intel VT-x). AMD-V extensions cannot be disabled in the BIOS and should already be enabled. The virtualization extensions may be labeled Virtualization Extensions, Vanderpool or various other names depending on the OEM and system BIOS.  Enable Intel VT-d or AMD IOMMU, if the options are available. Intel VT-d and AMD IOMMU are used for PCI device assignment.</li>
       <li>Select Save &amp; Exit.</li>
-    </ul>
+    </ol>
   </li>
   <li>If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available <a href="https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software">here</a>. After installing, update to the latest version.</li>
-</ol>
+</ul>
 
 
         
