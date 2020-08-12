@@ -102,3 +102,6 @@ The Docker image is derived from one provided by [Prof Nachiket Kapre (Waterloo)
    1. Select Save & Exit.
  * If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available [here](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software). After installing, update to the latest version.
 
+# 5 Links
+ * Notes on Docker support under Windows Home with WSL 2 <https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))
+ * Notes on WSL 2 and Hyper-V <https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))
