@@ -30,6 +30,7 @@ Here are installation instructions for installing Docker and running Modelsim fo
 
  * (MacOS)
    1. Download and install stable version from <https://docs.docker.com/docker-for-mac/install/>
+   1. Run Docker Desktop by clicking the Docker icon
 
 # 2 Testing
 ## 2.1 Hello world
@@ -62,7 +63,7 @@ For more examples and ideas, visit:
 We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.
 
- * (Windows) 
+ * (Windows setup) 
     1. Open a Windows Powershell window
     1. Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1
     1. Type ```set-variable -name DISPLAY -value 172.18.240.1:0.0```
@@ -70,12 +71,11 @@ tests X Windows basic functionality.
 {% include figure image_path="/assets/images/2020/08/ipconfig-screenshot.png" caption="" %}
 
 
- *  (MacOS)
+ * (MacOS setup)
     1.  Open a terminal
     1.  Type ```export DISPLAY=`hostname`:0.0```
-    1.  Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
 
- * Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
+Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
 You should see the window below and the eyes should move with your mouse.
 
 {% include figure image_path="/assets/images/2020/08/xeyes-screenshot.png" max-width="200px" caption="" %}
@@ -84,8 +84,8 @@ You should see the window below and the eyes should move with your mouse.
 Finally, this tests the Docker image for Modelsim (the executable is called
 ```vsim```).
 
- * (Windows) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
- * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
+ * (Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
+ * (MacOS setup) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
 
 If everything works, the Modelsim window should appear.
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-12T10:22:46+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Windows 10 and MacOS</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Windows 10 and MacOS" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-12T10:29:35+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Windows 10 and MacOS</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Windows 10 and MacOS" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -18,6 +18,7 @@ to install Stable version of Docker Desktop for Windows (follow them carefully).
   &lt;li&gt;(MacOS)
     &lt;ol&gt;
       &lt;li&gt;Download and install stable version from &lt;a href=&quot;https://docs.docker.com/docker-for-mac/install/&quot;&gt;https://docs.docker.com/docker-for-mac/install/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Run Docker Desktop by clicking the Docker icon&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -53,7 +54,7 @@ For more examples and ideas, visit:
 tests X Windows basic functionality.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(Windows)
+  &lt;li&gt;(Windows setup)
     &lt;ol&gt;
       &lt;li&gt;Open a Windows Powershell window&lt;/li&gt;
       &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1&lt;/li&gt;
@@ -72,16 +73,16 @@ tests X Windows basic functionality.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(MacOS)
+  &lt;li&gt;(MacOS setup)
     &lt;ol&gt;
       &lt;li&gt;Open a terminal&lt;/li&gt;
       &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;
-You should see the window below and the eyes should move with your mouse.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Now type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;
+You should see the window below and the eyes should move with your mouse.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/08/xeyes-screenshot.png&quot;&gt;
@@ -97,8 +98,8 @@ You should see the window below and the eyes should move with your mouse.&lt;/li
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vsim&lt;/code&gt;).&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(Windows) If your home directory is C:\Users\XX, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;(MacOS) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;(Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;(MacOS setup) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If everything works, the Modelsim window should appear.&lt;/p&gt;
