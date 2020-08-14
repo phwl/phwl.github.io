@@ -1,4 +1,4 @@
-I"U<p>Here are installation instructions for installing Docker and running Modelsim for my <a href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608">ELEC3608 Computer Architecture course</a>.</p>
+I"c<p>Here are installation instructions for installing Docker and running Modelsim for my <a href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608">ELEC3608 Computer Architecture course</a>.</p>
 
 <!-- more -->
 
@@ -18,6 +18,7 @@ to install Stable version of Docker Desktop for Windows (follow them carefully).
   <li>(MacOS)
     <ol>
       <li>Download and install stable version from <a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></li>
+      <li>Run Docker Desktop by clicking the Docker icon</li>
     </ol>
   </li>
 </ul>
@@ -53,7 +54,7 @@ For more examples and ideas, visit:
 tests X Windows basic functionality.</p>
 
 <ul>
-  <li>(Windows)
+  <li>(Windows setup)
     <ol>
       <li>Open a Windows Powershell window</li>
       <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
@@ -72,16 +73,16 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <ul>
-  <li>(MacOS)
+  <li>(MacOS setup)
     <ol>
       <li>Open a terminal</li>
       <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code></li>
-      <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code></li>
     </ol>
   </li>
-  <li>Type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>
-You should see the window below and the eyes should move with your mouse.</li>
 </ul>
+
+<p>Now type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>
+You should see the window below and the eyes should move with your mouse.</p>
 
 <figure class="">
   <a href="/assets/images/2020/08/xeyes-screenshot.png">
@@ -97,8 +98,8 @@ You should see the window below and the eyes should move with your mouse.</li>
 <code class="language-plaintext highlighter-rouge">vsim</code>).</p>
 
 <ul>
-  <li>(Windows) If your home directory is C:\Users\XX, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
-  <li>(MacOS) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(MacOS setup) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
 </ul>
 
 <p>If everything works, the Modelsim window should appear.</p>
@@ -112,10 +113,7 @@ You should see the window below and the eyes should move with your mouse.</li>
 
     </figcaption></a></figure>
 
-<h1 id="3-docker-image">3 Docker image</h1>
-<p>The Docker image is based on one kindly provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. The scripts used to create it are available <a href="https://github.com/phwl/elec3608-github">here</a>.</p>
-
-<h1 id="4-troubleshooting">4 Troubleshooting</h1>
+<h1 id="3-troubleshooting">3 Troubleshooting</h1>
 <ul>
   <li>Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).</li>
   <li>Check you have virtualization enabled in your BIOS
@@ -126,6 +124,13 @@ You should see the window below and the eyes should move with your mouse.</li>
     </ol>
   </li>
   <li>If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available <a href="https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software">here</a>. After installing, update to the latest version.</li>
+  <li>Niansong Zhang compiled <a href="/assets/images/2020/08/NOVA2019-docker-problems.pdf">this list</a>  at the NOVA’19 workshop</li>
 </ul>
 
+<h1 id="4-links">4 Links</h1>
+<ul>
+  <li>The Docker image is derived from one provided by <a href="https://nachiket.github.io/">Prof Nachiket Kapre (Waterloo)</a>. If you want to create your own variant, the scripts used to create it are available <a href="https://github.com/phwl/elec3608-github">here</a>.</li>
+  <li>Notes on Docker support under Windows Home with WSL 2 <a href="https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/">https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/</a> (from <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html">Dr Peter Jones</a>)</li>
+  <li>Notes on WSL 2 and Hyper-V <a href="https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/">https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/</a> (from <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html">Dr Peter Jones</a>)</li>
+</ul>
 :ET

@@ -1,4 +1,4 @@
-I"ß<ul class="toc__menu">
+I"§<ul class="toc__menu">
   <li><a href="#1-installation">1. Installation</a></li>
   <li><a href="#2-testing">2 Testing</a>
     <ul>
@@ -7,8 +7,7 @@
       <li><a href="#23-modelsim">2.3 Modelsim</a></li>
     </ul>
   </li>
-  <li><a href="#3-docker-image">3 Docker image</a></li>
-  <li><a href="#4-troubleshooting">4 Troubleshooting</a></li>
-  <li><a href="#5-links">5 Links</a></li>
+  <li><a href="#3-troubleshooting">3 Troubleshooting</a></li>
+  <li><a href="#4-links">4 Links</a></li>
 </ul>
 :ET
