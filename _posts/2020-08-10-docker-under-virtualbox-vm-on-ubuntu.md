@@ -21,7 +21,6 @@ Here are installation instructions for installing Docker and running Modelsim fo
 # 1. Installation
  * (Windows)
    1. Install the VcXsrv X windows server <https://sourceforge.net/projects/vcxsrv/>
-   1. Run XLaunch and configure "Multiple Windows" and "Start no client"
    1. You will get an alert from Windows Defender. Allow access for Private Networks.
    1. (Windows 10 Professional, Consumer and Education) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
    to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that "Enable WEL 2 Windows Features" and "Add shortcut to desktop" are selected.
@@ -59,11 +58,12 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
-## 2.2 Xeyes
+## 2.2 X Server
 We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.
 
  * (Windows setup) 
+    1. Run XLaunch and configure "Multiple Windows" and "Start no client"
     1. Open a Windows Powershell window
     1. Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1
     1. Type ```set-variable -name DISPLAY -value 172.18.240.1:0.0```
@@ -71,8 +71,8 @@ tests X Windows basic functionality.
 {% include figure image_path="/assets/images/2020/08/ipconfig-screenshot.png" caption="" %}
 
 
- * (MacOS setup)
-    1. Run the ```Xquartz``` program by clicking on the icon, an xterm window should appear
+ * (MacOS X setup)
+    1. Run the ```Xquartz``` X Server program by clicking on the icon, an xterm window should appear
     1. Type ```export DISPLAY=`hostname`:0.0``` in the xterm window.
     1. Type ```xhost +```
 
@@ -82,8 +82,8 @@ Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```.  You should see t
 
 ## 2.3 Modelsim
 Finally, this tests the Docker image for Modelsim (the executable is called
-```vsim```). Make sure you have set up your DISPLAY variable and X server as 
-in the Xeyes example prior to running the below.
+```vsim```). Make sure you have set up your X Server and can execute the
+previous Xeyes example.
 
  * (Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
  * (MacOS setup) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
@@ -92,6 +92,8 @@ If everything works, the Modelsim window should appear.
 
 {% include figure image_path="/assets/images/2020/08/vsim-screenshot.png" caption="" %}
 
+Within Docker, the directory on your local home directory will be mapped 
+to ```/mnt```. Use this to access your files and store your outputs.
 
 # 3 Troubleshooting
  * Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).
