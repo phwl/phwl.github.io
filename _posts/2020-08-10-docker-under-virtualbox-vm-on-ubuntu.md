@@ -73,8 +73,10 @@ tests X Windows basic functionality.
 
  * (MacOS setup)
     1. Run the ```Xquartz``` program by clicking on the icon, an xterm window should appear
+    1. Type ```export DISPLAY=`hostname`:0.0``` in the xterm window.
+    1. Type ```xhost +```
 
-Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes``` in the xterm window.  You should see the window below and the eyes should move with your mouse.
+Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```.  You should see the window below and the eyes should move with your mouse.
 
 {% include figure image_path="/assets/images/2020/08/xeyes-screenshot.png" max-width="200px" caption="" %}
 
