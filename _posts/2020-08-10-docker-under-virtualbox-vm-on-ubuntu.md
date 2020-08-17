@@ -72,17 +72,16 @@ tests X Windows basic functionality.
 
 
  * (MacOS setup)
-    1.  Open a terminal
-    1.  Type ```export DISPLAY=`hostname`:0.0```
+    1. Run the ```Xquartz``` program by clicking on the icon, an xterm window should appear
 
-Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
-You should see the window below and the eyes should move with your mouse.
+Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes``` in the xterm window.  You should see the window below and the eyes should move with your mouse.
 
 {% include figure image_path="/assets/images/2020/08/xeyes-screenshot.png" max-width="200px" caption="" %}
 
 ## 2.3 Modelsim
 Finally, this tests the Docker image for Modelsim (the executable is called
-```vsim```).
+```vsim```). Make sure you have set up your DISPLAY variable and X server as 
+in the Xeyes example prior to running the below.
 
  * (Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
  * (MacOS setup) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
