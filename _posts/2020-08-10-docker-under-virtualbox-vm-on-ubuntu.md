@@ -24,7 +24,7 @@ Here are installation instructions for installing Docker and running Modelsim fo
    1. You will get an alert from Windows Defender. Allow access for Private Networks.
    1. (Windows 10 Professional, Consumer and Education) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
    to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that "Enable WEL 2 Windows Features" and "Add shortcut to desktop" are selected.
-   1. (Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions <https://docs.docker.com/docker-for-windows/install-windows-home/>
+   1. (Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions <https://docs.docker.com/docker-for-windows/install-windows-home/>
    1. Run Docker Desktop by double-clicking the icon on the desktop
 
  * (MacOS)
@@ -85,7 +85,7 @@ Finally, this tests the Docker image for Modelsim (the executable is called
 ```vsim```). Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is C:\Users\XX, you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim```.
+ * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v "C:\Users\XX YY":/mnt phwl/elec3608-vsim:latest vsim```.
  * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
 
 If everything works, the Modelsim window should appear.
@@ -96,7 +96,7 @@ Within Docker, the directory on your local home directory will be mapped
 to ```/mnt```. Use this to access your files and store your outputs.
 
 # 3 Troubleshooting
- * Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).
+ * Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available <https://www.microsoft.com/en-us/software-download/windows10ISO>.
  * Check you have virtualization enabled in your BIOS
    1. Reboot the computer and open the system's BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.
    1. Enabling the virtualization extensions in BIOS.  Open the Processor submenu The processor settings menu may be hidden in the Chipset, Advanced CPU Configuration or Northbridge.  Enable Intel Virtualization Technology (also known as Intel VT-x). AMD-V extensions cannot be disabled in the BIOS and should already be enabled. The virtualization extensions may be labeled Virtualization Extensions, Vanderpool or various other names depending on the OEM and system BIOS.  Enable Intel VT-d or AMD IOMMU, if the options are available. Intel VT-d and AMD IOMMU are used for PCI device assignment.
