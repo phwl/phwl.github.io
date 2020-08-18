@@ -3,7 +3,7 @@ author: phwl
 comments: true
 toc: true
 date: 2020-08-10 15:40:00 AEDT
-title: Docker under Windows 10 and MacOS
+title: Installing Docker
 
 classes: wide
 categories:
