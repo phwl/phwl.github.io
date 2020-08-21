@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T15:20:06+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Installing Docker</title><link href="http://localhost:4000/2020/installing-docker/" rel="alternate" type="text/html" title="Installing Docker" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/installing-docker</id><content type="html" xml:base="http://localhost:4000/2020/installing-docker/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-22T09:36:28+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The ballpoint on top was the one I used in High School, and the
+two fountain pens got me through university.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/parker45.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/parker45.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html">A small collection of Parker 45 pens.</summary></entry><entry><title type="html">Installing Docker</title><link href="http://localhost:4000/2020/installing-docker/" rel="alternate" type="text/html" title="Installing Docker" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/installing-docker</id><content type="html" xml:base="http://localhost:4000/2020/installing-docker/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -1092,18 +1106,4 @@ for real-time automatic modulation classification (AMC).&lt;/p&gt;
   &lt;li&gt;Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), to appear. 2020. &lt;a href=&quot;/assets/papers/amc_raw20.pdf&quot;&gt;amc_raw20.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="radio" /><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry><entry><title type="html">Wailing Joe Siren</title><link href="http://localhost:4000/2020/wailing-joe/" rel="alternate" type="text/html" title="Wailing Joe Siren" /><published>2020-05-31T15:23:18+10:00</published><updated>2020-05-31T15:23:18+10:00</updated><id>http://localhost:4000/2020/wailing-joe</id><content type="html" xml:base="http://localhost:4000/2020/wailing-joe/">&lt;p&gt;Cleaning up some old stuff and found this from the 70’s.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;p&gt;It’s a quarter mile siren (you can hear it from that far away). It was part of the burglar alarm system my dad made and why I got interested in electronics. The relay was protected from the
-elements by an upside-down glass jar attached to the lid.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/05/wailingjoe.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/05/wailingjoe.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="electronics" /><summary type="html">Cleaning up some old stuff and found this from the 70’s.</summary></entry></feed>
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/V92rmJ3-p-0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="radio" /><summary type="html">Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).</summary></entry></feed>
