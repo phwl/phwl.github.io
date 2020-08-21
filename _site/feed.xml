@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-14T22:14:45+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Docker under Windows 10 and MacOS</title><link href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/" rel="alternate" type="text/html" title="Docker under Windows 10 and MacOS" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu</id><content type="html" xml:base="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-18T15:20:06+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Installing Docker</title><link href="http://localhost:4000/2020/installing-docker/" rel="alternate" type="text/html" title="Installing Docker" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/installing-docker</id><content type="html" xml:base="http://localhost:4000/2020/installing-docker/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -7,11 +7,10 @@
   &lt;li&gt;(Windows)
     &lt;ol&gt;
       &lt;li&gt;Install the VcXsrv X windows server &lt;a href=&quot;https://sourceforge.net/projects/vcxsrv/&quot;&gt;https://sourceforge.net/projects/vcxsrv/&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Run XLaunch and configure “Multiple Windows” and “Start no client”&lt;/li&gt;
       &lt;li&gt;You will get an alert from Windows Defender. Allow access for Private Networks.&lt;/li&gt;
       &lt;li&gt;(Windows 10 Professional, Consumer and Education) Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;
 to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that “Enable WEL 2 Windows Features” and “Add shortcut to desktop” are selected.&lt;/li&gt;
-      &lt;li&gt;(Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install-windows-home/&quot;&gt;https://docs.docker.com/docker-for-windows/install-windows-home/&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;(Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install-windows-home/&quot;&gt;https://docs.docker.com/docker-for-windows/install-windows-home/&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;Run Docker Desktop by double-clicking the icon on the desktop&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
@@ -49,13 +48,14 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;22-xeyes&quot;&gt;2.2 Xeyes&lt;/h2&gt;
+&lt;h2 id=&quot;22-x-server&quot;&gt;2.2 X Server&lt;/h2&gt;
 &lt;p&gt;We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;(Windows setup)
     &lt;ol&gt;
+      &lt;li&gt;Run XLaunch and configure “Multiple Windows” and “Start no client”&lt;/li&gt;
       &lt;li&gt;Open a Windows Powershell window&lt;/li&gt;
       &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1&lt;/li&gt;
       &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set-variable -name DISPLAY -value 172.18.240.1:0.0&lt;/code&gt;&lt;/li&gt;
@@ -73,16 +73,16 @@ tests X Windows basic functionality.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(MacOS setup)
+  &lt;li&gt;(MacOS X setup)
     &lt;ol&gt;
-      &lt;li&gt;Open a terminal&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Xquartz&lt;/code&gt; X Server program by clicking on the icon, an xterm window should appear&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt; in the xterm window.&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xhost +&lt;/code&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;
-You should see the window below and the eyes should move with your mouse.&lt;/p&gt;
+&lt;p&gt;Now type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;.  You should see the window below and the eyes should move with your mouse.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/08/xeyes-screenshot.png&quot;&gt;
@@ -95,11 +95,12 @@ You should see the window below and the eyes should move with your mouse.&lt;/p&
 
 &lt;h2 id=&quot;23-modelsim&quot;&gt;2.3 Modelsim&lt;/h2&gt;
 &lt;p&gt;Finally, this tests the Docker image for Modelsim (the executable is called
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vsim&lt;/code&gt;).&lt;/p&gt;
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vsim&lt;/code&gt;). Make sure you have set up your X Server and can execute the
+previous Xeyes example.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;(MacOS setup) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v &quot;C:\Users\XX YY&quot;:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;(MacOS) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If everything works, the Modelsim window should appear.&lt;/p&gt;
@@ -113,9 +114,12 @@ You should see the window below and the eyes should move with your mouse.&lt;/p&
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
+&lt;p&gt;Within Docker, the directory on your local home directory will be mapped 
+to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt&lt;/code&gt;. Use this to access your files and store your outputs.&lt;/p&gt;
+
 &lt;h1 id=&quot;3-troubleshooting&quot;&gt;3 Troubleshooting&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).&lt;/li&gt;
+  &lt;li&gt;Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available &lt;a href=&quot;https://www.microsoft.com/en-us/software-download/windows10ISO&quot;&gt;https://www.microsoft.com/en-us/software-download/windows10ISO&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Check you have virtualization enabled in your BIOS
     &lt;ol&gt;
       &lt;li&gt;Reboot the computer and open the system’s BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.&lt;/li&gt;

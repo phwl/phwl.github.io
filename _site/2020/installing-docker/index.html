@@ -10,7 +10,7 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Docker under Windows 10 and MacOS - Life, the Universe and Fishing</title>
+<!-- begin _includes/seo.html --><title>Installing Docker - Life, the Universe and Fishing</title>
 <meta name="description" content="Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.">
 
 
@@ -18,8 +18,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Docker under Windows 10 and MacOS">
-<meta property="og:url" content="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">
+<meta property="og:title" content="Installing Docker">
+<meta property="og:url" content="http://localhost:4000/2020/installing-docker/">
 
 
   <meta property="og:description" content="Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.">
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/2020/docker-under-virtualbox-vm-on-ubuntu/">
+<link rel="canonical" href="http://localhost:4000/2020/installing-docker/">
 
 
 
@@ -166,7 +166,7 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Docker under Windows 10 and MacOS">
+    <meta itemprop="headline" content="Installing Docker">
     <meta itemprop="description" content="Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.">
     <meta itemprop="datePublished" content="August 10, 2020">
     
@@ -174,7 +174,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Docker under Windows 10 and MacOS
+          <h1 id="page-title" class="page__title" itemprop="headline">Installing Docker
 </h1>
           
         </header>
@@ -190,7 +190,7 @@
   <li><a href="#2-testing">2 Testing</a>
     <ul>
       <li><a href="#21-hello-world">2.1 Hello world</a></li>
-      <li><a href="#22-xeyes">2.2 Xeyes</a></li>
+      <li><a href="#22-x-server">2.2 X Server</a></li>
       <li><a href="#23-modelsim">2.3 Modelsim</a></li>
     </ul>
   </li>
@@ -209,11 +209,10 @@
   <li>(Windows)
     <ol>
       <li>Install the VcXsrv X windows server <a href="https://sourceforge.net/projects/vcxsrv/">https://sourceforge.net/projects/vcxsrv/</a></li>
-      <li>Run XLaunch and configure “Multiple Windows” and “Start no client”</li>
       <li>You will get an alert from Windows Defender. Allow access for Private Networks.</li>
       <li>(Windows 10 Professional, Consumer and Education) Use instructions at <a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>
 to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that “Enable WEL 2 Windows Features” and “Add shortcut to desktop” are selected.</li>
-      <li>(Windows Home) I have not tested this but it should be the same as for Windows 10 except for the Install Docker step where you follow these instructions <a href="https://docs.docker.com/docker-for-windows/install-windows-home/">https://docs.docker.com/docker-for-windows/install-windows-home/</a></li>
+      <li>(Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions <a href="https://docs.docker.com/docker-for-windows/install-windows-home/">https://docs.docker.com/docker-for-windows/install-windows-home/</a></li>
       <li>Run Docker Desktop by double-clicking the icon on the desktop</li>
     </ol>
   </li>
@@ -251,13 +250,14 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 </code></pre></div></div>
 
-<h2 id="22-xeyes">2.2 Xeyes</h2>
+<h2 id="22-x-server">2.2 X Server</h2>
 <p>We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.</p>
 
 <ul>
   <li>(Windows setup)
     <ol>
+      <li>Run XLaunch and configure “Multiple Windows” and “Start no client”</li>
       <li>Open a Windows Powershell window</li>
       <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
       <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
@@ -275,16 +275,16 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <ul>
-  <li>(MacOS setup)
+  <li>(MacOS X setup)
     <ol>
-      <li>Open a terminal</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code></li>
+      <li>Run the <code class="language-plaintext highlighter-rouge">Xquartz</code> X Server program by clicking on the icon, an xterm window should appear</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code> in the xterm window.</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">xhost +</code></li>
     </ol>
   </li>
 </ul>
 
-<p>Now type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>
-You should see the window below and the eyes should move with your mouse.</p>
+<p>Now type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>.  You should see the window below and the eyes should move with your mouse.</p>
 
 <figure class="">
   <a href="/assets/images/2020/08/xeyes-screenshot.png">
@@ -297,11 +297,12 @@ You should see the window below and the eyes should move with your mouse.</p>
 
 <h2 id="23-modelsim">2.3 Modelsim</h2>
 <p>Finally, this tests the Docker image for Modelsim (the executable is called
-<code class="language-plaintext highlighter-rouge">vsim</code>).</p>
+<code class="language-plaintext highlighter-rouge">vsim</code>). Make sure you have set up your X Server and can execute the
+previous Xeyes example.</p>
 
 <ul>
-  <li>(Windows setup) If your home directory is C:\Users\XX, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\XX:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
-  <li>(MacOS setup) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v "C:\Users\XX YY":/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(MacOS) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
 </ul>
 
 <p>If everything works, the Modelsim window should appear.</p>
@@ -315,9 +316,12 @@ You should see the window below and the eyes should move with your mouse.</p>
 
     </figcaption></a></figure>
 
+<p>Within Docker, the directory on your local home directory will be mapped 
+to <code class="language-plaintext highlighter-rouge">/mnt</code>. Use this to access your files and store your outputs.</p>
+
 <h1 id="3-troubleshooting">3 Troubleshooting</h1>
 <ul>
-  <li>Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388).</li>
+  <li>Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">https://www.microsoft.com/en-us/software-download/windows10ISO</a>.</li>
   <li>Check you have virtualization enabled in your BIOS
     <ol>
       <li>Reboot the computer and open the system’s BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.</li>
@@ -396,11 +400,11 @@ You should see the window below and the eyes should move with your mouse.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Docker+under+Windows+10+and+MacOS%20http%3A%2F%2Flocalhost%3A4000%2F2020%2Fdocker-under-virtualbox-vm-on-ubuntu%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Installing+Docker%20http%3A%2F%2Flocalhost%3A4000%2F2020%2Finstalling-docker%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2Fdocker-under-virtualbox-vm-on-ubuntu%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2Finstalling-docker%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2Fdocker-under-virtualbox-vm-on-ubuntu%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2Finstalling-docker%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
