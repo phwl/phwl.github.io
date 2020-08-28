@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-26T08:56:44+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-28T19:08:33+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -91,7 +91,7 @@ tests X Windows basic functionality.&lt;/p&gt;
     &lt;ol&gt;
       &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Xquartz&lt;/code&gt; X Server program by clicking on the icon, an xterm window should appear&lt;/li&gt;
       &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt; in the xterm window.&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xhost +&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xhost +&lt;/code&gt; (if you get an error, check in Xquartz -&amp;gt; Preferences that both “Authenticate connections” and “Allow connections from network clients” are selected.&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -252,9 +252,23 @@ ruined. We have an old one dedicated to this.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;p&gt;Very tasty!&lt;/p&gt;
+
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/08/IMG_6465.jpg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/08/IMG_6465.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;postscript&quot;&gt;Postscript&lt;/h2&gt;
+&lt;p&gt;27/8/2020 Doing the right thing had its rewards. Fisheries sent me a couple
+of custom lures in return for reporting the tagged fish.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/IMG_6565.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/IMG_6565.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       

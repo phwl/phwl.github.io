@@ -57,4 +57,12 @@ ruined. We have an old one dedicated to this.
 {% include figure image_path="/assets/images/2020/08/IMG_6464.jpg" caption="" %}
 
 Very tasty!
+
 {% include figure image_path="/assets/images/2020/08/IMG_6465.jpg" caption="" %}
+
+## Postscript
+27/8/2020 Doing the right thing had its rewards. Fisheries sent me a couple
+of custom lures in return for reporting the tagged fish.
+
+
+{% include figure image_path="/assets/images/2020/08/IMG_6565.jpg" caption="" %}
