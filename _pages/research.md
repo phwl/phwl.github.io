@@ -10,7 +10,7 @@ classes: wide
 
   * [Overview](/assets/papers/overview) - an overview of my research
   * [Publications](/assets/papers/papers) - my publications list
-  * [Talks](talks) - slides from my public lectures
+  * [Talks](talks) - public lectures
   * [Students](students) - dissertations of my students
   * [Writing Resources](writing-resources) - how to improve your reports
   * [Applying to my lab](http://phwl.org/2018/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/) - how to be a postgraduate student in the Computer Engineering Lab
