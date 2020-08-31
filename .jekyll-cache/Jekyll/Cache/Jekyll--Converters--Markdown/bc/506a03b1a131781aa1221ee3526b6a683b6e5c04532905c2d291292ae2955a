@@ -1,4 +1,8 @@
-I"dK<h2 id="9-july-2020-lecture">9 July 2020, Lecture</h2>
+I"�Q<h2 id="4-sep-2020-30th-international-conference-on-field-programmable-logic-and-applications-4th-workshop-on-reconfigurable-computing-for-machine-learning--rc4ml2020-invited-lecture-a-fully-parallel-dnn-implementation-and-its-application-to-automatic-modulation-classification">4 Sep 2020, 30th International Conference on Field-Programmable Logic and Applications, 4th Workshop on Reconfigurable Computing for Machine Learning – RC4ML’2020 Invited Lecture, A Fully Parallel DNN Implementation and its Application to Automatic Modulation Classification</h2>
+
+<p>The high computational complexity of deep neural networks (DNNs) has led to strong interest in exploring low precision as a way to improve implementations. Unfortunately, very low precision activations and weights can have a significant impact on accuracy. This work demonstrates an efficient DNN which uses throughput matching where higher precision on certain layers can be used to recover this accuracy. This is applied to the domain of automatic modulation classification for radio signals leveraging the RF capabilities offered by the Xilinx ZCU111 RFSoC platform. The implemented networks achieve high-speed real-time performance with a classification latency of ≈8µs, and an operational throughput of 488k classifications per second. On the open-source RadioML dataset, we demonstrate how to recover 4.3% in accuracy using our technique.</p>
+
+<h2 id="9-july-2020-lecture">9 July 2020, Lecture</h2>
 <p><a href="assets/talks/rcintro20-nbn.pdf">FPGAs - EPIC Benefits</a>, NBN CTO Office</p>
 
 <p>A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. Since their introduction in the 1980’s, these devices have dramatically increased in capacity and functionality, with the recent Xilinx ZU29DR FPGA integrating a 1.5 GHz Quad-core ARM Cortex-A53 processor; Dual-core ARM Cortex-R5; 16x 14-bit, 6.6 GSPS digital-to-analog converters; 16x 12-bit, 2.1 GSPS analog-to-digital converters; 4K DSP slices and 930K system logic gates on a single device. This presentation will first provide an overview of FPGA architectures and describe their Energy, Parallelism, Integration and Customisation (EPIC) benefits over other technologies such as microprocessors, digital signal processors and graphics processing units (GPUs). This will be followed with examples of interesting FPGA-based computing applications, including my own research in the Computer Engineering Lab at the University of Sydney. </p>
@@ -146,6 +150,9 @@ Microsoft Research Talks, Redmond</p>
 
 <h2 id="25-october-2013-lecture">25 October 2013, Lecture</h2>
 <p><a href="/assets/images/2017/10/cel-nicta13.pdf">Computer Engineering Lab</a>, National ICT Australia (NICTA), Sydney</p>
+
+<h2 id="15-may-2009-lunchtime-talk">15 May 2009, Lunchtime talk</h2>
+<p><a href="http://phwl.org/2009/life-the-universe-and-fishing/">Lunchtime research talk</a>, Chinese University of Hong Kong, Hong Kong</p>
 
 <h2 id="14-december-2007-lecture">14 December 2007, Lecture</h2>
 <p><a href="/assets/images/2017/10/fpt07-whatsexciting.pdf">10 Sonnets Concerning Field Programmable Technology</a>, International Conference on Field Programmable Technology Special Session on What is Exciting about Field Programmable Technology</p>
