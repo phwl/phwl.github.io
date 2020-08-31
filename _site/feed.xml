@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-31T11:28:10+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-08-31T11:35:12+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -113,7 +113,7 @@ tests X Windows basic functionality.&lt;/p&gt;
 previous Xeyes example.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\&quot;XX YY&quot;:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\&quot;XX YY&quot;:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt; (note the position of the quotes).&lt;/li&gt;
   &lt;li&gt;(MacOS) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 

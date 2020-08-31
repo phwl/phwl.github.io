@@ -85,7 +85,7 @@ Finally, this tests the Docker image for Modelsim (the executable is called
 ```vsim```). Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim```.
+ * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim``` (note the position of the quotes).
  * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
 
 If everything works, the Modelsim window should appear.

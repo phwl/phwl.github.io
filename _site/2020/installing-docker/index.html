@@ -301,7 +301,7 @@ tests X Windows basic functionality.</p>
 previous Xeyes example.</p>
 
 <ul>
-  <li>(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v "C:\Users\XX YY":/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
+  <li>(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim</code> (note the position of the quotes).</li>
   <li>(MacOS) You should now be able to run vsim <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim</code>.</li>
 </ul>
 
