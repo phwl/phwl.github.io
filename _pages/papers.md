@@ -297,10 +297,10 @@ Matic \- an intracardiac tachycardia classification system\.
 
 # Conferences
 
-[1] Stephen Tridgell, David Boland, Philip H\.W\. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha\.
-Real\-time automatic modulation classification using FSoC\.
-In *Proc\. Reconfigurable Architectures Workshop \(RAW\)*, to appear\. 2020\.
-URL: [amc\_raw20\.pdf](amc_raw20.pdf)\.  
+[1] Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha\.
+Real\-time automatic modulation classification using rfsoc\.
+In *2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18\-22, 2020*, 82–89\. IEEE, 2020\.
+URL: [https://doi\.org/10\.1109/IPDPSW50202\.2020\.00021](https://doi.org/10.1109/IPDPSW50202.2020.00021), [doi:10\.1109 / IPDPSW50202\.2020\.00021](https://doi.org/10.1109 / IPDPSW50202.2020.00021)\.  
 [2] SeyedRamin Rasoulinezhad, Siddhartha, Hao Zhou, Lingli Wang, David Boland, and Philip H\.W\. Leong\.
 LUXOR: an FPGA logic cell architecture for eficient compressor tree implementations\.
 In to appear\. 2020\.
