@@ -970,7 +970,7 @@ var store = [{
         "url": "http://localhost:4000/2020/codan-6924/",
         "teaser":"http://localhost:4000/assets/images/2020/06/codan6924-1.jpeg"},{
         "title": "Real-time automatic modulation classification using RFSoC",
-        "excerpt":"Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).     It was presented (virtually) at the RAW workshop https://raw.necst.it/.     Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), 2020. doi: 10.1109/IPDPSW50202.2020.00021 amc_raw20.pdf    ","categories": ["academia","radio"],
+        "excerpt":"Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).     It was presented (virtually) at the RAW workshop https://raw.necst.it/.     Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using FSoC. In Proc. Reconfigurable Architectures Workshop (RAW), 2020. DOI: 10.1109/IPDPSW50202.2020.00021 (amc_raw20.pdf)    ","categories": ["academia","radio"],
         "tags": [],
         "url": "http://localhost:4000/2020/rtamc/",
         "teaser":"http://localhost:4000/assets/images/2020/06/amc-screenshot.png"},{
