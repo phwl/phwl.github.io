@@ -1013,4 +1013,9 @@ var store = [{
         "excerpt":"A small collection of Parker 45 pens.     The ballpoint on top was the one I used in High School, and the two fountain pens got me through university.                                ","categories": ["academia"],
         "tags": [],
         "url": "http://localhost:4000/2020/parker45/",
-        "teaser":"http://localhost:4000/assets/images/2020/08/parker45.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2020/08/parker45.jpeg"},{
+        "title": "Woy Woy Fisherman's Wharf",
+        "excerpt":"                             ","categories": ["academia"],
+        "tags": [],
+        "url": "http://localhost:4000/2020/woywoy/",
+        "teaser":"http://localhost:4000/assets/images/2020/08/IMG_6533.jpg"}]
