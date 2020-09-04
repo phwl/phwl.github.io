@@ -12,7 +12,7 @@ wordpress_id: 3312
 
 
 ## 4 Sep 2020, Invited Lecture
-A Fully Parallel DNN Implementation and its Application to Automatic Modulation Classification, 
+[A Fully Parallel DNN Implementation and its Application to Automatic Modulation Classification](assets/talks/amc-rc4ml20.pdf), 
 [30th International Conference on Field-Programmable Logic and Applications](https://www.fpl2020.org/), 4th Workshop on Reconfigurable Computing for Machine Learning – RC4ML’2020
 
 The high computational complexity of deep neural networks (DNNs) has led to strong interest in exploring low precision as a way to improve implementations. Unfortunately, very low precision activations and weights can have a significant impact on accuracy. This work demonstrates an efficient DNN which uses throughput matching where higher precision on certain layers can be used to recover this accuracy. This is applied to the domain of automatic modulation classification for radio signals leveraging the RF capabilities offered by the Xilinx ZCU111 RFSoC platform. The implemented networks achieve high-speed real-time performance with a classification latency of ≈8µs, and an operational throughput of 488k classifications per second. On the open-source RadioML dataset, we demonstrate how to recover 4.3% in accuracy using our technique.
