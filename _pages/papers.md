@@ -19,9 +19,9 @@ URL: [sc\_jeds20\.pdf](sc_jeds20.pdf), [doi:10\.1109/JEDS\.2020\.2981251](https:
 Kernel normalised least mean squares with delayed model adaptation\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, February 2020\.
 URL: [dknlms\_trets20\.pdf](dknlms_trets20.pdf), [doi:10\.1145/3376924](https://doi.org/10.1145/3376924)\.  
-[3] CA Herbert, M Dassis, M Pye, PW Jones, PHW Leong, G Thomas, H Cope, A Jarman, R Hobbs, PE Murray, and GE Machovsky Capuska\.
+[3] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky Capuska\.
 Development of light\-weight video\-tracking technology for use in wildlife research: a case study on kangaroos\.
-*Australian Zoologist*, pages in&ndash;press, 2020\.
+*Australian Zoologist*, 40\(3\):364&ndash;378, 2020\.
 URL: [kangaroo\_austzoo20\.pdf](kangaroo_austzoo20.pdf), [doi:10\.7882/AZ\.2020\.001](https://doi.org/10.7882/AZ.2020.001)\.  
 [4] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H\.W\. Leong\.
 AddNet: deep neural networks using FPGA\-optimized multipliers\.
