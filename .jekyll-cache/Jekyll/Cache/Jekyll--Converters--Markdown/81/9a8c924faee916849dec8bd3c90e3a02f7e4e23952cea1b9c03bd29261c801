@@ -1,4 +1,4 @@
-I"�$<ul id="markdown-toc">
+I"0'<ul id="markdown-toc">
   <li><a href="#journals" id="markdown-toc-journals">Journals</a></li>
   <li><a href="#conferences" id="markdown-toc-conferences">Conferences</a></li>
   <li><a href="#patents" id="markdown-toc-patents">Patents</a></li>
@@ -12,15 +12,15 @@
 
 <p>[1] Johan Saltin, Nguyen Cong Dao, Philip H. W. Leong, and Hiu Yung Wong.
 Energy filtering effect at source contact on ultra-scaled mosfets.
-<em>IEEE Journal of the Electron Devices Society</em>, pages to appear (accepted 13 Feb 2020), 2020.
-URL: <a href="sc_jeds20.pdf">sc_jeds20.pdf</a>, <a href="https://doi.org/10.1109/JEDS.2020.2981251">doi:10.1109/JEDS.2020.2981251</a>.<br />
+<em>IEEE Journal of the Electron Devices Society</em>, 8:662–667, 2020.
+URL: <a href="sc_jeds20.pdf">sc_jeds20.pdf</a>.<br />
 [2] Nicholas J. Fraser and Philip H. W. Leong.
 Kernel normalised least mean squares with delayed model adaptation.
 <em>ACM Trans. Reconfigurable Technol. Syst.</em>, February 2020.
 URL: <a href="dknlms_trets20.pdf">dknlms_trets20.pdf</a>, <a href="https://doi.org/10.1145/3376924">doi:10.1145/3376924</a>.<br />
-[3] CA Herbert, M Dassis, M Pye, PW Jones, PHW Leong, G Thomas, H Cope, A Jarman, R Hobbs, PE Murray, and GE Machovsky Capuska.
+[3] C.A. Herbert, M. Dassis, M. Pye, P.W. Jones, P.H.W. Leong, G. Thomas, H. Cope, A. Jarman, R. Hobbs, P.E. Murray, and G.E. Machovsky Capuska.
 Development of light-weight video-tracking technology for use in wildlife research: a case study on kangaroos.
-<em>Australian Zoologist</em>, pages in–press, 2020.
+<em>Australian Zoologist</em>, 40(3):364–378, 2020.
 URL: <a href="kangaroo_austzoo20.pdf">kangaroo_austzoo20.pdf</a>, <a href="https://doi.org/10.7882/AZ.2020.001">doi:10.7882/AZ.2020.001</a>.<br />
 [4] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H.W. Leong.
 AddNet: deep neural networks using FPGA-optimized multipliers.
@@ -296,27 +296,27 @@ Matic - an intracardiac tachycardia classification system.
 
 <h1 id="conferences">Conferences</h1>
 
-<p>[1] Stephen Tridgell, David Boland, Philip H.W. Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha.
-Real-time automatic modulation classification using FSoC.
-In <em>Proc. Reconfigurable Architectures Workshop (RAW)</em>, to appear. 2020.
-URL: <a href="amc_raw20.pdf">amc_raw20.pdf</a>.<br />
-[2] SeyedRamin Rasoulinezhad, Siddhartha, Hao Zhou, Lingli Wang, David Boland, and Philip H.W. Leong.
-LUXOR: an FPGA logic cell architecture for eficient compressor tree implementations.
-In to appear. 2020.
-URL: <a href="luxor_fpga20.pdf">luxor_fpga20.pdf</a>.<br />
+<p>[1] Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha.
+Real-time automatic modulation classification using rfsoc.
+In <em>2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18-22, 2020</em>, 82–89. IEEE, 2020.
+URL: <a href="amc_raw20.pdf">amc_raw20.pdf</a>, <a href="https://doi.org/10.1109 / IPDPSW50202.2020.00021">doi:10.1109 / IPDPSW50202.2020.00021</a>.<br />
+[2] Seyedramin Rasoulinezhad, Siddhartha, Hao Zhou, Lingli Wang, David Boland, and Philip H. W. Leong.
+Luxor: an fpga logic cell architecture for efficient compressor tree implementations.
+In <em>The 2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays</em>, FPGA ‘20, 161–171. New York, NY, USA, 2020. Association for Computing Machinery.
+URL: <a href="luxor_fpga20.pdf">luxor_fpga20.pdf</a>, <a href="https://doi.org/10.1145/3373087.3375303">doi:10.1145/3373087.3375303</a>.<br />
 [3] Sean Fox, Julian Faraone, David Boland, Kees Vissers, and Philip H.W. Leong.
 Training deep neural networks in low-precision with high accuracy using fpgas.
-In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, to appear. 2019.
+In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, 1–9. 2019.
 Best Paper Award Candidate.
-URL: <a href="lptrain_fpt19.pdf">lptrain_fpt19.pdf</a>.<br />
+URL: <a href="lptrain_fpt19.pdf">lptrain_fpt19.pdf</a>, <a href="https://doi.org/10.1109/ICFPT47387.2019.00009">doi:10.1109/ICFPT47387.2019.00009</a>.<br />
 [4] Stephen Tridgell, David Boland, Philip H.W. Leong, and Siddhartha.
 Real-time automatic modulation classification.
-In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, to appear. 2019.
-URL: <a href="amc_fpt19.pdf">amc_fpt19.pdf</a>.<br />
+In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, 299–302. 2019.
+URL: <a href="amc_fpt19.pdf">amc_fpt19.pdf</a>, <a href="https://doi.org/10.1109/ICFPT47387.2019.00052">doi:10.1109/ICFPT47387.2019.00052</a>.<br />
 [5] SeyedRamin Rasoulinezhad, Sean Fox, Hao Zhou, Lingli Wang, David Boland, and Philip H.W. Leong.
 MajorityNets: BNNs utilising approximate popcount for improved efficiency.
-In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, to appear. 2019.
-URL: <a href="majnet_fpt19.pdf">majnet_fpt19.pdf</a>.<br />
+In <em>Proc. International Conference on Field Programmable Technology (FPT)</em>, 399–342. 2019.
+URL: <a href="majnet_fpt19.pdf">majnet_fpt19.pdf</a>, <a href="https://doi.org/10.1109/ICFPT47387.2019.00062">doi:10.1109/ICFPT47387.2019.00062</a>.<br />
 [6] SeyedRamin Rasoulinezhad, Hao Zhou, Lingli Wang, and Philip H.W. Leong.
 PIR-DSP: an FPGA DSP block architecture for multi-precision deep neural networks.
 In <em>Proc. IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM)</em>, 1–8. 2019.
