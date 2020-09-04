@@ -12,7 +12,7 @@ classes: wide
 # Journals
 
 [1] Johan Saltin, Nguyen Cong Dao, Philip H\. W\. Leong, and Hiu Yung Wong\.
-Energy filtering effect at source contact on ultra\-scaled mosfets\.
+Energy filtering effect at source contact on ultra\-scaled MOSFETs\.
 *IEEE Journal of the Electron Devices Society*, 8:662&ndash;667, 2020\.
 URL: [sc\_jeds20\.pdf](sc_jeds20.pdf)\.  
 [2] Nicholas J\. Fraser and Philip H\. W\. Leong\.
@@ -298,15 +298,15 @@ Matic \- an intracardiac tachycardia classification system\.
 # Conferences
 
 [1] Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha\.
-Real\-time automatic modulation classification using rfsoc\.
+Real\-time automatic modulation classification using RFSoC\.
 In *2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18\-22, 2020*, 82–89\. IEEE, 2020\.
 URL: [amc\_raw20\.pdf](amc_raw20.pdf), [doi:10\.1109 / IPDPSW50202\.2020\.00021](https://doi.org/10.1109 / IPDPSW50202.2020.00021)\.  
 [2] Seyedramin Rasoulinezhad, Siddhartha, Hao Zhou, Lingli Wang, David Boland, and Philip H\. W\. Leong\.
-Luxor: an fpga logic cell architecture for efficient compressor tree implementations\.
+LUXOR: an FPGA logic cell architecture for efficient compressor tree implementations\.
 In *The 2020 ACM/SIGDA International Symposium on Field\-Programmable Gate Arrays*, FPGA '20, 161–171\. New York, NY, USA, 2020\. Association for Computing Machinery\.
 URL: [luxor\_fpga20\.pdf](luxor_fpga20.pdf), [doi:10\.1145/3373087\.3375303](https://doi.org/10.1145/3373087.3375303)\.  
 [3] Sean Fox, Julian Faraone, David Boland, Kees Vissers, and Philip H\.W\. Leong\.
-Training deep neural networks in low\-precision with high accuracy using fpgas\.
+Training deep neural networks in low\-precision with high accuracy using FPGAs\.
 In *Proc\. International Conference on Field Programmable Technology \(FPT\)*, 1–9\. 2019\.
 Best Paper Award Candidate\.
 URL: [lptrain\_fpt19\.pdf](lptrain_fpt19.pdf), [doi:10\.1109/ICFPT47387\.2019\.00009](https://doi.org/10.1109/ICFPT47387.2019.00009)\.  
