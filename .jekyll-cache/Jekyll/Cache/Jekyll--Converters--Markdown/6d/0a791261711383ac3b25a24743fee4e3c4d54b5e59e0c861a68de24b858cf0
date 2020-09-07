@@ -1,4 +1,4 @@
-I"�!<p>Here are installation instructions for installing Docker and running Modelsim for my <a href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608">ELEC3608 Computer Architecture course</a>.</p>
+I"�!<p>Here are installation instructions for installing Docker and running Modelsim for my <a href="https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608">ELEC3608 Computer Architecture course</a>.</p>
 
 <!-- more -->
 
@@ -77,7 +77,7 @@ tests X Windows basic functionality.</p>
     <ol>
       <li>Run the <code class="language-plaintext highlighter-rouge">Xquartz</code> X Server program by clicking on the icon, an xterm window should appear</li>
       <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code> in the xterm window.</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">xhost +</code> (if you get an error, check in Xquartz -&gt; Preferences that both “Authenticate connections” and “Allow connections from network clients” are selected.</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">xhost +</code> (if you get an error, check in Xquartz -&gt; Preferences that “Authenticate connections” has no tick and “Allow connections from network clients” has a tick).</li>
     </ol>
   </li>
 </ul>
