@@ -5,8 +5,10 @@ date: 2020-08-22 14:02:24 AEST
 title: Crookwell Sheep Shearing
 classes: wide
 categories:
-- academia
+- travel
+- photography
 tags:
+- australia
 header:
   teaser: /assets/images/2020/09/DSCF0808.jpeg
 ---
