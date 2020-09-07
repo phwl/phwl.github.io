@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2020/09/DSCF0808.jpeg
 ---
 
-Went to visit [Prickle Farmer](https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A) in [Crookwell](https://goo.gl/maps/LzuvLjxnRkrHAjR98) and photograph the sheep shearing. 
+Went to visit [Prickle Farmer](https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A) in [Crookwell](https://goo.gl/maps/LzuvLjxnRkrHAjR98) and take some photographs.
 
 <!-- more -->
 
