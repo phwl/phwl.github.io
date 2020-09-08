@@ -47,9 +47,9 @@ Throwing the fleece onto the table.
 {% include figure image_path="/assets/images/2020/09/DSCF0808.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/09/DSCF0811.jpeg" caption="" %}
 
-The lady on the left is putting the wool into a compactor. Prickle Farmer
-and the wool handler sort the skirted fleeces and wool
-pieces.
+The lady on the left is putting the wool into a hydraulic compactor. Prickle Farmer
+and the wool handler sort the skirted fleeces and wool pieces.
+The compressed wool bale is 160 kg.
 {% include figure image_path="/assets/images/2020/09/DSCF0861.jpeg" caption="" %}
 
 Sheared sheep in the back.
