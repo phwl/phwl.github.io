@@ -58,6 +58,10 @@ Sheared sheep in the back.
 These sheep  are impatiently waiting their turn.
 {% include figure image_path="/assets/images/2020/09/DSCF0981.jpeg" caption="" %}
 
+Here is Prickle Farmer's video from 2018.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kwua_hvbYvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The dog took us on a tour of the farm.
 {% include figure image_path="/assets/images/2020/09/DSCF0986.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/09/DSCF0990.jpeg" caption="" %}
