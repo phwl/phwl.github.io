@@ -72,8 +72,7 @@ Hope they aren't cold tonight.
 These will be done tomorrow.
 {% include figure image_path="/assets/images/2020/09/DSCF1009.jpeg" caption="" %}
 
-This is a Vulcan Model C lorry from 1919 that a mutual friend left at the farm
-for storage.
+A Vulcan Model C lorry from 1919 that a mutual friend parked at the farm.
 {% include figure image_path="/assets/images/2020/09/DSCF1010.jpeg" caption="" %}
 
 A bad accident on the Hume Highway for our return trip. Was stopped for
