@@ -79,3 +79,6 @@ A bad accident on the Hume Highway for our return trip. Was stopped for
 almost 2 hours. According to the [news](https://www.goulburnpost.com.au/story/6913805/multi-vehicle-crash-on-the-hume-highway/?cs=12), it doesn't seem that anyway was badly hurt.
 {% include figure image_path="/assets/images/2020/09/DSCF1014.jpeg" caption="" %}
 
+16/9/20 Heard from Prickle Farmer that the shearers worked from 7-5pm and
+sheared 200+194 sheep that day. That equates to 2-3 sheep every 5 minutes
+and is the fastest he has seen.
