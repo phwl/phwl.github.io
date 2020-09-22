@@ -11,6 +11,10 @@ wordpress_id: 3338
 ---
 
 
+  1. Nicholas FRASER, [Algorithms and Architectures for High
+Performance Kernel Adaptive Filtering](/assets/images/2020/09/nfraser20.pdf), PhD, 2020.
+
+ 	
   1. Stephen TRIDGELL, [Low Latency Machine Learning on FPGAs](/assets/images/2019/12/stridgell19.pdf), PhD, 2020.
 
  	
