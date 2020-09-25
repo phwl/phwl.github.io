@@ -73,7 +73,7 @@ tests X Windows basic functionality.
 
  * (MacOS X setup)
     1. Run the ```Xquartz``` X Server program by clicking on the icon, an xterm window should appear
-    1. Type ```export DISPLAY=`hostname`:0.0``` in the xterm window.
+    1. Type ```export DISPLAY=`hostname`:0.0``` in the xterm window (alternatively ```export DISPLAY=docker.for.mac.localhost:0```.
     1. Type ```xhost +``` (if you get an error, check in Xquartz -> Preferences that "Authenticate connections" has no tick and "Allow connections from network clients" has a tick).
 
 Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```.  You should see the window below and the eyes should move with your mouse.
