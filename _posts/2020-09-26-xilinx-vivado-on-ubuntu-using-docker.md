@@ -49,3 +49,5 @@ You can run using
 ```
 docker run -e DISPLAY=`hostname`:0.0 -it --rm -v $PWD:/home/user/work -w /home/user ubuntu-vivado
 ```
+## Step 5 Customise 
+In particular, you will probably want to edit Dockerfile and/or entrypoint.sh to include your licence files.
