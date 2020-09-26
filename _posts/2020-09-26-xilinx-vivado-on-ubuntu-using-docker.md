@@ -11,7 +11,7 @@ tags:
 - software
 - ubuntu
 header:
-  teaser: https://www.xilinx.com/etc.clientlibs/site/clientlibs/xilinx/site-all/resources/imgs/header/xilinx-header-logo.svg
+  teaser: https://logos-download.com/wp-content/uploads/2016/12/Xilinx_logo_logotype.png
 ---
 
 Using Docker, installation of the Xilinx Vivado tools can be automated and
@@ -35,6 +35,9 @@ Clone my Dockerfiles at <https://github.com/phwl/docker-ubuntu-vivado>.
 
 ## Step 3 Download Xilinx Vivado Design Suite 2020.1
 Download the [Vivado HLx 2020.1: All OS installer Single-File Download](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz) to the docker-ubuntu-vivado directory (you will need an account).
+The filename should be ```Xilinx_Unified_2020.1_0602_1208.tar.gz``` and it 
+should be 36~GB (the Docker image is 109~GB so make sure you have enough
+space in ```/var/lib/docker```.
 
 ## Step 4 Build and test the Docker image
 Follow the instructions in docker-ubuntu-vivado/README.md, i.e. type

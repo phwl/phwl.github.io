@@ -26,7 +26,7 @@
 
 
 
-  <meta property="og:image" content="https://www.xilinx.com/etc.clientlibs/site/clientlibs/xilinx/site-all/resources/imgs/header/xilinx-header-logo.svg">
+  <meta property="og:image" content="https://logos-download.com/wp-content/uploads/2016/12/Xilinx_logo_logotype.png">
 
 
 
@@ -201,7 +201,10 @@ either via the <a href="https://docs.docker.com/engine/install/ubuntu/">instruct
 <p>Clone my Dockerfiles at <a href="https://github.com/phwl/docker-ubuntu-vivado">https://github.com/phwl/docker-ubuntu-vivado</a>.</p>
 
 <h2 id="step-3-download-xilinx-vivado-design-suite-20201">Step 3 Download Xilinx Vivado Design Suite 2020.1</h2>
-<p>Download the <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz">Vivado HLx 2020.1: All OS installer Single-File Download</a> to the docker-ubuntu-vivado directory (you will need an account).</p>
+<p>Download the <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz">Vivado HLx 2020.1: All OS installer Single-File Download</a> to the docker-ubuntu-vivado directory (you will need an account).
+The filename should be <code class="language-plaintext highlighter-rouge">Xilinx_Unified_2020.1_0602_1208.tar.gz</code> and it 
+should be 36~GB (the Docker image is 109~GB so make sure you have enough
+space in <code class="language-plaintext highlighter-rouge">/var/lib/docker</code>.</p>
 
 <h2 id="step-4-build-and-test-the-docker-image">Step 4 Build and test the Docker image</h2>
 <p>Follow the instructions in docker-ubuntu-vivado/README.md, i.e. type</p>
