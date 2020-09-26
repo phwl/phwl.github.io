@@ -1,0 +1,21 @@
+I"<p>Using Docker, installation of the Xilinx Vivado tools can be automated and
+easily transferred between machines.</p>
+
+<h2 id="step-1-install-docker">Step 1 Install Docker</h2>
+<p>You can either install Docker on Windows or MacOS using the instructions <a href="http://phwl.org/2020/installing-docker/">here</a>. On Ubuntu, Docker can be installed 
+either via the <a href="https://docs.docker.com/engine/install/ubuntu/">instructions on the Docker site</a> or using the Ubuntu package via the instructions here.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get remove docker docker-engine docker.io
+
+<span class="nb">sudo </span>apt <span class="nb">install </span>docker.io
+<span class="nb">sudo </span>systemctl start docker
+<span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker
+</code></pre></div></div>
+
+<h2 id="step-2-download-dockerfile">Step 2 Download Dockerfile</h2>
+<p>Clone my Dockerfiles at <a href="https://github.com/phwl/docker-ubuntu-vivado">https://github.com/phwl/docker-ubuntu-vivado</a>.</p>
+
+<h2 id="step-3-download-xilinx-vivado-design-suite-20201">Step 3 Download Xilinx Vivado Design Suite 2020.1</h2>
+<p>Download the <a href="https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz">Vivado HLx 2020.1: All OS installer Single-File Download</a> to the docker-ubuntu-vivado directory (you will need an account).</p>
+:ET
