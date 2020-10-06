@@ -104,19 +104,7 @@ to ```/mnt```. Use this to access your files and store your outputs.
  * If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available [here](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software). After installing, update to the latest version.
  * Niansong Zhang compiled [this list](/assets/images/2020/08/NOVA2019-docker-problems.pdf)  at the NOVA'19 workshop
 
-# 4 File System (7/10/20) 
-By default, Docker puts its images in ```/var/lib/docker```. On most of my 
-machines I have a relatively small SSD and use a larger magnetic hard disk
-for ```/home```. Since the [Xilinx tools](https://github.com/phwl/docker-ubuntu-vivado) take up 120 GB alone, I moved ```/var```, ```/home``` and ```/opt``` to the magnetic disk. Thus my /etc/fstab looks like
-```
-# mount the local HD to /home, /var and /opt
-/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
-/srv/fs/home	/home	none	bind	0	0
-/srv/fs/var	/var	none	bind	0	0
-/srv/fs/opt	/opt	none	bind	0	0
-```
-
-# 5 Links
+# 4 Links
  * The Docker image is derived from one provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). If you want to create your own variant, the scripts used to create it are available [here](https://github.com/phwl/elec3608-github).
  * Notes on Docker support under Windows Home with WSL 2 <https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))
  * Notes on WSL 2 and Hyper-V <https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))

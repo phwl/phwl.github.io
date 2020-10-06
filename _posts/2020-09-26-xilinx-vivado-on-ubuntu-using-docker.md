@@ -51,3 +51,16 @@ docker run -e DISPLAY=`hostname`:0.0 -it --rm -v $PWD:/home/user/work -w /home/u
 ```
 ## Step 5 Customise 
 In particular, you will probably want to edit Dockerfile and/or entrypoint.sh to include your licence files.
+
+## Step 6 File System (7/10/20) 
+By default, Docker puts its images in ```/var/lib/docker```. On most of my 
+machines I have a relatively small SSD and use a larger magnetic hard disk
+for ```/home```. Since the [Xilinx tools](https://github.com/phwl/docker-ubuntu-vivado) take up 120 GB alone, I moved ```/var```, ```/home``` and ```/opt``` to the magnetic disk. Thus my /etc/fstab looks like
+```
+# mount the local HD to /home, /var and /opt
+/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
+/srv/fs/home	/home	none	bind	0	0
+/srv/fs/var	/var	none	bind	0	0
+/srv/fs/opt	/opt	none	bind	0	0
+```
+
