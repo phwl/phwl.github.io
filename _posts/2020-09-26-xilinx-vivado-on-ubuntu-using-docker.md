@@ -31,7 +31,7 @@ sudo systemctl enable docker
 ```
 
 ## Step 2 Download Dockerfile
-Clone my Dockerfiles at <https://github.com/phwl/docker-ubuntu-vivado>.
+Clone my Dockerfiles at <https://github.com/phwl/docker-vivado-2020.1>.
 
 ## Step 3 Download Xilinx Vivado Design Suite 2020.1
 Download the [Vivado HLx 2020.1: All OS installer Single-File Download](https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz) to the docker-ubuntu-vivado directory (you will need an account).
@@ -42,19 +42,19 @@ space in ```/var/lib/docker```.
 ## Step 4 Build and test the Docker image
 Follow the instructions in docker-ubuntu-vivado/README.md, i.e. type
 ```bash
-docker image build -t ubuntu-vivado .
+docker image build -t vivado-2020.1 .
 ```
 
 You can run using
 ```
-docker run -e DISPLAY=`hostname`:0.0 -it --rm -v $PWD:/home/user/work -w /home/user ubuntu-vivado
+docker run -e DISPLAY=`hostname`:0.0 -it --rm -v $PWD:/home/user/work -w /home/user vivado-2020.1
 ```
 ## Step 5 Customise 
 In particular, you will probably want to edit Dockerfile and/or entrypoint.sh to include your licence files.
 
 ## Step 6 File System (7/10/20) 
 By default, Docker puts its images in ```/var/lib/docker```. On most of my 
-machines I have a relatively small SSD and use a larger magnetic hard disk
+machines I have a relatively small SSD for ```/``` and use a larger hard disk
 for ```/home```. Since the [Xilinx tools](https://github.com/phwl/docker-ubuntu-vivado) take up 120 GB alone, I moved ```/var```, ```/home``` and ```/opt``` to the magnetic disk. Thus my /etc/fstab looks like
 ```
 # mount the local HD to /home, /var and /opt
