@@ -1,0 +1,66 @@
+I"<p>This is how a new machine, amberjack, was configured.</p>
+
+<h2 id="machine">Machine</h2>
+<p>The machine was purchased from <a href="http://mwave.com.au">Mwave</a>. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AC16427	MSI B450I GAMING PLUS AC AM4 Mini-ITX Motherboard				1	1	$225.00	$225.00
+AB83276	SilverStone Strider Essential ST60F-ES230 600W 80 Plus Power Supply		1	1	$75.00	$75.00
+AC19487	Crucial P1 500GB NVMe M.2 PCIe 3D NAND SSD CT500P1SSD8				1	1	$89.00	$89.00
+AC23360	Respawn Ninja x MWAVE Gaming Mouse Pad Small - Black				1	1	$1.00	$1.00
+AB47402	Mwave Custom PC Assembly and Testing Service					1	1	$199.00	$199.00
+AB52361	Advanced Transportation Packing Solution					1	1	$19.99	$19.99
+AC26501	Kingston HyperX FURY RGB 32GB (2x 16GB) DDR4 3200MHz Memory			1	1	$209.00	$209.00
+AC29726	ASUS GeForce RTX 2060 SUPER Turbo EVO 8GB Video Card				1	1	$649.00	$649.00
+AC12989	Seagate ST8000DM004 8TB BarraCuda 3.5" SATA3 Desktop Hard Drive			1	1	$299.00	$299.00
+AB64976	Windows 10 Professional 64-bit OEM DVD						1	1	$219.00	$219.00
+AB59620	SilverStone Sugo Series SG13 Mini ITX Case - Mesh Front Panel			1	1	$69.00	$69.00
+AC24744	AMD Ryzen 5 3600X 6 Core Socket AM4 3.8GHz CPU Processor + Wraith Spire Cooler	1	1	$369.00	$369.00
+
+Total of Invoice Inc GST $2,490.33
+Total GST $226.39
+</code></pre></div></div>
+<h2 id="step-1-update-bios-to-enable-virtualisation">Step 1 Update BIOS to enable virtualisation</h2>
+<p>In the BIOS settings set</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overclocking -&gt; OC Explore Mode -&gt; Expert
+Overclocking -&gt; CPU Features -&gt; SVM Mode -&gt; Enable
+</code></pre></div></div>
+<p>then boot machine (into Windows 10).</p>
+
+<h2 id="step-2-install-ubuntu">Step 2 Install Ubuntu</h2>
+<ol>
+  <li>I made /dev/nvme0n1p1 efi, /dev/nvme0n1p2 ext4 mounted on / and /dev/sdb mounted on /srv</li>
+</ol>
+
+<h2 id="step-3-install-cuda">Step 3 Install cuda</h2>
+<p>I followed the <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">nvidia instructions</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt upgrade
+sudo apt install gcc
+</code></pre></div></div>
+
+<h2 id="step-xx-decided-against-running-ubuntu-under-windows-10">Step XX (Decided against running ubuntu under windows 10)</h2>
+
+<p>How to set up Ubuntu 18.04 under Hyper-V</p>
+<ol>
+  <li>Right click on the Windows button and select ‘Apps and Features’.</li>
+  <li>Select Programs and Features on the right under related settings.</li>
+  <li>Select Turn Windows Features on or off.</li>
+  <li>Select Hyper-V and click OK.</li>
+</ol>
+
+<p>I then mounted my home samba shared disk:</p>
+<ol>
+  <li>In File explorer, right click on the PC -&gt; Add a Network Location -&gt; \machinename\back1</li>
+</ol>
+
+<p>Then install Ubuntu.</p>
+<ol>
+  <li>In Hyper-V manager (Quick create).</li>
+  <li>I wanted the virtual hard disk to be on the <code class="language-plaintext highlighter-rouge">E:</code> drive. Edit the settings of the VM and edit the
+Virtual Hard Disk” to convert the image from
+<code class="language-plaintext highlighter-rouge">C:\Users\Public\Public Documents\Hyper-V\Virtual Hard Disks</code> to
+<code class="language-plaintext highlighter-rouge">E:\srv\amberjack\hyperv\ubuntu-hd1</code>.</li>
+</ol>
+
+<p>Don’t upgrade to 20.04!</p>
+
+:ET

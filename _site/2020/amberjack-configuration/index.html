@@ -1,0 +1,571 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Amberjack configuration - Life, the Universe and Fishing</title>
+<meta name="description" content="This is how a new machine, amberjack, was configured.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Life, the Universe and Fishing">
+<meta property="og:title" content="Amberjack configuration">
+<meta property="og:url" content="http://localhost:4000/2020/amberjack-configuration/">
+
+
+  <meta property="og:description" content="This is how a new machine, amberjack, was configured.">
+
+
+
+  <meta property="og:image" content="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-10-09T19:54:42+11:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/2020/amberjack-configuration/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "phwl",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/archive" >Archive</a>
+            </li><li class="masthead__menu-item">
+              <a href="/gallery" >Gallery</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research" >Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Amberjack configuration">
+    <meta itemprop="description" content="This is how a new machine, amberjack, was configured.">
+    <meta itemprop="datePublished" content="October 09, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Amberjack configuration
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This is how a new machine, amberjack, was configured.</p>
+
+<h2 id="machine">Machine</h2>
+<p>The machine was purchased from <a href="http://mwave.com.au">Mwave</a>. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AC16427	MSI B450I GAMING PLUS AC AM4 Mini-ITX Motherboard				1	1	$225.00	$225.00
+AB83276	SilverStone Strider Essential ST60F-ES230 600W 80 Plus Power Supply		1	1	$75.00	$75.00
+AC19487	Crucial P1 500GB NVMe M.2 PCIe 3D NAND SSD CT500P1SSD8				1	1	$89.00	$89.00
+AC23360	Respawn Ninja x MWAVE Gaming Mouse Pad Small - Black				1	1	$1.00	$1.00
+AB47402	Mwave Custom PC Assembly and Testing Service					1	1	$199.00	$199.00
+AB52361	Advanced Transportation Packing Solution					1	1	$19.99	$19.99
+AC26501	Kingston HyperX FURY RGB 32GB (2x 16GB) DDR4 3200MHz Memory			1	1	$209.00	$209.00
+AC29726	ASUS GeForce RTX 2060 SUPER Turbo EVO 8GB Video Card				1	1	$649.00	$649.00
+AC12989	Seagate ST8000DM004 8TB BarraCuda 3.5" SATA3 Desktop Hard Drive			1	1	$299.00	$299.00
+AB64976	Windows 10 Professional 64-bit OEM DVD						1	1	$219.00	$219.00
+AB59620	SilverStone Sugo Series SG13 Mini ITX Case - Mesh Front Panel			1	1	$69.00	$69.00
+AC24744	AMD Ryzen 5 3600X 6 Core Socket AM4 3.8GHz CPU Processor + Wraith Spire Cooler	1	1	$369.00	$369.00
+
+Total of Invoice Inc GST $2,490.33
+Total GST $226.39
+</code></pre></div></div>
+<p>Here is the <a href="https://download.msi.com/archive/mnu_exe/mb/E7A40v2.2.pdf">motherboard manual</a>.</p>
+
+<h2 id="step-1-update-bios-to-enable-virtualisation">Step 1 Update BIOS to enable virtualisation</h2>
+<p>In the BIOS settings set</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Overclocking -&gt; OC Explore Mode -&gt; Expert
+Overclocking -&gt; CPU Features -&gt; SVM Mode -&gt; Enable
+</code></pre></div></div>
+<p>then boot machine (into Windows 10).</p>
+
+<h2 id="step-2-install-ubuntu">Step 2 Install Ubuntu</h2>
+<ol>
+  <li>Erase disk and install everything to /dev/nvme0n1</li>
+</ol>
+
+<h2 id="step-3-install-cuda">Step 3 Install cuda</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt upgrade
+sudo apt install openssh-server net-tools rclone
+</code></pre></div></div>
+<p>Then follow the <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">Nvidia instructions</a>
+using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt purge nvidia-*
+sudo apt autoremove
+sudo apt install 
+sudo apt install 
+</code></pre></div></div>
+<p>before installing cuda</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install cuda=10.2.89-1
+</code></pre></div></div>
+<p>In <code class="language-plaintext highlighter-rouge">~/.profile</code> add</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+</code></pre></div></div>
+
+<h2 id="step-4-install-docker">Step 4 Install docker</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+</code></pre></div></div>
+
+<h2 id="step-xx-decided-against-running-ubuntu-under-windows-10">Step XX (Decided against running ubuntu under windows 10)</h2>
+
+<p>How to set up Ubuntu 18.04 under Hyper-V</p>
+<ol>
+  <li>Right click on the Windows button and select ‘Apps and Features’.</li>
+  <li>Select Programs and Features on the right under related settings.</li>
+  <li>Select Turn Windows Features on or off.</li>
+  <li>Select Hyper-V and click OK.</li>
+</ol>
+
+<p>I then mounted my home samba shared disk:</p>
+<ol>
+  <li>In File explorer, right click on the PC -&gt; Add a Network Location -&gt; \machinename\back1</li>
+</ol>
+
+<p>Then install Ubuntu.</p>
+<ol>
+  <li>In Hyper-V manager (Quick create).</li>
+  <li>I wanted the virtual hard disk to be on the <code class="language-plaintext highlighter-rouge">E:</code> drive. Edit the settings of the VM and edit the
+Virtual Hard Disk” to convert the image from
+<code class="language-plaintext highlighter-rouge">C:\Users\Public\Public Documents\Hyper-V\Virtual Hard Disks</code> to
+<code class="language-plaintext highlighter-rouge">E:\srv\amberjack\hyperv\ubuntu-hd1</code>.</li>
+</ol>
+
+<p>Don’t upgrade to 20.04!</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#software" class="page__taxonomy-item" rel="tag">software</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#ubuntu" class="page__taxonomy-item" rel="tag">ubuntu</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academia" class="page__taxonomy-item" rel="tag">academia</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-10-09T19:54:42+11:00">October 09, 2020</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Amberjack+configuration%20http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2020/xilinx-vivado-on-ubuntu-using-docker/" class="pagination--pager" title="Xilinx Vivado 2020.1 on Ubuntu using Docker
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2020/xilinx-vivado-on-ubuntu-using-docker/">
+        <img src=
+          
+            "https://logos-download.com/wp-content/uploads/2016/12/Xilinx_logo_logotype.png"
+          
+          alt="Xilinx Vivado 2020.1 on Ubuntu using Docker"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/xilinx-vivado-on-ubuntu-using-docker/" rel="permalink">Xilinx Vivado 2020.1 on Ubuntu using Docker
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Using Docker, installation of the Xilinx Vivado tools can be automated and
+isolated.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2020/crookwell-shearing/">
+        <img src=
+          
+            "/assets/images/2020/09/DSCF0808.jpeg"
+          
+          alt="Crookwell Sheep Shearing"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/crookwell-shearing/" rel="permalink">Crookwell Sheep Shearing
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Went to visit Prickle Farmer in Crookwell and take some photographs.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2020/woywoy/">
+        <img src=
+          
+            "/assets/images/2020/08/IMG_6533.jpg"
+          
+          alt="Woy Woy Fisherman's Wharf"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/woywoy/" rel="permalink">Woy Woy Fisherman’s Wharf
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+  
+  
+  
+    
+      
+
+    
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2020/parker45/">
+        <img src=
+          
+            "/assets/images/2020/08/parker45.jpeg"
+          
+          alt="Parker 45's"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/parker45/" rel="permalink">Parker 45’s
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">A small collection of Parker 45 pens.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://facebook.com/pleong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/phwl" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/philip-h-w-leong-949484" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-f" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
