@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2020-10-09 19:54:42 AEDT
-title: Amberjack configuration
+title: Amberjack Ubuntu GPU Machine Install
 classes: wide
 categories:
 - academia
@@ -58,8 +58,7 @@ using the Package Manager method and deb(network) installer type. This doesn't q
 ```
 sudo apt purge nvidia-*
 sudo apt autoremove
-sudo apt install 
-sudo apt install 
+sudo ubuntu-drivers autoinstall
 ```
 before installing cuda
 ```
@@ -67,10 +66,38 @@ sudo apt install cuda=10.2.89-1
 ```
 In ```~/.profile``` add
 ```
-export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-## Step 4 Install docker
+## Step 4 Install anaconda/pytorch
+Install [anaconda](https://www.anaconda.com/products/individual)
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+sh Anaconda3-2020.07-Linux-x86_64.sh
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+```
+
+Seems to work
+```
+(base) cruxml@amberjack:~$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.06  Sun Jul 19 20:02:54 UTC 2020
+GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+(base) cruxml@amberjack:~$ python
+Python 3.8.3 (default, Jul  2 2020, 16:21:59) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.cuda.current_device()
+0
+>>> torch.cuda.device(0)
+<torch.cuda.device object at 0x7fa9a5fab310>
+>>> torch.cuda.get_device_name(0)
+'GeForce RTX 2060 SUPER'
+>>> 
+```
+
+## Step 5 Install docker
 ```
 sudo apt update
 

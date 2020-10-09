@@ -10,7 +10,7 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Amberjack configuration - Life, the Universe and Fishing</title>
+<!-- begin _includes/seo.html --><title>Amberjack Ubuntu GPU Machine Install - Life, the Universe and Fishing</title>
 <meta name="description" content="This is how a new machine, amberjack, was configured.">
 
 
@@ -18,7 +18,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Amberjack configuration">
+<meta property="og:title" content="Amberjack Ubuntu GPU Machine Install">
 <meta property="og:url" content="http://localhost:4000/2020/amberjack-configuration/">
 
 
@@ -166,7 +166,7 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Amberjack configuration">
+    <meta itemprop="headline" content="Amberjack Ubuntu GPU Machine Install">
     <meta itemprop="description" content="This is how a new machine, amberjack, was configured.">
     <meta itemprop="datePublished" content="October 09, 2020">
     
@@ -174,7 +174,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Amberjack configuration
+          <h1 id="page-title" class="page__title" itemprop="headline">Amberjack Ubuntu GPU Machine Install
 </h1>
           
         </header>
@@ -225,17 +225,42 @@ sudo apt install openssh-server net-tools rclone
 using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt purge nvidia-*
 sudo apt autoremove
-sudo apt install 
-sudo apt install 
+sudo ubuntu-drivers autoinstall
 </code></pre></div></div>
 <p>before installing cuda</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install cuda=10.2.89-1
 </code></pre></div></div>
 <p>In <code class="language-plaintext highlighter-rouge">~/.profile</code> add</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 </code></pre></div></div>
 
-<h2 id="step-4-install-docker">Step 4 Install docker</h2>
+<h2 id="step-4-install-anacondapytorch">Step 4 Install anaconda/pytorch</h2>
+<p>Install <a href="https://www.anaconda.com/products/individual">anaconda</a></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+sh Anaconda3-2020.07-Linux-x86_64.sh
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+</code></pre></div></div>
+
+<p>Seems to work</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) cruxml@amberjack:~$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.06  Sun Jul 19 20:02:54 UTC 2020
+GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+(base) cruxml@amberjack:~$ python
+Python 3.8.3 (default, Jul  2 2020, 16:21:59) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import torch
+&gt;&gt;&gt; torch.cuda.current_device()
+0
+&gt;&gt;&gt; torch.cuda.device(0)
+&lt;torch.cuda.device object at 0x7fa9a5fab310&gt;
+&gt;&gt;&gt; torch.cuda.get_device_name(0)
+'GeForce RTX 2060 SUPER'
+&gt;&gt;&gt; 
+</code></pre></div></div>
+
+<h2 id="step-5-install-docker">Step 5 Install docker</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 
 sudo apt install docker.io
@@ -330,7 +355,7 @@ Virtual Hard Disk” to convert the image from
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Amberjack+configuration%20http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Amberjack+Ubuntu+GPU+Machine+Install%20http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2020%2Famberjack-configuration%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
