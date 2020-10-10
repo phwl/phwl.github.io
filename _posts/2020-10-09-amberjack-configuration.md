@@ -45,9 +45,30 @@ Overclocking -> CPU Features -> SVM Mode -> Enable
 then boot machine (into Windows 10).
 
 ## Step 2 Install Ubuntu
-1. Erase disk and install everything to /dev/nvme0n1
+1. Erase disk and install everything to /dev/nvme0n1. Select LVM.
 
-## Step 3 Install cuda
+## Step 3 Move /opt /var /home to hard disk
+```
+sudo -i
+mkdir /srv; mkdir /src/fs
+mount /dev/sda1 /srv/fs
+rsync -aXP /opt /var /home /srv/fs
+cd /
+mv opt opt.old
+mv var var.old
+mv home home.old
+```
+Add the mounts to ```/etc/fstab``` 
+```
+# mount the local HD to /home, /var and /opt
+/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
+/srv/fs/home	/home	none	bind	0	0
+/srv/fs/var	/var	none	bind	0	0
+/srv/fs/opt	/opt	none	bind	0	0
+```
+and reboot.
+
+## Step 4 Install cuda
 ```
 sudo apt update
 sudo apt upgrade
@@ -70,7 +91,7 @@ export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-## Step 4 Install anaconda/pytorch
+## Step 5 Install anaconda/pytorch
 Install [anaconda](https://www.anaconda.com/products/individual)
 ```
 wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
@@ -97,14 +118,29 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-## Step 5 Install docker
+## Step 6 Install docker
 ```
 sudo apt update
 
 sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
+sudo usermod -aG docker cruxml
 ```
+You need to log out and log in again for the group change to work.
+
+## Step 7 Install other stuff
+```
+sudo apt install hddtemp lm-sensors nvme-cli
+sudo sensors-detect --auto # unfortunately didn't find anything!
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install exfat-fuse exfat-utils
+```
+
+## Step 8 Vivado
+First I copied the Vivado files from another server. Then used
+[docker-vivado](https://github.com/phwl/docker-vivado) to create the files.
 
 ## Step XX (Decided against running ubuntu under windows 10) 
 

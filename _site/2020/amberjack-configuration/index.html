@@ -213,7 +213,7 @@ Overclocking -&gt; CPU Features -&gt; SVM Mode -&gt; Enable
 
 <h2 id="step-2-install-ubuntu">Step 2 Install Ubuntu</h2>
 <ol>
-  <li>Erase disk and install everything to /dev/nvme0n1</li>
+  <li>Erase disk and install everything to /dev/nvme0n1. Select LVM.</li>
 </ol>
 
 <h2 id="step-3-install-cuda">Step 3 Install cuda</h2>
@@ -266,7 +266,35 @@ Type "help", "copyright", "credits" or "license" for more information.
 sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
+sudo usermod -aG docker cruxml
 </code></pre></div></div>
+<p>You need to log out and log in again for the group change to work.</p>
+
+<h2 id="step-6-install-other-stuff">Step 6 Install other stuff</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install hddtemp lm-sensors nvme-cli
+sudo sensors-detect --auto # unfortunately didn't find anything!
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install exfat-fuse exfat-utils
+</code></pre></div></div>
+
+<h2 id="step-7-move-opt-var-home-to-hard-disk">Step 7 Move /opt /var /home to hard disk</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -i
+mkdir /srv; mkdir /src/fs
+mount /dev/sda1 /srv/fs
+rsync -aXP /opt /var /home /srv/fs
+</code></pre></div></div>
+<p>Add the mounts to <code class="language-plaintext highlighter-rouge">/etc/fstab</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mount the local HD to /home, /var and /opt
+/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
+/srv/fs/home	/home	none	bind	0	0
+/srv/fs/var	/var	none	bind	0	0
+/srv/fs/opt	/opt	none	bind	0	0
+</code></pre></div></div>
+
+<h2 id="step-7-vivado">Step 7 Vivado</h2>
+<p>First I copied the Vivado files from another server. Then used
+<a href="https://github.com/phwl/docker-vivado">docker-vivado</a> to create the files.</p>
 
 <h2 id="step-xx-decided-against-running-ubuntu-under-windows-10">Step XX (Decided against running ubuntu under windows 10)</h2>
 
