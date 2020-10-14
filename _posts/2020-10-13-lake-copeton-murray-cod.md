@@ -61,7 +61,6 @@ Then I got a smaller perch.
 
 Next morning, went out with Josh again but this time we only saw 2 fish on the sounder and didn't get a touch. Here he is retreiving his Polycraft polyethylene boat.
 {% include figure image_path="/assets/images/2020/10/E12A022B-E0BD-48FF-81DE-7C2DBD212B20-1860-000000DEDBB9CE19.jpeg" caption="" %}
-{% include figure image_path="/assets/images/2020/10/IMG_6457.jpeg" caption="" %}
 
 On the way back, we stopped at the [Goldfish Bowl](https://www.facebook.com/thegoldfishbowlbakery/), my favourite bakery and coffee shop in Armidale.
 {% include figure image_path="/assets/images/2020/10/IMG_6820.jpeg" caption="" %}
