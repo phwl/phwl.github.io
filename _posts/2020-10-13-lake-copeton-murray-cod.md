@@ -32,11 +32,15 @@ Unfortunately we didn't get any hits the entire morning.
 
 The guiding fished at 7:30am and we were kicking ourselves for not bringing our fishing gear as we thought we would be fishing with Josh the entire day and returning the next. Josh very kindly loaned us a couple of rods and lures.
 
-Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a Mazzy 60mm vibe.
+Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a 60mm Harima Mazzy vibe.
 {% include figure image_path="/assets/images/2020/10/IMG_6779.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/10/IMG_6780.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2020/10/IMG_6785.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2020/10/IMG_6795.jpg" caption="" %}
+
+
 
 Then I got a Murray cod.
 {% include figure image_path="/assets/images/2020/10/IMG_6788.jpeg" caption="" %}
@@ -59,9 +63,10 @@ Next morning, went out with Josh again but this time we only saw 2 fish on the s
 {% include figure image_path="/assets/images/2020/10/E12A022B-E0BD-48FF-81DE-7C2DBD212B20-1860-000000DEDBB9CE19.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/10/IMG_6457.jpeg" caption="" %}
 
-On the way back, passed through Armidale and stopped at the [Goldfish Bowl](https://www.facebook.com/thegoldfishbowlbakery/), a great bakery and coffee shop.
+On the way back, we stopped at the [Goldfish Bowl](https://www.facebook.com/thegoldfishbowlbakery/), my favourite bakery and coffee shop in Armidale.
 {% include figure image_path="/assets/images/2020/10/IMG_6820.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2020/10/IMG_6821.jpg" caption="" %}
 
-Although we would have liked to have caught a 135cm cod like the one Josh caught below, we did learn a lot from him and he's a great guide. In a way, it is good that things were not that easy and I look forward to returning to Lake Copeton to try again.
+Although we would have liked to have caught a 135cm cod like [the one Josh caught below](https://www.northerndailyleader.com.au/story/6428962/absolute-monster-josh-usher-lands-humongous-murray-cod/), we did learn a lot from him and he's a great guide. In a way, it is good that things were not that easy and I look forward to returning to Lake Copeton to try again.
 
 <img src="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/iViHsQkuwAs9FXZ3pcZDd6/e9a67f97-cc8a-4a1b-8fe2-2270a32b4644.jpg/r0_0_764_480_w1200_h678_fmax.jpg" alt="">
