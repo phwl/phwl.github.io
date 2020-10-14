@@ -216,7 +216,28 @@ Overclocking -&gt; CPU Features -&gt; SVM Mode -&gt; Enable
   <li>Erase disk and install everything to /dev/nvme0n1. Select LVM.</li>
 </ol>
 
-<h2 id="step-3-install-cuda">Step 3 Install cuda</h2>
+<h2 id="step-3-move-opt-var-home-to-hard-disk">Step 3 Move /opt /var /home to hard disk</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -i
+mkdir /srv; mkdir /src/fs
+mount /dev/sda1 /srv/fs
+rsync -aXP /opt /var /home /srv/fs
+cd /
+mv opt opt.old
+mv var var.old
+mv home home.old
+</code></pre></div></div>
+<p>Add the mounts to <code class="language-plaintext highlighter-rouge">/etc/fstab</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mount the local HD to /home, /var and /opt
+/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
+/srv/fs/home	/home	none	bind	0	0
+/srv/fs/var	/var	none	bind	0	0
+/srv/fs/opt	/opt	none	bind	0	0
+</code></pre></div></div>
+<p>and reboot. After it reboots successfully you can</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo rm -rf /opt.old /home.old /var.old
+</code></pre></div></div>
+
+<h2 id="step-4-install-cuda">Step 4 Install cuda</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server net-tools rclone
@@ -235,7 +256,7 @@ sudo ubuntu-drivers autoinstall
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 </code></pre></div></div>
 
-<h2 id="step-4-install-anacondapytorch">Step 4 Install anaconda/pytorch</h2>
+<h2 id="step-5-install-anacondapytorch">Step 5 Install anaconda/pytorch</h2>
 <p>Install <a href="https://www.anaconda.com/products/individual">anaconda</a></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 sh Anaconda3-2020.07-Linux-x86_64.sh
@@ -260,7 +281,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; 
 </code></pre></div></div>
 
-<h2 id="step-5-install-docker">Step 5 Install docker</h2>
+<h2 id="step-6-install-docker">Step 6 Install docker</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 
 sudo apt install docker.io
@@ -270,7 +291,7 @@ sudo usermod -aG docker cruxml
 </code></pre></div></div>
 <p>You need to log out and log in again for the group change to work.</p>
 
-<h2 id="step-6-install-other-stuff">Step 6 Install other stuff</h2>
+<h2 id="step-7-install-other-stuff">Step 7 Install other stuff</h2>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install hddtemp lm-sensors nvme-cli
 sudo sensors-detect --auto # unfortunately didn't find anything!
 sudo add-apt-repository universe
@@ -278,21 +299,7 @@ sudo apt update
 sudo apt install exfat-fuse exfat-utils
 </code></pre></div></div>
 
-<h2 id="step-7-move-opt-var-home-to-hard-disk">Step 7 Move /opt /var /home to hard disk</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -i
-mkdir /srv; mkdir /src/fs
-mount /dev/sda1 /srv/fs
-rsync -aXP /opt /var /home /srv/fs
-</code></pre></div></div>
-<p>Add the mounts to <code class="language-plaintext highlighter-rouge">/etc/fstab</code></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># mount the local HD to /home, /var and /opt
-/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
-/srv/fs/home	/home	none	bind	0	0
-/srv/fs/var	/var	none	bind	0	0
-/srv/fs/opt	/opt	none	bind	0	0
-</code></pre></div></div>
-
-<h2 id="step-7-vivado">Step 7 Vivado</h2>
+<h2 id="step-8-vivado">Step 8 Vivado</h2>
 <p>First I copied the Vivado files from another server. Then used
 <a href="https://github.com/phwl/docker-vivado">docker-vivado</a> to create the files.</p>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-10T20:47:51+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Amberjack Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/amberjack-configuration/" rel="alternate" type="text/html" title="Amberjack Ubuntu GPU Machine Install" /><published>2020-10-09T19:54:42+11:00</published><updated>2020-10-09T19:54:42+11:00</updated><id>http://localhost:4000/2020/amberjack-configuration</id><content type="html" xml:base="http://localhost:4000/2020/amberjack-configuration/">&lt;p&gt;This is how a new machine, amberjack, was configured.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-10T21:09:23+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Amberjack Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/amberjack-configuration/" rel="alternate" type="text/html" title="Amberjack Ubuntu GPU Machine Install" /><published>2020-10-09T19:54:42+11:00</published><updated>2020-10-09T19:54:42+11:00</updated><id>http://localhost:4000/2020/amberjack-configuration</id><content type="html" xml:base="http://localhost:4000/2020/amberjack-configuration/">&lt;p&gt;This is how a new machine, amberjack, was configured.&lt;/p&gt;
 
 &lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
 &lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
@@ -32,7 +32,28 @@ Overclocking -&amp;gt; CPU Features -&amp;gt; SVM Mode -&amp;gt; Enable
   &lt;li&gt;Erase disk and install everything to /dev/nvme0n1. Select LVM.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;step-3-install-cuda&quot;&gt;Step 3 Install cuda&lt;/h2&gt;
+&lt;h2 id=&quot;step-3-move-opt-var-home-to-hard-disk&quot;&gt;Step 3 Move /opt /var /home to hard disk&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
+mkdir /srv; mkdir /src/fs
+mount /dev/sda1 /srv/fs
+rsync -aXP /opt /var /home /srv/fs
+cd /
+mv opt opt.old
+mv var var.old
+mv home home.old
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Add the mounts to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# mount the local HD to /home, /var and /opt
+/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
+/srv/fs/home	/home	none	bind	0	0
+/srv/fs/var	/var	none	bind	0	0
+/srv/fs/opt	/opt	none	bind	0	0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and reboot. After it reboots successfully you can&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf /opt.old /home.old /var.old
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-4-install-cuda&quot;&gt;Step 4 Install cuda&lt;/h2&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server net-tools rclone
@@ -51,7 +72,7 @@ sudo ubuntu-drivers autoinstall
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;step-4-install-anacondapytorch&quot;&gt;Step 4 Install anaconda/pytorch&lt;/h2&gt;
+&lt;h2 id=&quot;step-5-install-anacondapytorch&quot;&gt;Step 5 Install anaconda/pytorch&lt;/h2&gt;
 &lt;p&gt;Install &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;anaconda&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 sh Anaconda3-2020.07-Linux-x86_64.sh
@@ -76,7 +97,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &amp;gt;&amp;gt;&amp;gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;step-5-install-docker&quot;&gt;Step 5 Install docker&lt;/h2&gt;
+&lt;h2 id=&quot;step-6-install-docker&quot;&gt;Step 6 Install docker&lt;/h2&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
 
 sudo apt install docker.io
@@ -86,7 +107,7 @@ sudo usermod -aG docker cruxml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;You need to log out and log in again for the group change to work.&lt;/p&gt;
 
-&lt;h2 id=&quot;step-6-install-other-stuff&quot;&gt;Step 6 Install other stuff&lt;/h2&gt;
+&lt;h2 id=&quot;step-7-install-other-stuff&quot;&gt;Step 7 Install other stuff&lt;/h2&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install hddtemp lm-sensors nvme-cli
 sudo sensors-detect --auto # unfortunately didn't find anything!
 sudo add-apt-repository universe
@@ -94,21 +115,7 @@ sudo apt update
 sudo apt install exfat-fuse exfat-utils
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;step-7-move-opt-var-home-to-hard-disk&quot;&gt;Step 7 Move /opt /var /home to hard disk&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
-mkdir /srv; mkdir /src/fs
-mount /dev/sda1 /srv/fs
-rsync -aXP /opt /var /home /srv/fs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Add the mounts to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# mount the local HD to /home, /var and /opt
-/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
-/srv/fs/home	/home	none	bind	0	0
-/srv/fs/var	/var	none	bind	0	0
-/srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-7-vivado&quot;&gt;Step 7 Vivado&lt;/h2&gt;
+&lt;h2 id=&quot;step-8-vivado&quot;&gt;Step 8 Vivado&lt;/h2&gt;
 &lt;p&gt;First I copied the Vivado files from another server. Then used
 &lt;a href=&quot;https://github.com/phwl/docker-vivado&quot;&gt;docker-vivado&lt;/a&gt; to create the files.&lt;/p&gt;
 

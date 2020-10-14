@@ -66,7 +66,10 @@ Add the mounts to ```/etc/fstab```
 /srv/fs/var	/var	none	bind	0	0
 /srv/fs/opt	/opt	none	bind	0	0
 ```
-and reboot.
+and reboot. After it reboots successfully you can 
+```
+sudo rm -rf /opt.old /home.old /var.old
+```
 
 ## Step 4 Install cuda
 ```
@@ -139,8 +142,16 @@ sudo apt install exfat-fuse exfat-utils
 ```
 
 ## Step 8 Vivado
-First I copied the Vivado files from another server. Then used
-[docker-vivado](https://github.com/phwl/docker-vivado) to create the files.
+Installed Vitis and XRT
+```
+sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
+# installed to /opt instead of /tools
+sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+```
+
+
+## Step 9 XRT
+
 
 ## Step XX (Decided against running ubuntu under windows 10) 
 
