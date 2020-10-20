@@ -46,7 +46,9 @@ Then I got a Murray cod.
 {% include figure image_path="/assets/images/2020/10/IMG_6788.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/10/IMG_6794.jpeg" caption="" %}
 
-After a nap, we went to Lake Inverell. We saw this mother duck with its ducklings in the river below the dam.
+After a nap, we went to Lake Inverell. I stupidly put a lure with three barbed trebles on my fleece jacket and it took two people, tape and a pair of pliers to unhook. Then I lost the lure I wanted to replace it with. Beard found it stuck to my fleece!
+
+We saw this mother duck with its ducklings in the river below the dam.
 {% include figure image_path="/assets/images/2020/10/IMG_6799.jpeg" caption="" %}
 
 Also fished the lake without success.
