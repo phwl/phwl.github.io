@@ -32,7 +32,8 @@ Unfortunately we didn't get any hits the entire morning.
 
 The guiding finished at 7:30am and we were kicking ourselves for not bringing our fishing gear (we thought we'd be fishing with Josh the entire day and returning to Sydney the next). Josh very kindly loaned us a couple of rods and a box of lures.
 
-Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a 60mm Harima Mazzy vibe.
+Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a 60mm Harima Mazzy vibe. It hit his lure on each of the previous two casts and he hooked up on the third.
+
 {% include figure image_path="/assets/images/2020/10/IMG_6779.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/10/IMG_6780.jpeg" caption="" %}
 
