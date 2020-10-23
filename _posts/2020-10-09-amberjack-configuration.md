@@ -142,11 +142,31 @@ sudo apt install exfat-fuse exfat-utils
 ```
 
 ## Step 8 Vivado
-Installed Vitis and XRT
+Installed Vitis 
 ```
 sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
 # installed to /opt instead of /tools
+```
+
+The following *did not* work:
+```
 sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+```
+
+So I installed XRT from the instructions <https://xilinx.github.io/XRT/master/html/build.html>.
+
+Following <https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e>:
+```
+HOME=$HOME
+export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
+export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
+export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
+cd /opt/Xilinx/Vitis/2019.2
+source settings64.sh
+cd /opt/xilinx/xrt
+source setup.sh
+cd $TRD_HOME/prj/Vitis
+# make KERNEL=DPU DEVICE=ULTRA96V2
 ```
 
 
