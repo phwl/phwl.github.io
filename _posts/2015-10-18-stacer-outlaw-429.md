@@ -31,7 +31,7 @@ This is the first fish caught. Since the legal limit for mulloway has been incre
 
 Beam: 2.08m Bottomsides: 3.00mm Depth: 1.08m Height on Trailer: 1.60m Length Maximum: 4.45m Length of Hull: 4.32m Length on Trailer: 5.50m Main Motor Weight: 120kg Max. HP: 50hp Min. HP: 30hp Number of People (Basic): 5 Number of People (Level): N/A Topsides: 3.00mm Transom Material: 3mm Transom Shaft Length: L/S Weight (boat only): 316kg
 
-Trailer tyre is a 155R13LT. Pressure should be minimum 40 lb/sq in preferably 50.
+Trailer tyre is a 155R13LT. Pressure should be minimum 40 lb/sq in preferably 50. (Should be a HT Holden bearing with 64mm stud spacing).
 
 ***Battery***
 Evinrude ETEC 640 CCA (800 MCA) (actually it was supplied with a CCA550 battery which has worked well for 4.5 years)
