@@ -27,6 +27,7 @@ wordpress_id: 4699
   * How not to review a paper: the tools and techniques of the adversarial reviewer: [http://dl.acm.org/citation.cfm?id=1519122](http://dl.acm.org/citation.cfm?id=1519122)
 
 ## Research Plan
+  * Thesis aims and objectives <https://www.thephdproofreaders.com/structuring-a-thesis/writing-your-research-aims-and-objectives/>
   * How to write a research plan: [http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm](http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm)
 
 
