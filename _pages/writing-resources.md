@@ -20,6 +20,7 @@ wordpress_id: 4699
   * Warwick University (good information on introductions and conclusions) <https://warwick.ac.uk/fac/soc/al/globalpad/openhouse/academicenglishskills/writing/>
 
 ## Papers and Reports
+  * Different parts of reports (intro, results, conclusion etc): <https://ecp.engineering.utoronto.ca/resources/online-handbook/components-of-documents/>
   * Sanity check your papers: [http://aberger.site/checks/](http://aberger.site/checks/)
   * Writing study skills: [https://sydney.edu.au/students/writing.html](https://sydney.edu.au/students/writing.html)
   * How to write a technical report: [http://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html](http://homes.cs.washington.edu/~mernst/advice/write-technical-paper.html)

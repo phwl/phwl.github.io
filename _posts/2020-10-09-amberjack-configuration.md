@@ -169,8 +169,8 @@ cd $TRD_HOME/prj/Vitis
 # make KERNEL=DPU DEVICE=ULTRA96V2
 ```
 
-
-## Step 9 XRT
+## Step 9 Install Balena Etcher
+Follow instructions at <https://www.balena.io/etcher/>
 
 
 ## Step XX (Decided against running ubuntu under windows 10) 
