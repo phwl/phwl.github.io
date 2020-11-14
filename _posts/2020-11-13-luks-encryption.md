@@ -31,6 +31,12 @@ sudo cryptsetup luksOpen /dev/sdc1 back2
 sudo mkfs.ext4 /dev/mapper/back2
 ```
 
+Close everything so we can start from scratch for the copying:
+```
+cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+```
+
 # Copying
 Find UUIDS using ```blkid```, then
 ```
@@ -41,9 +47,10 @@ mount /dev/mapper/back2 /srv/back2
 nohup rsync -Phav /srv/back1/ /srv/back2/&
 ```
 
-Close everything:
+# Closing
 ```
+umount /srv/back1
+umount /srv/back2
 cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
 ```
-
