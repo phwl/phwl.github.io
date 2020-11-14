@@ -28,26 +28,22 @@ First create a LUKS partition (back2 on /dev/sdc1)
 Open the new LUKS device and copy data
 ```
 sudo cryptsetup luksOpen /dev/sdc1 back2
-sudo dd if=/dev/mapper/back1 of=/dev/mapper/back2 bs=64k status=progress
-```
-(I get about 48 MB/s with 4TB USB hard disks)
-
-Close everything:
-
-```
-cryptsetup luksClose /dev/mapper/back1
-cryptsetup luksClose /dev/mapper/back2
+sudo mkfs.ext4 /dev/mapper/back2
 ```
 
-# Verification
-For the paranoid, to double check everything was copied properly:
+# Copying
+Find UUIDS using ```blkid```, then
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
 cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
 mount /dev/mapper/back1 /srv/back1
 mount /dev/mapper/back2 /srv/back2
-rsync -h -av --checksum /srv/back1 /srv/back2
+nohup rsync -hav /srv/back1/ /srv/back2/&
 ```
 
-# Resizing
-I didn't need to resize, but if you do, take a look at <https://wiki.archlinux.org/index.php/Resizing_LVM-on-LUKS>.
+Close everything:
+```
+cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+```
+
