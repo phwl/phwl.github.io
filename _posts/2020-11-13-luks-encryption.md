@@ -39,15 +39,15 @@ cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
 ```
 
-# Using a LUKS volume
-The way I normally mount the drive is via
+# Verification
+For the paranoid, to double check everything was copied properly:
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
 mount /dev/mapper/back1 /srv/back1
+mount /dev/mapper/back2 /srv/back2
+rsync -h -av --checksum /srv/back1 /srv/back2
 ```
 
-and to close
-```
-umount /srv/back1
-cryptsetup luksClose /dev/mapper/back1
-```
+# Resizing
+I didn't need to resize, but if you do, take a look at <https://wiki.archlinux.org/index.php/Resizing_LVM-on-LUKS>.
