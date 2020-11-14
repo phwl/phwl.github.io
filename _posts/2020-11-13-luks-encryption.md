@@ -38,7 +38,7 @@ cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
 cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
 mount /dev/mapper/back1 /srv/back1
 mount /dev/mapper/back2 /srv/back2
-nohup rsync -hav /srv/back1/ /srv/back2/&
+nohup rsync -Phav /srv/back1/ /srv/back2/&
 ```
 
 Close everything:
