@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2019-08-26 09:51:57 AEST
+date: 2020-11-13 09:51:57 AEST
 slug: luks-encryption
 title: Luks Encryption under Ubuntu
 classes: wide
@@ -18,7 +18,6 @@ This is how to copy a LUKS partition from back1 to back2.
 We assume the original device is already mounted using:
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
-mount /dev/mapper/back1 /srv/back1
 ```
 
 First create a LUKS partition (back2 on /dev/sdc1)
@@ -37,4 +36,10 @@ Unmount everything:
 umount /srv/back1
 cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
+```
+
+The way I normally mount the drive is via
+```
+cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+mount /dev/mapper/back1 /srv/back1
 ```
