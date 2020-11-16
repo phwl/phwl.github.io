@@ -44,7 +44,7 @@ cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
 cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
 mount /dev/mapper/back1 /srv/back1
 mount /dev/mapper/back2 /srv/back2
-nohup rsync -Phav /srv/back1/ /srv/back2/&
+nohup rsync -Phav /srv/back1/ /srv/back2&
 ```
 
 # Mounting
@@ -63,6 +63,11 @@ mount /dev/mapper/back2 /srv/back2
    * It took me a long time to figure out that you can only pass through the disk as a USB 3.0 disk and have to install Guest Additions from Preferences on VMWare. 
    * Use an Bridged Adapter to put the machine on the same subnet as your host and samba to share the drive
 
+# Mounting
+You can mount the shared drive from a Ubuntu machine as follows
+```
+mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(id -g),iocharset=utf8,vers=3.0
+```
 # Closing
 ```
 umount /srv/back1
