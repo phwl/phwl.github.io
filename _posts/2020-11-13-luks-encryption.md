@@ -47,6 +47,22 @@ mount /dev/mapper/back2 /srv/back2
 nohup rsync -Phav /srv/back1/ /srv/back2/&
 ```
 
+# Mounting
+## Ubuntu 
+```
+cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
+mount /dev/mapper/back2 /srv/back2
+```
+
+## Windows using Ubuntu in Hyper-V. 
+   * The trick here is you need to right click -> Disk Management -> (take drive offline). 
+   * Then in Hyper-V, you go to Setting -> SCSI-Controller -> (add the drive as a physical drive)
+   * Use an External Virtual Switch to put the machine on the same subnet as your host and samba to share the drive
+
+## MacOS using Ubuntu in VMWare 
+   * It took me a long time to figure out that you can only pass through the disk as a USB 3.0 disk and have to install Guest Additions from Preferences on VMWare. 
+   * Use an Bridged Adapter to put the machine on the same subnet as your host and samba to share the drive
+
 # Closing
 ```
 umount /srv/back1
