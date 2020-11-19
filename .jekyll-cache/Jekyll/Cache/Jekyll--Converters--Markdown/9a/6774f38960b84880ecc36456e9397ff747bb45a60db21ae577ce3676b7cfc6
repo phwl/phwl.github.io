@@ -1,0 +1,61 @@
+I"ˆ<h1 id="copy-a-luks-volume">Copy a LUKS volume</h1>
+<p>This is how to copy a LUKS partition from back1 to back2. 
+We assume the original device is already opened using:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+</code></pre></div></div>
+
+<p>First create a LUKS partition (back2 on /dev/sdc1)</p>
+<ol>
+  <li>Repartition drive with <code class="language-plaintext highlighter-rouge">sudo fdisk /dev/sdc</code> as a linux partition</li>
+  <li><code class="language-plaintext highlighter-rouge">sudo cryptsetup luksFormat /dev/sdc1</code></li>
+</ol>
+
+<p>Open the new LUKS device and copy data</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo cryptsetup luksOpen /dev/sdc1 back2
+sudo mkfs.ext4 /dev/mapper/back2
+</code></pre></div></div>
+
+<p>Close everything so we can start from scratch for the copying:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+</code></pre></div></div>
+
+<h1 id="copying">Copying</h1>
+<p>Find UUIDS using <code class="language-plaintext highlighter-rouge">blkid</code>, then</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
+mount /dev/mapper/back1 /srv/back1
+mount /dev/mapper/back2 /srv/back2
+nohup rsync -Phav /srv/back1/ /srv/back2&amp;
+</code></pre></div></div>
+
+<h1 id="mounting">Mounting</h1>
+<h2 id="ubuntu">Ubuntu</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
+mount /dev/mapper/back2 /srv/back2
+</code></pre></div></div>
+
+<h2 id="windows-using-ubuntu-in-hyper-v">Windows using Ubuntu in Hyper-V.</h2>
+<ul>
+  <li>The trick here is you need to right click -&gt; Disk Management -&gt; (take drive offline).</li>
+  <li>Then in Hyper-V, you go to Setting -&gt; SCSI-Controller -&gt; (add the drive as a physical drive)</li>
+  <li>Use an External Virtual Switch to put the machine on the same subnet as your host and samba to share the drive</li>
+</ul>
+
+<h2 id="macos-using-ubuntu-in-vmware">MacOS using Ubuntu in VMWare</h2>
+<ul>
+  <li>It took me a long time to figure out that you can only pass through the disk as a USB 3.0 disk and have to install Guest Additions from Preferences on VMWare.</li>
+  <li>Use an Bridged Adapter to put the machine on the same subnet as your host and samba to share the drive</li>
+</ul>
+
+<h1 id="mounting-1">Mounting</h1>
+<p>You can mount the shared drive from a Ubuntu machine as follows</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(id -g),iocharset=utf8,vers=3.0
+</code></pre></div></div>
+<h1 id="closing">Closing</h1>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>umount /srv/back1
+umount /srv/back2
+cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+</code></pre></div></div>
+:ET

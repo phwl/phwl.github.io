@@ -1,0 +1,6 @@
+I"~<h1 id="copy-a-luks-volume">Copy a LUKS volume</h1>
+<p>This is how to copy a LUKS partition from back1 to back2. 
+We assume the original device is already opened using:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+</code></pre></div></div>
+:ET

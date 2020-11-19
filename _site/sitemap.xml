@@ -833,6 +833,10 @@
 <lastmod>2020-10-13T21:30:14+11:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2020/luks-encryption/</loc>
+<lastmod>2020-11-13T10:51:57+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -942,6 +946,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page26/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page27/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>
@@ -1765,7 +1772,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/overview.html</loc>
-<lastmod>2020-09-29T08:39:15+10:00</lastmod>
+<lastmod>2020-11-20T09:11:00+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/perf_jasa00.pdf</loc>

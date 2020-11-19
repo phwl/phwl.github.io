@@ -1,7 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-14T23:22:14+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Lake Copeton Fishing for Murray Cod and Golden Perch</title><link href="http://localhost:4000/2020/lake-copeton-murray-cod/" rel="alternate" type="text/html" title="Lake Copeton Fishing for Murray Cod and Golden Perch" /><published>2020-10-13T21:30:14+11:00</published><updated>2020-10-13T21:30:14+11:00</updated><id>http://localhost:4000/2020/lake-copeton-murray-cod</id><content type="html" xml:base="http://localhost:4000/2020/lake-copeton-murray-cod/">&lt;p&gt;Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-20T09:11:09+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
+&lt;p&gt;This is how to copy a LUKS partition from back1 to back2. 
+We assume the original device is already opened using:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;First create a LUKS partition (back2 on /dev/sdc1)&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Repartition drive with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo fdisk /dev/sdc&lt;/code&gt; as a linux partition&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo cryptsetup luksFormat /dev/sdc1&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Open the new LUKS device and copy data&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo cryptsetup luksOpen /dev/sdc1 back2
+sudo mkfs.ext4 /dev/mapper/back2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Close everything so we can start from scratch for the copying:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;copying&quot;&gt;Copying&lt;/h1&gt;
+&lt;p&gt;Find UUIDS using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blkid&lt;/code&gt;, then&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
+cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
+mount /dev/mapper/back1 /srv/back1
+mount /dev/mapper/back2 /srv/back2
+nohup rsync -Phav /srv/back1/ /srv/back2&amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;mounting&quot;&gt;Mounting&lt;/h1&gt;
+&lt;h2 id=&quot;ubuntu&quot;&gt;Ubuntu&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
+mount /dev/mapper/back2 /srv/back2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;windows-using-ubuntu-in-hyper-v&quot;&gt;Windows using Ubuntu in Hyper-V.&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The trick here is you need to right click -&amp;gt; Disk Management -&amp;gt; (take drive offline).&lt;/li&gt;
+  &lt;li&gt;Then in Hyper-V, you go to Setting -&amp;gt; SCSI-Controller -&amp;gt; (add the drive as a physical drive)&lt;/li&gt;
+  &lt;li&gt;Use an External Virtual Switch to put the machine on the same subnet as your host and samba to share the drive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;macos-using-ubuntu-in-vmware&quot;&gt;MacOS using Ubuntu in VMWare&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;It took me a long time to figure out that you can only pass through the disk as a USB 3.0 disk and have to install Guest Additions from Preferences on VMWare.&lt;/li&gt;
+  &lt;li&gt;Use an Bridged Adapter to put the machine on the same subnet as your host and samba to share the drive&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;mounting-1&quot;&gt;Mounting&lt;/h1&gt;
+&lt;p&gt;You can mount the shared drive from a Ubuntu machine as follows&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(id -g),iocharset=utf8,vers=3.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;closing&quot;&gt;Closing&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;umount /srv/back1
+umount /srv/back2
+cryptsetup luksClose /dev/mapper/back1
+cryptsetup luksClose /dev/mapper/back2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="software" /><category term="ubuntu" /><category term="linux" /><summary type="html">Copy a LUKS volume This is how to copy a LUKS partition from back1 to back2. We assume the original device is already opened using: cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1</summary></entry><entry><title type="html">Lake Copeton Fishing for Murray Cod and Golden Perch</title><link href="http://localhost:4000/2020/lake-copeton-murray-cod/" rel="alternate" type="text/html" title="Lake Copeton Fishing for Murray Cod and Golden Perch" /><published>2020-10-13T21:30:14+11:00</published><updated>2020-10-13T21:30:14+11:00</updated><id>http://localhost:4000/2020/lake-copeton-murray-cod</id><content type="html" xml:base="http://localhost:4000/2020/lake-copeton-murray-cod/">&lt;p&gt;Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.&lt;/p&gt;
 
 &lt;!-- more --&gt;
-&lt;p&gt;We had booked a day of guiding with Murray cod guide extraordinaire &lt;a href=&quot;https://www.instagram.com/fishing_with_usher__guide/&quot;&gt;Josh Usher&lt;/a&gt;. He is &lt;em&gt;the&lt;/em&gt; expert on Lake Inverell. Fortunately, he had the next day off so we exchange our day for two mornings, starting at 3:30am. We could see an amazing number of stars at the lake.&lt;/p&gt;
+&lt;p&gt;We had booked a day of guiding with Murray cod expert &lt;a href=&quot;https://www.instagram.com/fishing_with_usher__guide/&quot;&gt;Josh Usher&lt;/a&gt;. Fortunately, he had the next day off so we exchange our day for two mornings, starting at 3:30am. We could see an amazing number of stars at the lake.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_1861.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_1861.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -11,7 +70,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;The first morning there were plenty of fish about and we marked about 20 large cod over a meter on the sidescan fish finder. These fish were on the bank side of the boat in less than 7 ft of water.&lt;/p&gt;
+&lt;p&gt;The first morning there were plenty of fish about and we marked about 20 large cod over a meter on the sidescan fish finder. The boat was in 7ft of water and the fish were on the bank side so they were in very shallow water under the cover of darkness.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_1847.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_1847.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -31,7 +90,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Beard was fortunate to hook the bottom (which was more action I saw).&lt;/p&gt;
+&lt;p&gt;Beard hooked the bottom (which was more action I saw).&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_1859.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_1859.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -51,9 +110,10 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;The guiding fished at 7:30am and we were kicking ourselves for not bringing our fishing gear as we thought we would be fishing with Josh the entire day and returning the next. Josh very kindly loaned us a couple of rods and lures.&lt;/p&gt;
+&lt;p&gt;The guiding finished at 7:30am and we were kicking ourselves for not bringing our fishing gear (we thought we’d be fishing with Josh the entire day and returning to Sydney the next). Josh very kindly loaned us a couple of rods and a box of lures.&lt;/p&gt;
 
-&lt;p&gt;Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a 60mm Harima Mazzy vibe.&lt;/p&gt;
+&lt;p&gt;Left to our own devices, we fished the Macintyre River near the caravan park in Inverell that morning. Very soon, Beard caught a very nice golden perch (also known as yellowbelly) on a 60mm Harima Mazzy vibe. It hit his lure on each of the previous two casts and he hooked up on the third.&lt;/p&gt;
+
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6779.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6779.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -109,7 +169,9 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;After a nap, we went to Lake Inverell. We saw this mother duck with its ducklings in the river below the dam.&lt;/p&gt;
+&lt;p&gt;After a nap, we went to Lake Inverell. I stupidly put a lure with three barbed trebles on my fleece jacket and it took two people, tape and a pair of pliers to unhook. Then I lost the lure I wanted to replace it with. Beard found it stuck to my fleece!&lt;/p&gt;
+
+&lt;p&gt;We saw this mother duck with its ducklings in the river below the dam.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6799.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6799.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -129,7 +191,6 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Went back to the Macintyre and after an hour of flogging the water, Beard picked up a cod.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6803.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6803.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -139,6 +200,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
+&lt;p&gt;Went back to the Macintyre and after an hour of flogging, Beard picked up a cod.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6809.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6809.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -148,7 +210,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Then I got a smaller perch.&lt;/p&gt;
+&lt;p&gt;Then I got a smaller perch which absolutely smashed the lure.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6811.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6811.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -158,7 +220,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Next morning, went out with Josh again but this time we only saw 2 fish on the sounder and didn’t get a touch. Here he is retreiving his Polycraft polyethylene boat.&lt;/p&gt;
+&lt;p&gt;Next morning, went out with Josh again but this time we only saw 2 fish on the sounder. Again, didn’t get a touch. Here is Josh retreiving his Polycraft polyethylene boat.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/E12A022B-E0BD-48FF-81DE-7C2DBD212B20-1860-000000DEDBB9CE19.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/E12A022B-E0BD-48FF-81DE-7C2DBD212B20-1860-000000DEDBB9CE19.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -168,7 +230,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;On the way back, we stopped at the &lt;a href=&quot;https://www.facebook.com/thegoldfishbowlbakery/&quot;&gt;Goldfish Bowl&lt;/a&gt;, my favourite bakery and coffee shop in Armidale.&lt;/p&gt;
+&lt;p&gt;On the way back, we stopped at the &lt;a href=&quot;https://www.facebook.com/thegoldfishbowlbakery/&quot;&gt;Goldfish Bowl&lt;/a&gt;. This is my favourite bakery and coffee shop in Armidale.&lt;/p&gt;
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/10/IMG_6820.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2020/10/IMG_6820.jpeg&quot; alt=&quot;&quot; /&gt;
@@ -187,7 +249,7 @@
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Although we would have liked to have caught a 135cm cod like &lt;a href=&quot;https://www.northerndailyleader.com.au/story/6428962/absolute-monster-josh-usher-lands-humongous-murray-cod/&quot;&gt;the one Josh caught below&lt;/a&gt;, we did learn a lot from him and he’s a great guide. In a way, it is good that things were not that easy and I look forward to returning to Lake Copeton to try again.&lt;/p&gt;
+&lt;p&gt;Although we would have liked a 135cm cod like &lt;a href=&quot;https://www.northerndailyleader.com.au/story/6428962/absolute-monster-josh-usher-lands-humongous-murray-cod/&quot;&gt;this one that Josh caught&lt;/a&gt;, we did learn a lot from him and he’s a great guide. In a way, it is good that things were not that easy. I’ll try again soon, maybe take the boat up there for a week.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/iViHsQkuwAs9FXZ3pcZDd6/e9a67f97-cc8a-4a1b-8fe2-2270a32b4644.jpg/r0_0_764_480_w1200_h678_fmax.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.</summary></entry><entry><title type="html">Amberjack Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/amberjack-configuration/" rel="alternate" type="text/html" title="Amberjack Ubuntu GPU Machine Install" /><published>2020-10-09T19:54:42+11:00</published><updated>2020-10-09T19:54:42+11:00</updated><id>http://localhost:4000/2020/amberjack-configuration</id><content type="html" xml:base="http://localhost:4000/2020/amberjack-configuration/">&lt;p&gt;This is how a new machine, amberjack, was configured.&lt;/p&gt;
 
@@ -307,13 +369,32 @@ sudo apt install exfat-fuse exfat-utils
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-8-vivado&quot;&gt;Step 8 Vivado&lt;/h2&gt;
-&lt;p&gt;Installed Vitis and XRT&lt;/p&gt;
+&lt;p&gt;Installed Vitis&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
 # installed to /opt instead of /tools
-sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;step-9-xrt&quot;&gt;Step 9 XRT&lt;/h2&gt;
+&lt;p&gt;The following &lt;em&gt;did not&lt;/em&gt; work:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So I installed XRT from the instructions &lt;a href=&quot;https://xilinx.github.io/XRT/master/html/build.html&quot;&gt;https://xilinx.github.io/XRT/master/html/build.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Following &lt;a href=&quot;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&quot;&gt;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HOME=$HOME
+export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
+export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
+export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
+cd /opt/Xilinx/Vitis/2019.2
+source settings64.sh
+cd /opt/xilinx/xrt
+source setup.sh
+cd $TRD_HOME/prj/Vitis
+# make KERNEL=DPU DEVICE=ULTRA96V2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-9-install-balena-etcher&quot;&gt;Step 9 Install Balena Etcher&lt;/h2&gt;
+&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;step-xx-decided-against-running-ubuntu-under-windows-10&quot;&gt;Step XX (Decided against running ubuntu under windows 10)&lt;/h2&gt;
 
@@ -383,14 +464,7 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;
 /srv/fs/home	/home	none	bind	0	0
 /srv/fs/var	/var	none	bind	0	0
 /srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -636,7 +710,14 @@ almost 2 hours. According to the &lt;a href=&quot;https://www.goulburnpost.com.a
 
 &lt;p&gt;16/9/20 Heard from Prickle Farmer that the shearers worked from 7-5pm and
 sheared 200+194 sheep that day. That equates to 2-3 sheep every 5 minutes
-and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -1388,34 +1469,4 @@ made by Charlie Nettleton in 1903.&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;day-6-tamworth-to-sydney&quot;&gt;DAY 6 Tamworth to Sydney&lt;/h2&gt;
-&lt;p&gt;Came back via the Hunter Valley, stopping in Singleton for lunch.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><category term="photography" /><summary type="html">Went for a drive to Lightning Ridge in the central north of NSW. It is an opal mining town and the major source of the rare black opal.</summary></entry><entry><title type="html">Foggy morning, pork crackling and MWRS AGM</title><link href="http://localhost:4000/2020/foggymorning/" rel="alternate" type="text/html" title="Foggy morning, pork crackling and MWRS AGM" /><published>2020-07-12T18:25:23+10:00</published><updated>2020-07-12T18:25:23+10:00</updated><id>http://localhost:4000/2020/foggymorning</id><content type="html" xml:base="http://localhost:4000/2020/foggymorning/">&lt;p&gt;Early walk on a very foggy morning.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;morning-photo&quot;&gt;Morning photo&lt;/h2&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/foggymorning.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/foggymorning.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;making-pork-crackling&quot;&gt;Making pork crackling&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;The first law of thermodynamics as it relates to delicious swine: &lt;a href=&quot;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&quot;&gt;https://www.twoporkswords.com/2013/11/23/the-first-law-of-thermodynamics-as-it-relates-to-delicious-swine/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;manly-warringah-radio-society-agm&quot;&gt;Manly Warringah Radio Society AGM&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&quot;&gt;https://www.mwrs.org.au/2020/07/12/2020-mwrs-agm/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6294.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6294.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="photography" /><category term="australia" /><summary type="html">Early walk on a very foggy morning.</summary></entry></feed>
+&lt;p&gt;Came back via the Hunter Valley, stopping in Singleton for lunch.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><category term="photography" /><summary type="html">Went for a drive to Lightning Ridge in the central north of NSW. It is an opal mining town and the major source of the rare black opal.</summary></entry></feed>

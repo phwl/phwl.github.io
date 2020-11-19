@@ -300,13 +300,32 @@ sudo apt install exfat-fuse exfat-utils
 </code></pre></div></div>
 
 <h2 id="step-8-vivado">Step 8 Vivado</h2>
-<p>Installed Vitis and XRT</p>
+<p>Installed Vitis</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
 # installed to /opt instead of /tools
-sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
 </code></pre></div></div>
 
-<h2 id="step-9-xrt">Step 9 XRT</h2>
+<p>The following <em>did not</em> work:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+</code></pre></div></div>
+
+<p>So I installed XRT from the instructions <a href="https://xilinx.github.io/XRT/master/html/build.html">https://xilinx.github.io/XRT/master/html/build.html</a>.</p>
+
+<p>Following <a href="https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e">https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e</a>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HOME=$HOME
+export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
+export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
+export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
+cd /opt/Xilinx/Vitis/2019.2
+source settings64.sh
+cd /opt/xilinx/xrt
+source setup.sh
+cd $TRD_HOME/prj/Vitis
+# make KERNEL=DPU DEVICE=ULTRA96V2
+</code></pre></div></div>
+
+<h2 id="step-9-install-balena-etcher">Step 9 Install Balena Etcher</h2>
+<p>Follow instructions at <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></p>
 
 <h2 id="step-xx-decided-against-running-ubuntu-under-windows-10">Step XX (Decided against running ubuntu under windows 10)</h2>
 
@@ -434,6 +453,37 @@ Virtual Hard Disk” to convert the image from
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2020/luks-encryption/">
+        <img src=
+          
+            "https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png"
+          
+          alt="Luks Encryption under Ubuntu"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/luks-encryption/" rel="permalink">Luks Encryption under Ubuntu
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Copy a LUKS volume
+This is how to copy a LUKS partition from back1 to back2. 
+We assume the original device is already opened using:
+cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2020/lake-copeton-murray-cod/">
         <img src=
           
@@ -509,43 +559,6 @@ isolated.
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">Went to visit Prickle Farmer in Crookwell and take some photographs.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/woywoy/">
-        <img src=
-          
-            "/assets/images/2020/08/IMG_6533.jpg"
-          
-          alt="Woy Woy Fisherman's Wharf"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/woywoy/" rel="permalink">Woy Woy Fisherman’s Wharf
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-  
-  
-  
-    
-      
-
-    
-
 </p>
   </article>
 </div>
