@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-20T09:51:21+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-22T20:49:06+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
+had a quick fish at Googong Dam just before sunset.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/11/IMG_7089.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/11/IMG_7089.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Didn’t catch the Golden Perch that we were after but caught a few Redfin Perch.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/11/IMG_7078.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/11/IMG_7078.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/11/IMG_7087.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/11/IMG_7087.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish at Googong Dam just before sunset.</summary></entry><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
 &lt;p&gt;This is how to copy a LUKS partition from back1 to back2. 
 We assume the original device is already opened using:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
@@ -464,7 +494,14 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;
 /srv/fs/home	/home	none	bind	0	0
 /srv/fs/var	/var	none	bind	0	0
 /srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -710,14 +747,7 @@ almost 2 hours. According to the &lt;a href=&quot;https://www.goulburnpost.com.a
 
 &lt;p&gt;16/9/20 Heard from Prickle Farmer that the shearers worked from 7-5pm and
 sheared 200+194 sheep that day. That equates to 2-3 sheep every 5 minutes
-and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -992,481 +1022,4 @@ of custom lures in return for reporting the tagged fish.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went with Beard for a day trip to Lake Wallace in the Blue Mountains. It was a rainy day but fortunately not too windy.</summary></entry><entry><title type="html">Lightning Ridge</title><link href="http://localhost:4000/2020/lightningridge/" rel="alternate" type="text/html" title="Lightning Ridge" /><published>2020-07-22T22:00:13+10:00</published><updated>2020-07-22T22:00:13+10:00</updated><id>http://localhost:4000/2020/lightningridge</id><content type="html" xml:base="http://localhost:4000/2020/lightningridge/">&lt;p&gt;Went for a drive to Lightning Ridge in the central north of NSW. It is an opal mining town and 
-the major source of the rare &lt;em&gt;black opal&lt;/em&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/lrtrip.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/lrtrip.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;day-1-gordon-to-dubbo&quot;&gt;Day 1 Gordon to Dubbo&lt;/h2&gt;
-&lt;p&gt;Rather uneventful, drove through the Blue Mountains to Dubbo.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF6576.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF6576.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;day-2-dubbo-to-lightning-ridge&quot;&gt;Day 2 Dubbo to Lightning Ridge&lt;/h2&gt;
-&lt;p&gt;Funny sculptures at Gulargambone.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6319.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6319.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      ⁩
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Had lunch in Walgatt.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6321.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6321.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Finally made it to Lightning Ridge.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6326.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6326.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We stayed at the Lightning Ridge Outback Resort.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6359.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6359.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;COVID-19 social distancing was being enforced at the Artesian Bore Baths. Water
-comes from the Great Artesian Basin, about 1km underground.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6327.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6327.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Great to soak in the baths after 1000 km of driving.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6328.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6328.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;nettletons-first-shaft-lookout&quot;&gt;Nettleton’s First Shaft Lookout.&lt;/h3&gt;
-&lt;p&gt;This is the site of the first opal mine in Lightning Ridge
-made by Charlie Nettleton in 1903.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0484.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0484.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0482.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0482.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Beer can house. Quite a few were consumed to get the inspiration.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0499.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0499.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Keen miner.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0541.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0541.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;sunset-at-nettletons-first-shaft-lookout&quot;&gt;Sunset at Nettleton’s First Shaft Lookout.&lt;/h3&gt;
-&lt;p&gt;A good view from the lookout.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0486.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0486.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0488.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0488.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Stone labyrinth.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0492.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0492.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0528.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0528.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6337.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6337.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The view looking back up to the lookout.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0529.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0529.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Filled in mines are indicated by a pile of rubble but there are plenty of open ones in which to fall.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0542.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0542.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;day-3-lightning-ridge&quot;&gt;Day 3 Lightning Ridge&lt;/h2&gt;
-&lt;p&gt;Went for a walk on the Sunday morning. This is Cooper’s Cottage on the main street of Lightning Ridge (Morilla St). It was built in 1916.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6342.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6342.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The Morilla St wasn’t too busy.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6348.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6348.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Cranky people here.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6349.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6349.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Went to Lunatic Lookout.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6369.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6369.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0551.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0551.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0559.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0559.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Cactus tequila growing outside this house.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0562.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0562.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This is Stanley the Emu. His body is a car.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0569.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0569.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;black-opal-tour&quot;&gt;Black Opal Tour.&lt;/h3&gt;
-&lt;p&gt;We took the Black Opal Tour.&lt;/p&gt;
-
-&lt;p&gt;This guy makes sculptures including a time machine.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1795.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1795.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This Hudson pear cactus is a menace. Will go straight through shoes and car tyres.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1805.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1805.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Miner’s camp.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1809.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1809.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Amigo’s Castle, built single handedly by a crazy person (there are quite a few of them in Lightning Ridge).&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1812.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1812.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This is the Bottle House Mining Museum.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1815.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1815.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1816.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1816.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1818.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1818.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1822.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1822.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;A miner’s shack.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0574.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0574.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0570.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0570.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0571.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0571.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Trevor our guide at the entrance of a mine.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_1835.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_1835.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0579.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0579.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0586.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0586.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;“Hobby miners” drink more than they work.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/DSCF0589.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/DSCF0589.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;day-4-lightning-ridge-to-glenn-innes&quot;&gt;Day 4 Lightning Ridge to Glenn Innes&lt;/h2&gt;
-&lt;p&gt;Near Matheson on the Gwydir Hwy.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6380.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6380.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Glenn Innes.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6386.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6386.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;day-5-glenn-innes-to-tamworth&quot;&gt;Day 5 Glenn Innes to Tamworth&lt;/h2&gt;
-&lt;p&gt;First decent cup of coffee the entire trip was at the Goldfish Bowl, Armidale.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6389.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6389.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Big guitar, Tamworth.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6390.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6390.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Impressive view from Oxley Lookout, Tamworth.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/07/IMG_6397.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/07/IMG_6397.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;day-6-tamworth-to-sydney&quot;&gt;DAY 6 Tamworth to Sydney&lt;/h2&gt;
-&lt;p&gt;Came back via the Hunter Valley, stopping in Singleton for lunch.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><category term="photography" /><summary type="html">Went for a drive to Lightning Ridge in the central north of NSW. It is an opal mining town and the major source of the rare black opal.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went with Beard for a day trip to Lake Wallace in the Blue Mountains. It was a rainy day but fortunately not too windy.</summary></entry></feed>

@@ -1,0 +1,22 @@
+---
+author: phwl
+comments: true
+date: 2020-11-20 19:24:10+00:00
+title: Googong Dam
+classes: wide
+header:
+  teaser: /assets/images/2020/11/IMG_7089.jpeg
+categories:
+- fishing
+---
+
+Barry and I were in Canberra on a [CruxML](http://www.cruxml.com) business trip and
+had a quick fish at Googong Dam just before sunset.
+
+{% include figure image_path="/assets/images/2020/11/IMG_7089.jpeg" caption="" %}
+
+Didn't catch the Golden Perch that we were after but caught a few Redfin Perch.
+
+{% include figure image_path="/assets/images/2020/11/IMG_7078.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2020/11/IMG_7087.jpeg" caption="" %}
