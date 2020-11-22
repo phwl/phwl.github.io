@@ -1045,7 +1045,7 @@ var store = [{
         "url": "http://localhost:4000/2020/luks-encryption/",
         "teaser":"https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png"},{
         "title": "Googong Dam",
-        "excerpt":"Barry and I were in Canberra on a CruxML business trip and had a quick fish at Googong Dam just before sunset.                                Didn’t catch the Golden Perch that we were after but caught a few Redfin Perch.                                                             ","categories": ["fishing"],
+        "excerpt":"Barry and I were in Canberra on a CruxML business trip and had a quick fish in Googong Dam.                                Didn’t catch the Golden Perch that we were after but caught a few Redfin Perch.                                                                                          ","categories": ["fishing"],
         "tags": [],
         "url": "http://localhost:4000/2020/googong-dam/",
         "teaser":"http://localhost:4000/assets/images/2020/11/IMG_7089.jpeg"}]

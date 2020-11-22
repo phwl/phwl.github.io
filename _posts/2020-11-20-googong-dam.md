@@ -20,3 +20,5 @@ Didn't catch the Golden Perch that we were after but caught a few Redfin Perch.
 {% include figure image_path="/assets/images/2020/11/IMG_7078.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2020/11/IMG_7087.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2020/11/d75f8ee1-fe34-4ab8-bbfc-732316c4c488.jpg" caption="" %}

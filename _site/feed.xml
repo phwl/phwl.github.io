@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-22T20:49:06+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
-had a quick fish at Googong Dam just before sunset.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-22T21:38:23+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
+had a quick fish in &lt;a href=&quot;https://en.wikipedia.org/wiki/Googong_Dam&quot;&gt;Googong Dam&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2020/11/IMG_7089.jpeg&quot;&gt;
@@ -28,7 +28,16 @@ had a quick fish at Googong Dam just before sunset.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish at Googong Dam just before sunset.</summary></entry><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/11/d75f8ee1-fe34-4ab8-bbfc-732316c4c488.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/11/d75f8ee1-fe34-4ab8-bbfc-732316c4c488.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish in Googong Dam.</summary></entry><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
 &lt;p&gt;This is how to copy a LUKS partition from back1 to back2. 
 We assume the original device is already opened using:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
