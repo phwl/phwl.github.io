@@ -11,7 +11,7 @@ categories:
 ---
 
 Barry and I were in Canberra on a [CruxML](http://www.cruxml.com) business trip and
-had a quick fish at Googong Dam just before sunset.
+had a quick fish in [Googong Dam](https://en.wikipedia.org/wiki/Googong_Dam).
 
 {% include figure image_path="/assets/images/2020/11/IMG_7089.jpeg" caption="" %}
 
