@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-23T10:29:06+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-23T15:35:48+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>http://localhost:4000/2020/albacore-configuration</id><content type="html" xml:base="http://localhost:4000/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
+
+&lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
+&lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AB47402 Mwave Custom PC Assembly and Testing Service 2 $169.00 $338.00
+AB59620 SilverStone Sugo Series SG13 Mini ITX Case - Mesh Front Panel 2 $69.00 $138.00
+AB69770 Corsair Vengeance LPX 32GB (2x 16GB) DDR4 3200MHz Memory 2 $209.00 $418.00
+AC12989 Seagate ST8000DM004 8TB BarraCuda 3.5&quot; SATA3 Desktop Hard Drive 2 $249.00 $498.00
+AC13202 Samsung 970 EVO 1TB NVMe 1.3 M.2 (2280) 3D V-NAND SSD - MZ-V7E1T0BW 2 $189.00 $378.00
+AC17689 Noctua NF-A12x25 FLX 120mm 3-Pin Fan 2 $65.00 $130.00
+AC24743 AMD Ryzen 5 3600 6 Core Socket AM4 3.6GHz CPU Processor + Wraith Stealth Cooler 2 $319.00 $638.00
+AC27759 SilverStone SX700-PT 700W 80+ Platinum Modular SFX Power Supply 2 $249.00 $498.00
+AC35557 Gigabyte B550I AORUS PRO AX AM4 Mini-ITX Motherboard 2 $319.00 $638.00
+AC25330 Gigabyte GeForce RTX 2060 SUPER WINDFORCE OC 8GB Video Card 2 $629.00 $1258.00
+
+Order Status: Completed Sub-Total $4932.00
+Date &amp;amp; Time Shipped: 19/11/2020 Shipping Cost $30.00
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Here is the &lt;a href=&quot;https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual&quot;&gt;motherboard manual&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-fix-ethernet&quot;&gt;Step 1 Fix Ethernet&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+sudo apt upgrade
+sudo apt install openssh-server net-tools rclone build-essentials
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Ethernet didn’t work out of the box so I used a USB ethernet device and 
+installed the realtek driver for the B550 chipset available
+from &lt;a href=&quot;https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software&quot;&gt;Realtek&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-install-cuda&quot;&gt;Step 2 Install cuda&lt;/h2&gt;
+&lt;p&gt;Then follow the &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;Nvidia instructions&lt;/a&gt;
+using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt purge nvidia-*
+sudo apt autoremove
+sudo ubuntu-drivers autoinstall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;before installing cuda&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install cuda=10.2.89-1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; add&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-3-install-anacondapytorch&quot;&gt;Step 3 Install anaconda/pytorch&lt;/h2&gt;
+&lt;p&gt;Install &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;anaconda&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+sh Anaconda3-2020.07-Linux-x86_64.sh
+conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Seems to work&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(base) cruxml@amberjack:~$ cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.06  Sun Jul 19 20:02:54 UTC 2020
+GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
+(base) cruxml@amberjack:~$ python
+Python 3.8.3 (default, Jul  2 2020, 16:21:59) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; import torch
+&amp;gt;&amp;gt;&amp;gt; torch.cuda.current_device()
+0
+&amp;gt;&amp;gt;&amp;gt; torch.cuda.device(0)
+&amp;lt;torch.cuda.device object at 0x7fa9a5fab310&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; torch.cuda.get_device_name(0)
+'GeForce RTX 2060 SUPER'
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-4-install-docker&quot;&gt;Step 4 Install docker&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker cruxml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You need to log out and log in again for the group change to work.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5-install-other-stuff&quot;&gt;Step 5 Install other stuff&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install hddtemp lm-sensors nvme-cli
+sudo sensors-detect --auto # unfortunately didn't find anything!
+sudo add-apt-repository universe
+sudo apt update
+sudo apt install exfat-fuse exfat-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-6-vivado&quot;&gt;Step 6 Vivado&lt;/h2&gt;
+&lt;p&gt;Installed Vitis&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
+# installed to /opt instead of /tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The following &lt;em&gt;did not&lt;/em&gt; work:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So I installed XRT from the instructions &lt;a href=&quot;https://xilinx.github.io/XRT/master/html/build.html&quot;&gt;https://xilinx.github.io/XRT/master/html/build.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Following &lt;a href=&quot;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&quot;&gt;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HOME=$HOME
+export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
+export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
+export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
+cd /opt/Xilinx/Vitis/2019.2
+source settings64.sh
+cd /opt/xilinx/xrt
+source setup.sh
+cd $TRD_HOME/prj/Vitis
+# make KERNEL=DPU DEVICE=ULTRA96V2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-7-install-balena-etcher&quot;&gt;Step 7 Install Balena Etcher&lt;/h2&gt;
+&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
 had a quick fish in &lt;a href=&quot;https://en.wikipedia.org/wiki/Googong_Dam&quot;&gt;Googong Dam&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -503,14 +616,7 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;
 /srv/fs/home	/home	none	bind	0	0
 /srv/fs/var	/var	none	bind	0	0
 /srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -756,7 +862,14 @@ almost 2 hours. According to the &lt;a href=&quot;https://www.goulburnpost.com.a
 
 &lt;p&gt;16/9/20 Heard from Prickle Farmer that the shearers worked from 7-5pm and
 sheared 200+194 sheep that day. That equates to 2-3 sheep every 5 minutes
-and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -908,127 +1021,4 @@ to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt&lt;/c
   &lt;li&gt;The Docker image is derived from one provided by &lt;a href=&quot;https://nachiket.github.io/&quot;&gt;Prof Nachiket Kapre (Waterloo)&lt;/a&gt;. If you want to create your own variant, the scripts used to create it are available &lt;a href=&quot;https://github.com/phwl/elec3608-github&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Notes on Docker support under Windows Home with WSL 2 &lt;a href=&quot;https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/&quot;&gt;https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/&lt;/a&gt; (from &lt;a href=&quot;https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html&quot;&gt;Dr Peter Jones&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;Notes on WSL 2 and Hyper-V &lt;a href=&quot;https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/&quot;&gt;https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/&lt;/a&gt; (from &lt;a href=&quot;https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html&quot;&gt;Dr Peter Jones&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="windows" /><summary type="html">Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.</summary></entry><entry><title type="html">Lake Wallace Smoked Rainbow Trout</title><link href="http://localhost:4000/2020/lake-wallace-smoked-trout/" rel="alternate" type="text/html" title="Lake Wallace Smoked Rainbow Trout" /><published>2020-08-08T21:00:13+10:00</published><updated>2020-08-08T21:00:13+10:00</updated><id>http://localhost:4000/2020/lake-wallace-smoked-trout</id><content type="html" xml:base="http://localhost:4000/2020/lake-wallace-smoked-trout/">&lt;p&gt;Went with Beard for a day trip to Lake Wallace in the Blue Mountains.
-It was a rainy day but fortunately not too windy.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h2 id=&quot;fishing&quot;&gt;Fishing&lt;/h2&gt;
-&lt;p&gt;I started spinning with a Celta lure in the brown trout pattern.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6457.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6457.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The first rainbow trout took my lure very deep
-down its mouth (and I left my pliers in the car) so decided to keep
-it.&lt;br /&gt;
-The next came on the following cast, and shortly after I caught
-a third, smaller one which was let go. After 15 minutes of action,
-the wind changed direction and not much else happened that afternoon.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6435.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6435.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;I also had a good chat with an arborist who was locking one of the gates. He, along
-with other volunteers, were planting trees along the lake shore.&lt;/p&gt;
-
-&lt;p&gt;Beard casting near the dam wall.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6443.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6443.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;blue-mountains-bushfire-damage&quot;&gt;Blue Mountains Bushfire Damage&lt;/h2&gt;
-&lt;p&gt;On the way back, took photos of the bushfire damage from 2019 near Bell.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6447.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6447.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6449.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6449.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;smoked-rainbow-trout&quot;&gt;Smoked Rainbow Trout&lt;/h2&gt;
-&lt;p&gt;It was only the next day, while preparing the fish, that I noticed both were
-tagged (sometimes, I’m not very observant). These were reported to the 
-&lt;a href=&quot;https://www.dpi.nsw.gov.au/fishing/recreational/resources/fish-tagging/recapture-form&quot;&gt;Department of Primary Industries Tagging Program&lt;/a&gt;. One was 30cm and the 
-other 31cm.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6453.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6453.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Dried the fish and covered them with salt, including the cavity. On the bottom
-of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6458.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6458.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The fish was hot smoked for 30 minutes, turning it over once as it was a very windy 
-day and it wasn’t cooking evenly. Don’t use your good wok as it will be
-ruined. We have an old one dedicated to this.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6464.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6464.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Very tasty!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6465.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6465.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;postscript&quot;&gt;Postscript&lt;/h2&gt;
-&lt;p&gt;27/8/2020 Doing the right thing had its rewards. Fisheries sent me a couple
-of custom lures in return for reporting the tagged fish.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6565.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6565.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went with Beard for a day trip to Lake Wallace in the Blue Mountains. It was a rainy day but fortunately not too windy.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="windows" /><summary type="html">Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.</summary></entry></feed>
