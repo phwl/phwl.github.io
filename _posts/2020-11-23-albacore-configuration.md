@@ -38,7 +38,7 @@ Here is the [motherboard manual](https://www.gigabyte.com/Motherboard/B550I-AORU
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt install openssh-server net-tools rclone build-essentials
+sudo apt install openssh-server net-tools rclone libelf-dev build-essential
 ```
 Ethernet didn't work out of the box so I used a USB ethernet device and 
 installed the realtek driver for the B550 chipset available
