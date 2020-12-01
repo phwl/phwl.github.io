@@ -1,5 +1,6 @@
-I"<<p>I purchased a
+I"<p>I purchased a
 <a href="https://www.tp-link.com/au/home-networking/powerline/tl-wpa4220/">TL-WPA4220</a>
+which was
 was unreliable. The connection did not stay up more than a day or so.</p>
 
 <!-- more -->
@@ -20,4 +21,8 @@ do
 	sleep 60
 done
 </code></pre></div></div>
+<h1 id="29112020">29/11/2020</h1>
+<p>Actually it still isn’t very good, stays up about a week and then needs to be powered off. I downloaded the tpPLC app for MacOS and under the advanced setting “Mode” menu, unset the “Power Saving Mode”. We’ll see if that fixes the problem.</p>
+
+<p>I also found this link <a href="https://github.com/qca/open-plc-utils">https://github.com/qca/open-plc-utils</a> which I should explore later.</p>
 :ET

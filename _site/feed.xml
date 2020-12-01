@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-23T21:04:53+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>http://localhost:4000/2020/albacore-configuration</id><content type="html" xml:base="http://localhost:4000/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-01T17:03:11+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Computer Engineering Lab Christmas Party Photo</title><link href="http://localhost:4000/2020/computer-engineering-lab-christmas-party/" rel="alternate" type="text/html" title="Computer Engineering Lab Christmas Party Photo" /><published>2020-12-01T16:00:00+11:00</published><updated>2020-12-01T16:00:00+11:00</updated><id>http://localhost:4000/2020/computer-engineering-lab-christmas-party</id><content type="html" xml:base="http://localhost:4000/2020/computer-engineering-lab-christmas-party/">&lt;p&gt;A little late this year (and down on numbers due to COVID) but we had an
+enjoyable Christmas party.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/12/celchristmas20.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/12/celchristmas20.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2020
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;We continue to have the world’s earlier Christmas party!&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2019/11/celchristmas19.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2019/11/celchristmas19.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2019
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2018/11/DSCF5719.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2018/11/DSCF5719.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2018
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2017/11/celchristmas17.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2017/11/celchristmas17.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2017
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2017/11/celchristmas2016.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2017/11/celchristmas2016.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2016
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2017/11/celparty2015.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2017/11/celparty2015.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2015
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2017/11/celchristmas2014.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2017/11/celchristmas2014.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      2014
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>http://localhost:4000/2020/albacore-configuration</id><content type="html" xml:base="http://localhost:4000/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
 
 &lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
 &lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
@@ -616,7 +681,14 @@ for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;
 /srv/fs/home	/home	none	bind	0	0
 /srv/fs/var	/var	none	bind	0	0
 /srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Crookwell Sheep Shearing</title><link href="http://localhost:4000/2020/crookwell-shearing/" rel="alternate" type="text/html" title="Crookwell Sheep Shearing" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/crookwell-shearing</id><content type="html" xml:base="http://localhost:4000/2020/crookwell-shearing/">&lt;p&gt;Went to visit &lt;a href=&quot;https://www.youtube.com/channel/UCOH92gv_xheT0AXsGkHyr5A&quot;&gt;Prickle Farmer&lt;/a&gt; in &lt;a href=&quot;https://goo.gl/maps/LzuvLjxnRkrHAjR98&quot;&gt;Crookwell&lt;/a&gt; and take some photographs.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -862,14 +934,7 @@ almost 2 hours. According to the &lt;a href=&quot;https://www.goulburnpost.com.a
 
 &lt;p&gt;16/9/20 Heard from Prickle Farmer that the shearers worked from 7-5pm and
 sheared 200+194 sheep that day. That equates to 2-3 sheep every 5 minutes
-and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Woy Woy Fisherman’s Wharf</title><link href="http://localhost:4000/2020/woywoy/" rel="alternate" type="text/html" title="Woy Woy Fisherman’s Wharf" /><published>2020-08-22T14:02:24+10:00</published><updated>2020-08-22T14:02:24+10:00</updated><id>http://localhost:4000/2020/woywoy</id><content type="html" xml:base="http://localhost:4000/2020/woywoy/">&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/IMG_6533.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/IMG_6533.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html"></summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
+and is the fastest he has seen.&lt;/p&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="photography" /><category term="australia" /><summary type="html">Went to visit Prickle Farmer in Crookwell and take some photographs.</summary></entry><entry><title type="html">Parker 45’s</title><link href="http://localhost:4000/2020/parker45/" rel="alternate" type="text/html" title="Parker 45’s" /><published>2020-08-22T09:32:21+10:00</published><updated>2020-08-22T09:32:21+10:00</updated><id>http://localhost:4000/2020/parker45</id><content type="html" xml:base="http://localhost:4000/2020/parker45/">&lt;p&gt;A small collection of Parker 45 pens.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 
@@ -883,142 +948,4 @@ two fountain pens got me through university.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html">A small collection of Parker 45 pens.</summary></entry><entry><title type="html">Installing Docker</title><link href="http://localhost:4000/2020/installing-docker/" rel="alternate" type="text/html" title="Installing Docker" /><published>2020-08-10T14:40:00+10:00</published><updated>2020-08-10T14:40:00+10:00</updated><id>http://localhost:4000/2020/installing-docker</id><content type="html" xml:base="http://localhost:4000/2020/installing-docker/">&lt;p&gt;Here are installation instructions for installing Docker and running Modelsim for my &lt;a href=&quot;https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608&quot;&gt;ELEC3608 Computer Architecture course&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-
-&lt;h1 id=&quot;1-installation&quot;&gt;1. Installation&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;(Windows)
-    &lt;ol&gt;
-      &lt;li&gt;Install the VcXsrv X windows server &lt;a href=&quot;https://sourceforge.net/projects/vcxsrv/&quot;&gt;https://sourceforge.net/projects/vcxsrv/&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;You will get an alert from Windows Defender. Allow access for Private Networks.&lt;/li&gt;
-      &lt;li&gt;(Windows 10 Professional, Consumer and Education) Use instructions at &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install/&quot;&gt;https://docs.docker.com/docker-for-windows/install/&lt;/a&gt;
-to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that “Enable WEL 2 Windows Features” and “Add shortcut to desktop” are selected.&lt;/li&gt;
-      &lt;li&gt;(Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions &lt;a href=&quot;https://docs.docker.com/docker-for-windows/install-windows-home/&quot;&gt;https://docs.docker.com/docker-for-windows/install-windows-home/&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Run Docker Desktop by double-clicking the icon on the desktop&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;(MacOS)
-    &lt;ol&gt;
-      &lt;li&gt;Download and install stable version from &lt;a href=&quot;https://docs.docker.com/docker-for-mac/install/&quot;&gt;https://docs.docker.com/docker-for-mac/install/&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Run Docker Desktop by clicking the Docker icon&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;2-testing&quot;&gt;2 Testing&lt;/h1&gt;
-&lt;h2 id=&quot;21-hello-world&quot;&gt;2.1 Hello world&lt;/h2&gt;
-&lt;p&gt;To test basic Docker functionality, type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run hello-world&lt;/code&gt; in the command window. Your output should be something like:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Hello from Docker!
-This message shows that your installation appears to be working correctly.
-
-To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon pulled the &quot;hello-world&quot; image from the Docker Hub.
-    (amd64)
- 3. The Docker daemon created a new container from that image which runs the
-    executable that produces the output you are currently reading.
- 4. The Docker daemon streamed that output to the Docker client, which sent it
-    to your terminal.
-
-To try something more ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu bash
-
-Share images, automate workflows, and more with a free Docker ID:
- https://hub.docker.com/
-
-For more examples and ideas, visit:
- https://docs.docker.com/get-started/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;22-x-server&quot;&gt;2.2 X Server&lt;/h2&gt;
-&lt;p&gt;We need to use the X Server to display graphical output. This
-tests X Windows basic functionality.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;(Windows setup)
-    &lt;ol&gt;
-      &lt;li&gt;Run XLaunch and configure “Multiple Windows” and “Start no client”&lt;/li&gt;
-      &lt;li&gt;Open a Windows Powershell window&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ipconfig&lt;/code&gt;. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;set-variable -name DISPLAY -value 172.18.240.1:0.0&lt;/code&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/ipconfig-screenshot.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/ipconfig-screenshot.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;(MacOS X setup)
-    &lt;ol&gt;
-      &lt;li&gt;Run the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Xquartz&lt;/code&gt; X Server program by clicking on the icon, an xterm window should appear&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=`hostname`:0.0&lt;/code&gt; in the xterm window (alternatively you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;export DISPLAY=docker.for.mac.localhost:0&lt;/code&gt;).&lt;/li&gt;
-      &lt;li&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xhost +&lt;/code&gt; (if you get an error, check in Xquartz -&amp;gt; Preferences that “Authenticate connections” has no tick and “Allow connections from network clients” has a tick).&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes&lt;/code&gt;.  You should see the window below and the eyes should move with your mouse.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/xeyes-screenshot.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/xeyes-screenshot.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;23-modelsim&quot;&gt;2.3 Modelsim&lt;/h2&gt;
-&lt;p&gt;Finally, this tests the Docker image for Modelsim (the executable is called
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vsim&lt;/code&gt;). Make sure you have set up your X Server and can execute the
-previous Xeyes example.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;(Windows) If your home directory is “C:\Users\XX YY”, you should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v C:\Users\&quot;XX YY&quot;:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt; (note the position of the quotes).&lt;/li&gt;
-  &lt;li&gt;(MacOS) You should now be able to run vsim &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If everything works, the Modelsim window should appear.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/08/vsim-screenshot.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/08/vsim-screenshot.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Within Docker, the directory on your local home directory will be mapped 
-to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/mnt&lt;/code&gt;. Use this to access your files and store your outputs.&lt;/p&gt;
-
-&lt;h1 id=&quot;3-troubleshooting&quot;&gt;3 Troubleshooting&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available &lt;a href=&quot;https://www.microsoft.com/en-us/software-download/windows10ISO&quot;&gt;https://www.microsoft.com/en-us/software-download/windows10ISO&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Check you have virtualization enabled in your BIOS
-    &lt;ol&gt;
-      &lt;li&gt;Reboot the computer and open the system’s BIOS menu. This can usually be done by pressing the delete key, the F1 key or Alt and F4 keys depending on the system.&lt;/li&gt;
-      &lt;li&gt;Enabling the virtualization extensions in BIOS.  Open the Processor submenu The processor settings menu may be hidden in the Chipset, Advanced CPU Configuration or Northbridge.  Enable Intel Virtualization Technology (also known as Intel VT-x). AMD-V extensions cannot be disabled in the BIOS and should already be enabled. The virtualization extensions may be labeled Virtualization Extensions, Vanderpool or various other names depending on the OEM and system BIOS.  Enable Intel VT-d or AMD IOMMU, if the options are available. Intel VT-d and AMD IOMMU are used for PCI device assignment.&lt;/li&gt;
-      &lt;li&gt;Select Save &amp;amp; Exit.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available &lt;a href=&quot;https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software&quot;&gt;here&lt;/a&gt;. After installing, update to the latest version.&lt;/li&gt;
-  &lt;li&gt;Niansong Zhang compiled &lt;a href=&quot;/assets/images/2020/08/NOVA2019-docker-problems.pdf&quot;&gt;this list&lt;/a&gt;  at the NOVA’19 workshop&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;4-links&quot;&gt;4 Links&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;The Docker image is derived from one provided by &lt;a href=&quot;https://nachiket.github.io/&quot;&gt;Prof Nachiket Kapre (Waterloo)&lt;/a&gt;. If you want to create your own variant, the scripts used to create it are available &lt;a href=&quot;https://github.com/phwl/elec3608-github&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Notes on Docker support under Windows Home with WSL 2 &lt;a href=&quot;https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/&quot;&gt;https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/&lt;/a&gt; (from &lt;a href=&quot;https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html&quot;&gt;Dr Peter Jones&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Notes on WSL 2 and Hyper-V &lt;a href=&quot;https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/&quot;&gt;https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/&lt;/a&gt; (from &lt;a href=&quot;https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html&quot;&gt;Dr Peter Jones&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="software" /><category term="academia" /><category term="windows" /><summary type="html">Here are installation instructions for installing Docker and running Modelsim for my ELEC3608 Computer Architecture course.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><summary type="html">A small collection of Parker 45 pens.</summary></entry></feed>
