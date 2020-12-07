@@ -34,12 +34,25 @@ Date & Time Shipped: 19/11/2020 Shipping Cost $30.00
 ```
 Here is the [motherboard manual](https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual).
 
-## Step 1 Fix Ethernet 
+## Step 1 Wifi and Fix Ethernet 
+To get onto wifi
+```
+Security: WPA & WPA2 Enterprise
+Authentication: Protected EAP (PEAP)
+Anonymous identity:<blank>
+CA certificate: (None) - Check "No CA certificate is required"
+PEAP version: Automatic
+Inner authentication: MSCHAPv2
+Username: <unikey> 
+Password: <password>
+```
+
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server net-tools rclone libelf-dev build-essential
 ```
+
 Ethernet didn't work out of the box so I used a USB ethernet device and 
 installed the realtek driver for the B550 chipset available
 from [Realtek](https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software).
