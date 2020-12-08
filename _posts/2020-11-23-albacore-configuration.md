@@ -35,7 +35,7 @@ Date & Time Shipped: 19/11/2020 Shipping Cost $30.00
 Here is the [motherboard manual](https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual).
 
 ## Step 1 Wifi and Fix Ethernet 
-To get onto wifi
+To connect to the University of Sydney wifi
 ```
 Security: WPA & WPA2 Enterprise
 Authentication: Protected EAP (PEAP)
