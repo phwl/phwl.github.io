@@ -202,11 +202,23 @@ Date &amp; Time Shipped: 19/11/2020 Shipping Cost $30.00
 </code></pre></div></div>
 <p>Here is the <a href="https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual">motherboard manual</a>.</p>
 
-<h2 id="step-1-fix-ethernet">Step 1 Fix Ethernet</h2>
+<h2 id="step-1-wifi-and-fix-ethernet">Step 1 Wifi and Fix Ethernet</h2>
+<p>To connect to the University of Sydney wifi</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Security: WPA &amp; WPA2 Enterprise
+Authentication: Protected EAP (PEAP)
+Anonymous identity:&lt;blank&gt;
+CA certificate: (None) - Check "No CA certificate is required"
+PEAP version: Automatic
+Inner authentication: MSCHAPv2
+Username: &lt;unikey&gt; 
+Password: &lt;password&gt;
+</code></pre></div></div>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server net-tools rclone libelf-dev build-essential
 </code></pre></div></div>
+
 <p>Ethernet didn’t work out of the box so I used a USB ethernet device and 
 installed the realtek driver for the B550 chipset available
 from <a href="https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software">Realtek</a>.</p>
@@ -397,6 +409,36 @@ cd $TRD_HOME/prj/Vitis
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2020/tasmanian-holiday/">
+        <img src=
+          
+            "/assets/images/2020/12/IMG_7254.jpeg"
+          
+          alt="Tasmanian Holiday"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2020/tasmanian-holiday/" rel="permalink">Tasmanian Holiday
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Went to Tasmania for a few days. Last time I was here was
+2015.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2020/computer-engineering-lab-christmas-party/">
         <img src=
           
@@ -476,35 +518,6 @@ had a quick fish in Googong Dam.
 This is how to copy a LUKS partition from back1 to back2. 
 We assume the original device is already opened using:
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/lake-copeton-murray-cod/">
-        <img src=
-          
-            "/assets/images/2020/10/IMG_6785.jpeg"
-          
-          alt="Lake Copeton Fishing for Murray Cod and Golden Perch"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/lake-copeton-murray-cod/" rel="permalink">Lake Copeton Fishing for Murray Cod and Golden Perch
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.
-</p>
   </article>
 </div>
 

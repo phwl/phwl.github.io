@@ -1,4 +1,4 @@
-I"<p>This is how a new machine, albacore, was configured.</p>
+I"�<p>This is how a new machine, albacore, was configured.</p>
 
 <h2 id="machine">Machine</h2>
 <p>The machine was purchased from <a href="http://mwave.com.au">Mwave</a>. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration</p>
@@ -18,11 +18,23 @@ Date &amp; Time Shipped: 19/11/2020 Shipping Cost $30.00
 </code></pre></div></div>
 <p>Here is the <a href="https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual">motherboard manual</a>.</p>
 
-<h2 id="step-1-fix-ethernet">Step 1 Fix Ethernet</h2>
+<h2 id="step-1-wifi-and-fix-ethernet">Step 1 Wifi and Fix Ethernet</h2>
+<p>To connect to the University of Sydney wifi</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Security: WPA &amp; WPA2 Enterprise
+Authentication: Protected EAP (PEAP)
+Anonymous identity:&lt;blank&gt;
+CA certificate: (None) - Check "No CA certificate is required"
+PEAP version: Automatic
+Inner authentication: MSCHAPv2
+Username: &lt;unikey&gt; 
+Password: &lt;password&gt;
+</code></pre></div></div>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 sudo apt upgrade
 sudo apt install openssh-server net-tools rclone libelf-dev build-essential
 </code></pre></div></div>
+
 <p>Ethernet didn’t work out of the box so I used a USB ethernet device and 
 installed the realtek driver for the B550 chipset available
 from <a href="https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software">Realtek</a>.</p>
