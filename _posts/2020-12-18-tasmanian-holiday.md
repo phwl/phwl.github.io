@@ -80,3 +80,8 @@ Best meal of the trip was a [Blue Eye Seafood](https://www.blueeye.net.au/menus/
 
 Land here is much cheaper than Sydney.
 {% include figure image_path="/assets/images/2020/12/9DFBB10E-9E72-498E-A31B-41B98D4C2BD9.jpeg" caption="" %}
+
+On the last night we stayed at the Sebel in Launceston and had a nice breakfast
+there.
+{% include figure image_path="/assets/images/2020/12/IMG_7332.jpeg" caption="Egg benedict" %}
+{% include figure image_path="/assets/images/2020/12/IMG_7333.jpeg" caption="Poached egg and vegetables" %}
