@@ -20,6 +20,7 @@ Here is a collection of amateur radio links.
 
 ## Antennas
 1. Frank N4SPP's antenna projects <https://www.nonstopsystems.com/radio/antennas_home.htm#top-of-page> which includes End Fed Half Wave (EFHW) antenna construction with links - <https://www.nonstopsystems.com/radio/frank_radio_antenna_multiband_end-fed.htm> (added 22/11/20)
+1. L.B. Cebik W4RNL (SK) documents <http://on5au.be/Cebik%20documents.html>
 
 ## Electronics
 ### Calculators
