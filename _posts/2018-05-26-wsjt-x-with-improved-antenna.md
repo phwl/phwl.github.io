@@ -15,7 +15,7 @@ header:
 
 {% include figure image_path="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" caption="" %}
 
-Improving the antenna from [http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/](http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/) (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.
+Improving the antenna from [http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/](http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/) (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.
 
 <!-- more -->
 
