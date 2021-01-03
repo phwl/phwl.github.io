@@ -1,28 +1,17 @@
----
-author: phwl
-comments: true
-date: 2018-05-26 10:25:06+00:00
-slug: wsjt-x-with-improved-antenna
-title: WSJT-X with improved antenna
-classes: wide
-categories:
-- radio
-tags:
-- hobbies
-header:
-  teaser: /assets/images/2018/05/Screen-Shot-2018-05-26.jpg
----
+I"¶<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" />
+  
+    <figcaption>
+      
 
-{% include figure image_path="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" caption="" %}
+    </figcaption></a></figure>
 
-Improving the antenna from [http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/](http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/) (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.
+<p>Improving the antenna from <a href="http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
 
 <!-- more -->
 
-
-
-
-Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
+<p>Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
  2018-05-25 10:20 	 VK2APL 	 7.040019 	 -24 	 0 	 QF56 	 5 	 KC2STA1 	 FN22vx 	 15985 	 61
  2018-05-25 10:20 	 VK2APL 	 7.040008 	 -19 	 0 	 QF56 	 5 	 N1MCY 	 FN20fc 	 15859 	 66
  2018-05-25 10:12 	 VK2APL 	 7.040010 	 -25 	 0 	 QF56 	 5 	 N2HQI 	 FN13sa 	 15802 	 61
@@ -46,12 +35,17 @@ Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
  2018-05-25 10:12 	 VK2APL 	 7.039998 	 -10 	 0 	 QF56 	 5 	 VK3MI 	 QF22ne 	 711 	 226
  2018-05-25 10:12 	 VK2APL 	 7.040001 	 -13 	 0 	 QF56 	 5 	 VK4ZBV 	 QG62ml 	 696 	 17
  2018-05-25 11:32 	 VK2APL 	 7.039999 	 -19 	 0 	 QF56 	 5 	 VK4AAN 	 QG61ah 	 547 	 11
- 2018-05-25 10:20 	 VK2APL 	 7.040000 	 -22 	 0 	 QF56 	 5 	 VK2COW 	 QF44ox 	 232 	 223
+ 2018-05-25 10:20 	 VK2APL 	 7.040000 	 -22 	 0 	 QF56 	 5 	 VK2COW 	 QF44ox 	 232 	 223</p>
 
+<p>Then I made my first decent <a href="https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8">FT8</a> contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners <a href="http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf">http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf</a>.</p>
 
+<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" />
+  
+    <figcaption>
+      
 
+    </figcaption></a></figure>
 
-Then I made my first decent [FT8](https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8) contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners [http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf](http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf).
-
-{% include figure image_path="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" caption="" %}
-
+:ET
