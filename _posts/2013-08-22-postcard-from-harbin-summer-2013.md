@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2013/08/P8183366.jpg
 ---
 
-After a superb trip to [Harbin in winter](http://www.phwl.org/postcard-from-harbin/), I returned in summer to attend the ICEMI conference, kindly hosted again by Prof Peng Yu, Prof Shaojun Wang and Mr Yeyong Pang from Harbin Institute of Technology.
+After a superb trip to [Harbin in winter](http://www.phwl.org/2013/postcard-from-harbin/), I returned in summer to attend the ICEMI conference, kindly hosted again by Prof Peng Yu, Prof Shaojun Wang and Mr Yeyong Pang from Harbin Institute of Technology.
 
 This is the view from Dragon Tower.{% include figure image_path="/assets/images/2013/08/P8193616.jpg" caption="" %}
 
