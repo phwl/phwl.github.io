@@ -1,28 +1,18 @@
----
-author: phwl
-comments: true
-date: 2018-05-26 10:25:06+00:00
-slug: wsjt-x-with-improved-antenna
-title: WSJT-X with improved antenna
-classes: wide
-categories:
-- radio
-tags:
-- hobbies
-header:
-  teaser: /assets/images/2021/01/wspr-080121.png
----
+I"ö4<h1 id="26-may-2018">26 May 2018</h1>
+<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" />
+  
+    <figcaption>
+      
 
-# 26 May 2018
-{% include figure image_path="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" caption="" %}
+    </figcaption></a></figure>
 
-Improving the antenna from [http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/](http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/) (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.
+<p>Improving the antenna from <a href="http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
 
 <!-- more -->
 
-
-```
-Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
  2018-05-25 10:20 	 VK2APL 	 7.040019 	 -24 	 0 	 QF56 	 5 	 KC2STA1 	 FN22vx 	 15985 	 61
  2018-05-25 10:20 	 VK2APL 	 7.040008 	 -19 	 0 	 QF56 	 5 	 N1MCY 	 FN20fc 	 15859 	 66
  2018-05-25 10:12 	 VK2APL 	 7.040010 	 -25 	 0 	 QF56 	 5 	 N2HQI 	 FN13sa 	 15802 	 61
@@ -47,22 +37,33 @@ Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
  2018-05-25 10:12 	 VK2APL 	 7.040001 	 -13 	 0 	 QF56 	 5 	 VK4ZBV 	 QG62ml 	 696 	 17
  2018-05-25 11:32 	 VK2APL 	 7.039999 	 -19 	 0 	 QF56 	 5 	 VK4AAN 	 QG61ah 	 547 	 11
  2018-05-25 10:20 	 VK2APL 	 7.040000 	 -22 	 0 	 QF56 	 5 	 VK2COW 	 QF44ox 	 232 	 223
-```
+</code></pre></div></div>
 
+<p>Then I made my first decent <a href="https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8">FT8</a> contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners <a href="http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf">http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf</a>.</p>
 
+<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" />
+  
+    <figcaption>
+      
 
-Then I made my first decent [FT8](https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8) contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners [http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf](http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf).
+    </figcaption></a></figure>
 
-{% include figure image_path="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" caption="" %}
+<h1 id="update-8-jan-2021">Update 8 Jan 2021</h1>
 
-# Update 8 Jan 2021
+<p>By hanging the wire antenna in a better position and using 50W, I managed to hit Europe on 40m for the first time.</p>
 
-By hanging the wire antenna in a better position and using 50W, I managed to hit Europe on 40m for the first time.
+<figure class="">
+  <a href="/assets/images/2021/01/wspr-080121.png">
+  <img src="/assets/images/2021/01/wspr-080121.png" alt="" />
+  
+    <figcaption>
+      
 
-{% include figure image_path="/assets/images/2021/01/wspr-080121.png" caption="" %}
+    </figcaption></a></figure>
 
-```
-Date                   Call        Frequency     SNR     Drift   Grid        POWER dBm W         REPORTED by loc       km         mi        Mode 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Date                   Call        Frequency     SNR     Drift   Grid        POWER dBm W         REPORTED by loc       km         mi        Mode 
  2021-01-03 08:10      VK2APL      7.040099      -11      0      QF56of      +37      5.012      EA8BFK    IL38bo      18486      11487     WSPR-2 
  2021-01-03 07:56      VK2APL      7.040099      -15      0      QF56of      +37      5.012      EA8BFK    IL38bo      18486      11487     WSPR-2 
  2021-01-08 07:58      VK2APL      7.040097      -11      0      QF56of      +47      50.119     EA8BFK    IL38bo      18486      11487     WSPR-2 
@@ -113,14 +114,20 @@ Date                   Call        Frequency     SNR     Drift   Grid        POW
  2021-01-03 08:10      VK2APL      7.040098      -14      0      QF56of      +37      5.012      KJ6MKI    CM88oi      11945      7422      WSPR-2 
  2021-01-03 07:56      VK2APL      7.040098      -12      0      QF56of      +37      5.012      KJ6MKI    CM88oi      11945      7422      WSPR-2 
  2021-01-03 07:52      VK2APL      7.040098      -12      0      QF56of      +37      5.012      KJ6MKI    CM88oi      11945      7422      WSPR-2 
-```
+</code></pre></div></div>
 
-Also on 20m: US East and West coast, Taiwan, Russia and Hawaii.
+<p>Also on 20m: Russia and Hawaii.</p>
 
-{% include figure image_path="/assets/images/2021/01/wspr-090121.png" caption="" %}
+<figure class="">
+  <a href="/assets/images/2021/01/wspr-090121.png">
+  <img src="/assets/images/2021/01/wspr-090121.png" alt="" />
+  
+    <figcaption>
+      
 
-```
-Timestamp          Call    MHz         SNR      Drift  Grid    Pwr     Reporter  RGrid    km    az      Mode    # Spots
+    </figcaption></a></figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Timestamp          Call    MHz         SNR      Drift  Grid    Pwr     Reporter  RGrid    km    az      Mode    # Spots
  2021-01-09 05:20  VK2APL  14.097112   -18      0      QF56of  50      VK5MR     PF94gw   1170  259     2      1 
  2021-01-09 05:20  VK2APL  14.097108   -26      1      QF56of  50      BM4AIK    PL02dp   7075  328     2      1 
  2021-01-09 05:20  VK2APL  14.097096   -26      0      QF56of  50      KFS       CM87tj   11924 56      2      1 
@@ -133,4 +140,5 @@ Timestamp          Call    MHz         SNR      Drift  Grid    Pwr     Reporter 
  2021-01-09 05:04  VK2APL  14.097098   -18      0      QF56of  50      VK3KHZ    QF22pe   697   228     2      2 
  2021-01-09 05:04  VK2APL  14.097098   -10      0      QF56of  50      ZL2005SWL RE68mx   2083  119     2      2 
  2021-01-09 05:04  VK2APL  14.097098   +5       0      QF56of  50      VK4NE     QG62nj   710   15      2      2 
-```
+</code></pre></div></div>
+:ET
