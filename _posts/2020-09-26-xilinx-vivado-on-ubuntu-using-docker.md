@@ -18,8 +18,10 @@ Using Docker, installation of the Xilinx Vivado tools can be automated and
 isolated.
 
 ## Step 1 Install Docker
-You can either install Docker on Windows or MacOS using the instructions [here](http://phwl.org/2020/installing-docker/). On Ubuntu, Docker can be installed 
+You can either install Docker on Windows or MacOS using the instructions [here]({% post_url 2020-08-10-installing-docker %}). On Ubuntu, Docker can be installed 
 either via the [instructions on the Docker site](https://docs.docker.com/engine/install/ubuntu/) or using the Ubuntu package via the instructions here.
+
+
 
 ```bash
 sudo apt-get update

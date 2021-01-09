@@ -9,6 +9,7 @@ categories:
 - travel
 tags:
 - harbin
+- shanghai
 header:
   teaser: /assets/images/2018/10/IMG_9441.jpg
 ---

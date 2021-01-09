@@ -7,11 +7,15 @@ title: Shanghai April 2013
 classes: wide
 categories:
 - travel
+tags:
+- shanghai
 header:
   teaser: /assets/images/2013/04/P4242220.jpg
 ---
 
-I had an excellent trip to Shanghai last year and wrote about it in  [http://www.phwl.org/2012/postcard-from-shanghai/](http://www.phwl.org/2012/postcard-from-shanghai/). I was fortunate enough to be invited back.
+I had an excellent trip to Shanghai last year and wrote about it 
+[here]({% link _posts/2012-04-19-postcard-from-shanghai.md %}).
+I was fortunate enough to be invited back.
 
 {% include figure image_path="/assets/images/2013/04/P4242220.jpg" caption="" %}
 

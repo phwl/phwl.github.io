@@ -2,12 +2,13 @@
 author: phwl
 comments: true
 date: 2012-04-19 07:36:09+00:00
-# link: http://phwl.org/postcard-from-shanghai/
 slug: postcard-from-shanghai
 title: Postcard from Shanghai
 classes: wide
 categories:
 - travel
+tags:
+- shanghai
 header:
   teaser: /assets/images/2012/04/P1110707.jpg
 ---

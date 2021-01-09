@@ -8,6 +8,7 @@ categories:
 - travel
 tags:
 - hk
+- shanghai
 header:
   teaser: /assets/images/2019/10/DSCF0253.jpg
 ---

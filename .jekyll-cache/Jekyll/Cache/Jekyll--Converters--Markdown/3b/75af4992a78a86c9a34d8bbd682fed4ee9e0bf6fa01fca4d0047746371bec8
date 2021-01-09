@@ -1,0 +1,419 @@
+I"wj<p>This post details how to build an ARM linux image via <a href="https://buildroot.org">buildroot</a>, and emulate it using <a href="https://www.qemu.org/">QEMU</a>. This was done using an Ubuntu 18.04.5 LTS host machine.</p>
+
+<h2 id="step-1-buildroot">Step 1 Buildroot</h2>
+
+<p>An ARM 64-bit embedded Linux system requires a file system, kernel image and user
+applications. Moreover, a cross compiler is needed to build one from
+scratch, and an emulator (like <a href="https://www.qemu.org/">QEMU</a>) is required if it will be tested on a non-ARM
+platform. <a href="https://buildroot.org/">Buildroot</a> automates this
+process.</p>
+
+<p>Download buildroot, generate an initial <code class="language-plaintext highlighter-rouge">.config</code> file
+and start <code class="language-plaintext highlighter-rouge">menuconfig</code>.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">H</span><span class="o">=</span>~/src/teaching <span class="c"># or whatever directory you want to use</span>
+<span class="nb">cd</span> <span class="nv">$H</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>libncurses-dev git
+git clone git://git.buildroot.net/buildroot
+<span class="nb">cd </span>buildroot
+make qemu_aarch64_virt_defconfig
+make menuconfig
+</code></pre></div></div>
+
+<p>Under <code class="language-plaintext highlighter-rouge">menuconfig</code></p>
+<ol>
+  <li>Select Kernel &gt; Linux Kernel Tools &gt; gpio</li>
+  <li>Select Filesystem images &gt; “cpio the root filesystem”,</li>
+  <li>Select Target Packages &gt; Libraries &gt; Hardware Handling &gt; libgiod and its install tools
+```</li>
+</ol>
+
+<p>Then type</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make linux-menuconfig
+</code></pre></div></div>
+
+<p>After a while you will see the Linux kernel configuration menu.</p>
+<ol>
+  <li>Select Device Drivers &gt; GPIO Support &gt; Memory mapped GPIO drivers &gt; PrimeCell PL061 GPIO support</li>
+</ol>
+
+<p>Build the image with</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">time </span>make
+</code></pre></div></div>
+
+<p>After a while (15 minutes on my desktop machine), it should finish and then run QEMU using:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>output/images
+sh start-qemu.sh 
+</code></pre></div></div>
+
+<p>You should see the following output:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/buildroot/output/images<span class="nv">$ </span>sh start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 <span class="o">[</span>0x410fd034]
+Linux version 5.4.58 <span class="o">(</span>phwl@bream<span class="o">)</span> <span class="o">(</span>gcc version 9.3.0 <span class="o">(</span>Buildroot 2020.11-607-gb4db6905a4<span class="o">))</span> <span class="c">#1 SMP Fri Jan 8 20:11:45 AEDT 2021</span>
+Machine model: linux,dummy-virt
+efi: Getting EFI parameters from FDT:
+efi: UEFI not found.
+psci: probing <span class="k">for </span>conduit method from DT.
+psci: PSCIv0.2 detected <span class="k">in </span>firmware.
+psci: Using standard PSCI v0.2 <span class="k">function </span>IDs
+psci: Trusted OS migration not required
+percpu: Embedded 21 pages/cpu s46936 r8192 d30888 u86016
+Detected VIPT I-cache on CPU0
+CPU features: detected: ARM erratum 845719
+CPU features: detected: ARM erratum 843419
+Built 1 zonelists, mobility grouping on.  Total pages: 32256
+Kernel <span class="nb">command </span>line: rootwait <span class="nv">root</span><span class="o">=</span>/dev/vda <span class="nv">console</span><span class="o">=</span>ttyAMA0
+Dentry cache <span class="nb">hash </span>table entries: 16384 <span class="o">(</span>order: 5, 131072 bytes, linear<span class="o">)</span>
+Inode-cache <span class="nb">hash </span>table entries: 8192 <span class="o">(</span>order: 4, 65536 bytes, linear<span class="o">)</span>
+mem auto-init: stack:off, heap alloc:off, heap free:off
+Memory: 104460K/131072K available <span class="o">(</span>6012K kernel code, 340K rwdata, 1416K rodata, 448K init, 326K bss, 26612K reserved, 0K cma-reserved<span class="o">)</span>
+SLUB: <span class="nv">HWalign</span><span class="o">=</span>64, <span class="nv">Order</span><span class="o">=</span>0-3, <span class="nv">MinObjects</span><span class="o">=</span>0, <span class="nv">CPUs</span><span class="o">=</span>1, <span class="nv">Nodes</span><span class="o">=</span>1
+rcu: Hierarchical RCU implementation.
+rcu: 	RCU restricting CPUs from <span class="nv">NR_CPUS</span><span class="o">=</span>256 to <span class="nv">nr_cpu_ids</span><span class="o">=</span>1.
+rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+rcu: Adjusting geometry <span class="k">for </span><span class="nv">rcu_fanout_leaf</span><span class="o">=</span>16, <span class="nv">nr_cpu_ids</span><span class="o">=</span>1
+NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
+random: get_random_bytes called from start_kernel+0x2a8/0x420 with <span class="nv">crng_init</span><span class="o">=</span>0
+arch_timer: cp15 timer<span class="o">(</span>s<span class="o">)</span> running at 62.50MHz <span class="o">(</span>virt<span class="o">)</span><span class="nb">.</span>
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
+sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
+Console: colour dummy device 80x25
+Calibrating delay loop <span class="o">(</span>skipped<span class="o">)</span>, value calculated using timer frequency.. 125.00 BogoMIPS <span class="o">(</span><span class="nv">lpj</span><span class="o">=</span>250000<span class="o">)</span>
+pid_max: default: 32768 minimum: 301
+Mount-cache <span class="nb">hash </span>table entries: 512 <span class="o">(</span>order: 0, 4096 bytes, linear<span class="o">)</span>
+Mountpoint-cache <span class="nb">hash </span>table entries: 512 <span class="o">(</span>order: 0, 4096 bytes, linear<span class="o">)</span>
+ASID allocator initialised with 32768 entries
+rcu: Hierarchical SRCU implementation.
+EFI services will not be available.
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 1 CPU
+SMP: Total of 1 processors activated.
+CPU features: detected: 32-bit EL0 Support
+CPU features: detected: CRC32 instructions
+CPU: All CPU<span class="o">(</span>s<span class="o">)</span> started at EL1
+alternatives: patching kernel code
+devtmpfs: initialized
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+futex <span class="nb">hash </span>table entries: 256 <span class="o">(</span>order: 2, 16384 bytes, linear<span class="o">)</span>
+DMI not present or invalid.
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool <span class="k">for </span>atomic allocations
+hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Serial: AMBA PL011 UART driver
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 <span class="o">(</span>irq <span class="o">=</span> 39, base_baud <span class="o">=</span> 0<span class="o">)</span> is a PL011 rev1
+printk: console <span class="o">[</span>ttyAMA0] enabled
+iommu: Default domain <span class="nb">type</span>: Translated 
+vgaarb: loaded
+SCSI subsystem initialized
+clocksource: Switched to clocksource arch_sys_counter
+NET: Registered protocol family 2
+tcp_listen_portaddr_hash <span class="nb">hash </span>table entries: 256 <span class="o">(</span>order: 0, 4096 bytes, linear<span class="o">)</span>
+TCP established <span class="nb">hash </span>table entries: 1024 <span class="o">(</span>order: 1, 8192 bytes, linear<span class="o">)</span>
+TCP <span class="nb">bind hash </span>table entries: 1024 <span class="o">(</span>order: 2, 16384 bytes, linear<span class="o">)</span>
+TCP: Hash tables configured <span class="o">(</span>established 1024 <span class="nb">bind </span>1024<span class="o">)</span>
+UDP <span class="nb">hash </span>table entries: 256 <span class="o">(</span>order: 1, 8192 bytes, linear<span class="o">)</span>
+UDP-Lite <span class="nb">hash </span>table entries: 256 <span class="o">(</span>order: 1, 8192 bytes, linear<span class="o">)</span>
+NET: Registered protocol family 1
+PCI: CLS 0 bytes, default 64
+hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 counters available
+workingset: <span class="nv">timestamp_bits</span><span class="o">=</span>62 <span class="nv">max_order</span><span class="o">=</span>15 <span class="nv">bucket_order</span><span class="o">=</span>0
+fuse: init <span class="o">(</span>API version 7.31<span class="o">)</span>
+Block layer SCSI generic <span class="o">(</span>bsg<span class="o">)</span> driver version 0.4 loaded <span class="o">(</span>major 251<span class="o">)</span>
+io scheduler mq-deadline registered
+io scheduler kyber registered
+pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+pci-host-generic 4010000000.pcie:    IO 0x3eff0000..0x3effffff -&gt; 0x00000000
+pci-host-generic 4010000000.pcie:   MEM 0x10000000..0x3efeffff -&gt; 0x10000000
+pci-host-generic 4010000000.pcie:   MEM 0x8000000000..0xffffffffff -&gt; 0x8000000000
+pci-host-generic 4010000000.pcie: ECAM at <span class="o">[</span>mem 0x4010000000-0x401fffffff] <span class="k">for</span> <span class="o">[</span>bus 00-ff]
+pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource <span class="o">[</span>bus 00-ff]
+pci_bus 0000:00: root bus resource <span class="o">[</span>io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource <span class="o">[</span>mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource <span class="o">[</span>mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: <span class="o">[</span>1b36:0008] <span class="nb">type </span>00 class 0x060000
+cacheinfo: Unable to detect cache hierarchy <span class="k">for </span>CPU 0
+virtio_blk virtio0: <span class="o">[</span>vda] 122880 512-byte logical blocks <span class="o">(</span>62.9 MB/60.0 MiB<span class="o">)</span>
+rtc-pl031 9010000.pl031: registered as rtc0
+NET: Registered protocol family 10
+Segment Routing with IPv6
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+registered taskstats version 1
+rtc-pl031 9010000.pl031: setting system clock to 2021-01-08T09:12:58 UTC <span class="o">(</span>1610097178<span class="o">)</span>
+EXT4-fs <span class="o">(</span>vda<span class="o">)</span>: mounted filesystem with ordered data mode. Opts: <span class="o">(</span>null<span class="o">)</span>
+VFS: Mounted root <span class="o">(</span>ext4 filesystem<span class="o">)</span> <span class="nb">readonly </span>on device 254:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 448K
+Run /sbin/init as init process
+EXT4-fs <span class="o">(</span>vda<span class="o">)</span>: re-mounted. Opts: <span class="o">(</span>null<span class="o">)</span>
+ext4 filesystem being remounted at / supports timestamps <span class="k">until </span>2038 <span class="o">(</span>0x7fffffff<span class="o">)</span>
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Saving random seed: random: <span class="nb">dd</span>: uninitialized urandom <span class="nb">read</span> <span class="o">(</span>512 bytes <span class="nb">read</span><span class="o">)</span>
+OK
+Starting network: udhcpc: started, v1.32.0
+random: <span class="nb">mktemp</span>: uninitialized urandom <span class="nb">read</span> <span class="o">(</span>6 bytes <span class="nb">read</span><span class="o">)</span>
+udhcpc: sending discover
+udhcpc: sending <span class="k">select for </span>10.0.2.15
+udhcpc: lease of 10.0.2.15 obtained, lease <span class="nb">time </span>86400
+deleting routers
+random: <span class="nb">mktemp</span>: uninitialized urandom <span class="nb">read</span> <span class="o">(</span>6 bytes <span class="nb">read</span><span class="o">)</span>
+adding dns 10.0.2.3
+OK
+
+Welcome to Buildroot
+buildroot login: IPv6: ADDRCONF<span class="o">(</span>NETDEV_CHANGE<span class="o">)</span>: eth0: <span class="nb">link </span>becomes ready
+</code></pre></div></div>
+
+<p>Enter “root” as the user name and no password is required. You can
+exit QEMU with <code class="language-plaintext highlighter-rouge">Ctrl-a x</code> and get help with <code class="language-plaintext highlighter-rouge">Ctrl-a h</code>.
+The monitor is invoked with <code class="language-plaintext highlighter-rouge">Ctrl-a c</code>, and can provide information
+about the underlying hardware, e.g. the memory tree:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(qemu) info mtree
+address-space: memory
+  0000000000000000-ffffffffffffffff (prio 0, i/o): system
+    0000000000000000-0000000003ffffff (prio 0, romd): virt.flash0
+    0000000004000000-0000000007ffffff (prio 0, romd): virt.flash1
+    0000000008000000-0000000008000fff (prio 0, i/o): gic_dist
+    0000000008010000-0000000008011fff (prio 0, i/o): gic_cpu
+    0000000008020000-0000000008020fff (prio 0, i/o): gicv2m
+    0000000009000000-0000000009000fff (prio 0, i/o): pl011
+    0000000009010000-0000000009010fff (prio 0, i/o): pl031
+    0000000009020000-0000000009020007 (prio 0, i/o): fwcfg.data
+    0000000009020008-0000000009020009 (prio 0, i/o): fwcfg.ctl
+    0000000009020010-0000000009020017 (prio 0, i/o): fwcfg.dma
+    0000000009030000-0000000009030fff (prio 0, i/o): pl061
+    000000000a000000-000000000a0001ff (prio 0, i/o): virtio-mmio
+    000000000a000200-000000000a0003ff (prio 0, i/o): virtio-mmio
+    000000000a000400-000000000a0005ff (prio 0, i/o): virtio-mmio
+    000000000a000600-000000000a0007ff (prio 0, i/o): virtio-mmio
+    000000000a000800-000000000a0009ff (prio 0, i/o): virtio-mmio
+    000000000a000a00-000000000a000bff (prio 0, i/o): virtio-mmio
+    000000000a000c00-000000000a000dff (prio 0, i/o): virtio-mmio
+    000000000a000e00-000000000a000fff (prio 0, i/o): virtio-mmio
+    000000000a001000-000000000a0011ff (prio 0, i/o): virtio-mmio
+    000000000a001200-000000000a0013ff (prio 0, i/o): virtio-mmio
+    000000000a001400-000000000a0015ff (prio 0, i/o): virtio-mmio
+    000000000a001600-000000000a0017ff (prio 0, i/o): virtio-mmio
+    000000000a001800-000000000a0019ff (prio 0, i/o): virtio-mmio
+    000000000a001a00-000000000a001bff (prio 0, i/o): virtio-mmio
+    000000000a001c00-000000000a001dff (prio 0, i/o): virtio-mmio
+    000000000a001e00-000000000a001fff (prio 0, i/o): virtio-mmio
+    000000000a002000-000000000a0021ff (prio 0, i/o): virtio-mmio
+    000000000a002200-000000000a0023ff (prio 0, i/o): virtio-mmio
+    000000000a002400-000000000a0025ff (prio 0, i/o): virtio-mmio
+    000000000a002600-000000000a0027ff (prio 0, i/o): virtio-mmio
+    000000000a002800-000000000a0029ff (prio 0, i/o): virtio-mmio
+    000000000a002a00-000000000a002bff (prio 0, i/o): virtio-mmio
+    000000000a002c00-000000000a002dff (prio 0, i/o): virtio-mmio
+    000000000a002e00-000000000a002fff (prio 0, i/o): virtio-mmio
+    000000000a003000-000000000a0031ff (prio 0, i/o): virtio-mmio
+    000000000a003200-000000000a0033ff (prio 0, i/o): virtio-mmio
+    000000000a003400-000000000a0035ff (prio 0, i/o): virtio-mmio
+    000000000a003600-000000000a0037ff (prio 0, i/o): virtio-mmio
+    000000000a003800-000000000a0039ff (prio 0, i/o): virtio-mmio
+    000000000a003a00-000000000a003bff (prio 0, i/o): virtio-mmio
+    000000000a003c00-000000000a003dff (prio 0, i/o): virtio-mmio
+    000000000a003e00-000000000a003fff (prio 0, i/o): virtio-mmio
+    000000000c000000-000000000dffffff (prio 0, i/o): platform bus
+    0000000010000000-000000003efeffff (prio 0, i/o): alias pcie-mmio @gpex_mmio 0000000010000000-000000003efeffff
+    000000003eff0000-000000003effffff (prio 0, i/o): gpex_ioport
+    0000000040000000-0000000047ffffff (prio 0, ram): mach-virt.ram
+    0000004010000000-000000401fffffff (prio 0, i/o): alias pcie-ecam @pcie-mmcfg-mmio 0000000000000000-000000000fffffff
+    0000008000000000-000000ffffffffff (prio 0, i/o): alias pcie-mmio-high @gpex_mmio 0000008000000000-000000ffffffffff
+
+address-space: I/O
+  0000000000000000-000000000000ffff (prio 0, i/o): io
+
+address-space: cpu-memory-0
+  0000000000000000-ffffffffffffffff (prio 0, i/o): system
+    0000000000000000-0000000003ffffff (prio 0, romd): virt.flash0
+    0000000004000000-0000000007ffffff (prio 0, romd): virt.flash1
+    0000000008000000-0000000008000fff (prio 0, i/o): gic_dist
+    0000000008010000-0000000008011fff (prio 0, i/o): gic_cpu
+    0000000008020000-0000000008020fff (prio 0, i/o): gicv2m
+    0000000009000000-0000000009000fff (prio 0, i/o): pl011
+    0000000009010000-0000000009010fff (prio 0, i/o): pl031
+    0000000009020000-0000000009020007 (prio 0, i/o): fwcfg.data
+    0000000009020008-0000000009020009 (prio 0, i/o): fwcfg.ctl
+    0000000009020010-0000000009020017 (prio 0, i/o): fwcfg.dma
+    0000000009030000-0000000009030fff (prio 0, i/o): pl061
+    000000000a000000-000000000a0001ff (prio 0, i/o): virtio-mmio
+    000000000a000200-000000000a0003ff (prio 0, i/o): virtio-mmio
+    000000000a000400-000000000a0005ff (prio 0, i/o): virtio-mmio
+    000000000a000600-000000000a0007ff (prio 0, i/o): virtio-mmio
+    000000000a000800-000000000a0009ff (prio 0, i/o): virtio-mmio
+    000000000a000a00-000000000a000bff (prio 0, i/o): virtio-mmio
+    000000000a000c00-000000000a000dff (prio 0, i/o): virtio-mmio
+    000000000a000e00-000000000a000fff (prio 0, i/o): virtio-mmio
+    000000000a001000-000000000a0011ff (prio 0, i/o): virtio-mmio
+    000000000a001200-000000000a0013ff (prio 0, i/o): virtio-mmio
+    000000000a001400-000000000a0015ff (prio 0, i/o): virtio-mmio
+    000000000a001600-000000000a0017ff (prio 0, i/o): virtio-mmio
+    000000000a001800-000000000a0019ff (prio 0, i/o): virtio-mmio
+    000000000a001a00-000000000a001bff (prio 0, i/o): virtio-mmio
+    000000000a001c00-000000000a001dff (prio 0, i/o): virtio-mmio
+    000000000a001e00-000000000a001fff (prio 0, i/o): virtio-mmio
+    000000000a002000-000000000a0021ff (prio 0, i/o): virtio-mmio
+    000000000a002200-000000000a0023ff (prio 0, i/o): virtio-mmio
+    000000000a002400-000000000a0025ff (prio 0, i/o): virtio-mmio
+    000000000a002600-000000000a0027ff (prio 0, i/o): virtio-mmio
+    000000000a002800-000000000a0029ff (prio 0, i/o): virtio-mmio
+    000000000a002a00-000000000a002bff (prio 0, i/o): virtio-mmio
+    000000000a002c00-000000000a002dff (prio 0, i/o): virtio-mmio
+    000000000a002e00-000000000a002fff (prio 0, i/o): virtio-mmio
+    000000000a003000-000000000a0031ff (prio 0, i/o): virtio-mmio
+    000000000a003200-000000000a0033ff (prio 0, i/o): virtio-mmio
+    000000000a003400-000000000a0035ff (prio 0, i/o): virtio-mmio
+    000000000a003600-000000000a0037ff (prio 0, i/o): virtio-mmio
+    000000000a003800-000000000a0039ff (prio 0, i/o): virtio-mmio
+    000000000a003a00-000000000a003bff (prio 0, i/o): virtio-mmio
+    000000000a003c00-000000000a003dff (prio 0, i/o): virtio-mmio
+    000000000a003e00-000000000a003fff (prio 0, i/o): virtio-mmio
+    000000000c000000-000000000dffffff (prio 0, i/o): platform bus
+    0000000010000000-000000003efeffff (prio 0, i/o): alias pcie-mmio @gpex_mmio 0000000010000000-000000003efeffff
+    000000003eff0000-000000003effffff (prio 0, i/o): gpex_ioport
+    0000000040000000-0000000047ffffff (prio 0, ram): mach-virt.ram
+    0000004010000000-000000401fffffff (prio 0, i/o): alias pcie-ecam @pcie-mmcfg-mmio 0000000000000000-000000000fffffff
+    0000008000000000-000000ffffffffff (prio 0, i/o): alias pcie-mmio-high @gpex_mmio 0000008000000000-000000ffffffffff
+
+address-space: gpex-root
+  0000000000000000-ffffffffffffffff (prio 0, i/o): bus master container
+
+memory-region: gpex_mmio
+  0000000000000000-ffffffffffffffff (prio 0, i/o): gpex_mmio
+
+memory-region: pcie-mmcfg-mmio
+  0000000000000000-000000001fffffff (prio 0, i/o): pcie-mmcfg-mmio
+
+memory-region: system
+  0000000000000000-ffffffffffffffff (prio 0, i/o): system
+    0000000000000000-0000000003ffffff (prio 0, romd): virt.flash0
+    0000000004000000-0000000007ffffff (prio 0, romd): virt.flash1
+    0000000008000000-0000000008000fff (prio 0, i/o): gic_dist
+    0000000008010000-0000000008011fff (prio 0, i/o): gic_cpu
+    0000000008020000-0000000008020fff (prio 0, i/o): gicv2m
+    0000000009000000-0000000009000fff (prio 0, i/o): pl011
+    0000000009010000-0000000009010fff (prio 0, i/o): pl031
+    0000000009020000-0000000009020007 (prio 0, i/o): fwcfg.data
+    0000000009020008-0000000009020009 (prio 0, i/o): fwcfg.ctl
+    0000000009020010-0000000009020017 (prio 0, i/o): fwcfg.dma
+    0000000009030000-0000000009030fff (prio 0, i/o): pl061
+    000000000a000000-000000000a0001ff (prio 0, i/o): virtio-mmio
+    000000000a000200-000000000a0003ff (prio 0, i/o): virtio-mmio
+    000000000a000400-000000000a0005ff (prio 0, i/o): virtio-mmio
+    000000000a000600-000000000a0007ff (prio 0, i/o): virtio-mmio
+    000000000a000800-000000000a0009ff (prio 0, i/o): virtio-mmio
+    000000000a000a00-000000000a000bff (prio 0, i/o): virtio-mmio
+    000000000a000c00-000000000a000dff (prio 0, i/o): virtio-mmio
+    000000000a000e00-000000000a000fff (prio 0, i/o): virtio-mmio
+    000000000a001000-000000000a0011ff (prio 0, i/o): virtio-mmio
+    000000000a001200-000000000a0013ff (prio 0, i/o): virtio-mmio
+    000000000a001400-000000000a0015ff (prio 0, i/o): virtio-mmio
+    000000000a001600-000000000a0017ff (prio 0, i/o): virtio-mmio
+    000000000a001800-000000000a0019ff (prio 0, i/o): virtio-mmio
+    000000000a001a00-000000000a001bff (prio 0, i/o): virtio-mmio
+    000000000a001c00-000000000a001dff (prio 0, i/o): virtio-mmio
+    000000000a001e00-000000000a001fff (prio 0, i/o): virtio-mmio
+    000000000a002000-000000000a0021ff (prio 0, i/o): virtio-mmio
+    000000000a002200-000000000a0023ff (prio 0, i/o): virtio-mmio
+    000000000a002400-000000000a0025ff (prio 0, i/o): virtio-mmio
+    000000000a002600-000000000a0027ff (prio 0, i/o): virtio-mmio
+    000000000a002800-000000000a0029ff (prio 0, i/o): virtio-mmio
+    000000000a002a00-000000000a002bff (prio 0, i/o): virtio-mmio
+    000000000a002c00-000000000a002dff (prio 0, i/o): virtio-mmio
+    000000000a002e00-000000000a002fff (prio 0, i/o): virtio-mmio
+    000000000a003000-000000000a0031ff (prio 0, i/o): virtio-mmio
+    000000000a003200-000000000a0033ff (prio 0, i/o): virtio-mmio
+    000000000a003400-000000000a0035ff (prio 0, i/o): virtio-mmio
+    000000000a003600-000000000a0037ff (prio 0, i/o): virtio-mmio
+    000000000a003800-000000000a0039ff (prio 0, i/o): virtio-mmio
+    000000000a003a00-000000000a003bff (prio 0, i/o): virtio-mmio
+    000000000a003c00-000000000a003dff (prio 0, i/o): virtio-mmio
+    000000000a003e00-000000000a003fff (prio 0, i/o): virtio-mmio
+    000000000c000000-000000000dffffff (prio 0, i/o): platform bus
+    0000000010000000-000000003efeffff (prio 0, i/o): alias pcie-mmio @gpex_mmio 0000000010000000-000000003efeffff
+    000000003eff0000-000000003effffff (prio 0, i/o): gpex_ioport
+    0000000040000000-0000000047ffffff (prio 0, ram): mach-virt.ram
+    0000004010000000-000000401fffffff (prio 0, i/o): alias pcie-ecam @pcie-mmcfg-mmio 0000000000000000-000000000fffffff
+    0000008000000000-000000ffffffffff (prio 0, i/o): alias pcie-mmio-high @gpex_mmio 0000008000000000-000000ffffffffff
+
+(qemu) 
+</code></pre></div></div>
+
+<p>Refer to the <a href="https://www.qemu.org/docs/master/">QEMU documentation</a>.</p>
+
+<h2 id="step-2-installing-packages">Step 2 Installing packages</h2>
+<p>The usefulness of the Linux created is limited because very few packages were
+installed in the previous step. In the buildroot home directory, type</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make menuconfig
+</code></pre></div></div>
+<p>select</p>
+<ol>
+  <li>Target packages &gt; Networking applications &gt; openssh</li>
+</ol>
+
+<p>and then type</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make 
+</code></pre></div></div>
+<p>This time the system will build much faster as only the <code class="language-plaintext highlighter-rouge">openssh</code>
+package needs to be downloaded, compiled and placed in the system image.
+Inside this new QEMU environment, you can</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh 10.0.2.2
+</code></pre></div></div>
+<p>to connect to the host and use scp to transfer files.</p>
+
+<h2 id="step-3-user-application-hello-qemu">Step 3 User Application: Hello QEMU</h2>
+
+<p>Create the following C program 
+in some directory outside of the buildroot ones (I chose <code class="language-plaintext highlighter-rouge">$H/labs/lab1</code>
+so the file is <code class="language-plaintext highlighter-rouge">$H/labs/lab1/hello.c</code>).</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="cp">#include &lt;stdio.h&gt;
+</span>
+<span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"Hello QEMU</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>To compile it, we must remember to use a cross compiler as the target
+is not the host machine but rather the guest ARM machine. Fortunately, can use the cross compiler that
+buildroot created:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$H</span>/buildroot/output/host/bin/aarch64-linux-gcc <span class="nt">-o</span> hello hello.c
+</code></pre></div></div>
+<p>Start up the guest Linux with QEMU,copy the file from the host and execute</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Linux version 5.4.58 (phwl@bream) (gcc version 9.3.0 (Buildroot 2020.11-624-gcb0d87004c)) #1 SMP Fri Jan 8 21:03:15 AEDT 2021
+...
+Starting sshd: OK
+
+Welcome to Buildroot
+buildroot login: root
+# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+phwl@10.0.2.2's password: 
+hello                                         100% 8680   852.3KB/s   00:00    
+# ./hello
+Hello QEMU
+# 
+
+</code></pre></div></div>
+
+<h2 id="step-4-using-gpio">Step 4 Using GPIO</h2>
+<p>Note that the Linux GPIO interface was updated in 2020. Here is a link
+to a website explaining the changes
+<a href="https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/">https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/</a>. That means that many tutorials on the web are either obsolete or 
+won’t work with current kernels.</p>
+:ET

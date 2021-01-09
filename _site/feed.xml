@@ -1,16 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-09T16:35:23+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Linux on ARM using Buildroot</title><link href="http://localhost:4000/2021/Linux-on-ARM-using-buildroot/" rel="alternate" type="text/html" title="Linux on ARM using Buildroot" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/Linux-on-ARM-using-buildroot</id><content type="html" xml:base="http://localhost:4000/2021/Linux-on-ARM-using-buildroot/">&lt;p&gt;Building an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt; and emulating it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;qemu&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-09T22:39:31+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;step-1-using-gpio&quot;&gt;Step 1 Using GPIO&lt;/h2&gt;
+&lt;p&gt;Note that the Linux GPIO interface was updated in 2020. Here is a link
+to a website explaining the changes
+&lt;a href=&quot;https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/&quot;&gt;https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/&lt;/a&gt;. That means that many tutorials on the web are either obsolete or 
+won’t work with current kernels.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1-buildroot&quot;&gt;Step 1 Buildroot&lt;/h2&gt;
 
 &lt;p&gt;An ARM 64-bit embedded Linux system requires a file system, kernel image and user
 applications. Moreover, a cross compiler is needed to build one from
-scratch, and an emulator (like &lt;a href=&quot;https://www.qemu.org/&quot;&gt;qemu&lt;/a&gt;) is required if it will be tested on a non-ARM
+scratch, and an emulator (like &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;) is required if it will be tested on a non-ARM
 platform. &lt;a href=&quot;https://buildroot.org/&quot;&gt;Buildroot&lt;/a&gt; automates this
 process.&lt;/p&gt;
 
 &lt;p&gt;Download buildroot, generate an initial &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.config&lt;/code&gt; file
 and start &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menuconfig&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libncurses-dev git
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching &lt;span class=&quot;c&quot;&gt;# or whatever directory you want to use&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libncurses-dev git
 git clone git://git.buildroot.net/buildroot
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;buildroot
 make qemu_aarch64_virt_defconfig
@@ -19,9 +28,9 @@ make menuconfig
 
 &lt;p&gt;Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menuconfig&lt;/code&gt;&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Select Kernel -&amp;gt; Linux Kernel Tools -&amp;gt; gpio&lt;/li&gt;
-  &lt;li&gt;Select Filesystem images -&amp;gt; “cpio the root filesystem”,&lt;/li&gt;
-  &lt;li&gt;Select Target Packages -&amp;gt; Libraries -&amp;gt; Hardware Handling -&amp;gt; libgiod and its install tools
+  &lt;li&gt;Select Kernel &amp;gt; Linux Kernel Tools &amp;gt; gpio&lt;/li&gt;
+  &lt;li&gt;Select Filesystem images &amp;gt; “cpio the root filesystem”,&lt;/li&gt;
+  &lt;li&gt;Select Target Packages &amp;gt; Libraries &amp;gt; Hardware Handling &amp;gt; libgiod and its install tools
 ```&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -31,56 +40,55 @@ make menuconfig
 
 &lt;p&gt;After a while you will see the Linux kernel configuration menu.&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Select Device Drivers -&amp;gt; GPIO Support -&amp;gt; Memory mapped GPIO drivers -&amp;gt; PrimeCell PL061 GPIO support&lt;/li&gt;
+  &lt;li&gt;Select Device Drivers &amp;gt; GPIO Support &amp;gt; Memory mapped GPIO drivers &amp;gt; PrimeCell PL061 GPIO support&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;Build the image with&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;make
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;After a while (15 minutes on my desktop machine), it should finish and then run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; using:&lt;/p&gt;
+&lt;p&gt;After a while (15 minutes on my desktop machine), it should finish and then run QEMU using:&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;output/images
-sh start-qemu.sh 
+./start-qemu.sh 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see the following output:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;sh start-qemu.sh 
-start-qemu.sh: 4: &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt;: can&lt;span class=&quot;s1&quot;&gt;'t cd to start-qemu.sh/
-Booting Linux on physical CPU 0x0000000000 [0x410fd034]
-Linux version 5.4.58 (phwl@bream) (gcc version 9.3.0 (Buildroot 2020.11-607-gb4db6905a4)) #1 SMP Fri Jan 8 20:11:45 AEDT 2021
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0x410fd034]
+Linux version 5.4.58 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;phwl@bream&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;gcc version 9.3.0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Buildroot 2020.11-607-gb4db6905a4&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#1 SMP Fri Jan 8 20:11:45 AEDT 2021&lt;/span&gt;
 Machine model: linux,dummy-virt
 efi: Getting EFI parameters from FDT:
 efi: UEFI not found.
-psci: probing for conduit method from DT.
-psci: PSCIv0.2 detected in firmware.
-psci: Using standard PSCI v0.2 function IDs
+psci: probing &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;conduit method from DT.
+psci: PSCIv0.2 detected &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;firmware.
+psci: Using standard PSCI v0.2 &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;IDs
 psci: Trusted OS migration not required
 percpu: Embedded 21 pages/cpu s46936 r8192 d30888 u86016
 Detected VIPT I-cache on CPU0
 CPU features: detected: ARM erratum 845719
 CPU features: detected: ARM erratum 843419
 Built 1 zonelists, mobility grouping on.  Total pages: 32256
-Kernel command line: rootwait root=/dev/vda console=ttyAMA0
-Dentry cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
-Inode-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Kernel &lt;span class=&quot;nb&quot;&gt;command &lt;/span&gt;line: rootwait &lt;span class=&quot;nv&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/dev/vda &lt;span class=&quot;nv&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;ttyAMA0
+Dentry cache &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 16384 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 5, 131072 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Inode-cache &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 8192 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 4, 65536 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 mem auto-init: stack:off, heap alloc:off, heap free:off
-Memory: 104460K/131072K available (6012K kernel code, 340K rwdata, 1416K rodata, 448K init, 326K bss, 26612K reserved, 0K cma-reserved)
-SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Memory: 104460K/131072K available &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6012K kernel code, 340K rwdata, 1416K rodata, 448K init, 326K bss, 26612K reserved, 0K cma-reserved&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+SLUB: &lt;span class=&quot;nv&quot;&gt;HWalign&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;64, &lt;span class=&quot;nv&quot;&gt;Order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0-3, &lt;span class=&quot;nv&quot;&gt;MinObjects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0, &lt;span class=&quot;nv&quot;&gt;CPUs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1, &lt;span class=&quot;nv&quot;&gt;Nodes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
 rcu: Hierarchical RCU implementation.
-rcu: 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=1.
+rcu: 	RCU restricting CPUs from &lt;span class=&quot;nv&quot;&gt;NR_CPUS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;256 to &lt;span class=&quot;nv&quot;&gt;nr_cpu_ids&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.
 rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
-rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+rcu: Adjusting geometry &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;rcu_fanout_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;16, &lt;span class=&quot;nv&quot;&gt;nr_cpu_ids&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
 NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
 GICv2m: range[mem 0x08020000-0x08020fff], SPI[80:143]
-random: get_random_bytes called from start_kernel+0x2a8/0x420 with crng_init=0
-arch_timer: cp15 timer(s) running at 62.50MHz (virt).
+random: get_random_bytes called from start_kernel+0x2a8/0x420 with &lt;span class=&quot;nv&quot;&gt;crng_init&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+arch_timer: cp15 timer&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; running at 62.50MHz &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;virt&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
 sched_clock: 56 bits at 62MHz, resolution 16ns, wraps every 4398046511096ns
 Console: colour dummy device 80x25
-Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+Calibrating delay loop &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;skipped&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, value calculated using timer frequency.. 125.00 BogoMIPS &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;lpj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;250000&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 pid_max: default: 32768 minimum: 301
-Mount-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
-Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+Mount-cache &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 512 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 0, 4096 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Mountpoint-cache &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 512 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 0, 4096 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 ASID allocator initialised with 32768 entries
 rcu: Hierarchical SRCU implementation.
 EFI services will not be available.
@@ -89,35 +97,35 @@ smp: Brought up 1 node, 1 CPU
 SMP: Total of 1 processors activated.
 CPU features: detected: 32-bit EL0 Support
 CPU features: detected: CRC32 instructions
-CPU: All CPU(s) started at EL1
+CPU: All CPU&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; started at EL1
 alternatives: patching kernel code
 devtmpfs: initialized
 clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
-futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+futex &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 256 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 2, 16384 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 DMI not present or invalid.
 NET: Registered protocol family 16
-DMA: preallocated 256 KiB pool for atomic allocations
+DMA: preallocated 256 KiB pool &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;atomic allocations
 hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
 Serial: AMBA PL011 UART driver
-9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 39, base_baud = 0) is a PL011 rev1
-printk: console [ttyAMA0] enabled
-iommu: Default domain type: Translated 
+9000000.pl011: ttyAMA0 at MMIO 0x9000000 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;irq &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 39, base_baud &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; is a PL011 rev1
+printk: console &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ttyAMA0] enabled
+iommu: Default domain &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;: Translated 
 vgaarb: loaded
 SCSI subsystem initialized
 clocksource: Switched to clocksource arch_sys_counter
 NET: Registered protocol family 2
-tcp_listen_portaddr_hash hash table entries: 256 (order: 0, 4096 bytes, linear)
-TCP established hash table entries: 1024 (order: 1, 8192 bytes, linear)
-TCP bind hash table entries: 1024 (order: 2, 16384 bytes, linear)
-TCP: Hash tables configured (established 1024 bind 1024)
-UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
-UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+tcp_listen_portaddr_hash &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 256 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 0, 4096 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+TCP established &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 1024 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 1, 8192 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+TCP &lt;span class=&quot;nb&quot;&gt;bind hash &lt;/span&gt;table entries: 1024 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 2, 16384 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+TCP: Hash tables configured &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;established 1024 &lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;1024&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+UDP &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 256 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 1, 8192 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+UDP-Lite &lt;span class=&quot;nb&quot;&gt;hash &lt;/span&gt;table entries: 256 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;order: 1, 8192 bytes, linear&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 NET: Registered protocol family 1
 PCI: CLS 0 bytes, default 64
 hw perfevents: enabled with armv8_pmuv3 PMU driver, 5 counters available
-workingset: timestamp_bits=62 max_order=15 bucket_order=0
-fuse: init (API version 7.31)
-Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+workingset: &lt;span class=&quot;nv&quot;&gt;timestamp_bits&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;62 &lt;span class=&quot;nv&quot;&gt;max_order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;15 &lt;span class=&quot;nv&quot;&gt;bucket_order&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+fuse: init &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;API version 7.31&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Block layer SCSI generic &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bsg&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; driver version 0.4 loaded &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;major 251&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 io scheduler mq-deadline registered
 io scheduler kyber registered
 pl061_gpio 9030000.pl061: PL061 GPIO chip registered
@@ -125,15 +133,15 @@ pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
 pci-host-generic 4010000000.pcie:    IO 0x3eff0000..0x3effffff -&amp;gt; 0x00000000
 pci-host-generic 4010000000.pcie:   MEM 0x10000000..0x3efeffff -&amp;gt; 0x10000000
 pci-host-generic 4010000000.pcie:   MEM 0x8000000000..0xffffffffff -&amp;gt; 0x8000000000
-pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+pci-host-generic 4010000000.pcie: ECAM at &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;mem 0x4010000000-0x401fffffff] &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;bus 00-ff]
 pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
-pci_bus 0000:00: root bus resource [bus 00-ff]
-pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
-pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
-pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
-pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
-cacheinfo: Unable to detect cache hierarchy for CPU 0
-virtio_blk virtio0: [vda] 122880 512-byte logical blocks (62.9 MB/60.0 MiB)
+pci_bus 0000:00: root bus resource &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;bus 00-ff]
+pci_bus 0000:00: root bus resource &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;mem 0x10000000-0x3efeffff]
+pci_bus 0000:00: root bus resource &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;mem 0x8000000000-0xffffffffff]
+pci 0000:00:00.0: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;1b36:0008] &lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;00 class 0x060000
+cacheinfo: Unable to detect cache hierarchy &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;CPU 0
+virtio_blk virtio0: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;vda] 122880 512-byte logical blocks &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;62.9 MB/60.0 MiB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 rtc-pl031 9010000.pl031: registered as rtc0
 NET: Registered protocol family 10
 Segment Routing with IPv6
@@ -141,36 +149,36 @@ sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
 NET: Registered protocol family 17
 NET: Registered protocol family 15
 registered taskstats version 1
-rtc-pl031 9010000.pl031: setting system clock to 2021-01-08T09:12:58 UTC (1610097178)
-EXT4-fs (vda): mounted filesystem with ordered data mode. Opts: (null)
-VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+rtc-pl031 9010000.pl031: setting system clock to 2021-01-08T09:12:58 UTC &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1610097178&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+EXT4-fs &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;vda&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: mounted filesystem with ordered data mode. Opts: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;null&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+VFS: Mounted root &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ext4 filesystem&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;readonly &lt;/span&gt;on device 254:0.
 devtmpfs: mounted
 Freeing unused kernel memory: 448K
 Run /sbin/init as init process
-EXT4-fs (vda): re-mounted. Opts: (null)
-ext4 filesystem being remounted at / supports timestamps until 2038 (0x7fffffff)
+EXT4-fs &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;vda&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: re-mounted. Opts: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;null&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ext4 filesystem being remounted at / supports timestamps &lt;span class=&quot;k&quot;&gt;until &lt;/span&gt;2038 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x7fffffff&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 Starting syslogd: OK
 Starting klogd: OK
 Running sysctl: OK
-Saving random seed: random: dd: uninitialized urandom read (512 bytes read)
+Saving random seed: random: &lt;span class=&quot;nb&quot;&gt;dd&lt;/span&gt;: uninitialized urandom &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;512 bytes &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 OK
 Starting network: udhcpc: started, v1.32.0
-random: mktemp: uninitialized urandom read (6 bytes read)
+random: &lt;span class=&quot;nb&quot;&gt;mktemp&lt;/span&gt;: uninitialized urandom &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6 bytes &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 udhcpc: sending discover
-udhcpc: sending select for 10.0.2.15
-udhcpc: lease of 10.0.2.15 obtained, lease time 86400
+udhcpc: sending &lt;span class=&quot;k&quot;&gt;select for &lt;/span&gt;10.0.2.15
+udhcpc: lease of 10.0.2.15 obtained, lease &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;86400
 deleting routers
-random: mktemp: uninitialized urandom read (6 bytes read)
+random: &lt;span class=&quot;nb&quot;&gt;mktemp&lt;/span&gt;: uninitialized urandom &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;6 bytes &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 adding dns 10.0.2.3
 OK
 
 Welcome to Buildroot
-buildroot login: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+buildroot login: IPv6: ADDRCONF&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;NETDEV_CHANGE&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: eth0: &lt;span class=&quot;nb&quot;&gt;link &lt;/span&gt;becomes ready
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Enter “root” as the user name and no password is required. You can
-exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu`` with&lt;/code&gt;Ctrl-a x&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;and get help with&lt;/code&gt;Ctrl-a h&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.
-The monitor is invoked with&lt;/code&gt;Ctrl-a c```, and can provide information
+exit QEMU with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-a x&lt;/code&gt; and get help with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-a h&lt;/code&gt;.
+The monitor is invoked with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl-a c&lt;/code&gt;, and can provide information
 about the underlying hardware, e.g. the memory tree:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(qemu) info mtree
 address-space: memory
@@ -344,13 +352,70 @@ memory-region: system
 (qemu) 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Refer to the ```qemu`` &lt;a href=&quot;https://www.qemu.org/docs/master/&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Refer to the &lt;a href=&quot;https://www.qemu.org/docs/master/&quot;&gt;QEMU documentation&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;step-2-using-gpio&quot;&gt;Step 2 Using GPIO&lt;/h2&gt;
-&lt;p&gt;Note that the Linux GPIO interface was updated in 2020. Here is a link
-to a website explaining the changes
-&lt;a href=&quot;https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/&quot;&gt;https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/&lt;/a&gt;. That means that many tutorials on the web are either obsolete or 
-won’t work with current kernels.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">Building an ARM linux image via buildroot and emulating it using qemu.</summary></entry><entry><title type="html">Hawkesbury River 2020</title><link href="http://localhost:4000/2020/hawkesbury-2020/" rel="alternate" type="text/html" title="Hawkesbury River 2020" /><published>2020-12-21T20:54:38+11:00</published><updated>2020-12-21T20:54:38+11:00</updated><id>http://localhost:4000/2020/hawkesbury-2020</id><content type="html" xml:base="http://localhost:4000/2020/hawkesbury-2020/">&lt;p&gt;As has been the custom for many years, I went for a camping/fishing
+&lt;h2 id=&quot;step-2-installing-packages&quot;&gt;Step 2 Installing packages&lt;/h2&gt;
+&lt;p&gt;The usefulness of the Linux created is limited because very few packages were
+installed in the previous step. In the buildroot home directory, type&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make menuconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;select&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Target packages &amp;gt; Networking applications &amp;gt; openssh&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;and then type&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This time the system will build much faster as only the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;openssh&lt;/code&gt;
+package needs to be downloaded, compiled and placed in the system image.
+Inside this new QEMU environment, you can&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh 10.0.2.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to connect to the host and use scp to transfer files.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3-user-application-hello-qemu&quot;&gt;Step 3 User Application: Hello QEMU&lt;/h2&gt;
+
+&lt;p&gt;Create the following C program 
+in some directory outside of the buildroot ones (I chose &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$H/labs/lab1&lt;/code&gt;
+so the file is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$H/labs/lab1/hello.c&lt;/code&gt;).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello QEMU&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To compile it, we must remember to use a cross compiler as the target
+is not the host machine but rather the guest ARM machine. Fortunately, can use the cross compiler that
+buildroot created:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;/buildroot/output/host/bin/aarch64-linux-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; hello hello.c
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Start up the guest Linux with QEMU,copy the file from the host and execute&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+...
+Starting sshd: OK
+
+Welcome to Buildroot
+buildroot login: root
+# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+phwl@10.0.2.2's password: 
+hello                                         100% 8680   852.3KB/s   00:00    
+# ./hello
+Hello QEMU
+# 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.</summary></entry><entry><title type="html">Hawkesbury River 2020</title><link href="http://localhost:4000/2020/hawkesbury-2020/" rel="alternate" type="text/html" title="Hawkesbury River 2020" /><published>2020-12-21T20:54:38+11:00</published><updated>2020-12-21T20:54:38+11:00</updated><id>http://localhost:4000/2020/hawkesbury-2020</id><content type="html" xml:base="http://localhost:4000/2020/hawkesbury-2020/">&lt;p&gt;As has been the custom for many years, I went for a camping/fishing
 trip with high-school friend Warren on the Hawkesbury River (here
 is a list of &lt;a href=&quot;http://phwl.org/tags/#hawkesbury&quot;&gt;previous trips&lt;/a&gt;).&lt;/p&gt;
 
@@ -1600,48 +1665,4 @@ Virtual Hard Disk” to convert the image from
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;E:\srv\amberjack\hyperv\ubuntu-hd1&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Don’t upgrade to 20.04!&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, amberjack, was configured.</summary></entry><entry><title type="html">Xilinx Vivado 2020.1 on Ubuntu using Docker</title><link href="http://localhost:4000/2020/xilinx-vivado-on-ubuntu-using-docker/" rel="alternate" type="text/html" title="Xilinx Vivado 2020.1 on Ubuntu using Docker" /><published>2020-09-26T14:02:24+10:00</published><updated>2020-09-26T14:02:24+10:00</updated><id>http://localhost:4000/2020/xilinx-vivado-on-ubuntu-using-docker</id><content type="html" xml:base="http://localhost:4000/2020/xilinx-vivado-on-ubuntu-using-docker/">&lt;p&gt;Using Docker, installation of the Xilinx Vivado tools can be automated and
-isolated.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1-install-docker&quot;&gt;Step 1 Install Docker&lt;/h2&gt;
-&lt;p&gt;You can either install Docker on Windows or MacOS using the instructions &lt;a href=&quot;http://phwl.org/2020/installing-docker/&quot;&gt;here&lt;/a&gt;. On Ubuntu, Docker can be installed 
-either via the &lt;a href=&quot;https://docs.docker.com/engine/install/ubuntu/&quot;&gt;instructions on the Docker site&lt;/a&gt; or using the Ubuntu package via the instructions here.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get remove docker docker-engine docker.io
-
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;docker.io
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl start docker
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;systemctl &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;docker
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-2-download-dockerfile&quot;&gt;Step 2 Download Dockerfile&lt;/h2&gt;
-&lt;p&gt;Clone my Dockerfiles at &lt;a href=&quot;https://github.com/phwl/docker-vivado-2020.1&quot;&gt;https://github.com/phwl/docker-vivado-2020.1&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3-download-xilinx-vivado-design-suite-20201&quot;&gt;Step 3 Download Xilinx Vivado Design Suite 2020.1&lt;/h2&gt;
-&lt;p&gt;Download the &lt;a href=&quot;https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2020.1_0602_1208.tar.gz&quot;&gt;Vivado HLx 2020.1: All OS installer Single-File Download&lt;/a&gt; to the docker-ubuntu-vivado directory (you will need an account).
-The filename should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Xilinx_Unified_2020.1_0602_1208.tar.gz&lt;/code&gt; and it 
-should be 36~GB (the Docker image is 109~GB so make sure you have enough
-space in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/var/lib/docker&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-4-build-and-test-the-docker-image&quot;&gt;Step 4 Build and test the Docker image&lt;/h2&gt;
-&lt;p&gt;Follow the instructions in docker-ubuntu-vivado/README.md, i.e. type&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker image build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; vivado-2020.1 &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can run using&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run -e DISPLAY=`hostname`:0.0 -it --rm -v $PWD:/home/user/work -w /home/user vivado-2020.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;step-5-customise&quot;&gt;Step 5 Customise&lt;/h2&gt;
-&lt;p&gt;In particular, you will probably want to edit Dockerfile and/or entrypoint.sh to include your licence files.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-6-file-system-71020&quot;&gt;Step 6 File System (7/10/20)&lt;/h2&gt;
-&lt;p&gt;By default, Docker puts its images in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/var/lib/docker&lt;/code&gt;. On most of my 
-machines I have a relatively small SSD for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; and use a larger hard disk
-for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;/code&gt;. Since the &lt;a href=&quot;https://github.com/phwl/docker-ubuntu-vivado&quot;&gt;Xilinx tools&lt;/a&gt; take up 120 GB alone, I moved &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/var&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/home&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/opt&lt;/code&gt; to the magnetic disk. Thus my /etc/fstab looks like&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# mount the local HD to /home, /var and /opt
-/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
-/srv/fs/home	/home	none	bind	0	0
-/srv/fs/var	/var	none	bind	0	0
-/srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="FPGA" /><category term="software" /><category term="ubuntu" /><summary type="html">Using Docker, installation of the Xilinx Vivado tools can be automated and isolated.</summary></entry></feed>
+&lt;p&gt;Don’t upgrade to 20.04!&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, amberjack, was configured.</summary></entry></feed>

@@ -192,7 +192,7 @@
 
     </figcaption></a></figure>
 
-<p>Improving the antenna from <a href="http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
+<p>Improving the antenna from <a href="/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">this post</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
 
 <!-- more -->
 
@@ -226,8 +226,8 @@
 <p>Then I made my first decent <a href="https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8">FT8</a> contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners <a href="http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf">http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf</a>.</p>
 
 <figure class="">
-  <a href="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png">
-  <img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" />
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" />
   
     <figcaption>
       
@@ -300,7 +300,7 @@
  2021-01-03 07:52      VK2APL      7.040098      -12      0      QF56of      +37      5.012      KJ6MKI    CM88oi      11945      7422      WSPR-2 
 </code></pre></div></div>
 
-<p>Also on 20m: US East and West coast, Taiwan, Russia and Hawaii.</p>
+<p>Also on 20m: Brazil, US East and West coast, Taiwan, Russia and Hawaii.</p>
 
 <figure class="">
   <a href="/assets/images/2021/01/wspr-090121.png">
@@ -311,7 +311,8 @@
 
     </figcaption></a></figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Timestamp          Call    MHz         SNR      Drift  Grid    Pwr     Reporter  RGrid    km    az      Mode    # Spots
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Timestamp          Call    MHz         SNR      Drift  Grid    Pwr     Reporter  RGrid    km    az      Mode   # Spots
+ 2021-01-09 05:28  VK2APL  14.097002   -24      0      QF56of  50      PT2FHC    GH64cg   14154 157     2      1 
  2021-01-09 05:20  VK2APL  14.097112   -18      0      QF56of  50      VK5MR     PF94gw   1170  259     2      1 
  2021-01-09 05:20  VK2APL  14.097108   -26      1      QF56of  50      BM4AIK    PL02dp   7075  328     2      1 
  2021-01-09 05:20  VK2APL  14.097096   -26      0      QF56of  50      KFS       CM87tj   11924 56      2      1 
@@ -421,22 +422,52 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-      <a href="/2021/Linux-on-ARM-using-buildroot/">
+      <a href="/2021/QEMU-ARM-Linux-gpio/">
         <img src=
           
             "/assets/images/2021/01/armlogo.jpeg"
           
-          alt="Linux on ARM using Buildroot"></a>
+          alt="GPIO on QEMU ARM Linux"></a>
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/2021/Linux-on-ARM-using-buildroot/" rel="permalink">Linux on ARM using Buildroot
+        <a href="/2021/QEMU-ARM-Linux-gpio/" rel="permalink">GPIO on QEMU ARM Linux
 </a>
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">Building an ARM linux image via buildroot and emulating it using qemu.
+    <p class="archive__item-excerpt" itemprop="description">This post details how to use the GPIO peripheral on the ARM linux image 
+built in Creating an emulated ARM Linux system using Buildroot and QEMU
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
+        <img src=
+          
+            "/assets/images/2021/01/armlogo.jpeg"
+          
+          alt="Creating an emulated ARM Linux system using Buildroot and QEMU"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="permalink">Creating an emulated ARM Linux system using Buildroot and QEMU
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.
 </p>
   </article>
 </div>
@@ -498,36 +529,6 @@ is a list of previous trips).
     
     <p class="archive__item-excerpt" itemprop="description">Went to Tasmania for a few days. Last time I was here was
 2015.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/computer-engineering-lab-christmas-party/">
-        <img src=
-          
-            "/assets/images/2020/12/celchristmas20.jpeg"
-          
-          alt="Computer Engineering Lab Christmas Party Photo"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/computer-engineering-lab-christmas-party/" rel="permalink">Computer Engineering Lab Christmas Party Photo
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">A little late this year (and down on numbers due to COVID) but we had an
-enjoyable Christmas party.
 </p>
   </article>
 </div>

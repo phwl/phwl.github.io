@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2018-12-15 13:44:00+00:00
-# link: http://phwl.org/the-bar-hyatt-regency-okinawa-2018/
 slug: the-bar-hyatt-regency-okinawa-2018
 title: The Bar, Hyatt Regency Okinawa 2018
 classes: wide

@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2021-01-07 16:02:24 AEST
-title: Linux on ARM using Buildroot
+title: Creating an emulated ARM Linux system using Buildroot and QEMU
 classes: wide
 categories:
 - academia
@@ -12,19 +12,21 @@ header:
   teaser: /assets/images/2021/01/armlogo.jpeg
 ---
 
-Building an ARM linux image via [buildroot](https://buildroot.org) and emulating it using [qemu](https://www.qemu.org/).
+This post details how to build an ARM linux image via [buildroot](https://buildroot.org), and emulate it using [QEMU](https://www.qemu.org/). This was done using an Ubuntu 18.04.5 LTS host machine.
 
 ## Step 1 Buildroot
 
 An ARM 64-bit embedded Linux system requires a file system, kernel image and user
 applications. Moreover, a cross compiler is needed to build one from
-scratch, and an emulator (like [qemu](https://www.qemu.org/)) is required if it will be tested on a non-ARM
+scratch, and an emulator (like [QEMU](https://www.qemu.org/)) is required if it will be tested on a non-ARM
 platform. [Buildroot](https://buildroot.org/) automates this
 process.
 
 Download buildroot, generate an initial ```.config``` file
 and start ```menuconfig```.
-```sh
+``` sh
+H=~/src/teaching # or whatever directory you want to use
+cd $H
 sudo apt install libncurses-dev git
 git clone git://git.buildroot.net/buildroot
 cd buildroot
@@ -33,9 +35,9 @@ make menuconfig
 ```
 
 Under ```menuconfig```
- 1. Select Kernel -> Linux Kernel Tools -> gpio
- 1. Select Filesystem images -> "cpio the root filesystem", 
- 1. Select Target Packages -> Libraries -> Hardware Handling -> libgiod and its install tools
+ 1. Select Kernel > Linux Kernel Tools > gpio
+ 1. Select Filesystem images > "cpio the root filesystem", 
+ 1. Select Target Packages > Libraries > Hardware Handling > libgiod and its install tools
 ```
 
 Then type 
@@ -44,23 +46,22 @@ make linux-menuconfig
 ``` 
 
 After a while you will see the Linux kernel configuration menu. 
- 1. Select Device Drivers -> GPIO Support -> Memory mapped GPIO drivers -> PrimeCell PL061 GPIO support
+ 1. Select Device Drivers > GPIO Support > Memory mapped GPIO drivers > PrimeCell PL061 GPIO support
 
 Build the image with
 ```sh
 time make
 ```
 
-After a while (15 minutes on my desktop machine), it should finish and then run ```qemu``` using:
+After a while (15 minutes on my desktop machine), it should finish and then run QEMU using:
 ```sh
 cd output/images
-sh start-qemu.sh 
+./start-qemu.sh 
 ```
 
 You should see the following output:
 ```sh
-phwl@bream:~/src/teaching/buildroot/output/images$ sh start-qemu.sh 
-start-qemu.sh: 4: cd: can't cd to start-qemu.sh/
+phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 Linux version 5.4.58 (phwl@bream) (gcc version 9.3.0 (Buildroot 2020.11-607-gb4db6905a4)) #1 SMP Fri Jan 8 20:11:45 AEDT 2021
 Machine model: linux,dummy-virt
@@ -184,7 +185,7 @@ buildroot login: IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 ```
 
 Enter "root" as the user name and no password is required. You can
-exit ```qemu`` with ```Ctrl-a x``` and get help with ```Ctrl-a h```.
+exit QEMU with ```Ctrl-a x``` and get help with ```Ctrl-a h```.
 The monitor is invoked with ```Ctrl-a c```, and can provide information
 about the underlying hardware, e.g. the memory tree:
 ```
@@ -360,10 +361,66 @@ memory-region: system
 (qemu) 
 ```
 
-Refer to the ```qemu`` [documentation](https://www.qemu.org/docs/master/).
+Refer to the [QEMU documentation](https://www.qemu.org/docs/master/).
 
-## Step 2 Using GPIO
-Note that the Linux GPIO interface was updated in 2020. Here is a link
-to a website explaining the changes 
-<https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/>. That means that many tutorials on the web are either obsolete or 
-won't work with current kernels.
+## Step 2 Installing packages
+The usefulness of the Linux created is limited because very few packages were
+installed in the previous step. In the buildroot home directory, type
+```
+make menuconfig
+```
+select
+ 1. Target packages > Networking applications > openssh
+
+and then type
+```
+make 
+```
+This time the system will build much faster as only the ```openssh```
+package needs to be downloaded, compiled and placed in the system image.
+Inside this new QEMU environment, you can 
+```
+ssh 10.0.2.2
+```
+to connect to the host and use scp to transfer files.
+
+## Step 3 User Application: Hello QEMU
+
+Create the following C program 
+in some directory outside of the buildroot ones (I chose ```$H/labs/lab1```
+so the file is ```$H/labs/lab1/hello.c```). 
+
+{% highlight C linenos %}
+#include <stdio.h>
+
+main()
+{
+	printf("Hello QEMU\n");
+}
+{% endhighlight %}
+
+
+To compile it, we must remember to use a cross compiler as the target
+is not the host machine but rather the guest ARM machine. Fortunately, can use the cross compiler that
+buildroot created:
+``` sh
+$H/buildroot/output/host/bin/aarch64-linux-gcc -o hello hello.c
+```
+Start up the guest Linux with QEMU,copy the file from the host and execute
+```
+phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+...
+Starting sshd: OK
+
+Welcome to Buildroot
+buildroot login: root
+# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+phwl@10.0.2.2's password: 
+hello                                         100% 8680   852.3KB/s   00:00    
+# ./hello
+Hello QEMU
+# 
+
+```

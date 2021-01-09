@@ -1,0 +1,9 @@
+I"v<p>This post details how to use the GPIO peripheral on the ARM linux image 
+built in &lt;/assets/_posts/2021-01-07-emulated-ARM-Linux-with-Buildroot-and-QEMU.md&gt;</p>
+
+<h2 id="step-1-using-gpio">Step 1 Using GPIO</h2>
+<p>Note that the Linux GPIO interface was updated in 2020. Here is a link
+to a website explaining the changes
+<a href="https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/">https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/</a>. That means that many tutorials on the web are either obsolete or 
+won’t work with current kernels.</p>
+:ET
