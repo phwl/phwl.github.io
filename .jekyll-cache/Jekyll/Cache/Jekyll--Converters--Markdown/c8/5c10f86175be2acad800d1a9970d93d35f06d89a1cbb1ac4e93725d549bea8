@@ -1,4 +1,4 @@
-I"¤<figure class="">
+I"<figure class="">
   <a href="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg">
   <img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" />
   
@@ -7,9 +7,11 @@
 
     </figcaption></a></figure>
 
-<p>Improving the antenna from <a href="/_posts/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
+<p>Improving the antenna from <a href="http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
 
 <!-- more -->
+
+<h1 id="26-may-2018">26 May 2018</h1>
 
 <p>Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
  2018-05-25 10:20 	 VK2APL 	 7.040019 	 -24 	 0 	 QF56 	 5 	 KC2STA1 	 FN22vx 	 15985 	 61
@@ -42,6 +44,19 @@
 <figure class="">
   <a href="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png">
   <img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<h1 id="update-8-jan-2021">Update 8 Jan 2021</h1>
+
+<p>Put the wire antenna in a better position.</p>
+
+<figure class="">
+  <a href="/assets/images/2021/01/wspr-080121.png">
+  <img src="/assets/images/2021/01/wspr-080121.png" alt="" />
   
     <figcaption>
       

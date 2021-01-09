@@ -1,0 +1,118 @@
+I"1'<h1 id="26-may-2018">26 May 2018</h1>
+<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-26.jpg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>Improving the antenna from <a href="http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/">http://phwl.org/2018/configuring-wsjt-x-on-ubuntu-for-an-icom-ic-7200/</a> (it now goes down to the fence and up the tree), I can get to Western Australia, New Zealand, Canada and the US using WSPR with only 5 W.</p>
+
+<!-- more -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Timestamp	Call	MHz	SNR	Drift	Grid	Pwr	Reporter	RGrid	km	az
+ 2018-05-25 10:20 	 VK2APL 	 7.040019 	 -24 	 0 	 QF56 	 5 	 KC2STA1 	 FN22vx 	 15985 	 61
+ 2018-05-25 10:20 	 VK2APL 	 7.040008 	 -19 	 0 	 QF56 	 5 	 N1MCY 	 FN20fc 	 15859 	 66
+ 2018-05-25 10:12 	 VK2APL 	 7.040010 	 -25 	 0 	 QF56 	 5 	 N2HQI 	 FN13sa 	 15802 	 61
+ 2018-05-25 10:12 	 VK2APL 	 7.039988 	 -27 	 0 	 QF56 	 5 	 KB3EDF 	 FM18rh 	 15751 	 69
+ 2018-05-25 10:12 	 VK2APL 	 7.040005 	 -27 	 0 	 QF56 	 5 	 W3GXT 	 FM19ol 	 15746 	 67
+ 2018-05-25 10:12 	 VK2APL 	 7.040002 	 -27 	 0 	 QF56 	 5 	 KK4MBI 	 FM18kv 	 15710 	 68
+ 2018-05-25 10:20 	 VK2APL 	 7.039999 	 -28 	 0 	 QF56 	 5 	 K9AN 	 EN50wc 	 14801 	 64
+ 2018-05-25 10:12 	 VK2APL 	 7.040000 	 -28 	 0 	 QF56 	 5 	 N8AUM 	 EM70em 	 14737 	 77
+ 2018-05-25 10:20 	 VK2APL 	 7.040005 	 -24 	 0 	 QF56 	 5 	 KD6RF 	 EM22lr 	 13979 	 71
+ 2018-05-25 10:20 	 VK2APL 	 7.040006 	 -22 	 0 	 QF56 	 5 	 N5CEY 	 EL16gc 	 13479 	 78
+ 2018-05-25 10:20 	 VK2APL 	 7.040001 	 -25 	 0 	 QF56 	 5 	 AC0ZG 	 DN70km 	 13426 	 59
+ 2018-05-25 10:12 	 VK2APL 	 7.040010 	 -24 	 0 	 QF56 	 5 	 KF7VLT 	 DN40 	 12958 	 57
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -20 	 0 	 QF56 	 5 	 W7OWO 	 CN85lh 	 12297 	 49
+ 2018-05-25 10:12 	 VK2APL 	 7.040016 	 -25 	 0 	 QF56 	 5 	 KF6I 	 DM13bv 	 12097 	 61
+ 2018-05-25 10:20 	 VK2APL 	 7.040011 	 -22 	 0 	 QF56 	 5 	 VK6CQ 	 OF78wa 	 3270 	 263
+ 2018-05-25 10:12 	 VK2APL 	 7.040020 	 -2 	 0 	 QF56 	 5 	 VK5MR 	 PF89kk 	 1366 	 280
+ 2018-05-25 10:12 	 VK2APL 	 7.040008 	 -12 	 0 	 QF56 	 5 	 VK7KPC 	 QE38ok 	 953 	 199
+ 2018-05-25 10:12 	 VK2APL 	 7.040102 	 -4 	 0 	 QF56 	 5 	 VK7JJ 	 QE38lr 	 931 	 201
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -12 	 -1 	 QF56 	 5 	 VK3PYE 	 QF21 	 774 	 222
+ 2018-05-25 10:12 	 VK2APL 	 7.040000 	 -3 	 0 	 QF56 	 5 	 VK3MHY 	 QF22ma 	 728 	 225
+ 2018-05-25 10:12 	 VK2APL 	 7.039998 	 -10 	 0 	 QF56 	 5 	 VK3MI 	 QF22ne 	 711 	 226
+ 2018-05-25 10:12 	 VK2APL 	 7.040001 	 -13 	 0 	 QF56 	 5 	 VK4ZBV 	 QG62ml 	 696 	 17
+ 2018-05-25 11:32 	 VK2APL 	 7.039999 	 -19 	 0 	 QF56 	 5 	 VK4AAN 	 QG61ah 	 547 	 11
+ 2018-05-25 10:20 	 VK2APL 	 7.040000 	 -22 	 0 	 QF56 	 5 	 VK2COW 	 QF44ox 	 232 	 223
+</code></pre></div></div>
+
+<p>Then I made my first decent <a href="https://en.wikipedia.org/wiki/WSJT_(amateur_radio_software)#FT8">FT8</a> contact with K8VFV in Michigan USA today using 40 W, followed by VK2PMG (Lismore Heights, NSW), YV2TTM (Central Java, Indonesia), JA4VLK (Japan) and UA0FO (Asiatic Russia) at 50 W. This guide is mandatory reading for beginners <a href="http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf">http://www.physics.princeton.edu/pulsar/K1JT/FT8_Operating_Tips.pdf</a>.</p>
+
+<figure class="">
+  <a href="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png">
+  <img src="/assets/images/2018/05/Screen-Shot-2018-05-25-at-8.44.31-pm-1024x593.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<h1 id="update-8-jan-2021">Update 8 Jan 2021</h1>
+
+<p>By hanging the wire antenna in a better position and using 50W, I managed to hit Europe for the first time.</p>
+
+<figure class="">
+  <a href="/assets/images/2021/01/wspr-080121.png">
+  <img src="/assets/images/2021/01/wspr-080121.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Date                     Call        Frequency   SNR Drift   Grid        dBm     W       by          loc         km      mi      Mode Power        Reported        Distance
+ 2021-01-03 08:10 	 VK2APL 	 7.040099 	 -11 	 0 	 QF56of 	 +37 	 5.012 	 EA8BFK 	 IL38bo 	 18486 	 11487 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040099 	 -15 	 0 	 QF56of 	 +37 	 5.012 	 EA8BFK 	 IL38bo 	 18486 	 11487 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040097 	 -11 	 0 	 QF56of 	 +47 	 50.119 	 EA8BFK 	 IL38bo 	 18486 	 11487 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040099 	 -15 	 0 	 QF56of 	 +47 	 50.119 	 OE9GHV 	 JN47wk 	 16462 	 10229 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040099 	 -21 	 0 	 QF56of 	 +47 	 50.119 	 IW2NKE 	 JN63np 	 16260 	 10103 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040099 	 -11 	 0 	 QF56of 	 +47 	 50.119 	 K5XL 	 EM12kp 	 13781 	 8563 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040177 	 -19 	 0 	 QF56of 	 +47 	 50.119 	 VE6JY 	 DO33or 	 13340 	 8289 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040178 	 -10 	 0 	 QF56of 	 +47 	 50.119 	 VE6JY 	 DO33or 	 13340 	 8289 	 WSPR-2 
+ 2021-01-03 07:52 	 VK2APL 	 7.040101 	 -22 	 0 	 QF56of 	 +37 	 5.012 	 VE6EGN 	 DO23qe 	 13206 	 8206 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040099 	 -5 	 0 	 QF56of 	 +37 	 5.012 	 VE6ARS 	 DO30eb 	 13156 	 8175 	 WSPR-2 
+ 2021-01-03 06:24 	 VK2APL 	 7.040098 	 -19 	 0 	 QF56 	 +37 	 5.012 	 KA7OEI-1 	 DN31uo 	 12910 	 8022 	 WSPR-2 
+ 2021-01-03 07:52 	 VK2APL 	 7.040098 	 -8 	 0 	 QF56of 	 +37 	 5.012 	 KA7OEI-1 	 DN31uo 	 12906 	 8019 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040099 	 -13 	 0 	 QF56of 	 +37 	 5.012 	 KA7OEI-1 	 DN31uo 	 12906 	 8019 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040099 	 -9 	 0 	 QF56of 	 +47 	 50.119 	 KA7OEI-1 	 DN31uo 	 12906 	 8019 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040098 	 -11 	 0 	 QF56of 	 +37 	 5.012 	 KA7OEI-1 	 DN31uo 	 12906 	 8019 	 WSPR-2 
+ 2021-01-08 07:42 	 VK2APL 	 7.040099 	 -9 	 0 	 QF56of 	 +47 	 50.119 	 KA7OEI-1 	 DN31uo 	 12906 	 8019 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040101 	 -11 	 0 	 QF56of 	 +47 	 50.119 	 AA0JR 	 DM33wi 	 12534 	 7788 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040101 	 -12 	 0 	 QF56of 	 +47 	 50.119 	 AA0JR 	 DM33wi 	 12534 	 7788 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040099 	 -13 	 0 	 QF56of 	 +47 	 50.119 	 N6RY 	 DM33sp 	 12521 	 7780 	 WSPR-2 
+ 2021-01-03 06:46 	 VK2APL 	 7.040083 	 -22 	 0 	 QF56of 	 +37 	 5.012 	 KI7E 	 CN87wr 	 12483 	 7757 	 WSPR-2 
+ 2021-01-03 06:42 	 VK2APL 	 7.040099 	 -22 	 0 	 QF56of 	 +37 	 5.012 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040097 	 -12 	 0 	 QF56of 	 +47 	 50.119 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040099 	 -14 	 0 	 QF56of 	 +37 	 5.012 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040097 	 -16 	 0 	 QF56of 	 +47 	 50.119 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040098 	 -13 	 0 	 QF56of 	 +37 	 5.012 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-03 06:46 	 VK2APL 	 7.040097 	 -22 	 0 	 QF56of 	 +37 	 5.012 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-03 07:52 	 VK2APL 	 7.040099 	 -14 	 0 	 QF56of 	 +37 	 5.012 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-08 07:42 	 VK2APL 	 7.040097 	 -16 	 0 	 QF56of 	 +47 	 50.119 	 KK6PR 	 CN94ik 	 12376 	 7690 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040087 	 -13 	 0 	 QF56of 	 +47 	 50.119 	 ND7M 	 DM16xf 	 12359 	 7680 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040087 	 -12 	 0 	 QF56of 	 +47 	 50.119 	 ND7M 	 DM16xf 	 12359 	 7680 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040099 	 -11 	 0 	 QF56of 	 +37 	 5.012 	 W7OWO 	 CN85lh 	 12298 	 7642 	 WSPR-2 
+ 2021-01-03 07:52 	 VK2APL 	 7.040099 	 -13 	 0 	 QF56of 	 +37 	 5.012 	 W7OWO 	 CN85lh 	 12298 	 7642 	 WSPR-2 
+ 2021-01-08 07:42 	 VK2APL 	 7.040100 	 -18 	 0 	 QF56of 	 +47 	 50.119 	 KP4MD 	 CM98iq 	 12077 	 7504 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040101 	 -18 	 0 	 QF56of 	 +47 	 50.119 	 KP4MD 	 CM98iq 	 12077 	 7504 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040100 	 -19 	 0 	 QF56of 	 +47 	 50.119 	 KP4MD 	 CM98iq 	 12077 	 7504 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040098 	 -17 	 0 	 QF56of 	 +37 	 5.012 	 KP4MD 	 CM98iq 	 12077 	 7504 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040098 	 -20 	 0 	 QF56of 	 +37 	 5.012 	 KJ6WSM 	 CM98hs 	 12075 	 7503 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040098 	 -23 	 0 	 QF56of 	 +37 	 5.012 	 KJ6WSM 	 CM98hs 	 12075 	 7503 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040106 	 -14 	 0 	 QF56of 	 +47 	 50.119 	 W6UV 	 CM87wx 	 11975 	 7441 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040106 	 -13 	 0 	 QF56of 	 +47 	 50.119 	 W6UV 	 CM87wx 	 11975 	 7441 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040098 	 -16 	 0 	 QF56of 	 +37 	 5.012 	 WB7ABP 	 CM88ok 	 11950 	 7425 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040100 	 -23 	 0 	 QF56of 	 +47 	 50.119 	 WB7ABP 	 CM88ok 	 11950 	 7425 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040100 	 -23 	 0 	 QF56of 	 +47 	 50.119 	 WB7ABP 	 CM88ok 	 11950 	 7425 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040098 	 -17 	 0 	 QF56of 	 +37 	 5.012 	 WB7ABP 	 CM88ok 	 11950 	 7425 	 WSPR-2 
+ 2021-01-08 07:42 	 VK2APL 	 7.040096 	 -18 	 0 	 QF56of 	 +47 	 50.119 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+ 2021-01-08 07:50 	 VK2APL 	 7.040097 	 -17 	 0 	 QF56of 	 +47 	 50.119 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+ 2021-01-08 07:58 	 VK2APL 	 7.040097 	 -16 	 0 	 QF56of 	 +47 	 50.119 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+ 2021-01-03 08:10 	 VK2APL 	 7.040098 	 -14 	 0 	 QF56of 	 +37 	 5.012 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+ 2021-01-03 07:56 	 VK2APL 	 7.040098 	 -12 	 0 	 QF56of 	 +37 	 5.012 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+ 2021-01-03 07:52 	 VK2APL 	 7.040098 	 -12 	 0 	 QF56of 	 +37 	 5.012 	 KJ6MKI 	 CM88oi 	 11945 	 7422 	 WSPR-2 
+</code></pre></div></div>
+:ET
