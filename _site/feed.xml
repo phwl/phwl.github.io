@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T21:19:50+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T21:36:26+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;
@@ -835,6 +835,26 @@ memory-region: system
     0000008000000000-000000ffffffffff (prio 0, i/o): alias pcie-mmio-high @gpex_mmio 0000008000000000-000000ffffffffff
 
 (qemu) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./start-qemu.sh&lt;/code&gt; script is shown below. It emulates a Cortex-A53 which is an ARMv8-A 64-bit processor.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/sh
+(
+BINARIES_DIR=&quot;${0%/*}/&quot;
+cd ${BINARIES_DIR}
+
+if [ &quot;${1}&quot; = &quot;serial-only&quot; ]; then
+    EXTRA_ARGS='-nographic'
+else
+    EXTRA_ARGS=''
+fi
+
+export PATH=&quot;/home/phwl/src/teaching/buildroot/output/host/bin:${PATH}&quot;
+exec qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 -kernel Image
+ -append &quot;rootwait root=/dev/vda console=ttyAMA0&quot; -netdev user,id=eth0 -device v
+irtio-net-device,netdev=eth0 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 -
+device virtio-blk-device,drive=hd0  ${EXTRA_ARGS}
+)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Refer to the &lt;a href=&quot;https://www.qemu.org/docs/master/&quot;&gt;QEMU documentation&lt;/a&gt;.&lt;/p&gt;
