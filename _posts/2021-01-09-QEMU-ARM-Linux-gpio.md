@@ -328,10 +328,9 @@ perform their task, after which they sleep (via nanosleep()). The gpio_reader()
 function executes about 100x faster than the writer.
 
 ## 3. Driver
-The peripheral used in the
+The GPIO peripheral used in the
 qemu_aarch64_virt machine is described in the 
- [ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual](https://developer.arm.com/documentation/ddi0190/b) (which we will call the datasheet) GPIO device. There are
-two ways to find out its start address in memory. During boot up, the message
+ [ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual](https://developer.arm.com/documentation/ddi0190/b) (which we will call the datasheet).  During boot up, the message
 ```
 pl061_gpio 9030000.pl061: PL061 GPIO chip registered
 ```
@@ -340,6 +339,6 @@ or using
 ```
 0000000009030000-0000000009030fff (prio 0, i/o): pl061
 ```
-Thus the start address (GPIOBASE in the datasheet) is 0x9030000.
+shows that the start address (GPIOBASE in the datasheet) is 0x9030000.
 The address of GPIODIR is 0x9030400.
 

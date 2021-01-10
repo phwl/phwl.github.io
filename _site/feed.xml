@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T21:05:57+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-10T21:19:50+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;
@@ -476,17 +476,16 @@ perform their task, after which they sleep (via nanosleep()). The gpio_reader()
 function executes about 100x faster than the writer.&lt;/p&gt;
 
 &lt;h2 id=&quot;3-driver&quot;&gt;3. Driver&lt;/h2&gt;
-&lt;p&gt;The peripheral used in the
+&lt;p&gt;The GPIO peripheral used in the
 qemu_aarch64_virt machine is described in the 
- &lt;a href=&quot;https://developer.arm.com/documentation/ddi0190/b&quot;&gt;ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual&lt;/a&gt; (which we will call the datasheet) GPIO device. There are
-two ways to find out its start address in memory. During boot up, the message&lt;/p&gt;
+ &lt;a href=&quot;https://developer.arm.com/documentation/ddi0190/b&quot;&gt;ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual&lt;/a&gt; (which we will call the datasheet).  During boot up, the message&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pl061_gpio 9030000.pl061: PL061 GPIO chip registered
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;or using
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;info mtree&lt;/code&gt; in the QEMU monitor, you get&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0000000009030000-0000000009030fff (prio 0, i/o): pl061
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Thus the start address (GPIOBASE in the datasheet) is 0x9030000.
+&lt;p&gt;shows that the start address (GPIOBASE in the datasheet) is 0x9030000.
 The address of GPIODIR is 0x9030400.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-buildroot&quot;&gt;1. Buildroot&lt;/h2&gt;
