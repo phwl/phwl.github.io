@@ -184,13 +184,17 @@
         
         <p>This post details how to build an ARM linux image via <a href="https://buildroot.org">buildroot</a>, and emulate it using <a href="https://www.qemu.org/">QEMU</a>. This was done using an Ubuntu 18.04.5 LTS host machine.</p>
 
-<h2 id="step-1-buildroot">Step 1 Buildroot</h2>
+<h2 id="1-buildroot">1. Buildroot</h2>
 
-<p>An ARM 64-bit embedded Linux system requires a file system, kernel image and user
-applications. Moreover, a cross compiler is needed to build one from
-scratch, and an emulator (like <a href="https://www.qemu.org/">QEMU</a>) is required if it will be tested on a non-ARM
-platform. <a href="https://buildroot.org/">Buildroot</a> automates this
-process.</p>
+<p>An ARM 64-bit embedded Linux system requires a file system, kernel
+image and user applications. Moreover, a cross compiler is needed
+to build one from scratch, and an emulator (like
+<a href="https://www.qemu.org/">QEMU</a>) is required if it will be tested on
+a non-ARM platform. <a href="https://buildroot.org/">Buildroot</a> automates
+this process. It can do a lot more than what is described here
+and you should refer to its
+<a href="https://buildroot.org/docs.html">extensive documentation and training materials</a>
+for details.</p>
 
 <p>Download buildroot, generate an initial <code class="language-plaintext highlighter-rouge">.config</code> file
 and start <code class="language-plaintext highlighter-rouge">menuconfig</code>.</p>
@@ -531,7 +535,7 @@ memory-region: system
 
 <p>Refer to the <a href="https://www.qemu.org/docs/master/">QEMU documentation</a>.</p>
 
-<h2 id="step-2-installing-packages">Step 2 Installing packages</h2>
+<h2 id="2-installing-packages">2. Installing packages</h2>
 <p>The usefulness of the Linux created is limited because very few packages were
 installed in the previous step. In the buildroot home directory, type</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make menuconfig
@@ -549,9 +553,9 @@ package needs to be downloaded, compiled and placed in the system image.
 Inside this new QEMU environment, you can</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh 10.0.2.2
 </code></pre></div></div>
-<p>to connect to the host and use scp to transfer files.</p>
+<p>to connect to the host.</p>
 
-<h2 id="step-3-user-application-hello-qemu">Step 3 User Application: Hello QEMU</h2>
+<h2 id="3-user-application-hello-qemu">3. User Application: Hello QEMU</h2>
 
 <p>Create the following C program 
 in some directory outside of the buildroot ones (I chose <code class="language-plaintext highlighter-rouge">$H/labs/lab1</code>

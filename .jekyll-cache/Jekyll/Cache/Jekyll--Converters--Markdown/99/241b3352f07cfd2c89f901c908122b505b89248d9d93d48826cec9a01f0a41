@@ -1,188 +1,4 @@
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="en" class="no-js">
-  <head>
-    
-    <meta charset="utf-8">
-
-<!-- begin _includes/seo.html --><title>GPIO on QEMU ARM Linux - Life, the Universe and Fishing</title>
-<meta name="description" content="This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU">
-
-
-
-<meta property="og:type" content="article">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="GPIO on QEMU ARM Linux">
-<meta property="og:url" content="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">
-
-
-  <meta property="og:description" content="This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/2021/01/armlogo.jpeg">
-
-
-
-
-
-  <meta property="article:published_time" content="2021-01-09T21:26:12+11:00">
-
-
-
-
-
-  
-
-  
-
-
-<link rel="canonical" href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">
-
-
-
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    
-      "@type": "Person",
-      "name": "phwl",
-      "url": "http://localhost:4000/"
-    
-  }
-</script>
-
-
-
-
-
-
-<!-- end _includes/seo.html -->
-
-
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-
-<!--[if IE ]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
-
-
-
-    <!-- start custom head snippets -->
-
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
-
-<!-- end custom head snippets -->
-
-  </head>
-
-  <body class="layout--single wide">
-    <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
-  <ul>
-    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
-    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
-    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
-  </ul>
-</nav>
-
-    <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
-<![endif]-->
-
-    
-
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        
-        <a class="site-title" href="/">
-          Life, the Universe and Fishing
-          
-        </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/archive" >Archive</a>
-            </li><li class="masthead__menu-item">
-              <a href="/gallery" >Gallery</a>
-            </li><li class="masthead__menu-item">
-              <a href="/research" >Research</a>
-            </li><li class="masthead__menu-item">
-              <a href="/about" >About</a>
-            </li></ul>
-        
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
-        </button>
-        
-        <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle menu</span>
-          <div class="navicon"></div>
-        </button>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
-  </div>
-</div>
-
-
-    <div class="initial-content">
-      
-
-
-
-<div id="main" role="main">
-  
-
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="GPIO on QEMU ARM Linux">
-    <meta itemprop="description" content="This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU">
-    <meta itemprop="datePublished" content="January 09, 2021">
-    
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">GPIO on QEMU ARM Linux
-</h1>
-          
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-        <p>This post details how to use the GPIO peripheral on the ARM linux image 
+I"�^<p>This post details how to use the GPIO peripheral on the ARM linux image 
 built in <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">Creating an emulated ARM Linux system using Buildroot and QEMU</a></p>
 
 <h2 id="1-linux-libgpiod-library-command-line-tools">1. Linux libgpiod Library Command Line Tools</h2>
@@ -222,46 +38,48 @@ The best source of information on libgpiod
 </ul>
 
 <p>Examples (also from the documentation) of how they are used:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c"># Read the value of a single GPIO line.</span>
-    <span class="nv">$ </span>gpioget gpiochip1 23
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Examples:
+
+    # Read the value of a single GPIO line.
+    $ gpioget gpiochip1 23
     0
 
-    <span class="c"># Read two values at the same time. Set the active state of the lines</span>
-    <span class="c"># to low.</span>
-    <span class="nv">$ </span>gpioget <span class="nt">--active-low</span> gpiochip1 23 24
+    # Read two values at the same time. Set the active state of the lines
+    # to low.
+    $ gpioget --active-low gpiochip1 23 24
     1 1
 
-    <span class="c"># Set values of two lines, then daemonize and wait for a signal (SIGINT or</span>
-    <span class="c"># SIGTERM) before releasing them.</span>
-    <span class="nv">$ </span>gpioset <span class="nt">--mode</span><span class="o">=</span>signal <span class="nt">--background</span> gpiochip1 <span class="nv">23</span><span class="o">=</span>1 <span class="nv">24</span><span class="o">=</span>0
+    # Set values of two lines, then daemonize and wait for a signal (SIGINT or
+    # SIGTERM) before releasing them.
+    $ gpioset --mode=signal --background gpiochip1 23=1 24=0
 
-    <span class="c"># Set the value of a single line, then exit immediately. This is useful</span>
-    <span class="c"># for floating pins.</span>
-    <span class="nv">$ </span>gpioset gpiochip1 <span class="nv">23</span><span class="o">=</span>1
+    # Set the value of a single line, then exit immediately. This is useful
+    # for floating pins.
+    $ gpioset gpiochip1 23=1
 
-    <span class="c"># Find a GPIO line by name.</span>
-    <span class="nv">$ </span>gpiofind <span class="s2">"USR-LED-2"</span>
+    # Find a GPIO line by name.
+    $ gpiofind "USR-LED-2"
     gpiochip1 23
 
-    <span class="c"># Toggle a GPIO by name, then wait for the user to press ENTER.</span>
-    <span class="nv">$ </span>gpioset <span class="nt">--mode</span><span class="o">=</span><span class="nb">wait</span> <span class="sb">`</span>gpiofind <span class="s2">"USR-LED-2"</span><span class="sb">`</span><span class="o">=</span>1
+    # Toggle a GPIO by name, then wait for the user to press ENTER.
+    $ gpioset --mode=wait `gpiofind "USR-LED-2"`=1
 
-    <span class="c"># Wait for three rising edge events on a single GPIO line, then exit.</span>
-    <span class="nv">$ </span>gpiomon <span class="nt">--num-events</span><span class="o">=</span>3 <span class="nt">--rising-edge</span> gpiochip2 3
-    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1151.814356387]
-    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1151.815449803]
-    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1152.091556803]
+    # Wait for three rising edge events on a single GPIO line, then exit.
+    $ gpiomon --num-events=3 --rising-edge gpiochip2 3
+    event:  RISING EDGE offset: 3 timestamp: [    1151.814356387]
+    event:  RISING EDGE offset: 3 timestamp: [    1151.815449803]
+    event:  RISING EDGE offset: 3 timestamp: [    1152.091556803]
 
-    <span class="c"># Wait for a single falling edge event. Specify a custom output format.</span>
-    <span class="nv">$ </span>gpiomon <span class="nt">--format</span><span class="o">=</span><span class="s2">"%e %o %s %n"</span> <span class="nt">--falling-edge</span> gpiochip1 4
+    # Wait for a single falling edge event. Specify a custom output format.
+    $ gpiomon --format="%e %o %s %n" --falling-edge gpiochip1 4
     0 4 1156 615459801
 
-    <span class="c"># Pause execution until a single event of any type occurs. Don't print</span>
-    <span class="c"># anything. Find the line by name.</span>
-    <span class="nv">$ </span>gpiomon <span class="nt">--num-events</span><span class="o">=</span>1 <span class="nt">--silent</span> <span class="sb">`</span>gpiofind <span class="s2">"USR-IN"</span><span class="sb">`</span>
+    # Pause execution until a single event of any type occurs. Don't print
+    # anything. Find the line by name.
+    $ gpiomon --num-events=1 --silent `gpiofind "USR-IN"`
 
-    <span class="c"># Monitor multiple lines, exit after the first event.</span>
-    <span class="nv">$ </span>gpiomon <span class="nt">--silent</span> <span class="nt">--num-events</span><span class="o">=</span>1 gpiochip0 2 3 5
+    # Monitor multiple lines, exit after the first event.
+    $ gpiomon --silent --num-events=1 gpiochip0 2 3 5
 </code></pre></div></div>
 <p>`</p>
 
@@ -270,7 +88,7 @@ gpio lines can have names, all of the ones on this machine are unnamed.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/buildroot/output/images$ H=~/src/teaching
 phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/imagesphwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
-... sh
+...
 Welcome to Buildroot
 buildroot login: root
 # gpiodetect 
@@ -292,7 +110,7 @@ gpiochip0 - 8 lines:
 changes
 <a href="https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/">https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/</a>.</p>
 
-<h2 id="2-libgpiod-application-programmers-interface-programming">2. libgpiod Application Programmers’ Interface Programming</h2>
+<h2 id="step-2-libgpiod-application-programmers-interface-programming">Step 2 libgpiod Application Programmers’ Interface Programming</h2>
 <p>Here is a program (turned out more complicated than I would have
 liked) which uses libgpiod under QEMU to blink line 3 of the GPIO.</p>
 
@@ -616,16 +434,13 @@ liked) which uses libgpiod under QEMU to blink line 3 of the GPIO.</p>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
-<p>If the C program is written to ~/src/teaching/labs/lab2/gpio.c, it can be 
-compiled using:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/labs/lab2<span class="nv">$ H</span><span class="o">=</span>~/src/teaching/
-phwl@bream:~/src/teaching/labs/lab2<span class="nv">$ $H</span>/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc <span class="nt">-o</span> gpio gpio.c <span class="nt">-lgpiod</span> <span class="nt">-lpthread</span>
+<p>Put it in ~/src/teaching/labs/lab2/gpio.c and compile using:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/labs/lab2$ H=~/src/teaching/
+phwl@bream:~/src/teaching/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o gpio gpio.c -lgpiod -lpthread
 </code></pre></div></div>
 
-<p>When executed under QEMU (it needs to first be transferred to the guest via ssh), you will see:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .</span>
-phwl@10.0.2.2<span class="s1">'s password: 
-# ./gpio
+<p>When executed under QEMU you will see:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># ./gpio
 Event 1: Pin=1 at t=19925.878483s
 Event 2: Pin=0 at t=19925.978926s
 Event 3: Pin=1 at t=19926.077777s
@@ -636,30 +451,20 @@ Event 7: Pin=1 at t=19926.479734s
 Event 8: Pin=0 at t=19926.582780s
 Event 9: Pin=1 at t=19926.681464s
 Event 10: Pin=0 at t=19926.784994s
-</span></code></pre></div></div>
+</code></pre></div></div>
 
 <p>In a normal embedded system, the program would be similar to this
 one <a href="https://gist.github.com/microhobby/a10a0052b8a2f0590f682335cb58f301#file-demolibgpiod-c">here</a>. However, under QEMU we do not have an LED to turn 
 on and off so we need to find a way to show the state of the line.
-Thus the program is multithreaded (using <a href="https://computing.llnl.gov/tutorials/pthreads/">POSIX threads</a>).</p>
-
-<p>The gpio_reader() function checks when a pin changes
-state (via gpiod_line_event_wait()). This function will return
-with a value &gt; 0 if an event has occurred and we print the pin state and time. Otherwise, it either encountered
-an error or timed out.</p>
-
-<p>The gpio_writer() function
+Thus the program is multithreaded (using <a href="https://computing.llnl.gov/tutorials/pthreads/">POSIX threads</a>), with gpio_reader() checking when a pin changes
+state. The gpio_writer() function
 toggles the output. In both these functions, a mutual exclusion (via the 
 mutexline variable) is used to 
 ensure that only the reader or writer has access to the line, i.e. libgpiod
 only allows the line to be  an output (via gpiod_line_request_output()) or
 an event (via gpiod_line_request_both_edges_events()), not both.</p>
 
-<p>These two functions run in parallel and when they get the line, will
-perform their task, after which they sleep (via nanosleep()). The gpio_reader()
-function executes about 100x faster than the writer.</p>
-
-<h2 id="3-driver">3. Driver</h2>
+<h2 id="step-3-driver">Step 3 Driver</h2>
 <p>The peripheral used in the
 qemu_aarch64_virt machine is described in the 
  <a href="https://developer.arm.com/documentation/ddi0190/b">ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual</a> (which we will call the datasheet) GPIO device. There are
@@ -673,294 +478,4 @@ two ways to find out its start address in memory. During boot up, the message</p
 <p>Thus the start address (GPIOBASE in the datasheet) is 0x9030000.
 The address of GPIODIR is 0x9030400.</p>
 
-
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/tags/#embedded" class="page__taxonomy-item" rel="tag">embedded</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-  
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      
-      
-      <a href="/categories/#academia" class="page__taxonomy-item" rel="tag">academia</a>
-    
-    </span>
-  </p>
-
-
-        
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-09T21:26:12+11:00">January 09, 2021</time></p>
-        
-      </footer>
-
-      <section class="page__share">
-  
-    <h4 class="page__share-title">Share on</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=GPIO+on+QEMU+ARM+Linux%20http%3A%2F%2Flocalhost%3A4000%2F2021%2FQEMU-ARM-Linux-gpio%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2FQEMU-ARM-Linux-gpio%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2FQEMU-ARM-Linux-gpio%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" class="pagination--pager" title="Creating an emulated ARM Linux system using Buildroot and QEMU
-">Previous</a>
-    
-    
-      <a href="#" class="pagination--pager disabled">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h4 class="page__related-title">You may also enjoy</h4>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
-        <img src=
-          
-            "/assets/images/2021/01/armlogo.jpeg"
-          
-          alt="Creating an emulated ARM Linux system using Buildroot and QEMU"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="permalink">Creating an emulated ARM Linux system using Buildroot and QEMU
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/hawkesbury-2020/">
-        <img src=
-          
-            "/assets/images/2020/12/IMG_7430.jpeg"
-          
-          alt="Hawkesbury River 2020"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/hawkesbury-2020/" rel="permalink">Hawkesbury River 2020
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">As has been the custom for many years, I went for a camping/fishing
-trip with high-school friend Warren on the Hawkesbury River (here
-is a list of previous trips).
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/tasmanian-holiday/">
-        <img src=
-          
-            "/assets/images/2020/12/IMG_7254.jpeg"
-          
-          alt="Tasmanian Holiday"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/tasmanian-holiday/" rel="permalink">Tasmanian Holiday
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Went to Tasmania for a few days. Last time I was here was
-2015.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/computer-engineering-lab-christmas-party/">
-        <img src=
-          
-            "/assets/images/2020/12/celchristmas20.jpeg"
-          
-          alt="Computer Engineering Lab Christmas Party Photo"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/computer-engineering-lab-christmas-party/" rel="permalink">Computer Engineering Lab Christmas Party Photo
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">A little late this year (and down on numbers due to COVID) but we had an
-enjoyable Christmas party.
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
-</div>
-
-    </div>
-
-    
-      <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
-
-      </div>
-    
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <!-- start custom footer snippets -->
-
-<!-- end custom footer snippets -->
-        <div class="page__footer-follow">
-  <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
-    
-
-    
-      
-        
-      
-        
-      
-        
-      
-        
-          <li><a href="https://facebook.com/pleong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-        
-      
-        
-          <li><a href="https://github.com/phwl" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://linkedin.com/in/philip-h-w-leong-949484" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-f" aria-hidden="true"></i> LinkedIn</a></li>
-        
-      
-        
-      
-    
-
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; 2021 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-
-      </footer>
-    </div>
-
-    
-  <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-
-
-
-
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
-
-
-
-
-
-
-
-  </body>
-</html>
+:ET
