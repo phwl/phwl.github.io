@@ -116,9 +116,198 @@ Here is a link to a tutorial explaining the
 changes
 <https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/>.
 
-## 2. libgpiod Application Programmers' Interface Programming
-Here is a program (turned out more complicated than I would have
-liked) which uses libgpiod under QEMU to blink line 3 of the GPIO.
+## 2. Blink
+
+### 2.1 Using gpiod
+Using the gpiod library, 
+the following program will change the state of pin 3 on gpiochip0 ten times.
+
+{% highlight C linenos %}
+/*
+**    blink.c -    blink gpiochip0 line 3 with delay given by either
+**                 the command line or the default (NSPERIOD)
+*/
+
+#include <stdio.h>
+#include <unistd.h>
+#include <gpiod.h>
+
+#define NSPERIOD    200000000ULL    /* output period in ns */
+
+int 
+main(int argc, char *argv[])
+{
+    struct gpiod_chip *output_chip;
+    struct gpiod_line *output_line;
+    struct timespec delay = {0, NSPERIOD};
+    struct timespec rem;
+    int line_value;
+
+    if (argc == 2)
+        delay.tv_nsec = atoll(argv[1]);
+
+    /* open /dev/gpiochip0 */
+    output_chip = gpiod_chip_open_by_number(0);
+    
+    /* work on pin 3 */
+    output_line = gpiod_chip_get_line(output_chip, 3);
+
+    /* config as output and set a description */
+    gpiod_line_request_output(output_line, "blink",
+                  GPIOD_LINE_ACTIVE_STATE_HIGH);
+
+    for (int i = 0; i < 10; i++)
+    {
+        line_value = !line_value;
+        gpiod_line_set_value(output_line, line_value);
+            nanosleep(&delay, &rem);
+    }
+    
+    return 0;
+}
+{% endhighlight %}
+
+If the C program is written to ~/src/teaching/labs/lab2/blink.c, it can be 
+compiled using:
+``` sh
+phwl@bream:~/src/teaching/labs/lab2$ H=~/src/teaching/
+phwl@bream:~/src/teaching/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o blink blink.c -lgpiod 
+```
+
+In QEMU you can copy the file from the host to the guest and execute:
+``` sh
+# scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .
+phwl@10.0.2.2's password: 
+# ./gpio
+#
+```
+
+### 2.2 Displaying GPIO_DATA
+Nothing appears to happen as there is no output in QEMU. Normally in
+an embedded system (as the name of the program suggests), we would 
+have the GPIO line connected to an LED, which would blink according
+to the program.
+
+The GPIO peripheral used in the
+qemu_aarch64_virt machine is described in the 
+ [ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual](https://developer.arm.com/documentation/ddi0190/b) (which we will call the datasheet).  During boot up, the message
+```
+pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+```
+or using
+```info mtree``` in the QEMU monitor, you get
+```
+0000000009030000-0000000009030fff (prio 0, i/o): pl061
+```
+shows that the start address (GPIOBASE in the datasheet) is 0x9030000.
+The address of GPIODATA is 0x9030000-0x9030ff and GPIODIR is 0x9030400.
+
+We can use the following program to interrogate the state of the GPIODATA
+register in the PL061 and print its value when it changes.
+
+{% highlight C linenos %}
+/*
+**    pl061-change.c     - display changes to the GPIO_GPIODATA state
+*/
+
+#include <stdio.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <time.h>
+
+#define GPIO0_START_ADDR 0x09030000
+#define GPIO0_END_ADDR   0x09030fff
+#define GPIO0_SIZE (GPIO0_END_ADDR - GPIO0_START_ADDR)
+
+#define GPIO_GPIODATA    0
+
+/* high resolution time stamp */
+double
+gethrtime()
+{
+    int    r;
+    int64_t    ts;
+    struct timespec t;
+
+    /* read the time stamp */
+    r = clock_gettime(CLOCK_MONOTONIC, &t);
+    ts = (int64_t)(t.tv_sec) * (int64_t)1000000000 + (int64_t)(t.tv_nsec);
+    return ts / 1.0e9;
+}
+
+int
+main()
+{
+    volatile void *gpio_addr;
+    volatile unsigned char *gpio_gpiodata_addr;
+    unsigned char        c, oldc;
+
+    int fd = open("/dev/mem", O_RDWR);
+    gpio_addr = mmap(0, GPIO0_SIZE, PROT_READ | PROT_WRITE, 
+            MAP_SHARED, fd, GPIO0_START_ADDR);
+
+    gpio_gpiodata_addr   = gpio_addr + GPIO_GPIODATA + 0xff;
+
+    
+    oldc = c = *gpio_gpiodata_addr;
+
+    for (;;)
+    {
+        c = *gpio_gpiodata_addr;
+        if (c != oldc)
+        {
+            oldc = c;
+            printf("GPIODATA=%x (t=%fs)\n", c, gethrtime());
+        }
+    }
+}
+{% endhighlight %}
+
+After copying it to the guest, it can be used to verify blink as follows:
+``` sh
+# ./pl061-change &
+# ./blink 
+GPIODATA=8 (t=46.833710s)
+GPIODATA=0 (t=47.033845s)
+GPIODATA=8 (t=47.233977s)
+GPIODATA=0 (t=47.434119s)
+GPIODATA=8 (t=47.634252s)
+GPIODATA=0 (t=47.834385s)
+GPIODATA=8 (t=48.034518s)
+GPIODATA=0 (t=48.234652s)
+GPIODATA=8 (t=48.434785s)
+GPIODATA=0 (t=48.634919s)
+```
+
+The time on the output shows that the period of the GPIO output change
+is roughly 0.2s which is close to the value of NSPERIOD (the desired delay
+in nanoseconds) specified in blink.c.
+
+## 3. libgpiod Application Programmers' Interface Programming
+Is it possible to display the state of the GPIO while simultaneously
+writing to it? Normally, we would not have a good use case for that
+but it is possible, even in QEMU.
+The solution turned out more complicated than I would have
+liked because libgpiod prevents simultaneous use. 
+
+
+The program below is multithreaded (using [POSIX threads](https://computing.llnl.gov/tutorials/pthreads/)).
+The gpio_reader() function checks when a pin changes
+state (via gpiod_line_event_wait()). This function will return
+with a value > 0 if an event has occurred and we print the pin state and time. Otherwise, it either encountered
+an error or timed out. 
+The gpio_writer() function
+toggles the output. In both these functions, a mutual exclusion (via the 
+mutexline variable) is used to 
+ensure that only the reader or writer has access to the line, i.e. libgpiod
+only allows the line to be  an output (via gpiod_line_request_output()) or
+an event (via gpiod_line_request_both_edges_events()), not both.
+
+These two functions run in parallel and when they get the line, will
+perform their task, after which they sleep (via nanosleep()). The gpio_reader()
+function executes about 100x faster than the writer.
 
 {% highlight C linenos %}
 /*
@@ -305,40 +494,4 @@ Event 8: Pin=0 at t=19926.582780s
 Event 9: Pin=1 at t=19926.681464s
 Event 10: Pin=0 at t=19926.784994s
 ```
-
-In a normal embedded system, the program would be similar to this
-one [here](https://gist.github.com/microhobby/a10a0052b8a2f0590f682335cb58f301#file-demolibgpiod-c). However, under QEMU we do not have an LED to turn 
-on and off so we need to find a way to show the state of the line.
-Thus the program is multithreaded (using [POSIX threads](https://computing.llnl.gov/tutorials/pthreads/)).
-
-The gpio_reader() function checks when a pin changes
-state (via gpiod_line_event_wait()). This function will return
-with a value > 0 if an event has occurred and we print the pin state and time. Otherwise, it either encountered
-an error or timed out. 
-
-The gpio_writer() function
-toggles the output. In both these functions, a mutual exclusion (via the 
-mutexline variable) is used to 
-ensure that only the reader or writer has access to the line, i.e. libgpiod
-only allows the line to be  an output (via gpiod_line_request_output()) or
-an event (via gpiod_line_request_both_edges_events()), not both.
-
-These two functions run in parallel and when they get the line, will
-perform their task, after which they sleep (via nanosleep()). The gpio_reader()
-function executes about 100x faster than the writer.
-
-## 3. Driver
-The GPIO peripheral used in the
-qemu_aarch64_virt machine is described in the 
- [ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual](https://developer.arm.com/documentation/ddi0190/b) (which we will call the datasheet).  During boot up, the message
-```
-pl061_gpio 9030000.pl061: PL061 GPIO chip registered
-```
-or using
-```info mtree``` in the QEMU monitor, you get
-```
-0000000009030000-0000000009030fff (prio 0, i/o): pl061
-```
-shows that the start address (GPIOBASE in the datasheet) is 0x9030000.
-The address of GPIODIR is 0x9030400.
 

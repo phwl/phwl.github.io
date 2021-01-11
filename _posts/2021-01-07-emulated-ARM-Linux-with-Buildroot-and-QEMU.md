@@ -40,7 +40,6 @@ make menuconfig
 
 Under ```menuconfig```
  1. Select Kernel > Linux Kernel Tools > gpio
- 1. Select Filesystem images > "cpio the root filesystem", 
  1. Select Target Packages > Libraries > Hardware Handling > libgiod and its install tools
 ```
 
