@@ -287,25 +287,41 @@ in nanoseconds) specified in blink.c.
 
 ## 3. libgpiod Application Programmers' Interface Programming
 Is it possible to display the state of the GPIO while simultaneously
-writing to it? Normally, we would not have a good use case for that
-but it is possible, even in QEMU.
-The solution turned out more complicated than I would have
-liked because libgpiod prevents simultaneous use. 
+writing to it? The first shell command sets gpiochip0 line 1,
+and stays in the background (the -b option) for 10 seconds (-mtime -s10)
+before ending. You can't read the line with gpioget until the gpioset
+program ends.
 
+```sh
+# gpioset -b -mtime -s10 gpiochip0 1=1
+# gpioget gpiochip0 1
+gpioget: error reading GPIO values: Device or resource busy
+# 
+```
 
-The program below is multithreaded (using [POSIX threads](https://computing.llnl.gov/tutorials/pthreads/)).
-The gpio_reader() function checks when a pin changes
-state (via gpiod_line_event_wait()). This function will return
-with a value > 0 if an event has occurred and we print the pin state and time. Otherwise, it either encountered
-an error or timed out. 
-The gpio_writer() function
-toggles the output. In both these functions, a mutual exclusion (via the 
-mutexline variable) is used to 
-ensure that only the reader or writer has access to the line, i.e. libgpiod
-only allows the line to be  an output (via gpiod_line_request_output()) or
-an event (via gpiod_line_request_both_edges_events()), not both.
+Normally, we use the GPIO pins to control something and don't need
+to read what we wrote. But is it possible to do so in QEMU?  The
+solution turned out more complicated than I would have liked.
 
-These two functions run in parallel and when they get the line, will
+The first thing is that we want to do the read and write in parallel,
+not as two separate processes. There are many ways to do this but
+multithreading (using [POSIX threads](https://computing.llnl.gov/tutorials/pthreads/)) is one solution. The second problem is that the writer must release the
+line so that the reader can access it or you get the same "Device or
+resource busy" error.
+
+The code below implements these ideas.  The gpio_reader() function
+checks when a pin changes and prints the new state. This
+gpiod_line_event_wait() function will return with a value > 0 if
+an event has occurred and we print the pin state and time. Otherwise,
+it either encountered an error or timed out.  The gpio_writer()
+function toggles the output after a fixed delay, specified in the
+delay structure. A mutual exclusion (via the mutexline variable)
+is used to ensure that only the reader or writer has access to the
+line at any time. This restricts the line to either be an output
+(via gpiod_line_request_output()) or an event (via
+gpiod_line_request_both_edges_events()) at any time, not both.
+
+These two threads run in parallel and when they get the line, will
 perform their task, after which they sleep (via nanosleep()). The gpio_reader()
 function executes about 100x faster than the writer.
 
