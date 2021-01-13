@@ -91,8 +91,9 @@ Examples (also from the documentation) of how they are used:
 Here we use the ```libgpiod``` tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
 gpio lines can have names, all of the ones on this machine are unnamed.
 ```
-phwl@bream:~/src/teaching/buildroot/output/images$ H=~/src/teaching
-phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/imagesphwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+phwl@bream:~/elec3607/buildroot/output/images$ H=~/elec3607
+phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 ... sh
 Welcome to Buildroot
@@ -170,8 +171,8 @@ main(int argc, char *argv[])
 If the C program is written to ~/src/teaching/labs/lab2/blink.c, it can be 
 compiled using:
 ``` sh
-phwl@bream:~/src/teaching/labs/lab2$ H=~/src/teaching/
-phwl@bream:~/src/teaching/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o blink blink.c -lgpiod 
+phwl@bream:~/elec3607/labs/lab2$ H=~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o blink blink.c -lgpiod 
 ```
 
 In QEMU you can copy the file from the host to the guest and execute:
@@ -490,8 +491,8 @@ main(int argc, char **argv)
 If the C program is written to ~/src/teaching/labs/lab2/gpio.c, it can be 
 compiled using:
 ``` sh
-phwl@bream:~/src/teaching/labs/lab2$ H=~/src/teaching/
-phwl@bream:~/src/teaching/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o gpio gpio.c -lgpiod -lpthread
+phwl@bream:~/elec3607/labs/lab2$ H=~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2$ $H/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc -o gpio gpio.c -lgpiod -lpthread
 ```
 
 When executed under QEMU (it needs to first be transferred to the guest via ssh), you will see:

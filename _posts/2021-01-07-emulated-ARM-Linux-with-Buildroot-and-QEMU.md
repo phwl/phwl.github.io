@@ -29,27 +29,49 @@ for details.
 Download buildroot, generate an initial ```.config``` file
 and start ```menuconfig```.
 ``` sh
-H=~/src/teaching # or whatever directory you want to use
-cd $H
-sudo apt install libncurses-dev git
-git clone git://git.buildroot.net/buildroot
-cd buildroot
-make qemu_aarch64_virt_defconfig
-make menuconfig
+phwl@bream:~$ H=~/elec3607/
+phwl@bream:~$ mkdir $H
+phwl@bream:~$ cd $H
+phwl@bream:~/elec3607$ git clone git://git.buildroot.net/buildroot
+Cloning into 'buildroot'...
+remote: Enumerating objects: 24805, done.
+remote: Counting objects: 100% (24805/24805), done.
+remote: Compressing objects: 100% (11902/11902), done.
+remote: Total 401699 (delta 15432), reused 20763 (delta 12840), pack-reused 376894
+Receiving objects: 100% (401699/401699), 87.06 MiB | 5.76 MiB/s, done.
+Resolving deltas: 100% (279114/279114), done.
+phwl@bream:~/elec3607$ cd buildroot/
+phwl@bream:~/elec3607/buildroot$ make qemu_aarch64_virt_defconfig
+mkdir -p /home/phwl/elec3607/buildroot/output/build/buildroot-config/lxdialog
+PKG_CONFIG_PATH="" make CC="/usr/bin/gcc" HOSTCC="/usr/bin/gcc" \
+    obj=/home/phwl/elec3607/buildroot/output/build/buildroot-config -C support/kconfig -f Makefile.br conf
+/usr/bin/gcc -D_GNU_SOURCE -D_DEFAULT_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -I/home/phwl/elec3607/buildroot/output/build/buildroot-config -DCONFIG_=\"\"  -MM *.c > /home/phwl/elec3607/buildroot/output/build/buildroot-config/.depend 2>/dev/null || :
+/usr/bin/gcc -D_GNU_SOURCE -D_DEFAULT_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -I/home/phwl/elec3607/buildroot/output/build/buildroot-config -DCONFIG_=\"\"   -c conf.c -o /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf.o
+/usr/bin/gcc -D_GNU_SOURCE -D_DEFAULT_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -I/home/phwl/elec3607/buildroot/output/build/buildroot-config -DCONFIG_=\"\"  -I. -c /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.c -o /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.o
+/usr/bin/gcc -D_GNU_SOURCE -D_DEFAULT_SOURCE -DCURSES_LOC="<ncurses.h>" -DLOCALE  -I/home/phwl/elec3607/buildroot/output/build/buildroot-config -DCONFIG_=\"\"   /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf.o /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.o  -o /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf
+rm /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.c
+#
+# configuration written to /home/phwl/elec3607/buildroot/.config
+#
+phwl@bream:~/elec3607/buildroot$ make menuconfig
 ```
 
 Under ```menuconfig```
+```
  1. Select Kernel > Linux Kernel Tools > gpio
- 1. Select Target Packages > Libraries > Hardware Handling > libgiod and its install tools
+ 1. Select Target Packages > Libraries > Hardware Handling > libgiod 
+ 1. Select Target Packages > Libraries > Hardware Handling > libgiod install tools
 ```
 
-Then type 
+Then save and type 
 ```sh
 make linux-menuconfig
 ``` 
 
 After a while you will see the Linux kernel configuration menu. 
+```
  1. Select Device Drivers > GPIO Support > Memory mapped GPIO drivers > PrimeCell PL061 GPIO support
+```
 
 Build the image with
 ```sh
@@ -64,7 +86,7 @@ cd output/images
 
 You should see the following output:
 ```sh
-phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 Linux version 5.4.58 (phwl@bream) (gcc version 9.3.0 (Buildroot 2020.11-607-gb4db6905a4)) #1 SMP Fri Jan 8 20:11:45 AEDT 2021
 Machine model: linux,dummy-virt
@@ -432,8 +454,8 @@ $H/buildroot/output/host/bin/aarch64-linux-gcc -o hello hello.c
 ```
 Start up the guest Linux with QEMU,copy the file from the host and execute
 ```
-phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
-phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 ...
 Starting sshd: OK

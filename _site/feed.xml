@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-11T23:35:31+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-13T22:35:02+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;
@@ -83,8 +83,9 @@ The best source of information on libgpiod
 
 &lt;p&gt;Here we use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libgpiod&lt;/code&gt; tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
 gpio lines can have names, all of the ones on this machine are unnamed.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images$ H=~/src/teaching
-phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/imagesphwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/elec3607/buildroot/output/images$ H=~/elec3607
+phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 ... sh
 Welcome to Buildroot
@@ -202,8 +203,8 @@ the following program will change the state of pin 3 on gpiochip0 ten times.&lt;
 
 &lt;p&gt;If the C program is written to ~/src/teaching/labs/lab2/blink.c, it can be 
 compiled using:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching/
-phwl@bream:~/src/teaching/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt;/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; blink blink.c &lt;span class=&quot;nt&quot;&gt;-lgpiod&lt;/span&gt; 
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt;/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; blink blink.c &lt;span class=&quot;nt&quot;&gt;-lgpiod&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In QEMU you can copy the file from the host to the guest and execute:&lt;/p&gt;
@@ -365,9 +366,48 @@ register in the PL061 and print its value when it changes.&lt;/p&gt;
 &lt;span class=&quot;nv&quot;&gt;GPIODATA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;48.634919s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;The time on the output shows that the period of the GPIO output change
+is roughly 0.2s which is close to the value of NSPERIOD (the desired delay
+in nanoseconds) specified in blink.c.&lt;/p&gt;
+
 &lt;h2 id=&quot;3-libgpiod-application-programmers-interface-programming&quot;&gt;3. libgpiod Application Programmers’ Interface Programming&lt;/h2&gt;
-&lt;p&gt;Here is a program (turned out more complicated than I would have
-liked) which uses libgpiod under QEMU to blink line 3 of the GPIO.&lt;/p&gt;
+&lt;p&gt;Is it possible to display the state of the GPIO while simultaneously
+writing to it? The first shell command sets gpiochip0 line 1,
+and stays in the background (the -b option) for 10 seconds (-mtime -s10)
+before ending. You can’t read the line with gpioget until the gpioset
+program ends.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# gpioset -b -mtime -s10 gpiochip0 1=1&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# gpioget gpiochip0 1&lt;/span&gt;
+gpioget: error reading GPIO values: Device or resource busy
+&lt;span class=&quot;c&quot;&gt;# &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Normally, we use the GPIO pins to control something and don’t need
+to read what we wrote. But is it possible to do so in QEMU?  The
+solution turned out more complicated than I would have liked.&lt;/p&gt;
+
+&lt;p&gt;The first thing is that we want to do the read and write in parallel,
+not as two separate processes. There are many ways to do this but
+multithreading (using &lt;a href=&quot;https://computing.llnl.gov/tutorials/pthreads/&quot;&gt;POSIX threads&lt;/a&gt;) is one solution. The second problem is that the writer must release the
+line so that the reader can access it or you get the same “Device or
+resource busy” error.&lt;/p&gt;
+
+&lt;p&gt;The code below implements these ideas.  The gpio_reader() function
+checks when a pin changes and prints the new state. This
+gpiod_line_event_wait() function will return with a value &amp;gt; 0 if
+an event has occurred and we print the pin state and time. Otherwise,
+it either encountered an error or timed out.  The gpio_writer()
+function toggles the output after a fixed delay, specified in the
+delay structure. A mutual exclusion (via the mutexline variable)
+is used to ensure that only the reader or writer has access to the
+line at any time. This restricts the line to either be an output
+(via gpiod_line_request_output()) or an event (via
+gpiod_line_request_both_edges_events()) at any time, not both.&lt;/p&gt;
+
+&lt;p&gt;These two threads run in parallel and when they get the line, will
+perform their task, after which they sleep (via nanosleep()). The gpio_reader()
+function executes about 100x faster than the writer.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -691,8 +731,8 @@ liked) which uses libgpiod under QEMU to blink line 3 of the GPIO.&lt;/p&gt;
 
 &lt;p&gt;If the C program is written to ~/src/teaching/labs/lab2/gpio.c, it can be 
 compiled using:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching/
-phwl@bream:~/src/teaching/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt;/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; gpio gpio.c &lt;span class=&quot;nt&quot;&gt;-lgpiod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lpthread&lt;/span&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt;/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; gpio gpio.c &lt;span class=&quot;nt&quot;&gt;-lgpiod&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-lpthread&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;When executed under QEMU (it needs to first be transferred to the guest via ssh), you will see:&lt;/p&gt;
@@ -709,28 +749,7 @@ Event 7: Pin=1 at t=19926.479734s
 Event 8: Pin=0 at t=19926.582780s
 Event 9: Pin=1 at t=19926.681464s
 Event 10: Pin=0 at t=19926.784994s
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;In a normal embedded system, the program would be similar to this
-one &lt;a href=&quot;https://gist.github.com/microhobby/a10a0052b8a2f0590f682335cb58f301#file-demolibgpiod-c&quot;&gt;here&lt;/a&gt;. However, under QEMU we do not have an LED to turn 
-on and off so we need to find a way to show the state of the line.
-Thus the program is multithreaded (using &lt;a href=&quot;https://computing.llnl.gov/tutorials/pthreads/&quot;&gt;POSIX threads&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;The gpio_reader() function checks when a pin changes
-state (via gpiod_line_event_wait()). This function will return
-with a value &amp;gt; 0 if an event has occurred and we print the pin state and time. Otherwise, it either encountered
-an error or timed out.&lt;/p&gt;
-
-&lt;p&gt;The gpio_writer() function
-toggles the output. In both these functions, a mutual exclusion (via the 
-mutexline variable) is used to 
-ensure that only the reader or writer has access to the line, i.e. libgpiod
-only allows the line to be  an output (via gpiod_line_request_output()) or
-an event (via gpiod_line_request_both_edges_events()), not both.&lt;/p&gt;
-
-&lt;p&gt;These two functions run in parallel and when they get the line, will
-perform their task, after which they sleep (via nanosleep()). The gpio_reader()
-function executes about 100x faster than the writer.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-buildroot&quot;&gt;1. Buildroot&lt;/h2&gt;
 
@@ -746,30 +765,46 @@ for details.&lt;/p&gt;
 
 &lt;p&gt;Download buildroot, generate an initial &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.config&lt;/code&gt; file
 and start &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menuconfig&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/src/teaching &lt;span class=&quot;c&quot;&gt;# or whatever directory you want to use&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libncurses-dev git
-git clone git://git.buildroot.net/buildroot
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;buildroot
-make qemu_aarch64_virt_defconfig
-make menuconfig
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~&lt;span class=&quot;nv&quot;&gt;$ H&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/elec3607/
+phwl@bream:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
+phwl@bream:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
+phwl@bream:~/elec3607&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://git.buildroot.net/buildroot
+Cloning into &lt;span class=&quot;s1&quot;&gt;'buildroot'&lt;/span&gt;...
+remote: Enumerating objects: 24805, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Counting objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;24805/24805&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;11902/11902&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Total 401699 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 15432&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 20763 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 12840&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 376894
+Receiving objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;401699/401699&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, 87.06 MiB | 5.76 MiB/s, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Resolving deltas: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;279114/279114&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+phwl@bream:~/elec3607&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;buildroot/
+phwl@bream:~/elec3607/buildroot&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make qemu_aarch64_virt_defconfig
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/lxdialog
+&lt;span class=&quot;nv&quot;&gt;PKG_CONFIG_PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt; make &lt;span class=&quot;nv&quot;&gt;CC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/usr/bin/gcc&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;HOSTCC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/usr/bin/gcc&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/phwl/elec3607/buildroot/output/build/buildroot-config &lt;span class=&quot;nt&quot;&gt;-C&lt;/span&gt; support/kconfig &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; Makefile.br conf
+/usr/bin/gcc &lt;span class=&quot;nt&quot;&gt;-D_GNU_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D_DEFAULT_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DCURSES_LOC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ncurses.h&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DLOCALE&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt;/home/phwl/elec3607/buildroot/output/build/buildroot-config &lt;span class=&quot;nt&quot;&gt;-DCONFIG_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\&quot;&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-MM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.c &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/.depend 2&amp;gt;/dev/null &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; :
+/usr/bin/gcc &lt;span class=&quot;nt&quot;&gt;-D_GNU_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D_DEFAULT_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DCURSES_LOC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ncurses.h&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DLOCALE&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt;/home/phwl/elec3607/buildroot/output/build/buildroot-config &lt;span class=&quot;nt&quot;&gt;-DCONFIG_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\&quot;&lt;/span&gt;   &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; conf.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf.o
+/usr/bin/gcc &lt;span class=&quot;nt&quot;&gt;-D_GNU_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D_DEFAULT_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DCURSES_LOC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ncurses.h&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DLOCALE&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt;/home/phwl/elec3607/buildroot/output/build/buildroot-config &lt;span class=&quot;nt&quot;&gt;-DCONFIG_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\&quot;&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.c &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.o
+/usr/bin/gcc &lt;span class=&quot;nt&quot;&gt;-D_GNU_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D_DEFAULT_SOURCE&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DCURSES_LOC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;ncurses.h&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-DLOCALE&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-I&lt;/span&gt;/home/phwl/elec3607/buildroot/output/build/buildroot-config &lt;span class=&quot;nt&quot;&gt;-DCONFIG_&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;\&quot;&lt;/span&gt;   /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf.o /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.o  &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/conf
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; /home/phwl/elec3607/buildroot/output/build/buildroot-config/zconf.tab.c
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# configuration written to /home/phwl/elec3607/buildroot/.config&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;
+phwl@bream:~/elec3607/buildroot&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make menuconfig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;menuconfig&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Select Kernel &amp;gt; Linux Kernel Tools &amp;gt; gpio&lt;/li&gt;
-  &lt;li&gt;Select Target Packages &amp;gt; Libraries &amp;gt; Hardware Handling &amp;gt; libgiod and its install tools
-```&lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1. Select Kernel &amp;gt; Linux Kernel Tools &amp;gt; gpio
+ 1. Select Target Packages &amp;gt; Libraries &amp;gt; Hardware Handling &amp;gt; libgiod 
+ 1. Select Target Packages &amp;gt; Libraries &amp;gt; Hardware Handling &amp;gt; libgiod install tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Then type&lt;/p&gt;
+&lt;p&gt;Then save and type&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make linux-menuconfig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;After a while you will see the Linux kernel configuration menu.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Select Device Drivers &amp;gt; GPIO Support &amp;gt; Memory mapped GPIO drivers &amp;gt; PrimeCell PL061 GPIO support&lt;/li&gt;
-&lt;/ol&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 1. Select Device Drivers &amp;gt; GPIO Support &amp;gt; Memory mapped GPIO drivers &amp;gt; PrimeCell PL061 GPIO support
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Build the image with&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;make
@@ -781,7 +816,7 @@ make menuconfig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see the following output:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./start-qemu.sh 
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/elec3607/buildroot/output/images&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;0x410fd034]
 Linux version 5.4.58 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;phwl@bream&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;gcc version 9.3.0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Buildroot 2020.11-607-gb4db6905a4&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#1 SMP Fri Jan 8 20:11:45 AEDT 2021&lt;/span&gt;
 Machine model: linux,dummy-virt
@@ -1148,8 +1183,8 @@ buildroot created:&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;/buildroot/output/host/bin/aarch64-linux-gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; hello hello.c
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Start up the guest Linux with QEMU,copy the file from the host and execute&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
-phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 ...
 Starting sshd: OK
