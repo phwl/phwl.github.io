@@ -78,7 +78,7 @@ Build the image with
 time make
 ```
 
-After a while (15 minutes on my desktop machine), it should finish and then run QEMU using:
+After a while (30 minutes on my desktop machine), it should finish and then run QEMU using:
 ```sh
 cd output/images
 ./start-qemu.sh 
