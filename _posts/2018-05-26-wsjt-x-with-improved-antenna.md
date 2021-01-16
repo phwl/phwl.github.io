@@ -10,7 +10,7 @@ categories:
 tags:
 - hobbies
 header:
-  teaser: /assets/images/2021/01/wspr-080121.png
+  teaser: /assets/images/2021/01/wspr-100121.png
 ---
 
 # 26 May 2018
