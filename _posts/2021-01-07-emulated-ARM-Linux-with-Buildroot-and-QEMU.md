@@ -386,6 +386,13 @@ memory-region: system
 (qemu) 
 ```
 
+You can also examine memory addresses e.g. to display a word at physical
+memory address 0x903000:
+```
+(qemu) xp /x 0x09030000
+0000000009030000: 0x00000000
+```
+
 The ```./start-qemu.sh``` script is shown below. It emulates a Cortex-A53 which is an ARMv8-A 64-bit processor.
 ```
 #!/bin/sh
