@@ -399,7 +399,7 @@ else
     EXTRA_ARGS=''
 fi
 
-export PATH="/home/phwl/src/teaching/buildroot/output/host/bin:${PATH}"
+export PATH="/home/phwl/elec3607/buildroot/output/host/bin:${PATH}"
 exec qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 -kernel Image
  -append "rootwait root=/dev/vda console=ttyAMA0" -netdev user,id=eth0 -device v
 irtio-net-device,netdev=eth0 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 -
@@ -462,7 +462,7 @@ Starting sshd: OK
 
 Welcome to Buildroot
 buildroot login: root
-# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+# scp phwl@10.0.2.2:elec3607/labs/lab1/hello .
 phwl@10.0.2.2's password: 
 hello                                         100% 8680   852.3KB/s   00:00    
 # ./hello
