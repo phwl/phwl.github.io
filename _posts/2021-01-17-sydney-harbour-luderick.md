@@ -19,5 +19,6 @@ Went for a fish in Sydney Harbour with Beard this afternoon.
 <!-- more -->
 Arrived near the bottom of the low tide, water was murky which is
 good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Then nothing happened for the rest of
-the afternoon. At least I opened my account for the year!
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.
