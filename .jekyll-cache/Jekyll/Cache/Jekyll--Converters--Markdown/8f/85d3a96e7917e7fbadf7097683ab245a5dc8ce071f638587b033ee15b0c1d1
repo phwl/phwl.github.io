@@ -1,4 +1,4 @@
-I"‡}<p>This post details how to build an ARM linux image via <a href="https://buildroot.org">buildroot</a>, and emulate it using <a href="https://www.qemu.org/">QEMU</a>. This was done using an Ubuntu 18.04.5 LTS host machine.</p>
+I":<p>This post details how to build an ARM linux image via <a href="https://buildroot.org">buildroot</a>, and emulate it using <a href="https://www.qemu.org/">QEMU</a>. This was done using an Ubuntu 18.04.5 LTS host machine.</p>
 
 <h2 id="1-buildroot">1. Buildroot</h2>
 
@@ -15,6 +15,7 @@ for details.</p>
 <p>Download buildroot, generate an initial <code class="language-plaintext highlighter-rouge">.config</code> file
 and start <code class="language-plaintext highlighter-rouge">menuconfig</code>.</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~<span class="nv">$ H</span><span class="o">=</span>~/elec3607/
+phwl@bream:~<span class="nv">$ </span><span class="nb">mkdir</span> <span class="nv">$H</span>
 phwl@bream:~<span class="nv">$ </span><span class="nb">cd</span> <span class="nv">$H</span>
 phwl@bream:~/elec3607<span class="nv">$ </span>git clone git://git.buildroot.net/buildroot
 Cloning into <span class="s1">'buildroot'</span>...
@@ -58,13 +59,13 @@ phwl@bream:~/elec3607/buildroot<span class="nv">$ </span>make menuconfig
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">time </span>make
 </code></pre></div></div>
 
-<p>After a while (15 minutes on my desktop machine), it should finish and then run QEMU using:</p>
+<p>After a while (30 minutes on my desktop machine), it should finish and then run QEMU using:</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>output/images
 ./start-qemu.sh 
 </code></pre></div></div>
 
 <p>You should see the following output:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/buildroot/output/images<span class="nv">$ </span>./start-qemu.sh 
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/elec3607/buildroot/output/images<span class="nv">$ </span>./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 <span class="o">[</span>0x410fd034]
 Linux version 5.4.58 <span class="o">(</span>phwl@bream<span class="o">)</span> <span class="o">(</span>gcc version 9.3.0 <span class="o">(</span>Buildroot 2020.11-607-gb4db6905a4<span class="o">))</span> <span class="c">#1 SMP Fri Jan 8 20:11:45 AEDT 2021</span>
 Machine model: linux,dummy-virt
@@ -363,6 +364,14 @@ memory-region: system
 (qemu) 
 </code></pre></div></div>
 
+<p>You can also examine memory addresses e.g. to display a word at physical
+memory address 0x903000, and then display a byte:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(qemu) xp /x 0x09030000
+0000000009030000: 0x00000000
+(qemu) xp /xb 0x09030400
+0000000009030400: 0xff
+</code></pre></div></div>
+
 <p>The <code class="language-plaintext highlighter-rouge">./start-qemu.sh</code> script is shown below. It emulates a Cortex-A53 which is an ARMv8-A 64-bit processor.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh
 (
@@ -375,7 +384,7 @@ else
     EXTRA_ARGS=''
 fi
 
-export PATH="/home/phwl/src/teaching/buildroot/output/host/bin:${PATH}"
+export PATH="/home/phwl/elec3607/buildroot/output/host/bin:${PATH}"
 exec qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 -kernel Image
  -append "rootwait root=/dev/vda console=ttyAMA0" -netdev user,id=eth0 -device v
 irtio-net-device,netdev=eth0 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 -
@@ -431,15 +440,15 @@ buildroot created:</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$H</span>/buildroot/output/host/bin/aarch64-linux-gcc <span class="nt">-o</span> hello hello.c
 </code></pre></div></div>
 <p>Start up the guest Linux with QEMU,copy the file from the host and execute</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/src/teaching/buildroot/output/images$ cd $H/buildroot/output/images
-phwl@bream:~/src/teaching/buildroot/output/images$ ./start-qemu.sh 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
 Booting Linux on physical CPU 0x0000000000 [0x410fd034]
 ...
 Starting sshd: OK
 
 Welcome to Buildroot
 buildroot login: root
-# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+# scp phwl@10.0.2.2:elec3607/labs/lab1/hello .
 phwl@10.0.2.2's password: 
 hello                                         100% 8680   852.3KB/s   00:00    
 # ./hello

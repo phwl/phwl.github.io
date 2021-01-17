@@ -19,14 +19,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
 <meta property="og:title" content="Creating an emulated ARM Linux system using Buildroot and QEMU">
-<meta property="og:url" content="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
+<meta property="og:url" content="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
 
 
   <meta property="og:description" content="This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/2021/01/armlogo.jpeg">
+  <meta property="og:image" content="/assets/images/2021/01/armlogo.jpeg">
 
 
 
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
+<link rel="canonical" href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
 
 
 
@@ -54,7 +54,7 @@
     
       "@type": "Person",
       "name": "phwl",
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -548,6 +548,14 @@ memory-region: system
 (qemu) 
 </code></pre></div></div>
 
+<p>You can also examine memory addresses e.g. to display a word at physical
+memory address 0x903000, and then display a byte:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(qemu) xp /x 0x09030000
+0000000009030000: 0x00000000
+(qemu) xp /xb 0x09030400
+0000000009030400: 0xff
+</code></pre></div></div>
+
 <p>The <code class="language-plaintext highlighter-rouge">./start-qemu.sh</code> script is shown below. It emulates a Cortex-A53 which is an ARMv8-A 64-bit processor.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh
 (
@@ -560,7 +568,7 @@ else
     EXTRA_ARGS=''
 fi
 
-export PATH="/home/phwl/src/teaching/buildroot/output/host/bin:${PATH}"
+export PATH="/home/phwl/elec3607/buildroot/output/host/bin:${PATH}"
 exec qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 -kernel Image
  -append "rootwait root=/dev/vda console=ttyAMA0" -netdev user,id=eth0 -device v
 irtio-net-device,netdev=eth0 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 -
@@ -624,7 +632,7 @@ Starting sshd: OK
 
 Welcome to Buildroot
 buildroot login: root
-# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
+# scp phwl@10.0.2.2:elec3607/labs/lab1/hello .
 phwl@10.0.2.2's password: 
 hello                                         100% 8680   852.3KB/s   00:00    
 # ./hello
@@ -689,11 +697,11 @@ Hello QEMU
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Creating+an+emulated+ARM+Linux+system+using+Buildroot+and+QEMU%20http%3A%2F%2Flocalhost%3A4000%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Creating+an+emulated+ARM+Linux+system+using+Buildroot+and+QEMU%20%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Femulated-ARM-Linux-with-Buildroot-and-QEMU%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -719,6 +727,35 @@ Hello QEMU
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/sydney-harbour-luderick/">
+        <img src=
+          
+            "/assets/images/2021/01/luderick.jpg"
+          
+          alt="Sydney Harbour Luderick"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/sydney-harbour-luderick/" rel="permalink">Sydney Harbour Luderick
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Went for a fish in Sydney Harbour with Beard this afternoon.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -806,36 +843,6 @@ is a list of previous trips).
     
     <p class="archive__item-excerpt" itemprop="description">Went to Tasmania for a few days. Last time I was here was
 2015.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/computer-engineering-lab-christmas-party/">
-        <img src=
-          
-            "/assets/images/2020/12/celchristmas20.jpeg"
-          
-          alt="Computer Engineering Lab Christmas Party Photo"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/computer-engineering-lab-christmas-party/" rel="permalink">Computer Engineering Lab Christmas Party Photo
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">A little late this year (and down on numbers due to COVID) but we had an
-enjoyable Christmas party.
 </p>
   </article>
 </div>

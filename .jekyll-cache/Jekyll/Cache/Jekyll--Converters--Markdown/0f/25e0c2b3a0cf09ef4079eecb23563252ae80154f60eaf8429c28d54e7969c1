@@ -1,4 +1,4 @@
-I"ÍD<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
+I"E<p>I have been using <a href="https://wordpress.com/">Wordpress</a> for many years.
 It produces good looking websites and is easy to install and maintain.
 Unfortunately, it isnâ€™t easy at all to backup the website, and the
 interface is all web-based meaning it is difficult to create
@@ -62,7 +62,7 @@ and browse to <code class="language-plaintext highlighter-rouge">localhost:4000<
 <span class="kn">import</span> <span class="nn">re</span>
 
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="p">.</span><span class="nb">input</span><span class="p">(</span><span class="n">sys</span><span class="p">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="s">r'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">'\[!.*\((.+)\).*\]\(.*\)'</span><span class="p">,</span> <span class="sa">r</span><span class="s">'[![](\1){: .align-center}](\1)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
     <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 
@@ -74,7 +74,7 @@ and browse to <code class="language-plaintext highlighter-rouge">localhost:4000<
 <span class="kn">import</span> <span class="nn">re</span>
 
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">fileinput</span><span class="p">.</span><span class="nb">input</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">backup</span><span class="o">=</span><span class="s">'.bak'</span><span class="p">):</span>
-    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!\[(.*)\]\((.*)\)\{: .align-center\}'</span><span class="p">,</span><span class="s">r'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
+    <span class="n">line</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">'!\[(.*)\]\((.*)\)\{: .align-center\}'</span><span class="p">,</span><span class="sa">r</span><span class="s">'[![\1](\2){: .align-center}](\2)'</span><span class="p">,</span> <span class="n">line</span><span class="p">.</span><span class="n">rstrip</span><span class="p">())</span>
     <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </code></pre></div></div>
 <ul>

@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-14T14:37:52+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>http://localhost:4000/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="http://localhost:4000/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-17T23:21:54+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Then nothing happened for the rest of
+the afternoon. At least I opened my account for the year!&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;
@@ -72,7 +87,7 @@ The best source of information on libgpiod
     &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%e %o %s %n&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--falling-edge&lt;/span&gt; gpiochip1 4
     0 4 1156 615459801
 
-    &lt;span class=&quot;c&quot;&gt;# Pause execution until a single event of any type occurs. Don't print&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# Pause execution until a single event of any type occurs. Don&apos;t print&lt;/span&gt;
     &lt;span class=&quot;c&quot;&gt;# anything. Find the line by name.&lt;/span&gt;
     &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-IN&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
 
@@ -209,7 +224,7 @@ phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt
 
 &lt;p&gt;In QEMU you can copy the file from the host to the guest and execute:&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .&lt;/span&gt;
-phwl@10.0.2.2&lt;span class=&quot;s1&quot;&gt;'s password: 
+phwl@10.0.2.2&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
 # ./gpio
 #
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -737,7 +752,7 @@ phwl@bream:~/elec3607/labs/lab2&lt;span class=&quot;nv&quot;&gt;$ $H&lt;/span&gt
 
 &lt;p&gt;When executed under QEMU (it needs to first be transferred to the guest via ssh), you will see:&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .&lt;/span&gt;
-phwl@10.0.2.2&lt;span class=&quot;s1&quot;&gt;'s password: 
+phwl@10.0.2.2&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
 # ./gpio
 Event 1: Pin=1 at t=19925.878483s
 Event 2: Pin=0 at t=19925.978926s
@@ -749,7 +764,7 @@ Event 7: Pin=1 at t=19926.479734s
 Event 8: Pin=0 at t=19926.582780s
 Event 9: Pin=1 at t=19926.681464s
 Event 10: Pin=0 at t=19926.784994s
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="http://localhost:4000/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to use the GPIO peripheral on the ARM linux image built in Creating an emulated ARM Linux system using Buildroot and QEMU</summary></entry><entry><title type="html">Creating an emulated ARM Linux system using Buildroot and QEMU</title><link href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="alternate" type="text/html" title="Creating an emulated ARM Linux system using Buildroot and QEMU" /><published>2021-01-07T17:02:24+11:00</published><updated>2021-01-07T17:02:24+11:00</updated><id>/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU</id><content type="html" xml:base="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">&lt;p&gt;This post details how to build an ARM linux image via &lt;a href=&quot;https://buildroot.org&quot;&gt;buildroot&lt;/a&gt;, and emulate it using &lt;a href=&quot;https://www.qemu.org/&quot;&gt;QEMU&lt;/a&gt;. This was done using an Ubuntu 18.04.5 LTS host machine.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-buildroot&quot;&gt;1. Buildroot&lt;/h2&gt;
 
@@ -769,7 +784,7 @@ and start &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;men
 phwl@bream:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
 phwl@bream:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$H&lt;/span&gt;
 phwl@bream:~/elec3607&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://git.buildroot.net/buildroot
-Cloning into &lt;span class=&quot;s1&quot;&gt;'buildroot'&lt;/span&gt;...
+Cloning into &lt;span class=&quot;s1&quot;&gt;&apos;buildroot&apos;&lt;/span&gt;...
 remote: Enumerating objects: 24805, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 remote: Counting objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;24805/24805&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;11902/11902&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
@@ -1115,6 +1130,14 @@ memory-region: system
 (qemu) 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;You can also examine memory addresses e.g. to display a word at physical
+memory address 0x903000, and then display a byte:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(qemu) xp /x 0x09030000
+0000000009030000: 0x00000000
+(qemu) xp /xb 0x09030400
+0000000009030400: 0xff
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;./start-qemu.sh&lt;/code&gt; script is shown below. It emulates a Cortex-A53 which is an ARMv8-A 64-bit processor.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/sh
 (
@@ -1122,12 +1145,12 @@ BINARIES_DIR=&quot;${0%/*}/&quot;
 cd ${BINARIES_DIR}
 
 if [ &quot;${1}&quot; = &quot;serial-only&quot; ]; then
-    EXTRA_ARGS='-nographic'
+    EXTRA_ARGS=&apos;-nographic&apos;
 else
-    EXTRA_ARGS=''
+    EXTRA_ARGS=&apos;&apos;
 fi
 
-export PATH=&quot;/home/phwl/src/teaching/buildroot/output/host/bin:${PATH}&quot;
+export PATH=&quot;/home/phwl/elec3607/buildroot/output/host/bin:${PATH}&quot;
 exec qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -smp 1 -kernel Image
  -append &quot;rootwait root=/dev/vda console=ttyAMA0&quot; -netdev user,id=eth0 -device v
 irtio-net-device,netdev=eth0 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 -
@@ -1191,14 +1214,14 @@ Starting sshd: OK
 
 Welcome to Buildroot
 buildroot login: root
-# scp phwl@10.0.2.2:src/teaching/labs/lab1/hello .
-phwl@10.0.2.2's password: 
+# scp phwl@10.0.2.2:elec3607/labs/lab1/hello .
+phwl@10.0.2.2&apos;s password: 
 hello                                         100% 8680   852.3KB/s   00:00    
 # ./hello
 Hello QEMU
 # 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.</summary></entry><entry><title type="html">Hawkesbury River 2020</title><link href="http://localhost:4000/2020/hawkesbury-2020/" rel="alternate" type="text/html" title="Hawkesbury River 2020" /><published>2020-12-21T20:54:38+11:00</published><updated>2020-12-21T20:54:38+11:00</updated><id>http://localhost:4000/2020/hawkesbury-2020</id><content type="html" xml:base="http://localhost:4000/2020/hawkesbury-2020/">&lt;p&gt;As has been the custom for many years, I went for a camping/fishing
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.</summary></entry><entry><title type="html">Hawkesbury River 2020</title><link href="/2020/hawkesbury-2020/" rel="alternate" type="text/html" title="Hawkesbury River 2020" /><published>2020-12-21T20:54:38+11:00</published><updated>2020-12-21T20:54:38+11:00</updated><id>/2020/hawkesbury-2020</id><content type="html" xml:base="/2020/hawkesbury-2020/">&lt;p&gt;As has been the custom for many years, I went for a camping/fishing
 trip with high-school friend Warren on the Hawkesbury River (here
 is a list of &lt;a href=&quot;http://phwl.org/tags/#hawkesbury&quot;&gt;previous trips&lt;/a&gt;).&lt;/p&gt;
 
@@ -1477,7 +1500,7 @@ you cut it like below.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Unfortunately, the eel tasted terrible! Will try barbecuing the next one.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="hawkesbury" /><category term="australia" /><summary type="html">As has been the custom for many years, I went for a camping/fishing trip with high-school friend Warren on the Hawkesbury River (here is a list of previous trips).</summary></entry><entry><title type="html">Tasmanian Holiday</title><link href="http://localhost:4000/2020/tasmanian-holiday/" rel="alternate" type="text/html" title="Tasmanian Holiday" /><published>2020-12-18T20:29:04+11:00</published><updated>2020-12-18T20:29:04+11:00</updated><id>http://localhost:4000/2020/tasmanian-holiday</id><content type="html" xml:base="http://localhost:4000/2020/tasmanian-holiday/">&lt;p&gt;Went to Tasmania for a few days. Last time I was here was
+&lt;p&gt;Unfortunately, the eel tasted terrible! Will try barbecuing the next one.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="hawkesbury" /><category term="australia" /><summary type="html">As has been the custom for many years, I went for a camping/fishing trip with high-school friend Warren on the Hawkesbury River (here is a list of previous trips).</summary></entry><entry><title type="html">Tasmanian Holiday</title><link href="/2020/tasmanian-holiday/" rel="alternate" type="text/html" title="Tasmanian Holiday" /><published>2020-12-18T20:29:04+11:00</published><updated>2020-12-18T20:29:04+11:00</updated><id>/2020/tasmanian-holiday</id><content type="html" xml:base="/2020/tasmanian-holiday/">&lt;p&gt;Went to Tasmania for a few days. Last time I was here was
 &lt;a href=&quot;/2015/tasmanian-holiday-2015/&quot;&gt;2015&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!-- more --&gt;
@@ -1797,7 +1820,7 @@ there.&lt;/p&gt;
     &lt;figcaption&gt;
       Poached egg and vegetables
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><summary type="html">Went to Tasmania for a few days. Last time I was here was 2015.</summary></entry><entry><title type="html">Computer Engineering Lab Christmas Party Photo</title><link href="http://localhost:4000/2020/computer-engineering-lab-christmas-party/" rel="alternate" type="text/html" title="Computer Engineering Lab Christmas Party Photo" /><published>2020-12-01T16:00:00+11:00</published><updated>2020-12-01T16:00:00+11:00</updated><id>http://localhost:4000/2020/computer-engineering-lab-christmas-party</id><content type="html" xml:base="http://localhost:4000/2020/computer-engineering-lab-christmas-party/">&lt;p&gt;A little late this year (and down on numbers due to COVID) but we had an
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><summary type="html">Went to Tasmania for a few days. Last time I was here was 2015.</summary></entry><entry><title type="html">Computer Engineering Lab Christmas Party Photo</title><link href="/2020/computer-engineering-lab-christmas-party/" rel="alternate" type="text/html" title="Computer Engineering Lab Christmas Party Photo" /><published>2020-12-01T16:00:00+11:00</published><updated>2020-12-01T16:00:00+11:00</updated><id>/2020/computer-engineering-lab-christmas-party</id><content type="html" xml:base="/2020/computer-engineering-lab-christmas-party/">&lt;p&gt;A little late this year (and down on numbers due to COVID) but we had an
 enjoyable Christmas party.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -1862,7 +1885,7 @@ enjoyable Christmas party.&lt;/p&gt;
     &lt;figcaption&gt;
       2014
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>http://localhost:4000/2020/albacore-configuration</id><content type="html" xml:base="http://localhost:4000/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>/2020/albacore-configuration</id><content type="html" xml:base="/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
 
 &lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
 &lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
@@ -1939,7 +1962,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &amp;gt;&amp;gt;&amp;gt; torch.cuda.device(0)
 &amp;lt;torch.cuda.device object at 0x7fa9a5fab310&amp;gt;
 &amp;gt;&amp;gt;&amp;gt; torch.cuda.get_device_name(0)
-'GeForce RTX 2060 SUPER'
+&apos;GeForce RTX 2060 SUPER&apos;
 &amp;gt;&amp;gt;&amp;gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1955,7 +1978,7 @@ sudo usermod -aG docker cruxml
 
 &lt;h2 id=&quot;step-5-install-other-stuff&quot;&gt;Step 5 Install other stuff&lt;/h2&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install hddtemp lm-sensors nvme-cli
-sudo sensors-detect --auto # unfortunately didn't find anything!
+sudo sensors-detect --auto # unfortunately didn&apos;t find anything!
 sudo add-apt-repository universe
 sudo apt update
 sudo apt install exfat-fuse exfat-utils
@@ -1987,7 +2010,7 @@ cd $TRD_HOME/prj/Vitis
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-7-install-balena-etcher&quot;&gt;Step 7 Install Balena Etcher&lt;/h2&gt;
-&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry><entry><title type="html">Googong Dam</title><link href="http://localhost:4000/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>http://localhost:4000/2020/googong-dam</id><content type="html" xml:base="http://localhost:4000/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
+&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry><entry><title type="html">Googong Dam</title><link href="/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>/2020/googong-dam</id><content type="html" xml:base="/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
 had a quick fish in &lt;a href=&quot;https://en.wikipedia.org/wiki/Googong_Dam&quot;&gt;Googong Dam&lt;/a&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
@@ -2026,7 +2049,7 @@ had a quick fish in &lt;a href=&quot;https://en.wikipedia.org/wiki/Googong_Dam&q
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish in Googong Dam.</summary></entry><entry><title type="html">Luks Encryption under Ubuntu</title><link href="http://localhost:4000/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>http://localhost:4000/2020/luks-encryption</id><content type="html" xml:base="http://localhost:4000/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish in Googong Dam.</summary></entry><entry><title type="html">Luks Encryption under Ubuntu</title><link href="/2020/luks-encryption/" rel="alternate" type="text/html" title="Luks Encryption under Ubuntu" /><published>2020-11-13T10:51:57+11:00</published><updated>2020-11-13T10:51:57+11:00</updated><id>/2020/luks-encryption</id><content type="html" xml:base="/2020/luks-encryption/">&lt;h1 id=&quot;copy-a-luks-volume&quot;&gt;Copy a LUKS volume&lt;/h1&gt;
 &lt;p&gt;This is how to copy a LUKS partition from back1 to back2. 
 We assume the original device is already opened using:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
@@ -2085,7 +2108,7 @@ mount /dev/mapper/back2 /srv/back2
 umount /srv/back2
 cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="software" /><category term="ubuntu" /><category term="linux" /><summary type="html">Copy a LUKS volume This is how to copy a LUKS partition from back1 to back2. We assume the original device is already opened using: cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1</summary></entry><entry><title type="html">Lake Copeton Fishing for Murray Cod and Golden Perch</title><link href="http://localhost:4000/2020/lake-copeton-murray-cod/" rel="alternate" type="text/html" title="Lake Copeton Fishing for Murray Cod and Golden Perch" /><published>2020-10-13T21:30:14+11:00</published><updated>2020-10-13T21:30:14+11:00</updated><id>http://localhost:4000/2020/lake-copeton-murray-cod</id><content type="html" xml:base="http://localhost:4000/2020/lake-copeton-murray-cod/">&lt;p&gt;Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="software" /><category term="ubuntu" /><category term="linux" /><summary type="html">Copy a LUKS volume This is how to copy a LUKS partition from back1 to back2. We assume the original device is already opened using: cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1</summary></entry><entry><title type="html">Lake Copeton Fishing for Murray Cod and Golden Perch</title><link href="/2020/lake-copeton-murray-cod/" rel="alternate" type="text/html" title="Lake Copeton Fishing for Murray Cod and Golden Perch" /><published>2020-10-13T21:30:14+11:00</published><updated>2020-10-13T21:30:14+11:00</updated><id>/2020/lake-copeton-murray-cod</id><content type="html" xml:base="/2020/lake-copeton-murray-cod/">&lt;p&gt;Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.&lt;/p&gt;
 
 &lt;!-- more --&gt;
 &lt;p&gt;We had booked a day of guiding with Murray cod expert &lt;a href=&quot;https://www.instagram.com/fishing_with_usher__guide/&quot;&gt;Josh Usher&lt;/a&gt;. Fortunately, he had the next day off so we exchange our day for two mornings, starting at 3:30am. We could see an amazing number of stars at the lake.&lt;/p&gt;
@@ -2279,173 +2302,4 @@ cryptsetup luksClose /dev/mapper/back2
 
 &lt;p&gt;Although we would have liked a 135cm cod like &lt;a href=&quot;https://www.northerndailyleader.com.au/story/6428962/absolute-monster-josh-usher-lands-humongous-murray-cod/&quot;&gt;this one that Josh caught&lt;/a&gt;, we did learn a lot from him and he’s a great guide. In a way, it is good that things were not that easy. I’ll try again soon, maybe take the boat up there for a week.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/iViHsQkuwAs9FXZ3pcZDd6/e9a67f97-cc8a-4a1b-8fe2-2270a32b4644.jpg/r0_0_764_480_w1200_h678_fmax.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.</summary></entry><entry><title type="html">Amberjack Ubuntu GPU Machine Install</title><link href="http://localhost:4000/2020/amberjack-configuration/" rel="alternate" type="text/html" title="Amberjack Ubuntu GPU Machine Install" /><published>2020-10-09T19:54:42+11:00</published><updated>2020-10-09T19:54:42+11:00</updated><id>http://localhost:4000/2020/amberjack-configuration</id><content type="html" xml:base="http://localhost:4000/2020/amberjack-configuration/">&lt;p&gt;This is how a new machine, amberjack, was configured.&lt;/p&gt;
-
-&lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
-&lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AC16427	MSI B450I GAMING PLUS AC AM4 Mini-ITX Motherboard				1	1	$225.00	$225.00
-AB83276	SilverStone Strider Essential ST60F-ES230 600W 80 Plus Power Supply		1	1	$75.00	$75.00
-AC19487	Crucial P1 500GB NVMe M.2 PCIe 3D NAND SSD CT500P1SSD8				1	1	$89.00	$89.00
-AC23360	Respawn Ninja x MWAVE Gaming Mouse Pad Small - Black				1	1	$1.00	$1.00
-AB47402	Mwave Custom PC Assembly and Testing Service					1	1	$199.00	$199.00
-AB52361	Advanced Transportation Packing Solution					1	1	$19.99	$19.99
-AC26501	Kingston HyperX FURY RGB 32GB (2x 16GB) DDR4 3200MHz Memory			1	1	$209.00	$209.00
-AC29726	ASUS GeForce RTX 2060 SUPER Turbo EVO 8GB Video Card				1	1	$649.00	$649.00
-AC12989	Seagate ST8000DM004 8TB BarraCuda 3.5&quot; SATA3 Desktop Hard Drive			1	1	$299.00	$299.00
-AB64976	Windows 10 Professional 64-bit OEM DVD						1	1	$219.00	$219.00
-AB59620	SilverStone Sugo Series SG13 Mini ITX Case - Mesh Front Panel			1	1	$69.00	$69.00
-AC24744	AMD Ryzen 5 3600X 6 Core Socket AM4 3.8GHz CPU Processor + Wraith Spire Cooler	1	1	$369.00	$369.00
-
-Total of Invoice Inc GST $2,490.33
-Total GST $226.39
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Here is the &lt;a href=&quot;https://download.msi.com/archive/mnu_exe/mb/E7A40v2.2.pdf&quot;&gt;motherboard manual&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1-update-bios-to-enable-virtualisation&quot;&gt;Step 1 Update BIOS to enable virtualisation&lt;/h2&gt;
-&lt;p&gt;In the BIOS settings set&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Overclocking -&amp;gt; OC Explore Mode -&amp;gt; Expert
-Overclocking -&amp;gt; CPU Features -&amp;gt; SVM Mode -&amp;gt; Enable
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;then boot machine (into Windows 10).&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2-install-ubuntu&quot;&gt;Step 2 Install Ubuntu&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Erase disk and install everything to /dev/nvme0n1. Select LVM.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;step-3-move-opt-var-home-to-hard-disk&quot;&gt;Step 3 Move /opt /var /home to hard disk&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
-mkdir /srv; mkdir /src/fs
-mount /dev/sda1 /srv/fs
-rsync -aXP /opt /var /home /srv/fs
-cd /
-mv opt opt.old
-mv var var.old
-mv home home.old
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Add the mounts to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/fstab&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# mount the local HD to /home, /var and /opt
-/dev/disk/by-uuid/HARD_DISK /srv/fs auto nodev,nofail,x-gvfs-show 0 0
-/srv/fs/home	/home	none	bind	0	0
-/srv/fs/var	/var	none	bind	0	0
-/srv/fs/opt	/opt	none	bind	0	0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;and reboot. After it reboots successfully you can&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo rm -rf /opt.old /home.old /var.old
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-4-install-cuda&quot;&gt;Step 4 Install cuda&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-sudo apt upgrade
-sudo apt install openssh-server net-tools rclone
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then follow the &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;Nvidia instructions&lt;/a&gt;
-using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt purge nvidia-*
-sudo apt autoremove
-sudo ubuntu-drivers autoinstall
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;before installing cuda&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install cuda=10.2.89-1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; add&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-5-install-anacondapytorch&quot;&gt;Step 5 Install anaconda/pytorch&lt;/h2&gt;
-&lt;p&gt;Install &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;anaconda&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-sh Anaconda3-2020.07-Linux-x86_64.sh
-conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Seems to work&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(base) cruxml@amberjack:~$ cat /proc/driver/nvidia/version
-NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.06  Sun Jul 19 20:02:54 UTC 2020
-GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-(base) cruxml@amberjack:~$ python
-Python 3.8.3 (default, Jul  2 2020, 16:21:59) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&amp;gt;&amp;gt;&amp;gt; import torch
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.current_device()
-0
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.device(0)
-&amp;lt;torch.cuda.device object at 0x7fa9a5fab310&amp;gt;
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.get_device_name(0)
-'GeForce RTX 2060 SUPER'
-&amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-6-install-docker&quot;&gt;Step 6 Install docker&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker cruxml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;You need to log out and log in again for the group change to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-7-install-other-stuff&quot;&gt;Step 7 Install other stuff&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install hddtemp lm-sensors nvme-cli
-sudo sensors-detect --auto # unfortunately didn't find anything!
-sudo add-apt-repository universe
-sudo apt update
-sudo apt install exfat-fuse exfat-utils
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-8-vivado&quot;&gt;Step 8 Vivado&lt;/h2&gt;
-&lt;p&gt;Installed Vitis&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
-# installed to /opt instead of /tools
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The following &lt;em&gt;did not&lt;/em&gt; work:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;So I installed XRT from the instructions &lt;a href=&quot;https://xilinx.github.io/XRT/master/html/build.html&quot;&gt;https://xilinx.github.io/XRT/master/html/build.html&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Following &lt;a href=&quot;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&quot;&gt;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HOME=$HOME
-export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
-export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
-export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
-cd /opt/Xilinx/Vitis/2019.2
-source settings64.sh
-cd /opt/xilinx/xrt
-source setup.sh
-cd $TRD_HOME/prj/Vitis
-# make KERNEL=DPU DEVICE=ULTRA96V2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-9-install-balena-etcher&quot;&gt;Step 9 Install Balena Etcher&lt;/h2&gt;
-&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-xx-decided-against-running-ubuntu-under-windows-10&quot;&gt;Step XX (Decided against running ubuntu under windows 10)&lt;/h2&gt;
-
-&lt;p&gt;How to set up Ubuntu 18.04 under Hyper-V&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Right click on the Windows button and select ‘Apps and Features’.&lt;/li&gt;
-  &lt;li&gt;Select Programs and Features on the right under related settings.&lt;/li&gt;
-  &lt;li&gt;Select Turn Windows Features on or off.&lt;/li&gt;
-  &lt;li&gt;Select Hyper-V and click OK.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I then mounted my home samba shared disk:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;In File explorer, right click on the PC -&amp;gt; Add a Network Location -&amp;gt; \machinename\back1&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Then install Ubuntu.&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;In Hyper-V manager (Quick create).&lt;/li&gt;
-  &lt;li&gt;I wanted the virtual hard disk to be on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;E:&lt;/code&gt; drive. Edit the settings of the VM and edit the
-Virtual Hard Disk” to convert the image from
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;C:\Users\Public\Public Documents\Hyper-V\Virtual Hard Disks&lt;/code&gt; to
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;E:\srv\amberjack\hyperv\ubuntu-hd1&lt;/code&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Don’t upgrade to 20.04!&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, amberjack, was configured.</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/iViHsQkuwAs9FXZ3pcZDd6/e9a67f97-cc8a-4a1b-8fe2-2270a32b4644.jpg/r0_0_764_480_w1200_h678_fmax.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Drove with Beard for 16 hours for 10 hours fishing at Lake Inverell.</summary></entry></feed>
