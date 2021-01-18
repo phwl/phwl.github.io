@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-17T23:21:54+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-18T19:41:24+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
@@ -12,8 +12,20 @@
 &lt;!-- more --&gt;
 &lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
 good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Then nothing happened for the rest of
-the afternoon. At least I opened my account for the year!&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;

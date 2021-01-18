@@ -1080,7 +1080,7 @@ var store = [{
         "url": "/2021/QEMU-ARM-Linux-gpio/",
         "teaser":"/assets/images/2021/01/armlogo.jpeg"},{
         "title": "Sydney Harbour Luderick",
-        "excerpt":"Went for a fish in Sydney Harbour with Beard this afternoon.                                 Arrived near the bottom of the low tide, water was murky which is good.  On the first drift I caught this luderick and we thought it would be a great afternoon. Then nothing happened for the rest of the afternoon. At least I opened my account for the year!  ","categories": ["fishing"],
+        "excerpt":"Went for a fish in Sydney Harbour with Beard this afternoon.                                 Arrived near the bottom of the low tide, water was murky which is good.  On the first drift I caught this luderick and we thought it would be a great afternoon. Unfortunately, nothing else happened for the rest of the afternoon. At least I successfully field tested a new hat - always a risky change.   I like them fried!                                ","categories": ["fishing"],
         "tags": ["australia"],
         "url": "/2021/sydney-harbour-luderick/",
         "teaser":"/assets/images/2021/01/luderick.jpg"}]
