@@ -297,7 +297,7 @@ Matic \- an intracardiac tachycardia classification system\.
 
 # Conferences
 
-[1] Sean Fox and Philip H\.W\. Leong\.
+[1] Sean Fox, Seyedramin Rasoulinezhad, Julian Faraone, and David Boland Philip H\.W\. Leong\.
 A block minifloat representation for training deep neural networks\.
 In *Proc\. of The International Conference on Learning Representations \(ICLR\)*\. 2021\.
 URL: [bm\_iclr21\.pdf](bm_iclr21.pdf)\.  
