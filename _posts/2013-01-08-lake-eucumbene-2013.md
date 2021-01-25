@@ -10,6 +10,7 @@ categories:
 tags:
 - fly-fishing
 - australia
+- eucumbene
 header:
   teaser: /assets/images/2013/01/P1130242.jpg
 ---
