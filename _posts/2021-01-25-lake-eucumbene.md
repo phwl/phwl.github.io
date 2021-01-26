@@ -47,6 +47,13 @@ ants. I had a second hit that evening but unfortunately didn't hook up.
 {% include figure image_path="/assets/images/2021/01/eucumbene2.jpg" caption="" %}
 
 
-Returned the next morning. This sticker says it all.
+Dried the fish and covered them with salt, including the cavity. On the bottom of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.
+Smoked for 30 minutes.
 
+{% include figure image_path="/assets/images/2021/01/IMG_7536.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2021/01/IMG_7541.jpeg" caption="" %}
+
+
+This sticker says it all.
 {% include figure image_path="/assets/images/2021/01/eucumbene3.jpg" caption="" %}
