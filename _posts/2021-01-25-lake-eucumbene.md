@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2021-01-17 21:43:54 AEST
-title: Lake Eucumbene - who would go trout fishing in a heatwave?
+title: Lake Eucumbene - who would go trout fishing during a heatwave?
 classes: wide
 categories:
 - fishing
