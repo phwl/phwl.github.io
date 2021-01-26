@@ -13,12 +13,13 @@ header:
   teaser: /assets/images/2021/01/eucumbene2.jpg
 ---
 
-Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend. Each day the maximum temperture was forcasted to be 32 C.
+Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend. 
 
 {% include figure image_path="/assets/images/2021/01/eucumbene1.jpg" caption="" %}
 
 <!-- more -->
-More photos of Buckenderra.
+Each day the maximum temperture was 32 C and I was fishing from the
+bank in my chest waders. Here are more photos of Buckenderra.
 {% include figure image_path="/assets/images/2021/01/buckenderra1.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2021/01/buckenderra2.jpeg" caption="" %}
 
@@ -39,8 +40,8 @@ deeper water which I was hoping would be cooler. I was having a
 quiet, contemplative time when the peace was disturbed by a fish
 taking my Mrs Simpson (fly) so violently, it made me jump. The fish ran
 towards me and I had to back pedal to keep the line tight.  It
-tried to jump two or three times but didn't get very far out of the
-water.  After a brief struggle I beached this fat rainbow
+tried to leap out of the water two or three times but didn't get 
+airborne.  After a brief struggle I beached this fat rainbow
 trout. The autopsy showed it had been feeding on stick caddis and flying
 ants. I had a second hit that evening but unfortunately didn't hook up. 
 
