@@ -48,7 +48,6 @@ ants. I had a second hit that evening but unfortunately didn't hook up.
 {% include figure image_path="/assets/images/2021/01/eucumbene2.jpg" caption="" %}
 
 As I was walking around in the dark, I realised the importance of having decent torches. It is crucial to have something reliable, convenient and fit for purpose. I had brought a 18650 torch (Olight S2RII) and an AA headlamp (Zebralight H52). The first night I couldn't be bothered to find the H52 but that was a mistake. Changing flies in the dark was much more difficult with a torch in my mouth. It's not so bad with saltwater fishing where the hooks are much bigger.
-
 The following evening, the headlamp was very much appreciated. It was a pretty bright night so I didn't need the S2RII to find the car, but the combination of the two is what I have been using for a while now. I like having the redundancy and both serve a different purpose. I also like how I can charge either of them now via USB using the Olight charger (S2RII) or Olight Universal USB Charger (AA). I haven't had the S2RII ever need charging in the middle of a trip but the H52 has run out before.
 
 Dried the fish and covered them with salt, including the cavity. On the bottom of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.
