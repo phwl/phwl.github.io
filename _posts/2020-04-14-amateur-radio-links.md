@@ -45,3 +45,4 @@ Here is a collection of amateur radio links.
 1. Charlie Morris ZL2CTM - <http://zl2ctm.blogspot.com/>
 1. EDN Create radio receiver circuits with the LM386 audio amplifier - <https://www.edn.com/create-radio-receiver-circuits-with-the-lm386-audio-amplifier/>
 1. Doug Hunter VK4ADC <https://www.vk4adc.com/web/index.php>
+1. Razvan M0HZH 600W HF amplifier <https://qrpblog.com/a600-hf-6m-600w-ldmos-amplifier/>
