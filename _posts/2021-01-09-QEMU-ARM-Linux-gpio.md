@@ -63,8 +63,7 @@ Examples (also from the documentation) of how they are used:
     $ gpioset gpiochip1 23=1
 
     # Find a GPIO line by name.
-    $ gpiofind "USR-LED-2"
-    gpiochip1 23
+    $ gpiofind "USR-LED-2" gpiochip1 23
 
     # Toggle a GPIO by name, then wait for the user to press ENTER.
     $ gpioset --mode=wait `gpiofind "USR-LED-2"`=1
