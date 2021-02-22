@@ -240,8 +240,7 @@ The best source of information on libgpiod
     <span class="nv">$ </span>gpioset gpiochip1 <span class="nv">23</span><span class="o">=</span>1
 
     <span class="c"># Find a GPIO line by name.</span>
-    <span class="nv">$ </span>gpiofind <span class="s2">"USR-LED-2"</span>
-    gpiochip1 23
+    <span class="nv">$ </span>gpiofind <span class="s2">"USR-LED-2"</span> gpiochip1 23
 
     <span class="c"># Toggle a GPIO by name, then wait for the user to press ENTER.</span>
     <span class="nv">$ </span>gpioset <span class="nt">--mode</span><span class="o">=</span><span class="nb">wait</span> <span class="sb">`</span>gpiofind <span class="s2">"USR-LED-2"</span><span class="sb">`</span><span class="o">=</span>1
@@ -253,8 +252,7 @@ The best source of information on libgpiod
     event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1152.091556803]
 
     <span class="c"># Wait for a single falling edge event. Specify a custom output format.</span>
-    <span class="nv">$ </span>gpiomon <span class="nt">--format</span><span class="o">=</span><span class="s2">"%e %o %s %n"</span> <span class="nt">--falling-edge</span> gpiochip1 4
-    0 4 1156 615459801
+    <span class="nv">$ </span>gpiomon <span class="nt">--format</span><span class="o">=</span><span class="s2">"%e %o %s %n"</span> <span class="nt">--falling-edge</span> gpiochip1 4 0 4 1156 615459801
 
     <span class="c"># Pause execution until a single event of any type occurs. Don't print</span>
     <span class="c"># anything. Find the line by name.</span>
@@ -1031,6 +1029,36 @@ Event 10: Pin=0 at t=19926.784994s
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2021/bbg-setup-and-gpio/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Getting Started and GPIO"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-setup-and-gpio/" rel="permalink">BeagleBone Green Getting Started and GPIO
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to get started with a BeagleBone Green (BBG) microSD card and
+program it via GPIO.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2021/lake-eucumbene/">
         <img src=
           
@@ -1046,8 +1074,7 @@ Event 10: Pin=0 at t=19926.784994s
       
     </h2>
     
-    <p class="archive__item-excerpt" itemprop="description">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend. Each day the maximum temperture was forcasted to be 32 C
-and I was wearing my chest waders.
+    <p class="archive__item-excerpt" itemprop="description">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.
 </p>
   </article>
 </div>
@@ -1106,37 +1133,6 @@ and I was wearing my chest waders.
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2020/hawkesbury-2020/">
-        <img src=
-          
-            "/assets/images/2020/12/IMG_7430.jpeg"
-          
-          alt="Hawkesbury River 2020"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2020/hawkesbury-2020/" rel="permalink">Hawkesbury River 2020
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">As has been the custom for many years, I went for a camping/fishing
-trip with high-school friend Warren on the Hawkesbury River (here
-is a list of previous trips).
 </p>
   </article>
 </div>
