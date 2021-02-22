@@ -192,7 +192,8 @@ debian@beaglebone:~$ gpioset -m time -s 10 gpiochip1 24=0
 ```
 Note that after ```gpioset``` exits, the data of the output is undefined.
 
-## 3. Part 1 (40%)
+## 3. Laboratory Experiment
+### Part 1 S2 Button Input (40%)
 Download, compile and execute the ```blink``` program which
 flashes the D5 LED as follows:
 ```bash
@@ -237,9 +238,9 @@ S2=1
 S2=0
 ```
 
-## 4. Part 2 (60%)
+### Part 2 Seven Segment Display (60%)
 The data sheet for a seven segment display (SSD) is available [here](http://www.farnell.com/datasheets/2863910.pdf). 
- * Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.
- * Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn't exceed 4mA.
- * Connect up the SSD to the BBG via a breadboard.
- * Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.
+ 1. Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.
+ 1. Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn't exceed 4mA.
+ 1. Connect up the SSD to the BBG via a breadboard.
+ 1. Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.
