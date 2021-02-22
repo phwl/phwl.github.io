@@ -192,7 +192,7 @@ debian@beaglebone:~$ gpioset -m time -s 10 gpiochip1 24=0
 ```
 Note that after ```gpioset``` exits, the data of the output is undefined.
 
-## 3. Exercise
+## 3. Exercise 1 (40%)
 Download, compile and execute the ```blink``` program which
 flashes the D5 LED as follows:
 ```bash
@@ -236,3 +236,9 @@ S2=1
 ...
 S2=0
 ```
+
+## 4. Exercise 2 (60%)
+The data sheet for a seven segment display (SSD) is available [here](http://www.farnell.com/datasheets/2863910.pdf). Each segment should be driven by a 6mA BBG output so select 6 such pins on the P8 connector to use. 
+ * Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn't exceed 4mA.
+ * Connect up the SSD
+ * Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.
