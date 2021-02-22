@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:38:30+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-setup-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-setup-and-gpio</id><content type="html" xml:base="/2021/bbg-setup-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:41:43+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
 program it via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
@@ -23,7 +23,8 @@ first download the library and include files.&lt;/p&gt;
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libgpiod-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can check everything is working by detecting the GPIO chips.&lt;/p&gt;
+&lt;p&gt;You can check everything is working by detecting the GPIO chips
+and printing their labels and state.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ gpiodetect
 gpiochip0 [gpio] (32 lines)
 gpiochip1 [gpio] (32 lines)
