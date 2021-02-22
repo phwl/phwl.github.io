@@ -31,7 +31,7 @@ to connect to my network.  One can then ```ssh debian@beaglebone.local```
 to access.
 
 ## 2. GPIO
-As mentioned in my [earlier post](/2021/QEMU-ARM-Linux-gpio/), libgpiod
+As described in <http://phwl.org/2021/QEMU-ARM-Linux-gpio/>, libgpiod
 is the standard way to use GPIO under Linux. To use it on the BBG, one must
 first download the library and include files.
 ```sh
@@ -192,7 +192,7 @@ debian@beaglebone:~$ gpioset -m time -s 10 gpiochip1 24=0
 ```
 Note that after ```gpioset``` exits, the data of the output is undefined.
 
-## 3. Exercise 1 (40%)
+## 3. Part 1 (40%)
 Download, compile and execute the ```blink``` program which
 flashes the D5 LED as follows:
 ```bash
@@ -237,7 +237,7 @@ S2=1
 S2=0
 ```
 
-## 4. Exercise 2 (60%)
+## 4. Part 2 (60%)
 The data sheet for a seven segment display (SSD) is available [here](http://www.farnell.com/datasheets/2863910.pdf). 
  * Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.
  * Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn't exceed 4mA.
