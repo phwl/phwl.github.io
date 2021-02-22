@@ -86,4 +86,11 @@ debian@beaglebone:~/elec3607-materials/labs/lab1-gpio$ ./blink
 ```
 
 Modify the program so that, in addition to blinking the LED, it will
-print the status of the S2 button on each iteration of the loop.
+print the status of the S2 button every second as
+below.
+```bash
+debian@beaglebone:~$ ./blink 
+S2=1
+...
+S2=0
+```
