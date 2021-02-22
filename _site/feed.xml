@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:15:06+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-setup-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-setup-and-gpio</id><content type="html" xml:base="/2021/bbg-setup-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:38:30+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-setup-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-setup-and-gpio</id><content type="html" xml:base="/2021/bbg-setup-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
 program it via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
@@ -23,11 +23,151 @@ first download the library and include files.&lt;/p&gt;
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libgpiod-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You can check everything is working by turning on the D5 LED for 10 seconds 
-using&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ gpioset -m time -s 10 gpiochip1 24=1
+&lt;p&gt;You can check everything is working by detecting the GPIO chips.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ gpiodetect
+gpiochip0 [gpio] (32 lines)
+gpiochip1 [gpio] (32 lines)
+gpiochip2 [gpio] (32 lines)
+gpiochip3 [gpio] (32 lines)
+debian@beaglebone:~$ gpioinfo
+gpiochip0 - 32 lines:
+	line   0:  &quot;MDIO_DATA&quot;       unused   input  active-high 
+	line   1:   &quot;MDIO_CLK&quot;       unused   input  active-high 
+	line   2:  &quot;SPI0_SCLK&quot;       unused   input  active-high 
+	line   3:    &quot;SPI0_D0&quot;       unused   input  active-high 
+	line   4:    &quot;SPI0_D1&quot;       unused   input  active-high 
+	line   5:   &quot;SPI0_CS0&quot;       unused   input  active-high 
+	line   6:   &quot;SPI0_CS1&quot;         &quot;cd&quot;   input   active-low [used]
+	line   7: &quot;ECAP0_IN_PWM0_OUT&quot; unused input active-high 
+	line   8: &quot;LCD_DATA12&quot;       unused   input  active-high 
+	line   9: &quot;LCD_DATA13&quot;       unused   input  active-high 
+	line  10: &quot;LCD_DATA14&quot;       unused   input  active-high 
+	line  11: &quot;LCD_DATA15&quot;       unused   input  active-high 
+	line  12: &quot;UART1_CTSN&quot;      &quot;P9_20&quot;   input  active-high [used]
+	line  13: &quot;UART1_RTSN&quot;      &quot;P9_19&quot;   input  active-high [used]
+	line  14:  &quot;UART1_RXD&quot;       unused   input  active-high 
+	line  15:  &quot;UART1_TXD&quot;       unused   input  active-high 
+	line  16: &quot;GMII1_TXD3&quot;       unused   input  active-high 
+	line  17: &quot;GMII1_TXD2&quot;       unused   input  active-high 
+	line  18: &quot;USB0_DRVVBUS&quot; unused input active-high 
+	line  19: &quot;XDMA_EVENT_INTR0&quot; unused input active-high 
+	line  20: &quot;XDMA_EVENT_INTR1&quot; unused input active-high 
+	line  21: &quot;GMII1_TXD1&quot;       unused   input  active-high 
+	line  22:   &quot;GPMC_AD8&quot;       unused   input  active-high 
+	line  23:   &quot;GPMC_AD9&quot;       unused   input  active-high 
+	line  24:         &quot;NC&quot;       unused   input  active-high 
+	line  25:         &quot;NC&quot;       unused   input  active-high 
+	line  26:  &quot;GPMC_AD10&quot;       unused   input  active-high 
+	line  27:  &quot;GPMC_AD11&quot;       unused   input  active-high 
+	line  28: &quot;GMII1_TXD0&quot;       unused   input  active-high 
+	line  29: &quot;RMII1_REFCLK&quot; unused input active-high 
+	line  30: &quot;GPMC_WAIT0&quot;       unused   input  active-high 
+	line  31:   &quot;GPMC_WPN&quot;       unused   input  active-high 
+gpiochip1 - 32 lines:
+	line   0:   &quot;GPMC_AD0&quot;       unused   input  active-high 
+	line   1:   &quot;GPMC_AD1&quot;       unused   input  active-high 
+	line   2:   &quot;GPMC_AD2&quot;       unused   input  active-high 
+	line   3:   &quot;GPMC_AD3&quot;       unused   input  active-high 
+	line   4:   &quot;GPMC_AD4&quot;       unused   input  active-high 
+	line   5:   &quot;GPMC_AD5&quot;       unused   input  active-high 
+	line   6:   &quot;GPMC_AD6&quot;       unused   input  active-high 
+	line   7:   &quot;GPMC_AD7&quot;       unused   input  active-high 
+	line   8: &quot;UART0_CTSN&quot;       unused   input  active-high 
+	line   9: &quot;UART0_RTSN&quot;       unused   input  active-high 
+	line  10:  &quot;UART0_RXD&quot;       unused   input  active-high 
+	line  11:  &quot;UART0_TXD&quot;       unused   input  active-high 
+	line  12:  &quot;GPMC_AD12&quot;       unused   input  active-high 
+	line  13:  &quot;GPMC_AD13&quot;       unused   input  active-high 
+	line  14:  &quot;GPMC_AD14&quot;       unused   input  active-high 
+	line  15:  &quot;GPMC_AD15&quot;       unused   input  active-high 
+	line  16:    &quot;GPMC_A0&quot;       unused   input  active-high 
+	line  17:    &quot;GPMC_A1&quot;       unused   input  active-high 
+	line  18:    &quot;GPMC_A2&quot;       unused   input  active-high 
+	line  19:    &quot;GPMC_A3&quot;       unused   input  active-high 
+	line  20:    &quot;GPMC_A4&quot;       unused   input  active-high 
+	line  21:    &quot;GPMC_A5&quot; &quot;beaglebone:green:usr0&quot; output active-high [used]
+	line  22:    &quot;GPMC_A6&quot; &quot;beaglebone:green:usr1&quot; output active-high [used]
+	line  23:    &quot;GPMC_A7&quot; &quot;beaglebone:green:usr2&quot; output active-high [used]
+	line  24:    &quot;GPMC_A8&quot;       unused  output  active-high 
+	line  25:    &quot;GPMC_A9&quot;       unused   input  active-high 
+	line  26:   &quot;GPMC_A10&quot;       unused   input  active-high 
+	line  27:   &quot;GPMC_A11&quot;       unused   input  active-high 
+	line  28:  &quot;GPMC_BE1N&quot;       unused   input  active-high 
+	line  29:  &quot;GPMC_CSN0&quot;       unused   input  active-high 
+	line  30:  &quot;GPMC_CSN1&quot;       unused   input  active-high 
+	line  31:  &quot;GPMC_CSN2&quot;       unused   input  active-high 
+gpiochip2 - 32 lines:
+	line   0:  &quot;GPMC_CSN3&quot;       unused   input  active-high 
+	line   1:   &quot;GPMC_CLK&quot;       unused   input  active-high 
+	line   2: &quot;GPMC_ADVN_ALE&quot; unused input active-high 
+	line   3: &quot;GPMC_OEN_REN&quot; unused input active-high 
+	line   4:   &quot;GPMC_WEN&quot;       unused   input  active-high 
+	line   5: &quot;GPMC_BE0N_CLE&quot; unused input active-high 
+	line   6:  &quot;LCD_DATA0&quot;       unused   input  active-high 
+	line   7:  &quot;LCD_DATA1&quot;       unused   input  active-high 
+	line   8:  &quot;LCD_DATA2&quot;       unused   input  active-high 
+	line   9:  &quot;LCD_DATA3&quot;       unused   input  active-high 
+	line  10:  &quot;LCD_DATA4&quot;       unused   input  active-high 
+	line  11:  &quot;LCD_DATA5&quot;       unused   input  active-high 
+	line  12:  &quot;LCD_DATA6&quot;       unused   input  active-high 
+	line  13:  &quot;LCD_DATA7&quot;       unused   input  active-high 
+	line  14:  &quot;LCD_DATA8&quot;       unused   input  active-high 
+	line  15:  &quot;LCD_DATA9&quot;       unused   input  active-high 
+	line  16: &quot;LCD_DATA10&quot;       unused   input  active-high 
+	line  17: &quot;LCD_DATA11&quot;       unused   input  active-high 
+	line  18: &quot;GMII1_RXD3&quot;       unused   input  active-high 
+	line  19: &quot;GMII1_RXD2&quot;       unused   input  active-high 
+	line  20: &quot;GMII1_RXD1&quot;       unused   input  active-high 
+	line  21: &quot;GMII1_RXD0&quot;       unused   input  active-high 
+	line  22:  &quot;LCD_VSYNC&quot;       unused   input  active-high 
+	line  23:  &quot;LCD_HSYNC&quot;       unused   input  active-high 
+	line  24:   &quot;LCD_PCLK&quot;       unused   input  active-high 
+	line  25: &quot;LCD_AC_BIAS_EN&quot; unused input active-high 
+	line  26:  &quot;MMC0_DAT3&quot;       unused   input  active-high 
+	line  27:  &quot;MMC0_DAT2&quot;       unused   input  active-high 
+	line  28:  &quot;MMC0_DAT1&quot;       unused   input  active-high 
+	line  29:  &quot;MMC0_DAT0&quot;       unused   input  active-high 
+	line  30:   &quot;MMC0_CLK&quot;       unused   input  active-high 
+	line  31:   &quot;MMC0_CMD&quot;       unused   input  active-high 
+gpiochip3 - 32 lines:
+	line   0:  &quot;GMII1_COL&quot;       unused   input  active-high 
+	line   1:  &quot;GMII1_CRS&quot;       unused   input  active-high 
+	line   2: &quot;GMII1_RXER&quot;       unused   input  active-high 
+	line   3: &quot;GMII1_TXEN&quot;       unused   input  active-high 
+	line   4: &quot;GMII1_RXDV&quot;       unused   input  active-high 
+	line   5:   &quot;I2C0_SDA&quot;       unused   input  active-high 
+	line   6:   &quot;I2C0_SCL&quot;       unused   input  active-high 
+	line   7:       &quot;EMU0&quot;       unused   input  active-high 
+	line   8:       &quot;EMU1&quot;       unused   input  active-high 
+	line   9: &quot;GMII1_TXCLK&quot; unused input active-high 
+	line  10: &quot;GMII1_RXCLK&quot; unused input active-high 
+	line  11:         &quot;NC&quot;       unused   input  active-high 
+	line  12:         &quot;NC&quot;       unused   input  active-high 
+	line  13: &quot;USB1_DRVVBUS&quot; unused input active-high 
+	line  14: &quot;MCASP0_ACLKX&quot; unused input active-high 
+	line  15: &quot;MCASP0_FSX&quot;       unused   input  active-high 
+	line  16: &quot;MCASP0_AXR0&quot; unused input active-high 
+	line  17: &quot;MCASP0_AHCLKR&quot; unused input active-high 
+	line  18: &quot;MCASP0_ACLKR&quot; unused input active-high 
+	line  19: &quot;MCASP0_FSR&quot;       unused   input  active-high 
+	line  20: &quot;MCASP0_AXR1&quot; unused input active-high 
+	line  21: &quot;MCASP0_AHCLKX&quot; unused input active-high 
+	line  22:         &quot;NC&quot;       unused   input  active-high 
+	line  23:         &quot;NC&quot;       unused   input  active-high 
+	line  24:         &quot;NC&quot;       unused   input  active-high 
+	line  25:         &quot;NC&quot;       unused   input  active-high 
+	line  26:         &quot;NC&quot;       unused   input  active-high 
+	line  27:         &quot;NC&quot;       unused   input  active-high 
+	line  28:         &quot;NC&quot;       unused   input  active-high 
+	line  29:         &quot;NC&quot;       unused   input  active-high 
+	line  30:         &quot;NC&quot;       unused   input  active-high 
+	line  31:         &quot;NC&quot;       unused   input  active-high 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;and turning it off for 10 seconds&lt;/p&gt;
+
+&lt;p&gt;Now turn on the D5 LED for 10 seconds using&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; 10 gpiochip1 &lt;span class=&quot;nv&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and turn it off for 10 seconds&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ gpioset -m time -s 10 gpiochip1 24=0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note that after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpioset&lt;/code&gt; exits, the data of the output is undefined.&lt;/p&gt;
@@ -67,7 +207,13 @@ debian@beaglebone:~/elec3607-materials/labs/lab1-gpio&lt;span class=&quot;nv&quo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Modify the program so that, in addition to blinking the LED, it will
-print the status of the S2 button on each iteration of the loop.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card and program it via GPIO.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+print the status of the S2 button once a second as
+below.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./blink 
+&lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+...
+&lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card and program it via GPIO.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
