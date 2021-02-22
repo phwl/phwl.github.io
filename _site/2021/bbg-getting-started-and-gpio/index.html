@@ -357,7 +357,7 @@ gpiochip3 - 32 lines:
 </code></pre></div></div>
 <p>Note that after <code class="language-plaintext highlighter-rouge">gpioset</code> exits, the data of the output is undefined.</p>
 
-<h2 id="3-exercise">3. Exercise</h2>
+<h2 id="3-exercise-1-40">3. Exercise 1 (40%)</h2>
 <p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which
 flashes the D5 LED as follows:</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
@@ -399,6 +399,14 @@ below.</p>
 ...
 <span class="nv">S2</span><span class="o">=</span>0
 </code></pre></div></div>
+
+<h2 id="4-exercise-2-60">4. Exercise 2 (60%)</h2>
+<p>The data sheet for a seven segment display (SSD) is available <a href="http://www.farnell.com/datasheets/2863910.pdf">here</a>. Each segment should be driven by a 6mA BBG output so select 6 such pins on the P8 connector to use.</p>
+<ul>
+  <li>Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.</li>
+  <li>Connect up the SSD</li>
+  <li>Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
+</ul>
 
         
       </section>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:41:43+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-22T20:59:46+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
 program it via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
@@ -173,7 +173,7 @@ gpiochip3 - 32 lines:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note that after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpioset&lt;/code&gt; exits, the data of the output is undefined.&lt;/p&gt;
 
-&lt;h2 id=&quot;3-exercise&quot;&gt;3. Exercise&lt;/h2&gt;
+&lt;h2 id=&quot;3-exercise-1-40&quot;&gt;3. Exercise 1 (40%)&lt;/h2&gt;
 &lt;p&gt;Download, compile and execute the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blink&lt;/code&gt; program which
 flashes the D5 LED as follows:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
@@ -214,7 +214,15 @@ below.&lt;/p&gt;
 &lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
 ...
 &lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card and program it via GPIO.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;4-exercise-2-60&quot;&gt;4. Exercise 2 (60%)&lt;/h2&gt;
+&lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;http://www.farnell.com/datasheets/2863910.pdf&quot;&gt;here&lt;/a&gt;. Each segment should be driven by a 6mA BBG output so select 6 such pins on the P8 connector to use.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.&lt;/li&gt;
+  &lt;li&gt;Connect up the SSD&lt;/li&gt;
+  &lt;li&gt;Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card and program it via GPIO.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
