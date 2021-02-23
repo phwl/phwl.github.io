@@ -196,8 +196,29 @@ AM3358 Debian 10.3 2020-04-06 4GB SD IoT image for PocketBeagle, BeagleBone, Bea
 
 <p>The driver for networking via USB didn’t work with the latest version
 of MacOS (Big Sur 11.2.1) but the BBG was able to use DNS over Ethernet
-to connect to my network.  One can then <code class="language-plaintext highlighter-rouge">ssh debian@beaglebone.local</code>
-to access.</p>
+to connect to my network (this won’t work in the lab if there is more
+than one BBG plugged into the network).  One can then run <code class="language-plaintext highlighter-rouge">ssh</code> to access (use “temppwd” as the
+password for user “debian”)</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>ssh <span class="nt">-Y</span> debian@beaglebone.local
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+debian@beaglebone.local<span class="s1">'s password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
+debian@beaglebone:~$
+</span></code></pre></div></div>
 
 <h2 id="2-gpio">2. GPIO</h2>
 <p>As described in <a href="http://phwl.org/2021/QEMU-ARM-Linux-gpio/">http://phwl.org/2021/QEMU-ARM-Linux-gpio/</a>, libgpiod
@@ -218,135 +239,7 @@ debian@beaglebone:~$ gpioinfo
 gpiochip0 - 32 lines:
 	line   0:  "MDIO_DATA"       unused   input  active-high 
 	line   1:   "MDIO_CLK"       unused   input  active-high 
-	line   2:  "SPI0_SCLK"       unused   input  active-high 
-	line   3:    "SPI0_D0"       unused   input  active-high 
-	line   4:    "SPI0_D1"       unused   input  active-high 
-	line   5:   "SPI0_CS0"       unused   input  active-high 
-	line   6:   "SPI0_CS1"         "cd"   input   active-low [used]
-	line   7: "ECAP0_IN_PWM0_OUT" unused input active-high 
-	line   8: "LCD_DATA12"       unused   input  active-high 
-	line   9: "LCD_DATA13"       unused   input  active-high 
-	line  10: "LCD_DATA14"       unused   input  active-high 
-	line  11: "LCD_DATA15"       unused   input  active-high 
-	line  12: "UART1_CTSN"      "P9_20"   input  active-high [used]
-	line  13: "UART1_RTSN"      "P9_19"   input  active-high [used]
-	line  14:  "UART1_RXD"       unused   input  active-high 
-	line  15:  "UART1_TXD"       unused   input  active-high 
-	line  16: "GMII1_TXD3"       unused   input  active-high 
-	line  17: "GMII1_TXD2"       unused   input  active-high 
-	line  18: "USB0_DRVVBUS" unused input active-high 
-	line  19: "XDMA_EVENT_INTR0" unused input active-high 
-	line  20: "XDMA_EVENT_INTR1" unused input active-high 
-	line  21: "GMII1_TXD1"       unused   input  active-high 
-	line  22:   "GPMC_AD8"       unused   input  active-high 
-	line  23:   "GPMC_AD9"       unused   input  active-high 
-	line  24:         "NC"       unused   input  active-high 
-	line  25:         "NC"       unused   input  active-high 
-	line  26:  "GPMC_AD10"       unused   input  active-high 
-	line  27:  "GPMC_AD11"       unused   input  active-high 
-	line  28: "GMII1_TXD0"       unused   input  active-high 
-	line  29: "RMII1_REFCLK" unused input active-high 
-	line  30: "GPMC_WAIT0"       unused   input  active-high 
-	line  31:   "GPMC_WPN"       unused   input  active-high 
-gpiochip1 - 32 lines:
-	line   0:   "GPMC_AD0"       unused   input  active-high 
-	line   1:   "GPMC_AD1"       unused   input  active-high 
-	line   2:   "GPMC_AD2"       unused   input  active-high 
-	line   3:   "GPMC_AD3"       unused   input  active-high 
-	line   4:   "GPMC_AD4"       unused   input  active-high 
-	line   5:   "GPMC_AD5"       unused   input  active-high 
-	line   6:   "GPMC_AD6"       unused   input  active-high 
-	line   7:   "GPMC_AD7"       unused   input  active-high 
-	line   8: "UART0_CTSN"       unused   input  active-high 
-	line   9: "UART0_RTSN"       unused   input  active-high 
-	line  10:  "UART0_RXD"       unused   input  active-high 
-	line  11:  "UART0_TXD"       unused   input  active-high 
-	line  12:  "GPMC_AD12"       unused   input  active-high 
-	line  13:  "GPMC_AD13"       unused   input  active-high 
-	line  14:  "GPMC_AD14"       unused   input  active-high 
-	line  15:  "GPMC_AD15"       unused   input  active-high 
-	line  16:    "GPMC_A0"       unused   input  active-high 
-	line  17:    "GPMC_A1"       unused   input  active-high 
-	line  18:    "GPMC_A2"       unused   input  active-high 
-	line  19:    "GPMC_A3"       unused   input  active-high 
-	line  20:    "GPMC_A4"       unused   input  active-high 
-	line  21:    "GPMC_A5" "beaglebone:green:usr0" output active-high [used]
-	line  22:    "GPMC_A6" "beaglebone:green:usr1" output active-high [used]
-	line  23:    "GPMC_A7" "beaglebone:green:usr2" output active-high [used]
-	line  24:    "GPMC_A8"       unused  output  active-high 
-	line  25:    "GPMC_A9"       unused   input  active-high 
-	line  26:   "GPMC_A10"       unused   input  active-high 
-	line  27:   "GPMC_A11"       unused   input  active-high 
-	line  28:  "GPMC_BE1N"       unused   input  active-high 
-	line  29:  "GPMC_CSN0"       unused   input  active-high 
-	line  30:  "GPMC_CSN1"       unused   input  active-high 
-	line  31:  "GPMC_CSN2"       unused   input  active-high 
-gpiochip2 - 32 lines:
-	line   0:  "GPMC_CSN3"       unused   input  active-high 
-	line   1:   "GPMC_CLK"       unused   input  active-high 
-	line   2: "GPMC_ADVN_ALE" unused input active-high 
-	line   3: "GPMC_OEN_REN" unused input active-high 
-	line   4:   "GPMC_WEN"       unused   input  active-high 
-	line   5: "GPMC_BE0N_CLE" unused input active-high 
-	line   6:  "LCD_DATA0"       unused   input  active-high 
-	line   7:  "LCD_DATA1"       unused   input  active-high 
-	line   8:  "LCD_DATA2"       unused   input  active-high 
-	line   9:  "LCD_DATA3"       unused   input  active-high 
-	line  10:  "LCD_DATA4"       unused   input  active-high 
-	line  11:  "LCD_DATA5"       unused   input  active-high 
-	line  12:  "LCD_DATA6"       unused   input  active-high 
-	line  13:  "LCD_DATA7"       unused   input  active-high 
-	line  14:  "LCD_DATA8"       unused   input  active-high 
-	line  15:  "LCD_DATA9"       unused   input  active-high 
-	line  16: "LCD_DATA10"       unused   input  active-high 
-	line  17: "LCD_DATA11"       unused   input  active-high 
-	line  18: "GMII1_RXD3"       unused   input  active-high 
-	line  19: "GMII1_RXD2"       unused   input  active-high 
-	line  20: "GMII1_RXD1"       unused   input  active-high 
-	line  21: "GMII1_RXD0"       unused   input  active-high 
-	line  22:  "LCD_VSYNC"       unused   input  active-high 
-	line  23:  "LCD_HSYNC"       unused   input  active-high 
-	line  24:   "LCD_PCLK"       unused   input  active-high 
-	line  25: "LCD_AC_BIAS_EN" unused input active-high 
-	line  26:  "MMC0_DAT3"       unused   input  active-high 
-	line  27:  "MMC0_DAT2"       unused   input  active-high 
-	line  28:  "MMC0_DAT1"       unused   input  active-high 
-	line  29:  "MMC0_DAT0"       unused   input  active-high 
-	line  30:   "MMC0_CLK"       unused   input  active-high 
-	line  31:   "MMC0_CMD"       unused   input  active-high 
-gpiochip3 - 32 lines:
-	line   0:  "GMII1_COL"       unused   input  active-high 
-	line   1:  "GMII1_CRS"       unused   input  active-high 
-	line   2: "GMII1_RXER"       unused   input  active-high 
-	line   3: "GMII1_TXEN"       unused   input  active-high 
-	line   4: "GMII1_RXDV"       unused   input  active-high 
-	line   5:   "I2C0_SDA"       unused   input  active-high 
-	line   6:   "I2C0_SCL"       unused   input  active-high 
-	line   7:       "EMU0"       unused   input  active-high 
-	line   8:       "EMU1"       unused   input  active-high 
-	line   9: "GMII1_TXCLK" unused input active-high 
-	line  10: "GMII1_RXCLK" unused input active-high 
-	line  11:         "NC"       unused   input  active-high 
-	line  12:         "NC"       unused   input  active-high 
-	line  13: "USB1_DRVVBUS" unused input active-high 
-	line  14: "MCASP0_ACLKX" unused input active-high 
-	line  15: "MCASP0_FSX"       unused   input  active-high 
-	line  16: "MCASP0_AXR0" unused input active-high 
-	line  17: "MCASP0_AHCLKR" unused input active-high 
-	line  18: "MCASP0_ACLKR" unused input active-high 
-	line  19: "MCASP0_FSR"       unused   input  active-high 
-	line  20: "MCASP0_AXR1" unused input active-high 
-	line  21: "MCASP0_AHCLKX" unused input active-high 
-	line  22:         "NC"       unused   input  active-high 
-	line  23:         "NC"       unused   input  active-high 
-	line  24:         "NC"       unused   input  active-high 
-	line  25:         "NC"       unused   input  active-high 
-	line  26:         "NC"       unused   input  active-high 
-	line  27:         "NC"       unused   input  active-high 
-	line  28:         "NC"       unused   input  active-high 
-	line  29:         "NC"       unused   input  active-high 
-	line  30:         "NC"       unused   input  active-high 
-	line  31:         "NC"       unused   input  active-high 
+...
 </code></pre></div></div>
 
 <p>Now turn on the D5 LED for 10 seconds using</p>
@@ -358,9 +251,9 @@ gpiochip3 - 32 lines:
 <p>Note that after <code class="language-plaintext highlighter-rouge">gpioset</code> exits, the data of the output is undefined.</p>
 
 <h2 id="3-laboratory-experiment">3. Laboratory Experiment</h2>
-<h3 id="part-1-s2-button-input-40">Part 1 S2 Button Input (40%)</h3>
-<p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which
-flashes the D5 LED as follows:</p>
+<h3 id="part-1---s2-button-input-40">Part 1 - S2 Button Input (40%)</h3>
+<p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which flashes the D5 LED as follows</p>
+
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
 Debian GNU/Linux 10
 
@@ -380,28 +273,100 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 08:49:57 2021 from fe80::8b4:5a85:cfb2:5eb%eth0
 
-debian@beaglebone:~<span class="nv">$ </span>git clone https://github.com/phwl/elec3607-materials
-Cloning into <span class="s1">'elec3607-materials'</span>...
+debian@beaglebone:~<span class="nv">$ </span>git clone https://github.com/phwl/elec3607-labquestions
+Cloning into <span class="s1">'elec3607-labquestions'</span>...
 remote: Enumerating objects: 22, <span class="k">done</span><span class="nb">.</span>
 remote: Counting objects: 100% <span class="o">(</span>22/22<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
 remote: Compressing objects: 100% <span class="o">(</span>17/17<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
 remote: Total 22 <span class="o">(</span>delta 5<span class="o">)</span>, reused 17 <span class="o">(</span>delta 3<span class="o">)</span>, pack-reused 0
 Unpacking objects: 100% <span class="o">(</span>22/22<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-debian@beaglebone:~<span class="nv">$ </span><span class="nb">cd </span>elec3607-materials/labs/lab1-gpio/
-debian@beaglebone:~/elec3607-materials/labs/lab1-gpio<span class="nv">$ </span>gcc <span class="nt">-o</span> blink blink.c <span class="nt">-lgpiod</span>
-debian@beaglebone:~/elec3607-materials/labs/lab1-gpio<span class="nv">$ </span>./blink
+debian@beaglebone:~<span class="nv">$ </span><span class="nb">cd </span>elec3607-labquestions/labs/lab1-gpio/
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>gcc <span class="nt">-o</span> blink blink.c <span class="nt">-lgpiod</span>
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>./blink
 </code></pre></div></div>
 
+<p>Here is a listing of <code class="language-plaintext highlighter-rouge">blink.c</code></p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+</pre></td><td class="code"><pre><span class="cm">/*
+ * **    blink.c -    blink with 1s delay 
+ * */</span>
+
+<span class="cp">#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;gpiod.h&gt;
+</span>
+<span class="cp">#define GPIOCHIP        1
+#define GPIOLINE        24
+</span>
+<span class="kt">int</span> 
+<span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+        <span class="k">struct</span> <span class="n">gpiod_chip</span> <span class="o">*</span><span class="n">output_chip</span><span class="p">;</span>
+        <span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">output_line</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">line_value</span><span class="p">;</span>
+
+        <span class="cm">/* open chip and get line */</span>
+        <span class="n">output_chip</span> <span class="o">=</span> <span class="n">gpiod_chip_open_by_number</span><span class="p">(</span><span class="n">GPIOCHIP</span><span class="p">);</span>
+        <span class="n">output_line</span> <span class="o">=</span> <span class="n">gpiod_chip_get_line</span><span class="p">(</span><span class="n">output_chip</span><span class="p">,</span> <span class="n">GPIOLINE</span><span class="p">);</span>
+
+        <span class="cm">/* config as output and set a description */</span>
+        <span class="n">gpiod_line_request_output</span><span class="p">(</span><span class="n">output_line</span><span class="p">,</span> <span class="s">"blink"</span><span class="p">,</span> <span class="n">GPIOD_LINE_ACTIVE_STATE_HIGH</span><span class="p">);</span>
+
+        <span class="k">for</span> <span class="p">(;;)</span>
+        <span class="p">{</span>
+                <span class="n">line_value</span> <span class="o">=</span> <span class="o">!</span><span class="n">line_value</span><span class="p">;</span>
+                <span class="n">gpiod_line_set_value</span><span class="p">(</span><span class="n">output_line</span><span class="p">,</span> <span class="n">line_value</span><span class="p">);</span>
+                <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
 <p>Modify the program so that, in addition to blinking the LED, it will
-print the status of the S2 button once a second as
-below.</p>
+print the status of the S2 button once a second as below.
+You will need to refer to the <a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">reference manual for libgpiod</a>.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>./blink 
 <span class="nv">S2</span><span class="o">=</span>1
 ...
 <span class="nv">S2</span><span class="o">=</span>0
 </code></pre></div></div>
 
-<h3 id="part-2-seven-segment-display-60">Part 2 Seven Segment Display (60%)</h3>
+<h3 id="part-2---seven-segment-display-60">Part 2 - Seven Segment Display (60%)</h3>
 <p>The data sheet for a seven segment display (SSD) is available <a href="http://www.farnell.com/datasheets/2863910.pdf">here</a>.</p>
 <ol>
   <li>Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.</li>
