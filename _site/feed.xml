@@ -1,44 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-23T16:10:36+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
-program it via GPIO.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-23T16:51:55+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green GPIO</title><link href="/2021/bbg-gpio/" rel="alternate" type="text/html" title="BeagleBone Green GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-gpio</id><content type="html" xml:base="/2021/bbg-gpio/">&lt;p&gt;This post details how to control the BeagleBone Green (BBG) via GPIO.&lt;/p&gt;
 
-&lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
-&lt;p&gt;Instructions for getting started with the BBG are available at at 
-at &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;https://beagleboard.org/getting-started&lt;/a&gt;. This involves downloading
-the Debian Linux image and writing it to a microSD card (make sure you
-use the Debian image for the BBG). My version was:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Buster IoT (without graphical desktop) for BeagleBone and PocketBeagle via microSD card
-AM3358 Debian 10.3 2020-04-06 4GB SD IoT image for PocketBeagle, BeagleBone, BeagleBone Black, BeagleBone Black Wireless, BeagleBone Black Industrial, BeagleBone Blue, SeeedStudio BeagleBone Green, SeeedStudio BeagleBone Green Wireless, SanCloud BeagleBone Enhanced, Arrow BeagleBone Black Industrial and Mentorel BeagleBone uSomIQ - more info - sha256sum: 22448ba28d0d58e25e875aac3b4e91eaef82e2d11c9d2c43d948ed60708f7434
+&lt;h2 id=&quot;1-gpio&quot;&gt;1. GPIO&lt;/h2&gt;
+&lt;p&gt;Since Linux v4.8, the standard way of using Linux GPIO has been via 
+&lt;a href=&quot;https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/&quot;&gt;libgpiod&lt;/a&gt;.
+Prior to the introduction of libgpiod, the
+sysfs interface was used, but sysfs is depreciated and was removed from the mainline Linux kernel
+in 2020. 
+The best source of information on libgpiod
+&lt;a href=&quot;https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/&quot;&gt;comes with the library&lt;/a&gt; and the (&lt;a href=&quot;http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf&quot;&gt;libgpiod manual&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The library comes with a number of command line tools to manipulate GPIOs:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpiodetect - list all gpiochips present on the system, their names, labels
+            and number of GPIO lines&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpioinfo   - list all lines of specified gpiochips, their names, consumers,
+            direction, active state and additional flags&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpioget    - read values of specified GPIO lines&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpioset    - set values of specified GPIO lines, potentially keep the lines
+            exported and wait until timeout, user input or signal&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpiofind   - find the gpiochip name and line offset given the line name&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gpiomon    - wait for events on GPIO lines, specify which events to watch,
+            how many events to process before exiting or if the events
+            should be reported to the console.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;# Read the value of a single GPIO line.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioget gpiochip1 23
+    0
+
+    &lt;span class=&quot;c&quot;&gt;# Read two values at the same time. Set the active state of the lines&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# to low.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioget &lt;span class=&quot;nt&quot;&gt;--active-low&lt;/span&gt; gpiochip1 23 24
+    1 1
+
+    &lt;span class=&quot;c&quot;&gt;# Set values of two lines, then daemonize and wait for a signal (SIGINT or&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# SIGTERM) before releasing them.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset &lt;span class=&quot;nt&quot;&gt;--mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;signal &lt;span class=&quot;nt&quot;&gt;--background&lt;/span&gt; gpiochip1 &lt;span class=&quot;nv&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
+
+    &lt;span class=&quot;c&quot;&gt;# Set the value of a single line, then exit immediately. This is useful&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# for floating pins.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset gpiochip1 &lt;span class=&quot;nv&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+
+    &lt;span class=&quot;c&quot;&gt;# Find a GPIO line by name.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-LED-2&quot;&lt;/span&gt; gpiochip1 23
+
+    &lt;span class=&quot;c&quot;&gt;# Toggle a GPIO by name, then wait for the user to press ENTER.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset &lt;span class=&quot;nt&quot;&gt;--mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;wait&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-LED-2&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+
+    &lt;span class=&quot;c&quot;&gt;# Wait for three rising edge events on a single GPIO line, then exit.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;nt&quot;&gt;--rising-edge&lt;/span&gt; gpiochip2 3
+    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1151.814356387]
+    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1151.815449803]
+    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1152.091556803]
+
+    &lt;span class=&quot;c&quot;&gt;# Wait for a single falling edge event. Specify a custom output format.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%e %o %s %n&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--falling-edge&lt;/span&gt; gpiochip1 4 0 4 1156 615459801
+
+    &lt;span class=&quot;c&quot;&gt;# Pause execution until a single event of any type occurs. Don&apos;t print&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# anything. Find the line by name.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-IN&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Monitor multiple lines, exit after the first event.&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 gpiochip0 2 3 5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The driver for networking via USB didn’t work with the latest version
-of MacOS (Big Sur 11.2.1) but the BBG was able to use DNS over Ethernet
-to connect to my network (this won’t work in the lab if there is more
-than one BBG plugged into the network).  One can then run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; to access (use “temppwd” as the
-password for user “debian”)&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; debian@beaglebone.local
-Debian GNU/Linux 10
-
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
-
-debian@beaglebone.local&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
-debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;2-gpio&quot;&gt;2. GPIO&lt;/h2&gt;
-&lt;p&gt;As described in &lt;a href=&quot;http://phwl.org/2021/QEMU-ARM-Linux-gpio/&quot;&gt;http://phwl.org/2021/QEMU-ARM-Linux-gpio/&lt;/a&gt;, libgpiod
-is the standard way to use GPIO under Linux. To use it on the BBG, one must
+&lt;p&gt;To use it on the BBG, one must
 first download the library and include files.&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
 &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libgpiod-dev
@@ -66,7 +106,7 @@ gpiochip0 - 32 lines:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note that after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpioset&lt;/code&gt; exits, the data of the output is undefined.&lt;/p&gt;
 
-&lt;h2 id=&quot;3-laboratory-experiment&quot;&gt;3. Laboratory Experiment&lt;/h2&gt;
+&lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
 &lt;h3 id=&quot;part-1---s2-button-input-40&quot;&gt;Part 1 - S2 Button Input (40%)&lt;/h3&gt;
 &lt;p&gt;Download, compile and execute the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blink&lt;/code&gt; program which flashes the D5 LED as follows&lt;/p&gt;
 
@@ -173,7 +213,7 @@ debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Referring to the &lt;a href=&quot;http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf&quot;&gt;libgpiod reference manual&lt;/a&gt;, we obtain a descriptor for the chip specified by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPIOCHIP&lt;/code&gt; in line 20. Using that descriptor we obtain one for the line in line 21. 
+&lt;p&gt;Referring to the &lt;a href=&quot;http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf&quot;&gt;libgpiod manual&lt;/a&gt;, we obtain a descriptor for the chip specified by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPIOCHIP&lt;/code&gt; in line 20. Using that descriptor we obtain one for the line in line 21. 
 In line 24, we configure the pin as an output, and give it the name “blink” (this is called a consumer in libgpiod). Line 28 toggles &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;line_value&lt;/code&gt; between a true and false value, which is written to the line in line 29. We then sleep for 1 second before returning to the top of the infinite loop. You can press control-C to exit the program.&lt;/p&gt;
 
 &lt;p&gt;Modify the program so that, in addition to blinking the LED, it will
@@ -186,39 +226,47 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 
 &lt;h3 id=&quot;part-2---seven-segment-display-60&quot;&gt;Part 2 - Seven Segment Display (60%)&lt;/h3&gt;
 &lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;http://www.farnell.com/datasheets/2863910.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
   &lt;li&gt;Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.&lt;/li&gt;
   &lt;li&gt;Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.&lt;/li&gt;
   &lt;li&gt;Connect up the SSD to the BBG via a breadboard.&lt;/li&gt;
   &lt;li&gt;Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card and program it via GPIO.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
 
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
+&lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
+&lt;p&gt;Instructions for getting started with the BBG are available at at 
+at &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;https://beagleboard.org/getting-started&lt;/a&gt;. This involves downloading
+the Debian Linux image and writing it to a microSD card (make sure you
+use the Debian image for the BBG). My version was:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Buster IoT (without graphical desktop) for BeagleBone and PocketBeagle via microSD card
+AM3358 Debian 10.3 2020-04-06 4GB SD IoT image for PocketBeagle, BeagleBone, BeagleBone Black, BeagleBone Black Wireless, BeagleBone Black Industrial, BeagleBone Blue, SeeedStudio BeagleBone Green, SeeedStudio BeagleBone Green Wireless, SanCloud BeagleBone Enhanced, Arrow BeagleBone Black Industrial and Mentorel BeagleBone uSomIQ - more info - sha256sum: 22448ba28d0d58e25e875aac3b4e91eaef82e2d11c9d2c43d948ed60708f7434
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+&lt;p&gt;The driver for networking via USB didn’t work with the latest version
+of MacOS (Big Sur 11.2.1) but the BBG was able to use DNS over Ethernet
+to connect to my network (this won’t work in the lab if there is more
+than one BBG plugged into the network).  One can then run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; to access (use “temppwd” as the
+password for user “debian”)&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; debian@beaglebone.local
+Debian GNU/Linux 10
 
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
 
-&lt;p&gt;I like them fried!&lt;/p&gt;
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
 
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
+default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
+debian@beaglebone.local&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
+debian@beaglebone:~$
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
@@ -326,86 +374,38 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools&quot;&gt;1. Linux libgpiod Library Command Line Tools&lt;/h2&gt;
-&lt;p&gt;Since Linux v4.8, the standard way of using Linux GPIO has been via 
-&lt;a href=&quot;https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/&quot;&gt;libgpiod&lt;/a&gt;.
-Prior to the introduction of libgpiod, the
-sysfs interface was used, but sysfs is depreciated and was removed from the mainline Linux kernel
-in 2020. 
-The best source of information on libgpiod
-&lt;a href=&quot;https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/&quot;&gt;comes with the library&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is a summary of the command line tools that it comes with:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpiodetect - list all gpiochips present on the system, their names, labels
-            and number of GPIO lines&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpioinfo   - list all lines of specified gpiochips, their names, consumers,
-            direction, active state and additional flags&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpioget    - read values of specified GPIO lines&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpioset    - set values of specified GPIO lines, potentially keep the lines
-            exported and wait until timeout, user input or signal&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpiofind   - find the gpiochip name and line offset given the line name&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;gpiomon    - wait for events on GPIO lines, specify which events to watch,
-            how many events to process before exiting or if the events
-            should be reported to the console.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Examples (also from the documentation) of how they are used:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;# Read the value of a single GPIO line.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioget gpiochip1 23
-    0
-
-    &lt;span class=&quot;c&quot;&gt;# Read two values at the same time. Set the active state of the lines&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# to low.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioget &lt;span class=&quot;nt&quot;&gt;--active-low&lt;/span&gt; gpiochip1 23 24
-    1 1
-
-    &lt;span class=&quot;c&quot;&gt;# Set values of two lines, then daemonize and wait for a signal (SIGINT or&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# SIGTERM) before releasing them.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset &lt;span class=&quot;nt&quot;&gt;--mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;signal &lt;span class=&quot;nt&quot;&gt;--background&lt;/span&gt; gpiochip1 &lt;span class=&quot;nv&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
-
-    &lt;span class=&quot;c&quot;&gt;# Set the value of a single line, then exit immediately. This is useful&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# for floating pins.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset gpiochip1 &lt;span class=&quot;nv&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
-
-    &lt;span class=&quot;c&quot;&gt;# Find a GPIO line by name.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-LED-2&quot;&lt;/span&gt; gpiochip1 23
-
-    &lt;span class=&quot;c&quot;&gt;# Toggle a GPIO by name, then wait for the user to press ENTER.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioset &lt;span class=&quot;nt&quot;&gt;--mode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;wait&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-LED-2&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
-
-    &lt;span class=&quot;c&quot;&gt;# Wait for three rising edge events on a single GPIO line, then exit.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;nt&quot;&gt;--rising-edge&lt;/span&gt; gpiochip2 3
-    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1151.814356387]
-    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1151.815449803]
-    event:  RISING EDGE offset: 3 timestamp: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;    1152.091556803]
-
-    &lt;span class=&quot;c&quot;&gt;# Wait for a single falling edge event. Specify a custom output format.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%e %o %s %n&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--falling-edge&lt;/span&gt; gpiochip1 4 0 4 1156 615459801
-
-    &lt;span class=&quot;c&quot;&gt;# Pause execution until a single event of any type occurs. Don&apos;t print&lt;/span&gt;
-    &lt;span class=&quot;c&quot;&gt;# anything. Find the line by name.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;gpiofind &lt;span class=&quot;s2&quot;&gt;&quot;USR-IN&quot;&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;# Monitor multiple lines, exit after the first event.&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 gpiochip0 2 3 5
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;`&lt;/p&gt;
+&lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools-on-qemu&quot;&gt;1. Linux libgpiod Library Command Line Tools on QEMU&lt;/h2&gt;
+&lt;p&gt;Refer to &lt;a href=&quot;/2021/bbg-gpio/&quot;&gt;BeagleBone Green gpio&lt;/a&gt; for an introduction to libgpiod.&lt;/p&gt;
 
 &lt;p&gt;Here we use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libgpiod&lt;/code&gt; tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
 gpio lines can have names, all of the ones on this machine are unnamed.&lt;/p&gt;
@@ -2321,43 +2321,4 @@ cd $TRD_HOME/prj/Vitis
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-7-install-balena-etcher&quot;&gt;Step 7 Install Balena Etcher&lt;/h2&gt;
-&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry><entry><title type="html">Googong Dam</title><link href="/2020/googong-dam/" rel="alternate" type="text/html" title="Googong Dam" /><published>2020-11-21T06:24:10+11:00</published><updated>2020-11-21T06:24:10+11:00</updated><id>/2020/googong-dam</id><content type="html" xml:base="/2020/googong-dam/">&lt;p&gt;Barry and I were in Canberra on a &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt; business trip and
-had a quick fish in &lt;a href=&quot;https://en.wikipedia.org/wiki/Googong_Dam&quot;&gt;Googong Dam&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/11/IMG_7089.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/11/IMG_7089.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Didn’t catch the Golden Perch that we were after but caught a few Redfin Perch.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/11/IMG_7078.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/11/IMG_7078.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/11/IMG_7087.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/11/IMG_7087.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/11/d75f8ee1-fe34-4ab8-bbfc-732316c4c488.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/11/d75f8ee1-fe34-4ab8-bbfc-732316c4c488.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><summary type="html">Barry and I were in Canberra on a CruxML business trip and had a quick fish in Googong Dam.</summary></entry></feed>
+&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry></feed>

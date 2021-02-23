@@ -10,19 +10,19 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>BeagleBone Green Getting Started and GPIO - Life, the Universe and Fishing</title>
-<meta name="description" content="This post details how to get started with a BeagleBone Green (BBG) microSD card andprogram it via GPIO.">
+<!-- begin _includes/seo.html --><title>BeagleBone Green GPIO - Life, the Universe and Fishing</title>
+<meta name="description" content="This post details how to control the BeagleBone Green (BBG) via GPIO.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="BeagleBone Green Getting Started and GPIO">
-<meta property="og:url" content="/2021/bbg-getting-started-and-gpio/">
+<meta property="og:title" content="BeagleBone Green GPIO">
+<meta property="og:url" content="/2021/bbg-gpio/">
 
 
-  <meta property="og:description" content="This post details how to get started with a BeagleBone Green (BBG) microSD card andprogram it via GPIO.">
+  <meta property="og:description" content="This post details how to control the BeagleBone Green (BBG) via GPIO.">
 
 
 
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="/2021/bbg-getting-started-and-gpio/">
+<link rel="canonical" href="/2021/bbg-gpio/">
 
 
 
@@ -166,15 +166,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="BeagleBone Green Getting Started and GPIO">
-    <meta itemprop="description" content="This post details how to get started with a BeagleBone Green (BBG) microSD card andprogram it via GPIO.">
+    <meta itemprop="headline" content="BeagleBone Green GPIO">
+    <meta itemprop="description" content="This post details how to control the BeagleBone Green (BBG) via GPIO.">
     <meta itemprop="datePublished" content="February 22, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">BeagleBone Green Getting Started and GPIO
+          <h1 id="page-title" class="page__title" itemprop="headline">BeagleBone Green GPIO
 </h1>
           
         </header>
@@ -182,47 +182,87 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This post details how to get started with a BeagleBone Green (BBG) microSD card and
-program it via GPIO.</p>
+        <p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
 
-<h2 id="1-getting-started">1. Getting Started</h2>
-<p>Instructions for getting started with the BBG are available at at 
-at <a href="https://beagleboard.org/getting-started">https://beagleboard.org/getting-started</a>. This involves downloading
-the Debian Linux image and writing it to a microSD card (make sure you
-use the Debian image for the BBG). My version was:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Buster IoT (without graphical desktop) for BeagleBone and PocketBeagle via microSD card
-AM3358 Debian 10.3 2020-04-06 4GB SD IoT image for PocketBeagle, BeagleBone, BeagleBone Black, BeagleBone Black Wireless, BeagleBone Black Industrial, BeagleBone Blue, SeeedStudio BeagleBone Green, SeeedStudio BeagleBone Green Wireless, SanCloud BeagleBone Enhanced, Arrow BeagleBone Black Industrial and Mentorel BeagleBone uSomIQ - more info - sha256sum: 22448ba28d0d58e25e875aac3b4e91eaef82e2d11c9d2c43d948ed60708f7434
+<h2 id="1-gpio">1. GPIO</h2>
+<p>Since Linux v4.8, the standard way of using Linux GPIO has been via 
+<a href="https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/">libgpiod</a>.
+Prior to the introduction of libgpiod, the
+sysfs interface was used, but sysfs is depreciated and was removed from the mainline Linux kernel
+in 2020. 
+The best source of information on libgpiod
+<a href="https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/">comes with the library</a> and the (<a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">libgpiod manual</a>).</p>
+
+<p>The library comes with a number of command line tools to manipulate GPIOs:</p>
+<ul>
+  <li>
+    <p>gpiodetect - list all gpiochips present on the system, their names, labels
+            and number of GPIO lines</p>
+  </li>
+  <li>
+    <p>gpioinfo   - list all lines of specified gpiochips, their names, consumers,
+            direction, active state and additional flags</p>
+  </li>
+  <li>
+    <p>gpioget    - read values of specified GPIO lines</p>
+  </li>
+  <li>
+    <p>gpioset    - set values of specified GPIO lines, potentially keep the lines
+            exported and wait until timeout, user input or signal</p>
+  </li>
+  <li>
+    <p>gpiofind   - find the gpiochip name and line offset given the line name</p>
+  </li>
+  <li>
+    <p>gpiomon    - wait for events on GPIO lines, specify which events to watch,
+            how many events to process before exiting or if the events
+            should be reported to the console.</p>
+  </li>
+</ul>
+
+<p>Examples:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c"># Read the value of a single GPIO line.</span>
+    <span class="nv">$ </span>gpioget gpiochip1 23
+    0
+
+    <span class="c"># Read two values at the same time. Set the active state of the lines</span>
+    <span class="c"># to low.</span>
+    <span class="nv">$ </span>gpioget <span class="nt">--active-low</span> gpiochip1 23 24
+    1 1
+
+    <span class="c"># Set values of two lines, then daemonize and wait for a signal (SIGINT or</span>
+    <span class="c"># SIGTERM) before releasing them.</span>
+    <span class="nv">$ </span>gpioset <span class="nt">--mode</span><span class="o">=</span>signal <span class="nt">--background</span> gpiochip1 <span class="nv">23</span><span class="o">=</span>1 <span class="nv">24</span><span class="o">=</span>0
+
+    <span class="c"># Set the value of a single line, then exit immediately. This is useful</span>
+    <span class="c"># for floating pins.</span>
+    <span class="nv">$ </span>gpioset gpiochip1 <span class="nv">23</span><span class="o">=</span>1
+
+    <span class="c"># Find a GPIO line by name.</span>
+    <span class="nv">$ </span>gpiofind <span class="s2">"USR-LED-2"</span> gpiochip1 23
+
+    <span class="c"># Toggle a GPIO by name, then wait for the user to press ENTER.</span>
+    <span class="nv">$ </span>gpioset <span class="nt">--mode</span><span class="o">=</span><span class="nb">wait</span> <span class="sb">`</span>gpiofind <span class="s2">"USR-LED-2"</span><span class="sb">`</span><span class="o">=</span>1
+
+    <span class="c"># Wait for three rising edge events on a single GPIO line, then exit.</span>
+    <span class="nv">$ </span>gpiomon <span class="nt">--num-events</span><span class="o">=</span>3 <span class="nt">--rising-edge</span> gpiochip2 3
+    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1151.814356387]
+    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1151.815449803]
+    event:  RISING EDGE offset: 3 timestamp: <span class="o">[</span>    1152.091556803]
+
+    <span class="c"># Wait for a single falling edge event. Specify a custom output format.</span>
+    <span class="nv">$ </span>gpiomon <span class="nt">--format</span><span class="o">=</span><span class="s2">"%e %o %s %n"</span> <span class="nt">--falling-edge</span> gpiochip1 4 0 4 1156 615459801
+
+    <span class="c"># Pause execution until a single event of any type occurs. Don't print</span>
+    <span class="c"># anything. Find the line by name.</span>
+    <span class="nv">$ </span>gpiomon <span class="nt">--num-events</span><span class="o">=</span>1 <span class="nt">--silent</span> <span class="sb">`</span>gpiofind <span class="s2">"USR-IN"</span><span class="sb">`</span>
+
+    <span class="c"># Monitor multiple lines, exit after the first event.</span>
+    <span class="nv">$ </span>gpiomon <span class="nt">--silent</span> <span class="nt">--num-events</span><span class="o">=</span>1 gpiochip0 2 3 5
 </code></pre></div></div>
 
-<p>The driver for networking via USB didn’t work with the latest version
-of MacOS (Big Sur 11.2.1) but the BBG was able to use DNS over Ethernet
-to connect to my network (this won’t work in the lab if there is more
-than one BBG plugged into the network).  One can then run <code class="language-plaintext highlighter-rouge">ssh</code> to access (use “temppwd” as the
-password for user “debian”)</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>ssh <span class="nt">-Y</span> debian@beaglebone.local
-Debian GNU/Linux 10
-
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is <span class="o">[</span>debian:temppwd]
-
-debian@beaglebone.local<span class="s1">'s password: 
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
-debian@beaglebone:~$
-</span></code></pre></div></div>
-
-<h2 id="2-gpio">2. GPIO</h2>
-<p>As described in <a href="http://phwl.org/2021/QEMU-ARM-Linux-gpio/">http://phwl.org/2021/QEMU-ARM-Linux-gpio/</a>, libgpiod
-is the standard way to use GPIO under Linux. To use it on the BBG, one must
+<p>To use it on the BBG, one must
 first download the library and include files.</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
 <span class="nb">sudo </span>apt <span class="nb">install </span>libgpiod-dev
@@ -250,7 +290,7 @@ gpiochip0 - 32 lines:
 </code></pre></div></div>
 <p>Note that after <code class="language-plaintext highlighter-rouge">gpioset</code> exits, the data of the output is undefined.</p>
 
-<h2 id="3-laboratory-experiment">3. Laboratory Experiment</h2>
+<h2 id="2-laboratory-experiment">2. Laboratory Experiment</h2>
 <h3 id="part-1---s2-button-input-40">Part 1 - S2 Button Input (40%)</h3>
 <p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which flashes the D5 LED as follows</p>
 
@@ -357,7 +397,7 @@ debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </spa
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
-<p>Referring to the <a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">libgpiod reference manual</a>, we obtain a descriptor for the chip specified by <code class="language-plaintext highlighter-rouge">GPIOCHIP</code> in line 20. Using that descriptor we obtain one for the line in line 21. 
+<p>Referring to the <a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">libgpiod manual</a>, we obtain a descriptor for the chip specified by <code class="language-plaintext highlighter-rouge">GPIOCHIP</code> in line 20. Using that descriptor we obtain one for the line in line 21. 
 In line 24, we configure the pin as an output, and give it the name “blink” (this is called a consumer in libgpiod). Line 28 toggles <code class="language-plaintext highlighter-rouge">line_value</code> between a true and false value, which is written to the line in line 29. We then sleep for 1 second before returning to the top of the infinite loop. You can press control-C to exit the program.</p>
 
 <p>Modify the program so that, in addition to blinking the LED, it will
@@ -370,12 +410,12 @@ print the status of the S2 button once a second as below.</p>
 
 <h3 id="part-2---seven-segment-display-60">Part 2 - Seven Segment Display (60%)</h3>
 <p>The data sheet for a seven segment display (SSD) is available <a href="http://www.farnell.com/datasheets/2863910.pdf">here</a>.</p>
-<ol>
+<ul>
   <li>Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.</li>
   <li>Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.</li>
   <li>Connect up the SSD to the BBG via a breadboard.</li>
   <li>Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
-</ol>
+</ul>
 
         
       </section>
@@ -433,18 +473,18 @@ print the status of the S2 button once a second as below.</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=BeagleBone+Green+Getting+Started+and+GPIO%20%2F2021%2Fbbg-getting-started-and-gpio%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=BeagleBone+Green+GPIO%20%2F2021%2Fbbg-gpio%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fbbg-getting-started-and-gpio%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fbbg-gpio%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fbbg-getting-started-and-gpio%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fbbg-gpio%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2021/lake-eucumbene/" class="pagination--pager" title="Lake Eucumbene - who would go trout fishing during a heatwave?
+      <a href="/2021/bbg-getting-started/" class="pagination--pager" title="BeagleBone Green Getting Started
 ">Previous</a>
     
     
@@ -462,6 +502,35 @@ print the status of the S2 button once a second as below.</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-getting-started/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Getting Started"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-getting-started/" rel="permalink">BeagleBone Green Getting Started
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to get started with a BeagleBone Green (BBG) microSD card.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -546,35 +615,6 @@ print the status of the S2 button once a second as below.</p>
     
     <p class="archive__item-excerpt" itemprop="description">This post details how to use the GPIO peripheral on the ARM linux image 
 built in Creating an emulated ARM Linux system using Buildroot and QEMU
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">
-        <img src=
-          
-            "/assets/images/2021/01/armlogo.jpeg"
-          
-          alt="Creating an emulated ARM Linux system using Buildroot and QEMU"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/" rel="permalink">Creating an emulated ARM Linux system using Buildroot and QEMU
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.
 </p>
   </article>
 </div>

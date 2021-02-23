@@ -16,75 +16,8 @@ This post details how to use the GPIO peripheral on the ARM linux image
 built in [Creating an emulated ARM Linux system using Buildroot and QEMU]({% link _posts/2021-01-07-emulated-ARM-Linux-with-Buildroot-and-QEMU.md %}) 
 
 
-## 1. Linux libgpiod Library Command Line Tools
-Since Linux v4.8, the standard way of using Linux GPIO has been via 
-[libgpiod](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/).
-Prior to the introduction of libgpiod, the
-sysfs interface was used, but sysfs is depreciated and was removed from the mainline Linux kernel
-in 2020. 
-The best source of information on libgpiod
-[comes with the library](https://git.kernel.org/pub/scm/libs/libgpiod/libgpiod.git/about/).
-
-Here is a summary of the command line tools that it comes with:
- * gpiodetect - list all gpiochips present on the system, their names, labels
-               and number of GPIO lines
-
- * gpioinfo   - list all lines of specified gpiochips, their names, consumers,
-               direction, active state and additional flags
-
- * gpioget    - read values of specified GPIO lines
-
- * gpioset    - set values of specified GPIO lines, potentially keep the lines
-               exported and wait until timeout, user input or signal
-
- * gpiofind   - find the gpiochip name and line offset given the line name
-
- * gpiomon    - wait for events on GPIO lines, specify which events to watch,
-               how many events to process before exiting or if the events
-               should be reported to the console.
-
-Examples (also from the documentation) of how they are used:
-``` sh
-    # Read the value of a single GPIO line.
-    $ gpioget gpiochip1 23
-    0
-
-    # Read two values at the same time. Set the active state of the lines
-    # to low.
-    $ gpioget --active-low gpiochip1 23 24
-    1 1
-
-    # Set values of two lines, then daemonize and wait for a signal (SIGINT or
-    # SIGTERM) before releasing them.
-    $ gpioset --mode=signal --background gpiochip1 23=1 24=0
-
-    # Set the value of a single line, then exit immediately. This is useful
-    # for floating pins.
-    $ gpioset gpiochip1 23=1
-
-    # Find a GPIO line by name.
-    $ gpiofind "USR-LED-2" gpiochip1 23
-
-    # Toggle a GPIO by name, then wait for the user to press ENTER.
-    $ gpioset --mode=wait `gpiofind "USR-LED-2"`=1
-
-    # Wait for three rising edge events on a single GPIO line, then exit.
-    $ gpiomon --num-events=3 --rising-edge gpiochip2 3
-    event:  RISING EDGE offset: 3 timestamp: [    1151.814356387]
-    event:  RISING EDGE offset: 3 timestamp: [    1151.815449803]
-    event:  RISING EDGE offset: 3 timestamp: [    1152.091556803]
-
-    # Wait for a single falling edge event. Specify a custom output format.
-    $ gpiomon --format="%e %o %s %n" --falling-edge gpiochip1 4 0 4 1156 615459801
-
-    # Pause execution until a single event of any type occurs. Don't print
-    # anything. Find the line by name.
-    $ gpiomon --num-events=1 --silent `gpiofind "USR-IN"`
-
-    # Monitor multiple lines, exit after the first event.
-    $ gpiomon --silent --num-events=1 gpiochip0 2 3 5
-```
-`
+## 1. Linux libgpiod Library Command Line Tools on QEMU
+Refer to [BeagleBone Green gpio](/2021/bbg-gpio/) for an introduction to libgpiod.
 
 Here we use the ```libgpiod``` tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
 gpio lines can have names, all of the ones on this machine are unnamed.

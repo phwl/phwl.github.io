@@ -1,0 +1,677 @@
+I"n�<p>This post details how to use the GPIO peripheral on the ARM linux image 
+built in <a href="/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/">Creating an emulated ARM Linux system using Buildroot and QEMU</a></p>
+
+<h2 id="1-linux-libgpiod-library-command-line-tools">1. Linux libgpiod Library Command Line Tools</h2>
+<p>Refer to <a href="/2021/bbg-gpio/">BeagleBone gpio</a></p>
+
+<p>Here we use the <code class="language-plaintext highlighter-rouge">libgpiod</code> tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
+gpio lines can have names, all of the ones on this machine are unnamed.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/elec3607/buildroot/output/images$ H=~/elec3607
+phwl@bream:~/elec3607/buildroot/output/images$ cd $H/buildroot/output/images
+phwl@bream:~/elec3607/buildroot/output/images$ ./start-qemu.sh 
+Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+... sh
+Welcome to Buildroot
+buildroot login: root
+# gpiodetect 
+gpiochip0 [9030000.pl061] (8 lines)
+# gpioinfo
+gpiochip0 - 8 lines:
+	line   0:      unnamed       unused   input  active-high 
+	line   1:      unnamed       unused   input  active-high 
+	line   2:      unnamed       unused   input  active-high 
+	line   3:      unnamed       unused   input  active-high 
+	line   4:      unnamed       unused   input  active-high 
+	line   5:      unnamed       unused   input  active-high 
+	line   6:      unnamed       unused   input  active-high 
+	line   7:      unnamed       unused   input  active-high 
+# 
+</code></pre></div></div>
+
+<p>Here is a link to a tutorial explaining the
+changes
+<a href="https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/">https://microhobby.com.br/blog/2020/02/02/new-linux-kernel-5-5-new-interfaces-in-gpiolib/</a>.</p>
+
+<h2 id="2-blink">2. Blink</h2>
+
+<h3 id="21-using-gpiod">2.1 Using gpiod</h3>
+<p>Using the gpiod library, 
+the following program will change the state of pin 3 on gpiochip0 ten times.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+</pre></td><td class="code"><pre><span class="cm">/*
+**    blink.c -    blink gpiochip0 line 3 with delay given by either
+**                 the command line or the default (NSPERIOD)
+*/</span>
+
+<span class="cp">#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;gpiod.h&gt;
+</span>
+<span class="cp">#define NSPERIOD    200000000ULL    </span><span class="cm">/* output period in ns */</span><span class="cp">
+</span>
+<span class="kt">int</span> 
+<span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">gpiod_chip</span> <span class="o">*</span><span class="n">output_chip</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">output_line</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">delay</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="n">NSPERIOD</span><span class="p">};</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">rem</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">line_value</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">delay</span><span class="p">.</span><span class="n">tv_nsec</span> <span class="o">=</span> <span class="n">atoll</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+
+    <span class="cm">/* open /dev/gpiochip0 */</span>
+    <span class="n">output_chip</span> <span class="o">=</span> <span class="n">gpiod_chip_open_by_number</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    
+    <span class="cm">/* work on pin 3 */</span>
+    <span class="n">output_line</span> <span class="o">=</span> <span class="n">gpiod_chip_get_line</span><span class="p">(</span><span class="n">output_chip</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+
+    <span class="cm">/* config as output and set a description */</span>
+    <span class="n">gpiod_line_request_output</span><span class="p">(</span><span class="n">output_line</span><span class="p">,</span> <span class="s">"blink"</span><span class="p">,</span>
+                  <span class="n">GPIOD_LINE_ACTIVE_STATE_HIGH</span><span class="p">);</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">line_value</span> <span class="o">=</span> <span class="o">!</span><span class="n">line_value</span><span class="p">;</span>
+        <span class="n">gpiod_line_set_value</span><span class="p">(</span><span class="n">output_line</span><span class="p">,</span> <span class="n">line_value</span><span class="p">);</span>
+            <span class="n">nanosleep</span><span class="p">(</span><span class="o">&amp;</span><span class="n">delay</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rem</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>If the C program is written to ~/src/teaching/labs/lab2/blink.c, it can be 
+compiled using:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/elec3607/labs/lab2<span class="nv">$ H</span><span class="o">=</span>~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2<span class="nv">$ $H</span>/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc <span class="nt">-o</span> blink blink.c <span class="nt">-lgpiod</span> 
+</code></pre></div></div>
+
+<p>In QEMU you can copy the file from the host to the guest and execute:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .</span>
+phwl@10.0.2.2<span class="s1">'s password: 
+# ./gpio
+#
+</span></code></pre></div></div>
+
+<h3 id="22-displaying-gpio_data">2.2 Displaying GPIO_DATA</h3>
+<p>Nothing appears to happen as there is no output in QEMU. Normally in
+an embedded system (as the name of the program suggests), we would 
+have the GPIO line connected to an LED, which would blink according
+to the program.</p>
+
+<p>The GPIO peripheral used in the
+qemu_aarch64_virt machine is described in the 
+ <a href="https://developer.arm.com/documentation/ddi0190/b">ARM PrimeCell General Purpose Input/Output (PL061) Technical Reference Manual</a> (which we will call the datasheet).  During boot up, the message</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+</code></pre></div></div>
+<p>or using
+<code class="language-plaintext highlighter-rouge">info mtree</code> in the QEMU monitor, you get</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0000000009030000-0000000009030fff (prio 0, i/o): pl061
+</code></pre></div></div>
+<p>shows that the start address (GPIOBASE in the datasheet) is 0x9030000.
+The address of GPIODATA is 0x9030000-0x9030ff and GPIODIR is 0x9030400.</p>
+
+<p>We can use the following program to interrogate the state of the GPIODATA
+register in the PL061 and print its value when it changes.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+</pre></td><td class="code"><pre><span class="cm">/*
+**    pl061-change.c     - display changes to the GPIO_GPIODATA state
+*/</span>
+
+<span class="cp">#include &lt;stdio.h&gt;
+#include &lt;sys/mman.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;time.h&gt;
+</span>
+<span class="cp">#define GPIO0_START_ADDR 0x09030000
+#define GPIO0_END_ADDR   0x09030fff
+#define GPIO0_SIZE (GPIO0_END_ADDR - GPIO0_START_ADDR)
+</span>
+<span class="cp">#define GPIO_GPIODATA    0
+</span>
+<span class="cm">/* high resolution time stamp */</span>
+<span class="kt">double</span>
+<span class="nf">gethrtime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span>    <span class="n">r</span><span class="p">;</span>
+    <span class="kt">int64_t</span>    <span class="n">ts</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">t</span><span class="p">;</span>
+
+    <span class="cm">/* read the time stamp */</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">clock_gettime</span><span class="p">(</span><span class="n">CLOCK_MONOTONIC</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+    <span class="n">ts</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)(</span><span class="n">t</span><span class="p">.</span><span class="n">tv_sec</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)</span><span class="mi">1000000000</span> <span class="o">+</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)(</span><span class="n">t</span><span class="p">.</span><span class="n">tv_nsec</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">ts</span> <span class="o">/</span> <span class="mf">1.0e9</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span>
+<span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">volatile</span> <span class="kt">void</span> <span class="o">*</span><span class="n">gpio_addr</span><span class="p">;</span>
+    <span class="k">volatile</span> <span class="kt">unsigned</span> <span class="kt">char</span> <span class="o">*</span><span class="n">gpio_gpiodata_addr</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">char</span>        <span class="n">c</span><span class="p">,</span> <span class="n">oldc</span><span class="p">;</span>
+
+    <span class="kt">int</span> <span class="n">fd</span> <span class="o">=</span> <span class="n">open</span><span class="p">(</span><span class="s">"/dev/mem"</span><span class="p">,</span> <span class="n">O_RDWR</span><span class="p">);</span>
+    <span class="n">gpio_addr</span> <span class="o">=</span> <span class="n">mmap</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">GPIO0_SIZE</span><span class="p">,</span> <span class="n">PROT_READ</span> <span class="o">|</span> <span class="n">PROT_WRITE</span><span class="p">,</span> 
+            <span class="n">MAP_SHARED</span><span class="p">,</span> <span class="n">fd</span><span class="p">,</span> <span class="n">GPIO0_START_ADDR</span><span class="p">);</span>
+
+    <span class="n">gpio_gpiodata_addr</span>   <span class="o">=</span> <span class="n">gpio_addr</span> <span class="o">+</span> <span class="n">GPIO_GPIODATA</span> <span class="o">+</span> <span class="mh">0xff</span><span class="p">;</span>
+
+    
+    <span class="n">oldc</span> <span class="o">=</span> <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">gpio_gpiodata_addr</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(;;)</span>
+    <span class="p">{</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="o">*</span><span class="n">gpio_gpiodata_addr</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">!=</span> <span class="n">oldc</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">oldc</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"GPIODATA=%x (t=%fs)</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">gethrtime</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>After copying it to the guest, it can be used to verify blink as follows:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ./pl061-change &amp;</span>
+<span class="c"># ./blink </span>
+<span class="nv">GPIODATA</span><span class="o">=</span>8 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>46.833710s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>0 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>47.033845s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>8 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>47.233977s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>0 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>47.434119s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>8 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>47.634252s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>0 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>47.834385s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>8 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>48.034518s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>0 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>48.234652s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>8 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>48.434785s<span class="o">)</span>
+<span class="nv">GPIODATA</span><span class="o">=</span>0 <span class="o">(</span><span class="nv">t</span><span class="o">=</span>48.634919s<span class="o">)</span>
+</code></pre></div></div>
+
+<p>The time on the output shows that the period of the GPIO output change
+is roughly 0.2s which is close to the value of NSPERIOD (the desired delay
+in nanoseconds) specified in blink.c.</p>
+
+<h2 id="3-libgpiod-application-programmers-interface-programming">3. libgpiod Application Programmers’ Interface Programming</h2>
+<p>Is it possible to display the state of the GPIO while simultaneously
+writing to it? The first shell command sets gpiochip0 line 1,
+and stays in the background (the -b option) for 10 seconds (-mtime -s10)
+before ending. You can’t read the line with gpioget until the gpioset
+program ends.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># gpioset -b -mtime -s10 gpiochip0 1=1</span>
+<span class="c"># gpioget gpiochip0 1</span>
+gpioget: error reading GPIO values: Device or resource busy
+<span class="c"># </span>
+</code></pre></div></div>
+
+<p>Normally, we use the GPIO pins to control something and don’t need
+to read what we wrote. But is it possible to do so in QEMU?  The
+solution turned out more complicated than I would have liked.</p>
+
+<p>The first thing is that we want to do the read and write in parallel,
+not as two separate processes. There are many ways to do this but
+multithreading (using <a href="https://computing.llnl.gov/tutorials/pthreads/">POSIX threads</a>) is one solution. The second problem is that the writer must release the
+line so that the reader can access it or you get the same “Device or
+resource busy” error.</p>
+
+<p>The code below implements these ideas.  The gpio_reader() function
+checks when a pin changes and prints the new state. This
+gpiod_line_event_wait() function will return with a value &gt; 0 if
+an event has occurred and we print the pin state and time. Otherwise,
+it either encountered an error or timed out.  The gpio_writer()
+function toggles the output after a fixed delay, specified in the
+delay structure. A mutual exclusion (via the mutexline variable)
+is used to ensure that only the reader or writer has access to the
+line at any time. This restricts the line to either be an output
+(via gpiod_line_request_output()) or an event (via
+gpiod_line_request_both_edges_events()) at any time, not both.</p>
+
+<p>These two threads run in parallel and when they get the line, will
+perform their task, after which they sleep (via nanosleep()). The gpio_reader()
+function executes about 100x faster than the writer.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+</pre></td><td class="code"><pre><span class="cm">/*
+**    Blinky under QEMU and libgpiod
+*/</span>
+
+<span class="cp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;pthread.h&gt;
+#include &lt;assert.h&gt;
+#include &lt;gpiod.h&gt;
+#include &lt;time.h&gt;
+</span> 
+<span class="cp">#define CONSUMER "gpiod-lab"        </span><span class="cm">/* this identifies the consumer */</span><span class="cp">
+#define NUM_THREADS 2               </span><span class="cm">/* we have one writer and one reader */</span><span class="cp">
+#define NSPERIOD    200000000ULL    </span><span class="cm">/* output period in ns */</span><span class="cp">
+</span>
+<span class="n">pthread_mutex_t</span> <span class="n">mutexline</span><span class="p">;</span>          <span class="cm">/* only reader or writer can access line */</span>
+ 
+<span class="cm">/* create thread argument struct for thr_func() */</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">_thread_data_t</span> 
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">tid</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">gpioline</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">thread_data_t</span><span class="p">;</span>
+ 
+<span class="cm">/* high resolution time stamp */</span>
+<span class="kt">double</span>
+<span class="nf">gethrtime</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span>    <span class="n">r</span><span class="p">;</span>
+    <span class="kt">int64_t</span>    <span class="n">ts</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">t</span><span class="p">;</span>
+
+    <span class="cm">/* read the time stamp */</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">clock_gettime</span><span class="p">(</span><span class="n">CLOCK_MONOTONIC</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">t</span><span class="p">);</span>
+    <span class="n">ts</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)(</span><span class="n">t</span><span class="p">.</span><span class="n">tv_sec</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)</span><span class="mi">1000000000</span> <span class="o">+</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)(</span><span class="n">t</span><span class="p">.</span><span class="n">tv_nsec</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">ts</span> <span class="o">/</span> <span class="mf">1.0e9</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+**    Display edges 
+*/</span>
+<span class="kt">void</span>
+<span class="nf">gpio_reader</span><span class="p">(</span><span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">line</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">timeout</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NSPERIOD</span> <span class="o">/</span> <span class="mi">100ULL</span> <span class="p">};</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">shortdelay</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NSPERIOD</span> <span class="o">/</span> <span class="mi">100ULL</span> <span class="p">};</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">rem</span><span class="p">;</span>
+    <span class="kt">int</span>    <span class="n">r</span><span class="p">,</span> <span class="n">v</span><span class="p">;</span>
+    <span class="kt">int</span>    <span class="n">event</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(;;)</span>
+    <span class="p">{</span>
+        <span class="cm">/* get exclusive access to the line */</span>
+        <span class="n">pthread_mutex_lock</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">mutexline</span><span class="p">);</span>
+
+        <span class="cm">/* get line */</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">=</span> <span class="n">gpiod_line_request_both_edges_events</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">CONSUMER</span><span class="p">))</span>
+            <span class="k">goto</span> <span class="n">release</span><span class="p">;</span>
+
+        <span class="cm">/* wait for an event */</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">gpiod_line_event_wait</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">timeout</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>    <span class="cm">/* success */</span>
+        <span class="p">{</span>
+            <span class="cm">/* read the gpio pin value */</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">gpiod_line_get_value</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Event %d: Pin=%d at t=%fs</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="o">++</span><span class="n">event</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">gethrtime</span><span class="p">());</span>
+        <span class="p">}</span>
+
+        <span class="cm">/* release the line */</span>
+    <span class="nl">release:</span>
+        <span class="n">gpiod_line_release</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+        <span class="n">pthread_mutex_unlock</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">mutexline</span><span class="p">);</span>
+        <span class="n">nanosleep</span><span class="p">(</span><span class="o">&amp;</span><span class="n">shortdelay</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rem</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+**    Blink a number of times
+*/</span>
+<span class="kt">void</span>
+<span class="nf">gpio_writer</span><span class="p">(</span><span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">line</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">delay</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">0</span><span class="p">,</span> <span class="n">NSPERIOD</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">};</span>
+    <span class="k">struct</span> <span class="n">timespec</span> <span class="n">rem</span><span class="p">;</span>
+    <span class="kt">int</span>    <span class="n">v</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span>    <span class="n">r</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="cm">/* get exclusive access to the line */</span>
+        <span class="n">pthread_mutex_lock</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">mutexline</span><span class="p">);</span>
+        <span class="cm">/* config as output and set a description */</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">=</span> <span class="n">gpiod_line_request_output</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">CONSUMER</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+            <span class="k">goto</span> <span class="n">release</span><span class="p">;</span>
+
+        <span class="cm">/* toggle output */</span>
+        <span class="n">v</span> <span class="o">=</span> <span class="o">!</span><span class="n">v</span><span class="p">;</span>
+        <span class="n">gpiod_line_set_value</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">v</span><span class="p">);</span>
+
+        <span class="cm">/* release line */</span>
+    <span class="nl">release:</span>
+        <span class="n">gpiod_line_release</span><span class="p">(</span><span class="n">line</span><span class="p">);</span>
+        <span class="n">pthread_mutex_unlock</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">mutexline</span><span class="p">);</span>
+        <span class="n">nanosleep</span><span class="p">(</span><span class="o">&amp;</span><span class="n">delay</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rem</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/* 
+**    Create pthreads - the thread created will either be a reader or writer 
+*/</span>
+<span class="kt">void</span> <span class="o">*</span><span class="nf">thr_func</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">arg</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">thread_data_t</span> <span class="o">*</span><span class="n">data</span> <span class="o">=</span> <span class="p">(</span><span class="n">thread_data_t</span> <span class="o">*</span><span class="p">)</span><span class="n">arg</span><span class="p">;</span>
+ 
+    <span class="k">switch</span><span class="p">(</span><span class="n">data</span><span class="o">-&gt;</span><span class="n">tid</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="k">case</span> <span class="mi">0</span><span class="p">:</span> <span class="cm">/* writer */</span>
+            <span class="n">gpio_writer</span><span class="p">(</span><span class="n">data</span><span class="o">-&gt;</span><span class="n">gpioline</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="nl">default:</span> <span class="cm">/* reader */</span>
+            <span class="n">gpio_reader</span><span class="p">(</span><span class="n">data</span><span class="o">-&gt;</span><span class="n">gpioline</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+ 
+    <span class="n">pthread_exit</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+ 
+<span class="kt">int</span> 
+<span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span> 
+<span class="p">{</span>
+    <span class="n">pthread_t</span> <span class="n">thr</span><span class="p">[</span><span class="n">NUM_THREADS</span><span class="p">];</span>
+    <span class="n">pthread_attr_t</span> <span class="n">attr</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">r</span><span class="p">;</span>
+    <span class="cm">/* create a thread_data_t argument array */</span>
+    <span class="n">thread_data_t</span> <span class="n">thr_data</span><span class="p">[</span><span class="n">NUM_THREADS</span><span class="p">];</span>
+
+    <span class="cm">/* gpio structures */</span>
+    <span class="k">struct</span> <span class="n">gpiod_chip</span> <span class="o">*</span><span class="n">output_chip</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">gpiod_line</span> <span class="o">*</span><span class="n">output_line</span><span class="p">;</span>
+
+    <span class="cm">/* open /dev/gpiochip0 */</span>
+    <span class="n">output_chip</span> <span class="o">=</span> <span class="n">gpiod_chip_open_by_number</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    
+    <span class="cm">/* work on pin 3 */</span>
+    <span class="n">output_line</span> <span class="o">=</span> <span class="n">gpiod_chip_get_line</span><span class="p">(</span><span class="n">output_chip</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+
+    <span class="cm">/* create threads */</span>
+    <span class="n">pthread_mutex_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mutexline</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">NUM_THREADS</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">thr_data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">tid</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="n">thr_data</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">gpioline</span> <span class="o">=</span> <span class="n">output_line</span><span class="p">;</span>
+        <span class="n">assert</span><span class="p">(</span><span class="n">pthread_create</span><span class="p">(</span><span class="o">&amp;</span><span class="n">thr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">thr_func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">thr_data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="cm">/* block until thread 0 completes */</span>
+    <span class="n">pthread_join</span><span class="p">(</span><span class="n">thr</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">NULL</span><span class="p">);</span>
+    <span class="n">fflush</span><span class="p">(</span><span class="n">stdout</span><span class="p">);</span>
+ 
+    <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>If the C program is written to ~/src/teaching/labs/lab2/gpio.c, it can be 
+compiled using:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@bream:~/elec3607/labs/lab2<span class="nv">$ H</span><span class="o">=</span>~/src/teaching/
+phwl@bream:~/elec3607/labs/lab2<span class="nv">$ $H</span>/buildroot/output/host/bin/aarch64-buildroot-linux-uclibc-gcc <span class="nt">-o</span> gpio gpio.c <span class="nt">-lgpiod</span> <span class="nt">-lpthread</span>
+</code></pre></div></div>
+
+<p>When executed under QEMU (it needs to first be transferred to the guest via ssh), you will see:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># scp phwl@10.0.2.2:src/teaching/labs/lab2/gpio .</span>
+phwl@10.0.2.2<span class="s1">'s password: 
+# ./gpio
+Event 1: Pin=1 at t=19925.878483s
+Event 2: Pin=0 at t=19925.978926s
+Event 3: Pin=1 at t=19926.077777s
+Event 4: Pin=0 at t=19926.179461s
+Event 5: Pin=1 at t=19926.277994s
+Event 6: Pin=0 at t=19926.381006s
+Event 7: Pin=1 at t=19926.479734s
+Event 8: Pin=0 at t=19926.582780s
+Event 9: Pin=1 at t=19926.681464s
+Event 10: Pin=0 at t=19926.784994s
+</span></code></pre></div></div>
+
+:ET
