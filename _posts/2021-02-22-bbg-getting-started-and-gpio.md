@@ -160,10 +160,11 @@ main(int argc, char *argv[])
 }
 {% endhighlight %}
 
+Referring to the [libgpiod reference manual](http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf), we obtain a descriptor for the chip specified by ```GPIOCHIP``` in line 20. Using that descriptor we obtain one for the line in line 21. 
+In line 24, we configure the pin as an output, and give it the name "blink" (this is called a consumer in libgpiod). Line 28 toggles ```line_value``` between a true and false value, which is written to the line in line 29. We then sleep for 1 second before returning to the top of the infinite loop. You can press control-C to exit the program.
 
 Modify the program so that, in addition to blinking the LED, it will
 print the status of the S2 button once a second as below.
-You will need to refer to the [reference manual for libgpiod](http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf).
 ``` bash
 debian@beaglebone:~$ ./blink 
 S2=1

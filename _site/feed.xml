@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-23T15:55:10+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-23T16:10:36+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Getting Started and GPIO</title><link href="/2021/bbg-getting-started-and-gpio/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started and GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-getting-started-and-gpio</id><content type="html" xml:base="/2021/bbg-getting-started-and-gpio/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card and
 program it via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
@@ -173,9 +173,11 @@ debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;Referring to the &lt;a href=&quot;http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf&quot;&gt;libgpiod reference manual&lt;/a&gt;, we obtain a descriptor for the chip specified by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GPIOCHIP&lt;/code&gt; in line 20. Using that descriptor we obtain one for the line in line 21. 
+In line 24, we configure the pin as an output, and give it the name “blink” (this is called a consumer in libgpiod). Line 28 toggles &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;line_value&lt;/code&gt; between a true and false value, which is written to the line in line 29. We then sleep for 1 second before returning to the top of the infinite loop. You can press control-C to exit the program.&lt;/p&gt;
+
 &lt;p&gt;Modify the program so that, in addition to blinking the LED, it will
-print the status of the S2 button once a second as below.
-You will need to refer to the &lt;a href=&quot;http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf&quot;&gt;reference manual for libgpiod&lt;/a&gt;.&lt;/p&gt;
+print the status of the S2 button once a second as below.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./blink 
 &lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
 ...

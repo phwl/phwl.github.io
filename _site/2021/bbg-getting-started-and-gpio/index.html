@@ -357,9 +357,11 @@ debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </spa
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
+<p>Referring to the <a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">libgpiod reference manual</a>, we obtain a descriptor for the chip specified by <code class="language-plaintext highlighter-rouge">GPIOCHIP</code> in line 20. Using that descriptor we obtain one for the line in line 21. 
+In line 24, we configure the pin as an output, and give it the name “blink” (this is called a consumer in libgpiod). Line 28 toggles <code class="language-plaintext highlighter-rouge">line_value</code> between a true and false value, which is written to the line in line 29. We then sleep for 1 second before returning to the top of the infinite loop. You can press control-C to exit the program.</p>
+
 <p>Modify the program so that, in addition to blinking the LED, it will
-print the status of the S2 button once a second as below.
-You will need to refer to the <a href="http://phwl.org/assets/images/2021/02/libgpiod-ref.pdf">reference manual for libgpiod</a>.</p>
+print the status of the S2 button once a second as below.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>./blink 
 <span class="nv">S2</span><span class="o">=</span>1
 ...
