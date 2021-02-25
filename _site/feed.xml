@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-23T16:51:55+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green GPIO</title><link href="/2021/bbg-gpio/" rel="alternate" type="text/html" title="BeagleBone Green GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-gpio</id><content type="html" xml:base="/2021/bbg-gpio/">&lt;p&gt;This post details how to control the BeagleBone Green (BBG) via GPIO.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-25T23:49:40+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green GPIO</title><link href="/2021/bbg-gpio/" rel="alternate" type="text/html" title="BeagleBone Green GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-gpio</id><content type="html" xml:base="/2021/bbg-gpio/">&lt;p&gt;This post details how to control the BeagleBone Green (BBG) via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-gpio&quot;&gt;1. GPIO&lt;/h2&gt;
 &lt;p&gt;Since Linux v4.8, the standard way of using Linux GPIO has been via 
@@ -106,7 +106,111 @@ gpiochip0 - 32 lines:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note that after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpioset&lt;/code&gt; exits, the data of the output is undefined.&lt;/p&gt;
 
-&lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
+&lt;h2 id=&quot;2-setting-pinmux-values-via-the-device-tree&quot;&gt;2. Setting pinmux values via the Device Tree&lt;/h2&gt;
+&lt;p&gt;The pins of the BBG P9 header have different operations depending on
+the pinmum mode chosen. Looking at the &lt;a href=&quot;http://exploringbeaglebone.com/wp-content/uploads/resources/BBBP9Header.pdf&quot;&gt;P9 header&lt;/a&gt;, Mode 7 connects the GPIO line to the pin of the AM335X chip. To do so, we need to specify this configuration via the Linux Device Tree (DT). How the DT works will be covered as a later topic, but this (admittedly complicated) configuration below will set&lt;/p&gt;
+
+&lt;p&gt;First make the following dts file:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;PHWL-GPIO.dts 
+/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2012 Texas Instruments Incorporated - http://www.ti.com/
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; This program is free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; you can redistribute it and/or modify
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; it under the terms of the GNU General Purpose License Version 2 as
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; published by the Free Software Foundation
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Derek Molloy &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example on www.derekmolloy.ie
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; that maps GPIO pins &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Philip Leong &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;SSD exercise
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+
+/dts-v1/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+/plugin/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone-black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       part-number &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;PHWL-GPIO&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00A0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+       fragment@0 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+             target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;am33xx_pinmux&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            
+             __overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                  pinctrl_test: PHWL_GPIO_Pins &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			pinctrl-single,pins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;
+
+				0x150 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_22 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x154 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_21 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x178 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_20 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x17c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_19 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x158 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_18 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                       
+                               /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup
+, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+			       /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup
+, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+
+			&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+       fragment@1 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;ocp&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		__overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			test_helper: helper &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+				compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bone-pinmux-helper&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				pinctrl-names &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				pinctrl-0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;pinctrl_test&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				status &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;okay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to build&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dtc &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; dtb &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; PHWL-GPIO-00A0.dtbo &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 0 -@ PHWL-GPIO.dts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot/uEnv.txt&lt;/code&gt; to be:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /boot/uEnv.txt 
+&lt;span class=&quot;c&quot;&gt;#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;uname_r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.14.108-ti-r131
+&lt;span class=&quot;c&quot;&gt;#uuid=&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#dtb=&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;cmdline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coherent_pool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1M net.ifnames&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 rng_core.default_quality&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;100 quiet
+&lt;span class=&quot;nv&quot;&gt;enable_uboot_overlays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;nv&quot;&gt;uboot_overlay_addr0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/lib/firmware/PHWL-GPIO-00A0.dtbo
+
+&lt;span class=&quot;c&quot;&gt;#In the event of edid real failures, uncomment this next line:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;##enable x15: eMMC Flasher:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##make sure, these tools are installed: dosfstools rsync&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;reboot (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shutdown -r now&lt;/code&gt;) and the modes should have changed to 007&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
+pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
+pin 29 (PIN29) 44e10874 00000007 pinctrl-single 
+pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
+pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
+pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
+pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
+pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
+pin 95 (PIN95) 44e1097c 00000007 pinctrl-single 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-laboratory-experiment&quot;&gt;3. Laboratory Experiment&lt;/h2&gt;
 &lt;h3 id=&quot;part-1---s2-button-input-40&quot;&gt;Part 1 - S2 Button Input (40%)&lt;/h3&gt;
 &lt;p&gt;Download, compile and execute the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blink&lt;/code&gt; program which flashes the D5 LED as follows&lt;/p&gt;
 
@@ -225,13 +329,23 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;part-2---seven-segment-display-60&quot;&gt;Part 2 - Seven Segment Display (60%)&lt;/h3&gt;
-&lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;http://www.farnell.com/datasheets/2863910.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.&lt;/li&gt;
   &lt;li&gt;Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.&lt;/li&gt;
   &lt;li&gt;Connect up the SSD to the BBG via a breadboard.&lt;/li&gt;
   &lt;li&gt;Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/02/ledres.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/02/ledres.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
 &lt;p&gt;Instructions for getting started with the BBG are available at at 

@@ -1,4 +1,4 @@
-I"Ÿ4<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
+I"^O<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
 
 <h2 id="1-gpio">1. GPIO</h2>
 <p>Since Linux v4.8, the standard way of using Linux GPIO has been via 
@@ -106,7 +106,105 @@ gpiochip0 - 32 lines:
 </code></pre></div></div>
 <p>Note that after <code class="language-plaintext highlighter-rouge">gpioset</code> exits, the data of the output is undefined.</p>
 
-<h2 id="2-laboratory-experiment">2. Laboratory Experiment</h2>
+<h2 id="2-setting-pinmux-values-via-the-device-tree">2. Setting pinmux values via the Device Tree</h2>
+<p>First make the following dts file:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>PHWL-GPIO.dts 
+/<span class="k">*</span>  
+<span class="k">*</span> Copyright <span class="o">(</span>C<span class="o">)</span> 2012 Texas Instruments Incorporated - http://www.ti.com/
+<span class="k">*</span>
+<span class="k">*</span> This program is free software<span class="p">;</span> you can redistribute it and/or modify
+<span class="k">*</span> it under the terms of the GNU General Purpose License Version 2 as
+<span class="k">*</span> published by the Free Software Foundation
+<span class="k">*</span>
+<span class="k">*</span> Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+<span class="k">*</span>
+<span class="k">*</span> Modified by Derek Molloy <span class="k">for </span>the example on www.derekmolloy.ie
+<span class="k">*</span> that maps GPIO pins <span class="k">for </span>the example
+<span class="k">*</span>
+<span class="k">*</span> Modified by Philip Leong to <span class="nb">enable </span>pins <span class="k">for </span>SSD experiment
+<span class="k">*</span>
+<span class="k">*</span>/
+
+/dts-v1/<span class="p">;</span>
+/plugin/<span class="p">;</span>
+
+/<span class="o">{</span>
+       compatible <span class="o">=</span> <span class="s2">"ti,beaglebone"</span>, <span class="s2">"ti,beaglebone-black"</span><span class="p">;</span>
+       part-number <span class="o">=</span> <span class="s2">"DM-GPIO-Test"</span><span class="p">;</span>
+       version <span class="o">=</span> <span class="s2">"00A0"</span><span class="p">;</span>
+
+       fragment@0 <span class="o">{</span>
+             target <span class="o">=</span> &lt;&amp;am33xx_pinmux&gt;<span class="p">;</span>
+            
+             __overlay__ <span class="o">{</span>
+                  pinctrl_test: DM_GPIO_Test_Pins <span class="o">{</span>
+			pinctrl-single,pins <span class="o">=</span> &lt;
+
+				0x150 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x154 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x178 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x078 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x07c 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x158 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x15c 0x07  /<span class="k">*</span> P9_12 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+                       
+                               /<span class="k">*</span> OUTPUT  GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down <span class="k">*</span>/
+
+			<span class="o">&gt;</span><span class="p">;</span>
+		  <span class="o">}</span><span class="p">;</span>
+             <span class="o">}</span><span class="p">;</span>
+       <span class="o">}</span><span class="p">;</span>
+
+       fragment@1 <span class="o">{</span>
+		target <span class="o">=</span> &lt;&amp;ocp&gt;<span class="p">;</span>
+		__overlay__ <span class="o">{</span>
+			test_helper: helper <span class="o">{</span>
+				compatible <span class="o">=</span> <span class="s2">"bone-pinmux-helper"</span><span class="p">;</span>
+				pinctrl-names <span class="o">=</span> <span class="s2">"default"</span><span class="p">;</span>
+				pinctrl-0 <span class="o">=</span> &lt;&amp;pinctrl_test&gt;<span class="p">;</span>
+				status <span class="o">=</span> <span class="s2">"okay"</span><span class="p">;</span>
+			<span class="o">}</span><span class="p">;</span>
+		<span class="o">}</span><span class="p">;</span>
+	<span class="o">}</span><span class="p">;</span>
+<span class="o">}</span><span class="p">;</span>
+<span class="nv">$ </span><span class="nb">sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware/
+</code></pre></div></div>
+
+<p>to build</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dtc <span class="nt">-O</span> dtb <span class="nt">-o</span> PHWL-GPIO-00A0.dtbo <span class="nt">-b</span> 0 -@ PHWL-GPIO.dts
+</code></pre></div></div>
+<p>Modify <code class="language-plaintext highlighter-rouge">/boot/uEnv.txt</code> to be:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /boot/uEnv.txt 
+<span class="c">#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0</span>
+
+<span class="nv">uname_r</span><span class="o">=</span>4.14.108-ti-r131
+<span class="c">#uuid=</span>
+<span class="c">#dtb=</span>
+<span class="nv">cmdline</span><span class="o">=</span><span class="nv">coherent_pool</span><span class="o">=</span>1M net.ifnames<span class="o">=</span>0 rng_core.default_quality<span class="o">=</span>100 quiet
+<span class="nv">enable_uboot_overlays</span><span class="o">=</span>1
+<span class="nv">uboot_overlay_addr0</span><span class="o">=</span>/lib/firmware/PHWL-GPIO-00A0.dtbo
+
+<span class="c">#In the event of edid real failures, uncomment this next line:</span>
+<span class="c">#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e</span>
+
+<span class="c">##enable x15: eMMC Flasher:</span>
+<span class="c">##make sure, these tools are installed: dosfstools rsync</span>
+<span class="c">#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh</span>
+</code></pre></div></div>
+<p>reboot (<code class="language-plaintext highlighter-rouge">shutdown -r now</code>) and the modes should have changed to 007</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
+pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
+pin 30 (PIN30) 44e10878 00000007 pinctrl-single 
+pin 31 (PIN31) 44e1087c 00000007 pinctrl-single 
+pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
+pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
+pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
+pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
+pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
+</code></pre></div></div>
+
+<h2 id="3-laboratory-experiment">3. Laboratory Experiment</h2>
 <h3 id="part-1---s2-button-input-40">Part 1 - S2 Button Input (40%)</h3>
 <p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which flashes the D5 LED as follows</p>
 
@@ -225,11 +323,22 @@ print the status of the S2 button once a second as below.</p>
 </code></pre></div></div>
 
 <h3 id="part-2---seven-segment-display-60">Part 2 - Seven Segment Display (60%)</h3>
-<p>The data sheet for a seven segment display (SSD) is available <a href="http://www.farnell.com/datasheets/2863910.pdf">here</a>.</p>
+
+<p>The data sheet for a seven segment display (SSD) is available <a href="https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576">here</a>.</p>
 <ul>
   <li>Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.</li>
   <li>Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesnâ€™t exceed 4mA.</li>
   <li>Connect up the SSD to the BBG via a breadboard.</li>
   <li>Program the SSD so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
 </ul>
+
+<figure class="">
+  <a href="/assets/images/2021/02/ledres.jpg">
+  <img src="/assets/images/2021/02/ledres.jpg" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
 :ET
