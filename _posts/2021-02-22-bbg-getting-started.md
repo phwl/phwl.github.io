@@ -8,6 +8,7 @@ categories:
 - academia
 tags:
 - embedded
+- beaglebone
 header:
   teaser: /assets/images/2021/02/bbg-photo.jpg
 ---
