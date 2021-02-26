@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2021-02-26 12:53:29 AEST
+date: 2021-02-26 10:53:29 AEST
 title: BeagleBone Green Device Tree
 classes: wide
 categories:
