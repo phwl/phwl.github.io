@@ -63,10 +63,8 @@ $ cat PHWL-GPIO.dts
 				0x15c 0x07  /* P9_17 60 OUTPUT MODE7 - The LED Output */
 				0x074 0x07  /* P9_13 60 OUTPUT MODE7 - The LED Output */
                        
-                               /* OUTPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup
-, 0x?f no pullup/down */
-			       /* INPUT   GPIO(mode7) 0x27 pulldown, 0x37 pullup
-, 0x?f no pullup/down */
+                               /* OUTPUT  GPIO(mode7) 0x07 pulldown, 0x17 pullup , 0x?f no pullup/down */
+			       /* INPUT   GPIO(mode7) 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down */
 
 			>;
 		  };

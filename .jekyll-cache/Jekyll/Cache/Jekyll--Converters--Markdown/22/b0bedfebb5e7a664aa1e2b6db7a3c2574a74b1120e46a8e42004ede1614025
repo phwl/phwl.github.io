@@ -1,0 +1,106 @@
+I"¦<p>This post describes configuration of the BeagleBone Green GPIO pinmux
+settings via the Linux Device Tree.</p>
+
+<h2 id="1-setting-pinmux-values-via-the-device-tree">1. Setting pinmux values via the Device Tree</h2>
+<p>The pins of the BBG P9 header have different operations depending on
+the pinmum mode chosen. Looking at the <a href="http://exploringbeaglebone.com/wp-content/uploads/resources/BBBP9Header.pdf">P9 header</a>, Mode 7 connects the GPIO line to the pin of the AM335X chip. To configure this, we need to set the mode via the Linux Device Tree (DT). How the DT works will be covered as a later topic, but this (admittedly complicated) configuration below will set</p>
+
+<p>First make the following dts file:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>PHWL-GPIO.dts 
+/<span class="k">*</span>  
+<span class="k">*</span> Copyright <span class="o">(</span>C<span class="o">)</span> 2012 Texas Instruments Incorporated - http://www.ti.com/
+<span class="k">*</span>
+<span class="k">*</span> This program is free software<span class="p">;</span> you can redistribute it and/or modify
+<span class="k">*</span> it under the terms of the GNU General Purpose License Version 2 as
+<span class="k">*</span> published by the Free Software Foundation
+<span class="k">*</span>
+<span class="k">*</span> Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+<span class="k">*</span>
+<span class="k">*</span> Modified by Derek Molloy <span class="k">for </span>the example on www.derekmolloy.ie
+<span class="k">*</span> that maps GPIO pins <span class="k">for </span>the example
+<span class="k">*</span>
+<span class="k">*</span> Modified by Philip Leong <span class="k">for </span>SSD exercise
+<span class="k">*</span>
+<span class="k">*</span>/
+
+/dts-v1/<span class="p">;</span>
+/plugin/<span class="p">;</span>
+
+/<span class="o">{</span>
+       compatible <span class="o">=</span> <span class="s2">"ti,beaglebone"</span>, <span class="s2">"ti,beaglebone-black"</span><span class="p">;</span>
+       part-number <span class="o">=</span> <span class="s2">"PHWL-GPIO"</span><span class="p">;</span>
+       version <span class="o">=</span> <span class="s2">"00A0"</span><span class="p">;</span>
+
+       fragment@0 <span class="o">{</span>
+             target <span class="o">=</span> &lt;&amp;am33xx_pinmux&gt;<span class="p">;</span>
+            
+             __overlay__ <span class="o">{</span>
+                  pinctrl_test: PHWL_GPIO_Pins <span class="o">{</span>
+			pinctrl-single,pins <span class="o">=</span> &lt;
+
+				0x150 0x07  /<span class="k">*</span> P9_22 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x154 0x07  /<span class="k">*</span> P9_21 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x178 0x07  /<span class="k">*</span> P9_20 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x17c 0x07  /<span class="k">*</span> P9_19 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x158 0x07  /<span class="k">*</span> P9_18 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x15c 0x07  /<span class="k">*</span> P9_17 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x074 0x07  /<span class="k">*</span> P9_13 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+                       
+                               /<span class="k">*</span> OUTPUT  GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x07 pulldown, 0x17 pullup , 0x?f no pullup/down <span class="k">*</span>/
+			       /<span class="k">*</span> INPUT   GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down <span class="k">*</span>/
+
+			<span class="o">&gt;</span><span class="p">;</span>
+		  <span class="o">}</span><span class="p">;</span>
+             <span class="o">}</span><span class="p">;</span>
+       <span class="o">}</span><span class="p">;</span>
+
+       fragment@1 <span class="o">{</span>
+		target <span class="o">=</span> &lt;&amp;ocp&gt;<span class="p">;</span>
+		__overlay__ <span class="o">{</span>
+			test_helper: helper <span class="o">{</span>
+				compatible <span class="o">=</span> <span class="s2">"bone-pinmux-helper"</span><span class="p">;</span>
+				pinctrl-names <span class="o">=</span> <span class="s2">"default"</span><span class="p">;</span>
+				pinctrl-0 <span class="o">=</span> &lt;&amp;pinctrl_test&gt;<span class="p">;</span>
+				status <span class="o">=</span> <span class="s2">"okay"</span><span class="p">;</span>
+			<span class="o">}</span><span class="p">;</span>
+		<span class="o">}</span><span class="p">;</span>
+	<span class="o">}</span><span class="p">;</span>
+<span class="o">}</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>to build</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dtc <span class="nt">-O</span> dtb <span class="nt">-o</span> PHWL-GPIO-00A0.dtbo <span class="nt">-b</span> 0 -@ PHWL-GPIO.dts
+<span class="nv">$ </span><span class="nb">sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware/
+</code></pre></div></div>
+<p>Modify <code class="language-plaintext highlighter-rouge">/boot/uEnv.txt</code> to be:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /boot/uEnv.txt 
+<span class="c">#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0</span>
+
+<span class="nv">uname_r</span><span class="o">=</span>4.14.108-ti-r131
+<span class="c">#uuid=</span>
+<span class="c">#dtb=</span>
+<span class="nv">cmdline</span><span class="o">=</span><span class="nv">coherent_pool</span><span class="o">=</span>1M net.ifnames<span class="o">=</span>0 rng_core.default_quality<span class="o">=</span>100 quiet
+<span class="nv">enable_uboot_overlays</span><span class="o">=</span>1
+<span class="nv">uboot_overlay_addr0</span><span class="o">=</span>/lib/firmware/PHWL-GPIO-00A0.dtbo
+
+<span class="c">#In the event of edid real failures, uncomment this next line:</span>
+<span class="c">#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e</span>
+
+<span class="c">##enable x15: eMMC Flasher:</span>
+<span class="c">##make sure, these tools are installed: dosfstools rsync</span>
+<span class="c">#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh</span>
+</code></pre></div></div>
+<p>reboot (<code class="language-plaintext highlighter-rouge">shutdown -r now</code>) and the modes should have changed to 007</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
+pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
+pin 29 (PIN29) 44e10874 00000007 pinctrl-single 
+pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
+pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
+pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
+pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
+pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
+pin 95 (PIN95) 44e1097c 00000007 pinctrl-single 
+</code></pre></div></div>
+
+:ET
