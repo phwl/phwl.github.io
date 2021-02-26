@@ -1,0 +1,582 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>BeagleBone Green Device Tree - Life, the Universe and Fishing</title>
+<meta name="description" content="This post describes configuration of the BeagleBone Green GPIO pinmuxsettings via the Linux Device Tree.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Life, the Universe and Fishing">
+<meta property="og:title" content="BeagleBone Green Device Tree">
+<meta property="og:url" content="/2021/bbg-device-trees/">
+
+
+  <meta property="og:description" content="This post describes configuration of the BeagleBone Green GPIO pinmuxsettings via the Linux Device Tree.">
+
+
+
+  <meta property="og:image" content="/assets/images/2021/02/bbg-photo.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-02-26T11:53:29+11:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/2021/bbg-device-trees/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "phwl",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/archive" >Archive</a>
+            </li><li class="masthead__menu-item">
+              <a href="/gallery" >Gallery</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research" >Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="BeagleBone Green Device Tree">
+    <meta itemprop="description" content="This post describes configuration of the BeagleBone Green GPIO pinmuxsettings via the Linux Device Tree.">
+    <meta itemprop="datePublished" content="February 26, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">BeagleBone Green Device Tree
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This post describes configuration of the BeagleBone Green GPIO pinmux
+settings via the Linux Device Tree.</p>
+
+<h2 id="1-setting-pinmux-values-via-the-device-tree">1. Setting pinmux values via the Device Tree</h2>
+<p>The pins of the BBG P9 header have different operations depending on
+the pinmum mode chosen. Looking at the <a href="http://exploringbeaglebone.com/wp-content/uploads/resources/BBBP9Header.pdf">P9 header</a>, Mode 7 connects the GPIO line to the pin of the AM335X chip. To configure this, we need to set the mode via the Linux Device Tree (DT). How the DT works will be covered as a later topic, but this (admittedly complicated) configuration below will set</p>
+
+<p>First make the following dts file:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat </span>PHWL-GPIO.dts 
+/<span class="k">*</span>  
+<span class="k">*</span> Copyright <span class="o">(</span>C<span class="o">)</span> 2012 Texas Instruments Incorporated - http://www.ti.com/
+<span class="k">*</span>
+<span class="k">*</span> This program is free software<span class="p">;</span> you can redistribute it and/or modify
+<span class="k">*</span> it under the terms of the GNU General Purpose License Version 2 as
+<span class="k">*</span> published by the Free Software Foundation
+<span class="k">*</span>
+<span class="k">*</span> Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+<span class="k">*</span>
+<span class="k">*</span> Modified by Derek Molloy <span class="k">for </span>the example on www.derekmolloy.ie
+<span class="k">*</span> that maps GPIO pins <span class="k">for </span>the example
+<span class="k">*</span>
+<span class="k">*</span> Modified by Philip Leong <span class="k">for </span>SSD exercise
+<span class="k">*</span>
+<span class="k">*</span>/
+
+/dts-v1/<span class="p">;</span>
+/plugin/<span class="p">;</span>
+
+/<span class="o">{</span>
+       compatible <span class="o">=</span> <span class="s2">"ti,beaglebone"</span>, <span class="s2">"ti,beaglebone-black"</span><span class="p">;</span>
+       part-number <span class="o">=</span> <span class="s2">"PHWL-GPIO"</span><span class="p">;</span>
+       version <span class="o">=</span> <span class="s2">"00A0"</span><span class="p">;</span>
+
+       fragment@0 <span class="o">{</span>
+             target <span class="o">=</span> &lt;&amp;am33xx_pinmux&gt;<span class="p">;</span>
+            
+             __overlay__ <span class="o">{</span>
+                  pinctrl_test: PHWL_GPIO_Pins <span class="o">{</span>
+			pinctrl-single,pins <span class="o">=</span> &lt;
+
+				0x150 0x07  /<span class="k">*</span> P9_22 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x154 0x07  /<span class="k">*</span> P9_21 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x178 0x07  /<span class="k">*</span> P9_20 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x17c 0x07  /<span class="k">*</span> P9_19 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x158 0x07  /<span class="k">*</span> P9_18 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x15c 0x07  /<span class="k">*</span> P9_17 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+				0x074 0x07  /<span class="k">*</span> P9_13 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+                       
+                               /<span class="k">*</span> OUTPUT  GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x07 pulldown, 0x17 pullup
+, 0x?f no pullup/down <span class="k">*</span>/
+			       /<span class="k">*</span> INPUT   GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x27 pulldown, 0x37 pullup
+, 0x?f no pullup/down <span class="k">*</span>/
+
+			<span class="o">&gt;</span><span class="p">;</span>
+		  <span class="o">}</span><span class="p">;</span>
+             <span class="o">}</span><span class="p">;</span>
+       <span class="o">}</span><span class="p">;</span>
+
+       fragment@1 <span class="o">{</span>
+		target <span class="o">=</span> &lt;&amp;ocp&gt;<span class="p">;</span>
+		__overlay__ <span class="o">{</span>
+			test_helper: helper <span class="o">{</span>
+				compatible <span class="o">=</span> <span class="s2">"bone-pinmux-helper"</span><span class="p">;</span>
+				pinctrl-names <span class="o">=</span> <span class="s2">"default"</span><span class="p">;</span>
+				pinctrl-0 <span class="o">=</span> &lt;&amp;pinctrl_test&gt;<span class="p">;</span>
+				status <span class="o">=</span> <span class="s2">"okay"</span><span class="p">;</span>
+			<span class="o">}</span><span class="p">;</span>
+		<span class="o">}</span><span class="p">;</span>
+	<span class="o">}</span><span class="p">;</span>
+<span class="o">}</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>to build</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dtc <span class="nt">-O</span> dtb <span class="nt">-o</span> PHWL-GPIO-00A0.dtbo <span class="nt">-b</span> 0 -@ PHWL-GPIO.dts
+<span class="nv">$ </span><span class="nb">sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware/
+</code></pre></div></div>
+<p>Modify <code class="language-plaintext highlighter-rouge">/boot/uEnv.txt</code> to be:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /boot/uEnv.txt 
+<span class="c">#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0</span>
+
+<span class="nv">uname_r</span><span class="o">=</span>4.14.108-ti-r131
+<span class="c">#uuid=</span>
+<span class="c">#dtb=</span>
+<span class="nv">cmdline</span><span class="o">=</span><span class="nv">coherent_pool</span><span class="o">=</span>1M net.ifnames<span class="o">=</span>0 rng_core.default_quality<span class="o">=</span>100 quiet
+<span class="nv">enable_uboot_overlays</span><span class="o">=</span>1
+<span class="nv">uboot_overlay_addr0</span><span class="o">=</span>/lib/firmware/PHWL-GPIO-00A0.dtbo
+
+<span class="c">#In the event of edid real failures, uncomment this next line:</span>
+<span class="c">#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e</span>
+
+<span class="c">##enable x15: eMMC Flasher:</span>
+<span class="c">##make sure, these tools are installed: dosfstools rsync</span>
+<span class="c">#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh</span>
+</code></pre></div></div>
+<p>reboot (<code class="language-plaintext highlighter-rouge">shutdown -r now</code>) and the modes should have changed to 007</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
+pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
+pin 29 (PIN29) 44e10874 00000007 pinctrl-single 
+pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
+pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
+pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
+pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
+pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
+pin 95 (PIN95) 44e1097c 00000007 pinctrl-single 
+</code></pre></div></div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#beaglebone" class="page__taxonomy-item" rel="tag">beaglebone</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#embedded" class="page__taxonomy-item" rel="tag">embedded</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academia" class="page__taxonomy-item" rel="tag">academia</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-02-26T11:53:29+11:00">February 26, 2021</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=BeagleBone+Green+Device+Tree%20%2F2021%2Fbbg-device-trees%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fbbg-device-trees%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fbbg-device-trees%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2021/bbg-gpio/" class="pagination--pager" title="BeagleBone Green GPIO
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-gpio/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green GPIO"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-gpio/" rel="permalink">BeagleBone Green GPIO
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to control the BeagleBone Green (BBG) via GPIO.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-getting-started/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Getting Started"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-getting-started/" rel="permalink">BeagleBone Green Getting Started
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to get started with a BeagleBone Green (BBG) microSD card.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/lake-eucumbene/">
+        <img src=
+          
+            "/assets/images/2021/01/eucumbene2.jpg"
+          
+          alt="Lake Eucumbene - who would go trout fishing during a heatwave?"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/lake-eucumbene/" rel="permalink">Lake Eucumbene - who would go trout fishing during a heatwave?
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/sydney-harbour-luderick/">
+        <img src=
+          
+            "/assets/images/2021/01/luderick.jpg"
+          
+          alt="Sydney Harbour Luderick"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/sydney-harbour-luderick/" rel="permalink">Sydney Harbour Luderick
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Went for a fish in Sydney Harbour with Beard this afternoon.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://facebook.com/pleong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/phwl" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/philip-h-w-leong-949484" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-f" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

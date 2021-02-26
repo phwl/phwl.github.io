@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-26T13:00:56+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green GPIO</title><link href="/2021/bbg-gpio/" rel="alternate" type="text/html" title="BeagleBone Green GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-gpio</id><content type="html" xml:base="/2021/bbg-gpio/">&lt;p&gt;This post details how to control the BeagleBone Green (BBG) via GPIO.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-26T13:18:21+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
+settings via the Linux Device Tree.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-setting-pinmux-values-via-the-device-tree&quot;&gt;1. Setting pinmux values via the Device Tree&lt;/h2&gt;
+&lt;p&gt;The pins of the BBG P9 header have different operations depending on
+the pinmum mode chosen. Looking at the &lt;a href=&quot;http://exploringbeaglebone.com/wp-content/uploads/resources/BBBP9Header.pdf&quot;&gt;P9 header&lt;/a&gt;, Mode 7 connects the GPIO line to the pin of the AM335X chip. To configure this, we need to set the mode via the Linux Device Tree (DT). How the DT works will be covered as a later topic, but this (admittedly complicated) configuration below will set&lt;/p&gt;
+
+&lt;p&gt;First make the following dts file:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;PHWL-GPIO.dts 
+/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2012 Texas Instruments Incorporated - http://www.ti.com/
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; This program is free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; you can redistribute it and/or modify
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; it under the terms of the GNU General Purpose License Version 2 as
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; published by the Free Software Foundation
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Derek Molloy &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example on www.derekmolloy.ie
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; that maps GPIO pins &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Philip Leong &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;SSD exercise
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+
+/dts-v1/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+/plugin/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+       compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone-black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       part-number &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;PHWL-GPIO&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00A0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+       fragment@0 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+             target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;am33xx_pinmux&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            
+             __overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                  pinctrl_test: PHWL_GPIO_Pins &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			pinctrl-single,pins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;
+
+				0x150 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_22 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x154 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_21 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x178 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_20 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x17c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_19 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x158 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_18 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+				0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                       
+                               /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup
+, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+			       /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup
+, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+
+			&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+       &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+       fragment@1 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;ocp&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		__overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			test_helper: helper &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+				compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bone-pinmux-helper&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				pinctrl-names &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				pinctrl-0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;pinctrl_test&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				status &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;okay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;to build&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dtc &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; dtb &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; PHWL-GPIO-00A0.dtbo &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 0 -@ PHWL-GPIO.dts
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot/uEnv.txt&lt;/code&gt; to be:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /boot/uEnv.txt 
+&lt;span class=&quot;c&quot;&gt;#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;uname_r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.14.108-ti-r131
+&lt;span class=&quot;c&quot;&gt;#uuid=&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#dtb=&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;cmdline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coherent_pool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1M net.ifnames&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 rng_core.default_quality&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;100 quiet
+&lt;span class=&quot;nv&quot;&gt;enable_uboot_overlays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+&lt;span class=&quot;nv&quot;&gt;uboot_overlay_addr0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/lib/firmware/PHWL-GPIO-00A0.dtbo
+
+&lt;span class=&quot;c&quot;&gt;#In the event of edid real failures, uncomment this next line:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;##enable x15: eMMC Flasher:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;##make sure, these tools are installed: dosfstools rsync&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;reboot (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shutdown -r now&lt;/code&gt;) and the modes should have changed to 007&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
+pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
+pin 29 (PIN29) 44e10874 00000007 pinctrl-single 
+pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
+pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
+pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
+pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
+pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
+pin 95 (PIN95) 44e1097c 00000007 pinctrl-single 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes configuration of the BeagleBone Green GPIO pinmux settings via the Linux Device Tree.</summary></entry><entry><title type="html">BeagleBone Green GPIO</title><link href="/2021/bbg-gpio/" rel="alternate" type="text/html" title="BeagleBone Green GPIO" /><published>2021-02-22T15:02:12+11:00</published><updated>2021-02-22T15:02:12+11:00</updated><id>/2021/bbg-gpio</id><content type="html" xml:base="/2021/bbg-gpio/">&lt;p&gt;This post details how to control the BeagleBone Green (BBG) via GPIO.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-gpio&quot;&gt;1. GPIO&lt;/h2&gt;
 &lt;p&gt;Since Linux v4.8, the standard way of using Linux GPIO has been via 
@@ -145,9 +250,6 @@ gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ssd ssd.c &lt;span class=&q
 cc    &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; blink.o blink.c
 gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; blink blink.c &lt;span class=&quot;nt&quot;&gt;-lgpiod&lt;/span&gt;
 dtc &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; dtb &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; PHWL-GPIO-00A0.dtbo &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 0 -@ PHWL-GPIO.dts
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nb&quot;&gt;install
-sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;debian: 
 debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./blink
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -245,7 +347,7 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Here is a listing of the starting program. You will need to complete the parts marked “FILL THIS IN”.&lt;/p&gt;
+&lt;p&gt;Here is a listing of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt;, a program to be completed in this exercise.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
@@ -336,7 +438,7 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 &lt;span class=&quot;cp&quot;&gt;#define	IN_GPIOCHIP		2
 #define	IN_GPIOLINE		8
 &lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;#define	NELTS(x)	(sizeof(x) / sizeof(x[0]))
+&lt;span class=&quot;cp&quot;&gt;#define	NELTS(x)	(sizeof(x) / sizeof(x[0]))	// calculate number of elements in x
 #define	SEGMENTS	NELTS(gpiossd)
 &lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;gpiossd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
@@ -397,11 +499,17 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 
 &lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.&lt;/li&gt;
   &lt;li&gt;Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.&lt;/li&gt;
   &lt;li&gt;After studying &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt;, connect up the SSD to the BBG via a breadboard.&lt;/li&gt;
-  &lt;li&gt;Modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt; so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
+  &lt;li&gt;Complete the “FILL THIS IN” parts of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt; so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the program to work, you will need to: (1) use the same GPIO lines as the program, (2) reconfigure the Device Tree and (3) reboot:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nb&quot;&gt;install
+sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;debian: 
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;shutdown &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; now
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
 &lt;p&gt;Instructions for getting started with the BBG are available at at 
@@ -436,7 +544,34 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
 debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
@@ -544,34 +679,7 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
-
-&lt;p&gt;I like them fried!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools-on-qemu&quot;&gt;1. Linux libgpiod Library Command Line Tools on QEMU&lt;/h2&gt;
@@ -2366,129 +2474,4 @@ enjoyable Christmas party.&lt;/p&gt;
     &lt;figcaption&gt;
       2014
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry><entry><title type="html">Albacore Ubuntu GPU Machine Install</title><link href="/2020/albacore-configuration/" rel="alternate" type="text/html" title="Albacore Ubuntu GPU Machine Install" /><published>2020-11-23T14:45:42+11:00</published><updated>2020-11-23T14:45:42+11:00</updated><id>/2020/albacore-configuration</id><content type="html" xml:base="/2020/albacore-configuration/">&lt;p&gt;This is how a new machine, albacore, was configured.&lt;/p&gt;
-
-&lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
-&lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;. I’ve purchased a few machines from them and always impressed with their service. Here is the configuration&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AB47402 Mwave Custom PC Assembly and Testing Service 2 $169.00 $338.00
-AB59620 SilverStone Sugo Series SG13 Mini ITX Case - Mesh Front Panel 2 $69.00 $138.00
-AB69770 Corsair Vengeance LPX 32GB (2x 16GB) DDR4 3200MHz Memory 2 $209.00 $418.00
-AC12989 Seagate ST8000DM004 8TB BarraCuda 3.5&quot; SATA3 Desktop Hard Drive 2 $249.00 $498.00
-AC13202 Samsung 970 EVO 1TB NVMe 1.3 M.2 (2280) 3D V-NAND SSD - MZ-V7E1T0BW 2 $189.00 $378.00
-AC17689 Noctua NF-A12x25 FLX 120mm 3-Pin Fan 2 $65.00 $130.00
-AC24743 AMD Ryzen 5 3600 6 Core Socket AM4 3.6GHz CPU Processor + Wraith Stealth Cooler 2 $319.00 $638.00
-AC27759 SilverStone SX700-PT 700W 80+ Platinum Modular SFX Power Supply 2 $249.00 $498.00
-AC35557 Gigabyte B550I AORUS PRO AX AM4 Mini-ITX Motherboard 2 $319.00 $638.00
-AC25330 Gigabyte GeForce RTX 2060 SUPER WINDFORCE OC 8GB Video Card 2 $629.00 $1258.00
-
-Order Status: Completed Sub-Total $4932.00
-Date &amp;amp; Time Shipped: 19/11/2020 Shipping Cost $30.00
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Here is the &lt;a href=&quot;https://www.gigabyte.com/Motherboard/B550I-AORUS-PRO-AX-rev-10/support#support-manual&quot;&gt;motherboard manual&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1-wifi-and-fix-ethernet&quot;&gt;Step 1 Wifi and Fix Ethernet&lt;/h2&gt;
-&lt;p&gt;To connect to the University of Sydney wifi&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Security: WPA &amp;amp; WPA2 Enterprise
-Authentication: Protected EAP (PEAP)
-Anonymous identity:&amp;lt;blank&amp;gt;
-CA certificate: (None) - Check &quot;No CA certificate is required&quot;
-PEAP version: Automatic
-Inner authentication: MSCHAPv2
-Username: &amp;lt;unikey&amp;gt; 
-Password: &amp;lt;password&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-sudo apt upgrade
-sudo apt install openssh-server net-tools rclone libelf-dev build-essential
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Ethernet didn’t work out of the box so I used a USB ethernet device and 
-installed the realtek driver for the B550 chipset available
-from &lt;a href=&quot;https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software&quot;&gt;Realtek&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2-install-cuda&quot;&gt;Step 2 Install cuda&lt;/h2&gt;
-&lt;p&gt;Then follow the &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;Nvidia instructions&lt;/a&gt;
-using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt purge nvidia-*
-sudo apt autoremove
-sudo ubuntu-drivers autoinstall
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;before installing cuda&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install cuda=10.2.89-1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.profile&lt;/code&gt; add&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-3-install-anacondapytorch&quot;&gt;Step 3 Install anaconda/pytorch&lt;/h2&gt;
-&lt;p&gt;Install &lt;a href=&quot;https://www.anaconda.com/products/individual&quot;&gt;anaconda&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-sh Anaconda3-2020.07-Linux-x86_64.sh
-conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Seems to work&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(base) cruxml@amberjack:~$ cat /proc/driver/nvidia/version
-NVRM version: NVIDIA UNIX x86_64 Kernel Module  450.51.06  Sun Jul 19 20:02:54 UTC 2020
-GCC version:  gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-(base) cruxml@amberjack:~$ python
-Python 3.8.3 (default, Jul  2 2020, 16:21:59) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&amp;gt;&amp;gt;&amp;gt; import torch
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.current_device()
-0
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.device(0)
-&amp;lt;torch.cuda.device object at 0x7fa9a5fab310&amp;gt;
-&amp;gt;&amp;gt;&amp;gt; torch.cuda.get_device_name(0)
-&apos;GeForce RTX 2060 SUPER&apos;
-&amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-4-install-docker&quot;&gt;Step 4 Install docker&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker cruxml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;You need to log out and log in again for the group change to work.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-5-install-other-stuff&quot;&gt;Step 5 Install other stuff&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install hddtemp lm-sensors nvme-cli
-sudo sensors-detect --auto # unfortunately didn&apos;t find anything!
-sudo add-apt-repository universe
-sudo apt update
-sudo apt install exfat-fuse exfat-utils
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-6-vivado&quot;&gt;Step 6 Vivado&lt;/h2&gt;
-&lt;p&gt;Installed Vitis&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin
-# installed to /opt instead of /tools
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The following &lt;em&gt;did not&lt;/em&gt; work:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;So I installed XRT from the instructions &lt;a href=&quot;https://xilinx.github.io/XRT/master/html/build.html&quot;&gt;https://xilinx.github.io/XRT/master/html/build.html&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Following &lt;a href=&quot;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&quot;&gt;https://www.hackster.io/AlbertaBeef/vitis-ai-1-1-flow-for-avnet-vitis-platforms-part-1-007b0e&lt;/a&gt;:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HOME=$HOME
-export VITIS_AI_HOME=$HOME/src/xilinx/Vitis-AI
-export SDX_PLATFORM=$HOME/src/xilinx/ULTRA96V2/ULTRA96V2.xpfm
-export TRD_HOME=$VITIS_AI_HOME/DPU-TRD-ULTRA96V2
-cd /opt/Xilinx/Vitis/2019.2
-source settings64.sh
-cd /opt/xilinx/xrt
-source setup.sh
-cd $TRD_HOME/prj/Vitis
-# make KERNEL=DPU DEVICE=ULTRA96V2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;step-7-install-balena-etcher&quot;&gt;Step 7 Install Balena Etcher&lt;/h2&gt;
-&lt;p&gt;Follow instructions at &lt;a href=&quot;https://www.balena.io/etcher/&quot;&gt;https://www.balena.io/etcher/&lt;/a&gt;&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, albacore, was configured.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry></feed>

@@ -329,9 +329,6 @@ gcc <span class="nt">-o</span> ssd ssd.c <span class="nt">-lgpiod</span>
 cc    <span class="nt">-c</span> <span class="nt">-o</span> blink.o blink.c
 gcc <span class="nt">-o</span> blink blink.c <span class="nt">-lgpiod</span>
 dtc <span class="nt">-O</span> dtb <span class="nt">-o</span> PHWL-GPIO-00A0.dtbo <span class="nt">-b</span> 0 -@ PHWL-GPIO.dts
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>make <span class="nb">install
-sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware
-<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> password <span class="k">for </span>debian: 
 debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>./blink
 </code></pre></div></div>
 
@@ -429,7 +426,7 @@ print the status of the S2 button once a second as below.</p>
 
     </figcaption></a></figure>
 
-<p>Here is a listing of the starting program. You will need to complete the parts marked “FILL THIS IN”.</p>
+<p>Here is a listing of <code class="language-plaintext highlighter-rouge">ssd.c</code>, a program to be completed in this exercise.</p>
 
 <figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -520,7 +517,7 @@ print the status of the S2 button once a second as below.</p>
 <span class="cp">#define	IN_GPIOCHIP		2
 #define	IN_GPIOLINE		8
 </span>
-<span class="cp">#define	NELTS(x)	(sizeof(x) / sizeof(x[0]))
+<span class="cp">#define	NELTS(x)	(sizeof(x) / sizeof(x[0]))	// calculate number of elements in x
 #define	SEGMENTS	NELTS(gpiossd)
 </span>
 <span class="k">static</span> <span class="kt">int</span>	<span class="n">gpiossd</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">31</span> <span class="p">};</span>
@@ -581,12 +578,17 @@ print the status of the S2 button once a second as below.</p>
 
 <p>The data sheet for a seven segment display (SSD) is available <a href="https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576">here</a>.</p>
 <ul>
-  <li>Each segment should be driven by a BBG output which supports 6mA drive. Select 6 such pins on the P8 connector that meet this requirement.</li>
   <li>Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.</li>
   <li>After studying <code class="language-plaintext highlighter-rouge">ssd.c</code>, connect up the SSD to the BBG via a breadboard.</li>
-  <li>Modify <code class="language-plaintext highlighter-rouge">ssd.c</code> so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
+  <li>Complete the “FILL THIS IN” parts of <code class="language-plaintext highlighter-rouge">ssd.c</code> so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
 </ul>
 
+<p>For the program to work, you will need to: (1) use the same GPIO lines as the program, (2) reconfigure the Device Tree and (3) reboot:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>make <span class="nb">install
+sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware
+<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> password <span class="k">for </span>debian: 
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span><span class="nb">sudo </span>shutdown <span class="nt">-r</span> now
+</code></pre></div></div>
 
         
       </section>
@@ -663,7 +665,8 @@ print the status of the S2 button once a second as below.</p>
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2021/bbg-device-trees/" class="pagination--pager" title="BeagleBone Green Device Tree
+">Next</a>
     
   </nav>
 
@@ -677,6 +680,36 @@ print the status of the S2 button once a second as below.</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-device-trees/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Device Tree"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-device-trees/" rel="permalink">BeagleBone Green Device Tree
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post describes configuration of the BeagleBone Green GPIO pinmux
+settings via the Linux Device Tree.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -760,36 +793,6 @@ print the status of the S2 button once a second as below.</p>
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">Went for a fish in Sydney Harbour with Beard this afternoon.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/QEMU-ARM-Linux-gpio/">
-        <img src=
-          
-            "/assets/images/2021/01/armlogo.jpeg"
-          
-          alt="GPIO on QEMU ARM Linux"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/QEMU-ARM-Linux-gpio/" rel="permalink">GPIO on QEMU ARM Linux
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">This post details how to use the GPIO peripheral on the ARM linux image 
-built in Creating an emulated ARM Linux system using Buildroot and QEMU
 </p>
   </article>
 </div>
