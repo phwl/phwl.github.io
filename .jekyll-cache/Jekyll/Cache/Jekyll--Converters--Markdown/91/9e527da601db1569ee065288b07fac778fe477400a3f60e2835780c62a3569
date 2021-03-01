@@ -1,0 +1,166 @@
+I"�.<p>Instructions for getting started with the BBG are available at at
+at <a href="https://beagleboard.org/getting-started">https://beagleboard.org/getting-started</a>. Unfortunately, for
+the latest version of MacOS (I’m using Big Sur 11.2.1), the drivers
+cannot be installed. 
+This post details how to connect a Beaglebone Green (BBG) to the internet
+but it should work for other Beaglebone Boards like the pocket or black.</p>
+
+<h2 id="1-via-ethernet">1. via Ethernet</h2>
+
+<h3 id="step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using <code class="language-plaintext highlighter-rouge">screen</code></h3>
+<p>Connect your Mac to the BBG using the microUSB. Connect your BBG to a network port via an Ethernet cable. On your Mac type:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+debian@beaglebone:~<span class="nv">$ </span>ifconfig
+eth0: <span class="nv">flags</span><span class="o">=</span><span class="nt">-28605</span>&lt;UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC&gt;  mtu 1500
+        inet 169.254.120.60  netmask 255.255.0.0  broadcast 169.254.255.255
+        inet6 fe80::1642:fcff:fe0c:b433  prefixlen 64  scopeid 0x20&lt;<span class="nb">link</span><span class="o">&gt;</span>
+        ether 14:42:fc:0c:b4:33  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 719  bytes 229866 <span class="o">(</span>224.4 KiB<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 331  bytes 91879 <span class="o">(</span>89.7 KiB<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 45
+...
+debian@beaglebone:~<span class="nv">$ </span>ping <span class="nt">-c</span> 3 sydney.edu.au
+PING sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.1 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.4 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>19.8 ms
+
+<span class="nt">---</span> sydney.edu.au ping statistics <span class="nt">---</span>
+3 packets transmitted, 3 received, 0% packet loss, <span class="nb">time </span>6ms
+rtt min/avg/max/mdev <span class="o">=</span> 12.144/14.812/19.849/3.566 ms
+</code></pre></div></div>
+
+<p>You can exit the <code class="language-plaintext highlighter-rouge">screen</code> program with control-A and then k. If you just pull the USB connection, you will lose the /dev/cu.usbmodemBBG2200804786 device and will need to reboot the Mac.</p>
+
+<h2 id="2-via-wifi">2. via wifi</h2>
+
+<h3 id="step-1-macos-to-bbg-connection-using-screen-1">Step 1. MacOS to BBG Connection using <code class="language-plaintext highlighter-rouge">screen</code></h3>
+<p>Connect your Mac to the BBG using the microUSB. Connect your BBG to the Mac via Ethernet (you will need an Ethernet adaptor for your Mac and a cable). Use <code class="language-plaintext highlighter-rouge">screen</code> to login to the BBG on your Mac and then type <code class="language-plaintext highlighter-rouge">ifconfig</code>. On my machine (the “phwl@PHWL-MBP ~ %” prompt is for my Mac and the “debian@beaglebone:~$” prompt is on the BBG) it is done as follows:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+Debian GNU/Linux 10 beaglebone ttyGS0
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+debian@beaglebone:~<span class="nv">$ </span>ifconfig
+eth0: <span class="nv">flags</span><span class="o">=</span><span class="nt">-28605</span>&lt;UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC&gt;  mtu 1500
+        inet 169.254.120.60  netmask 255.255.0.0  broadcast 169.254.255.255
+        inet6 fe80::1642:fcff:fe0c:b433  prefixlen 64  scopeid 0x20&lt;<span class="nb">link</span><span class="o">&gt;</span>
+        ether 14:42:fc:0c:b4:33  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 719  bytes 229866 <span class="o">(</span>224.4 KiB<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 331  bytes 91879 <span class="o">(</span>89.7 KiB<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 45
+
+lo: <span class="nv">flags</span><span class="o">=</span>73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1000  <span class="o">(</span>Local Loopback<span class="o">)</span>
+        RX packets 3968  bytes 266448 <span class="o">(</span>260.2 KiB<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3968  bytes 266448 <span class="o">(</span>260.2 KiB<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb0: <span class="nv">flags</span><span class="o">=</span>4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 192.168.7.2  netmask 255.255.255.0  broadcast 192.168.7.255
+        inet6 fe80::1642:fcff:fe0c:b435  prefixlen 64  scopeid 0x20&lt;<span class="nb">link</span><span class="o">&gt;</span>
+        ether 14:42:fc:0c:b4:35  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb1: <span class="nv">flags</span><span class="o">=</span>4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+        inet 192.168.6.2  netmask 255.255.255.0  broadcast 192.168.6.255
+        ether 14:42:fc:0c:b4:39  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">eth0</code> entry shows the IP address assigned by the Mac to the BBG was <code class="language-plaintext highlighter-rouge">169.254.120.60</code>.
+From another terminal window on your Mac, you should be able to log into the BBG:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+The authenticity of host <span class="s1">'169.254.120.60 (169.254.120.60)'</span> can<span class="s1">'t be established.
+ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '</span>169.254.120.60<span class="s1">' (ECDSA) to the list of known hosts.
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+debian@169.254.120.60'</span>s password: 
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Feb 26 05:05:45 2021
+</code></pre></div></div>
+<h3 id="step-2-bbg-to-internet">Step 2 BBG to Internet</h3>
+
+<p>In “Control Panel”, enable Internet sharing. On my machine the device is called
+“Apple USB Ethernet Adaptor” so you have to turn off the “Internet Sharing” service on the left, turn on the “Apple USB Ethernet Adaptor” and then turn on “Internet Sharing” to the the window below:</p>
+
+<figure class="">
+  <a href="/assets/images/2021/03/internetsharing.png">
+  <img src="/assets/images/2021/03/internetsharing.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>If you go back to the terminal on which you rang <code class="language-plaintext highlighter-rouge">screen</code>, you should be able to access the Internet:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>ping <span class="nt">-c</span> 3 sydney.edu.au
+PING sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.1 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.4 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>19.8 ms
+
+<span class="nt">---</span> sydney.edu.au ping statistics <span class="nt">---</span>
+3 packets transmitted, 3 received, 0% packet loss, <span class="nb">time </span>6ms
+rtt min/avg/max/mdev <span class="o">=</span> 12.144/14.812/19.849/3.566 ms
+</code></pre></div></div>
+
+:ET

@@ -1,4 +1,4 @@
-I"Ùb<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
+I"—c<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
 
 <h2 id="1-gpio">1. GPIO</h2>
 <p>Since Linux v4.8, the standard way of using Linux GPIO has been via 
@@ -391,6 +391,8 @@ print the status of the S2 button once a second as below.</p>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Refer to the <a href="http://exploringbeaglebone.com/wp-content/uploads/2019/01/533160-c06f009.png">Beaglebone P9 connector table</a> for the mapping of pins to the gpiochip0 lines.</p>
 
 <p>The data sheet for a seven segment display (SSD) is available <a href="https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576">here</a>.</p>
 <ul>

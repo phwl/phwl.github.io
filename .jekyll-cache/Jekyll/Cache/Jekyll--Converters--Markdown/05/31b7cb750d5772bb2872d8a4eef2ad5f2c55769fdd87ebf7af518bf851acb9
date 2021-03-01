@@ -1,0 +1,14 @@
+I"2<ul class="toc__menu">
+  <li><a href="#1-via-ethernet">1. via Ethernet</a>
+    <ul>
+      <li><a href="#step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using screen</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-connecting-bbg-to-internet-via-macs-wifi">2. Connecting BBG to Internet via Mac’s wifi</a>
+    <ul>
+      <li><a href="#step-1-macos-to-bbg-connection-using-screen-1">Step 1. MacOS to BBG Connection using screen</a></li>
+      <li><a href="#step-2-bbg-to-internet">Step 2 BBG to Internet</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

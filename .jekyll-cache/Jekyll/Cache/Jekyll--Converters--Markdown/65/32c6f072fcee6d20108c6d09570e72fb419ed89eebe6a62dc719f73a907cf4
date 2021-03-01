@@ -1,0 +1,7 @@
+I"­<p>Instructions for getting started with the BBG are available at at
+at <a href="https://beagleboard.org/getting-started">https://beagleboard.org/getting-started</a>. Unfortunately, for
+the latest version of MacOS (Iâ€™m using Big Sur 11.2.1), the drivers
+cannot be installed. 
+This post details how to connect a Beaglebone Green (BBG) to the internet
+but it should work for other Beaglebone Boards like the pocket or black.</p>
+:ET

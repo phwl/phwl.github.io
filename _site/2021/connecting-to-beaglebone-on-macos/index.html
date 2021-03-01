@@ -1,0 +1,656 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Connecting to Beaglebone on MacOS - Life, the Universe and Fishing</title>
+<meta name="description" content="This post details how to connect a Beaglebone Green (BBG) to the internet.It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Life, the Universe and Fishing">
+<meta property="og:title" content="Connecting to Beaglebone on MacOS">
+<meta property="og:url" content="/2021/connecting-to-beaglebone-on-macos/">
+
+
+  <meta property="og:description" content="This post details how to connect a Beaglebone Green (BBG) to the internet.It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+
+
+
+  <meta property="og:image" content="/assets/images/2021/02/bbg-photo.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-03-01T20:14:19+11:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="/2021/connecting-to-beaglebone-on-macos/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "phwl",
+      "url": "/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Life, the Universe and Fishing Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Life, the Universe and Fishing
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/archive" >Archive</a>
+            </li><li class="masthead__menu-item">
+              <a href="/gallery" >Gallery</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research" >Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Connecting to Beaglebone on MacOS">
+    <meta itemprop="description" content="This post details how to connect a Beaglebone Green (BBG) to the internet.It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+    <meta itemprop="datePublished" content="March 01, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Connecting to Beaglebone on MacOS
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#1-via-ethernet">1. via Ethernet</a>
+    <ul>
+      <li><a href="#step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using screen</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-via-macs-wifi">2. via Mac’s Wifi</a>
+    <ul>
+      <li><a href="#step-1-macos-to-bbg-connection-using-screen-1">Step 1. MacOS to BBG Connection using screen</a></li>
+      <li><a href="#step-2-bbg-to-internet">Step 2 BBG to Internet</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>This post details how to connect a Beaglebone Green (BBG) to the internet.
+It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.</p>
+
+<p>Instructions for getting started with the BBG are available at at
+at <a href="https://beagleboard.org/getting-started">https://beagleboard.org/getting-started</a>. Unfortunately, for
+the latest version of MacOS (I’m using Big Sur 11.2.1), the drivers
+cannot be installed.</p>
+
+<p>In the examples that follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and the BBG prompt is “debian@beaglebone:~$”.</p>
+
+<h2 id="1-via-ethernet">1. via Ethernet</h2>
+
+<h3 id="step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using <code class="language-plaintext highlighter-rouge">screen</code></h3>
+<p>Connect your Mac to the BBG using the microUSB. Connect your BBG to a network port via an Ethernet cable. On your Mac type:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+</code></pre></div></div>
+
+<p>If you go back to the terminal on which you rang <code class="language-plaintext highlighter-rouge">screen</code>, you should be able to access the Internet:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>ping <span class="nt">-c</span> 3 sydney.edu.au
+PING sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.1 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.4 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>19.8 ms
+
+<span class="nt">---</span> sydney.edu.au ping statistics <span class="nt">---</span>
+3 packets transmitted, 3 received, 0% packet loss, <span class="nb">time </span>6ms
+rtt min/avg/max/mdev <span class="o">=</span> 12.144/14.812/19.849/3.566 ms
+</code></pre></div></div>
+
+<p>You can exit the <code class="language-plaintext highlighter-rouge">screen</code> program with control-A and then k. If you just pull the USB connection, you will lose the /dev/cu.usbmodemBBG2200804786 device and will need to reboot the Mac.</p>
+
+<h2 id="2-via-macs-wifi">2. via Mac’s Wifi</h2>
+
+<h3 id="step-1-macos-to-bbg-connection-using-screen-1">Step 1. MacOS to BBG Connection using <code class="language-plaintext highlighter-rouge">screen</code></h3>
+<p>Connect your Mac to the BBG using the microUSB. Connect your BBG to the Mac via Ethernet (you will need an Ethernet adaptor for your Mac and a cable). Use <code class="language-plaintext highlighter-rouge">screen</code> to login to the BBG on your Mac and then type <code class="language-plaintext highlighter-rouge">ifconfig</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+Debian GNU/Linux 10 beaglebone ttyGS0
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+debian@beaglebone:~<span class="nv">$ </span>ifconfig
+eth0: <span class="nv">flags</span><span class="o">=</span><span class="nt">-28605</span>&lt;UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC&gt;  mtu 1500
+        inet 169.254.120.60  netmask 255.255.0.0  broadcast 169.254.255.255
+        inet6 fe80::1642:fcff:fe0c:b433  prefixlen 64  scopeid 0x20&lt;<span class="nb">link</span><span class="o">&gt;</span>
+        ether 14:42:fc:0c:b4:33  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 719  bytes 229866 <span class="o">(</span>224.4 KiB<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 331  bytes 91879 <span class="o">(</span>89.7 KiB<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 45
+
+lo: <span class="nv">flags</span><span class="o">=</span>73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+        loop  txqueuelen 1000  <span class="o">(</span>Local Loopback<span class="o">)</span>
+        RX packets 3968  bytes 266448 <span class="o">(</span>260.2 KiB<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3968  bytes 266448 <span class="o">(</span>260.2 KiB<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb0: <span class="nv">flags</span><span class="o">=</span>4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+        inet 192.168.7.2  netmask 255.255.255.0  broadcast 192.168.7.255
+        inet6 fe80::1642:fcff:fe0c:b435  prefixlen 64  scopeid 0x20&lt;<span class="nb">link</span><span class="o">&gt;</span>
+        ether 14:42:fc:0c:b4:35  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb1: <span class="nv">flags</span><span class="o">=</span>4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+        inet 192.168.6.2  netmask 255.255.255.0  broadcast 192.168.6.255
+        ether 14:42:fc:0c:b4:39  txqueuelen 1000  <span class="o">(</span>Ethernet<span class="o">)</span>
+        RX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 <span class="o">(</span>0.0 B<span class="o">)</span>
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+</code></pre></div></div>
+<p>The <code class="language-plaintext highlighter-rouge">ifconfig</code> command shows that the <code class="language-plaintext highlighter-rouge">eth0</code> device has the IP address <code class="language-plaintext highlighter-rouge">169.254.120.60</code>.
+From another terminal window on your Mac, you should be able to log into the BBG:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+The authenticity of host <span class="s1">'169.254.120.60 (169.254.120.60)'</span> can<span class="s1">'t be established.
+ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '</span>169.254.120.60<span class="s1">' (ECDSA) to the list of known hosts.
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+debian@169.254.120.60'</span>s password: 
+
+The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
+the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
+individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Feb 26 05:05:45 2021
+</code></pre></div></div>
+<h3 id="step-2-bbg-to-internet">Step 2 BBG to Internet</h3>
+
+<p>In “Control Panel”, enable Internet sharing. On my machine the device is called
+“Apple USB Ethernet Adaptor” so you have to turn off the “Internet Sharing” service on the left, turn on the “Apple USB Ethernet Adaptor” and then turn on “Internet Sharing” to the the window below:</p>
+
+<figure class="">
+  <a href="/assets/images/2021/03/internetsharing.png">
+  <img src="/assets/images/2021/03/internetsharing.png" alt="" />
+  
+    <figcaption>
+      
+
+    </figcaption></a></figure>
+
+<p>If you go back to the terminal on which you rang <code class="language-plaintext highlighter-rouge">screen</code>, you should be able to access the Internet:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>ping <span class="nt">-c</span> 3 sydney.edu.au
+PING sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.1 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.4 ms
+64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>19.8 ms
+
+<span class="nt">---</span> sydney.edu.au ping statistics <span class="nt">---</span>
+3 packets transmitted, 3 received, 0% packet loss, <span class="nb">time </span>6ms
+rtt min/avg/max/mdev <span class="o">=</span> 12.144/14.812/19.849/3.566 ms
+</code></pre></div></div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#beaglebone" class="page__taxonomy-item" rel="tag">beaglebone</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#embedded" class="page__taxonomy-item" rel="tag">embedded</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academia" class="page__taxonomy-item" rel="tag">academia</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-01T20:14:19+11:00">March 01, 2021</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Connecting+to+Beaglebone+on+MacOS%20%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/2021/bbg-device-trees/" class="pagination--pager" title="BeagleBone Green Device Tree
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-device-trees/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Device Tree"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-device-trees/" rel="permalink">BeagleBone Green Device Tree
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post describes configuration of the BeagleBone Green GPIO pinmux
+settings via the Linux Device Tree.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-gpio/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green GPIO"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-gpio/" rel="permalink">BeagleBone Green GPIO
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to control the BeagleBone Green (BBG) via GPIO.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/bbg-getting-started/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="BeagleBone Green Getting Started"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bbg-getting-started/" rel="permalink">BeagleBone Green Getting Started
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post details how to get started with a BeagleBone Green (BBG) microSD card.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/lake-eucumbene/">
+        <img src=
+          
+            "/assets/images/2021/01/eucumbene2.jpg"
+          
+          alt="Lake Eucumbene - who would go trout fishing during a heatwave?"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/lake-eucumbene/" rel="permalink">Lake Eucumbene - who would go trout fishing during a heatwave?
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://facebook.com/pleong" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/phwl" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/philip-h-w-leong-949484" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin-f" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 phwl. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>

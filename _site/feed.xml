@@ -1,4 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-02-26T13:18:21+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-01T21:42:09+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting to Beaglebone on MacOS</title><link href="/2021/connecting-to-beaglebone-on-macos/" rel="alternate" type="text/html" title="Connecting to Beaglebone on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-to-beaglebone-on-macos</id><content type="html" xml:base="/2021/connecting-to-beaglebone-on-macos/">&lt;p&gt;This post details how to connect a Beaglebone Green (BBG) to the internet.
+It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.&lt;/p&gt;
+
+&lt;p&gt;Instructions for getting started with the BBG are available at at
+at &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;https://beagleboard.org/getting-started&lt;/a&gt;. Unfortunately, for
+the latest version of MacOS (I’m using Big Sur 11.2.1), the drivers
+cannot be installed.&lt;/p&gt;
+
+&lt;p&gt;In the examples that follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and the BBG prompt is “debian@beaglebone:~$”.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-via-ethernet&quot;&gt;1. via Ethernet&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1-macos-to-bbg-connection-using-screen&quot;&gt;Step 1. MacOS to BBG Connection using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG to a network port via an Ethernet cable. On your Mac type:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+the exact distribution terms &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;each program are described &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the
+individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you go back to the terminal on which you rang &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt;, you should be able to access the Internet:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 3 sydney.edu.au
+PING sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 56&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;84&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; bytes of data.
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.1 ms
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.4 ms
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;19.8 ms
+
+&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; sydney.edu.au ping statistics &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+3 packets transmitted, 3 received, 0% packet loss, &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;6ms
+rtt min/avg/max/mdev &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 12.144/14.812/19.849/3.566 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can exit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; program with control-A and then k. If you just pull the USB connection, you will lose the /dev/cu.usbmodemBBG2200804786 device and will need to reboot the Mac.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-via-macs-wifi&quot;&gt;2. via Mac’s Wifi&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1-macos-to-bbg-connection-using-screen-1&quot;&gt;Step 1. MacOS to BBG Connection using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG to the Mac via Ethernet (you will need an Ethernet adaptor for your Mac and a cable). Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG on your Mac and then type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+Debian GNU/Linux 10 beaglebone ttyGS0
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
+
+beaglebone login: debian
+Password: 
+Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
+
+The programs included with the Debian GNU/Linux system are free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+the exact distribution terms &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;each program are described &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the
+individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ifconfig
+eth0: &lt;span class=&quot;nv&quot;&gt;flags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-28605&lt;/span&gt;&amp;lt;UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC&amp;gt;  mtu 1500
+        inet 169.254.120.60  netmask 255.255.0.0  broadcast 169.254.255.255
+        inet6 fe80::1642:fcff:fe0c:b433  prefixlen 64  scopeid 0x20&amp;lt;&lt;span class=&quot;nb&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        ether 14:42:fc:0c:b4:33  txqueuelen 1000  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Ethernet&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX packets 719  bytes 229866 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;224.4 KiB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 331  bytes 91879 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;89.7 KiB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 45
+
+lo: &lt;span class=&quot;nv&quot;&gt;flags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;73&amp;lt;UP,LOOPBACK,RUNNING&amp;gt;  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10&amp;lt;host&amp;gt;
+        loop  txqueuelen 1000  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Local Loopback&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX packets 3968  bytes 266448 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;260.2 KiB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3968  bytes 266448 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;260.2 KiB&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb0: &lt;span class=&quot;nv&quot;&gt;flags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4163&amp;lt;UP,BROADCAST,RUNNING,MULTICAST&amp;gt;  mtu 1500
+        inet 192.168.7.2  netmask 255.255.255.0  broadcast 192.168.7.255
+        inet6 fe80::1642:fcff:fe0c:b435  prefixlen 64  scopeid 0x20&amp;lt;&lt;span class=&quot;nb&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        ether 14:42:fc:0c:b4:35  txqueuelen 1000  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Ethernet&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX packets 0  bytes 0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0 B&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0 B&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+usb1: &lt;span class=&quot;nv&quot;&gt;flags&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt;  mtu 1500
+        inet 192.168.6.2  netmask 255.255.255.0  broadcast 192.168.6.255
+        ether 14:42:fc:0c:b4:39  txqueuelen 1000  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Ethernet&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX packets 0  bytes 0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0 B&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.0 B&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt; command shows that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eth0&lt;/code&gt; device has the IP address &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;169.254.120.60&lt;/code&gt;.
+From another terminal window on your Mac, you should be able to log into the BBG:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+The authenticity of host &lt;span class=&quot;s1&quot;&gt;&apos;169.254.120.60 (169.254.120.60)&apos;&lt;/span&gt; can&lt;span class=&quot;s1&quot;&gt;&apos;t be established.
+ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added &apos;&lt;/span&gt;169.254.120.60&lt;span class=&quot;s1&quot;&gt;&apos; (ECDSA) to the list of known hosts.
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+debian@169.254.120.60&apos;&lt;/span&gt;s password: 
+
+The programs included with the Debian GNU/Linux system are free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+the exact distribution terms &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;each program are described &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the
+individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Feb 26 05:05:45 2021
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;step-2-bbg-to-internet&quot;&gt;Step 2 BBG to Internet&lt;/h3&gt;
+
+&lt;p&gt;In “Control Panel”, enable Internet sharing. On my machine the device is called
+“Apple USB Ethernet Adaptor” so you have to turn off the “Internet Sharing” service on the left, turn on the “Apple USB Ethernet Adaptor” and then turn on “Internet Sharing” to the the window below:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/03/internetsharing.png&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/03/internetsharing.png&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you go back to the terminal on which you rang &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt;, you should be able to access the Internet:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 3 sydney.edu.au
+PING sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 56&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;84&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; bytes of data.
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.1 ms
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.4 ms
+64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;19.8 ms
+
+&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; sydney.edu.au ping statistics &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+3 packets transmitted, 3 received, 0% packet loss, &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;6ms
+rtt min/avg/max/mdev &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 12.144/14.812/19.849/3.566 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to connect a Beaglebone Green (BBG) to the internet. It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
 settings via the Linux Device Tree.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-setting-pinmux-values-via-the-device-tree&quot;&gt;1. Setting pinmux values via the Device Tree&lt;/h2&gt;
@@ -46,10 +205,8 @@ the pinmum mode chosen. Looking at the &lt;a href=&quot;http://exploringbeaglebo
 				0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
 				0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
                        
-                               /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup
-, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-			       /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup
-, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                               /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup , 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+			       /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
 
 			&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 		  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -497,6 +654,8 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;Refer to the &lt;a href=&quot;http://exploringbeaglebone.com/wp-content/uploads/2019/01/533160-c06f009.png&quot;&gt;Beaglebone P9 connector table&lt;/a&gt; for the mapping of pins to the gpiochip0 lines.&lt;/p&gt;
+
 &lt;p&gt;The data sheet for a seven segment display (SSD) is available &lt;a href=&quot;https://au.element14.com/broadcom-limited/5082-7613/led-display-0-3-he-red/dp/1175576&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Calculate the resistor value so that the current to drive the LED (voltage is 3.3V-Vf where Vf=the diode forward voltage drop) doesn’t exceed 4mA.&lt;/li&gt;
@@ -544,34 +703,7 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
 debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
-
-&lt;p&gt;I like them fried!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
@@ -679,7 +811,34 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools-on-qemu&quot;&gt;1. Linux libgpiod Library Command Line Tools on QEMU&lt;/h2&gt;
@@ -2409,69 +2568,4 @@ there.&lt;/p&gt;
     &lt;figcaption&gt;
       Poached egg and vegetables
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><summary type="html">Went to Tasmania for a few days. Last time I was here was 2015.</summary></entry><entry><title type="html">Computer Engineering Lab Christmas Party Photo</title><link href="/2020/computer-engineering-lab-christmas-party/" rel="alternate" type="text/html" title="Computer Engineering Lab Christmas Party Photo" /><published>2020-12-01T16:00:00+11:00</published><updated>2020-12-01T16:00:00+11:00</updated><id>/2020/computer-engineering-lab-christmas-party</id><content type="html" xml:base="/2020/computer-engineering-lab-christmas-party/">&lt;p&gt;A little late this year (and down on numbers due to COVID) but we had an
-enjoyable Christmas party.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/celchristmas20.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/celchristmas20.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2020
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We continue to have the world’s earlier Christmas party!&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2019/11/celchristmas19.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2019/11/celchristmas19.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2019
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2018/11/DSCF5719.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2018/11/DSCF5719.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2018
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2017/11/celchristmas17.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2017/11/celchristmas17.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2017
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2017/11/celchristmas2016.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2017/11/celchristmas2016.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2016
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2017/11/celparty2015.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2017/11/celparty2015.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2015
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2017/11/celchristmas2014.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2017/11/celchristmas2014.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      2014
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="celchristmas" /><summary type="html">A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><summary type="html">Went to Tasmania for a few days. Last time I was here was 2015.</summary></entry></feed>
