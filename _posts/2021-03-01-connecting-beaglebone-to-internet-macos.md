@@ -3,7 +3,7 @@ author: phwl
 comments: true
 toc: true
 date: 2021-03-01 19:14:19 AEST
-title: Connecting to Beaglebone on MacOS
+title: Connecting the Beaglebone to Internet on MacOS
 classes: wide
 categories:
 - academia
@@ -13,19 +13,20 @@ tags:
 header:
   teaser: /assets/images/2021/02/bbg-photo.jpg
 ---
-This post describes how to connect a Beaglebone Green (BBG) to the Internet.
-The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.
+This post describes how to connect the BeagleBone to the Internet via
+Ethernet.
 
-Although instructions for getting started with the BBG are available at 
-<https://beagleboard.org/getting-started>. Unfortunately, the drivers
-cannot be installed on
-the latest version of MacOS (I'm using Big Sur 11.2.1).
-
-In the examples that follow, the host Mac machine has the prompt "phwl@PHWL-MBP ~ %" and the BBG prompt is "debian@beaglebone:~$".
+Drivers to support Internet via USB on the BeagleBone (see [Getting
+Started](https://beagleboard.org/getting-started)) cannot be installed
+on MacOS e.g. Big Sur 11.2.1. Fortunately, the BBG uses standard Linux
+networking so this is easy to solve.  In the examples that
+follow, the host Mac machine has the prompt "phwl@PHWL-MBP ~ %" and
+the BBG prompt is "debian@beaglebone:~$". The same instructions should 
+work for other Beaglebone Boards like the Pocket Beagle or BeagleBone
+Black.
 
 ## 1a. Connecting via Ethernet
 
-### Step 1. MacOS to BBG Connection using ```screen```
 Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable. 
 
 ## 1b. Connecting via Mac's Wifi
@@ -41,11 +42,21 @@ In "Control Panel" on your Mac, enable Internet sharing. On my machine the devic
 {% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
 
 ## 2. To Check BeagleBone to Internet Connection
-Use ```screen``` to login to the BBG from your Mac and then check if you
-can ping sydney.edu.au:
+If your BeagleBone is the only one on the local network, it should appear as
+```beaglebone.local```. In that case you can connect via Ethernet
+``` sh
+phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
+```
 
+Otherwise, you can use ```screen``` to login to the BBG from your Mac via
+the USB connection (use the one attached to the microUSB connector).
 ``` sh
 phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+```
+
+Either way, after entering Return, you should see the login prompt.
+
+``` sh
 Debian GNU/Linux 10 beaglebone ttyGS0
 
 BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
@@ -64,7 +75,12 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
+```
 
+
+Then check if you can ping sydney.edu.au:
+
+```
 debian@beaglebone:~$ ping -c 3 sydney.edu.au
 PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
 64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
@@ -119,11 +135,11 @@ usb1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-The ```ifconfig``` command shows that the ```eth0``` device has the IP address ```169.254.120.60```.
+The ```ifconfig``` command shows that the ```eth0``` device has the IP address ```169.254.120.60```. You can use this address directly, or ```beaglebone.local``` if that is the only device on your local network.
 
 From another terminal window on your Mac (or any other machine on the same network), you should be able to log into the BBG:
 ``` sh
-phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+phwl@PHWL-MBP ~ % ssh debian@169.254.120.60 # or ssh debian@beaglebone.local
 The authenticity of host '169.254.120.60 (169.254.120.60)' can't be established.
 ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes

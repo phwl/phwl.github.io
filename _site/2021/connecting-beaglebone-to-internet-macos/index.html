@@ -10,19 +10,19 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Connecting to Beaglebone on MacOS - Life, the Universe and Fishing</title>
-<meta name="description" content="This post describes how to connect a Beaglebone Green (BBG) to the Internet.The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+<!-- begin _includes/seo.html --><title>Connecting the Beaglebone to Internet on MacOS - Life, the Universe and Fishing</title>
+<meta name="description" content="This post describes how to connect the BeagleBone to the Internet viaEthernet.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Connecting to Beaglebone on MacOS">
-<meta property="og:url" content="/2021/connecting-to-beaglebone-on-macos/">
+<meta property="og:title" content="Connecting the Beaglebone to Internet on MacOS">
+<meta property="og:url" content="/2021/connecting-beaglebone-to-internet-macos/">
 
 
-  <meta property="og:description" content="This post describes how to connect a Beaglebone Green (BBG) to the Internet.The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+  <meta property="og:description" content="This post describes how to connect the BeagleBone to the Internet viaEthernet.">
 
 
 
@@ -43,7 +43,7 @@
   
 
 
-<link rel="canonical" href="/2021/connecting-to-beaglebone-on-macos/">
+<link rel="canonical" href="/2021/connecting-beaglebone-to-internet-macos/">
 
 
 
@@ -166,15 +166,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Connecting to Beaglebone on MacOS">
-    <meta itemprop="description" content="This post describes how to connect a Beaglebone Green (BBG) to the Internet.The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.">
+    <meta itemprop="headline" content="Connecting the Beaglebone to Internet on MacOS">
+    <meta itemprop="description" content="This post describes how to connect the BeagleBone to the Internet viaEthernet.">
     <meta itemprop="datePublished" content="March 01, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Connecting to Beaglebone on MacOS
+          <h1 id="page-title" class="page__title" itemprop="headline">Connecting the Beaglebone to Internet on MacOS
 </h1>
           
         </header>
@@ -186,11 +186,7 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
               <ul class="toc__menu">
-  <li><a href="#1a-connecting-via-ethernet">1a. Connecting via Ethernet</a>
-    <ul>
-      <li><a href="#step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using screen</a></li>
-    </ul>
-  </li>
+  <li><a href="#1a-connecting-via-ethernet">1a. Connecting via Ethernet</a></li>
   <li><a href="#1b-connecting-via-macs-wifi">1b. Connecting via Mac’s Wifi</a>
     <ul>
       <li><a href="#step-1-macos-to-bbg-connection">Step 1. MacOS to BBG Connection</a></li>
@@ -203,20 +199,21 @@
             </nav>
           </aside>
         
-        <p>This post describes how to connect a Beaglebone Green (BBG) to the Internet.
-The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.</p>
+        <p>This post describes how to connect the BeagleBone to the Internet via
+Ethernet.</p>
 
-<p>Although instructions for getting started with the BBG are available at
-<a href="https://beagleboard.org/getting-started">https://beagleboard.org/getting-started</a>. Unfortunately, the drivers
-cannot be installed on
-the latest version of MacOS (I’m using Big Sur 11.2.1).</p>
-
-<p>In the examples that follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and the BBG prompt is “debian@beaglebone:~$”.</p>
+<p>Drivers to support Internet via USB on the BeagleBone (see <a href="https://beagleboard.org/getting-started">Getting
+Started</a>) cannot be installed
+on MacOS e.g. Big Sur 11.2.1. Fortunately, the BBG uses standard Linux
+networking so this is easy to solve.  In the examples that
+follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and
+the BBG prompt is “debian@beaglebone:~$”. The same instructions should 
+work for other Beaglebone Boards like the Pocket Beagle or BeagleBone
+Black.</p>
 
 <h2 id="1a-connecting-via-ethernet">1a. Connecting via Ethernet</h2>
 
-<h3 id="step-1-macos-to-bbg-connection-using-screen">Step 1. MacOS to BBG Connection using <code class="language-plaintext highlighter-rouge">screen</code></h3>
-<p>Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network port using an Ethernet cable.</p>
+<p>Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable.</p>
 
 <h2 id="1b-connecting-via-macs-wifi">1b. Connecting via Mac’s Wifi</h2>
 
@@ -238,11 +235,19 @@ the latest version of MacOS (I’m using Big Sur 11.2.1).</p>
     </figcaption></a></figure>
 
 <h2 id="2-to-check-beaglebone-to-internet-connection">2. To Check BeagleBone to Internet Connection</h2>
-<p>Use <code class="language-plaintext highlighter-rouge">screen</code> to login to the BBG from your Mac and then check if you
-can ping sydney.edu.au:</p>
+<p>If your BeagleBone is the only one on the local network, it should appear as
+<code class="language-plaintext highlighter-rouge">beaglebone.local</code>. In that case you can connect via Ethernet</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
+</code></pre></div></div>
 
+<p>Otherwise, you can use <code class="language-plaintext highlighter-rouge">screen</code> to login to the BBG from your Mac via
+the USB connection (use the one attached to the microUSB connector).</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
-Debian GNU/Linux 10 beaglebone ttyGS0
+</code></pre></div></div>
+
+<p>Either way, after entering Return, you should see the login prompt.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Debian GNU/Linux 10 beaglebone ttyGS0
 
 BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
 
@@ -260,16 +265,19 @@ individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</spa
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
+</code></pre></div></div>
 
-debian@beaglebone:~<span class="nv">$ </span>ping <span class="nt">-c</span> 3 sydney.edu.au
-PING sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span> 56<span class="o">(</span>84<span class="o">)</span> bytes of data.
-64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>1 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.1 ms
-64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>2 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>12.4 ms
-64 bytes from svdns.sydney.edu.au <span class="o">(</span>129.78.5.8<span class="o">)</span>: <span class="nv">icmp_seq</span><span class="o">=</span>3 <span class="nv">ttl</span><span class="o">=</span>242 <span class="nb">time</span><span class="o">=</span>19.8 ms
+<p>Then check if you can ping sydney.edu.au:</p>
 
-<span class="nt">---</span> sydney.edu.au ping statistics <span class="nt">---</span>
-3 packets transmitted, 3 received, 0% packet loss, <span class="nb">time </span>6ms
-rtt min/avg/max/mdev <span class="o">=</span> 12.144/14.812/19.849/3.566 ms
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~$ ping -c 3 sydney.edu.au
+PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=2 ttl=242 time=12.4 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=3 ttl=242 time=19.8 ms
+
+--- sydney.edu.au ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 6ms
+rtt min/avg/max/mdev = 12.144/14.812/19.849/3.566 ms
 </code></pre></div></div>
 
 <p>You can exit the <code class="language-plaintext highlighter-rouge">screen</code> program with control-A and then k (if you just disconnect the USB, the /dev/cu.usbmodemBBG2200804786 device will disappear and you will need to reboot the Mac if it is needed again).</p>
@@ -314,10 +322,10 @@ usb1: flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 </code></pre></div></div>
 
-<p>The <code class="language-plaintext highlighter-rouge">ifconfig</code> command shows that the <code class="language-plaintext highlighter-rouge">eth0</code> device has the IP address <code class="language-plaintext highlighter-rouge">169.254.120.60</code>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">ifconfig</code> command shows that the <code class="language-plaintext highlighter-rouge">eth0</code> device has the IP address <code class="language-plaintext highlighter-rouge">169.254.120.60</code>. You can use this address directly, or <code class="language-plaintext highlighter-rouge">beaglebone.local</code> if that is the only device on your local network.</p>
 
 <p>From another terminal window on your Mac (or any other machine on the same network), you should be able to log into the BBG:</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@169.254.120.60 <span class="c"># or ssh debian@beaglebone.local</span>
 The authenticity of host <span class="s1">'169.254.120.60 (169.254.120.60)'</span> can<span class="s1">'t be established.
 ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -402,11 +410,11 @@ Last login: Fri Feb 26 05:05:45 2021
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Connecting+to+Beaglebone+on+MacOS%20%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Connecting+the+Beaglebone+to+Internet+on+MacOS%20%2F2021%2Fconnecting-beaglebone-to-internet-macos%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fconnecting-beaglebone-to-internet-macos%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fconnecting-to-beaglebone-on-macos%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fconnecting-beaglebone-to-internet-macos%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 

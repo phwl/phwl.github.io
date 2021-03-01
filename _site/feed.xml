@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-01T22:36:16+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting to Beaglebone on MacOS</title><link href="/2021/connecting-to-beaglebone-on-macos/" rel="alternate" type="text/html" title="Connecting to Beaglebone on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-to-beaglebone-on-macos</id><content type="html" xml:base="/2021/connecting-to-beaglebone-on-macos/">&lt;p&gt;This post describes how to connect a Beaglebone Green (BBG) to the Internet.
-The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-02T09:56:46+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet on MacOS</title><link href="/2021/connecting-beaglebone-to-internet-macos/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet-macos</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet-macos/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
+Ethernet.&lt;/p&gt;
 
-&lt;p&gt;Although instructions for getting started with the BBG are available at
-&lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;https://beagleboard.org/getting-started&lt;/a&gt;. Unfortunately, the drivers
-cannot be installed on
-the latest version of MacOS (I’m using Big Sur 11.2.1).&lt;/p&gt;
-
-&lt;p&gt;In the examples that follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and the BBG prompt is “debian@beaglebone:~$”.&lt;/p&gt;
+&lt;p&gt;Drivers to support Internet via USB on the BeagleBone (see &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;Getting
+Started&lt;/a&gt;) cannot be installed
+on MacOS e.g. Big Sur 11.2.1. Fortunately, the BBG uses standard Linux
+networking so this is easy to solve.  In the examples that
+follow, the host Mac machine has the prompt “phwl@PHWL-MBP ~ %” and
+the BBG prompt is “debian@beaglebone:~$”. The same instructions should 
+work for other Beaglebone Boards like the Pocket Beagle or BeagleBone
+Black.&lt;/p&gt;
 
 &lt;h2 id=&quot;1a-connecting-via-ethernet&quot;&gt;1a. Connecting via Ethernet&lt;/h2&gt;
 
-&lt;h3 id=&quot;step-1-macos-to-bbg-connection-using-screen&quot;&gt;Step 1. MacOS to BBG Connection using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network port using an Ethernet cable.&lt;/p&gt;
+&lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable.&lt;/p&gt;
 
 &lt;h2 id=&quot;1b-connecting-via-macs-wifi&quot;&gt;1b. Connecting via Mac’s Wifi&lt;/h2&gt;
 
@@ -33,11 +34,19 @@ the latest version of MacOS (I’m using Big Sur 11.2.1).&lt;/p&gt;
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;2-to-check-beaglebone-to-internet-connection&quot;&gt;2. To Check BeagleBone to Internet Connection&lt;/h2&gt;
-&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG from your Mac and then check if you
-can ping sydney.edu.au:&lt;/p&gt;
+&lt;p&gt;If your BeagleBone is the only one on the local network, it should appear as
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;beaglebone.local&lt;/code&gt;. In that case you can connect via Ethernet&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;Otherwise, you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG from your Mac via
+the USB connection (use the one attached to the microUSB connector).&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
-Debian GNU/Linux 10 beaglebone ttyGS0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Either way, after entering Return, you should see the login prompt.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Debian GNU/Linux 10 beaglebone ttyGS0
 
 BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
 
@@ -55,16 +64,19 @@ individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ping &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 3 sydney.edu.au
-PING sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 56&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;84&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; bytes of data.
-64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.1 ms
-64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;12.4 ms
-64 bytes from svdns.sydney.edu.au &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;129.78.5.8&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;: &lt;span class=&quot;nv&quot;&gt;icmp_seq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3 &lt;span class=&quot;nv&quot;&gt;ttl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;242 &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;19.8 ms
+&lt;p&gt;Then check if you can ping sydney.edu.au:&lt;/p&gt;
 
-&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; sydney.edu.au ping statistics &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
-3 packets transmitted, 3 received, 0% packet loss, &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;6ms
-rtt min/avg/max/mdev &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 12.144/14.812/19.849/3.566 ms
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ ping -c 3 sydney.edu.au
+PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=2 ttl=242 time=12.4 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=3 ttl=242 time=19.8 ms
+
+--- sydney.edu.au ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 6ms
+rtt min/avg/max/mdev = 12.144/14.812/19.849/3.566 ms
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can exit the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; program with control-A and then k (if you just disconnect the USB, the /dev/cu.usbmodemBBG2200804786 device will disappear and you will need to reboot the Mac if it is needed again).&lt;/p&gt;
@@ -109,10 +121,10 @@ usb1: flags=4099&amp;lt;UP,BROADCAST,MULTICAST&amp;gt;  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt; command shows that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eth0&lt;/code&gt; device has the IP address &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;169.254.120.60&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ifconfig&lt;/code&gt; command shows that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;eth0&lt;/code&gt; device has the IP address &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;169.254.120.60&lt;/code&gt;. You can use this address directly, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;beaglebone.local&lt;/code&gt; if that is the only device on your local network.&lt;/p&gt;
 
 &lt;p&gt;From another terminal window on your Mac (or any other machine on the same network), you should be able to log into the BBG:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@169.254.120.60 &lt;span class=&quot;c&quot;&gt;# or ssh debian@beaglebone.local&lt;/span&gt;
 The authenticity of host &lt;span class=&quot;s1&quot;&gt;&apos;169.254.120.60 (169.254.120.60)&apos;&lt;/span&gt; can&lt;span class=&quot;s1&quot;&gt;&apos;t be established.
 ECDSA key fingerprint is SHA256:6iPvBW868tpt8HVZLemzVVPKAI5n5C669GwfLKiws34.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -134,7 +146,7 @@ individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri Feb 26 05:05:45 2021
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect a Beaglebone Green (BBG) to the Internet. The same instructions should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to the Internet via Ethernet.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
 settings via the Linux Device Tree.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-setting-pinmux-values-via-the-device-tree&quot;&gt;1. Setting pinmux values via the Device Tree&lt;/h2&gt;
