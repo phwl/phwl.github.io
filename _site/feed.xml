@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-01T22:24:45+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting to Beaglebone on MacOS</title><link href="/2021/connecting-to-beaglebone-on-macos/" rel="alternate" type="text/html" title="Connecting to Beaglebone on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-to-beaglebone-on-macos</id><content type="html" xml:base="/2021/connecting-to-beaglebone-on-macos/">&lt;p&gt;This post describes how to connect a Beaglebone Green (BBG) to the Internet.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-01T22:36:16+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting to Beaglebone on MacOS</title><link href="/2021/connecting-to-beaglebone-on-macos/" rel="alternate" type="text/html" title="Connecting to Beaglebone on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-to-beaglebone-on-macos</id><content type="html" xml:base="/2021/connecting-to-beaglebone-on-macos/">&lt;p&gt;This post describes how to connect a Beaglebone Green (BBG) to the Internet.
 The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.&lt;/p&gt;
 
 &lt;p&gt;Although instructions for getting started with the BBG are available at
@@ -32,7 +32,7 @@ the latest version of MacOS (I’m using Big Sur 11.2.1).&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h3 id=&quot;2-to-check-beaglebone-to-internet-connection&quot;&gt;2. To Check BeagleBone to Internet Connection&lt;/h3&gt;
+&lt;h2 id=&quot;2-to-check-beaglebone-to-internet-connection&quot;&gt;2. To Check BeagleBone to Internet Connection&lt;/h2&gt;
 &lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG from your Mac and then check if you
 can ping sydney.edu.au:&lt;/p&gt;
 

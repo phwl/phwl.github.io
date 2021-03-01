@@ -26,7 +26,7 @@ In the examples that follow, the host Mac machine has the prompt "phwl@PHWL-MBP 
 ## 1a. Connecting via Ethernet
 
 ### Step 1. MacOS to BBG Connection using ```screen```
-Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network port using an Ethernet cable. 
+Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable. 
 
 ## 1b. Connecting via Mac's Wifi
  
