@@ -40,7 +40,7 @@ In "Control Panel" on your Mac, enable Internet sharing. On my machine the devic
 
 {% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
 
-### 2. To Check BeagleBone to Internet Connection
+## 2. To Check BeagleBone to Internet Connection
 Use ```screen``` to login to the BBG from your Mac and then check if you
 can ping sydney.edu.au:
 
