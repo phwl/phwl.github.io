@@ -13,61 +13,36 @@ tags:
 header:
   teaser: /assets/images/2021/02/bbg-photo.jpg
 ---
-This post details how to connect a Beaglebone Green (BBG) to the internet.
-It should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.
+This post describes how to connect a Beaglebone Green (BBG) to the Internet.
+The same instructions  should work for other Beaglebone Boards like the Pocket Beagle or BeagleBone Black.
 
-Instructions for getting started with the BBG are available at at
-at <https://beagleboard.org/getting-started>. Unfortunately, for
-the latest version of MacOS (I'm using Big Sur 11.2.1), the drivers
-cannot be installed. 
+Although instructions for getting started with the BBG are available at 
+<https://beagleboard.org/getting-started>. Unfortunately, the drivers
+cannot be installed on
+the latest version of MacOS (I'm using Big Sur 11.2.1).
 
 In the examples that follow, the host Mac machine has the prompt "phwl@PHWL-MBP ~ %" and the BBG prompt is "debian@beaglebone:~$".
 
-## 1. via Ethernet
+## 1a. Connecting via Ethernet
 
 ### Step 1. MacOS to BBG Connection using ```screen```
-Connect your Mac to the BBG using the microUSB. Connect your BBG to a network port via an Ethernet cable. On your Mac type:
-``` sh
-phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network port using an Ethernet cable. 
 
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is [debian:temppwd]
-
-beaglebone login: debian
-Password: 
-Last login: Fri Feb 26 05:04:59 UTC 2021 on ttyGS0
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-
-```
-
-If you go back to the terminal on which you rang ```screen```, you should be able to access the Internet:
-``` sh
-debian@beaglebone:~$ ping -c 3 sydney.edu.au
-PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=2 ttl=242 time=12.4 ms
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=3 ttl=242 time=19.8 ms
-
---- sydney.edu.au ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 6ms
-rtt min/avg/max/mdev = 12.144/14.812/19.849/3.566 ms
-```
-
-You can exit the ```screen``` program with control-A and then k. If you just pull the USB connection, you will lose the /dev/cu.usbmodemBBG2200804786 device and will need to reboot the Mac. 
-
-## 2. via Mac's Wifi
+## 1b. Connecting via Mac's Wifi
  
-### Step 1. MacOS to BBG Connection using ```screen```
-Connect your Mac to the BBG using the microUSB. Connect your BBG to the Mac via Ethernet (you will need an Ethernet adaptor for your Mac and a cable). Use ```screen``` to login to the BBG on your Mac and then type ```ifconfig```. 
+### Step 1. MacOS to BBG Connection 
+Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to the Mac's Ethernet using an Ethernet cable (you will need an Ethernet adaptor for your Mac). 
+
+### Step 2 BBG to Internet
+
+In "Control Panel" on your Mac, enable Internet sharing. On my machine the device is called
+"Apple USB Ethernet Adaptor" so you have to turn off the "Internet Sharing" service on the left, turn on the "Apple USB Ethernet Adaptor" and then turn on "Internet Sharing" to the the window below:
+
+{% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
+
+### 2. To Check BeagleBone to Internet Connection
+Use ```screen``` to login to the BBG from your Mac and then check if you
+can ping sydney.edu.au:
 
 ``` sh
 phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
@@ -89,6 +64,23 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
+
+debian@beaglebone:~$ ping -c 3 sydney.edu.au
+PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=2 ttl=242 time=12.4 ms
+64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=3 ttl=242 time=19.8 ms
+
+--- sydney.edu.au ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 6ms
+rtt min/avg/max/mdev = 12.144/14.812/19.849/3.566 ms
+```
+
+You can exit the ```screen``` program with control-A and then k (if you just disconnect the USB, the /dev/cu.usbmodemBBG2200804786 device will disappear and you will need to reboot the Mac if it is needed again). 
+
+## 3. To Login to the BBG via Ethernet
+On the BeagleBone type:
+```
 debian@beaglebone:~$ ifconfig
 eth0: flags=-28605<UP,BROADCAST,RUNNING,MULTICAST,DYNAMIC>  mtu 1500
         inet 169.254.120.60  netmask 255.255.0.0  broadcast 169.254.255.255
@@ -126,8 +118,10 @@ usb1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
         TX packets 0  bytes 0 (0.0 B)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
+
 The ```ifconfig``` command shows that the ```eth0``` device has the IP address ```169.254.120.60```.
-From another terminal window on your Mac, you should be able to log into the BBG:
+
+From another terminal window on your Mac (or any other machine on the same network), you should be able to log into the BBG:
 ``` sh
 phwl@PHWL-MBP ~ % ssh debian@169.254.120.60
 The authenticity of host '169.254.120.60 (169.254.120.60)' can't be established.
@@ -151,24 +145,5 @@ individual files in /usr/share/doc/*/copyright.
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri Feb 26 05:05:45 2021
-```
-### Step 2 BBG to Internet
-
-In "Control Panel", enable Internet sharing. On my machine the device is called
-"Apple USB Ethernet Adaptor" so you have to turn off the "Internet Sharing" service on the left, turn on the "Apple USB Ethernet Adaptor" and then turn on "Internet Sharing" to the the window below:
-
-{% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
-
-If you go back to the terminal on which you rang ```screen```, you should be able to access the Internet:
-``` sh
-debian@beaglebone:~$ ping -c 3 sydney.edu.au
-PING sydney.edu.au (129.78.5.8) 56(84) bytes of data.
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=1 ttl=242 time=12.1 ms
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=2 ttl=242 time=12.4 ms
-64 bytes from svdns.sydney.edu.au (129.78.5.8): icmp_seq=3 ttl=242 time=19.8 ms
-
---- sydney.edu.au ping statistics ---
-3 packets transmitted, 3 received, 0% packet loss, time 6ms
-rtt min/avg/max/mdev = 12.144/14.812/19.849/3.566 ms
 ```
 
