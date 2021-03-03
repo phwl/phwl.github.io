@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-02T09:56:46+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet on MacOS</title><link href="/2021/connecting-beaglebone-to-internet-macos/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet-macos</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet-macos/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-03T16:04:45+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet on MacOS</title><link href="/2021/connecting-beaglebone-to-internet-macos/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet-macos</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet-macos/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
 Ethernet.&lt;/p&gt;
 
 &lt;p&gt;Drivers to support Internet via USB on the BeagleBone (see &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;Getting
@@ -186,16 +186,18 @@ the pinmum mode chosen. Looking at the &lt;a href=&quot;http://exploringbeaglebo
                   pinctrl_test: PHWL_GPIO_Pins &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 			pinctrl-single,pins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;
 
-				0x150 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_22 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x154 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_21 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x178 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_20 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x17c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_19 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x158 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_18 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-				0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 60 OUTPUT MODE7 - The LED Output &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x180 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_26 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x184 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_24 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x150 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_22 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x178 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_20 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x17c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_19 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x158 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_18 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   0x0a8 0x37  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P8_43 PULLUP IN &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
                        
-                               /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup , 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-			       /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+                   /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
 
 			&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 		  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;

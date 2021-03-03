@@ -222,16 +222,18 @@ the pinmum mode chosen. Looking at the <a href="http://exploringbeaglebone.com/w
                   pinctrl_test: PHWL_GPIO_Pins <span class="o">{</span>
 			pinctrl-single,pins <span class="o">=</span> &lt;
 
-				0x150 0x07  /<span class="k">*</span> P9_22 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x154 0x07  /<span class="k">*</span> P9_21 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x178 0x07  /<span class="k">*</span> P9_20 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x17c 0x07  /<span class="k">*</span> P9_19 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x158 0x07  /<span class="k">*</span> P9_18 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x15c 0x07  /<span class="k">*</span> P9_17 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
-				0x074 0x07  /<span class="k">*</span> P9_13 60 OUTPUT MODE7 - The LED Output <span class="k">*</span>/
+                   0x180 0x07  /<span class="k">*</span> P9_26 OUT <span class="k">*</span>/
+                   0x184 0x07  /<span class="k">*</span> P9_24 OUT <span class="k">*</span>/
+                   0x150 0x07  /<span class="k">*</span> P9_22 OUT <span class="k">*</span>/
+                   0x178 0x07  /<span class="k">*</span> P9_20 OUT <span class="k">*</span>/
+                   0x17c 0x07  /<span class="k">*</span> P9_19 OUT <span class="k">*</span>/
+                   0x158 0x07  /<span class="k">*</span> P9_18 OUT <span class="k">*</span>/
+                   0x15c 0x07  /<span class="k">*</span> P9_17 OUT <span class="k">*</span>/
+                   0x074 0x07  /<span class="k">*</span> P9_13 OUT <span class="k">*</span>/
+                   0x0a8 0x37  /<span class="k">*</span> P8_43 PULLUP IN <span class="k">*</span>/
                        
-                               /<span class="k">*</span> OUTPUT  GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x07 pulldown, 0x17 pullup , 0x?f no pullup/down <span class="k">*</span>/
-			       /<span class="k">*</span> INPUT   GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down <span class="k">*</span>/
+                   /<span class="k">*</span> OUTPUT  GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down <span class="k">*</span>/
+                   /<span class="k">*</span> INPUT   GPIO<span class="o">(</span>mode7<span class="o">)</span> 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down <span class="k">*</span>/
 
 			<span class="o">&gt;</span><span class="p">;</span>
 		  <span class="o">}</span><span class="p">;</span>
