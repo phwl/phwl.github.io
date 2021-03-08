@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 toc: true
-date: 2021-03-08 14:14:19 AEST
+date: 2021-03-08 15:14:19 AEST
 title: Connecting the Beaglebone to Internet
 classes: wide
 categories:
