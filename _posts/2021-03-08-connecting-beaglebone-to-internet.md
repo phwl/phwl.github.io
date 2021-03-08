@@ -2,8 +2,8 @@
 author: phwl
 comments: true
 toc: true
-date: 2021-03-01 19:14:19 AEST
-title: Connecting the Beaglebone to Internet on MacOS
+date: 2021-03-08 14:14:19 AEST
+title: Connecting the Beaglebone to Internet
 classes: wide
 categories:
 - academia
@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2021/02/bbg-photo.jpg
 ---
 This post describes how to connect the BeagleBone to the Internet via
-Ethernet.
+Ethernet on Windows and MacOS.
 
 Drivers to support Internet via USB on the BeagleBone (see [Getting
 Started](https://beagleboard.org/getting-started)) cannot be installed
@@ -25,37 +25,38 @@ the BBG prompt is "debian@beaglebone:~$". The same instructions should
 work for other Beaglebone Boards like the Pocket Beagle or BeagleBone
 Black.
 
-## 1a. Connecting via Ethernet
+# 1. Connecting via Ethernet
+## 1.1a. On MacOS
 
 Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable. 
 
-## 1b. Connecting via Mac's Wifi
- 
-### Step 1. MacOS to BBG Connection 
-Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to the Mac's Ethernet using an Ethernet cable (you will need an Ethernet adaptor for your Mac). 
+Use ```screen``` to login to the BBG from your Mac via
+the USB connection (use the one attached to the microUSB connector).
+``` sh
+phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+```
 
-### Step 2 BBG to Internet
+## 1.1b. On Windows
+Connect your PC to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable. 
+
+Right click the Windows menu and select "Device Manager". After the BBG has registered the new USB device, Under "Ports (COM & LPT)" you should see "USB Serial Device (COMx)" where x is a number. In my case it was COM3.
+
+Download, install and run [Putty](https://www.putty.org/). To login to the BBG from your PC via
+the USB connection (use the one attached to the microUSB connector) you select "Serial" as the Connection Type and use your com port (e.g. COM3) as the "Serial line" and click Open.
+
+# 2. Connecting via Wifi
+You can also connect the BBG to a Mac and then share its wifi with the BBG.
+## 2.1. MacOS 
+Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to the Mac's Ethernet using an Ethernet cable (you will need an Ethernet adaptor for your Mac). 
 
 In "Control Panel" on your Mac, enable Internet sharing. On my machine the device is called
 "Apple USB Ethernet Adaptor" so you have to turn off the "Internet Sharing" service on the left, turn on the "Apple USB Ethernet Adaptor" and then turn on "Internet Sharing" to the the window below:
 
 {% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
 
-## 2. To Check BeagleBone to Internet Connection
-If your BeagleBone is the only one on the local network, it should appear as
-```beaglebone.local```. In that case you can connect via Ethernet
-``` sh
-phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
-```
 
-Otherwise, you can use ```screen``` to login to the BBG from your Mac via
-the USB connection (use the one attached to the microUSB connector).
-``` sh
-phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
-```
-
-Either way, after entering Return, you should see the login prompt.
-
+# 3. Checking Connection
+After entering Return, you should see the login prompt.
 ``` sh
 Debian GNU/Linux 10 beaglebone ttyGS0
 

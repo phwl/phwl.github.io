@@ -1,4 +1,4 @@
-I"óc<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
+I"áp<p>This post details how to control the BeagleBone Green (BBG) via GPIO.</p>
 
 <h2 id="1-gpio">1. GPIO</h2>
 <p>Since Linux v4.8, the standard way of using Linux GPIO has been via 
@@ -36,7 +36,7 @@ The best source of information on libgpiod
   </li>
 </ul>
 
-<p>Examples:</p>
+<p>Here are some usage examples from the Linux documentation (some like <code class="language-plaintext highlighter-rouge">gpiomon</code> won‚Äôt work on the BBG without an input source):</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="c"># Read the value of a single GPIO line.</span>
     <span class="nv">$ </span>gpioget gpiochip1 23
@@ -78,10 +78,91 @@ The best source of information on libgpiod
     <span class="nv">$ </span>gpiomon <span class="nt">--silent</span> <span class="nt">--num-events</span><span class="o">=</span>1 gpiochip0 2 3 5
 </code></pre></div></div>
 
-<p>To use it on the BBG, one must
-first download the library and include files.</p>
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
-<span class="nb">sudo </span>apt <span class="nb">install </span>libgpiod-dev
+<h2 id="2-laboratory-experiment">2. Laboratory Experiment</h2>
+<h3 id="part-1---setup-10">Part 1 - Setup (10%)</h3>
+<p>To use GPIO on the BBG, one must
+first login to the beagleboard:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP lab1-gpio % ssh debian@beaglebone.local
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is <span class="o">[</span>debian:temppwd]
+
+debian@10.65.196.185<span class="s1">'s password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Mar  3 04:58:05 2021 from 10.17.29.225
+</span></code></pre></div></div>
+
+<p>Then update the Debian package manager:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> password <span class="k">for </span>debian: 
+Hit:1 http://deb.debian.org/debian buster InRelease
+Get:2 http://deb.debian.org/debian buster-updates InRelease <span class="o">[</span>51.9 kB]
+Get:3 http://repos.rcn-ee.com/debian buster InRelease <span class="o">[</span>3,078 B]
+Get:4 http://deb.debian.org/debian-security buster/updates InRelease <span class="o">[</span>65.4 kB]
+Get:5 http://deb.debian.org/debian-security buster/updates/main armhf Packages <span class="o">[</span>262 kB]
+Get:6 http://repos.rcn-ee.com/debian buster/main armhf Packages <span class="o">[</span>1,740 kB]     
+Fetched 2,122 kB <span class="k">in </span>50s <span class="o">(</span>42.6 kB/s<span class="o">)</span>                                            
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+110 packages can be upgraded. Run <span class="s1">'apt list --upgradable'</span> to see them.
+</code></pre></div></div>
+
+<p>Now install the libgpiod library and git:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libgpiod-dev git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libgpiod-dev is already the newest version <span class="o">(</span>1.4.1-2rcnee3~buster+20190906<span class="o">)</span><span class="nb">.</span>
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-el git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 109 not upgraded.
+Need to get 4,542 kB of archives.
+After this operation, 50.2 kB of additional disk space will be used.
+Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n] 
+Get:1 http://deb.debian.org/debian buster/main armhf git armhf 1:2.20.1-2+deb10u3 <span class="o">[</span>4,542 kB]
+Fetched 4,542 kB <span class="k">in </span>3s <span class="o">(</span>1,396 kB/s<span class="o">)</span>
+<span class="o">(</span>Reading database ... 72582 files and directories currently installed.<span class="o">)</span>
+Preparing to unpack .../git_1%3a2.20.1-2+deb10u3_armhf.deb ...
+Unpacking git <span class="o">(</span>1:2.20.1-2+deb10u3<span class="o">)</span> over <span class="o">(</span>1:2.20.1-2+deb10u1<span class="o">)</span> ...
+Setting up git <span class="o">(</span>1:2.20.1-2+deb10u3<span class="o">)</span> ...
+</code></pre></div></div>
+
+<p>Clone the starting files for this lab</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span>git clone https://github.com/phwl/elec3607-labquestions.git
+Cloning into <span class="s1">'elec3607-labquestions'</span>...
+remote: Enumerating objects: 63, <span class="k">done</span><span class="nb">.</span>
+remote: Counting objects: 100% <span class="o">(</span>63/63<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+remote: Compressing objects: 100% <span class="o">(</span>39/39<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+remote: Total 63 <span class="o">(</span>delta 21<span class="o">)</span>, reused 52 <span class="o">(</span>delta 13<span class="o">)</span>, pack-reused 0
+Unpacking objects: 100% <span class="o">(</span>63/63<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
+</code></pre></div></div>
+
+<p>and install a Device Tree overlay to set the pinctl mode of the pins we will be
+using to Mode 7 
+(we will cover Device Trees later in this course):</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span><span class="nb">cd </span>elec3607-labquestions/labs/lab1-gpio/
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>make <span class="nb">install
+sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware
+<span class="nb">sudo cp </span>uEnv.txt /boot
+</code></pre></div></div>
+
+<p>You will need to reboot the system for the Device Tree changes to take effect.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span><span class="nb">sudo </span>shutdown <span class="nt">-r</span> now
 </code></pre></div></div>
 
 <p>You can check everything is working by detecting the GPIO chips
@@ -106,38 +187,10 @@ gpiochip0 - 32 lines:
 </code></pre></div></div>
 <p>Note that after <code class="language-plaintext highlighter-rouge">gpioset</code> exits, the data of the output is undefined.</p>
 
-<h2 id="2-laboratory-experiment">2. Laboratory Experiment</h2>
-<h3 id="part-1---s2-button-input-40">Part 1 - S2 Button Input (40%)</h3>
+<h3 id="part-2---s2-button-input-30">Part 2 - S2 Button Input (30%)</h3>
 <p>Download, compile and execute the <code class="language-plaintext highlighter-rouge">blink</code> program which flashes the D5 LED as follows</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
-Debian GNU/Linux 10
-
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is <span class="o">[</span>debian:temppwd]
-
-debian@beaglebone.local password: 
-
-The programs included with the Debian GNU/Linux system are free software<span class="p">;</span>
-the exact distribution terms <span class="k">for </span>each program are described <span class="k">in </span>the
-individual files <span class="k">in</span> /usr/share/doc/<span class="k">*</span>/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Feb 22 08:49:57 2021 from fe80::8b4:5a85:cfb2:5eb%eth0
-
-debian@beaglebone:~<span class="nv">$ </span>git clone https://github.com/phwl/elec3607-labquestions
-Cloning into <span class="s1">'elec3607-labquestions'</span>...
-remote: Enumerating objects: 50, <span class="k">done</span><span class="nb">.</span>
-remote: Counting objects: 100% <span class="o">(</span>50/50<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-remote: Compressing objects: 100% <span class="o">(</span>32/32<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-remote: Total 50 <span class="o">(</span>delta 14<span class="o">)</span>, reused 42 <span class="o">(</span>delta 9<span class="o">)</span>, pack-reused 0
-Unpacking objects: 100% <span class="o">(</span>50/50<span class="o">)</span>, <span class="k">done</span><span class="nb">.</span>
-debian@beaglebone:~<span class="nv">$ </span><span class="nb">cd </span>elec3607-labquestions/labs/lab1-gpio/
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span><span class="nb">ls
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span><span class="nb">ls
 </span>blink.c  Makefile  PHWL-GPIO-00A0.dtbo  PHWL-GPIO.dts  ssd.c
 debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>make
 cc    <span class="nt">-c</span> <span class="nt">-o</span> ssd.o ssd.c
@@ -231,7 +284,7 @@ print the status of the S2 button once a second as below.</p>
 <span class="nv">S2</span><span class="o">=</span>0
 </code></pre></div></div>
 
-<h3 id="part-2---seven-segment-display-60">Part 2 - Seven Segment Display (60%)</h3>
+<h3 id="part-3---seven-segment-display-60">Part 3 - Seven Segment Display (60%)</h3>
 
 <figure class="">
   <a href="/assets/images/2021/02/ledres.jpg">
@@ -401,10 +454,5 @@ print the status of the S2 button once a second as below.</p>
   <li>Complete the ‚ÄúFILL THIS IN‚Äù parts of <code class="language-plaintext highlighter-rouge">ssd.c</code> so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.</li>
 </ul>
 
-<p>For the program to work, you will need to: (1) use the same GPIO lines as the program, (2) reconfigure the Device Tree and (3) reboot:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span>make <span class="nb">install
-sudo cp </span>PHWL-GPIO-00A0.dtbo /lib/firmware
-<span class="o">[</span><span class="nb">sudo</span><span class="o">]</span> password <span class="k">for </span>debian: 
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio<span class="nv">$ </span><span class="nb">sudo </span>shutdown <span class="nt">-r</span> now
-</code></pre></div></div>
+<p>Note that for the program to work, you will need to use the same GPIO lines as the program.</p>
 :ET

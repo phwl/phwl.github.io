@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-03T16:04:45+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet on MacOS</title><link href="/2021/connecting-beaglebone-to-internet-macos/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet on MacOS" /><published>2021-03-01T20:14:19+11:00</published><updated>2021-03-01T20:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet-macos</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet-macos/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
-Ethernet.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-08T17:07:53+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet</title><link href="/2021/connecting-beaglebone-to-internet/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet" /><published>2021-03-08T15:14:19+11:00</published><updated>2021-03-08T15:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
+Ethernet on Windows and MacOS.&lt;/p&gt;
 
 &lt;p&gt;Drivers to support Internet via USB on the BeagleBone (see &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;Getting
 Started&lt;/a&gt;) cannot be installed
@@ -10,16 +10,28 @@ the BBG prompt is “debian@beaglebone:~$”. The same instructions should
 work for other Beaglebone Boards like the Pocket Beagle or BeagleBone
 Black.&lt;/p&gt;
 
-&lt;h2 id=&quot;1a-connecting-via-ethernet&quot;&gt;1a. Connecting via Ethernet&lt;/h2&gt;
+&lt;h1 id=&quot;1-connecting-via-ethernet&quot;&gt;1. Connecting via Ethernet&lt;/h1&gt;
+&lt;h2 id=&quot;11a-on-macos&quot;&gt;1.1a. On MacOS&lt;/h2&gt;
 
 &lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable.&lt;/p&gt;
 
-&lt;h2 id=&quot;1b-connecting-via-macs-wifi&quot;&gt;1b. Connecting via Mac’s Wifi&lt;/h2&gt;
+&lt;p&gt;Use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG from your Mac via
+the USB connection (use the one attached to the microUSB connector).&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;step-1-macos-to-bbg-connection&quot;&gt;Step 1. MacOS to BBG Connection&lt;/h3&gt;
+&lt;h2 id=&quot;11b-on-windows&quot;&gt;1.1b. On Windows&lt;/h2&gt;
+&lt;p&gt;Connect your PC to the BBG using the microUSB. Connect your BBG Ethernet port to a network switch via an Ethernet cable.&lt;/p&gt;
+
+&lt;p&gt;Right click the Windows menu and select “Device Manager”. After the BBG has registered the new USB device, Under “Ports (COM &amp;amp; LPT)” you should see “USB Serial Device (COMx)” where x is a number. In my case it was COM3.&lt;/p&gt;
+
+&lt;p&gt;Download, install and run &lt;a href=&quot;https://www.putty.org/&quot;&gt;Putty&lt;/a&gt;. To login to the BBG from your PC via
+the USB connection (use the one attached to the microUSB connector) you select “Serial” as the Connection Type and use your com port (e.g. COM3) as the “Serial line” and click Open.&lt;/p&gt;
+
+&lt;h1 id=&quot;2-connecting-via-wifi&quot;&gt;2. Connecting via Wifi&lt;/h1&gt;
+&lt;p&gt;You can also connect the BBG to a Mac and then share its wifi with the BBG.&lt;/p&gt;
+&lt;h2 id=&quot;21-macos&quot;&gt;2.1. MacOS&lt;/h2&gt;
 &lt;p&gt;Connect your Mac to the BBG using the microUSB. Connect your BBG Ethernet port to the Mac’s Ethernet using an Ethernet cable (you will need an Ethernet adaptor for your Mac).&lt;/p&gt;
-
-&lt;h3 id=&quot;step-2-bbg-to-internet&quot;&gt;Step 2 BBG to Internet&lt;/h3&gt;
 
 &lt;p&gt;In “Control Panel” on your Mac, enable Internet sharing. On my machine the device is called
 “Apple USB Ethernet Adaptor” so you have to turn off the “Internet Sharing” service on the left, turn on the “Apple USB Ethernet Adaptor” and then turn on “Internet Sharing” to the the window below:&lt;/p&gt;
@@ -33,19 +45,8 @@ Black.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;2-to-check-beaglebone-to-internet-connection&quot;&gt;2. To Check BeagleBone to Internet Connection&lt;/h2&gt;
-&lt;p&gt;If your BeagleBone is the only one on the local network, it should appear as
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;beaglebone.local&lt;/code&gt;. In that case you can connect via Ethernet&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Otherwise, you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; to login to the BBG from your Mac via
-the USB connection (use the one attached to the microUSB connector).&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % screen /dev/cu.usbmodemBBG2200804786
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Either way, after entering Return, you should see the login prompt.&lt;/p&gt;
-
+&lt;h1 id=&quot;3-checking-connection&quot;&gt;3. Checking Connection&lt;/h1&gt;
+&lt;p&gt;After entering Return, you should see the login prompt.&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Debian GNU/Linux 10 beaglebone ttyGS0
 
 BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
@@ -146,7 +147,7 @@ individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri Feb 26 05:05:45 2021
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to the Internet via Ethernet.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to the Internet via Ethernet on Windows and MacOS.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
 settings via the Linux Device Tree.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-setting-pinmux-values-via-the-device-tree&quot;&gt;1. Setting pinmux values via the Device Tree&lt;/h2&gt;
@@ -289,7 +290,7 @@ The best source of information on libgpiod
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Examples:&lt;/p&gt;
+&lt;p&gt;Here are some usage examples from the Linux documentation (some like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpiomon&lt;/code&gt; won’t work on the BBG without an input source):&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;# Read the value of a single GPIO line.&lt;/span&gt;
     &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpioget gpiochip1 23
@@ -331,10 +332,91 @@ The best source of information on libgpiod
     &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gpiomon &lt;span class=&quot;nt&quot;&gt;--silent&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--num-events&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1 gpiochip0 2 3 5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;To use it on the BBG, one must
-first download the library and include files.&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libgpiod-dev
+&lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
+&lt;h3 id=&quot;part-1---setup-10&quot;&gt;Part 1 - Setup (10%)&lt;/h3&gt;
+&lt;p&gt;To use GPIO on the BBG, one must
+first login to the beagleboard:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP lab1-gpio % ssh debian@beaglebone.local
+Debian GNU/Linux 10
+
+BeagleBoard.org Debian Buster IoT Image 2020-04-06
+
+Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
+
+debian@10.65.196.185&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Wed Mar  3 04:58:05 2021 from 10.17.29.225
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then update the Debian package manager:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;debian: 
+Hit:1 http://deb.debian.org/debian buster InRelease
+Get:2 http://deb.debian.org/debian buster-updates InRelease &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;51.9 kB]
+Get:3 http://repos.rcn-ee.com/debian buster InRelease &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;3,078 B]
+Get:4 http://deb.debian.org/debian-security buster/updates InRelease &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;65.4 kB]
+Get:5 http://deb.debian.org/debian-security buster/updates/main armhf Packages &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;262 kB]
+Get:6 http://repos.rcn-ee.com/debian buster/main armhf Packages &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;1,740 kB]     
+Fetched 2,122 kB &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;50s &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;42.6 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;                                            
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+110 packages can be upgraded. Run &lt;span class=&quot;s1&quot;&gt;&apos;apt list --upgradable&apos;&lt;/span&gt; to see them.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now install the libgpiod library and git:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libgpiod-dev git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+libgpiod-dev is already the newest version &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1.4.1-2rcnee3~buster+20190906&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+Suggested packages:
+  gettext-base git-daemon-run | git-daemon-sysvinit git-doc git-el git-email
+  git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 109 not upgraded.
+Need to get 4,542 kB of archives.
+After this operation, 50.2 kB of additional disk space will be used.
+Do you want to &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;? &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Y/n] 
+Get:1 http://deb.debian.org/debian buster/main armhf git armhf 1:2.20.1-2+deb10u3 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;4,542 kB]
+Fetched 4,542 kB &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;3s &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1,396 kB/s&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Reading database ... 72582 files and directories currently installed.&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Preparing to unpack .../git_1%3a2.20.1-2+deb10u3_armhf.deb ...
+Unpacking git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1:2.20.1-2+deb10u3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; over &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1:2.20.1-2+deb10u1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ...
+Setting up git &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1:2.20.1-2+deb10u3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Clone the starting files for this lab&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/phwl/elec3607-labquestions.git
+Cloning into &lt;span class=&quot;s1&quot;&gt;&apos;elec3607-labquestions&apos;&lt;/span&gt;...
+remote: Enumerating objects: 63, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Counting objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;63/63&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;39/39&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Total 63 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 21&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 52 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 13&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 0
+Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;63/63&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and install a Device Tree overlay to set the pinctl mode of the pins we will be
+using to Mode 7 
+(we will cover Device Trees later in this course):&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;elec3607-labquestions/labs/lab1-gpio/
+debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nb&quot;&gt;install
+sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware
+&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;uEnv.txt /boot
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You will need to reboot the system for the Device Tree changes to take effect.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;shutdown &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; now
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can check everything is working by detecting the GPIO chips
@@ -359,38 +441,10 @@ gpiochip0 - 32 lines:
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note that after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gpioset&lt;/code&gt; exits, the data of the output is undefined.&lt;/p&gt;
 
-&lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
-&lt;h3 id=&quot;part-1---s2-button-input-40&quot;&gt;Part 1 - S2 Button Input (40%)&lt;/h3&gt;
+&lt;h3 id=&quot;part-2---s2-button-input-30&quot;&gt;Part 2 - S2 Button Input (30%)&lt;/h3&gt;
 &lt;p&gt;Download, compile and execute the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;blink&lt;/code&gt; program which flashes the D5 LED as follows&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;phwl@PHWL-MBP ~ % ssh debian@beaglebone.local
-Debian GNU/Linux 10
-
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
-
-debian@beaglebone.local password: 
-
-The programs included with the Debian GNU/Linux system are free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-the exact distribution terms &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;each program are described &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the
-individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Feb 22 08:49:57 2021 from fe80::8b4:5a85:cfb2:5eb%eth0
-
-debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/phwl/elec3607-labquestions
-Cloning into &lt;span class=&quot;s1&quot;&gt;&apos;elec3607-labquestions&apos;&lt;/span&gt;...
-remote: Enumerating objects: 50, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-remote: Counting objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;50/50&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;32/32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-remote: Total 50 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 42 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 0
-Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;50/50&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;elec3607-labquestions/labs/lab1-gpio/
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ls
 &lt;/span&gt;blink.c  Makefile  PHWL-GPIO-00A0.dtbo  PHWL-GPIO.dts  ssd.c
 debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make
 cc    &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ssd.o ssd.c
@@ -484,7 +538,7 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
 &lt;span class=&quot;nv&quot;&gt;S2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;part-2---seven-segment-display-60&quot;&gt;Part 2 - Seven Segment Display (60%)&lt;/h3&gt;
+&lt;h3 id=&quot;part-3---seven-segment-display-60&quot;&gt;Part 3 - Seven Segment Display (60%)&lt;/h3&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/02/ledres.jpg&quot;&gt;
@@ -654,12 +708,7 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
   &lt;li&gt;Complete the “FILL THIS IN” parts of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt; so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For the program to work, you will need to: (1) use the same GPIO lines as the program, (2) reconfigure the Device Tree and (3) reboot:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nb&quot;&gt;install
-sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; password &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;debian: 
-debian@beaglebone:~/elec3607-labquestions/labs/lab1-gpio&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;shutdown &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; now
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
+&lt;p&gt;Note that for the program to work, you will need to use the same GPIO lines as the program.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
 &lt;p&gt;Instructions for getting started with the BBG are available at at 

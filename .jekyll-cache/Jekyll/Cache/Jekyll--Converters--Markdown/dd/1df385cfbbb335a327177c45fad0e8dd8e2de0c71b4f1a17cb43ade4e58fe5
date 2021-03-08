@@ -1,0 +1,19 @@
+I"I<ul class="toc__menu">
+  <li><a href="#1-connecting-via-ethernet">1 Connecting via Ethernet</a>
+    <ul>
+      <li><a href="#11a-on-macos">1.1a. On MacOS</a></li>
+      <li><a href="#11b-on-windows">1.1b. On Windows</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-connecting-via-wifi">2 Connecting via Wifi</a>
+    <ul>
+      <li><a href="#21-macos">2.1. MacOS</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-checking-connection">3. Checking Connection</a>
+    <ul>
+      <li><a href="#3-to-login-to-the-bbg-via-ethernet">3. To Login to the BBG via Ethernet</a></li>
+    </ul>
+  </li>
+</ul>
+:ET
