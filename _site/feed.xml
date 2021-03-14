@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T17:25:47+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T17:42:26+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
 &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;Si5351&lt;/a&gt;
 i2c clock generator.&lt;/p&gt;
 
@@ -670,6 +670,37 @@ bandwidth oscilloscope. Why?&lt;/p&gt;
 &lt;p&gt;Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value.&lt;/p&gt;
 
 &lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
+&lt;p&gt;Update the lab files as below.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;elec3607-labquestions/
+debian@beaglebone:~/elec3607-labquestions&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git pull
+remote: Enumerating objects: 18, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Counting objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;18/18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Compressing objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;12/12&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+remote: Total 14 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, reused 14 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;delta 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, pack-reused 0
+Unpacking objects: 100% &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;14/14&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+From https://github.com/phwl/elec3607-labquestions
+   6bf3a34..7c881d4  main       -&amp;gt; origin/main
+Updating 6bf3a34..7c881d4
+Fast-forward
+ .DS_Store                                          | Bin 6148 -&amp;gt; 6148 bytes
+ labs/.DS_Store                                     | Bin 0 -&amp;gt; 8196 bytes
+ ... - GPIO_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -&amp;gt; 297484 bytes
+ ...ruction_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -&amp;gt; 156733 bytes
+ ...nerator_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -&amp;gt; 2310302 bytes
+ labs/lab3-i2c/Makefile                             |   7 +
+ labs/lab3-i2c/Si5351A-RevB-Registers.h             | 240 +++++++++++++++++++++
+ labs/lab3-i2c/si5351.c                             |  41 ++++
+ 8 files changed, 288 insertions&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;+&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ create mode 100644 labs/.DS_Store
+ create mode 100644 labs/lab1-gpio/Lab 1 - GPIO_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab2-sdrconstruction/Lab 2 - SDR Construction_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab3-i2c/Lab 3 - Si5351 Clock Generator_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab3-i2c/Makefile
+ create mode 100755 labs/lab3-i2c/Si5351A-RevB-Registers.h
+ create mode 100644 labs/lab3-i2c/si5351.c
+debian@beaglebone:~/elec3607-labquestions&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;labs/lab3-i2c/
+debian@beaglebone:~/elec3607-labquestions/labs/lab3-i2c&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;part-1---i2c-interface-30&quot;&gt;Part 1 - I2C Interface (30%)&lt;/h3&gt;
 &lt;p&gt;Connect up your BBG to the Si5351. Verify that you can obtain
 the following output.&lt;/p&gt;

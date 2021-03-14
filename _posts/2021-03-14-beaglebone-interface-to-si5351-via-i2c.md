@@ -397,6 +397,38 @@ bandwidth oscilloscope. Why?
 Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value. 
 
 ## 2. Laboratory Experiment
+Update the lab files as below.
+``` bash
+debian@beaglebone:~$ cd elec3607-labquestions/
+debian@beaglebone:~/elec3607-labquestions$ git pull
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 14 (delta 2), reused 14 (delta 2), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+From https://github.com/phwl/elec3607-labquestions
+   6bf3a34..7c881d4  main       -> origin/main
+Updating 6bf3a34..7c881d4
+Fast-forward
+ .DS_Store                                          | Bin 6148 -> 6148 bytes
+ labs/.DS_Store                                     | Bin 0 -> 8196 bytes
+ ... - GPIO_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -> 297484 bytes
+ ...ruction_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -> 156733 bytes
+ ...nerator_ ELEC3607 ELEC9607 Embedded Systems.pdf | Bin 0 -> 2310302 bytes
+ labs/lab3-i2c/Makefile                             |   7 +
+ labs/lab3-i2c/Si5351A-RevB-Registers.h             | 240 +++++++++++++++++++++
+ labs/lab3-i2c/si5351.c                             |  41 ++++
+ 8 files changed, 288 insertions(+)
+ create mode 100644 labs/.DS_Store
+ create mode 100644 labs/lab1-gpio/Lab 1 - GPIO_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab2-sdrconstruction/Lab 2 - SDR Construction_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab3-i2c/Lab 3 - Si5351 Clock Generator_ ELEC3607 ELEC9607 Embedded Systems.pdf
+ create mode 100644 labs/lab3-i2c/Makefile
+ create mode 100755 labs/lab3-i2c/Si5351A-RevB-Registers.h
+ create mode 100644 labs/lab3-i2c/si5351.c
+debian@beaglebone:~/elec3607-labquestions$ cd labs/lab3-i2c/
+debian@beaglebone:~/elec3607-labquestions/labs/lab3-i2c$
+```
 ### Part 1 - I2C Interface (30%)
 Connect up your BBG to the Si5351. Verify that you can obtain
 the following output.
