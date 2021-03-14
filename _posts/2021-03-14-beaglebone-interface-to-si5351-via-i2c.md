@@ -394,7 +394,7 @@ bandwidth oscilloscope. Why?
 
 {% include figure image_path="/assets/images/2021/03/si5351-osc.jpg" caption="" %}
 
-Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value. 
+Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature (Q) clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value. 
 
 ## 2. Laboratory Experiment
 Update the lab files as below.

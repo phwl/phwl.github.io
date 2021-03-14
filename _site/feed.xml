@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T17:42:26+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T17:49:21+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
 &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;Si5351&lt;/a&gt;
 i2c clock generator.&lt;/p&gt;
 
@@ -667,7 +667,7 @@ bandwidth oscilloscope. Why?&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value.&lt;/p&gt;
+&lt;p&gt;Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature (Q) clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value.&lt;/p&gt;
 
 &lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
 &lt;p&gt;Update the lab files as below.&lt;/p&gt;
