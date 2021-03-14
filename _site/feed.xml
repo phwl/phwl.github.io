@@ -1,4 +1,697 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-08T22:33:14+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Connecting the Beaglebone to Internet</title><link href="/2021/connecting-beaglebone-to-internet/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet" /><published>2021-03-08T15:14:19+11:00</published><updated>2021-03-08T15:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T17:25:47+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
+&lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;Si5351&lt;/a&gt;
+i2c clock generator.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+&lt;h3 id=&quot;11-i2c-interface-to-si5351&quot;&gt;1.1 I2C Interface to Si5351&lt;/h3&gt;
+&lt;p&gt;The i2c interface is simple, ensure that the SDA and SCL lines of
+the Si5351 are connected to an appropriate port on the Beaglebone.
+In the example below, I used /dev/i2c-2.&lt;/p&gt;
+
+&lt;p&gt;Then make sure all the software required is installed on the BBG.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libi2c-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The commands below show all the i2c devices and that the Si5351 
+at address 0x60 is responding to the probe on I2C2 (i2c chip 2):&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ i2cdetect -l
+i2c-1	i2c       	OMAP I2C adapter                	I2C adapter
+i2c-2	i2c       	OMAP I2C adapter                	I2C adapter
+i2c-0	i2c       	OMAP I2C adapter                	I2C adapter
+debian@beaglebone:~$ i2cdetect -y -r 2
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: 60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here is the i2c transaction for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i2cdetect -y -r 2 0x60 0x60&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/03/si5351-i2c.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/03/si5351-i2c.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;12-linux-userspace-driver&quot;&gt;1.2. Linux userspace driver&lt;/h3&gt;
+
+&lt;p&gt;There are several ways that this interface can be made. We are going
+to create a userspace driver,
+which is the most straightforward. 
+The following program, derived from the Linux Kernel &lt;a href=&quot;https://www.kernel.org/doc/html/latest/i2c/dev-interface.html&quot;&gt;userspace driver documentation&lt;/a&gt; reads and prints register 0 of device /dev/i2c-2, address 0x60, i.e. register 0 of the Si5351. Note that the reason we need to specify address 0x60 is that there could be multiple devices connected to a single i2c chip.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+#include &amp;lt;fcntl.h&amp;gt;
+#include &amp;lt;sys/ioctl.h&amp;gt;
+#include &amp;lt;linux/i2c-dev.h&amp;gt;
+#include &amp;lt;i2c/smbus.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#define	I2C_FNAME	&quot;/dev/i2c-2&quot;
+#define	SI5351_ADDR	0x60
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;	&lt;span class=&quot;n&quot;&gt;i2c_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;i2c_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;i2c_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I2C_FNAME&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;O_RDWR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i2c_file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;i2c_read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ioctl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i2c_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;I2C_SLAVE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SI5351_ADDR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+	&lt;span class=&quot;cm&quot;&gt;/* Using SMBus commands */&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i2c_smbus_read_byte_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i2c_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;res&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; 
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;r dev(0x%x) reg(0x%x)=0x%x&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SI5351_ADDR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;
+&lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;i2c_init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;i2c_read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It can be compiled and executed as follows:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gcc &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; si5351 si5351.c &lt;span class=&quot;nt&quot;&gt;-li2c&lt;/span&gt;
+debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;./si5351 
+r dev&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x60&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; reg&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0x0&lt;span class=&quot;o&quot;&gt;)=&lt;/span&gt;0x11
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;13-programming-the-clock-generator&quot;&gt;1.3. Programming the Clock Generator&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;data sheet&lt;/a&gt; for the Si5351 refers to the &lt;a href=&quot;https://www.silabs.com/developers/clockbuilder-pro-software&quot;&gt;Clock builder&lt;/a&gt; software. This is only available for Windows 
+but in embedded systems it is a fact of life that if you use operating
+system X, there will be a piece of software that is only supported on operating system Y that you need. Here
+is a header file that I generated for CLK0 and CLK1 outputs of 28.1544 MHz.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cm&quot;&gt;/*
+ * Si5351A Rev B Configuration Register Export Header File
+ *
+ * This file represents a series of Silicon Labs Si5351A Rev B 
+ * register writes that can be performed to load a single configuration 
+ * on a device. It was created by a Silicon Labs ClockBuilder Pro
+ * export tool.
+ *
+ * Part:		                                       Si5351A Rev B
+ * Design ID:                                          
+ * Includes Pre/Post Download Control Register Writes: Yes
+ * Created By:                                         ClockBuilder Pro v3.1 [2021-01-18]
+ * Timestamp:                                          2021-03-12 15:00:15 GMT-08:00
+ *
+ * A complete design report corresponding to this export is included at the end 
+ * of this header file.
+ *
+ */&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#ifndef SI5351A_REVB_REG_CONFIG_HEADER
+#define SI5351A_REVB_REG_CONFIG_HEADER
+&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#define SI5351A_REVB_REG_CONFIG_NUM_REGS				52
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* 16-bit register address */&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* 8-bit register data */&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;si5351a_revb_register_t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;si5351a_revb_register_t&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;si5351a_revb_registers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SI5351A_REVB_REG_CONFIG_NUM_REGS&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0002&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x53&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0003&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0004&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x20&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0007&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x000F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0010&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0F&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0F&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0012&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0013&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0014&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0015&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0016&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0017&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8C&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xAF&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xC8&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0E&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x8D&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x001F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0020&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x85&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0021&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x58&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x04&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002C&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0D&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002E&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xE0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x002F&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0030&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0031&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0032&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0033&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x04&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0034&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0035&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0D&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0036&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0xE0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0037&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0038&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0039&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x005A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x005B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0095&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0096&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0097&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0098&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x0099&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x009A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x009B&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00A3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00A4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00A5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00A6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x00B7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x92&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;cm&quot;&gt;/*
+ * Design Report
+ *
+ * Overview
+ * ========
+ * Part:               Si5351A
+ * Created By:         ClockBuilder Pro v3.1 [2021-01-18]
+ * Timestamp:          2021-03-12 15:00:15 GMT-08:00
+ * 
+ * Design Notes
+ * ============
+ * Si5351A 10-pin MSOP
+ * 
+ * Design Rule Check
+ * =================
+ * Errors:
+ * - No errors
+ * 
+ * Warnings:
+ * - No warnings
+ * 
+ * Design
+ * ======
+ * Inputs:
+ *     IN0: 27 MHz
+ * 
+ * Outputs:
+ *    OUT0: 28.1544 MHz
+ *          Enabled LVCMOS 8 mA
+ *          Offset 0.000 s 
+ *    OUT1: 28.1544 MHz
+ *          Enabled LVCMOS 8 mA
+ *          Offset 0.000 s 
+ *    OUT2: Unused
+ * 
+ * Frequency Plan
+ * ==============
+ * PLL_A:
+ *    Enabled Features = None
+ *    Fvco             = 893.9022 MHz
+ *    M                = 33.1074888888888888... [ 33 + 4837/45000 ]
+ *    Input0:
+ *       Source           = Crystal
+ *       Source Frequency = 27 MHz
+ *       Fpfd             = 27 MHz
+ *       Load Capacitance = Load_08pF
+ *    Output0:
+ *       Features       = None
+ *       Disabled State = StopLow
+ *       R              = 1  (2^0)
+ *       Fout           = 28.1544 MHz
+ *       N              = 31.75
+ *    Output1:
+ *       Features       = None
+ *       Disabled State = StopLow
+ *       R              = 1  (2^0)
+ *       Fout           = 28.1544 MHz
+ *       N              = 31.75
+ * 
+ * Settings
+ * ========
+ * 
+ * Location      Setting Name    Decimal Value      Hex Value        
+ * ------------  --------------  -----------------  -----------------
+ * 0x0002[3]     XO_LOS_MASK     0                  0x0              
+ * 0x0002[4]     CLK_LOS_MASK    1                  0x1              
+ * 0x0002[5]     LOL_A_MASK      0                  0x0              
+ * 0x0002[6]     LOL_B_MASK      1                  0x1              
+ * 0x0002[7]     SYS_INIT_MASK   0                  0x0              
+ * 0x0003[7:0]   CLK_OEB         0                  0x00             
+ * 0x0004[4]     DIS_RESET_LOLA  0                  0x0              
+ * 0x0004[5]     DIS_RESET_LOLB  1                  0x1              
+ * 0x0007[7:4]   I2C_ADDR_CTRL   0                  0x0              
+ * 0x000F[2]     PLLA_SRC        0                  0x0              
+ * 0x000F[3]     PLLB_SRC        0                  0x0              
+ * 0x000F[4]     PLLA_INSELB     0                  0x0              
+ * 0x000F[5]     PLLB_INSELB     0                  0x0              
+ * 0x000F[7:6]   CLKIN_DIV       0                  0x0              
+ * 0x0010[1:0]   CLK0_IDRV       3                  0x3              
+ * 0x0010[3:2]   CLK0_SRC        3                  0x3              
+ * 0x0010[4]     CLK0_INV        0                  0x0              
+ * 0x0010[5]     MS0_SRC         0                  0x0              
+ * 0x0010[6]     MS0_INT         0                  0x0              
+ * 0x0010[7]     CLK0_PDN        0                  0x0              
+ * 0x0011[1:0]   CLK1_IDRV       3                  0x3              
+ * 0x0011[3:2]   CLK1_SRC        3                  0x3              
+ * 0x0011[4]     CLK1_INV        0                  0x0              
+ * 0x0011[5]     MS1_SRC         0                  0x0              
+ * 0x0011[6]     MS1_INT         0                  0x0              
+ * 0x0011[7]     CLK1_PDN        0                  0x0              
+ * 0x0012[1:0]   CLK2_IDRV       0                  0x0              
+ * 0x0012[3:2]   CLK2_SRC        3                  0x3              
+ * 0x0012[4]     CLK2_INV        0                  0x0              
+ * 0x0012[5]     MS2_SRC         0                  0x0              
+ * 0x0012[6]     MS2_INT         0                  0x0              
+ * 0x0012[7]     CLK2_PDN        1                  0x1              
+ * 0x0013[1:0]   CLK3_IDRV       0                  0x0              
+ * 0x0013[3:2]   CLK3_SRC        3                  0x3              
+ * 0x0013[4]     CLK3_INV        0                  0x0              
+ * 0x0013[5]     MS3_SRC         0                  0x0              
+ * 0x0013[6]     MS3_INT         0                  0x0              
+ * 0x0013[7]     CLK3_PDN        1                  0x1              
+ * 0x0014[1:0]   CLK4_IDRV       0                  0x0              
+ * 0x0014[3:2]   CLK4_SRC        3                  0x3              
+ * 0x0014[4]     CLK4_INV        0                  0x0              
+ * 0x0014[5]     MS4_SRC         0                  0x0              
+ * 0x0014[6]     MS4_INT         0                  0x0              
+ * 0x0014[7]     CLK4_PDN        1                  0x1              
+ * 0x0015[1:0]   CLK5_IDRV       0                  0x0              
+ * 0x0015[3:2]   CLK5_SRC        3                  0x3              
+ * 0x0015[4]     CLK5_INV        0                  0x0              
+ * 0x0015[5]     MS5_SRC         0                  0x0              
+ * 0x0015[6]     MS5_INT         0                  0x0              
+ * 0x0015[7]     CLK5_PDN        1                  0x1              
+ * 0x0016[1:0]   CLK6_IDRV       0                  0x0              
+ * 0x0016[3:2]   CLK6_SRC        3                  0x3              
+ * 0x0016[4]     CLK6_INV        0                  0x0              
+ * 0x0016[5]     MS6_SRC         0                  0x0              
+ * 0x0016[6]     FBA_INT         0                  0x0              
+ * 0x0016[7]     CLK6_PDN        1                  0x1              
+ * 0x0017[1:0]   CLK7_IDRV       0                  0x0              
+ * 0x0017[3:2]   CLK7_SRC        3                  0x3              
+ * 0x0017[4]     CLK7_INV        0                  0x0              
+ * 0x0017[5]     MS7_SRC         0                  0x0              
+ * 0x0017[6]     FBB_INT         0                  0x0              
+ * 0x0017[7]     CLK7_PDN        1                  0x1              
+ * 0x001C[17:0]  MSNA_P1         3725               0x00E8D          
+ * 0x001F[19:0]  MSNA_P2         34136              0x08558          
+ * 0x001F[23:4]  MSNA_P3         45000              0x0AFC8          
+ * 0x002C[17:0]  MS0_P1          3552               0x00DE0          
+ * 0x002F[19:0]  MS0_P2          0                  0x00000          
+ * 0x002F[23:4]  MS0_P4          4                  0x00004          
+ * 0x0034[17:0]  MS1_P1          3552               0x00DE0          
+ * 0x0037[19:0]  MS1_P2          0                  0x00000          
+ * 0x0037[23:4]  MS1_P4          4                  0x00004          
+ * 0x005A[7:0]   MS6_P2          0                  0x00             
+ * 0x005B[7:0]   MS7_P2          0                  0x00             
+ * 0x0095[14:0]  SSDN_P2         0                  0x0000           
+ * 0x0095[7]     SSC_EN          0                  0x0              
+ * 0x0097[14:0]  SSDN_P3         0                  0x0000           
+ * 0x0097[7]     SSC_MODE        0                  0x0              
+ * 0x0099[11:0]  SSDN_P1         0                  0x000            
+ * 0x009A[15:4]  SSUDP           0                  0x000            
+ * 0x00A2[21:0]  VCXO_PARAM      0                  0x000000         
+ * 0x00A5[7:0]   CLK0_PHOFF      0                  0x00             
+ * 0x00A6[7:0]   CLK1_PHOFF      0                  0x00             
+ * 0x00B7[7:6]   XTAL_CL         2                  0x2
+ * 
+ *
+ */&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#endif&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Our approach will be to use the header file above, &lt;a href=&quot;https://www.silabs.com/documents/public/application-notes/AN619.pdf&quot;&gt;Application Note AN619 Manually Generating an Si5351 Register Map for 10-MSOP and
+20-QFN Devices&lt;/a&gt; and a &lt;a href=&quot;https://www.silabs.com/community/timing/knowledge-base.entry.html/2011/02/18/programming_the_si53-IrM8&quot;&gt;Silicon Labs
+Knowledge Base entry&lt;/a&gt; which says&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ClockBuilder Desktop allows a user to generate RAM configuration files to program the Si5351 with custom frequency plans via I2C.  Once the register map has been generated, use the procedure below to program the device.
+
+1. Disable all outputs.
+       reg3 = 0xFF
+2. Write reg187 = 0xC0
+3. Power down all output drivers
+       reg 16 = 0x80*
+       reg 17 = 0x80*
+       reg 18 = 0x80*
+       reg 19 = 0x80*
+       reg 20 = 0x80*
+       reg 21 = 0x80*
+       reg 22 = 0x80*
+       reg 23 = 0x80*
+       * If using the Si5351C with no crystal present on XA/XB, set reg16-23 = 0x84.
+4. Set interrupt maks register (see Register 2 description in datasheet)
+5. If needed, set crystal load capacitance, XTAL_CL in reg183[7:6].  See datasheet for register description.
+6. Write registers 15-92 and 149-170 using the contents of register map generated by ClockBuilder Desktop.
+7. Apply PLL A and PLL B soft reset.
+       reg177 = 0xAC
+8. Enable outputs with OEB control in register 3.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If these steps are followed, the output as specified in the include file
+should appear. It doesn’t look much like a square wave on my 150 MHz 
+bandwidth oscilloscope. Why?&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/03/si5351-osc.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/03/si5351-osc.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Finally, we wish to have the inphase (I) clock (CLK0) lagging the quadrature clock (CLK1) by 90 degrees (or 1/4 cycle). We can do this by setting the CLK1_PHOFF register to the appropriate value.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-laboratory-experiment&quot;&gt;2. Laboratory Experiment&lt;/h2&gt;
+&lt;h3 id=&quot;part-1---i2c-interface-30&quot;&gt;Part 1 - I2C Interface (30%)&lt;/h3&gt;
+&lt;p&gt;Connect up your BBG to the Si5351. Verify that you can obtain
+the following output.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ i2cdetect -y -r 2
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+60: 60 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;part-2---i2c-transaction-30&quot;&gt;Part 2 - I2C Transaction (30%)&lt;/h3&gt;
+&lt;p&gt;Use the userspace i2c driver (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;si5351.c&lt;/code&gt;) shown above to read register 0.
+Execute the program and capture the activity of the SCL and SDA pins on an oscilloscope. Make a printout of the oscilloscope display and annotate all parts of 
+the i2c transaction (start, data, r/w, ack, etc). What is the period of the entire transaction?&lt;/p&gt;
+
+&lt;h3 id=&quot;part-3---si5351-configuration-40&quot;&gt;Part 3 - Si5351 Configuration (40%)&lt;/h3&gt;
+&lt;p&gt;Modify the userspace driver for the Si5351 to generate a 7 MHz square wave output on CLK0 and CLK1, with CLK1 being delayed by 90 degrees from CLK0.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to a Silicon Labs Si5351 i2c clock generator.</summary></entry><entry><title type="html">Connecting the Beaglebone to Internet</title><link href="/2021/connecting-beaglebone-to-internet/" rel="alternate" type="text/html" title="Connecting the Beaglebone to Internet" /><published>2021-03-08T16:14:19+11:00</published><updated>2021-03-08T16:14:19+11:00</updated><id>/2021/connecting-beaglebone-to-internet</id><content type="html" xml:base="/2021/connecting-beaglebone-to-internet/">&lt;p&gt;This post describes how to connect the BeagleBone to the Internet via
 Ethernet on Windows and MacOS.&lt;/p&gt;
 
 &lt;p&gt;Drivers to support Internet via USB on the BeagleBone (see &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;Getting
@@ -743,7 +1436,34 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
 debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
@@ -851,34 +1571,7 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
-
-&lt;p&gt;I like them fried!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools-on-qemu&quot;&gt;1. Linux libgpiod Library Command Line Tools on QEMU&lt;/h2&gt;
@@ -2288,324 +2981,4 @@ you cut it like below.&lt;/p&gt;
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
 
-&lt;p&gt;Unfortunately, the eel tasted terrible! Will try barbecuing the next one.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="hawkesbury" /><category term="australia" /><summary type="html">As has been the custom for many years, I went for a camping/fishing trip with high-school friend Warren on the Hawkesbury River (here is a list of previous trips).</summary></entry><entry><title type="html">Tasmanian Holiday</title><link href="/2020/tasmanian-holiday/" rel="alternate" type="text/html" title="Tasmanian Holiday" /><published>2020-12-18T20:29:04+11:00</published><updated>2020-12-18T20:29:04+11:00</updated><id>/2020/tasmanian-holiday</id><content type="html" xml:base="/2020/tasmanian-holiday/">&lt;p&gt;Went to Tasmania for a few days. Last time I was here was
-&lt;a href=&quot;/2015/tasmanian-holiday-2015/&quot;&gt;2015&lt;/a&gt;.&lt;/p&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Sydney airport Terminal 2 wasn’t exactly busy.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7144.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7144.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7145.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7145.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Flew into Launceston and
-hired a campervan from &lt;a href=&quot;https://www.hertz.com.au/p/hire-a-car/australia/tasmania/launceston/launceston-downtown&quot;&gt;Autorent Hertz&lt;/a&gt; in Launceston.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7159.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7159.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7168.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7168.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7171.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7171.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6635.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6635.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We settled in the Caravan Park at Devonport and drove out to &lt;a href=&quot;https://www.hurseyseafoods.com.au/&quot;&gt;Hursey Seafoods in Stanley&lt;/a&gt;. The food there was ok but overrated if you ask me. I had flake and chips.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7193.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7193.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;These photos were taken around the lighthouse at Devonport.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6638.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6638.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6661.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6661.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The amazing &lt;a href=&quot;http://antiqueemporium.com.au/&quot;&gt;Antique Emporium&lt;/a&gt; in Devonport.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7215.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7215.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7218.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7218.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;(City Park Radio’s Radio Museum)[https://cityparkradio.com/radio-museum/] in Launceston.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7257.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7257.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Camped at the &lt;a href=&quot;https://longfordriversidecaravanpark.com/&quot;&gt;Londford Riverside Caravan Park&lt;/a&gt; on the last day.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7254.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7254.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7246.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7246.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We swapped the campervan for a hire car and drove to Hobart. This is
-the ginseng and salmon farm at &lt;a href=&quot;https://www.41southtasmania.com/&quot;&gt;41 south&lt;/a&gt;.
-Highly recommend their hot smoked salmon.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6683.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6683.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6704.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6704.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6707.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6707.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This is Red Hills.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7225.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7225.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7222.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7222.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;In Hobart we stayed at the &lt;a href=&quot;https://www.stivesmotel.com.au/&quot;&gt;St Ives Apartments&lt;/a&gt; which is very well located and a short walk to Constitution Dock. I went for an evening walk and came across this Aussie nativity scene.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/DSCF6709.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/DSCF6709.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Picked strawberries and cherries at &lt;a href=&quot;https://www.sorellfruitfarm.com/&quot;&gt;Sorell Fruit Farm&lt;/a&gt;.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7288.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7288.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7291.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7291.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Had lunch at &lt;a href=&quot;https://tasmaniangourmetseafoods.com.au/&quot;&gt;Tasmanian Gourmet Seagoods&lt;/a&gt; which was pretty good.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7296.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7296.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_E7297.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_E7297.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Picked up some local cheese at &lt;a href=&quot;https://hillstreetgrocer.com/&quot;&gt;Hill Street Grocer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7302.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7302.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Best meal of the trip was a &lt;a href=&quot;https://www.blueeye.net.au/menus/&quot;&gt;Blue Eye Seafood&lt;/a&gt; in Hobart. We got there at noon before it was packed.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7308.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7308.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7311.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7311.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7314.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7314.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Mussels
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7317.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7317.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Crumbed Tasmanian scallops and seafood linguini
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7319.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7319.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Chocolate mousse
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Land here is much cheaper than Sydney.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/9DFBB10E-9E72-498E-A31B-41B98D4C2BD9.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/9DFBB10E-9E72-498E-A31B-41B98D4C2BD9.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;On the last night we stayed at the Sebel in Launceston and had a nice breakfast
-there.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7332.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7332.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Egg benedict
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7333.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7333.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      Poached egg and vegetables
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="travel" /><category term="australia" /><summary type="html">Went to Tasmania for a few days. Last time I was here was 2015.</summary></entry></feed>
+&lt;p&gt;Unfortunately, the eel tasted terrible! Will try barbecuing the next one.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="hawkesbury" /><category term="australia" /><summary type="html">As has been the custom for many years, I went for a camping/fishing trip with high-school friend Warren on the Hawkesbury River (here is a list of previous trips).</summary></entry></feed>
