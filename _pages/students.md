@@ -11,6 +11,10 @@ wordpress_id: 3338
 ---
 
 
+  1. Julian FARAONE, [Simplification Of Deep Neural Networks
+For Efficient Inference](/assets/images/2021/02/jfaraone21.pdf), PhD (under examination), 2021.
+
+ 	
   1. Nicholas FRASER, [Algorithms and Architectures for High
 Performance Kernel Adaptive Filtering](/assets/images/2020/09/nfraser20.pdf), PhD, 2020.
 

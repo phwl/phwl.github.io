@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-14T20:44:57+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-17T11:58:17+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
 &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;Si5351&lt;/a&gt;
 i2c clock generator.&lt;/p&gt;
 
@@ -32,7 +32,7 @@ debian@beaglebone:~$ i2cdetect -y -r 2
 70: -- -- -- -- -- -- -- --                         
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Here is the i2c transaction for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i2cdetect -y -r 2 0x60 0x60&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is part of the i2c transaction for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i2cdetect -y -r 2 0x60 0x60&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/03/si5351-i2c.jpg&quot;&gt;
@@ -46,8 +46,8 @@ debian@beaglebone:~$ i2cdetect -y -r 2
 &lt;h3 id=&quot;12-linux-userspace-driver&quot;&gt;1.2. Linux userspace driver&lt;/h3&gt;
 
 &lt;p&gt;There are several ways that this interface can be made. We are going
-to create a userspace driver,
-which is the most straightforward. 
+to create a userspace driver with the Linux  i2c-dev module
+(which is the most straightforward approach). 
 The following program, derived from the Linux Kernel &lt;a href=&quot;https://www.kernel.org/doc/html/latest/i2c/dev-interface.html&quot;&gt;userspace driver documentation&lt;/a&gt; reads and prints register 0 of device /dev/i2c-2, address 0x60, i.e. register 0 of the Si5351. Note that the reason we need to specify address 0x60 is that there could be multiple devices connected to a single i2c chip.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
@@ -628,8 +628,7 @@ is a header file that I generated for CLK0 and CLK1 outputs of 28.1544 MHz.&lt;/
 &lt;span class=&quot;cp&quot;&gt;#endif&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Our approach will be to use the header file above, &lt;a href=&quot;https://www.silabs.com/documents/public/application-notes/AN619.pdf&quot;&gt;Application Note AN619 Manually Generating an Si5351 Register Map for 10-MSOP and
-20-QFN Devices&lt;/a&gt; and follow the programming procedure in Figure 10 of the &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;data sheet&lt;/a&gt;, summarised below.&lt;/p&gt;
+&lt;p&gt;Our approach will be to use the header file above as well as the information from &lt;a href=&quot;https://www.silabs.com/documents/public/application-notes/AN619.pdf&quot;&gt;Application Note AN619&lt;/a&gt;. The programming procedure is described in Figure 10 of the &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;data sheet&lt;/a&gt;, summarised below.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ClockBuilder Desktop allows a user to generate RAM configuration files to program the Si5351 with custom frequency plans via I2C.  Once the register map has been generated, use the procedure below to program the device.
 
 1. Disable all outputs.

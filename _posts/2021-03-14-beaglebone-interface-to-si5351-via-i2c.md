@@ -4,6 +4,7 @@ comments: true
 toc: true
 date: 2021-03-14 11:04:19 AEST
 title: Beaglebone to Si5351 interface via i2c
+use_math: true
 classes: wide
 categories:
 - academia
@@ -49,15 +50,15 @@ debian@beaglebone:~$ i2cdetect -y -r 2
 70: -- -- -- -- -- -- -- --                         
 ```
 
-Here is the i2c transaction for ```i2cdetect -y -r 2 0x60 0x60```.
+Here is part of the i2c transaction for ```i2cdetect -y -r 2 0x60 0x60```.
 
 {% include figure image_path="/assets/images/2021/03/si5351-i2c.jpg" caption="" %}
 
 ### 1.2. Linux userspace driver
 
 There are several ways that this interface can be made. We are going
-to create a userspace driver,
-which is the most straightforward. 
+to create a userspace driver with the Linux  i2c-dev module
+(which is the most straightforward approach). 
 The following program, derived from the Linux Kernel [userspace driver documentation](https://www.kernel.org/doc/html/latest/i2c/dev-interface.html) reads and prints register 0 of device /dev/i2c-2, address 0x60, i.e. register 0 of the Si5351. Note that the reason we need to specify address 0x60 is that there could be multiple devices connected to a single i2c chip.
 
 {% highlight C linenos %}
@@ -361,8 +362,7 @@ si5351a_revb_register_t const si5351a_revb_registers[SI5351A_REVB_REG_CONFIG_NUM
 #endif
 {% endhighlight %}
 
-Our approach will be to use the header file above, [Application Note AN619 Manually Generating an Si5351 Register Map for 10-MSOP and
-20-QFN Devices](https://www.silabs.com/documents/public/application-notes/AN619.pdf) and follow the programming procedure in Figure 10 of the [data sheet](https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf), summarised below.
+Our approach will be to use the header file above as well as the information from [Application Note AN619](https://www.silabs.com/documents/public/application-notes/AN619.pdf). The programming procedure is described in Figure 10 of the [data sheet](https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf), summarised below.
 ```
 ClockBuilder Desktop allows a user to generate RAM configuration files to program the Si5351 with custom frequency plans via I2C.  Once the register map has been generated, use the procedure below to program the device.
 
