@@ -16,7 +16,10 @@ header:
 ---
 This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.
 
+
 ## 1. Introduction
+**Before you proceed, back up your BBB files as we are going to overwrite them!**
+
 Although it is possible to develop directly on a Linux embedded
 platform, often the machine speed, disk and memory capacity are insufficient for
 doing kernel work. Moreover, not all embedded systems have luxuries
@@ -96,7 +99,12 @@ While your there, select the SiLabs 5351A/B/C driver under "Kernel Configuration
   └─                                                                        ┘  
 ```
 
-After you finish, exit and save your configuation (it is fine not to make changes at this point). 
+After you finish, exit and save your configuation (it is fine not to make changes at this point). You can
+see that what it did was to select the ```CONFIG_COMMON_CLK_SI5351``` option.
+``` sh
+$ grep 5351 .config
+CONFIG_COMMON_CLK_SI5351=y
+```
 
 Now cross compile the kernel, specifying the loading address (0x80000000) and that we want to make an image suitable for Uboot (uImage) and to buid all the device tree binaries (dtbs),
 

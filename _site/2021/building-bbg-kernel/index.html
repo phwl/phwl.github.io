@@ -264,7 +264,7 @@ the kernel, it is a good idea to make sure you can rebuild the original one firs
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabi- menuconfig
 </code></pre></div></div>
 
-<p>While your there, select the Si5351 driver under “Kernel Configuration &gt; Device Drivers &gt; Common Clock Framework” as illustrated below.</p>
+<p>While your there, select the SiLabs 5351A/B/C driver under “Kernel Configuration &gt; Device Drivers &gt; Common Clock Framework” as illustrated below.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.config - Linux/arm 4.19.94 Kernel Configuration
  &gt; Device Drivers &gt; Common Clock Framework                                     
   ┌─sssssssssssssssssssssss Common Clock Framework ─                        ┐
@@ -289,7 +289,11 @@ the kernel, it is a good idea to make sure you can rebuild the original one firs
   └─                                                                        ┘  
 </code></pre></div></div>
 
-<p>After you finish, exit and save your configuation (it is fine not to make changes at this point).</p>
+<p>After you finish, exit and save your configuation (it is fine not to make changes at this point). You can
+see that what it did was to select the <code class="language-plaintext highlighter-rouge">CONFIG_COMMON_CLK_SI5351</code> option.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">grep </span>5351 .config
+<span class="nv">CONFIG_COMMON_CLK_SI5351</span><span class="o">=</span>y
+</code></pre></div></div>
 
 <p>Now cross compile the kernel, specifying the loading address (0x80000000) and that we want to make an image suitable for Uboot (uImage) and to buid all the device tree binaries (dtbs),</p>
 
