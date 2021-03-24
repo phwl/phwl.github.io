@@ -1,0 +1,85 @@
+I"�<p>This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.</p>
+
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Although it is possible to develop directly on a Linux embedded
+platform, often the disk and memory capacity is insufficient for
+doing kernel work. Moreover, not all embedded systems have luxuries
+such as Ethernet. For these reasons, the normal practice is to
+compile on a more powerful host machine. In the descriptions that following, the <code class="language-plaintext highlighter-rouge">$</code> prompt is from the host machine and the <code class="language-plaintext highlighter-rouge">debian@beaglebone:~$</code> prompt is on the BBB.</p>
+
+<p>The system that I am using is <a href="https://releases.ubuntu.com/18.04/">Ubuntu
+18.04.5</a>.  Start by installing this on your real or virtual machine.</p>
+
+<p>Also, you should update the Debian distribution on your BBB. Download and flash the <a href="https://beagleboard.org/latest-images">latest image</a>. Boot from an SD card with the latest image by pressing the “User Boot” button while applying power.</p>
+
+<p>Then extend the partition to the same size as the SDcard (the initial partition is 4 GB) by executing.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> /opt/scripts/tools/grow_partition.sh
+</code></pre></div></div>
+<p>and rebooting.</p>
+
+<h2 id="2-reflash-the-emmc">2. Reflash the eMMC</h2>
+<p>If you want to <a href="https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Flashing_eMMC">reflash the eMMC</a> as well, uncomment the following line in <code class="language-plaintext highlighter-rouge">/boot/uEnv.txt</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
+</code></pre></div></div>
+<p>Then reboot again from the SDcard. After a few tens of seconds, you should see a pattern of the blue LEDs turning on in sequence. After tens of minutes, they will all turn off and your eMMC will have the same image as the SDcard.</p>
+
+<h2 id="2-cross-compilation">2. Cross Compilation</h2>
+<p>On the BBB, work out what kernel version is being used:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>debian@beaglebone:~<span class="nv">$ </span><span class="nb">uname</span> <span class="nt">-r</span>
+4.19.94-ti-r42
+</code></pre></div></div>
+
+<p>Now install the cross compiler.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>gcc-arm-linux-gnueabi bison flex libssl-dev
+</code></pre></div></div>
+
+<p>Clone the BBB Linux repository and checkout the kernel version you are using. Even if you are planning to upgrade
+the kernel, it is a good idea to make sure you can rebuild the original one first.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone git://github.com/beagleboard/linux.git
+<span class="nv">$ </span>git checkout 4.19.94-ti-r42
+</code></pre></div></div>
+
+<p>This installs installs the initial <code class="language-plaintext highlighter-rouge">.config</code> file for the BB kernel and tells the <code class="language-plaintext highlighter-rouge">make</code> system to use the cross compiler that we installed..</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabi- bb.org_defconfig
+</code></pre></div></div>
+
+<p>You can configure the kernel with custom options using the command.</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabi- menuconfig
+</code></pre></div></div>
+
+<p>Navigate the menu to Device Drivers -&gt; Common Clock Framework and press space to modularize the SiLabs 5351 driver.
+This will build the kernel module for the device.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.config - Linux/arm 4.19.94 Kernel Configuration
+ &gt; Device Drivers &gt; Common Clock Framework                                     
+  ┌─sssssssssssssssssssssss Common Clock Framework ─                        ┐
+  │  Arrow keys navigate the menu.  &lt;Enter&gt; selects submenus ---&gt; (or empty │  
+  │  submenus ----).  Highlighted letters are hotkeys.  Pressing &lt;Y&gt;        │  
+  │  includes, &lt;N&gt; excludes, &lt;M&gt; modularizes features.  Press &lt;Esc&gt;&lt;Esc&gt; to │  
+  │  exit, &lt;?&gt; for Help, &lt;/&gt; for Search.  Legend: [*] built-in  [ ]         │  
+  │ ┌─                                                                    ┐ │  
+  │ │    [ ] PLL Driver for HSDK platform                                 │ │  
+  │ │    &lt; &gt; Maxim 9485 Programmable Clock Generator                      │ │  
+  │ │    &lt;M&gt; Clock driver for SiLabs 5351A/B/C                            │ │  
+  │ │    &lt; &gt; Clock driver for SiLabs 514 devices                          │ │  
+  │ │    &lt; &gt; Clock driver for SiLabs 544 devices                          │ │  
+  │ │    &lt; &gt; Clock driver for SiLabs 570 and compatible devices           │ │  
+  │ │    &lt; &gt; Clock driver for TI CDCE706 clock synthesizer                │ │  
+  │ │    &lt; &gt; Clock driver for TI CDCE913/925/937/949 devices              │ │  
+  │ │    &lt; &gt; Clock driver for CS2000 Fractional-N Clock Synthesizer &amp; Cloc│ │  
+  │ │    [ ] Clock driver for Freescale QorIQ platforms                   │ │  
+  │ └─   ┴(+)                                                             ┘ │  
+  ├─                                                                        ┤  
+  │        &lt;Select&gt;    &lt; Exit &gt;    &lt; Help &gt;    &lt; Save &gt;    &lt; Load &gt;         │  
+  └─                                                                        ┘  
+                                                                               
+</code></pre></div></div>
+<p>Exit and save your configuation. What this did was to enable this driver in <code class="language-plaintext highlighter-rouge">.config</code>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ grep 5351 .config
+CONFIG_COMMON_CLK_SI5351=y
+</code></pre></div></div>
+
+<p>Now cross compile the kernel, specifying the loading address (0x80000000) and that we want to make an image suitable for Uboot (uImage) and to buid all the device tree binaries (dtbs),</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabi- <span class="nv">LOADADDR</span><span class="o">=</span>0x80000000 uImage dtbs
+</code></pre></div></div>
+:ET

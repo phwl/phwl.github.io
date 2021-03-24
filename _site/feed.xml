@@ -1,4 +1,125 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-17T11:58:17+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-24T16:29:17+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Building the Beaglebone kernel</title><link href="/2021/building-bbg-kernel/" rel="alternate" type="text/html" title="Building the Beaglebone kernel" /><published>2021-03-23T20:04:19+11:00</published><updated>2021-03-23T20:04:19+11:00</updated><id>/2021/building-bbg-kernel</id><content type="html" xml:base="/2021/building-bbg-kernel/">&lt;p&gt;This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
+&lt;p&gt;Although it is possible to develop directly on a Linux embedded
+platform, often the machine speed, disk and memory capacity are insufficient for
+doing kernel work. Moreover, not all embedded systems have luxuries
+such as Ethernet. For these reasons, the normal practice is to
+compile on a more powerful host machine. In the descriptions that following, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt; prompt is from the host machine and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;debian@beaglebone:~$&lt;/code&gt; prompt is on the BBB.&lt;/p&gt;
+
+&lt;p&gt;The system that I am using is &lt;a href=&quot;https://releases.ubuntu.com/18.04/&quot;&gt;Ubuntu
+18.04.5&lt;/a&gt;.  Start by installing this on your real or virtual machine.&lt;/p&gt;
+
+&lt;p&gt;Also, you should update the Debian distribution on your BBB. Download and flash the &lt;a href=&quot;https://beagleboard.org/latest-images&quot;&gt;latest image&lt;/a&gt;. Boot from an SD card with the latest image by pressing the “User Boot” button while applying power.&lt;/p&gt;
+
+&lt;p&gt;Then extend the partition to the same size as the SDcard (the initial partition is 4 GB) by executing.&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo&lt;/span&gt; /opt/scripts/tools/grow_partition.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and rebooting.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-reflash-the-emmc&quot;&gt;2. Reflash the eMMC&lt;/h2&gt;
+&lt;p&gt;If you want to &lt;a href=&quot;https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Flashing_eMMC&quot;&gt;reflash the eMMC&lt;/a&gt; as well, uncomment the following line in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot/uEnv.txt&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then reboot again from the SDcard. After a few tens of seconds, you should see a pattern of the blue LEDs turning on in sequence. After tens of minutes, they will all turn off and your eMMC will have the same image as the SDcard.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-cross-compilation&quot;&gt;2. Cross Compilation&lt;/h2&gt;
+&lt;p&gt;On the BBB, work out what kernel version is being used:&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;uname&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt;
+4.19.94-ti-r42
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now install the cross compiler.&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gcc-arm-linux-gnueabi bison flex libssl-dev lzop u-boot-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Clone the BBB Linux repository and checkout the kernel version you are using. Even if you are planning to upgrade
+the kernel, it is a good idea to make sure you can rebuild the original one first.&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git://github.com/beagleboard/linux.git
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git checkout 4.19.94-ti-r42
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This installs installs the initial &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.config&lt;/code&gt; file for the BB kernel and tells the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;make&lt;/code&gt; system to use the cross compiler that we installed..&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nv&quot;&gt;ARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm &lt;span class=&quot;nv&quot;&gt;CROSS_COMPILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-linux-gnueabi- bb.org_defconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can configure the kernel with custom options using the command.&lt;/p&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nv&quot;&gt;ARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm &lt;span class=&quot;nv&quot;&gt;CROSS_COMPILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-linux-gnueabi- menuconfig
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;While your there, select the Si5351 driver under “Kernel Configuration &amp;gt; Device Drivers &amp;gt; Common Clock Framework” as illustrated below.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.config - Linux/arm 4.19.94 Kernel Configuration
+ &amp;gt; Device Drivers &amp;gt; Common Clock Framework                                     
+  ┌─sssssssssssssssssssssss Common Clock Framework ─                        ┐
+  │  Arrow keys navigate the menu.  &amp;lt;Enter&amp;gt; selects submenus ---&amp;gt; (or empty │  
+  │  submenus ----).  Highlighted letters are hotkeys.  Pressing &amp;lt;Y&amp;gt;        │  
+  │  includes, &amp;lt;N&amp;gt; excludes, &amp;lt;M&amp;gt; modularizes features.  Press &amp;lt;Esc&amp;gt;&amp;lt;Esc&amp;gt; to │  
+  │  exit, &amp;lt;?&amp;gt; for Help, &amp;lt;/&amp;gt; for Search.  Legend: [*] built-in  [ ]         │  
+  │ ┌─                                                                    ┐ │  
+  │ │    [ ] PLL Driver for HSDK platform                                 │ │  
+  │ │    &amp;lt; &amp;gt; Maxim 9485 Programmable Clock Generator                      │ │  
+  │ │    &amp;lt;*&amp;gt; Clock driver for SiLabs 5351A/B/C                            │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for SiLabs 514 devices                          │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for SiLabs 544 devices                          │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for SiLabs 570 and compatible devices           │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for TI CDCE706 clock synthesizer                │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for TI CDCE913/925/937/949 devices              │ │  
+  │ │    &amp;lt; &amp;gt; Clock driver for CS2000 Fractional-N Clock Synthesizer &amp;amp; Cloc│ │  
+  │ │    [ ] Clock driver for Freescale QorIQ platforms                   │ │  
+  │ └─   ┴(+)                                                             ┘ │  
+  ├─                                                                        ┤  
+  │        &amp;lt;Select&amp;gt;    &amp;lt; Exit &amp;gt;    &amp;lt; Help &amp;gt;    &amp;lt; Save &amp;gt;    &amp;lt; Load &amp;gt;         │  
+  └─                                                                        ┘  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After you finish, exit and save your configuation (it is fine not to make changes at this point).&lt;/p&gt;
+
+&lt;p&gt;Now cross compile the kernel, specifying the loading address (0x80000000) and that we want to make an image suitable for Uboot (uImage) and to buid all the device tree binaries (dtbs),&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;make &lt;span class=&quot;nv&quot;&gt;ARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm &lt;span class=&quot;nv&quot;&gt;CROSS_COMPILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-linux-gnueabi- &lt;span class=&quot;nv&quot;&gt;LOADADDR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0x80000000 uImage dtbs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now build the kernel modules.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then strip and install them all to some temporary directory.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/tmp/bbbfs modules_install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;3-testing-the-new-kernel&quot;&gt;3. Testing the new Kernel&lt;/h2&gt;
+&lt;p&gt;First copy the kernel and modules to the BBB. You will need SDcard storage to include all the modules that are in Linux.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ scp arch/arm/boot/uImage beaglebone.local:
+$ scp -r /tmp/bbbfs beaglebone.local:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then move the files into the correct location as root.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ mv ~/bbbfs/lib/modules/4.19.94 /lib/modules
+debian@beaglebone:~$ mv ~/zImage /boot/vmlinuz-4.19.94
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Change the kernel that will be used to this one in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot/uEnv.txt&lt;/code&gt; by modifying the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;uname_r&lt;/code&gt; 
+environment variable.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# uname_r=4.19.94-ti-r42
+uname_r=4.19.94
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and reboot. We can check the new kernel is being used by the build time.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~$ cat /proc/version
+Linux version 4.19.94 (phwl@bream) (gcc version 7.5.0 (Ubuntu/Linaro 7.5.0-3ubuntu1~18.04)) #1 SMP PREEMPT Wed Mar 24 10:25:30 AEDT 2021
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;4-docker-version&quot;&gt;4. Docker version&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/engine/install/ubuntu/&quot;&gt;Install docker&lt;/a&gt;e (if needed).&lt;/p&gt;
+
+&lt;p&gt;```
+sudo apt install docker.io
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.6.15.tar.xz
+tar -xf linux-5.6.15.tar.xz
+cd linux-5.6.15
+docker run –rm dockcross/linux-x64 &amp;gt; ./dockcross
+chmod +x dockcross
+./dockcross make defconfig
+./dockcross make -j 4&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.</summary></entry><entry><title type="html">Beaglebone to Si5351 interface via i2c</title><link href="/2021/beaglebone-interface-to-si5351-via-i2c/" rel="alternate" type="text/html" title="Beaglebone to Si5351 interface via i2c" /><published>2021-03-14T12:04:19+11:00</published><updated>2021-03-14T12:04:19+11:00</updated><id>/2021/beaglebone-interface-to-si5351-via-i2c</id><content type="html" xml:base="/2021/beaglebone-interface-to-si5351-via-i2c/">&lt;p&gt;This post describes how to connect the BeagleBone to a Silicon Labs
 &lt;a href=&quot;https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf&quot;&gt;Si5351&lt;/a&gt;
 i2c clock generator.&lt;/p&gt;
 
@@ -1464,34 +1585,7 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
 debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
-
-&lt;p&gt;I like them fried!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
@@ -1599,7 +1693,34 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
+good.  On the first drift I caught this luderick and we thought it
+would be a great afternoon. Unfortunately, nothing else happened
+for the rest of the afternoon. At least I successfully field tested
+a new hat - always a risky change.&lt;/p&gt;
+
+&lt;p&gt;I like them fried!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry><entry><title type="html">GPIO on QEMU ARM Linux</title><link href="/2021/QEMU-ARM-Linux-gpio/" rel="alternate" type="text/html" title="GPIO on QEMU ARM Linux" /><published>2021-01-09T21:26:12+11:00</published><updated>2021-01-09T21:26:12+11:00</updated><id>/2021/QEMU-ARM-Linux-gpio</id><content type="html" xml:base="/2021/QEMU-ARM-Linux-gpio/">&lt;p&gt;This post details how to use the GPIO peripheral on the ARM linux image 
 built in &lt;a href=&quot;/2021/emulated-ARM-Linux-with-Buildroot-and-QEMU/&quot;&gt;Creating an emulated ARM Linux system using Buildroot and QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;1-linux-libgpiod-library-command-line-tools-on-qemu&quot;&gt;1. Linux libgpiod Library Command Line Tools on QEMU&lt;/h2&gt;
@@ -2730,283 +2851,4 @@ hello                                         100% 8680   852.3KB/s   00:00
 Hello QEMU
 # 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.</summary></entry><entry><title type="html">Hawkesbury River 2020</title><link href="/2020/hawkesbury-2020/" rel="alternate" type="text/html" title="Hawkesbury River 2020" /><published>2020-12-21T20:54:38+11:00</published><updated>2020-12-21T20:54:38+11:00</updated><id>/2020/hawkesbury-2020</id><content type="html" xml:base="/2020/hawkesbury-2020/">&lt;p&gt;As has been the custom for many years, I went for a camping/fishing
-trip with high-school friend Warren on the Hawkesbury River (here
-is a list of &lt;a href=&quot;http://phwl.org/tags/#hawkesbury&quot;&gt;previous trips&lt;/a&gt;).&lt;/p&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;The forecast was for rain so packed all the normal stuff plus
-firewood. Although there is usually lots of boat traffic and 
-people out fishing, this year was quiet because most people don’t want
-to go out in the rain.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7341.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7341.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Just after the entrance to the expressway, I noticed that the bimini was
-not right.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7344.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7344.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Turns out the rivets had failed.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7343.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7343.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;A quick field repair and we were on our way.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7346.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7346.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7347.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7347.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Seems like every year we bring more stuff …&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7350.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7350.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Due to bushfires, we could go last year. We came across an unexpected surprise. After years of camping here, we now need to book.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7352.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7352.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Fortunately, we could do it by mobile phone.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7354.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7354.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;First cast, a school jew which was released.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7355.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7355.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Next, a yellowfin bream (acanthopagrus australis). They are a very slow growing
-fish. See the second last figure in &lt;a href=&quot;/assets/images/2020/12/Yellowfin-Bream.pdf&quot;&gt;this publication&lt;/a&gt; reproduced below, and the Ochwada paper cited within. 
-Large ones should be released.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/breamgrowth.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/breamgrowth.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7357.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7357.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;We kept them alive in the live bait tank. After the session we decided to eat one and 
-release the remaining two.
-According to the table,
-since the bottom one is about
-24cm to the fork of the tail, it is about 5 years old. A
-27cm bream would be 10 years old.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7360.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7360.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Sunset at camp.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7362.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7362.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Fish done in foil as is the usual custom.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7364.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7364.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7365.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7365.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Used the bream gut as bait for eel fishing. We cast it out and put bells on
-the rod so we could fish while cooking. After two hours, it hadn’t been touched and I nearly gave up. 
-Then, the bait was taken but no hookup. A few seconds after casting out
-with a new bait, caught a nice pike eel.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7367.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7367.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;It looked like it was dead so I took my pliers and was going to unhook
-the eel. In a flash, it swung its head around and bit me on the thumb.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7370.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7370.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;I was lucky to have a nice lip hook, it would have easily bit through my
-6 kg monofilament trace. Anyway, I emerged as the victor!&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7375.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7375.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Came across removalists for Bar Point.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7387.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7387.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Hearty breakfast.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7397.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7397.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Monitor lizards are becoming less and less wary of people.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7430.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7430.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Splitting firewood.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7441.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7441.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Warren with a personal best pufferfish.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7457.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7457.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;To prepare steamed eel, you first cover it with salt and wash off the slime. Then
-you cut it like below.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7389.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7389.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Black bean sauce.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7391.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7391.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Steamed.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2020/12/IMG_7394.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2020/12/IMG_7394.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Unfortunately, the eel tasted terrible! Will try barbecuing the next one.&lt;/p&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="hawkesbury" /><category term="australia" /><summary type="html">As has been the custom for many years, I went for a camping/fishing trip with high-school friend Warren on the Hawkesbury River (here is a list of previous trips).</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post details how to build an ARM linux image via buildroot, and emulate it using QEMU. This was done using an Ubuntu 18.04.5 LTS host machine.</summary></entry></feed>
