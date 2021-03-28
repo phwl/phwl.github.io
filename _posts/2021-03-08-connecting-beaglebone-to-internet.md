@@ -67,6 +67,8 @@ Instructions are [here](https://blog.rottenwifi.com/how-to-share-wifi-over-ether
  6. Now you need to toggle the option “Allow other network users to connect.”
  7. Once done, then you need also to select the Ethernet port through which you want to allow the connection.
 
+Also, make sure that you choose the right ethernet to share the internet. If you do not make the right choice, then your connection sharing will fail. This is specifically true for those who have VPN software installed as it can create virtual ethernet ports and list them there.
+
 # 3. Checking Connection
 After entering Return, you should see the login prompt.
 ``` sh
