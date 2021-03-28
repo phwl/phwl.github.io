@@ -54,6 +54,18 @@ In "Control Panel" on your Mac, enable Internet sharing. On my machine the devic
 
 {% include figure image_path="/assets/images/2021/03/internetsharing.png" max-width="100px" caption="" %}
 
+## 2.2. Windows 10
+Connect your PC to the BBG using the microUSB. Connect your BBG Ethernet port to the PC's Ethernet using an Ethernet cable (you may need an Ethernet adaptor for your PC). 
+
+Instructions are [here](https://blog.rottenwifi.com/how-to-share-wifi-over-ethernet-on-windows-10/):
+
+ 1. Right Click on the Windows start button, and you will see a menu pop up.
+ 2. From there, you need to click on Network Connections.
+ 3. Once you do so, you will be redirected to the network windows. From there, click on change adapter settings.
+ 4. Now, you will be redirected to the list of all the network connections available online.
+ 5. From there, right-click on your Wi-Fi adapter and then go to properties.
+ 6. Now you need to toggle the option “Allow other network users to connect.”
+ 7. Once done, then you need also to select the Ethernet port through which you want to allow the connection.
 
 # 3. Checking Connection
 After entering Return, you should see the login prompt.

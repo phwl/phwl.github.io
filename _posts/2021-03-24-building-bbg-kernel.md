@@ -73,7 +73,7 @@ You can configure the kernel with custom options using the command.
 $ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
 ```
 
-While your there, select the SiLabs 5351A/B/C driver under "Kernel Configuration > Device Drivers > Common Clock Framework" as illustrated below.
+While you are there, select the SiLabs 5351A/B/C driver under "Kernel Configuration > Device Drivers > Common Clock Framework" as illustrated below.
 ```
 .config - Linux/arm 4.19.94 Kernel Configuration
  > Device Drivers > Common Clock Framework                                     

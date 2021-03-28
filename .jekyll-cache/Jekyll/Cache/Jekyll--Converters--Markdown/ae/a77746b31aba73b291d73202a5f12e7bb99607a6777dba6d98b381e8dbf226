@@ -1,0 +1,38 @@
+I")<p>Here is how you tell what types of trailer bearings you have without taking them out.</p>
+
+<figure class="">
+  <a href="https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg">
+  <img src="https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg" alt="" />
+  </a></figure>
+
+<p>A clear explanation is given here <a href="https://trailersparesdirect.com.au/blogs/technical-info/identifying-hub-types">https://trailersparesdirect.com.au/blogs/technical-info/identifying-hub-types</a> and this <a href="/assets/images/2021/03/bearing_technical_guide.pdf">pdf</a> is also helpful.</p>
+
+<p>In summary, measure from centre of one stud to the next stud:</p>
+<ul>
+  <li>64MM = HT HOLDEN</li>
+  <li>68MM = FORD</li>
+  <li>70MM = HQ</li>
+</ul>
+
+<p>Also check the axle:</p>
+<ul>
+  <li>39mm Round Axles - 750kg maximum operating weight per Axle. Runs LM (Holden) bearings</li>
+  <li>40mm Square Axles - 1000kg maximum operating weight per Axle. Runs LM (Holden) bearings</li>
+  <li>45mm Square Axles - 1500kg maximum operating weight per Axle. Runs SL (Ford) bearings</li>
+</ul>
+
+<p>Here are the part numbers.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LM (Holden bearings) suit 39mm Round &amp; 40 mm Square Axles - 1000kg weight capacity / pair
+· Outer (small) bearings # LM 11949 - Bearing
+ # LM 11910 - Cup
+· Inner (large) bearings # LM 67048 - Bearing
+ # LM 67010 - Cup
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SL (Ford bearings) suit 45mm Square Axles - 1400kg weight capacity / pair
+· Outer (small) bearings # L 12749 - Bearing
+ # L 12710 - Cup
+· Inner (large) bearings # L 68149 - Bearing
+ # L 68110 - Cup
+</code></pre></div></div>
+:ET

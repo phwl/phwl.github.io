@@ -4,7 +4,6 @@ comments: true
 toc: true
 date: 2021-03-14 11:04:19 AEST
 title: Beaglebone to Si5351 interface via i2c
-use_math: true
 classes: wide
 categories:
 - academia
