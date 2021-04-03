@@ -1,0 +1,68 @@
+I"�<p>This post describes how to emulate an Arm hard float (armhf) using
+using <code class="language-plaintext highlighter-rouge">qemu</code> and install Debian Linux on the emulator.</p>
+
+<p>I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.</p>
+
+<h2 id="install-debian-on-qemu-system-arm">Install Debian on qemu-system-arm</h2>
+<p>Install qemu.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt upgrade
+mkdir qemu; cd qemu
+sudo apt install qemu-system-arm
+</code></pre></div></div>
+
+<p>Download <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz">initrd.gz</a>, <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz">vmlinuz</a> and
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso">debian-10.9.0-armhf-netinst.iso</a>
+(alternatively
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso">debian-10.9.0-armhf-xfce-CD-1.iso</a>).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-img create -f qcow2 debian-3607.qcow2 8G
+qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append "console=ttyAMA0" -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+</code></pre></div></div>
+
+<p>Use all of the defaults for the Debian installer.</p>
+<ul>
+  <li>I used “elec3607” for all user names and passwords.</li>
+  <li>For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).</li>
+  <li>If you get a “Failed to install the base system” message, try a second time from the menu.</li>
+  <li>Select linux-image-armmp for the kernel.</li>
+  <li>Select targeted for initrd.</li>
+  <li>For software to install, just choose “SSH server” and “standard system utilities” (the default).</li>
+  <li>You will receive the message that GRUB installation failed. We will fix this later.</li>
+  <li>Exit <code class="language-plaintext highlighter-rouge">qemu</code> with “control-A x”.</li>
+</ul>
+
+<p>Extract the kernel and initrd from the disk image.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libguestfs-tools
+virt-ls -a debian-3607.qcow2 /boot/
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
+</code></pre></div></div>
+
+<p>Somehow, the accounts generated during the Debian installation process doesn’t work and 
+you can’t login. Thus I did the following (please let me know if you have a better way).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
+</code></pre></div></div>
+<p>Then edit the root password so you don’t need one.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root::0:0:root:/root:/bin/bash	# /etc/passwd
+root::18719:0:99999:7:::		# /etc/shadow
+</code></pre></div></div>
+<p>and write back</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
+</code></pre></div></div>
+
+<p>Now you can run your Debian-Arm Linux:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
+-initrd initrd.img-4.19.0-16-armmp -append 'root=/dev/vda2' \
+-drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
+-soundhw hda \
+-nographic
+</code></pre></div></div>
+
+<p>(the <code class="language-plaintext highlighter-rouge">highmem=off</code> is only required in Windows 10 to work around a <a href="https://bugs.launchpad.net/qemu/+bug/1790975">PCIe conflict</a> bug)</p>
+
+<h2 id="install-packages-including-git-and">Install packages including git and</h2>
+:ET

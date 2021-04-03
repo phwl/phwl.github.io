@@ -30,19 +30,19 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Programming the Si5351 - Life, the Universe and Fishing</title>
-<meta name="description" content="1.4. Manually Programming the Clock GeneratorIn many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). Application Note AN619 details the process of calculating the header file used in Clock Builder.">
+<!-- begin _includes/seo.html --><title>Debian on armhf emulation via QEMU - Life, the Universe and Fishing</title>
+<meta name="description" content="This post describes how to emulate an Arm hard float (armhf) usingusing qemu and install Debian Linux on the emulator.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Programming the Si5351">
-<meta property="og:url" content="/2021/si5351-programming/">
+<meta property="og:title" content="Debian on armhf emulation via QEMU">
+<meta property="og:url" content="/2021/qemu-armhf-debian/">
 
 
-  <meta property="og:description" content="1.4. Manually Programming the Clock GeneratorIn many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). Application Note AN619 details the process of calculating the header file used in Clock Builder.">
+  <meta property="og:description" content="This post describes how to emulate an Arm hard float (armhf) usingusing qemu and install Debian Linux on the emulator.">
 
 
 
@@ -52,7 +52,7 @@
 
 
 
-  <meta property="article:published_time" content="2021-03-24T15:04:59+11:00">
+  <meta property="article:published_time" content="2021-04-01T12:32:43+11:00">
 
 
 
@@ -63,7 +63,7 @@
   
 
 
-<link rel="canonical" href="/2021/si5351-programming/">
+<link rel="canonical" href="/2021/qemu-armhf-debian/">
 
 
 
@@ -186,15 +186,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Programming the Si5351">
-    <meta itemprop="description" content="1.4. Manually Programming the Clock GeneratorIn many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). Application Note AN619 details the process of calculating the header file used in Clock Builder.">
-    <meta itemprop="datePublished" content="March 24, 2021">
+    <meta itemprop="headline" content="Debian on armhf emulation via QEMU">
+    <meta itemprop="description" content="This post describes how to emulate an Arm hard float (armhf) usingusing qemu and install Debian Linux on the emulator.">
+    <meta itemprop="datePublished" content="April 01, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Programming the Si5351
+          <h1 id="page-title" class="page__title" itemprop="headline">Debian on armhf emulation via QEMU
 </h1>
           
         </header>
@@ -202,67 +202,73 @@
 
       <section class="page__content" itemprop="text">
         
-          <aside class="sidebar__right ">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu">
-  <li><a href="#14-manually-programming-the-clock-generator">1.4. Manually Programming the Clock Generator</a></li>
+        <p>This post describes how to emulate an Arm hard float (armhf) using
+using <code class="language-plaintext highlighter-rouge">qemu</code> and install Debian Linux on the emulator.</p>
+
+<p>I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.</p>
+
+<h2 id="install-debian-on-qemu-system-arm">Install Debian on qemu-system-arm</h2>
+<p>Install qemu.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+sudo apt upgrade
+mkdir qemu; cd qemu
+sudo apt install qemu-system-arm
+</code></pre></div></div>
+
+<p>Download <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz">initrd.gz</a>, <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz">vmlinuz</a> and
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso">debian-10.9.0-armhf-netinst.iso</a>
+(alternatively
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso">debian-10.9.0-armhf-xfce-CD-1.iso</a>).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
+qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append "console=ttyAMA0" -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+</code></pre></div></div>
+
+<p>Use all of the defaults for the Debian installer.</p>
+<ul>
+  <li>I used “elec3607” for all user names and passwords.</li>
+  <li>For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).</li>
+  <li>If you get a “Failed to install the base system” message, try a second time from the menu.</li>
+  <li>Select linux-image-armmp for the kernel.</li>
+  <li>Select targeted for initrd.</li>
+  <li>For software to install, just choose “SSH server” and “standard system utilities” (the default).</li>
+  <li>You will receive the message that GRUB installation failed. We will fix this later.</li>
+  <li>Exit <code class="language-plaintext highlighter-rouge">qemu</code> with “control-A x”.</li>
 </ul>
-            </nav>
-          </aside>
-        
-        <h3 id="14-manually-programming-the-clock-generator">1.4. Manually Programming the Clock Generator</h3>
-<p>In many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). <a href="https://www.silabs.com/documents/public/application-notes/AN619.pdf">Application Note AN619</a> details the process of calculating the header file used in Clock Builder.</p>
 
-<p>Referring to the block diagram from the data sheet, following the input clock generator there are two stages, Stage 1 (feedback multisynth divider or FMD) and Stage 2 (output multisynth divider or OMD).</p>
+<p>Extract the kernel and initrd from the disk image.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libguestfs-tools
+virt-ls -a debian-3607.qcow2 /boot/
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
+</code></pre></div></div>
 
-<figure class="">
-  <a href="/assets/images/2021/03/si5351-bdiagram.png">
-  <img src="/assets/images/2021/03/si5351-bdiagram.png" alt="" />
-  
-    <figcaption>
-      
+<p>Somehow, the accounts generated during the Debian installation process doesn’t work and 
+you can’t login. Thus I did the following (please let me know if you have a better way).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
+</code></pre></div></div>
+<p>Then edit the root password so you don’t need one.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root::0:0:root:/root:/bin/bash	# /etc/passwd
+root::18719:0:99999:7:::		# /etc/shadow
+</code></pre></div></div>
+<p>and write back</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
+</code></pre></div></div>
 
-    </figcaption></a></figure>
+<p>Now you can run your Debian-Arm Linux:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
+-initrd initrd.img-4.19.0-16-armmp -append 'root=/dev/vda2' \
+-drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
+-soundhw hda \
+-nographic
+</code></pre></div></div>
 
-<p>Stage 1 simply multiplies the input oscillator frequency, $f_{XTAL}$ to the voltage controlled oscillator (VCO) value:</p>
+<p>(the <code class="language-plaintext highlighter-rouge">highmem=off</code> is only required in Windows 10 to work around a <a href="https://bugs.launchpad.net/qemu/+bug/1790975">PCIe conflict</a> bug)</p>
 
-\[f_{VCO} = \alpha f_{XTAL}\]
-
-<p>As this is a hardware implementation, there are some constraints that need to be imposed. Firstly, $600 MHz \le f_{VCO} &lt; 900 MHz$
-as that is the optional range of the VCO. Secondly,  $\alpha$ is computed from integer components $a, b$, and $c$.</p>
-
-\[\alpha = (a + \frac{b}{c}),\]
-
-<p>with $15 \le a \le 90,\; 0 \le b \lt 2^{20},\; 0 \le c \lt 2^{20}$.</p>
-
-<p>Stage 2 then divides $f_{VCO}$ to achieve the desired output frequency $f$:</p>
-
-\[f = \frac{f_{VCO}}{\beta}\]
-
-\[\beta = (d + \frac{e}{f}),\]
-
-<p>with $15 \le a \le 90,\; 0 \le b \lt 2^{20},\; 0 \le c \lt 2^{20}$.</p>
-
-<p>Although the App Note tries to be helpful, they don’t describe a synthesis strategy which works for
-frequencies in the high frequency (HF) band which is 3-30 MHz, used by Hans Summers in <a href="http://www.qrp-labs.com/images/synth/demo1/si5351a.c">this code</a>.</p>
-
-<p>A higher $f_{VCO}$ gives more flexibility when we divide it down later so one approach is to set $f_{VCO}$ to a value which is just under the maximum
-value of 900 MHz. Thus for a desired frequency $f$, we choose</p>
-
-\[\beta' = \lfloor 900000000 / f \rfloor \text{ AND 0xFFFFFFFE}\]
-
-<p>where the bitwise AND operation strips the least significant bit of $\beta’$ to make it an even number. Thus</p>
-
-\[f_{VCO}' = \beta' f &lt; 900 MHz.\]
-
-<p>Next we calculate</p>
-
-\[\alpha' = \frac{f_{VCO}}{f_{XTAL}}\]
-
-<p>and make $\alpha’ = a + b / c$ where $a= \lfloor \alpha’ \rfloor$, $c = 2^{20}-1$ is the largest 
-20-bit denominator, and $b = round((\alpha’ - a) \times c)$.</p>
-
+<h2 id="install-packages-including-git-and">Install packages including git and</h2>
 
         
       </section>
@@ -280,10 +286,6 @@ value of 900 MHz. Thus for a desired frequency $f$, we choose</p>
   <p class="page__taxonomy">
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
-    
-      
-      
-      <a href="/tags/#beaglebone" class="page__taxonomy-item" rel="tag">beaglebone</a><span class="sep">, </span>
     
       
       
@@ -315,7 +317,7 @@ value of 900 MHz. Thus for a desired frequency $f$, we choose</p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-03-24T15:04:59+11:00">March 24, 2021</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-01T12:32:43+11:00">April 01, 2021</time></p>
         
       </footer>
 
@@ -324,23 +326,22 @@ value of 900 MHz. Thus for a desired frequency $f$, we choose</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Programming+the+Si5351%20%2F2021%2Fsi5351-programming%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Debian+on+armhf+emulation+via+QEMU%20%2F2021%2Fqemu-armhf-debian%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fsi5351-programming%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fqemu-armhf-debian%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fsi5351-programming%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fqemu-armhf-debian%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2021/building-bbg-kernel/" class="pagination--pager" title="Building the Beaglebone kernel
+      <a href="/2021/trailer-bearings/" class="pagination--pager" title="Trailer Bearings
 ">Previous</a>
     
     
-      <a href="/2021/trailer-bearings/" class="pagination--pager" title="Trailer Bearings
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 

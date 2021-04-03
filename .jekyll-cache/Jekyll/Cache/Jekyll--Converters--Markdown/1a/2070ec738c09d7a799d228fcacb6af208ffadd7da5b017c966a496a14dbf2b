@@ -1,4 +1,4 @@
-I"»!<p>This post describes how to connect the BeagleBone to the Internet via
+I"‡&<p>This post describes how to connect the BeagleBone to the Internet via
 Ethernet on Windows and MacOS.</p>
 
 <p>Drivers to support Internet via USB on the BeagleBone (see <a href="https://beagleboard.org/getting-started">Getting
@@ -44,6 +44,23 @@ the USB connection (use the one attached to the microUSB connector) you select ‚
       
 
     </figcaption></a></figure>
+
+<h2 id="22-windows-10">2.2. Windows 10</h2>
+<p>Connect your PC to the BBG using the microUSB. Connect your BBG Ethernet port to the PC‚Äôs Ethernet using an Ethernet cable (you may need an Ethernet adaptor for your PC).</p>
+
+<p>Instructions are <a href="https://blog.rottenwifi.com/how-to-share-wifi-over-ethernet-on-windows-10/">here</a>:</p>
+
+<ol>
+  <li>Right Click on the Windows start button, and you will see a menu pop up.</li>
+  <li>From there, you need to click on Network Connections.</li>
+  <li>Once you do so, you will be redirected to the network windows. From there, click on change adapter settings.</li>
+  <li>Now, you will be redirected to the list of all the network connections available online.</li>
+  <li>From there, right-click on your Wi-Fi adapter and then go to properties.</li>
+  <li>Now you need to toggle the option ‚ÄúAllow other network users to connect.‚Äù</li>
+  <li>Once done, then you need also to select the Ethernet port through which you want to allow the connection.</li>
+</ol>
+
+<p>Also, make sure that you choose the right ethernet to share the internet. If you do not make the right choice, then your connection sharing will fail. This is specifically true for those who have VPN software installed as it can create virtual ethernet ports and list them there.</p>
 
 <h1 id="3-checking-connection">3. Checking Connection</h1>
 <p>After entering Return, you should see the login prompt.</p>

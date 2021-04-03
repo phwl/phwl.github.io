@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-03-28T10:58:16+11:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T09:26:37+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
+using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
+
+&lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-debian-on-qemu-system-arm&quot;&gt;Install Debian on qemu-system-arm&lt;/h2&gt;
+&lt;p&gt;Install qemu.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+sudo apt upgrade
+mkdir qemu; cd qemu
+sudo apt install qemu-system-arm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
+&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
+(alternatively
+&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
+qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append &quot;console=ttyAMA0&quot; -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use all of the defaults for the Debian installer.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I used “elec3607” for all user names and passwords.&lt;/li&gt;
+  &lt;li&gt;For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).&lt;/li&gt;
+  &lt;li&gt;If you get a “Failed to install the base system” message, try a second time from the menu.&lt;/li&gt;
+  &lt;li&gt;Select linux-image-armmp for the kernel.&lt;/li&gt;
+  &lt;li&gt;Select targeted for initrd.&lt;/li&gt;
+  &lt;li&gt;For software to install, just choose “SSH server” and “standard system utilities” (the default).&lt;/li&gt;
+  &lt;li&gt;You will receive the message that GRUB installation failed. We will fix this later.&lt;/li&gt;
+  &lt;li&gt;Exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; with “control-A x”.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Extract the kernel and initrd from the disk image.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libguestfs-tools
+virt-ls -a debian-3607.qcow2 /boot/
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Somehow, the accounts generated during the Debian installation process doesn’t work and 
+you can’t login. Thus I did the following (please let me know if you have a better way).&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then edit the root password so you don’t need one.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root::0:0:root:/root:/bin/bash	# /etc/passwd
+root::18719:0:99999:7:::		# /etc/shadow
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;and write back&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run your Debian-Arm Linux:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
+-initrd initrd.img-4.19.0-16-armmp -append &apos;root=/dev/vda2&apos; \
+-drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
+-soundhw hda \
+-nographic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highmem=off&lt;/code&gt; is only required in Windows 10 to work around a &lt;a href=&quot;https://bugs.launchpad.net/qemu/+bug/1790975&quot;&gt;PCIe conflict&lt;/a&gt; bug)&lt;/p&gt;
+
+&lt;h2 id=&quot;install-packages-including-git-and&quot;&gt;Install packages including git and&lt;/h2&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot;&gt;
@@ -34,57 +100,7 @@
  # L 12710 - Cup
 · Inner (large) bearings # L 68149 - Bearing
  # L 68110 - Cup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="fishing" /><category term="repair" /><summary type="html">Here is how you tell what types of trailer bearings you have without taking them out.</summary></entry><entry><title type="html">Programming the Si5351</title><link href="/2021/si5351-programming/" rel="alternate" type="text/html" title="Programming the Si5351" /><published>2021-03-24T15:04:59+11:00</published><updated>2021-03-24T15:04:59+11:00</updated><id>/2021/si5351-programming</id><content type="html" xml:base="/2021/si5351-programming/">&lt;h3 id=&quot;14-manually-programming-the-clock-generator&quot;&gt;1.4. Manually Programming the Clock Generator&lt;/h3&gt;
-&lt;p&gt;In many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). &lt;a href=&quot;https://www.silabs.com/documents/public/application-notes/AN619.pdf&quot;&gt;Application Note AN619&lt;/a&gt; details the process of calculating the header file used in Clock Builder.&lt;/p&gt;
-
-&lt;p&gt;Referring to the block diagram from the data sheet, following the input clock generator there are two stages, Stage 1 (feedback multisynth divider or FMD) and Stage 2 (output multisynth divider or OMD).&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/03/si5351-bdiagram.png&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/03/si5351-bdiagram.png&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Stage 1 simply multiplies the input oscillator frequency, $f_{XTAL}$ to the voltage controlled oscillator (VCO) value:&lt;/p&gt;
-
-\[f_{VCO} = \alpha f_{XTAL}\]
-
-&lt;p&gt;As this is a hardware implementation, there are some constraints that need to be imposed. Firstly, $600 MHz \le f_{VCO} &amp;lt; 900 MHz$
-as that is the optional range of the VCO. Secondly,  $\alpha$ is computed from integer components $a, b$, and $c$.&lt;/p&gt;
-
-\[\alpha = (a + \frac{b}{c}),\]
-
-&lt;p&gt;with $15 \le a \le 90,\; 0 \le b \lt 2^{20},\; 0 \le c \lt 2^{20}$.&lt;/p&gt;
-
-&lt;p&gt;Stage 2 then divides $f_{VCO}$ to achieve the desired output frequency $f$:&lt;/p&gt;
-
-\[f = \frac{f_{VCO}}{\beta}\]
-
-\[\beta = (d + \frac{e}{f}),\]
-
-&lt;p&gt;with $15 \le a \le 90,\; 0 \le b \lt 2^{20},\; 0 \le c \lt 2^{20}$.&lt;/p&gt;
-
-&lt;p&gt;Although the App Note tries to be helpful, they don’t describe a synthesis strategy which works for
-frequencies in the high frequency (HF) band which is 3-30 MHz, used by Hans Summers in &lt;a href=&quot;http://www.qrp-labs.com/images/synth/demo1/si5351a.c&quot;&gt;this code&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A higher $f_{VCO}$ gives more flexibility when we divide it down later so one approach is to set $f_{VCO}$ to a value which is just under the maximum
-value of 900 MHz. Thus for a desired frequency $f$, we choose&lt;/p&gt;
-
-\[\beta&apos; = \lfloor 900000000 / f \rfloor \text{ AND 0xFFFFFFFE}\]
-
-&lt;p&gt;where the bitwise AND operation strips the least significant bit of $\beta’$ to make it an even number. Thus&lt;/p&gt;
-
-\[f_{VCO}&apos; = \beta&apos; f &amp;lt; 900 MHz.\]
-
-&lt;p&gt;Next we calculate&lt;/p&gt;
-
-\[\alpha&apos; = \frac{f_{VCO}}{f_{XTAL}}\]
-
-&lt;p&gt;and make $\alpha’ = a + b / c$ where $a= \lfloor \alpha’ \rfloor$, $c = 2^{20}-1$ is the largest 
-20-bit denominator, and $b = round((\alpha’ - a) \times c)$.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">1.4. Manually Programming the Clock Generator In many applications, one would want to calculate the Si5351 registers for a given type of output at runtime. An example would be say in a radio where the user selects the frequency (perhaps via a dial). Application Note AN619 details the process of calculating the header file used in Clock Builder.</summary></entry><entry><title type="html">Building the Beaglebone kernel</title><link href="/2021/building-bbg-kernel/" rel="alternate" type="text/html" title="Building the Beaglebone kernel" /><published>2021-03-23T20:04:19+11:00</published><updated>2021-03-23T20:04:19+11:00</updated><id>/2021/building-bbg-kernel</id><content type="html" xml:base="/2021/building-bbg-kernel/">&lt;p&gt;This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="fishing" /><category term="repair" /><summary type="html">Here is how you tell what types of trailer bearings you have without taking them out.</summary></entry><entry><title type="html">Building the Beaglebone kernel</title><link href="/2021/building-bbg-kernel/" rel="alternate" type="text/html" title="Building the Beaglebone kernel" /><published>2021-03-23T20:04:19+11:00</published><updated>2021-03-23T20:04:19+11:00</updated><id>/2021/building-bbg-kernel</id><content type="html" xml:base="/2021/building-bbg-kernel/">&lt;p&gt;This post describes how to cross compile the Beaglebone Black (BBB) or Beaglebone Green (BBG) Linux kernel on an Ubuntu 18.04 Linux machine.&lt;/p&gt;
 
 &lt;h2 id=&quot;1-introduction&quot;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Before you proceed, back up your BBB files as we are going to overwrite them!&lt;/strong&gt;&lt;/p&gt;
@@ -978,6 +994,23 @@ the USB connection (use the one attached to the microUSB connector) you select �
       
 
     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;22-windows-10&quot;&gt;2.2. Windows 10&lt;/h2&gt;
+&lt;p&gt;Connect your PC to the BBG using the microUSB. Connect your BBG Ethernet port to the PC’s Ethernet using an Ethernet cable (you may need an Ethernet adaptor for your PC).&lt;/p&gt;
+
+&lt;p&gt;Instructions are &lt;a href=&quot;https://blog.rottenwifi.com/how-to-share-wifi-over-ethernet-on-windows-10/&quot;&gt;here&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Right Click on the Windows start button, and you will see a menu pop up.&lt;/li&gt;
+  &lt;li&gt;From there, you need to click on Network Connections.&lt;/li&gt;
+  &lt;li&gt;Once you do so, you will be redirected to the network windows. From there, click on change adapter settings.&lt;/li&gt;
+  &lt;li&gt;Now, you will be redirected to the list of all the network connections available online.&lt;/li&gt;
+  &lt;li&gt;From there, right-click on your Wi-Fi adapter and then go to properties.&lt;/li&gt;
+  &lt;li&gt;Now you need to toggle the option “Allow other network users to connect.”&lt;/li&gt;
+  &lt;li&gt;Once done, then you need also to select the Ethernet port through which you want to allow the connection.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Also, make sure that you choose the right ethernet to share the internet. If you do not make the right choice, then your connection sharing will fail. This is specifically true for those who have VPN software installed as it can create virtual ethernet ports and list them there.&lt;/p&gt;
 
 &lt;h1 id=&quot;3-checking-connection&quot;&gt;3. Checking Connection&lt;/h1&gt;
 &lt;p&gt;After entering Return, you should see the login prompt.&lt;/p&gt;
