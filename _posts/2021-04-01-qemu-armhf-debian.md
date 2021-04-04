@@ -46,7 +46,7 @@ Use all of the defaults for the Debian installer.
  * I used "elec3607" for all user names and passwords.
  * For partitioning select "Guided - use entire disk". Note that this chooses /dev/vda2 for / (we will use this later).
  * If you get a "Failed to install the base system" message, try a second time from the menu.
- * Select linux-image-armmp for the kernel.
+ * Select linux-image-armmp-lpae for the kernel.
  * Select targeted for initrd.
  * For software to install, just choose "SSH server" and "standard system utilities" (the default).
  * You will receive the message that GRUB installation failed. We will fix this later.
@@ -56,33 +56,15 @@ Extract the kernel and initrd from the disk image.
 ```
 sudo apt-get install libguestfs-tools
 virt-ls -a debian-3607.qcow2 /boot/
-virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
-```
-
-Somehow, the accounts generated during the Debian installation process doesn't work and 
-you can't login. Thus I did the following (please let me know if you have a better way).
-```
-virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
-```
-Then edit the root password so you don't need one.
-```
-root::0:0:root:/root:/bin/bash	# /etc/passwd
-root::18719:0:99999:7:::		# /etc/shadow
-```
-and write back
-```
-virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
 ```
 
 Now you can run your Debian-Arm Linux:
 ```
-qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
--initrd initrd.img-4.19.0-16-armmp -append 'root=/dev/vda2' \
+qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
+-initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' \
 -drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
 -soundhw hda \
 -nographic
 ```
 
-(the ```highmem=off``` is only required in Windows 10 to work around a [PCIe conflict](https://bugs.launchpad.net/qemu/+bug/1790975) bug)
-
-## Install packages including git and 

@@ -1,14 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T09:42:51+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
-using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T16:53:51+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Programming using ALSA</title><link href="/2021/alsa/" rel="alternate" type="text/html" title="Programming using ALSA" /><published>2021-04-03T14:38:23+11:00</published><updated>2021-04-03T14:38:23+11:00</updated><id>/2021/alsa</id><content type="html" xml:base="/2021/alsa/">&lt;p&gt;This post describes how to write a simple ALSA program under Ubuntu.&lt;/p&gt;
 
-&lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
-
-&lt;h2 id=&quot;install-debian-on-qemu-system-arm&quot;&gt;Install Debian on qemu-system-arm&lt;/h2&gt;
-&lt;p&gt;Install qemu.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-sudo apt upgrade
-mkdir qemu; cd qemu
-sudo apt install qemu-system-arm
+&lt;p&gt;First install the include files etc for ALSA.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libasound2-dev
+gcc -o rec rec.c -lasound
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
@@ -64,7 +58,57 @@ root::18719:0:99999:7:::		# /etc/shadow
 
 &lt;p&gt;(the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highmem=off&lt;/code&gt; is only required in Windows 10 to work around a &lt;a href=&quot;https://bugs.launchpad.net/qemu/+bug/1790975&quot;&gt;PCIe conflict&lt;/a&gt; bug)&lt;/p&gt;
 
-&lt;h2 id=&quot;install-packages-including-git-and&quot;&gt;Install packages including git and&lt;/h2&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
+&lt;h2 id=&quot;install-packages-including-git-and&quot;&gt;Install packages including git and&lt;/h2&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to write a simple ALSA program under Ubuntu.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
+using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
+
+&lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-debian-on-qemu-system-arm&quot;&gt;Install Debian on qemu-system-arm&lt;/h2&gt;
+&lt;p&gt;Install qemu.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+sudo apt upgrade
+mkdir qemu; cd qemu
+sudo apt install qemu-system-arm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
+&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
+(alternatively
+&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
+qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append &quot;console=ttyAMA0&quot; -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use all of the defaults for the Debian installer.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I used “elec3607” for all user names and passwords.&lt;/li&gt;
+  &lt;li&gt;For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).&lt;/li&gt;
+  &lt;li&gt;If you get a “Failed to install the base system” message, try a second time from the menu.&lt;/li&gt;
+  &lt;li&gt;Select linux-image-armmp-lpae for the kernel.&lt;/li&gt;
+  &lt;li&gt;Select targeted for initrd.&lt;/li&gt;
+  &lt;li&gt;For software to install, just choose “SSH server” and “standard system utilities” (the default).&lt;/li&gt;
+  &lt;li&gt;You will receive the message that GRUB installation failed. We will fix this later.&lt;/li&gt;
+  &lt;li&gt;Exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; with “control-A x”.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Extract the kernel and initrd from the disk image.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libguestfs-tools
+virt-ls -a debian-3607.qcow2 /boot/
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now you can run your Debian-Arm Linux:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
+-initrd initrd.img-4.19.0-16-armmp-lpae -append &apos;root=/dev/vda2&apos; \
+-drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
+-soundhw hda \
+-nographic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot;&gt;
@@ -1818,31 +1862,4 @@ Smoked for 30 minutes.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry><entry><title type="html">Sydney Harbour Luderick</title><link href="/2021/sydney-harbour-luderick/" rel="alternate" type="text/html" title="Sydney Harbour Luderick" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/sydney-harbour-luderick</id><content type="html" xml:base="/2021/sydney-harbour-luderick/">&lt;p&gt;Went for a fish in Sydney Harbour with Beard this afternoon.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Arrived near the bottom of the low tide, water was murky which is
-good.  On the first drift I caught this luderick and we thought it
-would be a great afternoon. Unfortunately, nothing else happened
-for the rest of the afternoon. At least I successfully field tested
-a new hat - always a risky change.&lt;/p&gt;
-
-&lt;p&gt;I like them fried!&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/luderick-cooked.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">Went for a fish in Sydney Harbour with Beard this afternoon.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry></feed>

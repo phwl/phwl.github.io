@@ -233,7 +233,7 @@ qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.q
   <li>I used “elec3607” for all user names and passwords.</li>
   <li>For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).</li>
   <li>If you get a “Failed to install the base system” message, try a second time from the menu.</li>
-  <li>Select linux-image-armmp for the kernel.</li>
+  <li>Select linux-image-armmp-lpae for the kernel.</li>
   <li>Select targeted for initrd.</li>
   <li>For software to install, just choose “SSH server” and “standard system utilities” (the default).</li>
   <li>You will receive the message that GRUB installation failed. We will fix this later.</li>
@@ -243,32 +243,17 @@ qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.q
 <p>Extract the kernel and initrd from the disk image.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libguestfs-tools
 virt-ls -a debian-3607.qcow2 /boot/
-virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
-</code></pre></div></div>
-
-<p>Somehow, the accounts generated during the Debian installation process doesn’t work and 
-you can’t login. Thus I did the following (please let me know if you have a better way).</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
-</code></pre></div></div>
-<p>Then edit the root password so you don’t need one.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root::0:0:root:/root:/bin/bash	# /etc/passwd
-root::18719:0:99999:7:::		# /etc/shadow
-</code></pre></div></div>
-<p>and write back</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
+virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
 </code></pre></div></div>
 
 <p>Now you can run your Debian-Arm Linux:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
--initrd initrd.img-4.19.0-16-armmp -append 'root=/dev/vda2' \
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
+-initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' \
 -drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
 -soundhw hda \
 -nographic
 </code></pre></div></div>
 
-<p>(the <code class="language-plaintext highlighter-rouge">highmem=off</code> is only required in Windows 10 to work around a <a href="https://bugs.launchpad.net/qemu/+bug/1790975">PCIe conflict</a> bug)</p>
-
-<h2 id="install-packages-including-git-and">Install packages including git and</h2>
 
         
       </section>
@@ -341,7 +326,8 @@ root::18719:0:99999:7:::		# /etc/shadow
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2021/alsa/" class="pagination--pager" title="Programming using ALSA
+">Next</a>
     
   </nav>
 
@@ -355,6 +341,35 @@ root::18719:0:99999:7:::		# /etc/shadow
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/alsa/">
+        <img src=
+          
+            "/assets/images/2021/02/bbg-photo.jpg"
+          
+          alt="Programming using ALSA"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/alsa/" rel="permalink">Programming using ALSA
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This post describes how to write a simple ALSA program under Ubuntu.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -440,36 +455,6 @@ root::18719:0:99999:7:::		# /etc/shadow
     <p class="archive__item-excerpt" itemprop="description">This post describes how to connect the BeagleBone to a Silicon Labs
 Si5351
 i2c clock generator.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/connecting-beaglebone-to-internet/">
-        <img src=
-          
-            "/assets/images/2021/02/bbg-photo.jpg"
-          
-          alt="Connecting the Beaglebone to Internet"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/connecting-beaglebone-to-internet/" rel="permalink">Connecting the Beaglebone to Internet
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">This post describes how to connect the BeagleBone to the Internet via
-Ethernet on Windows and MacOS.
 </p>
   </article>
 </div>
