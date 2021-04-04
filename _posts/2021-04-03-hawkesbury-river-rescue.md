@@ -26,7 +26,7 @@ They guy's name was Dong and when he mentioned he was from Wollongong, I correct
 
 Since the outboard was still at the campsite, we thought it was very unlikely it had
 been stolen. They had just pulled it up high onto the shore. 
-They had called 000 who weren't interested in rescuing them. It was also
+They had called 000 (the Aussie equivalent of 911) who weren't interested in rescuing them. It was also
 a shame that my VHF marine radio was out of service with a dead battery so I couldn't
 use it to call Marine Rescue.  We said we would go fishing and come back for them.
 
