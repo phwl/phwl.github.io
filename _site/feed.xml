@@ -1,64 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T16:53:51+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Programming using ALSA</title><link href="/2021/alsa/" rel="alternate" type="text/html" title="Programming using ALSA" /><published>2021-04-03T14:38:23+11:00</published><updated>2021-04-03T14:38:23+11:00</updated><id>/2021/alsa</id><content type="html" xml:base="/2021/alsa/">&lt;p&gt;This post describes how to write a simple ALSA program under Ubuntu.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T21:32:12+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Programming using ALSA</title><link href="/2021/alsa/" rel="alternate" type="text/html" title="Programming using ALSA" /><published>2021-04-03T14:38:23+11:00</published><updated>2021-04-03T14:38:23+11:00</updated><id>/2021/alsa</id><content type="html" xml:base="/2021/alsa/">&lt;p&gt;This post describes how to write a simple ALSA program under Ubuntu.&lt;/p&gt;
 
 &lt;p&gt;First install the include files etc for ALSA.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libasound2-dev
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install alsa-utils libasound2-dev
 gcc -o rec rec.c -lasound
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
-&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
-(alternatively
-&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
-wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
-qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append &quot;console=ttyAMA0&quot; -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Use all of the defaults for the Debian installer.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I used “elec3607” for all user names and passwords.&lt;/li&gt;
-  &lt;li&gt;For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).&lt;/li&gt;
-  &lt;li&gt;If you get a “Failed to install the base system” message, try a second time from the menu.&lt;/li&gt;
-  &lt;li&gt;Select linux-image-armmp for the kernel.&lt;/li&gt;
-  &lt;li&gt;Select targeted for initrd.&lt;/li&gt;
-  &lt;li&gt;For software to install, just choose “SSH server” and “standard system utilities” (the default).&lt;/li&gt;
-  &lt;li&gt;You will receive the message that GRUB installation failed. We will fix this later.&lt;/li&gt;
-  &lt;li&gt;Exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; with “control-A x”.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Extract the kernel and initrd from the disk image.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libguestfs-tools
-virt-ls -a debian-3607.qcow2 /boot/
-virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp /boot/initrd.img-4.19.0-16-armmp .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Somehow, the accounts generated during the Debian installation process doesn’t work and 
-you can’t login. Thus I did the following (please let me know if you have a better way).&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virt-copy-out -a debian-3607.qcow2 /etc/passwd /etc/shadow .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then edit the root password so you don’t need one.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;root::0:0:root:/root:/bin/bash	# /etc/passwd
-root::18719:0:99999:7:::		# /etc/shadow
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;and write back&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virt-copy-in -a debian-3607.qcow2 passwd shadow /etc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run your Debian-Arm Linux:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt,highmem=off -kernel vmlinuz-4.19.0-16-armmp \
--initrd initrd.img-4.19.0-16-armmp -append &apos;root=/dev/vda2&apos; \
--drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
--soundhw hda \
--nographic
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;(the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;highmem=off&lt;/code&gt; is only required in Windows 10 to work around a &lt;a href=&quot;https://bugs.launchpad.net/qemu/+bug/1790975&quot;&gt;PCIe conflict&lt;/a&gt; bug)&lt;/p&gt;
-
-&lt;h2 id=&quot;install-packages-including-git-and&quot;&gt;Install packages including git and&lt;/h2&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to write a simple ALSA program under Ubuntu.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to write a simple ALSA program under Ubuntu.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
 using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
 
 &lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
@@ -102,12 +47,23 @@ virt-ls -a debian-3607.qcow2 /boot/
 virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Now you can run your Debian-Arm Linux:&lt;/p&gt;
+&lt;p&gt;Now you can run your Debian-Arm Linux from either Linux:&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
 -initrd initrd.img-4.19.0-16-armmp-lpae -append &apos;root=/dev/vda2&apos; \
 -drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
--soundhw hda \
+-device intel-hda -device hda-duplex \
 -nographic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;install-sudo-and-alsa&quot;&gt;Install sudo and ALSA&lt;/h2&gt;
+&lt;p&gt;Login as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt; (password is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt;) and then:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elec3607@debian:~$ su -
+Password: 
+root@debian:~# apt install sudo libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+Reading package lists... Done
+...
+usermod -G sudo elec3607
+shutdown now
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;

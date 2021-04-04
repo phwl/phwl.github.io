@@ -246,14 +246,24 @@ virt-ls -a debian-3607.qcow2 /boot/
 virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
 </code></pre></div></div>
 
-<p>Now you can run your Debian-Arm Linux:</p>
+<p>Now you can run your Debian-Arm Linux from either Linux:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
 -initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' \
 -drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
--soundhw hda \
+-device intel-hda -device hda-duplex \
 -nographic
 </code></pre></div></div>
 
+<h2 id="install-sudo-and-alsa">Install sudo and ALSA</h2>
+<p>Login as <code class="language-plaintext highlighter-rouge">elec3607</code> (password is <code class="language-plaintext highlighter-rouge">elec3607</code>) and then:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elec3607@debian:~$ su -
+Password: 
+root@debian:~# apt install sudo libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+Reading package lists... Done
+...
+usermod -G sudo elec3607
+shutdown now
+</code></pre></div></div>
 
         
       </section>
