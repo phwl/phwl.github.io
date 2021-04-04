@@ -39,8 +39,8 @@ in the river due to the recent floods. The water was a dark brown colour.
 {% include figure image_path="/assets/images/2021/04/IMG_7686.jpeg" caption="" %}
 
 After fishing for a couple of hours, I called them and said we would be there in 20
-min. During the call, I hooked a nice flathead but it broke the line within inches
-of the landing net. That's the second consecutive flathead I've lost right at
+min. During the call, I hooked a nice flathead but it bit through the leader within inches
+of the boat. That's the second consecutive flathead I've lost right at
 the net.
 
 When we arrived, everything was already packed in the kayak. Warren and I were
@@ -57,7 +57,7 @@ starting to get confident and travelling at about 4 knots.
 {% include figure image_path="/assets/images/2021/04/IMG_7690.jpeg" caption="" %}
 
 Then the kayak flipped over. We tried to get it upright but it was too heavy to 
-do so from the boat. We carefully towed it to the beach but lost the outboard.
+do so from the boat. We carefully towed it to the beach, going so slow that at one point Warren asked if we were moving forward. Unfortunately, at some point we lost the outboard.
 We took everything out of the kayak and let the water drain away a bit before putting
 everything in the boat. The tent took three people to lift.
 {% include figure image_path="/assets/images/2021/04/IMG_7692.jpeg" caption="" %}
