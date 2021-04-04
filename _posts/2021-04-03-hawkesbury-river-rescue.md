@@ -6,9 +6,10 @@ title: Hawkesbury River Rescue
 use_math: true
 classes: wide
 categories:
-- academia
+- fishing
 tags:
-- embedded
+- australia
+- hawkesbury
 header:
   teaser: /assets/images/2021/04/IMG_7692.jpeg
 ---
