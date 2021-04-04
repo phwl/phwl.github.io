@@ -21,8 +21,7 @@ and launched there. That put us about an hour behind.
 
 On one of the camping islands, I saw the odd scene below of a really large tent and
 a small kayak. We chatted with them for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.
-They guy's name was Dong and he was from Wollongong. I correctly guessed he worked
-at Wollongong University.
+They guy's name was Dong and when he mentioned he was from Wollongong, I correctly guessed he worked at Wollongong University.
 
 Since the outboard was still at the campsite, we thought it was very unlikely it had
 been stolen. They had just pulled it up high onto the shore. 
