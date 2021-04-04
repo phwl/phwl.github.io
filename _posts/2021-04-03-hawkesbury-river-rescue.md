@@ -13,8 +13,7 @@ tags:
 header:
   teaser: /assets/images/2021/04/IMG_7692.jpeg
 ---
-It started off as a rather routine Easter fishing day trip to Mooney Mooney with
-Warren.
+It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.
 
 It was a very foggy morning, worse than I've ever seen it on the Hawkesbury.
 Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.
