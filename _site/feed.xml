@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-05T07:48:16+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-05T09:05:58+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
 
 &lt;p&gt;It was a very foggy morning, worse than I’ve ever seen it on the Hawkesbury.
 Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.&lt;/p&gt;
@@ -116,7 +116,7 @@ parallel.&lt;/p&gt;
 &lt;p&gt;Following the rescue we managed to catch one more bream in the middle of the day before going home. It was quite
 an eventful trip and we made some new friends. Dong certainly took his misfortunes with better humour than I would have!&lt;/p&gt;
 
-&lt;p&gt;Postscript. Dong didn’t have the worst luck, &lt;a href=&quot;https://www.smh.com.au/national/nsw/hawkesbury-river-boat-explosion-20210404-p57gfv.html&quot;&gt;these people&lt;/a&gt; had their boat explode at Brooklyn.&lt;/p&gt;
+&lt;p&gt;Postscript. Dong didn’t do badly compared to &lt;a href=&quot;https://www.smh.com.au/national/nsw/hawkesbury-river-boat-explosion-20210404-p57gfv.html&quot;&gt;these people&lt;/a&gt; who had their boat explode at Brooklyn.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot;&gt;
@@ -177,15 +177,23 @@ virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/init
 -nographic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;install-sudo-and-alsa&quot;&gt;Install sudo and ALSA&lt;/h2&gt;
-&lt;p&gt;Login as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt; (password is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt;) and then:&lt;/p&gt;
+&lt;h2 id=&quot;install-sudo-and-put-elec3607-in-the-sudo-group&quot;&gt;Install sudo and put ELEC3607 in the sudo group&lt;/h2&gt;
+&lt;p&gt;Login as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt; (password is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt;) and execute the following commands.
+Note that the basic distribution of Debian does not include sudo.&lt;/p&gt;
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elec3607@debian:~$ su -
 Password: 
-root@debian:~# apt install sudo libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+root@debian:~# apt install sudo 
 Reading package lists... Done
 ...
 usermod -G sudo elec3607
 shutdown now
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;install-everything-else&quot;&gt;Install everything else&lt;/h2&gt;
+&lt;p&gt;The complete list of Debian packages is available &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;here&lt;/a&gt;.
+For example to install the alsa and pulseaudio packages.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;

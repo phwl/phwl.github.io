@@ -254,15 +254,23 @@ virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/init
 -nographic
 </code></pre></div></div>
 
-<h2 id="install-sudo-and-alsa">Install sudo and ALSA</h2>
-<p>Login as <code class="language-plaintext highlighter-rouge">elec3607</code> (password is <code class="language-plaintext highlighter-rouge">elec3607</code>) and then:</p>
+<h2 id="install-sudo-and-put-elec3607-in-the-sudo-group">Install sudo and put ELEC3607 in the sudo group</h2>
+<p>Login as <code class="language-plaintext highlighter-rouge">elec3607</code> (password is <code class="language-plaintext highlighter-rouge">elec3607</code>) and execute the following commands.
+Note that the basic distribution of Debian does not include sudo.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elec3607@debian:~$ su -
 Password: 
-root@debian:~# apt install sudo libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+root@debian:~# apt install sudo 
 Reading package lists... Done
 ...
 usermod -G sudo elec3607
 shutdown now
+</code></pre></div></div>
+
+<h2 id="install-everything-else">Install everything else</h2>
+<p>The complete list of Debian packages is available <a href="https://www.debian.org/distrib/packages">here</a>.
+For example to install the alsa and pulseaudio packages.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
 </code></pre></div></div>
 
         

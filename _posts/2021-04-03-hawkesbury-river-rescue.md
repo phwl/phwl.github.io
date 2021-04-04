@@ -75,7 +75,7 @@ parallel.
 Following the rescue we managed to catch one more bream in the middle of the day before going home. It was quite
 an eventful trip and we made some new friends. Dong certainly took his misfortunes with better humour than I would have! 
 
-Postscript. Dong didn't have the worst luck, [these people](https://www.smh.com.au/national/nsw/hawkesbury-river-boat-explosion-20210404-p57gfv.html) had their boat explode at Brooklyn.
+Postscript. Dong didn't do badly compared to [these people](https://www.smh.com.au/national/nsw/hawkesbury-river-boat-explosion-20210404-p57gfv.html) who had their boat explode at Brooklyn.
 
 {% include figure image_path="/assets/images/2021/04/IMG_7694.jpeg" caption="" %}
 

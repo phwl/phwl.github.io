@@ -68,14 +68,23 @@ qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
 -nographic
 ```
 
-## Install sudo and ALSA
-Login as ```elec3607``` (password is ```elec3607```) and then:
+## Install sudo and put ELEC3607 in the sudo group
+Login as ```elec3607``` (password is ```elec3607```) and execute the following commands.
+Note that the basic distribution of Debian does not include sudo.
 ```
 elec3607@debian:~$ su -
 Password: 
-root@debian:~# apt install sudo libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+root@debian:~# apt install sudo 
 Reading package lists... Done
 ...
 usermod -G sudo elec3607
 shutdown now
+```
+
+## Install everything else
+The complete list of Debian packages is available [here](https://www.debian.org/distrib/packages).
+For example to install the alsa and pulseaudio packages.
+
+```
+sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
 ```
