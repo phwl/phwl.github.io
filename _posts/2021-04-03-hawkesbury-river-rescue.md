@@ -73,8 +73,7 @@ parallel.
 {% include figure image_path="/assets/images/2021/04/IMG_7693.jpeg" caption="" %}
 
 Following the rescue we managed to catch one more bream in the middle of the day before going home. It was quite
-an eventful trip and we made some new friends. Dong certainly took his misfortunes better
-than I would have!
+an eventful trip and we made some new friends. Dong certainly took his misfortunes with better humour than I would have!
 
 {% include figure image_path="/assets/images/2021/04/IMG_7694.jpeg" caption="" %}
 
