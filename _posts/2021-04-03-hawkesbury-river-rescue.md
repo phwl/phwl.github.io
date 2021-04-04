@@ -35,7 +35,8 @@ The fishing was tough but we got a nice bream just as we were about to change sp
 
 {% include figure image_path="/assets/images/2021/04/IMG_7682.jpeg" caption="" %}
 
-It became a nice day as the fog cleared.
+It became a nice day as the fog cleared. There were many logs and other debris
+in the river due to the recent floods. The water was a dark brown colour.
 {% include figure image_path="/assets/images/2021/04/IMG_7686.jpeg" caption="" %}
 
 After fishing for a couple of hours, I called them and said we would be there in 20
