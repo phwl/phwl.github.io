@@ -1,9 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T21:32:12+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Programming using ALSA</title><link href="/2021/alsa/" rel="alternate" type="text/html" title="Programming using ALSA" /><published>2021-04-03T14:38:23+11:00</published><updated>2021-04-03T14:38:23+11:00</updated><id>/2021/alsa</id><content type="html" xml:base="/2021/alsa/">&lt;p&gt;This post describes how to write a simple ALSA program under Ubuntu.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-04T23:20:36+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with
+Warren.&lt;/p&gt;
 
-&lt;p&gt;First install the include files etc for ALSA.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install alsa-utils libasound2-dev
-gcc -o rec rec.c -lasound
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to write a simple ALSA program under Ubuntu.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
+&lt;p&gt;It was a very foggy morning, worse than I’ve ever seen it on the Hawkesbury.
+Near the boat ramp, a sign said that it was closed. Made a detour to Brooklyn 
+and launched there. That put us about an hour behind.&lt;/p&gt;
+
+&lt;p&gt;On one of the camping islands, I saw the odd scene below of a really large tent and
+a small kayak. We chatted with the guy for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.
+Since the outboard was still at the campsite, we thought it was very unlikely it had
+been stolen. They had just pull it up high onto the shore. 
+They had called 000 who weren’t interested in rescuing them. It was also
+a shame that my VHF marine radio was out of service with a dead battery so I couldn’t
+use it to call Marine Rescue.  We said we would go fishing and come back for them.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7681.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7681.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;The fishing was a bit tough but we got a nice bream as we were changing spots.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7682.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7682.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;It became a nice day as the fog cleared.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7686.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7686.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;After fishing for a couple of hours, I called them and said we would be there in 20
+min. During the call, I hooked a nice flathead but it broke the line about a meter
+from the boat. That’s the second consecutive flathead I’ve lost right near the boat.&lt;/p&gt;
+
+&lt;p&gt;When we arrived, Dong and Lin had packed everything in the kayak. Warren and I were
+a bit worried about all the stuff in it, including an outboard.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7687.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7687.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Anyway, Dong said not to worry so off we went.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7688.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7688.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Another boat created a large wake, which we carefully negotiated. We were just 
+starting to get confident and travelling at about 4 knots.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7690.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7690.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then the kayak flipped over. We tried to get it upright but it was too heavy to 
+do so from the boat. We carefully towed it to the beach but lost the outboard.
+We took everything out of the kayak and let the water drain away a bit before putting
+it in the boat. The tent took three people to lift.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7692.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7692.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;With nothing in the kayak, we got the boat up to about 15 knots and had the boat and
+kayak on a plane when the tow rope snapped at the kayak attachment point. Definitely
+a comedy of errors. We decided not to push things any further and limped back at
+4 knots.&lt;/p&gt;
+
+&lt;p&gt;When we arrived at the Mooney Mooney boat ramp (which was still closed), a marine rescue boat prevented us from docking as they were towing a broken boat. They took about 20 minutes to do this simple operation and we could easily have gone in and unloaded all our stuff while they were using the jetty.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7693.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7693.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Managed to catch one more bream in the middle of the day before going home. It was quite
+an eventful trip and we made some new friends. Dong certainly took his misfortune better
+than I would!&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
 using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
 
 &lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;

@@ -1,7 +1,0 @@
-I"K<p>This post describes how to write a simple ALSA program under Ubuntu.</p>
-
-<p>First install the include files etc for ALSA.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install alsa-utils libasound2-dev
-gcc -o rec rec.c -lasound
-</code></pre></div></div>
-:ET
