@@ -19,7 +19,7 @@ It was a very foggy morning, worse than I've ever seen it on the Hawkesbury.
 Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.
 
 On one of the islands, we saw the odd scene of a really large tent and
-a really small kayak. We chatted with the guy, whose name was Dong, for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.
+a really small kayak. We chatted with the guy (whose name was Dong), and his wife Lin, for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.
 
 Since the outboard was still at the campsite, we thought it was very unlikely it had
 been stolen. They had just pulled it up high onto the shore. 
