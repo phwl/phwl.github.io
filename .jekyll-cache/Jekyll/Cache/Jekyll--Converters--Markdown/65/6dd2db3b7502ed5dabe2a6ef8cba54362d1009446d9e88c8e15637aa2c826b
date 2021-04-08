@@ -1,0 +1,2 @@
+I"><p>This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using <code class="language-plaintext highlighter-rouge">qemu</code> and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</p>
+:ET

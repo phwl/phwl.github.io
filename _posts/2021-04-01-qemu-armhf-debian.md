@@ -1,8 +1,9 @@
 ---
 author: phwl
 comments: true
+toc: true
 date: 2021-04-01 11:32:43 AEST
-title: Debian on armhf emulation via QEMU
+title: Debian on ARM via QEMU
 use_math: true
 classes: wide
 categories:
@@ -12,11 +13,42 @@ tags:
 header:
   teaser: /assets/images/2021/02/bbg-photo.jpg
 ---
-This post describes how to emulate an Arm hard float (armhf) using
-using ```qemu``` and install Debian Linux on the emulator. 
+This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using ```qemu``` and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.
 
 I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn't work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.
 
+# 1. For (64-bit) aarch64
+I used the lastest version of [qemu](https://github.com/qemu/qemu) from github
+and created a 32G qcow2 image (there isn't any disk space advantage to specifying 16G but it is a pain if it runs out).
+
+```
+$ qemu-system-aarch64 --version
+QEMU emulator version 5.2.92 (v6.0.0-rc2)
+Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
+$ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G 
+$ wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
+$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
+$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.0-16-arm64     -kernel vmlinuz-4.19.0-16-arm64    -append "root=/dev/sda2 console=ttyAMA0"     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
+```
+ *  No common CD-ROM drive was detected: Manually select to use /dev/vdb
+
+```
+$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 -kernel vmlinuz-4.19.0-16-arm64 \
+   -append "root=/dev/sda2 console=ttyAMA0" -global virtio-blk-device.scsi=off -device virtio-scsi-device,id=scsi \
+   -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none -device scsi-hd,drive=rootimg \
+   -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
+```
+
+Then you can login as root and
+```
+# apt update
+# apt install sudo build-essential libasound2 pulseaudio pavucontrol
+```
+
+
+# 2. For (32-bit) armhf
 
 ## Install Debian on qemu-system-arm
 Install qemu.
@@ -27,13 +59,13 @@ mkdir qemu; cd qemu
 sudo apt install qemu-system-arm
 ```
 
-Download [initrd.gz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz), [vmlinuz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz) and
+Download [initrd.gz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz), [vmlinuz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz) and
 [debian-10.9.0-armhf-netinst.iso](http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso)
 (alternatively
 [debian-10.9.0-armhf-xfce-CD-1.iso](http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso)).
 ```
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
 wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
 ```
 
@@ -47,7 +79,7 @@ Use all of the defaults for the Debian installer.
  * For partitioning select "Guided - use entire disk". Note that this chooses /dev/vda2 for / (we will use this later).
  * If you get a "Failed to install the base system" message, try a second time from the menu.
  * Select linux-image-armmp-lpae for the kernel.
- * Select targeted for initrd.
+ * Select targeted for initrd **(This was a mistake, choose generic)**
  * For software to install, just choose "SSH server" and "standard system utilities" (the default).
  * You will receive the message that GRUB installation failed. We will fix this later.
  * Exit ```qemu``` with "control-A x".
@@ -61,11 +93,9 @@ virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/init
 
 Now you can run your Debian-Arm Linux from either Linux:
 ```
-qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
--initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' \
--drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
--device intel-hda -device hda-duplex \
--nographic
+qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae \
+-append 'root=/dev/vda2' -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd \
+-nographic -net user,hostfwd=tcp::10022-:22 -net nic
 ```
 
 ## Install sudo and put ELEC3607 in the sudo group

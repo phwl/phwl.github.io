@@ -1,10 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-05T09:05:58+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-08T15:23:43+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Debian on armhf emulation via QEMU audio support</title><link href="/2021/qemu-armhf-debian-audio/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU audio support" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-armhf-debian-audio</id><content type="html" xml:base="/2021/qemu-armhf-debian-audio/">&lt;p&gt;This post describes how to use audio on Arm hard float (armhf) under
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux.&lt;/p&gt;
+
+&lt;p&gt;I used Virtualbox with Ubuntu 20.04.2 but any Debian/Ubuntu distribution can be used with minor changes.&lt;/p&gt;
+
+&lt;p&gt;Ubuntu host&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;First create a debian distribution with the generic initrd.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append &apos;root=/dev/vda2&apos; -drive if=virtio,file=debian-3607-fullinitrd.qcow2,format=qcow2,id=hd  -nographic -soundhw all
+
+sudo apt install alsa-tools pulseaudio pavucontrol libasound2 alsa-utils
+modprobe snd-hda-intel
+modprobe snd-hda-core
+modprobe ac97_bus 
+modprobe snd-ac97-codec
+alsactl init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append ‘root=/dev/vda2’ -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd -nographic -net user,hostfwd=tcp::10022-:22 -net nic  -device ich9-intel-hda,addr=1f.1 -audiodev pa,id=snd0 -device hda-output,audiodev=snd0
+https://www.debian.org/doc/manuals/debian-kernel-handbook/ch-common-tasks.html
+apt install libssl-dev&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to use audio on Arm hard float (armhf) under qemu Debian Linux.</summary></entry><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
 
 &lt;p&gt;It was a very foggy morning, worse than I’ve ever seen it on the Hawkesbury.
 Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.&lt;/p&gt;
 
 &lt;p&gt;On one of the islands, we saw the odd scene of a really large tent and
-a really small kayak. We chatted with the guy, whose name was Dong, for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.&lt;/p&gt;
+a really small kayak. We chatted with the guy (whose name was Dong), and his wife Lin, for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.&lt;/p&gt;
 
 &lt;p&gt;Since the outboard was still at the campsite, we thought it was very unlikely it had
 been stolen. They had just pulled it up high onto the shore. 
@@ -125,10 +146,40 @@ an eventful trip and we made some new friends. Dong certainly took his misfortun
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="hawkesbury" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry><entry><title type="html">Debian on armhf emulation via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an Arm hard float (armhf) using
-using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator.&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="hawkesbury" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry><entry><title type="html">Debian on ARM via QEMU</title><link href="/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on ARM via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>/2021/qemu-armhf-debian</id><content type="html" xml:base="/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.&lt;/p&gt;
 
 &lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-for-64-bit-aarch64&quot;&gt;1. For (64-bit) aarch64&lt;/h1&gt;
+&lt;p&gt;I used the lastest version of &lt;a href=&quot;https://github.com/qemu/qemu&quot;&gt;qemu&lt;/a&gt; from github
+and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ qemu-system-aarch64 --version
+QEMU emulator version 5.2.92 (v6.0.0-rc2)
+Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
+$ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G 
+$ wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
+$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
+$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.0-16-arm64     -kernel vmlinuz-4.19.0-16-arm64    -append &quot;root=/dev/sda2 console=ttyAMA0&quot;     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;No common CD-ROM drive was detected: Manually select to use /dev/vdb&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 -kernel vmlinuz-4.19.0-16-arm64 \
+   -append &quot;root=/dev/sda2 console=ttyAMA0&quot; -global virtio-blk-device.scsi=off -device virtio-scsi-device,id=scsi \
+   -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none -device scsi-hd,drive=rootimg \
+   -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then you can login as root and&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt update
+# apt install sudo build-essential libasound2 pulseaudio pavucontrol
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;2-for-32-bit-armhf&quot;&gt;2. For (32-bit) armhf&lt;/h1&gt;
 
 &lt;h2 id=&quot;install-debian-on-qemu-system-arm&quot;&gt;Install Debian on qemu-system-arm&lt;/h2&gt;
 &lt;p&gt;Install qemu.&lt;/p&gt;
@@ -138,12 +189,12 @@ mkdir qemu; cd qemu
 sudo apt install qemu-system-arm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
+&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
 &lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
 (alternatively
 &lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/initrd.gz
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/cdrom/vmlinuz
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
 wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -157,7 +208,7 @@ qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.q
   &lt;li&gt;For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).&lt;/li&gt;
   &lt;li&gt;If you get a “Failed to install the base system” message, try a second time from the menu.&lt;/li&gt;
   &lt;li&gt;Select linux-image-armmp-lpae for the kernel.&lt;/li&gt;
-  &lt;li&gt;Select targeted for initrd.&lt;/li&gt;
+  &lt;li&gt;Select targeted for initrd &lt;strong&gt;(This was a mistake, choose generic)&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;For software to install, just choose “SSH server” and “standard system utilities” (the default).&lt;/li&gt;
   &lt;li&gt;You will receive the message that GRUB installation failed. We will fix this later.&lt;/li&gt;
   &lt;li&gt;Exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; with “control-A x”.&lt;/li&gt;
@@ -170,11 +221,9 @@ virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/init
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now you can run your Debian-Arm Linux from either Linux:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae \
--initrd initrd.img-4.19.0-16-armmp-lpae -append &apos;root=/dev/vda2&apos; \
--drive if=virtio,file=debian-3607.qcow2,format=qcow2,id=hd \
--device intel-hda -device hda-duplex \
--nographic
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae \
+-append &apos;root=/dev/vda2&apos; -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd \
+-nographic -net user,hostfwd=tcp::10022-:22 -net nic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;install-sudo-and-put-elec3607-in-the-sudo-group&quot;&gt;Install sudo and put ELEC3607 in the sudo group&lt;/h2&gt;
@@ -194,7 +243,7 @@ shutdown now
 For example to install the alsa and pulseaudio packages.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an Arm hard float (armhf) using using qemu and install Debian Linux on the emulator.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot;&gt;
@@ -1840,112 +1889,4 @@ Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
 debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry><entry><title type="html">Lake Eucumbene - who would go trout fishing during a heatwave?</title><link href="/2021/lake-eucumbene/" rel="alternate" type="text/html" title="Lake Eucumbene - who would go trout fishing during a heatwave?" /><published>2021-01-17T22:43:54+11:00</published><updated>2021-01-17T22:43:54+11:00</updated><id>/2021/lake-eucumbene</id><content type="html" xml:base="/2021/lake-eucumbene/">&lt;p&gt;Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/eucumbene1.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/eucumbene1.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;Each day the maximum temperture was 32 C and I was fishing from the
-bank in my chest waders. Here are more photos of Buckenderra.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/buckenderra1.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/buckenderra1.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/buckenderra2.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/buckenderra2.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Didn’t really have enough time to fish properly on the first evening as I 
-didn’t get to the water until after dark and couldn’t see where to fish.
-The following day we went to Jindabyne, mainly to get out of the heat.
-The Red Door Roastery was very busy mid-morning.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/jindabyne1.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/jindabyne1.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This is the view from Mount Gladstone Lookout.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/mtgladstone1.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/mtgladstone1.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The fishing was very tough and nobody that I spoke to at the caravan
-park had caught anything. In the evening, fished some slightly
-deeper water which I was hoping would be cooler. I was having a
-quiet, contemplative time when the peace was disturbed by a fish
-taking my Mrs Simpson (fly) so violently, it made me jump. The fish ran
-towards me and I had to back pedal to keep the line tight.  It
-tried to leap out of the water two or three times but didn’t get 
-airborne.  After a brief struggle I beached this fat rainbow
-trout. The autopsy showed it had been feeding on stick caddis and flying
-ants. I had a second hit that evening but unfortunately didn’t hook up.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/eucumbene2.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/eucumbene2.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;As I was walking around in the dark, I realised the importance of having decent torches. It is crucial to have something reliable, convenient and fit for purpose. I had brought a 18650 torch (Olight S2RII) and an AA headlamp (Zebralight H52). The first night I couldn’t be bothered to find the H52 but that was a mistake. Changing flies in the dark was much more difficult with a torch in my mouth. It’s not so bad with saltwater fishing where the hooks are much bigger.
-The following evening, the headlamp was very much appreciated. It was a pretty bright night so I didn’t need the S2RII to find the car, but the combination of the two is what I have been using for a while now. I like having the redundancy and both serve a different purpose. I also like how I can charge either of them now via USB using the Olight charger (S2RII) or Olight Universal USB Charger (AA). I haven’t had the S2RII ever need charging in the middle of a trip but the H52 has run out before.&lt;/p&gt;
-
-&lt;p&gt;Dried the fish and covered them with salt, including the cavity. On the bottom of a foil-lined wok I added: 1/2 cup rice, 5 tablespoons of tea and 6 bay leaves.
-Smoked for 30 minutes.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/IMG_7536.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/IMG_7536.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/IMG_7541.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/IMG_7541.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;This sticker says it all.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/01/eucumbene3.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/01/eucumbene3.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="eucumbene" /><summary type="html">Made a trip to Buckenderra Holiday Village on Lake Eucumbene for a very hot Australia Day weekend.</summary></entry></feed>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry></feed>

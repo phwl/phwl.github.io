@@ -1,0 +1,23 @@
+I"�<p>This post describes how to use audio on Arm hard float (armhf) under
+<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux.</p>
+
+<p>I used Virtualbox with Ubuntu 20.04.2 but any Debian/Ubuntu distribution can be used with minor changes.</p>
+
+<p>Ubuntu host</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<p>First create a debian distribution with the generic initrd.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' -drive if=virtio,file=debian-3607-fullinitrd.qcow2,format=qcow2,id=hd  -nographic -soundhw all
+
+sudo apt install alsa-tools pulseaudio pavucontrol libasound2 alsa-utils
+modprobe snd-hda-intel
+modprobe snd-hda-core
+modprobe ac97_bus 
+modprobe snd-ac97-codec
+alsactl init
+</code></pre></div></div>
+
+<p>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append ‘root=/dev/vda2’ -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd -nographic -net user,hostfwd=tcp::10022-:22 -net nic  -device ich9-intel-hda,addr=1f.1 -audiodev pa,id=snd0 -device hda-output,audiodev=snd0
+https://www.debian.org/doc/manuals/debian-kernel-handbook/ch-common-tasks.html
+apt install libssl-dev</p>
+:ET
