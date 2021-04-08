@@ -17,7 +17,7 @@ This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 
 
 I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn't work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.
 
-# 1. For (64-bit) aarch64
+# 1a. For (64-bit) aarch64
 I used the lastest version of [qemu](https://github.com/qemu/qemu) from github
 and created a 32G qcow2 image (there isn't any disk space advantage to specifying 16G but it is a pain if it runs out).
 
@@ -44,11 +44,11 @@ $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16
 Then you can login as root and
 ```
 # apt update
-# apt install sudo build-essential libasound2 pulseaudio pavucontrol
+# apt 
 ```
 
 
-# 2. For (32-bit) armhf
+# 1b. For (32-bit) armhf
 
 ## Install Debian on qemu-system-arm
 Install qemu.
@@ -98,7 +98,7 @@ qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-
 -nographic -net user,hostfwd=tcp::10022-:22 -net nic
 ```
 
-## Install sudo and put ELEC3607 in the sudo group
+# 2. Install sudo and put ELEC3607 in the sudo group
 Login as ```elec3607``` (password is ```elec3607```) and execute the following commands.
 Note that the basic distribution of Debian does not include sudo.
 ```
@@ -116,5 +116,5 @@ The complete list of Debian packages is available [here](https://www.debian.org/
 For example to install the alsa and pulseaudio packages.
 
 ```
-sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
+sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol
 ```

@@ -206,8 +206,8 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
               <ul class="toc__menu">
-  <li><a href="#for-64-bit-aarch64">For (64-bit) aarch64</a></li>
-  <li><a href="#for-32-bit-armhf">For (32-bit) armhf</a>
+  <li><a href="#1-for-64-bit-aarch64">1. For (64-bit) aarch64</a></li>
+  <li><a href="#2-for-32-bit-armhf">2. For (32-bit) armhf</a>
     <ul>
       <li><a href="#install-debian-on-qemu-system-arm">Install Debian on qemu-system-arm</a></li>
       <li><a href="#install-sudo-and-put-elec3607-in-the-sudo-group">Install sudo and put ELEC3607 in the sudo group</a></li>
@@ -222,7 +222,7 @@
 
 <p>I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.</p>
 
-<h1 id="for-64-bit-aarch64">For (64-bit) aarch64</h1>
+<h1 id="1-for-64-bit-aarch64">1. For (64-bit) aarch64</h1>
 <p>I used the lastest version of <a href="https://github.com/qemu/qemu">qemu</a> from github
 and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).</p>
 
@@ -251,7 +251,7 @@ $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16
 # apt install sudo build-essential libasound2 pulseaudio pavucontrol
 </code></pre></div></div>
 
-<h1 id="for-32-bit-armhf">For (32-bit) armhf</h1>
+<h1 id="2-for-32-bit-armhf">2. For (32-bit) armhf</h1>
 
 <h2 id="install-debian-on-qemu-system-arm">Install Debian on qemu-system-arm</h2>
 <p>Install qemu.</p>
