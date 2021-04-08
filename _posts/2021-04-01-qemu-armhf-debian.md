@@ -37,10 +37,11 @@ $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.
 
 ```bash
 $ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 -kernel vmlinuz-4.19.0-16-arm64 \
-   -append "root=/dev/sda2 console=ttyAMA0" -global virtio-blk-device.scsi=off -device virtio-scsi-device,id=scsi \
-   -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none -device scsi-hd,drive=rootimg \
-   -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
+
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 \
+    -kernel vmlinuz-4.19.0-16-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
+    -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
+    -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
 ```
 
 Then you can login as root and

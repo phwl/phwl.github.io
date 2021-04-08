@@ -241,10 +241,11 @@ Copyright <span class="o">(</span>c<span class="o">)</span> 2003-2021 Fabrice Be
 </ul>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>virt-copy-out <span class="nt">-a</span> debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 <span class="nb">.</span>
-<span class="nv">$ </span>qemu-system-aarch64 <span class="nt">-M</span> virt <span class="nt">-cpu</span> cortex-a53 <span class="nt">-m</span> 1G <span class="nt">-initrd</span> initrd.img-4.19.0-16-arm64 <span class="nt">-kernel</span> vmlinuz-4.19.0-16-arm64 <span class="se">\</span>
-   <span class="nt">-append</span> <span class="s2">"root=/dev/sda2 console=ttyAMA0"</span> <span class="nt">-global</span> virtio-blk-device.scsi<span class="o">=</span>off <span class="nt">-device</span> virtio-scsi-device,id<span class="o">=</span>scsi <span class="se">\</span>
-   <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-3607-aarch64.qcow2,id<span class="o">=</span>rootimg,cache<span class="o">=</span>unsafe,if<span class="o">=</span>none <span class="nt">-device</span> scsi-hd,drive<span class="o">=</span>rootimg <span class="se">\</span>
-   <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic <span class="nt">-nographic</span> <span class="nt">-device</span> intel-hda <span class="nt">-device</span> hda-duplex
+
+<span class="nv">$ </span>qemu-system-aarch64 <span class="nt">-M</span> virt <span class="nt">-cpu</span> cortex-a53 <span class="nt">-m</span> 1G <span class="nt">-initrd</span> initrd.img-4.19.0-16-arm64 <span class="se">\</span>
+    <span class="nt">-kernel</span> vmlinuz-4.19.0-16-arm64 <span class="nt">-append</span> <span class="s2">"root=/dev/vda2 console=ttyAMA0"</span> <span class="se">\</span>
+    <span class="nt">-drive</span> <span class="k">if</span><span class="o">=</span>virtio,file<span class="o">=</span>debian-3607-aarch64.qcow2,format<span class="o">=</span>qcow2,id<span class="o">=</span>hd <span class="se">\</span>
+    <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic <span class="nt">-nographic</span> <span class="nt">-device</span> intel-hda <span class="nt">-device</span> hda-duplex
 </code></pre></div></div>
 
 <p>Then you can login as root and</p>
