@@ -1,0 +1,10 @@
+I"ç<ul class="toc__menu">
+  <li><a href="#1-create-qemu-image">1. Create QEMU Image</a>
+    <ul>
+      <li><a href="#11-for-64-bit-aarch64">1.1. For (64-bit) aarch64</a></li>
+      <li><a href="#12-for-32-bit-armhf">1.2. For (32-bit) armhf</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-install-sudo-and-put-elec3607-in-the-sudo-group">2. Install sudo and put ELEC3607 in the sudo group</a></li>
+</ul>
+:ET

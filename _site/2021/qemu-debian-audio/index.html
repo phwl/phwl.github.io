@@ -30,19 +30,19 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Debian on armhf emulation via QEMU audio support - Life, the Universe and Fishing</title>
-<meta name="description" content="This post describes how to use audio on Arm hard float (armhf) underqemu Debian Linux.">
+<!-- begin _includes/seo.html --><title>Audio configuration under Debian QEMU - Life, the Universe and Fishing</title>
+<meta name="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Debian on armhf emulation via QEMU audio support">
-<meta property="og:url" content="/2021/qemu-armhf-debian-audio/">
+<meta property="og:title" content="Audio configuration under Debian QEMU">
+<meta property="og:url" content="/2021/qemu-debian-audio/">
 
 
-  <meta property="og:description" content="This post describes how to use audio on Arm hard float (armhf) underqemu Debian Linux.">
+  <meta property="og:description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
 
 
 
@@ -63,7 +63,7 @@
   
 
 
-<link rel="canonical" href="/2021/qemu-armhf-debian-audio/">
+<link rel="canonical" href="/2021/qemu-debian-audio/">
 
 
 
@@ -186,15 +186,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Debian on armhf emulation via QEMU audio support">
-    <meta itemprop="description" content="This post describes how to use audio on Arm hard float (armhf) underqemu Debian Linux.">
+    <meta itemprop="headline" content="Audio configuration under Debian QEMU">
+    <meta itemprop="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
     <meta itemprop="datePublished" content="April 06, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Debian on armhf emulation via QEMU audio support
+          <h1 id="page-title" class="page__title" itemprop="headline">Audio configuration under Debian QEMU
 </h1>
           
         </header>
@@ -202,28 +202,69 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This post describes how to use audio on Arm hard float (armhf) under
-<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux.</p>
+        <p>This post describes how to use audio on aarch64 ARM under
+<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
 
-<p>I used Virtualbox with Ubuntu 20.04.2 but any Debian/Ubuntu distribution can be used with minor changes.</p>
+<p>Install the alsa and pulseaudio packages.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs
+<span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
+</code></pre></div></div>
+<p>Then you have to log out and log in again.</p>
 
-<p>Ubuntu host</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
-
-<p>First create a debian distribution with the generic initrd.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append 'root=/dev/vda2' -drive if=virtio,file=debian-3607-fullinitrd.qcow2,format=qcow2,id=hd  -nographic -soundhw all
-
-sudo apt install alsa-tools pulseaudio pavucontrol libasound2 alsa-utils
-modprobe snd-hda-intel
-modprobe snd-hda-core
-modprobe ac97_bus 
-modprobe snd-ac97-codec
-alsactl init
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>aplay <span class="nt">-l</span>
+<span class="k">****</span> List of PLAYBACK Hardware Devices <span class="k">****</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 3: HDMI 0 <span class="o">[</span>HDMI 0]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 7: HDMI 1 <span class="o">[</span>HDMI 1]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 8: HDMI 2 <span class="o">[</span>HDMI 2]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 9: HDMI 3 <span class="o">[</span>HDMI 3]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 10: HDMI 4 <span class="o">[</span>HDMI 4]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 11: HDMI 5 <span class="o">[</span>HDMI 5]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 12: HDMI 6 <span class="o">[</span>HDMI 6]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 1: Device <span class="o">[</span>Plugable USB Audio Device], device 0: USB Audio <span class="o">[</span>USB Audio]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 2: Generic <span class="o">[</span>HD-Audio Generic], device 0: ALC1220 Analog <span class="o">[</span>ALC1220 Analog]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+<span class="nv">$ </span>pactl info
+Server String: /run/user/1000/pulse/native
+Library Protocol Version: 32
+Server Protocol Version: 32
+Is Local: <span class="nb">yes
+</span>Client Index: 9
+Tile Size: 65472
+User Name: phwl
+Host Name: bream
+Server Name: pulseaudio
+Server Version: 11.1
+Default Sample Specification: s16le 2ch 44100Hz
+Default Channel Map: front-left,front-right
+Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Cookie: d261:0707
+<span class="nv">$ </span>paprefs
 </code></pre></div></div>
 
-<p>qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append ‘root=/dev/vda2’ -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd -nographic -net user,hostfwd=tcp::10022-:22 -net nic  -device ich9-intel-hda,addr=1f.1 -audiodev pa,id=snd0 -device hda-output,audiodev=snd0
-https://www.debian.org/doc/manuals/debian-kernel-handbook/ch-common-tasks.html
-apt install libssl-dev</p>
+<h2 id="references">References</h2>
+<ul>
+  <li>https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</li>
+  <li>https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network</li>
+</ul>
+
 
         
       </section>
@@ -281,11 +322,11 @@ apt install libssl-dev</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Debian+on+armhf+emulation+via+QEMU+audio+support%20%2F2021%2Fqemu-armhf-debian-audio%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Audio+configuration+under+Debian+QEMU%20%2F2021%2Fqemu-debian-audio%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fqemu-armhf-debian-audio%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2F2021%2Fqemu-debian-audio%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fqemu-armhf-debian-audio%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2F2021%2Fqemu-debian-audio%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 

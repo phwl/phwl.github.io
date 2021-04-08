@@ -1,25 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-08T15:23:43+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Debian on armhf emulation via QEMU audio support</title><link href="/2021/qemu-armhf-debian-audio/" rel="alternate" type="text/html" title="Debian on armhf emulation via QEMU audio support" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-armhf-debian-audio</id><content type="html" xml:base="/2021/qemu-armhf-debian-audio/">&lt;p&gt;This post describes how to use audio on Arm hard float (armhf) under
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-08T20:12:20+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux. It follows from (/2021/qemu-armhf-debian/)&lt;/p&gt;
 
-&lt;p&gt;I used Virtualbox with Ubuntu 20.04.2 but any Debian/Ubuntu distribution can be used with minor changes.&lt;/p&gt;
+&lt;p&gt;Install the alsa and pulseaudio packages.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; audio,pulse,pulse-access elec3607
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then you have to log out and log in again.&lt;/p&gt;
 
-&lt;p&gt;Ubuntu host&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;First create a debian distribution with the generic initrd.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append &apos;root=/dev/vda2&apos; -drive if=virtio,file=debian-3607-fullinitrd.qcow2,format=qcow2,id=hd  -nographic -soundhw all
-
-sudo apt install alsa-tools pulseaudio pavucontrol libasound2 alsa-utils
-modprobe snd-hda-intel
-modprobe snd-hda-core
-modprobe ac97_bus 
-modprobe snd-ac97-codec
-alsactl init
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;aplay &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;****&lt;/span&gt; List of PLAYBACK Hardware Devices &lt;span class=&quot;k&quot;&gt;****&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 3: HDMI 0 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 0]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 7: HDMI 1 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 1]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 8: HDMI 2 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 2]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 9: HDMI 3 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 3]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 10: HDMI 4 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 4]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 11: HDMI 5 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 5]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 0: NVidia &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA NVidia], device 12: HDMI 6 &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDMI 6]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 1: Device &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Plugable USB Audio Device], device 0: USB Audio &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;USB Audio]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+card 2: Generic &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HD-Audio Generic], device 0: ALC1220 Analog &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;ALC1220 Analog]
+  Subdevices: 1/1
+  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pactl info
+Server String: /run/user/1000/pulse/native
+Library Protocol Version: 32
+Server Protocol Version: 32
+Is Local: &lt;span class=&quot;nb&quot;&gt;yes
+&lt;/span&gt;Client Index: 9
+Tile Size: 65472
+User Name: phwl
+Host Name: bream
+Server Name: pulseaudio
+Server Version: 11.1
+Default Sample Specification: s16le 2ch 44100Hz
+Default Channel Map: front-left,front-right
+Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Cookie: d261:0707
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paprefs
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae -append ‘root=/dev/vda2’ -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd -nographic -net user,hostfwd=tcp::10022-:22 -net nic  -device ich9-intel-hda,addr=1f.1 -audiodev pa,id=snd0 -device hda-output,audiodev=snd0
-https://www.debian.org/doc/manuals/debian-kernel-handbook/ch-common-tasks.html
-apt install libssl-dev&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to use audio on Arm hard float (armhf) under qemu Debian Linux.</summary></entry><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/&lt;/li&gt;
+  &lt;li&gt;https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to use audio on aarch64 ARM under qemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)</summary></entry><entry><title type="html">Hawkesbury River Rescue</title><link href="/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>/2021/hawkesbury-river-rescue</id><content type="html" xml:base="/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
 
 &lt;p&gt;It was a very foggy morning, worse than I’ve ever seen it on the Hawkesbury.
 Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.&lt;/p&gt;
@@ -150,56 +190,57 @@ an eventful trip and we made some new friends. Dong certainly took his misfortun
 
 &lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.&lt;/p&gt;
 
-&lt;h1 id=&quot;1-for-64-bit-aarch64&quot;&gt;1. For (64-bit) aarch64&lt;/h1&gt;
+&lt;h1 id=&quot;1-create-qemu-image&quot;&gt;1. Create QEMU Image&lt;/h1&gt;
+
+&lt;h2 id=&quot;1a-for-64-bit-aarch64&quot;&gt;1a. For (64-bit) aarch64&lt;/h2&gt;
 &lt;p&gt;I used the lastest version of &lt;a href=&quot;https://github.com/qemu/qemu&quot;&gt;qemu&lt;/a&gt; from github
 and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ qemu-system-aarch64 --version
-QEMU emulator version 5.2.92 (v6.0.0-rc2)
-Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
-$ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G 
-$ wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
-$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
-$ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.0-16-arm64     -kernel vmlinuz-4.19.0-16-arm64    -append &quot;root=/dev/sda2 console=ttyAMA0&quot;     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+QEMU emulator version 5.2.92 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;v6.0.0-rc2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2003-2021 Fabrice Bellard and the QEMU Project developers
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-img create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; qcow2 debian-3607-aarch64.qcow2 32G 
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-cpu&lt;/span&gt; cortex-a53 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1G     &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-arm64     &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-arm64    &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;root=/dev/sda2 console=ttyAMA0&quot;&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;-global&lt;/span&gt; virtio-blk-device.scsi&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;off     &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; virtio-scsi-device,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;scsi     &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-aarch64.qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg,cache&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unsafe,if&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;none     &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; scsi-hd,drive&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg  &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic    &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; intel-hda &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; hda-duplex
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;No common CD-ROM drive was detected: Manually select to use /dev/vdb&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 -kernel vmlinuz-4.19.0-16-arm64 \
-   -append &quot;root=/dev/sda2 console=ttyAMA0&quot; -global virtio-blk-device.scsi=off -device virtio-scsi-device,id=scsi \
-   -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none -device scsi-hd,drive=rootimg \
-   -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;virt-copy-out &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-cpu&lt;/span&gt; cortex-a53 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1G &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-arm64 &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-arm64 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;root=/dev/sda2 console=ttyAMA0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-global&lt;/span&gt; virtio-blk-device.scsi&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;off &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; virtio-scsi-device,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;scsi &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-aarch64.qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg,cache&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unsafe,if&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;none &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; scsi-hd,drive&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+   &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; intel-hda &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; hda-duplex
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then you can login as root and&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# apt update
-# apt install sudo build-essential libasound2 pulseaudio pavucontrol
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# apt update&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# apt &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;2-for-32-bit-armhf&quot;&gt;2. For (32-bit) armhf&lt;/h1&gt;
+&lt;h2 id=&quot;1b-for-32-bit-armhf&quot;&gt;1b. For (32-bit) armhf&lt;/h2&gt;
 
-&lt;h2 id=&quot;install-debian-on-qemu-system-arm&quot;&gt;Install Debian on qemu-system-arm&lt;/h2&gt;
 &lt;p&gt;Install qemu.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
-sudo apt upgrade
-mkdir qemu; cd qemu
-sudo apt install qemu-system-arm
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade
+&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;qemu&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;qemu
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;qemu-system-arm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
 &lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
 (alternatively
 &lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
 wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
 wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
-qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append &quot;console=ttyAMA0&quot; -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-img create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; qcow2 debian-3607.qcow2 16G &lt;span class=&quot;c&quot;&gt;# 8G will also work but not leave enough disk space for other things&lt;/span&gt;
+qemu-system-arm &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; ./vmlinuz &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; ./initrd.gz &lt;span class=&quot;nt&quot;&gt;-hda&lt;/span&gt; debian-3607.qcow2 &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1024M &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;console=ttyAMA0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-10.9.0-armhf-netinst.iso,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom,if&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;none,media&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; virtio-scsi-device &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; scsi-cd,drive&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Use all of the defaults for the Debian installer.&lt;/p&gt;
@@ -215,35 +256,35 @@ qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.q
 &lt;/ul&gt;
 
 &lt;p&gt;Extract the kernel and initrd from the disk image.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libguestfs-tools
-virt-ls -a debian-3607.qcow2 /boot/
-virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libguestfs-tools
+virt-ls &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607.qcow2 /boot/
+virt-copy-out &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now you can run your Debian-Arm Linux from either Linux:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae \
--append &apos;root=/dev/vda2&apos; -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd \
--nographic -net user,hostfwd=tcp::10022-:22 -net nic
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-arm &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-armmp-lpae &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-armmp-lpae &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;root=/dev/vda2&apos;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtio,file&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-lab4sol.qcow2,format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;hd &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;install-sudo-and-put-elec3607-in-the-sudo-group&quot;&gt;Install sudo and put ELEC3607 in the sudo group&lt;/h2&gt;
+&lt;h1 id=&quot;2-install-sudo-and-put-elec3607-in-the-sudo-group&quot;&gt;2. Install sudo and put ELEC3607 in the sudo group&lt;/h1&gt;
 &lt;p&gt;Login as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt; (password is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt;) and execute the following commands.
 Note that the basic distribution of Debian does not include sudo.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elec3607@debian:~$ su -
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;elec3607@debian:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;su -
 Password: 
-root@debian:~# apt install sudo 
-Reading package lists... Done
+root@debian:~# apt &lt;span class=&quot;nb&quot;&gt;install sudo 
+&lt;/span&gt;Reading package lists... Done
 ...
-usermod -G sudo elec3607
+usermod &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-G&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;elec3607
 shutdown now
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;install-everything-else&quot;&gt;Install everything else&lt;/h2&gt;
-&lt;p&gt;The complete list of Debian packages is available &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;here&lt;/a&gt;.
-For example to install the alsa and pulseaudio packages.&lt;/p&gt;
+&lt;p&gt;You can also ssh to the machine and use X windows.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; elec3607@localhost &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 10022
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
+&lt;h2 id=&quot;install-everything-else&quot;&gt;Install everything else&lt;/h2&gt;
+&lt;p&gt;The complete list of Debian packages is available &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot;&gt;

@@ -1,0 +1,8 @@
+I"ñ<p>This post describes how to use audio on aarch64 ARM under
+<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
+
+<p>Install the alsa and pulseaudio packages.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol
+$ sudo usermod -a -G audio elec3607
+</code></pre></div></div>
+:ET

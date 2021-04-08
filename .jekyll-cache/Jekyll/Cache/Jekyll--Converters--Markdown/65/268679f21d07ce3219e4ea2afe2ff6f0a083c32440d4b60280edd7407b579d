@@ -1,0 +1,100 @@
+I"�(<p>This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using <code class="language-plaintext highlighter-rouge">qemu</code> and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</p>
+
+<p>I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes. Note that this didn’t work under VirtualBox but a USB-bootable Ubuntu distribution should be fine.</p>
+
+<h1 id="1-create-qemu-image">1. Create QEMU Image</h1>
+
+<h2 id="1a-for-64-bit-aarch64">1a. For (64-bit) aarch64</h2>
+<p>I used the lastest version of <a href="https://github.com/qemu/qemu">qemu</a> from github
+and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qemu-system-aarch64 <span class="nt">--version</span>
+QEMU emulator version 5.2.92 <span class="o">(</span>v6.0.0-rc2<span class="o">)</span>
+Copyright <span class="o">(</span>c<span class="o">)</span> 2003-2021 Fabrice Bellard and the QEMU Project developers
+<span class="nv">$ </span>qemu-img create <span class="nt">-f</span> qcow2 debian-3607-aarch64.qcow2 32G 
+<span class="nv">$ </span>wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
+<span class="nv">$ </span>wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
+<span class="nv">$ </span>wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
+<span class="nv">$ </span>qemu-system-aarch64 <span class="nt">-M</span> virt <span class="nt">-cpu</span> cortex-a53 <span class="nt">-m</span> 1G     <span class="nt">-initrd</span> initrd.img-4.19.0-16-arm64     <span class="nt">-kernel</span> vmlinuz-4.19.0-16-arm64    <span class="nt">-append</span> <span class="s2">"root=/dev/sda2 console=ttyAMA0"</span>     <span class="nt">-global</span> virtio-blk-device.scsi<span class="o">=</span>off     <span class="nt">-device</span> virtio-scsi-device,id<span class="o">=</span>scsi     <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-3607-aarch64.qcow2,id<span class="o">=</span>rootimg,cache<span class="o">=</span>unsafe,if<span class="o">=</span>none     <span class="nt">-device</span> scsi-hd,drive<span class="o">=</span>rootimg  <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic    <span class="nt">-nographic</span> <span class="nt">-device</span> intel-hda <span class="nt">-device</span> hda-duplex
+</code></pre></div></div>
+<ul>
+  <li>No common CD-ROM drive was detected: Manually select to use /dev/vdb</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>virt-copy-out <span class="nt">-a</span> debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 <span class="nb">.</span>
+<span class="nv">$ </span>qemu-system-aarch64 <span class="nt">-M</span> virt <span class="nt">-cpu</span> cortex-a53 <span class="nt">-m</span> 1G <span class="nt">-initrd</span> initrd.img-4.19.0-16-arm64 <span class="nt">-kernel</span> vmlinuz-4.19.0-16-arm64 <span class="se">\</span>
+   <span class="nt">-append</span> <span class="s2">"root=/dev/sda2 console=ttyAMA0"</span> <span class="nt">-global</span> virtio-blk-device.scsi<span class="o">=</span>off <span class="nt">-device</span> virtio-scsi-device,id<span class="o">=</span>scsi <span class="se">\</span>
+   <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-3607-aarch64.qcow2,id<span class="o">=</span>rootimg,cache<span class="o">=</span>unsafe,if<span class="o">=</span>none <span class="nt">-device</span> scsi-hd,drive<span class="o">=</span>rootimg <span class="se">\</span>
+   <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic <span class="nt">-nographic</span> <span class="nt">-device</span> intel-hda <span class="nt">-device</span> hda-duplex
+</code></pre></div></div>
+
+<p>Then you can login as root and</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># apt update</span>
+<span class="c"># apt </span>
+</code></pre></div></div>
+
+<h2 id="1b-for-32-bit-armhf">1b. For (32-bit) armhf</h2>
+
+<p>Install qemu.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade
+<span class="nb">mkdir </span>qemu<span class="p">;</span> <span class="nb">cd </span>qemu
+<span class="nb">sudo </span>apt <span class="nb">install </span>qemu-system-arm
+</code></pre></div></div>
+
+<p>Download <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz">initrd.gz</a>, <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz">vmlinuz</a> and
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso">debian-10.9.0-armhf-netinst.iso</a>
+(alternatively
+<a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso">debian-10.9.0-armhf-xfce-CD-1.iso</a>).</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
+wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-img create <span class="nt">-f</span> qcow2 debian-3607.qcow2 16G <span class="c"># 8G will also work but not leave enough disk space for other things</span>
+qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> ./vmlinuz <span class="nt">-initrd</span> ./initrd.gz <span class="nt">-hda</span> debian-3607.qcow2 <span class="nt">-nographic</span> <span class="nt">-m</span> 1024M <span class="nt">-append</span> <span class="s2">"console=ttyAMA0"</span> <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-10.9.0-armhf-netinst.iso,id<span class="o">=</span>cdrom,if<span class="o">=</span>none,media<span class="o">=</span>cdrom <span class="nt">-device</span> virtio-scsi-device <span class="nt">-device</span> scsi-cd,drive<span class="o">=</span>cdrom
+</code></pre></div></div>
+
+<p>Use all of the defaults for the Debian installer.</p>
+<ul>
+  <li>I used “elec3607” for all user names and passwords.</li>
+  <li>For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).</li>
+  <li>If you get a “Failed to install the base system” message, try a second time from the menu.</li>
+  <li>Select linux-image-armmp-lpae for the kernel.</li>
+  <li>Select targeted for initrd <strong>(This was a mistake, choose generic)</strong></li>
+  <li>For software to install, just choose “SSH server” and “standard system utilities” (the default).</li>
+  <li>You will receive the message that GRUB installation failed. We will fix this later.</li>
+  <li>Exit <code class="language-plaintext highlighter-rouge">qemu</code> with “control-A x”.</li>
+</ul>
+
+<p>Extract the kernel and initrd from the disk image.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>libguestfs-tools
+virt-ls <span class="nt">-a</span> debian-3607.qcow2 /boot/
+virt-copy-out <span class="nt">-a</span> debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Now you can run your Debian-Arm Linux from either Linux:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> vmlinuz-4.19.0-16-armmp-lpae <span class="nt">-initrd</span> initrd.img-4.19.0-16-armmp-lpae <span class="se">\</span>
+<span class="nt">-append</span> <span class="s1">'root=/dev/vda2'</span> <span class="nt">-drive</span> <span class="k">if</span><span class="o">=</span>virtio,file<span class="o">=</span>debian-3607-lab4sol.qcow2,format<span class="o">=</span>qcow2,id<span class="o">=</span>hd <span class="se">\</span>
+<span class="nt">-nographic</span> <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic
+</code></pre></div></div>
+
+<h1 id="2-install-sudo-and-put-elec3607-in-the-sudo-group">2. Install sudo and put ELEC3607 in the sudo group</h1>
+<p>Login as <code class="language-plaintext highlighter-rouge">elec3607</code> (password is <code class="language-plaintext highlighter-rouge">elec3607</code>) and execute the following commands.
+Note that the basic distribution of Debian does not include sudo.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elec3607@debian:~<span class="nv">$ </span>su -
+Password: 
+root@debian:~# apt <span class="nb">install sudo 
+</span>Reading package lists... Done
+...
+usermod <span class="nt">-a</span> <span class="nt">-G</span> <span class="nb">sudo </span>elec3607
+shutdown now
+</code></pre></div></div>
+
+<p>You can also ssh to the machine and use X windows.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-Y</span> elec3607@localhost <span class="nt">-p</span> 10022
+</code></pre></div></div>
+
+<h2 id="install-everything-else">Install everything else</h2>
+<p>The complete list of Debian packages is available <a href="https://www.debian.org/distrib/packages">here</a>.</p>
+:ET
