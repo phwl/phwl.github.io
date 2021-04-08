@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-08T20:12:20+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-08T20:23:04+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux. It follows from (/2021/qemu-armhf-debian/)&lt;/p&gt;
 
 &lt;p&gt;Install the alsa and pulseaudio packages.&lt;/p&gt;
@@ -53,6 +53,12 @@ Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00
 Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
 Cookie: d261:0707
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paprefs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then you can start it up via systemctl.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;pulseaudio
+systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; start pulseaudio
+systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; status pulseaudio
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
@@ -192,7 +198,7 @@ an eventful trip and we made some new friends. Dong certainly took his misfortun
 
 &lt;h1 id=&quot;1-create-qemu-image&quot;&gt;1. Create QEMU Image&lt;/h1&gt;
 
-&lt;h2 id=&quot;1a-for-64-bit-aarch64&quot;&gt;1a. For (64-bit) aarch64&lt;/h2&gt;
+&lt;h2 id=&quot;11-for-64-bit-aarch64&quot;&gt;1.1. For (64-bit) aarch64&lt;/h2&gt;
 &lt;p&gt;I used the lastest version of &lt;a href=&quot;https://github.com/qemu/qemu&quot;&gt;qemu&lt;/a&gt; from github
 and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).&lt;/p&gt;
 
@@ -221,7 +227,7 @@ Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&
 &lt;span class=&quot;c&quot;&gt;# apt &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;1b-for-32-bit-armhf&quot;&gt;1b. For (32-bit) armhf&lt;/h2&gt;
+&lt;h2 id=&quot;12-for-32-bit-armhf&quot;&gt;1.2. For (32-bit) armhf&lt;/h2&gt;
 
 &lt;p&gt;Install qemu.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
@@ -283,7 +289,6 @@ shutdown now
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; elec3607@localhost &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 10022
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;install-everything-else&quot;&gt;Install everything else&lt;/h2&gt;
 &lt;p&gt;The complete list of Debian packages is available &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>/2021/trailer-bearings</id><content type="html" xml:base="/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;

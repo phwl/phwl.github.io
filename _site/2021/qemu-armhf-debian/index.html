@@ -208,15 +208,11 @@
               <ul class="toc__menu">
   <li><a href="#1-create-qemu-image">1. Create QEMU Image</a>
     <ul>
-      <li><a href="#1a-for-64-bit-aarch64">1a. For (64-bit) aarch64</a></li>
-      <li><a href="#1b-for-32-bit-armhf">1b. For (32-bit) armhf</a></li>
+      <li><a href="#11-for-64-bit-aarch64">1.1. For (64-bit) aarch64</a></li>
+      <li><a href="#12-for-32-bit-armhf">1.2. For (32-bit) armhf</a></li>
     </ul>
   </li>
-  <li><a href="#2-install-sudo-and-put-elec3607-in-the-sudo-group">2. Install sudo and put ELEC3607 in the sudo group</a>
-    <ul>
-      <li><a href="#install-everything-else">Install everything else</a></li>
-    </ul>
-  </li>
+  <li><a href="#2-install-sudo-and-put-elec3607-in-the-sudo-group">2. Install sudo and put ELEC3607 in the sudo group</a></li>
 </ul>
             </nav>
           </aside>
@@ -227,7 +223,7 @@
 
 <h1 id="1-create-qemu-image">1. Create QEMU Image</h1>
 
-<h2 id="1a-for-64-bit-aarch64">1a. For (64-bit) aarch64</h2>
+<h2 id="11-for-64-bit-aarch64">1.1. For (64-bit) aarch64</h2>
 <p>I used the lastest version of <a href="https://github.com/qemu/qemu">qemu</a> from github
 and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).</p>
 
@@ -256,7 +252,7 @@ Copyright <span class="o">(</span>c<span class="o">)</span> 2003-2021 Fabrice Be
 <span class="c"># apt </span>
 </code></pre></div></div>
 
-<h2 id="1b-for-32-bit-armhf">1b. For (32-bit) armhf</h2>
+<h2 id="12-for-32-bit-armhf">1.2. For (32-bit) armhf</h2>
 
 <p>Install qemu.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
@@ -318,7 +314,6 @@ shutdown now
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-Y</span> elec3607@localhost <span class="nt">-p</span> 10022
 </code></pre></div></div>
 
-<h2 id="install-everything-else">Install everything else</h2>
 <p>The complete list of Debian packages is available <a href="https://www.debian.org/distrib/packages">here</a>.</p>
 
         

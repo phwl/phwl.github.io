@@ -259,6 +259,12 @@ Cookie: d261:0707
 <span class="nv">$ </span>paprefs
 </code></pre></div></div>
 
+<p>Then you can start it up via systemctl.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nt">--user</span> <span class="nb">enable </span>pulseaudio
+systemctl <span class="nt">--user</span> start pulseaudio
+systemctl <span class="nt">--user</span> status pulseaudio
+</code></pre></div></div>
+
 <h2 id="references">References</h2>
 <ul>
   <li>https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</li>

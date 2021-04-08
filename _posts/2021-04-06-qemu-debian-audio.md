@@ -72,6 +72,13 @@ Cookie: d261:0707
 $ paprefs
 ```
 
+Then you can start it up via systemctl.
+```bash
+systemctl --user enable pulseaudio
+systemctl --user start pulseaudio
+systemctl --user status pulseaudio
+```
+
 ## References
  * https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/
  * https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network
