@@ -18,7 +18,7 @@ This post describes how to use audio on aarch64 ARM under
 
 Install the alsa and pulseaudio packages. 
 ```bash
-$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev
+$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev
 $ sudo usermod -aG audio,pulse,pulse-access elec3607
 ```
 Then you have to log out and log in again.
@@ -69,14 +69,27 @@ Default Channel Map: front-left,front-right
 Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
 Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
 Cookie: d261:0707
-$ paprefs
 ```
 
 Then you can start it up via systemctl.
 ```bash
-systemctl --user enable pulseaudio
-systemctl --user start pulseaudio
-systemctl --user status pulseaudio
+$ systemctl --user enable pulseaudio
+$ systemctl --user start pulseaudio
+$ systemctl --user status pulseaudio
+```
+
+Now edit ```/etc/pulse/default.pa``` and add the line:
+```
+load-module module-null-sink sink_name=MySink format=s16le channels=1 rate=12000
+```
+
+We can restart the daemon and configure with.
+```
+$ systemctl --user restart pulseaudio
+$ pacmd list-sinks
+$ paprefs
+$ pavucontrol
+```
 ```
 
 ## References

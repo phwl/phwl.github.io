@@ -193,3 +193,10 @@ Virtual Hard Disk" to convert the image from
 
 Don't upgrade to 20.04!
 
+## Update
+ * 9/4/2021 Bluetooth stopped working and I couldn't turn it on any more. Fixed with:
+```
+$ sudo rmmod btusb
+$ sudo modprobe btusb
+```
+

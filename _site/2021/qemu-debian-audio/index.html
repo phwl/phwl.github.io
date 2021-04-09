@@ -206,7 +206,7 @@
 <code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
 
 <p>Install the alsa and pulseaudio packages.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev
 <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
 </code></pre></div></div>
 <p>Then you have to log out and log in again.</p>
@@ -256,14 +256,25 @@ Default Channel Map: front-left,front-right
 Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
 Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
 Cookie: d261:0707
-<span class="nv">$ </span>paprefs
 </code></pre></div></div>
 
 <p>Then you can start it up via systemctl.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nt">--user</span> <span class="nb">enable </span>pulseaudio
-systemctl <span class="nt">--user</span> start pulseaudio
-systemctl <span class="nt">--user</span> status pulseaudio
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>systemctl <span class="nt">--user</span> <span class="nb">enable </span>pulseaudio
+<span class="nv">$ </span>systemctl <span class="nt">--user</span> start pulseaudio
+<span class="nv">$ </span>systemctl <span class="nt">--user</span> status pulseaudio
 </code></pre></div></div>
+
+<p>Now edit <code class="language-plaintext highlighter-rouge">/etc/pulse/default.pa</code> and add the line:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>load-module module-null-sink sink_name=MySink format=s16le channels=1 rate=12000
+</code></pre></div></div>
+
+<p>We can restart the daemon and configure with.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ systemctl --user restart pulseaudio
+$ pacmd list-sinks
+$ paprefs
+$ pavucontrol
+</code></pre></div></div>
+<p>```</p>
 
 <h2 id="references">References</h2>
 <ul>
