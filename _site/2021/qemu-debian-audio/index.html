@@ -206,7 +206,7 @@
 <code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
 
 <p>Install the alsa and pulseaudio packages.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev
 <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
 </code></pre></div></div>
 <p>Then you have to log out and log in again.</p>
@@ -267,8 +267,9 @@ systemctl <span class="nt">--user</span> status pulseaudio
 
 <h2 id="references">References</h2>
 <ul>
-  <li>https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</li>
-  <li>https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network</li>
+  <li><a href="https://gavv.github.io/articles/pulseaudio-under-the-hood/">https://gavv.github.io/articles/pulseaudio-under-the-hood/</a></li>
+  <li><a href="https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/">https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</a></li>
+  <li><a href="https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network">https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network</a></li>
 </ul>
 
 

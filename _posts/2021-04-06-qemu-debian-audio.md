@@ -18,7 +18,7 @@ This post describes how to use audio on aarch64 ARM under
 
 Install the alsa and pulseaudio packages. 
 ```bash
-$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs
+$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev
 $ sudo usermod -aG audio,pulse,pulse-access elec3607
 ```
 Then you have to log out and log in again.
@@ -80,6 +80,7 @@ systemctl --user status pulseaudio
 ```
 
 ## References
- * https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/
- * https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network
+ * <https://gavv.github.io/articles/pulseaudio-under-the-hood/>
+ * <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/>
+ * <https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network>
 

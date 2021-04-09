@@ -1,0 +1,71 @@
+I"<p>This post describes how to use audio on aarch64 ARM under
+<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
+
+<p>Install the alsa and pulseaudio packages.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs
+<span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
+</code></pre></div></div>
+<p>Then you have to log out and log in again.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>aplay <span class="nt">-l</span>
+<span class="k">****</span> List of PLAYBACK Hardware Devices <span class="k">****</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 3: HDMI 0 <span class="o">[</span>HDMI 0]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 7: HDMI 1 <span class="o">[</span>HDMI 1]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 8: HDMI 2 <span class="o">[</span>HDMI 2]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 9: HDMI 3 <span class="o">[</span>HDMI 3]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 10: HDMI 4 <span class="o">[</span>HDMI 4]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 11: HDMI 5 <span class="o">[</span>HDMI 5]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 0: NVidia <span class="o">[</span>HDA NVidia], device 12: HDMI 6 <span class="o">[</span>HDMI 6]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 1: Device <span class="o">[</span>Plugable USB Audio Device], device 0: USB Audio <span class="o">[</span>USB Audio]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+card 2: Generic <span class="o">[</span>HD-Audio Generic], device 0: ALC1220 Analog <span class="o">[</span>ALC1220 Analog]
+  Subdevices: 1/1
+  Subdevice <span class="c">#0: subdevice #0</span>
+<span class="nv">$ </span>pactl info
+Server String: /run/user/1000/pulse/native
+Library Protocol Version: 32
+Server Protocol Version: 32
+Is Local: <span class="nb">yes
+</span>Client Index: 9
+Tile Size: 65472
+User Name: phwl
+Host Name: bream
+Server Name: pulseaudio
+Server Version: 11.1
+Default Sample Specification: s16le 2ch 44100Hz
+Default Channel Map: front-left,front-right
+Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
+Cookie: d261:0707
+<span class="nv">$ </span>paprefs
+</code></pre></div></div>
+
+<p>Then you can start it up via systemctl.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl <span class="nt">--user</span> <span class="nb">enable </span>pulseaudio
+systemctl <span class="nt">--user</span> start pulseaudio
+systemctl <span class="nt">--user</span> status pulseaudio
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>https://gavv.github.io/articles/pulseaudio-under-the-hood/</li>
+  <li>https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/</li>
+  <li>https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network</li>
+</ul>
+
+:ET
