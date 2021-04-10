@@ -55,10 +55,10 @@ Then you can login as root and
 
 Install qemu.
 ```bash
-sudo apt update
-sudo apt upgrade
-mkdir qemu; cd qemu
-sudo apt install qemu-system-arm
+$ sudo apt update
+$ sudo apt upgrade
+$ mkdir qemu; cd qemu
+$ sudo apt install qemu-system-arm
 ```
 
 Download [initrd.gz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz), [vmlinuz](http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz) and
@@ -66,14 +66,14 @@ Download [initrd.gz](http://ftp.debian.org/debian/dists/buster/main/installer-ar
 (alternatively
 [debian-10.9.0-armhf-xfce-CD-1.iso](http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso)).
 ```bash
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
-wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
+$ wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+$ wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
+$ wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
 ```
 
 ```bash
-qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
-qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append "console=ttyAMA0" -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
+$ qemu-img create -f qcow2 debian-3607.qcow2 16G # 8G will also work but not leave enough disk space for other things
+$ qemu-system-arm -M virt -kernel ./vmlinuz -initrd ./initrd.gz -hda debian-3607.qcow2 -nographic -m 1024M -append "console=ttyAMA0" -drive file=debian-10.9.0-armhf-netinst.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom
 ```
 
 Use all of the defaults for the Debian installer.
@@ -88,14 +88,14 @@ Use all of the defaults for the Debian installer.
 
 Extract the kernel and initrd from the disk image.
 ```bash
-sudo apt-get install libguestfs-tools
-virt-ls -a debian-3607.qcow2 /boot/
-virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
+$ sudo apt-get install libguestfs-tools
+$ virt-ls -a debian-3607.qcow2 /boot/
+$ virt-copy-out -a debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae .
 ```
 
 Now you can run your Debian-Arm Linux from either Linux:
 ```bash
-qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae \
+$ qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-4.19.0-16-armmp-lpae \
 -append 'root=/dev/vda2' -drive if=virtio,file=debian-3607-lab4sol.qcow2,format=qcow2,id=hd \
 -nographic -net user,hostfwd=tcp::10022-:22 -net nic
 ```
@@ -104,9 +104,9 @@ qemu-system-arm -M virt -kernel vmlinuz-4.19.0-16-armmp-lpae -initrd initrd.img-
 Login as ```elec3607``` (password is ```elec3607```) and execute the following commands.
 Note that the basic distribution of Debian does not include sudo.
 ```bash
-elec3607@debian:~$ su -
+$ su -
 Password: 
-root@debian:~# apt install sudo 
+# apt install sudo 
 Reading package lists... Done
 ...
 usermod -a -G sudo elec3607

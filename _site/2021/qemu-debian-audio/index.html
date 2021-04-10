@@ -31,7 +31,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Audio configuration under Debian QEMU - Life, the Universe and Fishing</title>
-<meta name="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
+<meta name="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from Debian on ARM via QEMU">
 
 
 
@@ -42,7 +42,7 @@
 <meta property="og:url" content="/2021/qemu-debian-audio/">
 
 
-  <meta property="og:description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
+  <meta property="og:description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from Debian on ARM via QEMU">
 
 
 
@@ -187,7 +187,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Audio configuration under Debian QEMU">
-    <meta itemprop="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)">
+    <meta itemprop="description" content="This post describes how to use audio on aarch64 ARM underqemu Debian Linux. It follows from Debian on ARM via QEMU">
     <meta itemprop="datePublished" content="April 06, 2021">
     
 
@@ -203,78 +203,320 @@
       <section class="page__content" itemprop="text">
         
         <p>This post describes how to use audio on aarch64 ARM under
-<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from (/2021/qemu-armhf-debian/)</p>
+<code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from <a href="/2021/qemu-armhf-debian/">Debian on ARM via QEMU</a></p>
 
-<p>Install the alsa and pulseaudio packages.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev
+<p>Start by booting QEMU.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qemu-system-aarch64 <span class="nt">-M</span> virt <span class="nt">-cpu</span> cortex-a53 <span class="nt">-m</span> 1G <span class="nt">-initrd</span> initrd.img-4.19.0-16-arm64 <span class="se">\</span>
+    <span class="nt">-kernel</span> vmlinuz-4.19.0-16-arm64 <span class="nt">-append</span> <span class="s2">"root=/dev/vda2 console=ttyAMA0"</span> <span class="se">\</span>
+    <span class="nt">-drive</span> <span class="k">if</span><span class="o">=</span>virtio,file<span class="o">=</span>debian-3607-aarch64.qcow2,format<span class="o">=</span>qcow2,id<span class="o">=</span>hd <span class="se">\</span>
+    <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic <span class="nt">-nographic</span> <span class="nt">-device</span> intel-hda <span class="nt">-device</span> hda-duplex&amp;
+</code></pre></div></div>
+
+<p>Rather than login directly, 
+I prefer to ssh to the QEMU machine so I can run Xwindows.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-Y</span> elec3607@localhost <span class="nt">-p</span> 10022
+</code></pre></div></div>
+
+<p>Install the alsa, pulseaudio, firefox and audacity packages.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev firefox-esr audacity
 <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
 </code></pre></div></div>
 <p>Then you have to log out and log in again.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>aplay <span class="nt">-l</span>
 <span class="k">****</span> List of PLAYBACK Hardware Devices <span class="k">****</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 3: HDMI 0 <span class="o">[</span>HDMI 0]
+card 0: Intel <span class="o">[</span>HDA Intel], device 0: Generic Analog <span class="o">[</span>Generic Analog]
   Subdevices: 1/1
   Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 7: HDMI 1 <span class="o">[</span>HDMI 1]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 8: HDMI 2 <span class="o">[</span>HDMI 2]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 9: HDMI 3 <span class="o">[</span>HDMI 3]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 10: HDMI 4 <span class="o">[</span>HDMI 4]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 11: HDMI 5 <span class="o">[</span>HDMI 5]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 0: NVidia <span class="o">[</span>HDA NVidia], device 12: HDMI 6 <span class="o">[</span>HDMI 6]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 1: Device <span class="o">[</span>Plugable USB Audio Device], device 0: USB Audio <span class="o">[</span>USB Audio]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
-card 2: Generic <span class="o">[</span>HD-Audio Generic], device 0: ALC1220 Analog <span class="o">[</span>ALC1220 Analog]
-  Subdevices: 1/1
-  Subdevice <span class="c">#0: subdevice #0</span>
+<span class="nv">$ </span>pulseaudio <span class="nt">--start</span>
 <span class="nv">$ </span>pactl info
 Server String: /run/user/1000/pulse/native
 Library Protocol Version: 32
 Server Protocol Version: 32
 Is Local: <span class="nb">yes
-</span>Client Index: 9
+</span>Client Index: 2
 Tile Size: 65472
-User Name: phwl
-Host Name: bream
+User Name: elec3607
+Host Name: debian
 Server Name: pulseaudio
-Server Version: 11.1
+Server Version: 12.2
 Default Sample Specification: s16le 2ch 44100Hz
 Default Channel Map: front-left,front-right
-Default Sink: alsa_output.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
-Default Source: alsa_input.usb-Plugable_Plugable_USB_Audio_Device_000000000000-00.analog-stereo
-Cookie: d261:0707
+Default Sink: alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo
+Default Source: alsa_input.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo
+Cookie: 1295:3f1d
 </code></pre></div></div>
 
 <p>Then you can start it up via systemctl.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>systemctl <span class="nt">--user</span> <span class="nb">enable </span>pulseaudio
 <span class="nv">$ </span>systemctl <span class="nt">--user</span> start pulseaudio
-<span class="nv">$ </span>systemctl <span class="nt">--user</span> status pulseaudio
+Job <span class="k">for </span>pulseaudio.service failed because the control process exited with error code.
+See <span class="s2">"systemctl --user status pulseaudio.service"</span> and <span class="s2">"journalctl --user -xe"</span> <span class="k">for </span>details.
+<span class="nv">$ </span><span class="nb">sudo </span>shutdown <span class="nt">-r</span> now
 </code></pre></div></div>
 
-<p>Now edit <code class="language-plaintext highlighter-rouge">/etc/pulse/default.pa</code> and add the line:</p>
+<p>Wait for everything to come back up and login again via ssh</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ systemctl --user status pulseaudio
+● pulseaudio.service - Sound Service
+   Loaded: loaded (/usr/lib/systemd/user/pulseaudio.service; enabled; vendor pre
+   Active: active (running) since Sat 2021-04-10 15:59:48 AEST; 4s ago
+ Main PID: 336 (pulseaudio)
+   CGroup: /user.slice/user-1000.slice/user@1000.service/pulseaudio.service
+           ├─336 /usr/bin/pulseaudio --daemonize=no
+           └─357 /usr/lib/aarch64-linux-gnu/pulse/gsettings-helper
+</code></pre></div></div>
+
+<p>Now edit <code class="language-plaintext highlighter-rouge">/etc/pulse/default.pa</code> and append the line:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>load-module module-null-sink sink_name=MySink format=s16le channels=1 rate=12000
 </code></pre></div></div>
 
 <p>We can restart the daemon and configure with.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ systemctl --user restart pulseaudio
 $ pacmd list-sinks
-$ paprefs
-$ pavucontrol
+2 sink(s) available.
+  * index: 0
+	name: &lt;alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo&gt;
+	driver: &lt;module-alsa-card.c&gt;
+	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY FLAT_VOLUME DYNAMIC_LATENCY
+	state: IDLE
+	suspend cause: (none)
+	priority: 9039
+	volume: front-left: 30419 /  46% / -20.00 dB,   front-right: 30419 /  46% / -20.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 1283.09 ms
+	max request: 344 KiB
+	max rewind: 344 KiB
+	monitor source: 0
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 2000.00 ms; range is 0.50 .. 2000.00 ms
+	card: 0 &lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&gt;
+	module: 6
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "Generic Analog"
+		alsa.id = "Generic Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel"
+		alsa.long_card_name = "HDA Intel at 0x10040000 irq 50"
+		alsa.driver_name = "snd_hda_intel"
+		device.bus_path = "platform-4010000000.pcie-pci-0000:00:02.0"
+		sysfs.path = "/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "2668"
+		device.product.name = "82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)"
+		device.form_factor = "internal"
+		device.string = "front:0"
+		device.buffering.buffer_size = "352800"
+		device.buffering.fragment_size = "176400"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "Built-in Audio Analog Stereo"
+		alsa.mixer_name = "QEMU Generic"
+		alsa.components = "HDA:1af40022,1af40022,00100101"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	ports:
+		analog-output-lineout: Line Out (priority 9900, latency offset 0 usec, available: unknown)
+			properties:
+				
+	active port: &lt;analog-output-lineout&gt;
+    index: 1
+	name: &lt;MySink&gt;
+	driver: &lt;module-null-sink.c&gt;
+	flags: DECIBEL_VOLUME LATENCY FLAT_VOLUME DYNAMIC_LATENCY
+	state: IDLE
+	suspend cause: (none)
+	priority: 1000
+	volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 1576.69 ms
+	max request: 46 KiB
+	max rewind: 46 KiB
+	monitor source: 2
+	sample spec: s16le 1ch 12000Hz
+	channel map: mono
+	             Mono
+	used by: 0
+	linked by: 0
+	configured latency: 2000.00 ms; range is 0.50 .. 2000.00 ms
+	module: 20
+	properties:
+		device.description = "Null Output"
+		device.class = "abstract"
+		device.icon_name = "audio-card"
+$ pacmd list-sources
+3 source(s) available.
+    index: 0
+	name: &lt;alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo.monitor&gt;
+	driver: &lt;module-alsa-card.c&gt;
+	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE
+	priority: 1030
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	monitor_of: 0
+	card: 0 &lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&gt;
+	module: 6
+	properties:
+		device.description = "Monitor of Built-in Audio Analog Stereo"
+		device.class = "monitor"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel"
+		alsa.long_card_name = "HDA Intel at 0x10040000 irq 50"
+		alsa.driver_name = "snd_hda_intel"
+		device.bus_path = "platform-4010000000.pcie-pci-0000:00:02.0"
+		sysfs.path = "/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "2668"
+		device.product.name = "82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)"
+		device.form_factor = "internal"
+		device.string = "0"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+  * index: 1
+	name: &lt;alsa_input.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo&gt;
+	driver: &lt;module-alsa-card.c&gt;
+	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE
+	priority: 9039
+	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 0 KiB
+	sample spec: s16le 2ch 44100Hz
+	channel map: front-left,front-right
+	             Stereo
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	card: 0 &lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&gt;
+	module: 6
+	properties:
+		alsa.resolution_bits = "16"
+		device.api = "alsa"
+		device.class = "sound"
+		alsa.class = "generic"
+		alsa.subclass = "generic-mix"
+		alsa.name = "Generic Analog"
+		alsa.id = "Generic Analog"
+		alsa.subdevice = "0"
+		alsa.subdevice_name = "subdevice #0"
+		alsa.device = "0"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel"
+		alsa.long_card_name = "HDA Intel at 0x10040000 irq 50"
+		alsa.driver_name = "snd_hda_intel"
+		device.bus_path = "platform-4010000000.pcie-pci-0000:00:02.0"
+		sysfs.path = "/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0"
+		device.bus = "pci"
+		device.vendor.id = "8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "2668"
+		device.product.name = "82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)"
+		device.form_factor = "internal"
+		device.string = "front:0"
+		device.buffering.buffer_size = "352800"
+		device.buffering.fragment_size = "176400"
+		device.access_mode = "mmap+timer"
+		device.profile.name = "analog-stereo"
+		device.profile.description = "Analog Stereo"
+		device.description = "Built-in Audio Analog Stereo"
+		alsa.mixer_name = "QEMU Generic"
+		alsa.components = "HDA:1af40022,1af40022,00100101"
+		module-udev-detect.discovered = "1"
+		device.icon_name = "audio-card-pci"
+	ports:
+		analog-input-linein: Line In (priority 8100, latency offset 0 usec, available: unknown)
+			properties:
+				
+	active port: &lt;analog-input-linein&gt;
+    index: 2
+	name: &lt;MySink.monitor&gt;
+	driver: &lt;module-null-sink.c&gt;
+	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
+	state: SUSPENDED
+	suspend cause: IDLE
+	priority: 1000
+	volume: mono: 65536 / 100% / 0.00 dB
+	        balance 0.00
+	base volume: 65536 / 100% / 0.00 dB
+	volume steps: 65537
+	muted: no
+	current latency: 0.00 ms
+	max rewind: 46 KiB
+	sample spec: s16le 1ch 12000Hz
+	channel map: mono
+	             Mono
+	used by: 0
+	linked by: 0
+	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
+	monitor_of: 1
+	module: 20
+	properties:
+		device.description = "Monitor of Null Output"
+		device.class = "monitor"
+		device.icon_name = "audio-input-microphone"
 </code></pre></div></div>
-<p>```</p>
+
+<p>The Volume Control program allows you to monitor what sources and sinks are available.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pavucontrol&amp;
+</code></pre></div></div>
+<ul>
+  <li>In the Configuration tab, select Off as the Built-in Audio profile</li>
+  <li>If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output</li>
+  <li>If you look at Output Devices and Show: All Output Devices, you should only see Null Output
+`
+Leave the pavucontrol window open, start Firefox and browse to a <a href="http://www.websdr.org/">websdr site</a>, e.g.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>firefox http://websdr.ewi.utwente.nl:8901/?tune<span class="o">=</span>7038.6usb
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>PulseAudio Preferences can be used to configure the network.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ paprefs
+</code></pre></div></div>
+<ul>
+  <li>Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”</li>
+  <li>Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”</li>
+</ul>
 
 <h2 id="references">References</h2>
 <ul>

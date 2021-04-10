@@ -256,23 +256,23 @@ Copyright <span class="o">(</span>c<span class="o">)</span> 2003-2021 Fabrice Be
 <h2 id="12-for-32-bit-armhf">1.2. For (32-bit) armhf</h2>
 
 <p>Install qemu.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
-<span class="nb">sudo </span>apt upgrade
-<span class="nb">mkdir </span>qemu<span class="p">;</span> <span class="nb">cd </span>qemu
-<span class="nb">sudo </span>apt <span class="nb">install </span>qemu-system-arm
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt update
+<span class="nv">$ </span><span class="nb">sudo </span>apt upgrade
+<span class="nv">$ </span><span class="nb">mkdir </span>qemu<span class="p">;</span> <span class="nb">cd </span>qemu
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>qemu-system-arm
 </code></pre></div></div>
 
 <p>Download <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz">initrd.gz</a>, <a href="http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz">vmlinuz</a> and
 <a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso">debian-10.9.0-armhf-netinst.iso</a>
 (alternatively
 <a href="http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso">debian-10.9.0-armhf-xfce-CD-1.iso</a>).</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
-wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
-wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
+<span class="nv">$ </span>wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
+<span class="nv">$ </span>wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
 </code></pre></div></div>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-img create <span class="nt">-f</span> qcow2 debian-3607.qcow2 16G <span class="c"># 8G will also work but not leave enough disk space for other things</span>
-qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> ./vmlinuz <span class="nt">-initrd</span> ./initrd.gz <span class="nt">-hda</span> debian-3607.qcow2 <span class="nt">-nographic</span> <span class="nt">-m</span> 1024M <span class="nt">-append</span> <span class="s2">"console=ttyAMA0"</span> <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-10.9.0-armhf-netinst.iso,id<span class="o">=</span>cdrom,if<span class="o">=</span>none,media<span class="o">=</span>cdrom <span class="nt">-device</span> virtio-scsi-device <span class="nt">-device</span> scsi-cd,drive<span class="o">=</span>cdrom
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qemu-img create <span class="nt">-f</span> qcow2 debian-3607.qcow2 16G <span class="c"># 8G will also work but not leave enough disk space for other things</span>
+<span class="nv">$ </span>qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> ./vmlinuz <span class="nt">-initrd</span> ./initrd.gz <span class="nt">-hda</span> debian-3607.qcow2 <span class="nt">-nographic</span> <span class="nt">-m</span> 1024M <span class="nt">-append</span> <span class="s2">"console=ttyAMA0"</span> <span class="nt">-drive</span> <span class="nv">file</span><span class="o">=</span>debian-10.9.0-armhf-netinst.iso,id<span class="o">=</span>cdrom,if<span class="o">=</span>none,media<span class="o">=</span>cdrom <span class="nt">-device</span> virtio-scsi-device <span class="nt">-device</span> scsi-cd,drive<span class="o">=</span>cdrom
 </code></pre></div></div>
 
 <p>Use all of the defaults for the Debian installer.</p>
@@ -288,13 +288,13 @@ qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> 
 </ul>
 
 <p>Extract the kernel and initrd from the disk image.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>libguestfs-tools
-virt-ls <span class="nt">-a</span> debian-3607.qcow2 /boot/
-virt-copy-out <span class="nt">-a</span> debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae <span class="nb">.</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>libguestfs-tools
+<span class="nv">$ </span>virt-ls <span class="nt">-a</span> debian-3607.qcow2 /boot/
+<span class="nv">$ </span>virt-copy-out <span class="nt">-a</span> debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae <span class="nb">.</span>
 </code></pre></div></div>
 
 <p>Now you can run your Debian-Arm Linux from either Linux:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> vmlinuz-4.19.0-16-armmp-lpae <span class="nt">-initrd</span> initrd.img-4.19.0-16-armmp-lpae <span class="se">\</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>qemu-system-arm <span class="nt">-M</span> virt <span class="nt">-kernel</span> vmlinuz-4.19.0-16-armmp-lpae <span class="nt">-initrd</span> initrd.img-4.19.0-16-armmp-lpae <span class="se">\</span>
 <span class="nt">-append</span> <span class="s1">'root=/dev/vda2'</span> <span class="nt">-drive</span> <span class="k">if</span><span class="o">=</span>virtio,file<span class="o">=</span>debian-3607-lab4sol.qcow2,format<span class="o">=</span>qcow2,id<span class="o">=</span>hd <span class="se">\</span>
 <span class="nt">-nographic</span> <span class="nt">-net</span> user,hostfwd<span class="o">=</span>tcp::10022-:22 <span class="nt">-net</span> nic
 </code></pre></div></div>
@@ -302,10 +302,10 @@ virt-copy-out <span class="nt">-a</span> debian-3607.qcow2 /boot/vmlinuz-4.19.0-
 <h1 id="2-install-sudo-and-put-elec3607-in-the-sudo-group">2. Install sudo and put ELEC3607 in the sudo group</h1>
 <p>Login as <code class="language-plaintext highlighter-rouge">elec3607</code> (password is <code class="language-plaintext highlighter-rouge">elec3607</code>) and execute the following commands.
 Note that the basic distribution of Debian does not include sudo.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>elec3607@debian:~<span class="nv">$ </span>su -
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>su -
 Password: 
-root@debian:~# apt <span class="nb">install sudo 
-</span>Reading package lists... Done
+<span class="c"># apt install sudo </span>
+Reading package lists... Done
 ...
 usermod <span class="nt">-a</span> <span class="nt">-G</span> <span class="nb">sudo </span>elec3607
 shutdown now
@@ -428,7 +428,7 @@ shutdown now
     </h2>
     
     <p class="archive__item-excerpt" itemprop="description">This post describes how to use audio on aarch64 ARM under
-qemu Debian Linux. It follows from (/2021/qemu-armhf-debian/)
+qemu Debian Linux. It follows from Debian on ARM via QEMU
 </p>
   </article>
 </div>
