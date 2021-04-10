@@ -34,9 +34,9 @@ You can also copy files to it.
 scp -P 10022 -r lab5-audio elec3607@localhost:
 ```
 
-Install the alsa, pulseaudio, firefox and audacity packages. 
+Install the alsa and pulseaudio.
 ```bash
-$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev firefox-esr audacity
+$ sudo apt install libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev 
 $ sudo usermod -aG audio,pulse,pulse-access elec3607
 ```
 Then you have to log out and log in again.
@@ -341,12 +341,18 @@ mode -21 -2.9   0.001478 -2  VK4YEH QG62 37
 [3]+  Done                    paplay data/iq-16b.wav
 ```
 
-PulseAudio Preferences can be used to configure the network.
-```
-$ paprefs
-```
- * Under the Network Access tab, select "Make discoverable PulseAudio network sound devices available locally"
- * Under the Network Server tab, select "Enable network access to local sound devices" and "Don't require authentication"
+Other useful tools include:
+ * Firefox and audacity packages are useful but run too slow on QEMU. 
+  ```
+  sudo apt install firefox-esr audacity
+  ```
+
+ * PulseAudio Preferences can be used to configure the network.
+  ```
+  $ paprefs
+  ```
+   * Under the Network Access tab, select "Make discoverable PulseAudio network sound devices available locally"
+   * Under the Network Server tab, select "Enable network access to local sound devices" and "Don't require authentication"
 
 ## References
  * <https://gavv.github.io/articles/pulseaudio-under-the-hood/>

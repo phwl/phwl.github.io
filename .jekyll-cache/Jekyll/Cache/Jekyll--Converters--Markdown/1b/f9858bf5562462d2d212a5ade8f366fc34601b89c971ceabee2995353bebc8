@@ -1,9 +1,0 @@
-I"<ul class="toc__menu">
-  <li><a href="#for-64-bit-aarch64">For (64-bit) aarch64</a></li>
-  <li><a href="#for-32-bit-armhf">For (32-bit) armhf</a>
-    <ul>
-      <li><a href="#install-debian-on-qemu-system-arm">Install Debian on qemu-system-arm</a></li>
-    </ul>
-  </li>
-</ul>
-:ET

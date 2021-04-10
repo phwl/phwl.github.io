@@ -1,4 +1,4 @@
-I"�7<p>This post describes how to use audio on aarch64 ARM under
+I"�=<p>This post describes how to use audio on aarch64 ARM under
 <code class="language-plaintext highlighter-rouge">qemu</code> Debian Linux. It follows from <a href="/2021/qemu-armhf-debian/">Debian on ARM via QEMU</a></p>
 
 <p>Start by booting QEMU.</p>
@@ -12,9 +12,12 @@
 I prefer to ssh to the QEMU machine so I can run Xwindows.</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh <span class="nt">-Y</span> elec3607@localhost <span class="nt">-p</span> 10022
 </code></pre></div></div>
+<p>You can also copy files to it.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scp <span class="nt">-P</span> 10022 <span class="nt">-r</span> lab5-audio elec3607@localhost:
+</code></pre></div></div>
 
-<p>Install the alsa, pulseaudio, firefox and audacity packages.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev firefox-esr audacity
+<p>Install the alsa and pulseaudio.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev 
 <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> audio,pulse,pulse-access elec3607
 </code></pre></div></div>
 <p>Then you have to log out and log in again.</p>
@@ -292,23 +295,42 @@ $ pacmd list-sources
 		device.icon_name = "audio-input-microphone"
 </code></pre></div></div>
 
-<p>The Volume Control program allows you to monitor what sources and sinks are available.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ pavucontrol
+<p>The Volume Control program allows you to monitor what sources and sinks are available. If you play something and run <code class="language-plaintext highlighter-rouge">pavucontrol</code>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>paplay iq-16b.wav&amp;
+<span class="nv">$ </span>pavucontrol&amp;
 </code></pre></div></div>
 <ul>
   <li>In the Configuration tab, select Off as the Built-in Audio profile</li>
-  <li>If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output</li>
-  <li>If you look at Output Devices and Show: All Output Devices, you should only see Null Output
-```
-Leave this window open, start Firefox and browse to some site which has sound output, e.g. youtube.com.</li>
+  <li>If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output and the meter should indicate something is playing.</li>
+  <li>If you look at Output Devices and Show: All Output Devices, you should only see Null Output and the meter should indicate something is playing.
+`</li>
 </ul>
 
-<p>PulseAudio Preferences can be used to configure the network.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ paprefs
+<p>If you play a file in the background, you can decode it.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>paplay data/iq-16b.wav &amp;
+<span class="nv">$ </span>wsprcan/k9an-wsprd 
+Writing data/wf-1618037425.wav
+mode  <span class="nt">-1</span> <span class="nt">-3</span>.1   0.001437 <span class="nt">-3</span>  VK2RG QF56 30 
+mode <span class="nt">-19</span> <span class="nt">-2</span>.9   0.001455 <span class="nt">-2</span>  VK3GOD QF23 23 
+mode <span class="nt">-21</span> <span class="nt">-2</span>.9   0.001478 <span class="nt">-2</span>  VK4YEH QG62 37 
+&lt;DecodeFinished,data/wf-1618037425.wav,3&gt;
+<span class="o">[</span>3]+  Done                    paplay data/iq-16b.wav
 </code></pre></div></div>
+
+<p>Other useful tools include:</p>
 <ul>
-  <li>Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”</li>
-  <li>Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”</li>
+  <li>Firefox and audacity packages are useful but run too slow on QEMU.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sudo apt install firefox-esr audacity
+</code></pre></div>    </div>
+  </li>
+  <li>PulseAudio Preferences can be used to configure the network.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ paprefs
+</code></pre></div>    </div>
+    <ul>
+      <li>Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”</li>
+      <li>Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”</li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="references">References</h2>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-10T16:21:20+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-10T17:47:35+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux. It follows from &lt;a href=&quot;/2021/qemu-armhf-debian/&quot;&gt;Debian on ARM via QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Start by booting QEMU.&lt;/p&gt;
@@ -12,9 +12,12 @@
 I prefer to ssh to the QEMU machine so I can run Xwindows.&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; elec3607@localhost &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 10022
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can also copy files to it.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; 10022 &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; lab5-audio elec3607@localhost:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Install the alsa, pulseaudio, firefox and audacity packages.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev firefox-esr audacity
+&lt;p&gt;Install the alsa and pulseaudio.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev 
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; audio,pulse,pulse-access elec3607
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Then you have to log out and log in again.&lt;/p&gt;
@@ -292,26 +295,42 @@ $ pacmd list-sources
 		device.icon_name = &quot;audio-input-microphone&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The Volume Control program allows you to monitor what sources and sinks are available.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ pavucontrol&amp;amp;
+&lt;p&gt;The Volume Control program allows you to monitor what sources and sinks are available. If you play something and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pavucontrol&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paplay iq-16b.wav&amp;amp;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pavucontrol&amp;amp;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;In the Configuration tab, select Off as the Built-in Audio profile&lt;/li&gt;
-  &lt;li&gt;If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output&lt;/li&gt;
-  &lt;li&gt;If you look at Output Devices and Show: All Output Devices, you should only see Null Output
-`
-Leave the pavucontrol window open, start Firefox and browse to a &lt;a href=&quot;http://www.websdr.org/&quot;&gt;websdr site&lt;/a&gt;, e.g.
-    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;firefox http://websdr.ewi.utwente.nl:8901/?tune&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;7038.6usb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
+  &lt;li&gt;If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output and the meter should indicate something is playing.&lt;/li&gt;
+  &lt;li&gt;If you look at Output Devices and Show: All Output Devices, you should only see Null Output and the meter should indicate something is playing.
+`&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;PulseAudio Preferences can be used to configure the network.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ paprefs
+&lt;p&gt;If you play a file in the background, you can decode it.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paplay data/iq-16b.wav &amp;amp;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wsprcan/k9an-wsprd 
+Writing data/wf-1618037425.wav
+mode  &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt;.1   0.001437 &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt;  VK2RG QF56 30 
+mode &lt;span class=&quot;nt&quot;&gt;-19&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;.9   0.001455 &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;  VK3GOD QF23 23 
+mode &lt;span class=&quot;nt&quot;&gt;-21&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;.9   0.001478 &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;  VK4YEH QG62 37 
+&amp;lt;DecodeFinished,data/wf-1618037425.wav,3&amp;gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;3]+  Done                    paplay data/iq-16b.wav
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Other useful tools include:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”&lt;/li&gt;
-  &lt;li&gt;Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”&lt;/li&gt;
+  &lt;li&gt;Firefox and audacity packages are useful but run too slow on QEMU.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install firefox-esr audacity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;PulseAudio Preferences can be used to configure the network.
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ paprefs
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”&lt;/li&gt;
+      &lt;li&gt;Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
