@@ -537,6 +537,11 @@ mode <span class="nt">-21</span> <span class="nt">-2</span>.9   0.001478 <span c
   </li>
 </ul>
 
+<p>If you go to a websdr in Firefox, you can route the audio to your machine.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>firefox http://websdr1.sdrutah.org:8901/index1a.html?tune<span class="o">=</span>7038.6usb &amp;
+</code></pre></div></div>
+<p>Unfortunately, this doesn’t run fast enough under QEMU to work on wspr decoding but it does under native x86 Linux.</p>
+
 <h2 id="references">References</h2>
 <ul>
   <li><a href="https://gavv.github.io/articles/pulseaudio-under-the-hood/">https://gavv.github.io/articles/pulseaudio-under-the-hood/</a></li>

@@ -354,6 +354,12 @@ Other useful tools include:
    * Under the Network Access tab, select "Make discoverable PulseAudio network sound devices available locally"
    * Under the Network Server tab, select "Enable network access to local sound devices" and "Don't require authentication"
 
+If you go to a websdr in Firefox, you can route the audio to your machine.
+```bash
+$ firefox http://websdr1.sdrutah.org:8901/index1a.html?tune=7038.6usb &
+```
+Unfortunately, this doesn't run fast enough under QEMU to work on wspr decoding but it does under native x86 Linux.
+
 ## References
  * <https://gavv.github.io/articles/pulseaudio-under-the-hood/>
  * <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/>
