@@ -79,3 +79,4 @@ Postscript. Dong didn't do badly compared to [these people](https://www.smh.com.
 
 {% include figure image_path="/assets/images/2021/04/IMG_7694.jpeg" caption="" %}
 
+{% include figure image_path="/assets/images/2021/04/IMG_7723.jpg" caption="" %}
