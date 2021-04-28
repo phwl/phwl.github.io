@@ -303,8 +303,8 @@ In *Proc\. of The International Conference on Learning Representations \(ICLR\)*
 URL: [bm\_iclr21\.pdf](bm_iclr21.pdf)\.  
 [2] Cyrus Wing\-Hei Chan, Philip H\.W\. Leong, and Hayden Kwok\-Hay So\.
 Vision guided crop detection in field robots using fpga\-based reconfigurable computers\.
-In *FoodCAS \(workshop within ISCAS\)*\. 2020\.
-URL: [crop\_foodcas20\.pdf](crop_foodcas20.pdf)\.  
+In *FoodCAS \(workshop within ISCAS\)*, 1&ndash;5\. 2020\.
+URL: [crop\_foodcas20\.pdf](crop_foodcas20.pdf), [doi:10\.1109/ISCAS45731\.2020\.9181302](https://doi.org/10.1109/ISCAS45731.2020.9181302)\.  
 [3] Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha\.
 Real\-time automatic modulation classification using RFSoC\.
 In *2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18\-22, 2020*, 82–89\. IEEE, 2020\.

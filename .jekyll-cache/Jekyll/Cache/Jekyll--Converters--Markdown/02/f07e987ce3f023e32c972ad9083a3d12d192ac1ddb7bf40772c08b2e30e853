@@ -1,4 +1,4 @@
-I"�)<ul id="markdown-toc">
+I",*<ul id="markdown-toc">
   <li><a href="#journals" id="markdown-toc-journals">Journals</a></li>
   <li><a href="#conferences" id="markdown-toc-conferences">Conferences</a></li>
   <li><a href="#patents" id="markdown-toc-patents">Patents</a></li>
@@ -302,8 +302,8 @@ In <em>Proc. of The International Conference on Learning Representations (ICLR)<
 URL: <a href="bm_iclr21.pdf">bm_iclr21.pdf</a>.<br />
 [2] Cyrus Wing-Hei Chan, Philip H.W. Leong, and Hayden Kwok-Hay So.
 Vision guided crop detection in field robots using fpga-based reconfigurable computers.
-In <em>FoodCAS (workshop within ISCAS)</em>. 2020.
-URL: <a href="crop_foodcas20.pdf">crop_foodcas20.pdf</a>.<br />
+In <em>FoodCAS (workshop within ISCAS)</em>, 1–5. 2020.
+URL: <a href="crop_foodcas20.pdf">crop_foodcas20.pdf</a>, <a href="https://doi.org/10.1109/ISCAS45731.2020.9181302">doi:10.1109/ISCAS45731.2020.9181302</a>.<br />
 [3] Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha.
 Real-time automatic modulation classification using RFSoC.
 In <em>2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18-22, 2020</em>, 82–89. IEEE, 2020.

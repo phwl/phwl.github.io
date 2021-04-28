@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-10T20:19:50+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-28T11:50:15+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux. It follows from &lt;a href=&quot;/2021/qemu-armhf-debian/&quot;&gt;Debian on ARM via QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Start by booting QEMU.&lt;/p&gt;
@@ -466,6 +466,15 @@ an eventful trip and we made some new friends. Dong certainly took his misfortun
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot;&gt;
   &lt;img src=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/04/IMG_7723.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/04/IMG_7723.jpg&quot; alt=&quot;&quot; /&gt;
   
     &lt;figcaption&gt;
       
