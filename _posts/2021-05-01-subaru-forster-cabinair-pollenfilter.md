@@ -12,7 +12,7 @@ tags:
 header:
   teaser: /assets/images/2021/05/IMG_1897.jpg
 ---
-Took our 2016 Subaru Forester to Subaru for a service. They called me
+Took our 2016 Forester to Subaru for a service. They called me
 back asking if I wanted to pay $143 to 
 replace the Cabin Air/Pollen filter.
 
