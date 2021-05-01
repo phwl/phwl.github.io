@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-28T11:50:15+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-01T11:26:38+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">2016 Subaru Forester Cabin Air / Pollen Filter Replacement</title><link href="/2021/subaru-forster-cabinair-pollenfilter/" rel="alternate" type="text/html" title="2016 Subaru Forester Cabin Air / Pollen Filter Replacement" /><published>2021-05-01T11:13:59+10:00</published><updated>2021-05-01T11:13:59+10:00</updated><id>/2021/subaru-forster-cabinair-pollenfilter</id><content type="html" xml:base="/2021/subaru-forster-cabinair-pollenfilter/">&lt;p&gt;A few days ago I took our 2016 Subaru Forester for a service. They called me
+back with the inspect report below, asking if I wanted to pay $143 for 
+a replacement Cabin Air/Pollen filter.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/05/cabinfilter.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/05/cabinfilter.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;I didn’t even know that cars had these but since they had to take it out to
+inspect it, one wouldn’t think they need to charge $100 in labour to replace.
+The procedure takes about 5 min the first time. The next time it should be
+about 2 min.&lt;/p&gt;
+
+&lt;p&gt;First you pull out the plastic arm that pulls up on the glovebox door.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/05/IMG_1892.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/05/IMG_1892.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Then you push the glovebox to the left to unhook the plastic hinge.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/05/IMG_1895.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/05/IMG_1895.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;The glovebox comes right out and the cabin filter is on the bottom, marked “push”. Push the tabs towards each other and slide it out.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/05/IMG_1896.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/05/IMG_1896.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Actually, the filter was not too dirty for 5 years but since I had it out, replace it with one from Repco which was $40.85 (with NRMA discount).&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/05/IMG_1897.jpg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/05/IMG_1897.jpg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="repair" /><summary type="html">A few days ago I took our 2016 Subaru Forester for a service. They called me back with the inspect report below, asking if I wanted to pay $143 for a replacement Cabin Air/Pollen filter.</summary></entry><entry><title type="html">Audio configuration under Debian QEMU</title><link href="/2021/qemu-debian-audio/" rel="alternate" type="text/html" title="Audio configuration under Debian QEMU" /><published>2021-04-06T09:00:00+10:00</published><updated>2021-04-06T09:00:00+10:00</updated><id>/2021/qemu-debian-audio</id><content type="html" xml:base="/2021/qemu-debian-audio/">&lt;p&gt;This post describes how to use audio on aarch64 ARM under
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; Debian Linux. It follows from &lt;a href=&quot;/2021/qemu-armhf-debian/&quot;&gt;Debian on ARM via QEMU&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Start by booting QEMU.&lt;/p&gt;
@@ -2188,39 +2243,4 @@ print the status of the S2 button once a second as below.&lt;/p&gt;
   &lt;li&gt;Complete the “FILL THIS IN” parts of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssd.c&lt;/code&gt; so the value changes in value 0 to 9 every second then goes back to 0. When S2 is pressed it should count backwards.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Note that for the program to work, you will need to use the same GPIO lines as the program.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry><entry><title type="html">BeagleBone Green Getting Started</title><link href="/2021/bbg-getting-started/" rel="alternate" type="text/html" title="BeagleBone Green Getting Started" /><published>2021-02-22T14:02:12+11:00</published><updated>2021-02-22T14:02:12+11:00</updated><id>/2021/bbg-getting-started</id><content type="html" xml:base="/2021/bbg-getting-started/">&lt;p&gt;This post details how to get started with a BeagleBone Green (BBG) microSD card.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-getting-started&quot;&gt;1. Getting Started&lt;/h2&gt;
-&lt;p&gt;Instructions for getting started with the BBG are available at at 
-at &lt;a href=&quot;https://beagleboard.org/getting-started&quot;&gt;https://beagleboard.org/getting-started&lt;/a&gt;. This involves downloading
-the Debian Linux image and writing it to a microSD card (make sure you
-use the Debian image for the BBG). My version was:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Buster IoT (without graphical desktop) for BeagleBone and PocketBeagle via microSD card
-AM3358 Debian 10.3 2020-04-06 4GB SD IoT image for PocketBeagle, BeagleBone, BeagleBone Black, BeagleBone Black Wireless, BeagleBone Black Industrial, BeagleBone Blue, SeeedStudio BeagleBone Green, SeeedStudio BeagleBone Green Wireless, SanCloud BeagleBone Enhanced, Arrow BeagleBone Black Industrial and Mentorel BeagleBone uSomIQ - more info - sha256sum: 22448ba28d0d58e25e875aac3b4e91eaef82e2d11c9d2c43d948ed60708f7434
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The driver for networking via USB didn’t work with the latest version
-of MacOS (Big Sur 11.2.1) but the BBG was able to use DNS over Ethernet
-to connect to my network (this won’t work in the lab if there is more
-than one BBG plugged into the network).  One can then run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ssh&lt;/code&gt; to access (use “temppwd” as the
-password for user “debian”)&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;debian@beaglebone:~&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; debian@beaglebone.local
-Debian GNU/Linux 10
-
-BeagleBoard.org Debian Buster IoT TIDL Image 2020-04-06
-
-Support: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
-
-default username:password is &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;debian:temppwd]
-
-debian@beaglebone.local&lt;span class=&quot;s1&quot;&gt;&apos;s password: 
-
-The programs included with the Debian GNU/Linux system are free software;
-the exact distribution terms for each program are described in the
-individual files in /usr/share/doc/*/copyright.
-
-Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-Last login: Mon Feb 22 22:27:56 2021 from 192.168.0.32
-debian@beaglebone:~$
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to get started with a BeagleBone Green (BBG) microSD card.</summary></entry></feed>
+&lt;p&gt;Note that for the program to work, you will need to use the same GPIO lines as the program.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post details how to control the BeagleBone Green (BBG) via GPIO.</summary></entry></feed>
