@@ -10,7 +10,7 @@ categories:
 tags:
 - repair
 header:
-  teaser: /assets/images/2021/04/IMG_1897.jpg
+  teaser: /assets/images/2021/05/IMG_1897.jpg
 ---
 A few days ago I took our 2016 Subaru Forester for a service. They called me
 back with the inspect report below, asking if I wanted to pay $143 for 
