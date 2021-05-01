@@ -12,16 +12,15 @@ tags:
 header:
   teaser: /assets/images/2021/05/IMG_1897.jpg
 ---
-A few days ago I took our 2016 Subaru Forester for a service. They called me
-back with the inspect report below, asking if I wanted to pay $143 for 
-a replacement Cabin Air/Pollen filter.
+Took our 2016 Subaru Forester to Subaru for a service. They called me
+back asking if I wanted to pay $143 to 
+replace the Cabin Air/Pollen filter.
+
+Here is the inspection report. I didn't even know that cars had these but since they had to take it out to
+inspect, one wouldn't think they need to charge $100 labour to replace.
 {% include figure image_path="/assets/images/2021/05/cabinfilter.jpg" caption="" %}
 
-I didn't even know that cars had these but since they had to take it out to
-inspect it, one wouldn't think they need to charge $100 in labour to replace.
-The procedure takes about 5 min the first time. The next time it should be
-about 2 min.
-
+The procedure takes about 5 min the first time (actually from the photo timestamp information it took 4 min and that's counting the time spent taking the pictures). 
 First you pull out the plastic arm that pulls up on the glovebox door. 
 {% include figure image_path="/assets/images/2021/05/IMG_1892.jpg" caption="" %}
 
