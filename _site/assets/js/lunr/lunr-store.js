@@ -1144,7 +1144,7 @@ var store = [{
         "tags": ["repair"],
         "url": "/2021/subaru-forster-cabinair-pollenfilter/",
         "teaser":"/assets/images/2021/05/IMG_1897.jpg"},{
-        "title": "Antifouling Charlie's boat",
+        "title": "Anti-fouling Charlie's boat",
         "excerpt":"My friend Charlie’s boat was at the dock for anti-fouling and I gave him a  hand.   Nice view of Sydney Harbour from Woolwich Dock.                                                            Quite a few boats around here.                                                            Here’s Charlie. He actually did most of the hard work the previous day so all we had to do was paint.                               Before.                               After.                               ","categories": ["diy"],
         "tags": ["repair"],
         "url": "/2021/antifoul-boat/",
