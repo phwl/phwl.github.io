@@ -16,7 +16,7 @@ My friend Charlie's boat was at the dock for anti-fouling and I gave him a
 hand.
 
 
-Nice view of Sydney Harbour from the dock.
+Nice view of Sydney Harbour from Woolwich Dock.
 {% include figure image_path="/assets/images/2021/05/DSCF1023.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2021/05/DSCF1025.jpeg" caption="" %}
