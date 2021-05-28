@@ -41,13 +41,13 @@ using the Package Manager method and deb(network) installer type.
 After adding the package, I installed the 11.1.1-1 version to be compatible
 with pytorch.
 ```
-sudo apt install cuda=11.1.1-1
+sudo apt-get -y install cuda=11.1.1-1
 sudo shutdown -r now
 ```
 
 ## Step 2 Install Anaconda
 ```
-wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh`
+wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 sh Anaconda3-2021.05-Linux-x86_64.sh
 conda install pytorch cudatoolkit=11.1 -c pytorch -c nvidia
 ```

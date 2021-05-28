@@ -207,12 +207,12 @@ sudo ubuntu-drivers autoinstall
 using the Package Manager method and deb(network) installer type. 
 After adding the package, I installed the 11.1.1-1 version to be compatible
 with pytorch.</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install cuda=11.1.1-1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get -y install cuda=11.1.1-1
 sudo shutdown -r now
 </code></pre></div></div>
 
 <h2 id="step-2-install-anaconda">Step 2 Install Anaconda</h2>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh`
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 sh Anaconda3-2021.05-Linux-x86_64.sh
 conda install pytorch cudatoolkit=11.1 -c pytorch -c nvidia
 </code></pre></div></div>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-28T17:43:02+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Flathead Ubuntu GPU Machine Install</title><link href="/2021/flathead-configuration/" rel="alternate" type="text/html" title="Flathead Ubuntu GPU Machine Install" /><published>2021-05-27T14:54:42+10:00</published><updated>2021-05-27T14:54:42+10:00</updated><id>/2021/flathead-configuration</id><content type="html" xml:base="/2021/flathead-configuration/">&lt;p&gt;This is how a new machine, flathead, was configured.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-28T17:46:12+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Flathead Ubuntu GPU Machine Install</title><link href="/2021/flathead-configuration/" rel="alternate" type="text/html" title="Flathead Ubuntu GPU Machine Install" /><published>2021-05-27T14:54:42+10:00</published><updated>2021-05-27T14:54:42+10:00</updated><id>/2021/flathead-configuration</id><content type="html" xml:base="/2021/flathead-configuration/">&lt;p&gt;This is how a new machine, flathead, was configured.&lt;/p&gt;
 
 &lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
 &lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;.&lt;/p&gt;
@@ -23,12 +23,12 @@ sudo ubuntu-drivers autoinstall
 using the Package Manager method and deb(network) installer type. 
 After adding the package, I installed the 11.1.1-1 version to be compatible
 with pytorch.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install cuda=11.1.1-1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get -y install cuda=11.1.1-1
 sudo shutdown -r now
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-2-install-anaconda&quot;&gt;Step 2 Install Anaconda&lt;/h2&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh`
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 sh Anaconda3-2021.05-Linux-x86_64.sh
 conda install pytorch cudatoolkit=11.1 -c pytorch -c nvidia
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
