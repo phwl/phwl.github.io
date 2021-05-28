@@ -11,6 +11,12 @@ wordpress_id: 3312
 ---
 
 
+## 12 May 2021, ELEC3607 Embedded Systems Lecture
+[A Simple SDR](assets/talks/elec3607-sdr21.pdf), 
+University of Sydney
+
+A simple software defined radio receiver for 40m.
+
 ## 4 Sep 2020, Invited Lecture
 [A Fully Parallel DNN Implementation and its Application to Automatic Modulation Classification](assets/talks/amc-rc4ml20.pdf), 
 [30th International Conference on Field-Programmable Logic and Applications](https://www.fpl2020.org/), 4th Workshop on Reconfigurable Computing for Machine Learning – RC4ML’2020
