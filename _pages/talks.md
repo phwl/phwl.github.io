@@ -15,7 +15,7 @@ wordpress_id: 3312
 [A Simple SDR](assets/talks/elec3607-sdr21.pdf), 
 University of Sydney
 
-A simple software defined radio receiver for 40m.
+A simple 40m (7 MHz) software defined radio.
 
 ## 4 Sep 2020, Invited Lecture
 [A Fully Parallel DNN Implementation and its Application to Automatic Modulation Classification](assets/talks/amc-rc4ml20.pdf), 
