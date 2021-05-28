@@ -1,0 +1,35 @@
+I"�<p>This is how a new machine, flathead, was configured.</p>
+
+<h2 id="machine">Machine</h2>
+<p>The machine was purchased from <a href="http://mwave.com.au">Mwave</a>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Supermicro 7049GP-TRT 
+Dual Intel Xeon Silver 4208
+256GB ECC RDIMM 3200 Mhz
+1TB  M.2 nvme SSD
+1 x 4TB 7.2K HDD 
+4 x Nvidia GeForce RTX3090 24GB OEM Graphics Cards
+</code></pre></div></div>
+
+<h2 id="step-1-bios-boot-mode">Step 1 BIOS Boot Mode</h2>
+<p>In the BIOS settings set boot mode to Legacy (the Ubuntu 20.04 USB doesn’t
+boot in UEFI mode).</p>
+
+<h2 id="step-2-install-ubuntu">Step 2 Install Ubuntu</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt purge nvidia-*
+sudo apt autoremove
+sudo ubuntu-drivers autoinstall
+</code></pre></div></div>
+<p>Then follow the <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">Nvidia instructions</a>
+using the Package Manager method and deb(network) installer type. This doesn’t quite work as you need to do a
+before installing cuda</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install cuda=11.1.1-1
+sudo shutdown -r now
+</code></pre></div></div>
+
+<h2 id="step-2-install-anaconda">Step 2 Install Anaconda</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh`
+sh Anaconda3-2021.05-Linux-x86_64.sh
+conda install pytorch cudatoolkit=11.1 -c pytorch -c nvidia
+</code></pre></div></div>
+
+:ET

@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-23T16:40:11+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Anti-fouling Charlie’s boat</title><link href="/2021/antifoul-boat/" rel="alternate" type="text/html" title="Anti-fouling Charlie’s boat" /><published>2021-05-23T07:12:12+10:00</published><updated>2021-05-23T07:12:12+10:00</updated><id>/2021/antifoul-boat</id><content type="html" xml:base="/2021/antifoul-boat/">&lt;p&gt;My friend Charlie’s boat was at the dock for anti-fouling and I gave him a 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-05-28T17:43:02+10:00</updated><id>/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Flathead Ubuntu GPU Machine Install</title><link href="/2021/flathead-configuration/" rel="alternate" type="text/html" title="Flathead Ubuntu GPU Machine Install" /><published>2021-05-27T14:54:42+10:00</published><updated>2021-05-27T14:54:42+10:00</updated><id>/2021/flathead-configuration</id><content type="html" xml:base="/2021/flathead-configuration/">&lt;p&gt;This is how a new machine, flathead, was configured.&lt;/p&gt;
+
+&lt;h2 id=&quot;machine&quot;&gt;Machine&lt;/h2&gt;
+&lt;p&gt;The machine was purchased from &lt;a href=&quot;http://mwave.com.au&quot;&gt;Mwave&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Supermicro 7049GP-TRT 
+Dual Intel Xeon Silver 4208
+256GB ECC RDIMM 3200 Mhz
+1TB  M.2 nvme SSD
+1 x 4TB 7.2K HDD 
+4 x Nvidia GeForce RTX3090 24GB OEM Graphics Cards
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-1-bios-boot-mode&quot;&gt;Step 1 BIOS Boot Mode&lt;/h2&gt;
+&lt;p&gt;In the BIOS settings set boot mode to Legacy (the Ubuntu 20.04 USB doesn’t
+boot in UEFI mode).&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2-install-ubuntu&quot;&gt;Step 2 Install Ubuntu&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt purge nvidia-*
+sudo apt autoremove
+sudo ubuntu-drivers autoinstall
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then follow the &lt;a href=&quot;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html&quot;&gt;Nvidia instructions&lt;/a&gt;
+using the Package Manager method and deb(network) installer type. 
+After adding the package, I installed the 11.1.1-1 version to be compatible
+with pytorch.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install cuda=11.1.1-1
+sudo shutdown -r now
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;step-2-install-anaconda&quot;&gt;Step 2 Install Anaconda&lt;/h2&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh`
+sh Anaconda3-2021.05-Linux-x86_64.sh
+conda install pytorch cudatoolkit=11.1 -c pytorch -c nvidia
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Seems to work&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(base) phwl@flathead:~$ cat /proc/driver/nvidia/version 
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  460.73.01  Thu Apr  1 21:40:36 UTC 2021
+GCC version:  
+(base) phwl@flathead:~$ python
+Python 3.8.8 (default, Apr 13 2021, 19:58:26) 
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; import torch
+&amp;gt;&amp;gt;&amp;gt; list(map(torch.cuda.get_device_name, range(4)))
+[&apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;]
+&amp;gt;&amp;gt;&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, flathead, was configured.</summary></entry><entry><title type="html">Anti-fouling Charlie’s boat</title><link href="/2021/antifoul-boat/" rel="alternate" type="text/html" title="Anti-fouling Charlie’s boat" /><published>2021-05-23T17:12:12+10:00</published><updated>2021-05-23T17:12:12+10:00</updated><id>/2021/antifoul-boat</id><content type="html" xml:base="/2021/antifoul-boat/">&lt;p&gt;My friend Charlie’s boat was at the dock for anti-fouling and I gave him a 
 hand.&lt;/p&gt;
 
 &lt;p&gt;Nice view of Sydney Harbour from Woolwich Dock.&lt;/p&gt;
@@ -1760,109 +1807,4 @@ individual files &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; /usr/share/doc/
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 Last login: Fri Feb 26 05:05:45 2021
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to the Internet via Ethernet on Windows and MacOS.</summary></entry><entry><title type="html">BeagleBone Green Device Tree</title><link href="/2021/bbg-device-trees/" rel="alternate" type="text/html" title="BeagleBone Green Device Tree" /><published>2021-02-26T11:53:29+11:00</published><updated>2021-02-26T11:53:29+11:00</updated><id>/2021/bbg-device-trees</id><content type="html" xml:base="/2021/bbg-device-trees/">&lt;p&gt;This post describes configuration of the BeagleBone Green GPIO pinmux
-settings via the Linux Device Tree.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-setting-pinmux-values-via-the-device-tree&quot;&gt;1. Setting pinmux values via the Device Tree&lt;/h2&gt;
-&lt;p&gt;The pins of the BBG P9 header have different operations depending on
-the pinmum mode chosen. Looking at the &lt;a href=&quot;http://exploringbeaglebone.com/wp-content/uploads/resources/BBBP9Header.pdf&quot;&gt;P9 header&lt;/a&gt;, Mode 7 connects the GPIO line to the pin of the AM335X chip. To configure this, we need to set the mode via the Linux Device Tree (DT). How the DT works will be covered as a later topic, but this (admittedly complicated) configuration below will set&lt;/p&gt;
-
-&lt;p&gt;First make the following dts file:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;PHWL-GPIO.dts 
-/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;C&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2012 Texas Instruments Incorporated - http://www.ti.com/
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; This program is free software&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; you can redistribute it and/or modify
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; it under the terms of the GNU General Purpose License Version 2 as
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; published by the Free Software Foundation
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Original from: github.com/jadonk/validation-scripts/blob/master/test-capemgr/ 
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Derek Molloy &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example on www.derekmolloy.ie
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; that maps GPIO pins &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;the example
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; Modified by Philip Leong &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;SSD exercise
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-
-/dts-v1/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-/plugin/&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-/&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-       compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone&quot;&lt;/span&gt;, &lt;span class=&quot;s2&quot;&gt;&quot;ti,beaglebone-black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-       part-number &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;PHWL-GPIO&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-       version &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;00A0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-       fragment@0 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-             target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;am33xx_pinmux&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            
-             __overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-                  pinctrl_test: PHWL_GPIO_Pins &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			pinctrl-single,pins &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;
-
-                   0x180 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_26 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x184 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_24 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x150 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_22 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x178 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_20 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x17c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_19 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x158 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_18 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x15c 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_17 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x074 0x07  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P9_13 OUT &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   0x0a8 0x37  /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; P8_43 PULLUP IN &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                       
-                   /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; OUTPUT  GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x07 pulldown, 0x17 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-                   /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; INPUT   GPIO&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mode7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 0x27 pulldown, 0x37 pullup, 0x?f no pullup/down &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-
-			&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-             &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-       &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-       fragment@1 &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-		target &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;ocp&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		__overlay__ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-			test_helper: helper &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-				compatible &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;bone-pinmux-helper&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-				pinctrl-names &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-				pinctrl-0 &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &amp;lt;&amp;amp;pinctrl_test&amp;gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-				status &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;okay&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-			&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;to build&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;dtc &lt;span class=&quot;nt&quot;&gt;-O&lt;/span&gt; dtb &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; PHWL-GPIO-00A0.dtbo &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 0 -@ PHWL-GPIO.dts
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp &lt;/span&gt;PHWL-GPIO-00A0.dtbo /lib/firmware/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Modify &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot/uEnv.txt&lt;/code&gt; to be:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; /boot/uEnv.txt 
-&lt;span class=&quot;c&quot;&gt;#Docs: http://elinux.org/Beagleboard:U-boot_partitioning_layout_2.0&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;uname_r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.14.108-ti-r131
-&lt;span class=&quot;c&quot;&gt;#uuid=&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#dtb=&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;cmdline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;coherent_pool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1M net.ifnames&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0 rng_core.default_quality&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;100 quiet
-&lt;span class=&quot;nv&quot;&gt;enable_uboot_overlays&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
-&lt;span class=&quot;nv&quot;&gt;uboot_overlay_addr0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/lib/firmware/PHWL-GPIO-00A0.dtbo
-
-&lt;span class=&quot;c&quot;&gt;#In the event of edid real failures, uncomment this next line:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#cmdline=coherent_pool=1M net.ifnames=0 rng_core.default_quality=100 quiet video=HDMI-A-1:1024x768@60e&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;##enable x15: eMMC Flasher:&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;##make sure, these tools are installed: dosfstools rsync&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#cmdline=init=/opt/scripts/tools/eMMC/init-eMMC-flasher-v3-no-eeprom.sh&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;reboot (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shutdown -r now&lt;/code&gt;) and the modes should have changed to 007&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ grep 007 /sys/kernel/debug/pinctrl/44e10800.pinmux/pins
-pin 21 (PIN21) 44e10854 00000007 pinctrl-single 
-pin 23 (PIN23) 44e1085c 00000007 pinctrl-single 
-pin 29 (PIN29) 44e10874 00000007 pinctrl-single 
-pin 84 (PIN84) 44e10950 00000007 pinctrl-single 
-pin 85 (PIN85) 44e10954 00000007 pinctrl-single 
-pin 86 (PIN86) 44e10958 00000007 pinctrl-single 
-pin 87 (PIN87) 44e1095c 00000007 pinctrl-single 
-pin 94 (PIN94) 44e10978 00000007 pinctrl-single 
-pin 95 (PIN95) 44e1097c 00000007 pinctrl-single 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes configuration of the BeagleBone Green GPIO pinmux settings via the Linux Device Tree.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><category term="beaglebone" /><summary type="html">This post describes how to connect the BeagleBone to the Internet via Ethernet on Windows and MacOS.</summary></entry></feed>
