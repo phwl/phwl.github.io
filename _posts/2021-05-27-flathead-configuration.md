@@ -10,10 +10,11 @@ tags:
 - software
 - ubuntu
 header:
-  teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
+  teaser: /assets/images/2021/05/IMG_7892.jpeg
 ---
 
 This is how a new machine, flathead, was configured.
+{% include figure image_path="/assets/images/2021/05/IMG_7892.jpeg" caption="" %}
 
 ## Machine
 The machine was purchased from [Mwave](http://mwave.com.au). 
