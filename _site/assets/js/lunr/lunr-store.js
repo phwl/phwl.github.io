@@ -1127,5 +1127,5 @@ var store = [{
         "title": "Another Balls Head Panorama",
         "excerpt":"Nothing much happened the entire morning except for a brief moment when Beard and I had a double hookup.                                    ","categories": ["photography"],
         "tags": ["australia","ballshead"],
-        "url": "http://localhost:4000/2021/balls-head/",
+        "url": "http://localhost:4000/2021/another-balls-head-pano/",
         "teaser":"http://localhost:4000/assets/images/2021/06/IMG_8091.jpeg"}]
