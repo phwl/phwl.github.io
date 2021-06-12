@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2020-01-04 8:47:48 AEDT
-slug: balls-head
 title: Balls Head
 categories:
 - photography

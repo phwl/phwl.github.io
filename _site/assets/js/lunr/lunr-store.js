@@ -456,7 +456,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2017/04/DSCF4152-bw.jpg"},{
         "title": "Balls Head Panorama",
         "excerpt":"                             Sydney Skyline from Balls Head  ","categories": ["photography"],
-        "tags": ["australia","ballshead"],
+        "tags": ["australia","ballshead","fishing"],
         "url": "http://localhost:4000/2017/balls-head-panorama/",
         "teaser":"http://localhost:4000/assets/images/2017/05/P4300003-3.jpg"},{
         "title": "The Dish, Parkes NSW",

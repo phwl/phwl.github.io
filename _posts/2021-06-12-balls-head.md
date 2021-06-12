@@ -2,7 +2,6 @@
 author: phwl
 comments: true
 date: 2021-06-12 9:52:23 AEDT
-slug: balls-head
 title: Another Balls Head Panorama
 categories:
 - photography
