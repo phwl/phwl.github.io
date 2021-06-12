@@ -1125,7 +1125,7 @@ var store = [{
         "url": "http://localhost:4000/2021/wyong-field-day/",
         "teaser":"http://localhost:4000/assets/images/2021/05/IMG_7912.jpeg"},{
         "title": "Another Balls Head Panorama",
-        "excerpt":"More photos from Balls Head.                                    ","categories": ["photography"],
+        "excerpt":"Nothing much happened the entire morning except for a brief moment when Beard and I had a double hookup.                                    ","categories": ["photography"],
         "tags": ["australia","ballshead"],
         "url": "http://localhost:4000/2021/balls-head/",
         "teaser":"http://localhost:4000/assets/images/2021/06/IMG_8091.jpeg"}]

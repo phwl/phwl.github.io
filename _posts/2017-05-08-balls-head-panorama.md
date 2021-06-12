@@ -10,6 +10,7 @@ categories:
 tags:
 - australia
 - ballshead
+- fishing
 header:
   teaser: /assets/images/2017/05/P4300003-3.jpg
 ---
