@@ -288,6 +288,8 @@ compress_html:
   ignore:
     envs: development
 
+# Github
+github: [metadata]
 
 # Defaults
 defaults:

@@ -17,7 +17,7 @@ built in [Creating an emulated ARM Linux system using Buildroot and QEMU]({% lin
 
 
 ## 1. Linux libgpiod Library Command Line Tools on QEMU
-Refer to [BeagleBone Green gpio](/2021/bbg-gpio/) for an introduction to libgpiod.
+Refer to [BeagleBone Green gpio](/2021/bbg-getting-started/#3-gpio) for an introduction to libgpiod.
 
 Here we use the ```libgpiod``` tools to determine there is one gpiochip (gpiochip0) and that they are initially all set as inputs. We can also see that while
 gpio lines can have names, all of the ones on this machine are unnamed.
