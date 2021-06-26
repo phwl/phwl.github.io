@@ -27,9 +27,11 @@ Breakfast at [The Terrace](https://m.facebook.com/profile.php?id=316126595578323
 {% include figure image_path="/assets/images/2021/06/IMG_8139.jpeg" %}
 
 Visited the [Paul Wild Observatory](https://www.narrabri.atnf.csiro.au/)
-at Narrabri. There was nobody there, not even in the Visitor Center.
+at Narrabri. 
 
 {% include figure image_path="/assets/images/2021/06/IMG_8140.jpeg" %}
+
+There was nobody there, not even in the Visitor Center.
 {% include figure image_path="/assets/images/2021/06/DSCF1065.jpeg" %}
 {% include figure image_path="/assets/images/2021/06/DSCF1070.jpeg" %}
 
@@ -49,8 +51,8 @@ Amaroo Tavern has a C47 Dakota S/N 43-49377 sitting in front. It was delivered t
 Moving house.
 {% include figure image_path="/assets/images/2021/06/IMG_1943.jpeg" %}
 
-During the entire trip, we were having problems with the vent of the 
-camper. We couldn't close it properly and it kept moving out of position 
+During the entire trip, we were having problems with the roof vent.
+It didn't close properly and kept moving out of position 
 as we were driving. On the Newell Hwy, somewhere between Moree and Narrabri,
 it flew off at 110 km/h. That was a great relief as it was a lot
 less noisy and we didn't need to worry about it any more.
