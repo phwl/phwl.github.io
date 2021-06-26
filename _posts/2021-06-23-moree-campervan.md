@@ -11,7 +11,7 @@ header:
   teaser: /assets/images/2021/06/DSCF1070.jpeg
 ---
 Hired a Toyota Hiace campervan and went for a drive to Moree via
-the Upper Hunter (Muswellbrook) and Tamworth.
+Muswellbrook and Tamworth.
 {% include figure image_path="/assets/images/2021/06/IMG_8133.jpeg" %}
 {% include figure image_path="/assets/images/2021/06/IMG_8126.jpeg" %}
 {% include figure image_path="/assets/images/2021/06/IMG_8130.jpeg" %}
