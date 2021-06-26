@@ -1128,4 +1128,9 @@ var store = [{
         "excerpt":"Nothing much happened the entire morning except for a brief moment when Beard and I had a double hookup.                                    ","categories": ["photography"],
         "tags": ["australia","ballshead"],
         "url": "http://localhost:4000/2021/another-balls-head-pano/",
-        "teaser":"http://localhost:4000/assets/images/2021/06/IMG_8091.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2021/06/IMG_8091.jpeg"},{
+        "title": "VHF/UHF Field Day",
+        "excerpt":"Photos from the VHF/UHF Field Day (prior to Sydney being locked down for a fortnight due to COVID).   Met Dom VK2JNA at the club. He had just fixed the 40m antenna so all I needed to do was help buy coffee.                         Timing was impeccable, the others had almost finished setting up when we  arrived.                                                         From left to right Geoff VK2TGO, Zara VK2FZYP, Richard VK2NRA, Charlie VK2GMT, Nick VK2FS, Dr Phil VK2JPK, Tim VK2BT, Andy VK2EAH and Dom VK2JNA.             Geoff VK2TGO, Zara VK2FZYP and Nick VK2FS.             Zara VK2FZYP, Dr Phil VK2JPK and Andy VK2EAH.                        ","categories": ["hobbies"],
+        "tags": ["radio"],
+        "url": "http://localhost:4000/2021/vhf-uhf-field-day/",
+        "teaser":"http://localhost:4000/assets/images/2021/06/DSCF1085.jpeg"}]
