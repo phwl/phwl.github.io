@@ -154,3 +154,21 @@ cd $TRD_HOME/prj/Vitis
 Follow instructions at <https://www.balena.io/etcher/>
 
 
+# Other Issues
+## 28/6/2021
+
+For some inexplicable reason, I received this error upon a reboot.
+```
+error: 'grub_calloc' symbol not found.
+Entering recovery mode ...
+grub rescue>
+```
+
+This was fixed by reinstalling grub2. First you boot from an Ubuntu USB and
+then
+```
+sudo mount /dev/nvme0n1p1  /mnt    
+sudo grub-install --root-directory=/mnt/  /dev/nvme0n1
+```
+and reboot.
+
