@@ -157,7 +157,8 @@ Follow instructions at <https://www.balena.io/etcher/>
 # Other Issues
 ## 28/6/2021
 
-For some inexplicable reason, I received this error upon a reboot.
+For some inexplicable reason, I received this error (on bream which is a
+similar machine) upon a reboot.
 ```
 error: 'grub_calloc' symbol not found.
 Entering recovery mode ...

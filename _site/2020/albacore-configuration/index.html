@@ -309,6 +309,22 @@ cd $TRD_HOME/prj/Vitis
 <h2 id="step-7-install-balena-etcher">Step 7 Install Balena Etcher</h2>
 <p>Follow instructions at <a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a></p>
 
+<h1 id="other-issues">Other Issues</h1>
+<h2 id="2862021">28/6/2021</h2>
+
+<p>For some inexplicable reason, I received this error upon a reboot.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>error: 'grub_calloc' symbol not found.
+Entering recovery mode ...
+grub rescue&gt;
+</code></pre></div></div>
+
+<p>This was fixed by reinstalling grub2. First you boot from an Ubuntu USB and
+then</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount /dev/nvme0n1p1  /mnt    
+sudo grub-install --root-directory=/mnt/  /dev/nvme0n1
+</code></pre></div></div>
+<p>and reboot.</p>
+
 
         
       </section>
