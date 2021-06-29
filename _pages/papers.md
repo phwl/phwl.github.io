@@ -12,9 +12,9 @@ classes: wide
 # Journals
 
 [1] Rui Tang, Jonathon Dore, Jin Ma, and Philip H\.W\. Leong\.
-Interpolating high granularity solar generation and load consumption data using a super resolution generative adversarial network\.
-*Applied Energy*, to appear \(accepted 16 June, 2021\):, 2021\.
-URL: [srgan\_ae21\.pdf](srgan_ae21.pdf)\.  
+Interpolating high granularity solar generation and load consumption data using super resolution generative adversarial network\.
+*Applied Energy*, 299:117297, 2021\.
+URL: [srgan\_ae21\.pdf](srgan_ae21.pdf), [doi:https://doi\.org/10\.1016/j\.apenergy\.2021\.117297](https://doi.org/https://doi.org/10.1016/j.apenergy.2021.117297)\.  
 [2] Johan Saltin, Nguyen Cong Dao, Philip H\. W\. Leong, and Hiu Yung Wong\.
 Energy filtering effect at source contact on ultra\-scaled MOSFETs\.
 *IEEE Journal of the Electron Devices Society*, 8:662&ndash;667, 2020\.
