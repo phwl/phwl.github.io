@@ -1,6 +1,6 @@
 ---
 comments: false
-date: 2019-12-19 19:09:19 AEDT
+date: 2021-08-01 07:09:19 AEDT
 # layout: page
 # link: http://phwl.org/students/
 permalink: students
@@ -14,7 +14,8 @@ wordpress_id: 3338
   1. Julian FARAONE, [Simplification Of Deep Neural Networks
 For Efficient Inference](/assets/images/2021/02/jfaraone21.pdf), PhD (under examination), 2021.
 
- 	
+  1. Rui TANG, [Optimisation of residential battery integrated photovoltaics systems: analyses and new machine learning methods](/assets/images/2021/08/rtang.pdf), PhD, 2021.
+
   1. Nicholas FRASER, [Algorithms and Architectures for High
 Performance Kernel Adaptive Filtering](/assets/images/2020/09/nfraser20.pdf), PhD, 2020.
 
