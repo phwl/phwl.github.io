@@ -15,7 +15,7 @@ A common pattern in embedded programming or high-level synthesis
 is if-bit-then, i.e.  test a bit and modify a variable depending on the result.
 
 Here is an example in C:
-```bash
+```c
 unsigned a = 0x23, x = 0x86;
 
 ...
@@ -24,12 +24,12 @@ unsigned a = 0x23, x = 0x86;
 ```
 (where op is some operation like ```+``` but could be more complicated).
 This can be implemented in a number of ways. A common one is:
-```bash
+```c
     x = (a & 1) ? x op q : x;
 ```
 
 An alternative, less well known  way to do this is:
-```bash
+```c
     x = x op (-(a & 1) & q);
 ```
 
