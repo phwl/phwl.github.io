@@ -23,21 +23,21 @@ unsigned a = 0x23, x = 0x86;
 	    x = x op q;
 ```
 (where op is some operation like ```+``` but could be more complicated).
-This can be implemented in a number of ways. A common one is:
+The above code can be optimised in a number of ways. A common one is:
 ```c
     x = (a & 1) ? x op q : x;
 ```
 
-An alternative, less well known  way to do this is:
+An alternative, less well known way is:
 ```c
     x = x op (-(a & 1) & q);
 ```
 
-This relies on the fact that ```a & 1``` only has two possible outputs,
+The code relies on the fact that ```a & 1``` only has two possible outputs,
 ```1``` or ```0```. Moreover, ```-1 = 0xffffffff``` and ```-0 == 0``` 
 so ```-(a & 1) & q``` either evaluates to ```q``` or ```0```.
 
 This identity may be advantageous depending on the situation, particularly
 for optimising inner loops of time-critical applications. For our specific
-problem, it reduced resource utilisation significantly for
+problem, it significantly reduced resource utilisation in
 an OpenCL-based FPGA design.
