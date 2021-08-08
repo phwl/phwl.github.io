@@ -195,12 +195,12 @@ is if-bit-then, i.e.  test a bit and modify a variable depending on the result.<
 </code></pre></div></div>
 <p>(where op is some operation like <code class="language-plaintext highlighter-rouge">+</code> but could be more complicated).
 This can be implemented in a number of ways. A common one is:</p>
-<pre><code class="language-C">    x = (a &amp; 1) ? x op q : x;
-</code></pre>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    x <span class="o">=</span> <span class="o">(</span>a &amp; 1<span class="o">)</span> ? x op q : x<span class="p">;</span>
+</code></pre></div></div>
 
 <p>An alternative, less well known  way to do this is:</p>
-<pre><code class="language-C">    x = x op (-(a &amp; 1) &amp; q)
-</code></pre>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    x <span class="o">=</span> x op <span class="o">(</span>-<span class="o">(</span>a &amp; 1<span class="o">)</span> &amp; q<span class="o">)</span>
+</code></pre></div></div>
 
 <p>This relies on the fact that <code class="language-plaintext highlighter-rouge">a &amp; 1</code> only has two possible outputs,
 <code class="language-plaintext highlighter-rouge">1</code> or <code class="language-plaintext highlighter-rouge">0</code>. Moreover, <code class="language-plaintext highlighter-rouge">-1 = 0xffffffff</code> and <code class="language-plaintext highlighter-rouge">-0 == 0</code> 

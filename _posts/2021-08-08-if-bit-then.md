@@ -30,7 +30,7 @@ This can be implemented in a number of ways. A common one is:
 
 An alternative, less well known  way to do this is:
 ```bash
-    x = x op (-(a & 1) & q)
+    x = x op (-(a & 1) & q);
 ```
 
 This relies on the fact that ```a & 1``` only has two possible outputs,
