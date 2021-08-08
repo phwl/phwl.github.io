@@ -10,6 +10,17 @@ classes: wide
 wordpress_id: 3312
 ---
 
+## 26 August 2021, Invited Lecture,
+[Low Precision Inference and Training for Deep Neural Networks](/assets/talks/lowprecision-croucher-asi21.pdf),
+Croucher Advanced Study Institute: [Frontiers of AI Accelerators: Technologies, Circuits and Applications](https://accessasi.hkust.edu.hk/program),
+online and at HKUST
+
+The computational complexity of deep learning has led to research efforts to reduce the computation required. The use of low precision is particularly effective on FPGAs as they are not restricted to byte addressable operations. 
+ 
+We first describe our finding that in inference applications, throughput matching with higher precision on certain layers can be used to recover accuracy in low-precision deep neural networks (DNNs). The work is applied to automatic modulation classification of radio signals leveraging the capabilities of the Xilinx ZCU111 RFSoC platform. On the open-source RadioML 2018.01A dataset, we demonstrate how to recover 4.3% in accuracy with the same hardware usage and achieve 488k classifications per second.
+ 
+In the second part of the talk we introduce Block Minifloat (BM), a new spectrum of minifloat formats capable of training DNNs end-to-end with only 4-8 bit weight, activation and gradient tensors. While standard floating-point representations have two degrees of freedom, via the exponent and mantissa, BM exposes the exponent bias as an additional field for optimization. For ResNet trained on ImageNet, 6-bit BM achieves almost no degradation in floating-point accuracy with FMA units that are 4.1 × (23.9×) smaller and consume 2.3 × (16.1×) less energy than FP8 (FP32). 
+
 
 ## 12 May 2021, ELEC3607 Embedded Systems Lecture
 [A Simple SDR](assets/talks/elec3607-sdr21.pdf), 
