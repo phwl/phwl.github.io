@@ -28,7 +28,7 @@ Here are installation instructions for installing Docker and running Modelsim fo
    1. Run Docker Desktop by double-clicking the icon on the desktop
 
  * (MacOS)
-   1. Download and install stable version from <https://docs.docker.com/docker-for-mac/install/>
+   1. Download and install stable version from <https://docs.docker.com/docker-for-mac/install/> (or <https://docs.docker.com/docker-for-mac/apple-silicon/> for the M1 mac in which case you need to add ```--platform linux/amd64``` to the command lines below)
    1. Run Docker Desktop by clicking the Docker icon
 
 # 2 Testing
