@@ -218,7 +218,7 @@ to install Stable version of Docker Desktop for Windows (follow them carefully).
   </li>
   <li>(MacOS)
     <ol>
-      <li>Download and install stable version from <a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a></li>
+      <li>Download and install stable version from <a href="https://docs.docker.com/docker-for-mac/install/">https://docs.docker.com/docker-for-mac/install/</a> (or <a href="https://docs.docker.com/docker-for-mac/apple-silicon/">https://docs.docker.com/docker-for-mac/apple-silicon/</a> for the M1 mac in which case you need to add <code class="language-plaintext highlighter-rouge">--platform linux/amd64</code> to the command lines below)</li>
       <li>Run Docker Desktop by clicking the Docker icon</li>
     </ol>
   </li>
@@ -278,13 +278,18 @@ tests X Windows basic functionality.</p>
   <li>(MacOS X setup)
     <ol>
       <li>Run the <code class="language-plaintext highlighter-rouge">Xquartz</code> X Server program by clicking on the icon, an xterm window should appear</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">export DISPLAY=`hostname`:0.0</code> in the xterm window (alternatively you can use <code class="language-plaintext highlighter-rouge">export DISPLAY=docker.for.mac.localhost:0</code>).</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">xhost +</code> (if you get an error, check in Xquartz -&gt; Preferences that “Authenticate connections” has no tick and “Allow connections from network clients” has a tick).</li>
+      <li>Set “Allow connections from network clients” in XQuartz -&gt; Preferences</li>
+      <li>In the xterm window type
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xhost +<span class="si">$(</span><span class="nb">hostname</span><span class="si">)</span>
+<span class="nb">export </span><span class="nv">DISPLAY</span><span class="o">=</span><span class="si">$(</span><span class="nb">hostname</span><span class="si">)</span>:0.0
+docker run <span class="nt">-it</span> <span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> fr3nd/xeyes
+</code></pre></div>        </div>
+      </li>
     </ol>
   </li>
 </ul>
 
-<p>Now type <code class="language-plaintext highlighter-rouge">docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes</code>.  You should see the window below and the eyes should move with your mouse.</p>
+<p>You should see the window below and the eyes should move with your mouse.</p>
 
 <figure class="">
   <a href="/assets/images/2020/08/xeyes-screenshot.png">

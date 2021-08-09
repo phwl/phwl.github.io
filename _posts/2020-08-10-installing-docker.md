@@ -73,10 +73,16 @@ tests X Windows basic functionality.
 
  * (MacOS X setup)
     1. Run the ```Xquartz``` X Server program by clicking on the icon, an xterm window should appear
-    1. Type ```export DISPLAY=`hostname`:0.0``` in the xterm window (alternatively you can use ```export DISPLAY=docker.for.mac.localhost:0```).
-    1. Type ```xhost +``` (if you get an error, check in Xquartz -> Preferences that "Authenticate connections" has no tick and "Allow connections from network clients" has a tick).
+    1. Set “Allow connections from network clients” in XQuartz -> Preferences
+    1. In the xterm window type 
+``` bash
+xhost +$(hostname)
+export DISPLAY=$(hostname):0.0
+docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes
+```
 
-Now type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```.  You should see the window below and the eyes should move with your mouse.
+If you get an error with the xhost command, try a reboot.
+You should see the window below and the eyes should move with your mouse.
 
 {% include figure image_path="/assets/images/2020/08/xeyes-screenshot.png" max-width="200px" caption="" %}
 
