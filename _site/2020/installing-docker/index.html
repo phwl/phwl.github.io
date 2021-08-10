@@ -275,21 +275,23 @@ tests X Windows basic functionality.</p>
     </figcaption></a></figure>
 
 <ul>
-  <li>(MacOS X setup)
+  <li>(x86 MacOS X setup)
     <ol>
       <li>Run the <code class="language-plaintext highlighter-rouge">Xquartz</code> X Server program by clicking on the icon, an xterm window should appear</li>
       <li>Set “Allow connections from network clients” in XQuartz -&gt; Preferences</li>
       <li>In the xterm window type
-        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xhost +<span class="si">$(</span><span class="nb">hostname</span><span class="si">)</span>
-<span class="nb">export </span><span class="nv">DISPLAY</span><span class="o">=</span><span class="si">$(</span><span class="nb">hostname</span><span class="si">)</span>:0.0
-docker run <span class="nt">-it</span> <span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> fr3nd/xeyes
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>xhost + 127.0.0.1
+127.0.0.1 being added to access control list
+<span class="nv">$ </span><span class="nb">export </span><span class="nv">DISPLAY</span><span class="o">=</span>host.docker.internal:0
+<span class="nv">$ </span>docker run <span class="nt">-it</span> <span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> fr3nd/xeyes 
 </code></pre></div>        </div>
       </li>
     </ol>
   </li>
 </ul>
 
-<p>You should see the window below and the eyes should move with your mouse.</p>
+<p>If you get an error with the xhost command, try a reboot.
+You should see the window below and the eyes should move with your mouse.</p>
 
 <figure class="">
   <a href="/assets/images/2020/08/xeyes-screenshot.png">
@@ -299,6 +301,14 @@ docker run <span class="nt">-it</span> <span class="nt">-e</span> <span class="n
       
 
     </figcaption></a></figure>
+
+<ul>
+  <li>(M1 MacOS X setup)
+The commands are the same as for x86 MacOS except you add <code class="language-plaintext highlighter-rouge">--platform linux/amd64</code>, e.g.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">--platform</span> linux/amd64 <span class="nt">-it</span> <span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span><span class="nv">$DISPLAY</span> fr3nd/xeyes 
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="23-modelsim">2.3 Modelsim</h2>
 <p>Finally, this tests the Docker image for Modelsim (the executable is called
