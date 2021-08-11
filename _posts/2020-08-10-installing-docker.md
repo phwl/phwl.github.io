@@ -116,6 +116,11 @@ to ```/mnt```. Use this to access your files and store your outputs.
    1. Select Save & Exit.
  * If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available [here](https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software). After installing, update to the latest version.
  * Niansong Zhang compiled [this list](/assets/images/2020/08/NOVA2019-docker-problems.pdf)  at the NOVA'19 workshop
+ * *I have been trying to install quartus prime on docker on windows however when i run the following command docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim, "XX XY"  i had as my current directory, I got the following error: Error: Can't open display: 172.18.240.1:0.0. I have been trying to fix it but to no avail. Do you know of a way to fix this?*
+
+      To solve the problem, you need to check two points:
+      1. the set-variable DISPLAY instruction. Use "$DISPLAY" to see whether your display address is correct.
+      2. check the X server. Try some small example in Xserver to check whether it can run properly(after it runs, right click the icon and there is some tony example such as calculator), and if these example can work but docker still launched, restart the Xserver software, I got the docker run through restarting Xserver.
 
 # 4 Links
  * The Docker image is derived from one provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). If you want to create your own variant, the scripts used to create it are available [here](https://github.com/phwl/elec3608-github).

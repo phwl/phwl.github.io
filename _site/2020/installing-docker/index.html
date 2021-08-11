@@ -346,6 +346,15 @@ to <code class="language-plaintext highlighter-rouge">/mnt</code>. Use this to a
   </li>
   <li>If you are using Windows Home, you might like to update to the (more powerful) Windows 10 Education, Version 1809, available <a href="https://portal.azure.com/?Microsoft_Azure_Education_correlationId=0c971698-d014-4594-929c-2671f00288c3#blade/Microsoft_Azure_Education/EducationMenuBlade/software">here</a>. After installing, update to the latest version.</li>
   <li>Niansong Zhang compiled <a href="/assets/images/2020/08/NOVA2019-docker-problems.pdf">this list</a>  at the NOVA’19 workshop</li>
+  <li>
+    <p><em>I have been trying to install quartus prime on docker on windows however when i run the following command docker run -it -e DISPLAY=$DISPLAY -v C:\Users"XX YY”:/mnt phwl/elec3608-vsim:latest vsim, “XX XY”  i had as my current directory, I got the following error: Error: Can’t open display: 172.18.240.1:0.0. I have been trying to fix it but to no avail. Do you know of a way to fix this?</em></p>
+
+    <p>To solve the problem, you need to check two points:</p>
+    <ol>
+      <li>the set-variable DISPLAY instruction. Use “$DISPLAY” to see whether your display address is correct.</li>
+      <li>check the X server. Try some small example in Xserver to check whether it can run properly(after it runs, right click the icon and there is some tony example such as calculator), and if these example can work but docker still launched, restart the Xserver software, I got the docker run through restarting Xserver.</li>
+    </ol>
+  </li>
 </ul>
 
 <h1 id="4-links">4 Links</h1>
