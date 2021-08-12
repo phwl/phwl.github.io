@@ -108,6 +108,7 @@ If everything works, the Modelsim window should appear.
 
 Within Docker, the directory on your local home directory will be mapped 
 to ```/mnt```. Use this to access your files and store your outputs.
+ * On MacOS, you will need to allow Docker to access your files via the System Preferences -> Security and Privacy -> Full Disk Access -> Docker option (alternatively you can just grant access to particularly files or folders via Security and Privacy -> Files and Folders.
 
 # 3 Troubleshooting
  * Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available <https://www.microsoft.com/en-us/software-download/windows10ISO>.
