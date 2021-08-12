@@ -65,8 +65,9 @@ tests X Windows basic functionality.
  * (Windows setup) 
     1. Run XLaunch and configure "Multiple Windows" and "Start no client"
     1. Open a Windows Powershell window
-    1. Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1
-    1. Type ```set-variable -name DISPLAY -value 172.18.240.1:0.0```
+    1. Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). Say it is aaa.bb.ccc.d (on my machine it was 172.18.240.1)
+    1. Type ```set-variable -name DISPLAY -value aaa.bb.ccc.d:0.0``` 
+(```set-variable -name DISPLAY -value 172.18.240.1:0.0``` on my machine)
 
 {% include figure image_path="/assets/images/2020/08/ipconfig-screenshot.png" caption="" %}
 
