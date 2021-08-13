@@ -122,6 +122,9 @@ to ```/mnt```. Use this to access your files and store your outputs.
       To solve the problem, you need to check two points:
       1. the set-variable DISPLAY instruction. Use "$DISPLAY" to see whether your display address is correct.
       2. check the X server. Try some small example in Xserver to check whether it can run properly(after it runs, right click the icon and there is some tony example such as calculator), and if these example can work but docker still launched, restart the Xserver software, I got the docker run through restarting Xserver.
+ * Problem with not being able to detach and resize Modelsim windows under Linux: Seems it was related to Xwayland on my end. I tried a couple of different X server implementations, xpra and xephyr and all was well. 
+I found this bash script quite helpful. <https://github.com/mviereck/x11docker.>
+The script starts the container in a fresh new X session, without the usual permission hassles. 
 
 # 4 Links
  * The Docker image is derived from one provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). If you want to create your own variant, the scripts used to create it are available [here](https://github.com/phwl/elec3608-github).
