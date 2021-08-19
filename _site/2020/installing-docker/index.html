@@ -259,8 +259,9 @@ tests X Windows basic functionality.</p>
     <ol>
       <li>Run XLaunch and configure “Multiple Windows” and “Start no client”</li>
       <li>Open a Windows Powershell window</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). On my machine it was 172.18.240.1</li>
-      <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code></li>
+      <li>Type <code class="language-plaintext highlighter-rouge">ipconfig</code>. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). Say it is aaa.bb.ccc.d (on my machine it was 172.18.240.1)</li>
+      <li>Type <code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value aaa.bb.ccc.d:0.0</code> 
+(<code class="language-plaintext highlighter-rouge">set-variable -name DISPLAY -value 172.18.240.1:0.0</code> on my machine)</li>
     </ol>
   </li>
 </ul>
@@ -355,6 +356,9 @@ to <code class="language-plaintext highlighter-rouge">/mnt</code>. Use this to a
       <li>check the X server. Try some small example in Xserver to check whether it can run properly(after it runs, right click the icon and there is some tony example such as calculator), and if these example can work but docker still launched, restart the Xserver software, I got the docker run through restarting Xserver.</li>
     </ol>
   </li>
+  <li>Problem with not being able to detach and resize Modelsim windows under Linux: Seems it was related to Xwayland on my end. I tried a couple of different X server implementations, xpra and xephyr and all was well. 
+I found this bash script quite helpful. <a href="https://github.com/mviereck/x11docker.">https://github.com/mviereck/x11docker.</a>
+The script starts the container in a fresh new X session, without the usual permission hassles.</li>
 </ul>
 
 <h1 id="4-links">4 Links</h1>
