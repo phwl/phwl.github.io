@@ -14,7 +14,49 @@ header:
   teaser: /assets/images/2019/08/Nvidia_logo.svg
 ---
 
-(last update 14/7/2020)  
+# New Install Ubuntu 20.04.3 (28/8/2021)
+
+ * Install some packages, prepare mount points (xxx is a user name)
+
+```bash
+sudo apt install openssh-server nfs-common
+sudo mkdir /srv/seagate2g
+sudo blkid
+```
+
+ * Edit /etc/fstab to mount disks
+
+```
+UUID=43920ded-edf5-4c1e-821a-1a0abff665cc /srv/seagate2g ext4 defaults 0 1
+```
+
+ * Move /home to the other partition
+
+```
+sudo mount -a
+sudo mv /home /srv/seagate2g/home
+sudo ln -s /srv/seagate2g/home home
+sudo mkdir /home/xxx
+```
+
+Now put nfs disks in /etc/fstab
+```
+fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,defaults    0       0
+```
+
+## Install cuda
+```bash
+sudo apt purge "*nvidia*"
+sudo ubuntu-drivers autoinstall
+sudo apt install nvidia-cuda-toolkit
+sudo apt install cuda
+sudo shutdown -r now 
+```
+
+ * Get toolkit and install from <https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_network>
+
+
+# Old Install from 14/7/2020 (obsolete)  
 
 Another new machine in the lab, here are my setup notes.
 
