@@ -49,7 +49,7 @@ fileservername.staff.sydney.edu.au:/volume1/xxx /home/xxx nfs   vers=4.1,default
 sudo apt purge "*nvidia*"
 sudo ubuntu-drivers autoinstall
 sudo apt install nvidia-cuda-toolkit
-sudo apt install cuda
+sudo apt install cuda-11-1
 sudo shutdown -r now 
 ```
 
