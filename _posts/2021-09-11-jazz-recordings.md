@@ -44,7 +44,7 @@ A short list of great jazz muscians and recordings, mostly standards.
 
 * The Star-Crossed Lovers
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Z4goaKorWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lDr1IWWsb_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # John Coltrane
 
