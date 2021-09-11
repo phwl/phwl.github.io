@@ -14,6 +14,9 @@ header:
   teaser: https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg
 ---
 
+Links to some excellent jazz recordings.
+
+<!-- more -->
 
 # Bill Evans
 
@@ -34,6 +37,12 @@ header:
 * John Coltrane Quartet My Favorite Things Belgium, 1965
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pQ3_nlpnfuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Arturo Sandoval 
+
+* There Will Never Be Another You
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1nOfbQ_GwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Veronica Swift
 
