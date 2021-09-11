@@ -32,6 +32,17 @@ A short list of great jazz muscians and recordings, mostly standards.
 
 # Miles Davis
 
+*  Miles Davis Quintet, Teatro dell'Arte, Milan, Italy, October 11th, 1964. Miles Davis (trumpet), Wayne Shorter (sax), Herbie Hancock (piano), Ron Carter (bass), Tony Williams (drums)
+
+Autumn Leaves 00:00  
+My Funny Valentine 15:07  
+All Blues 26:33  
+All of You 40:13  
+Joshua 50:47  
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fBoHkB92SU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 * Album - Someday my prince will come; Miles Davis-Trumpet, John Coltrane-tenor sax, Wynton Kelly-piano, Paul Chambers-bass, Jimmy Cobb, Philly Joe Jones-drums
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lo18F5ObPng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
