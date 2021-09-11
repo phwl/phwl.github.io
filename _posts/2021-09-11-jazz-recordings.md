@@ -3,7 +3,7 @@ author: phwl
 comments: true
 toc: true
 date: 2021-09-11 11:44:13 AEST
-title: Links to Jazz Recordings
+title: Links to some Jazz Standards
 classes: wide
 categories:
 - music
@@ -13,10 +13,6 @@ tags:
 header:
   teaser: https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg
 ---
-
-Links to some excellent jazz recordings.
-
-<!-- more -->
 
 # Bill Evans
 
@@ -31,6 +27,12 @@ Links to some excellent jazz recordings.
 * No more blues (chega de saudade) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4GuujVb_ex0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Miles Davis
+
+* Album - Someday my prince will come; Miles Davis-Trumpet, John Coltrane-tenor sax, Wynton Kelly-piano, Paul Chambers-bass, Jimmy Cobb, Philly Joe Jones-drums
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lo18F5ObPng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # John Coltrane
 
