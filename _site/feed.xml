@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-28T19:43:38+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-11T20:32:58+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Links to Bill Evans recordings</title><link href="http://localhost:4000/2021/bill-evans-links/" rel="alternate" type="text/html" title="Links to Bill Evans recordings" /><published>2021-09-11T11:44:13+10:00</published><updated>2021-09-11T11:44:13+10:00</updated><id>http://localhost:4000/2021/bill-evans-links</id><content type="html" xml:base="http://localhost:4000/2021/bill-evans-links/">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/10QOOvxw0uA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="music" /><category term="hobbies`" /><summary type="html"></summary></entry><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
 A common pattern in embedded programming or high-level synthesis
 is if-bit-then, i.e.  test a bit and modify a variable depending on the result.&lt;/p&gt;
 
@@ -1034,40 +1034,4 @@ mode &lt;span class=&quot;nt&quot;&gt;-21&lt;/span&gt; &lt;span class=&quot;nt&q
   &lt;li&gt;&lt;a href=&quot;https://gavv.github.io/articles/pulseaudio-under-the-hood/&quot;&gt;https://gavv.github.io/articles/pulseaudio-under-the-hood/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/&quot;&gt;https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network&quot;&gt;https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry><entry><title type="html">Trailer Bearings</title><link href="http://localhost:4000/2021/trailer-bearings/" rel="alternate" type="text/html" title="Trailer Bearings" /><published>2021-03-27T11:19:32+11:00</published><updated>2021-03-27T11:19:32+11:00</updated><id>http://localhost:4000/2021/trailer-bearings</id><content type="html" xml:base="http://localhost:4000/2021/trailer-bearings/">&lt;p&gt;Here is how you tell what types of trailer bearings you have without taking them out.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot;&gt;
-  &lt;img src=&quot;https://www.mywestshore.com/wp-content/uploads/2018/04/Boat-Trailer-Bearing.jpg&quot; alt=&quot;&quot; /&gt;
-  &lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;A clear explanation is given here &lt;a href=&quot;https://trailersparesdirect.com.au/blogs/technical-info/identifying-hub-types&quot;&gt;https://trailersparesdirect.com.au/blogs/technical-info/identifying-hub-types&lt;/a&gt; and this &lt;a href=&quot;/assets/images/2021/03/bearing_technical_guide.pdf&quot;&gt;pdf&lt;/a&gt; is also helpful.&lt;/p&gt;
-
-&lt;p&gt;In summary, measure from centre of one stud to the next stud:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;64MM = HT HOLDEN&lt;/li&gt;
-  &lt;li&gt;68MM = FORD&lt;/li&gt;
-  &lt;li&gt;70MM = HQ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Also check the axle:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;39mm Round Axles - 750kg maximum operating weight per Axle. Runs LM (Holden) bearings&lt;/li&gt;
-  &lt;li&gt;40mm Square Axles - 1000kg maximum operating weight per Axle. Runs LM (Holden) bearings&lt;/li&gt;
-  &lt;li&gt;45mm Square Axles - 1500kg maximum operating weight per Axle. Runs SL (Ford) bearings&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here are the part numbers.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LM (Holden bearings) suit 39mm Round &amp;amp; 40 mm Square Axles - 1000kg weight capacity / pair
-· Outer (small) bearings # LM 11949 - Bearing
- # LM 11910 - Cup
-· Inner (large) bearings # LM 67048 - Bearing
- # LM 67010 - Cup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SL (Ford bearings) suit 45mm Square Axles - 1400kg weight capacity / pair
-· Outer (small) bearings # L 12749 - Bearing
- # L 12710 - Cup
-· Inner (large) bearings # L 68149 - Bearing
- # L 68110 - Cup
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="fishing" /><category term="repair" /><summary type="html">Here is how you tell what types of trailer bearings you have without taking them out.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry></feed>

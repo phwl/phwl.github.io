@@ -189,6 +189,7 @@
   <li><a href="#new-install-ubuntu-20043-2882021">New Install Ubuntu 20.04.3 (28/8/2021)</a>
     <ul>
       <li><a href="#install-cuda">Install cuda</a></li>
+      <li><a href="#install-pytorch">Install pytorch</a></li>
     </ul>
   </li>
   <li><a href="#old-install-from-1472020-obsolete">Old Install from 14/7/2020 (obsolete)</a>
@@ -209,9 +210,9 @@
   <li>Install some packages, prepare mount points (xxx is a user name)</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>openssh-server nfs-common
-<span class="nb">sudo mkdir</span> /srv/seagate2g
-<span class="nb">sudo </span>blkid
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>openssh-server nfs-common
+<span class="nv">$ </span><span class="nb">sudo mkdir</span> /srv/seagate2g
+<span class="nv">$ </span><span class="nb">sudo </span>blkid
 </code></pre></div></div>
 
 <ul>
@@ -225,10 +226,10 @@
   <li>Move /home to the other partition</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mount -a
-sudo mv /home /srv/seagate2g/home
-sudo ln -s /srv/seagate2g/home home
-sudo mkdir /home/xxx
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo mount -a
+$ sudo mv /home /srv/seagate2g/home
+$ sudo ln -s /srv/seagate2g/home home
+$ sudo mkdir /home/xxx
 </code></pre></div></div>
 
 <p>Now put nfs disks in /etc/fstab</p>
@@ -236,16 +237,19 @@ sudo mkdir /home/xxx
 </code></pre></div></div>
 
 <h2 id="install-cuda">Install cuda</h2>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt purge <span class="s2">"*nvidia*"</span>
-<span class="nb">sudo </span>ubuntu-drivers autoinstall
-<span class="nb">sudo </span>apt <span class="nb">install </span>nvidia-cuda-toolkit
-<span class="nb">sudo </span>apt <span class="nb">install </span>cuda-11-1
-<span class="nb">sudo </span>shutdown <span class="nt">-r</span> now 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt purge <span class="s2">"*nvidia*"</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ubuntu-drivers autoinstall
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>nvidia-cuda-toolkit
+<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>cuda-11-1
+<span class="nv">$ </span><span class="nb">sudo </span>shutdown <span class="nt">-r</span> now 
 </code></pre></div></div>
 
-<ul>
-  <li>Get toolkit and install from <a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=Ubuntu&amp;target_version=20.04&amp;target_type=deb_network">https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=Ubuntu&amp;target_version=20.04&amp;target_type=deb_network</a></li>
-</ul>
+<h2 id="install-pytorch">Install pytorch</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+<span class="nv">$ </span>sh Anaconda3-2021.05-Linux-x86_64.sh
+<span class="c"># logout and login again</span>
+<span class="nv">$ </span>conda <span class="nb">install </span>pytorch <span class="nv">cudatoolkit</span><span class="o">=</span>11.1 <span class="nt">-c</span> pytorch <span class="nt">-c</span> nvidia
+</code></pre></div></div>
 
 <h1 id="old-install-from-1472020-obsolete">Old Install from 14/7/2020 (obsolete)</h1>
 
@@ -511,6 +515,35 @@ Type "help", "copyright", "credits" or "license" for more information.
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+      <a href="/2021/bill-evans-links/">
+        <img src=
+          
+            "https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg"
+          
+          alt="Links to Bill Evans recordings"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/bill-evans-links/" rel="permalink">Links to Bill Evans recordings
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
       <a href="/2021/if-bit-then/">
         <img src=
           
@@ -613,36 +646,6 @@ Muswellbrook and Tamworth.
     
     <p class="archive__item-excerpt" itemprop="description">Nothing much happened the entire morning except for a brief moment when
 Beard and I had a double hookup.
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/wyong-field-day/">
-        <img src=
-          
-            "/assets/images/2021/05/IMG_7912.jpeg"
-          
-          alt="Wyong Field Day"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/wyong-field-day/" rel="permalink">Wyong Field Day
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">This was the first time I attended Wyong Field day 2021 “Mayham”.
 
 </p>
   </article>
