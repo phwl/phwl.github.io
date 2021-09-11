@@ -13,6 +13,10 @@ header:
   teaser: https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg
 ---
 
-This is a wonderful concert from 1965 in London.
+Some links to the great jazz pianist, Bill Evans.
+
+* Concert from 1965 in London.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/10QOOvxw0uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* A good discogrgphy <https://www.udiscovermusic.com/stories/best-bill-evans-songs/>

@@ -1140,7 +1140,7 @@ var store = [{
         "url": "http://localhost:4000/2021/if-bit-then/",
         "teaser":"http://localhost:4000/assets/images/2021/08/cml_logo_new_sm.png"},{
         "title": "Links to Bill Evans recordings",
-        "excerpt":" ","categories": ["music"],
+        "excerpt":"Some links to the great jazz pianist, Bill Evans.      Concert from 1965 in London.        A good discogrgphy https://www.udiscovermusic.com/stories/best-bill-evans-songs/  ","categories": ["music"],
         "tags": ["hobbies`"],
         "url": "http://localhost:4000/2021/bill-evans-links/",
         "teaser":"https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg"}]
