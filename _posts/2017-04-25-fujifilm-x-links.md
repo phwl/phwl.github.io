@@ -16,7 +16,7 @@ tags:
 ## Introduction
 Wandering around [Sim City](http://www.allabouthongkong.com/?p=644) in Hong Kong, a mint Fujifilm X100T jumped out and emptied my wallet. This is the first digital camera I really like as it is small, quiet and fast, making it really pleasant to use. The experience is not unlike joining a cult.
 
-{% include figure image_path="/assets/images/2017/04/DSCF4152.jpg" caption="" %}
+{% include figure image_path="/assets/images/2017/04/DSCF4152-bw.jpg" caption="" %}
 
 <!-- more -->
 
