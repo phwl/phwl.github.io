@@ -30,7 +30,7 @@ Here are some links to resources regarding the X100 series.
 
 
   * Fujifilm X site - [http://fujifilm-x.com/](http://fujifilm-x.com/)
-
+  * Good [setup info for X100T](https://www.f16.click/blog/gear/shooting-weddings-with-fuji.html)
 
 
 
@@ -85,7 +85,7 @@ Here are some links to resources regarding the X100 series.
     * Robert Boyer - [http://photo.rwboyer.com/](http://photo.rwboyer.com/)
 
 
-    * Kevin Mullens - [http://f16.click/](http://f16.click/)
+    * Kevin Mullins - [http://f16.click/](http://f16.click/)
 
 
     * Alessandro Michaelazzi - [http://www.alessandromichelazzi.com/](http://www.alessandromichelazzi.com/)
