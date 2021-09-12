@@ -3,13 +3,13 @@ author: phwl
 comments: true
 toc: true
 date: 2021-09-11 11:44:13 AEST
-title: Links to (mostly) Jazz Standards
+title: Links to mostly Jazz Standards
 classes: wide
 categories:
 - music
 tags:
-- hobbies`
-- jazz`
+- hobbies
+- jazz
 header:
   teaser: https://www.udiscovermusic.com/wp-content/uploads/2020/10/Bill-Evans-GettyImages-84893775.jpg
 ---
