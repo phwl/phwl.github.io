@@ -42,6 +42,8 @@ travel:
     url: /assets/gallery/travel/wongtaisin05.JPG
   - image_path: /assets/gallery/travel/P1110707.JPG
     url: /assets/gallery/travel/P1110707.JPG
+  - image_path: /assets/gallery/travel/P4150179.JPG
+    url: /assets/gallery/travel/P4150179.JPG
 portraits:
   - image_path: /assets/gallery/portrait/IMG_0373.JPG
     url: /assets/gallery/portrait/IMG_0373.JPG
