@@ -27,6 +27,8 @@ Here are some links to resources regarding the X100 series.
 
   * Fujifilm X site - [http://fujifilm-x.com/](http://fujifilm-x.com/)
   * [Setup info for X100T](https://www.f16.click/blog/gear/shooting-weddings-with-fuji.html)
+  * How to set up 100T - [Danny Ngan](https://medium.com/dannynganphotography/how-i-configure-my-fujifilm-x100t-for-everything-i-photograph-72658f62ed6c)
+  * Film simulations - [https://fujixweekly.com/recipes/](https://fujixweekly.com/recipes/)
 
 ## Forums
   * Fuji X forum - [http://www.fuji-x-forum.com/](http://www.fuji-x-forum.com/)
@@ -39,10 +41,9 @@ Here are some links to resources regarding the X100 series.
   * Fujilove - [https://fujilove.com](https://fujilove.com)
   * Streetshootr - [http://www.streetshootr.com/](http://www.streetshootr.com/)
   * Paul Schlemmer -  [http://pavels.cz/blog](http://pavels.cz/blog)
-  * Film simulations - <https://fujixweekly.com/recipes/>
 
 ## Photographers
-    * MacClean Photography - [http://macleancomms.blogspot.com.au/](http://macleancomms.blogspot.com.au/)
-    * Robert Boyer - [http://photo.rwboyer.com/](http://photo.rwboyer.com/)
-    * Kevin Mullins - [http://f16.click/](http://f16.click/)
-    * Alessandro Michaelazzi - [http://www.alessandromichelazzi.com/](http://www.alessandromichelazzi.com/)
+  * MacClean Photography - [http://macleancomms.blogspot.com.au/](http://macleancomms.blogspot.com.au/)
+  * Robert Boyer - [http://photo.rwboyer.com/](http://photo.rwboyer.com/)
+  * Kevin Mullins - [http://f16.click/](http://f16.click/)
+  * Alessandro Michaelazzi - [http://www.alessandromichelazzi.com/](http://www.alessandromichelazzi.com/)
