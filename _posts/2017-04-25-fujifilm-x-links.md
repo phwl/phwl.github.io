@@ -39,6 +39,7 @@ Here are some links to resources regarding the X100 series.
   * Fujilove - [https://fujilove.com](https://fujilove.com)
   * Streetshootr - [http://www.streetshootr.com/](http://www.streetshootr.com/)
   * Paul Schlemmer -  [http://pavels.cz/blog](http://pavels.cz/blog)
+  * Film simulations - <https://fujixweekly.com/recipes/>
 
 ## Photographers
     * MacClean Photography - [http://macleancomms.blogspot.com.au/](http://macleancomms.blogspot.com.au/)
