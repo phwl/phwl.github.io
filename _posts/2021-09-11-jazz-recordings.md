@@ -70,6 +70,26 @@ Joshua 50:47
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lDr1IWWsb_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+# Stan Getz
+
+* The Cool Sound of Stan Getz
+
+01. 00:00:00 Stan Getz Blues for Mary Jane
+02. 00:08:03 Stan Getz There Will Never Be Another You
+03. 00:17:24 Stan Getz You're Blase
+04. 00:21:38 Stan Getz Too Close for Comfort
+05. 00:27:57 Stan Getz Like Someone in Love
+06. 00:34:28 Stan Getz How About You?
+07. 00:41:38 Stan Getz Stockholm Street *
+08. 00:45:51 Stan Getz Bengt's Blues *
+09. 00:50:07 Stan Getz They Can't Take That away from Me
+10. 00:57:21 Stan Getz Honeysuckle Rose *
+11. 01:04:03 Stan Getz Topsy *
+12. 01:10:29 Stan Getz Like Someone in Love *
+13. 01:14:45 Stan Getz Speak Low *
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qC_GQQK7av0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # John Coltrane
 
 * John Coltrane Quartet My Favorite Things Belgium, 1965
