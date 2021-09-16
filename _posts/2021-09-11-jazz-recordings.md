@@ -47,6 +47,19 @@ Joshua 50:47
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lo18F5ObPng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+* Miles Davis With John Coltrane In Paris 1960
+
+0:00:02  01 All Of You
+0:17:06  02 So What
+0:30:32  03 On Green Dolphin Street
+0:45:12  04 Walkin'
+1:01:02  05 Bye Bye Blackbird
+1:15:00  06 Round About Midnight
+1:20:37  07 Oleo
+1:25:00  08 The Theme
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EHeOxVwFyOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Duke Ellington
 
 * Take the A Train
