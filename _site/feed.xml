@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-11T20:39:10+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Links to Bill Evans recordings</title><link href="http://localhost:4000/2021/bill-evans-links/" rel="alternate" type="text/html" title="Links to Bill Evans recordings" /><published>2021-09-11T11:44:13+10:00</published><updated>2021-09-11T11:44:13+10:00</updated><id>http://localhost:4000/2021/bill-evans-links</id><content type="html" xml:base="http://localhost:4000/2021/bill-evans-links/">&lt;p&gt;Some links to the great jazz pianist, Bill Evans.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-21T20:27:06+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Windows 10 No Audio Output Device is Installed Problem</title><link href="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/" rel="alternate" type="text/html" title="Windows 10 No Audio Output Device is Installed Problem" /><published>2021-09-21T11:44:13+10:00</published><updated>2021-09-21T11:44:13+10:00</updated><id>http://localhost:4000/2021/windows10-no-audio-devices-are-installed</id><content type="html" xml:base="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/">&lt;p&gt;This is a fix to the No Audio Output Device is Installed Problem.&lt;/p&gt;
+
+&lt;p&gt;I’m not the only one to have this problem (mine is on an Intel NUC8i7HNB
+machine). Of course, the Windows Troubleshooter didn’t help at all. The solution is&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a&quot;&gt;https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In case the link gets broken, here are the instructions.
+I opened CMD prompt as Admin and ran the following commands.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net localgroup Administrators /add localservice
+
+net localgroup Administrators /add networkservice
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I then restarted the Windows Audio service in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services.msc&lt;/code&gt;
+And what do you know, my audio is back!&lt;/p&gt;
+
+&lt;p&gt;It appears windows Update removed the service accounts from the Administrators groups and never put them back.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><summary type="html">This is a fix to the No Audio Output Device is Installed Problem.</summary></entry><entry><title type="html">Links to mostly Jazz Standards</title><link href="http://localhost:4000/2021/jazz-recordings/" rel="alternate" type="text/html" title="Links to mostly Jazz Standards" /><published>2021-09-11T11:44:13+10:00</published><updated>2021-09-11T11:44:13+10:00</updated><id>http://localhost:4000/2021/jazz-recordings</id><content type="html" xml:base="http://localhost:4000/2021/jazz-recordings/">&lt;p&gt;A short list of great jazz muscians and recordings, mostly standards.&lt;/p&gt;
+
+&lt;h1 id=&quot;bill-evans&quot;&gt;Bill Evans&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Concert from 1965 in London.&lt;/li&gt;
@@ -8,7 +29,120 @@
 
 &lt;ul&gt;
   &lt;li&gt;A good discogrgphy &lt;a href=&quot;https://www.udiscovermusic.com/stories/best-bill-evans-songs/&quot;&gt;https://www.udiscovermusic.com/stories/best-bill-evans-songs/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="music" /><category term="hobbies`" /><summary type="html">Some links to the great jazz pianist, Bill Evans.</summary></entry><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;dizzy-gillespie&quot;&gt;Dizzy Gillespie&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No more blues (chega de saudade)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/4GuujVb_ex0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;miles-davis&quot;&gt;Miles Davis&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Miles Davis Quintet, Teatro dell’Arte, Milan, Italy, October 11th, 1964. Miles Davis (trumpet), Wayne Shorter (sax), Herbie Hancock (piano), Ron Carter (bass), Tony Williams (drums)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Autumn Leaves 00:00&lt;br /&gt;
+My Funny Valentine 15:07&lt;br /&gt;
+All Blues 26:33&lt;br /&gt;
+All of You 40:13&lt;br /&gt;
+Joshua 50:47&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/fBoHkB92SU0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Album - Someday my prince will come; Miles Davis-Trumpet, John Coltrane-tenor sax, Wynton Kelly-piano, Paul Chambers-bass, Jimmy Cobb, Philly Joe Jones-drums&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Lo18F5ObPng&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Miles Davis With John Coltrane In Paris 1960&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;0:00:02  01 All Of You
+0:17:06  02 So What
+0:30:32  03 On Green Dolphin Street
+0:45:12  04 Walkin’
+1:01:02  05 Bye Bye Blackbird
+1:15:00  06 Round About Midnight
+1:20:37  07 Oleo
+1:25:00  08 The Theme&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/EHeOxVwFyOw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;duke-ellington&quot;&gt;Duke Ellington&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Take the A Train&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/cb2w2m1JmCY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Star-Crossed Lovers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/lDr1IWWsb_g&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;stan-getz&quot;&gt;Stan Getz&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The Cool Sound of Stan Getz&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;00:00:00 Stan Getz Blues for Mary Jane&lt;/li&gt;
+  &lt;li&gt;00:08:03 Stan Getz There Will Never Be Another You&lt;/li&gt;
+  &lt;li&gt;00:17:24 Stan Getz You’re Blase&lt;/li&gt;
+  &lt;li&gt;00:21:38 Stan Getz Too Close for Comfort&lt;/li&gt;
+  &lt;li&gt;00:27:57 Stan Getz Like Someone in Love&lt;/li&gt;
+  &lt;li&gt;00:34:28 Stan Getz How About You?&lt;/li&gt;
+  &lt;li&gt;00:41:38 Stan Getz Stockholm Street *&lt;/li&gt;
+  &lt;li&gt;00:45:51 Stan Getz Bengt’s Blues *&lt;/li&gt;
+  &lt;li&gt;00:50:07 Stan Getz They Can’t Take That away from Me&lt;/li&gt;
+  &lt;li&gt;00:57:21 Stan Getz Honeysuckle Rose *&lt;/li&gt;
+  &lt;li&gt;01:04:03 Stan Getz Topsy *&lt;/li&gt;
+  &lt;li&gt;01:10:29 Stan Getz Like Someone in Love *&lt;/li&gt;
+  &lt;li&gt;01:14:45 Stan Getz Speak Low *&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qC_GQQK7av0&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;john-coltrane&quot;&gt;John Coltrane&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;John Coltrane Quartet My Favorite Things Belgium, 1965&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/pQ3_nlpnfuA&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;arturo-sandoval&quot;&gt;Arturo Sandoval&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There Will Never Be Another You&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/z1nOfbQ_GwU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;veronica-swift&quot;&gt;Veronica Swift&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;with Chris Botti, Embraceable You&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/1EWhxEAsE1s&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;camille-thurman&quot;&gt;Camille Thurman&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;with Emmet Cohen, The Nearness of You&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IwtXcSqWEzE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="music" /><category term="hobbies" /><category term="jazz" /><summary type="html">A short list of great jazz muscians and recordings, mostly standards.</summary></entry><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
 A common pattern in embedded programming or high-level synthesis
 is if-bit-then, i.e.  test a bit and modify a variable depending on the result.&lt;/p&gt;
 
@@ -601,447 +735,4 @@ an eventful trip and we made some new friends. Dong certainly took his misfortun
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="hawkesbury" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry><entry><title type="html">Debian on ARM via QEMU</title><link href="http://localhost:4000/2021/qemu-armhf-debian/" rel="alternate" type="text/html" title="Debian on ARM via QEMU" /><published>2021-04-01T12:32:43+11:00</published><updated>2021-04-01T12:32:43+11:00</updated><id>http://localhost:4000/2021/qemu-armhf-debian</id><content type="html" xml:base="http://localhost:4000/2021/qemu-armhf-debian/">&lt;p&gt;This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.&lt;/p&gt;
-
-&lt;p&gt;I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes and it should work under VirtualBox.&lt;/p&gt;
-
-&lt;h1 id=&quot;1-create-qemu-image&quot;&gt;1. Create QEMU Image&lt;/h1&gt;
-
-&lt;h2 id=&quot;11-for-64-bit-aarch64&quot;&gt;1.1. For (64-bit) aarch64&lt;/h2&gt;
-&lt;p&gt;I used the lastest version of &lt;a href=&quot;https://github.com/qemu/qemu&quot;&gt;qemu&lt;/a&gt; from github
-and created a 32G qcow2 image (there isn’t any disk space advantage to specifying 16G but it is a pain if it runs out).&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
-QEMU emulator version 5.2.92 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;v6.0.0-rc2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-Copyright &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;c&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; 2003-2021 Fabrice Bellard and the QEMU Project developers
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-img create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; qcow2 debian-3607-aarch64.qcow2 32G 
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-cpu&lt;/span&gt; cortex-a53 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1G     &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-arm64     &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-arm64    &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;root=/dev/sda2 console=ttyAMA0&quot;&lt;/span&gt;     &lt;span class=&quot;nt&quot;&gt;-global&lt;/span&gt; virtio-blk-device.scsi&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;off     &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; virtio-scsi-device,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;scsi     &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-aarch64.qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg,cache&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;unsafe,if&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;none     &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; scsi-hd,drive&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;rootimg  &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic    &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; intel-hda &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; hda-duplex
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;No common CD-ROM drive was detected: Manually select to use /dev/vdb&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;virt-copy-out &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-cpu&lt;/span&gt; cortex-a53 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1G &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-arm64 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-arm64 &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;root=/dev/vda2 console=ttyAMA0&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtio,file&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-aarch64.qcow2,format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;hd &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; intel-hda &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; hda-duplex
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you can login as root and&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# apt update&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# apt &lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;12-for-32-bit-armhf&quot;&gt;1.2. For (32-bit) armhf&lt;/h2&gt;
-
-&lt;p&gt;Install qemu.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt update
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt upgrade
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;qemu&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;qemu
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;qemu-system-arm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Download &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz&quot;&gt;initrd.gz&lt;/a&gt;, &lt;a href=&quot;http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz&quot;&gt;vmlinuz&lt;/a&gt; and
-&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso&quot;&gt;debian-10.9.0-armhf-netinst.iso&lt;/a&gt;
-(alternatively
-&lt;a href=&quot;http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-xfce-CD-1.iso&quot;&gt;debian-10.9.0-armhf-xfce-CD-1.iso&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/initrd.gz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://ftp.debian.org/debian/dists/buster/main/installer-armhf/20190702/images/netboot/vmlinuz
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/armhf/iso-cd/debian-10.9.0-armhf-netinst.iso
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-img create &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; qcow2 debian-3607.qcow2 16G &lt;span class=&quot;c&quot;&gt;# 8G will also work but not leave enough disk space for other things&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-arm &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; ./vmlinuz &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; ./initrd.gz &lt;span class=&quot;nt&quot;&gt;-hda&lt;/span&gt; debian-3607.qcow2 &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1024M &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;console=ttyAMA0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-10.9.0-armhf-netinst.iso,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom,if&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;none,media&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; virtio-scsi-device &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; scsi-cd,drive&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cdrom
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Use all of the defaults for the Debian installer.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I used “elec3607” for all user names and passwords.&lt;/li&gt;
-  &lt;li&gt;For partitioning select “Guided - use entire disk”. Note that this chooses /dev/vda2 for / (we will use this later).&lt;/li&gt;
-  &lt;li&gt;If you get a “Failed to install the base system” message, try a second time from the menu.&lt;/li&gt;
-  &lt;li&gt;Select linux-image-armmp-lpae for the kernel.&lt;/li&gt;
-  &lt;li&gt;Select targeted for initrd &lt;strong&gt;(This was a mistake, choose generic)&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;For software to install, just choose “SSH server” and “standard system utilities” (the default).&lt;/li&gt;
-  &lt;li&gt;You will receive the message that GRUB installation failed. We will fix this later.&lt;/li&gt;
-  &lt;li&gt;Exit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;qemu&lt;/code&gt; with “control-A x”.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Extract the kernel and initrd from the disk image.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libguestfs-tools
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;virt-ls &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607.qcow2 /boot/
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;virt-copy-out &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; debian-3607.qcow2 /boot/vmlinuz-4.19.0-16-armmp-lpae /boot/initrd.img-4.19.0-16-armmp-lpae &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now you can run your Debian-Arm Linux from either Linux:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-arm &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-armmp-lpae &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-armmp-lpae &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;root=/dev/vda2&apos;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtio,file&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-lab4sol.qcow2,format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;hd &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;2-install-sudo-and-put-elec3607-in-the-sudo-group&quot;&gt;2. Install sudo and put ELEC3607 in the sudo group&lt;/h1&gt;
-&lt;p&gt;Login as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt; (password is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;elec3607&lt;/code&gt;) and execute the following commands.
-Note that the basic distribution of Debian does not include sudo.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;su -
-Password: 
-&lt;span class=&quot;c&quot;&gt;# apt install sudo &lt;/span&gt;
-Reading package lists... Done
-...
-usermod &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-G&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;elec3607
-shutdown now
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also ssh to the machine and use X windows.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; elec3607@localhost &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 10022
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The complete list of Debian packages is available &lt;a href=&quot;https://www.debian.org/distrib/packages&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&quot;3-install-debian-audio&quot;&gt;3. Install Debian Audio&lt;/h1&gt;
-&lt;p&gt;Start by booting QEMU.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;qemu-system-aarch64 &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; virt &lt;span class=&quot;nt&quot;&gt;-cpu&lt;/span&gt; cortex-a53 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; 1G &lt;span class=&quot;nt&quot;&gt;-initrd&lt;/span&gt; initrd.img-4.19.0-16-arm64 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-kernel&lt;/span&gt; vmlinuz-4.19.0-16-arm64 &lt;span class=&quot;nt&quot;&gt;-append&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;root=/dev/vda2 console=ttyAMA0&quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-drive&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtio,file&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;debian-3607-aarch64.qcow2,format&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;qcow2,id&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;hd &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; user,hostfwd&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;tcp::10022-:22 &lt;span class=&quot;nt&quot;&gt;-net&lt;/span&gt; nic &lt;span class=&quot;nt&quot;&gt;-nographic&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; intel-hda &lt;span class=&quot;nt&quot;&gt;-device&lt;/span&gt; hda-duplex&amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Rather than login directly, 
-I prefer to ssh to the QEMU machine so I can run Xwindows.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh &lt;span class=&quot;nt&quot;&gt;-Y&lt;/span&gt; elec3607@localhost &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 10022
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;You can also copy files to it.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;scp &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; 10022 &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; lab5-audio elec3607@localhost:
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Install the alsa and pulseaudio.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;libasound2 libasound2-plugins libasound2-doc alsa-utils pulseaudio pavucontrol paprefs libpulse-dev libcanberra-gtk-dev 
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;usermod &lt;span class=&quot;nt&quot;&gt;-aG&lt;/span&gt; audio,pulse,pulse-access elec3607
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then you have to log out and log in again.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;aplay &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;****&lt;/span&gt; List of PLAYBACK Hardware Devices &lt;span class=&quot;k&quot;&gt;****&lt;/span&gt;
-card 0: Intel &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;HDA Intel], device 0: Generic Analog &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Generic Analog]
-  Subdevices: 1/1
-  Subdevice &lt;span class=&quot;c&quot;&gt;#0: subdevice #0&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pulseaudio &lt;span class=&quot;nt&quot;&gt;--start&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pactl info
-Server String: /run/user/1000/pulse/native
-Library Protocol Version: 32
-Server Protocol Version: 32
-Is Local: &lt;span class=&quot;nb&quot;&gt;yes
-&lt;/span&gt;Client Index: 2
-Tile Size: 65472
-User Name: elec3607
-Host Name: debian
-Server Name: pulseaudio
-Server Version: 12.2
-Default Sample Specification: s16le 2ch 44100Hz
-Default Channel Map: front-left,front-right
-Default Sink: alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo
-Default Source: alsa_input.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo
-Cookie: 1295:3f1d
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you can start it up via systemctl.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;pulseaudio
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;systemctl &lt;span class=&quot;nt&quot;&gt;--user&lt;/span&gt; start pulseaudio
-Job &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;pulseaudio.service failed because the control process exited with error code.
-See &lt;span class=&quot;s2&quot;&gt;&quot;systemctl --user status pulseaudio.service&quot;&lt;/span&gt; and &lt;span class=&quot;s2&quot;&gt;&quot;journalctl --user -xe&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;details.
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;shutdown &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; now
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Wait for everything to come back up and login again via ssh&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ systemctl --user status pulseaudio
-● pulseaudio.service - Sound Service
-   Loaded: loaded (/usr/lib/systemd/user/pulseaudio.service; enabled; vendor pre
-   Active: active (running) since Sat 2021-04-10 15:59:48 AEST; 4s ago
- Main PID: 336 (pulseaudio)
-   CGroup: /user.slice/user-1000.slice/user@1000.service/pulseaudio.service
-           ├─336 /usr/bin/pulseaudio --daemonize=no
-           └─357 /usr/lib/aarch64-linux-gnu/pulse/gsettings-helper
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/pulse/default.pa&lt;/code&gt; and append the line:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;load-module module-null-sink sink_name=MySink format=s16le channels=1 rate=12000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We can restart the daemon and configure with.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ systemctl --user restart pulseaudio
-$ pacmd list-sinks
-2 sink(s) available.
-  * index: 0
-	name: &amp;lt;alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo&amp;gt;
-	driver: &amp;lt;module-alsa-card.c&amp;gt;
-	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY FLAT_VOLUME DYNAMIC_LATENCY
-	state: IDLE
-	suspend cause: (none)
-	priority: 9039
-	volume: front-left: 30419 /  46% / -20.00 dB,   front-right: 30419 /  46% / -20.00 dB
-	        balance 0.00
-	base volume: 65536 / 100% / 0.00 dB
-	volume steps: 65537
-	muted: no
-	current latency: 1283.09 ms
-	max request: 344 KiB
-	max rewind: 344 KiB
-	monitor source: 0
-	sample spec: s16le 2ch 44100Hz
-	channel map: front-left,front-right
-	             Stereo
-	used by: 0
-	linked by: 0
-	configured latency: 2000.00 ms; range is 0.50 .. 2000.00 ms
-	card: 0 &amp;lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&amp;gt;
-	module: 6
-	properties:
-		alsa.resolution_bits = &quot;16&quot;
-		device.api = &quot;alsa&quot;
-		device.class = &quot;sound&quot;
-		alsa.class = &quot;generic&quot;
-		alsa.subclass = &quot;generic-mix&quot;
-		alsa.name = &quot;Generic Analog&quot;
-		alsa.id = &quot;Generic Analog&quot;
-		alsa.subdevice = &quot;0&quot;
-		alsa.subdevice_name = &quot;subdevice #0&quot;
-		alsa.device = &quot;0&quot;
-		alsa.card = &quot;0&quot;
-		alsa.card_name = &quot;HDA Intel&quot;
-		alsa.long_card_name = &quot;HDA Intel at 0x10040000 irq 50&quot;
-		alsa.driver_name = &quot;snd_hda_intel&quot;
-		device.bus_path = &quot;platform-4010000000.pcie-pci-0000:00:02.0&quot;
-		sysfs.path = &quot;/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0&quot;
-		device.bus = &quot;pci&quot;
-		device.vendor.id = &quot;8086&quot;
-		device.vendor.name = &quot;Intel Corporation&quot;
-		device.product.id = &quot;2668&quot;
-		device.product.name = &quot;82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)&quot;
-		device.form_factor = &quot;internal&quot;
-		device.string = &quot;front:0&quot;
-		device.buffering.buffer_size = &quot;352800&quot;
-		device.buffering.fragment_size = &quot;176400&quot;
-		device.access_mode = &quot;mmap+timer&quot;
-		device.profile.name = &quot;analog-stereo&quot;
-		device.profile.description = &quot;Analog Stereo&quot;
-		device.description = &quot;Built-in Audio Analog Stereo&quot;
-		alsa.mixer_name = &quot;QEMU Generic&quot;
-		alsa.components = &quot;HDA:1af40022,1af40022,00100101&quot;
-		module-udev-detect.discovered = &quot;1&quot;
-		device.icon_name = &quot;audio-card-pci&quot;
-	ports:
-		analog-output-lineout: Line Out (priority 9900, latency offset 0 usec, available: unknown)
-			properties:
-				
-	active port: &amp;lt;analog-output-lineout&amp;gt;
-    index: 1
-	name: &amp;lt;MySink&amp;gt;
-	driver: &amp;lt;module-null-sink.c&amp;gt;
-	flags: DECIBEL_VOLUME LATENCY FLAT_VOLUME DYNAMIC_LATENCY
-	state: IDLE
-	suspend cause: (none)
-	priority: 1000
-	volume: mono: 65536 / 100% / 0.00 dB
-	        balance 0.00
-	base volume: 65536 / 100% / 0.00 dB
-	volume steps: 65537
-	muted: no
-	current latency: 1576.69 ms
-	max request: 46 KiB
-	max rewind: 46 KiB
-	monitor source: 2
-	sample spec: s16le 1ch 12000Hz
-	channel map: mono
-	             Mono
-	used by: 0
-	linked by: 0
-	configured latency: 2000.00 ms; range is 0.50 .. 2000.00 ms
-	module: 20
-	properties:
-		device.description = &quot;Null Output&quot;
-		device.class = &quot;abstract&quot;
-		device.icon_name = &quot;audio-card&quot;
-$ pacmd list-sources
-3 source(s) available.
-    index: 0
-	name: &amp;lt;alsa_output.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo.monitor&amp;gt;
-	driver: &amp;lt;module-alsa-card.c&amp;gt;
-	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
-	state: SUSPENDED
-	suspend cause: IDLE
-	priority: 1030
-	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
-	        balance 0.00
-	base volume: 65536 / 100% / 0.00 dB
-	volume steps: 65537
-	muted: no
-	current latency: 0.00 ms
-	max rewind: 0 KiB
-	sample spec: s16le 2ch 44100Hz
-	channel map: front-left,front-right
-	             Stereo
-	used by: 0
-	linked by: 0
-	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
-	monitor_of: 0
-	card: 0 &amp;lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&amp;gt;
-	module: 6
-	properties:
-		device.description = &quot;Monitor of Built-in Audio Analog Stereo&quot;
-		device.class = &quot;monitor&quot;
-		alsa.card = &quot;0&quot;
-		alsa.card_name = &quot;HDA Intel&quot;
-		alsa.long_card_name = &quot;HDA Intel at 0x10040000 irq 50&quot;
-		alsa.driver_name = &quot;snd_hda_intel&quot;
-		device.bus_path = &quot;platform-4010000000.pcie-pci-0000:00:02.0&quot;
-		sysfs.path = &quot;/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0&quot;
-		device.bus = &quot;pci&quot;
-		device.vendor.id = &quot;8086&quot;
-		device.vendor.name = &quot;Intel Corporation&quot;
-		device.product.id = &quot;2668&quot;
-		device.product.name = &quot;82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)&quot;
-		device.form_factor = &quot;internal&quot;
-		device.string = &quot;0&quot;
-		module-udev-detect.discovered = &quot;1&quot;
-		device.icon_name = &quot;audio-card-pci&quot;
-  * index: 1
-	name: &amp;lt;alsa_input.platform-4010000000.pcie-pci-0000_00_02.0.analog-stereo&amp;gt;
-	driver: &amp;lt;module-alsa-card.c&amp;gt;
-	flags: HARDWARE HW_MUTE_CTRL HW_VOLUME_CTRL DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
-	state: SUSPENDED
-	suspend cause: IDLE
-	priority: 9039
-	volume: front-left: 65536 / 100% / 0.00 dB,   front-right: 65536 / 100% / 0.00 dB
-	        balance 0.00
-	base volume: 65536 / 100% / 0.00 dB
-	volume steps: 65537
-	muted: no
-	current latency: 0.00 ms
-	max rewind: 0 KiB
-	sample spec: s16le 2ch 44100Hz
-	channel map: front-left,front-right
-	             Stereo
-	used by: 0
-	linked by: 0
-	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
-	card: 0 &amp;lt;alsa_card.platform-4010000000.pcie-pci-0000_00_02.0&amp;gt;
-	module: 6
-	properties:
-		alsa.resolution_bits = &quot;16&quot;
-		device.api = &quot;alsa&quot;
-		device.class = &quot;sound&quot;
-		alsa.class = &quot;generic&quot;
-		alsa.subclass = &quot;generic-mix&quot;
-		alsa.name = &quot;Generic Analog&quot;
-		alsa.id = &quot;Generic Analog&quot;
-		alsa.subdevice = &quot;0&quot;
-		alsa.subdevice_name = &quot;subdevice #0&quot;
-		alsa.device = &quot;0&quot;
-		alsa.card = &quot;0&quot;
-		alsa.card_name = &quot;HDA Intel&quot;
-		alsa.long_card_name = &quot;HDA Intel at 0x10040000 irq 50&quot;
-		alsa.driver_name = &quot;snd_hda_intel&quot;
-		device.bus_path = &quot;platform-4010000000.pcie-pci-0000:00:02.0&quot;
-		sysfs.path = &quot;/devices/platform/4010000000.pcie/pci0000:00/0000:00:02.0/sound/card0&quot;
-		device.bus = &quot;pci&quot;
-		device.vendor.id = &quot;8086&quot;
-		device.vendor.name = &quot;Intel Corporation&quot;
-		device.product.id = &quot;2668&quot;
-		device.product.name = &quot;82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (QEMU Virtual Machine)&quot;
-		device.form_factor = &quot;internal&quot;
-		device.string = &quot;front:0&quot;
-		device.buffering.buffer_size = &quot;352800&quot;
-		device.buffering.fragment_size = &quot;176400&quot;
-		device.access_mode = &quot;mmap+timer&quot;
-		device.profile.name = &quot;analog-stereo&quot;
-		device.profile.description = &quot;Analog Stereo&quot;
-		device.description = &quot;Built-in Audio Analog Stereo&quot;
-		alsa.mixer_name = &quot;QEMU Generic&quot;
-		alsa.components = &quot;HDA:1af40022,1af40022,00100101&quot;
-		module-udev-detect.discovered = &quot;1&quot;
-		device.icon_name = &quot;audio-card-pci&quot;
-	ports:
-		analog-input-linein: Line In (priority 8100, latency offset 0 usec, available: unknown)
-			properties:
-				
-	active port: &amp;lt;analog-input-linein&amp;gt;
-    index: 2
-	name: &amp;lt;MySink.monitor&amp;gt;
-	driver: &amp;lt;module-null-sink.c&amp;gt;
-	flags: DECIBEL_VOLUME LATENCY DYNAMIC_LATENCY
-	state: SUSPENDED
-	suspend cause: IDLE
-	priority: 1000
-	volume: mono: 65536 / 100% / 0.00 dB
-	        balance 0.00
-	base volume: 65536 / 100% / 0.00 dB
-	volume steps: 65537
-	muted: no
-	current latency: 0.00 ms
-	max rewind: 46 KiB
-	sample spec: s16le 1ch 12000Hz
-	channel map: mono
-	             Mono
-	used by: 0
-	linked by: 0
-	configured latency: 0.00 ms; range is 0.50 .. 2000.00 ms
-	monitor_of: 1
-	module: 20
-	properties:
-		device.description = &quot;Monitor of Null Output&quot;
-		device.class = &quot;monitor&quot;
-		device.icon_name = &quot;audio-input-microphone&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The Volume Control program allows you to monitor what sources and sinks are available. If you play something and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pavucontrol&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paplay iq-16b.wav&amp;amp;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;pavucontrol&amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;In the Configuration tab, select Off as the Built-in Audio profile&lt;/li&gt;
-  &lt;li&gt;If you look at Input Devices and Show: All Input Devices, you should only see Monitor of Null Output and the meter should indicate something is playing.&lt;/li&gt;
-  &lt;li&gt;If you look at Output Devices and Show: All Output Devices, you should only see Null Output and the meter should indicate something is playing.
-`&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you play a file in the background, you can decode it.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;paplay data/iq-16b.wav &amp;amp;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;wsprcan/k9an-wsprd 
-Writing data/wf-1618037425.wav
-mode  &lt;span class=&quot;nt&quot;&gt;-1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt;.1   0.001437 &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt;  VK2RG QF56 30 
-mode &lt;span class=&quot;nt&quot;&gt;-19&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;.9   0.001455 &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;  VK3GOD QF23 23 
-mode &lt;span class=&quot;nt&quot;&gt;-21&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;.9   0.001478 &lt;span class=&quot;nt&quot;&gt;-2&lt;/span&gt;  VK4YEH QG62 37 
-&amp;lt;DecodeFinished,data/wf-1618037425.wav,3&amp;gt;
-&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;3]+  Done                    paplay data/iq-16b.wav
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Other useful tools include:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Firefox and audacity packages are useful but run too slow on QEMU.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo apt install firefox-esr audacity
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;PulseAudio Preferences can be used to configure the network.
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  $ paprefs
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Under the Network Access tab, select “Make discoverable PulseAudio network sound devices available locally”&lt;/li&gt;
-      &lt;li&gt;Under the Network Server tab, select “Enable network access to local sound devices” and “Don’t require authentication”&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you go to a websdr in Firefox, you can route the audio to your machine.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;firefox http://websdr1.sdrutah.org:8901/index1a.html?tune&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;7038.6usb &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Unfortunately, this doesn’t run fast enough under QEMU to work on wspr decoding but it does under native x86 Linux.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gavv.github.io/articles/pulseaudio-under-the-hood/&quot;&gt;https://gavv.github.io/articles/pulseaudio-under-the-hood/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/&quot;&gt;https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network&quot;&gt;https://wiki.archlinux.org/index.php/PulseAudio/Examples#PulseAudio_over_network&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="embedded" /><summary type="html">This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using qemu and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="hawkesbury" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry></feed>
