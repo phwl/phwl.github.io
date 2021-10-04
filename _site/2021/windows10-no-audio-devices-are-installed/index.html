@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Windows 10 No Audio Output Device is Installed Problem - Life, the Universe and Fishing</title>
-<meta name="description" content="This is a fix to the No Audio Output Device is Installed Problem.">
+<meta name="description" content="This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.">
 
 
 
@@ -22,7 +22,7 @@
 <meta property="og:url" content="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/">
 
 
-  <meta property="og:description" content="This is a fix to the No Audio Output Device is Installed Problem.">
+  <meta property="og:description" content="This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.">
 
 
 
@@ -167,7 +167,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Windows 10 No Audio Output Device is Installed Problem">
-    <meta itemprop="description" content="This is a fix to the No Audio Output Device is Installed Problem.">
+    <meta itemprop="description" content="This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.">
     <meta itemprop="datePublished" content="September 21, 2021">
     
 
@@ -189,7 +189,7 @@
             </nav>
           </aside>
         
-        <p>This is a fix to the No Audio Output Device is Installed Problem.</p>
+        <p>This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.</p>
 
 <p>I’m not the only one to have this problem (mine is on an Intel NUC8i7HNB
 machine). Of course, the Windows Troubleshooter didn’t help at all. The solution is</p>
@@ -197,18 +197,17 @@ machine). Of course, the Windows Troubleshooter didn’t help at all. The soluti
   <li><a href="https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a">https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a</a></li>
 </ul>
 
-<p>In case the link gets broken, here are the instructions.
-I opened CMD prompt as Admin and ran the following commands.</p>
+<p>First open a Powershell prompt as Admin and ran the following commands.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>net localgroup Administrators /add localservice
 
 net localgroup Administrators /add networkservice
 </code></pre></div></div>
 
-<p>I then restarted the Windows Audio service in <code class="language-plaintext highlighter-rouge">services.msc</code>
-And what do you know, my audio is back!</p>
+<p>Restart the Windows Audio service in <code class="language-plaintext highlighter-rouge">services.msc</code>
+and audio is back!</p>
 
-<p>It appears windows Update removed the service accounts from the Administrators groups and never put them back.</p>
+<p>It appears windows Update removes the service accounts from the Administrators groups and never puts them back.</p>
 
         
       </section>
@@ -281,7 +280,8 @@ And what do you know, my audio is back!</p>
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/2021/workbench/" class="pagination--pager" title="Workbench
+">Next</a>
     
   </nav>
 
@@ -295,6 +295,36 @@ And what do you know, my audio is back!</p>
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/workbench/">
+        <img src=
+          
+            "/assets/images/2021/10/workbench.jpeg"
+          
+          alt="Workbench"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/workbench/" rel="permalink">Workbench
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Photo of my workbench.
+
+</p>
+  </article>
+</div>
+
         
           
 
@@ -405,37 +435,6 @@ Muswellbrook and Tamworth.
   
   
   
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/another-balls-head-pano/">
-        <img src=
-          
-            "/assets/images/2021/06/IMG_8091.jpeg"
-          
-          alt="Another Balls Head Panorama"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/another-balls-head-pano/" rel="permalink">Another Balls Head Panorama
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Nothing much happened the entire morning except for a brief moment when
-Beard and I had a double hookup.
 
 </p>
   </article>

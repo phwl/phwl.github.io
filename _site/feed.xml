@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-21T20:27:06+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Windows 10 No Audio Output Device is Installed Problem</title><link href="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/" rel="alternate" type="text/html" title="Windows 10 No Audio Output Device is Installed Problem" /><published>2021-09-21T11:44:13+10:00</published><updated>2021-09-21T11:44:13+10:00</updated><id>http://localhost:4000/2021/windows10-no-audio-devices-are-installed</id><content type="html" xml:base="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/">&lt;p&gt;This is a fix to the No Audio Output Device is Installed Problem.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-04T20:09:49+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Workbench</title><link href="http://localhost:4000/2021/workbench/" rel="alternate" type="text/html" title="Workbench" /><published>2021-10-04T12:34:23+11:00</published><updated>2021-10-04T12:34:23+11:00</updated><id>http://localhost:4000/2021/workbench</id><content type="html" xml:base="http://localhost:4000/2021/workbench/">&lt;p&gt;Photo of my workbench.&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/10/workbench.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/10/workbench.jpeg&quot; alt=&quot;&quot; /&gt;
+  
+    &lt;figcaption&gt;
+      
+
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="hobbies" /><summary type="html">Photo of my workbench.</summary></entry><entry><title type="html">Windows 10 No Audio Output Device is Installed Problem</title><link href="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/" rel="alternate" type="text/html" title="Windows 10 No Audio Output Device is Installed Problem" /><published>2021-09-21T11:44:13+10:00</published><updated>2021-09-21T11:44:13+10:00</updated><id>http://localhost:4000/2021/windows10-no-audio-devices-are-installed</id><content type="html" xml:base="http://localhost:4000/2021/windows10-no-audio-devices-are-installed/">&lt;p&gt;This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.&lt;/p&gt;
 
 &lt;p&gt;I’m not the only one to have this problem (mine is on an Intel NUC8i7HNB
 machine). Of course, the Windows Troubleshooter didn’t help at all. The solution is&lt;/p&gt;
@@ -6,18 +15,17 @@ machine). Of course, the Windows Troubleshooter didn’t help at all. The soluti
   &lt;li&gt;&lt;a href=&quot;https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a&quot;&gt;https://answers.microsoft.com/en-us/windows/forum/all/kb5003173-killed-my-audio/03662044-80f9-45e0-ba20-a47d1e93488a&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;In case the link gets broken, here are the instructions.
-I opened CMD prompt as Admin and ran the following commands.&lt;/p&gt;
+&lt;p&gt;First open a Powershell prompt as Admin and ran the following commands.&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net localgroup Administrators /add localservice
 
 net localgroup Administrators /add networkservice
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;I then restarted the Windows Audio service in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services.msc&lt;/code&gt;
-And what do you know, my audio is back!&lt;/p&gt;
+&lt;p&gt;Restart the Windows Audio service in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;services.msc&lt;/code&gt;
+and audio is back!&lt;/p&gt;
 
-&lt;p&gt;It appears windows Update removed the service accounts from the Administrators groups and never put them back.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><summary type="html">This is a fix to the No Audio Output Device is Installed Problem.</summary></entry><entry><title type="html">Links to mostly Jazz Standards</title><link href="http://localhost:4000/2021/jazz-recordings/" rel="alternate" type="text/html" title="Links to mostly Jazz Standards" /><published>2021-09-11T11:44:13+10:00</published><updated>2021-09-11T11:44:13+10:00</updated><id>http://localhost:4000/2021/jazz-recordings</id><content type="html" xml:base="http://localhost:4000/2021/jazz-recordings/">&lt;p&gt;A short list of great jazz muscians and recordings, mostly standards.&lt;/p&gt;
+&lt;p&gt;It appears windows Update removes the service accounts from the Administrators groups and never puts them back.&lt;/p&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><summary type="html">This is a fix to the “No Audio Output Device is Installed Problem” which occurs after a Windows Update.</summary></entry><entry><title type="html">Links to mostly Jazz Standards</title><link href="http://localhost:4000/2021/jazz-recordings/" rel="alternate" type="text/html" title="Links to mostly Jazz Standards" /><published>2021-09-11T11:44:13+10:00</published><updated>2021-09-11T11:44:13+10:00</updated><id>http://localhost:4000/2021/jazz-recordings</id><content type="html" xml:base="http://localhost:4000/2021/jazz-recordings/">&lt;p&gt;A short list of great jazz muscians and recordings, mostly standards.&lt;/p&gt;
 
 &lt;h1 id=&quot;bill-evans&quot;&gt;Bill Evans&lt;/h1&gt;
 
@@ -142,7 +150,19 @@ Joshua 50:47&lt;/p&gt;
   &lt;li&gt;with Emmet Cohen, The Nearness of You&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IwtXcSqWEzE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="music" /><category term="hobbies" /><category term="jazz" /><summary type="html">A short list of great jazz muscians and recordings, mostly standards.</summary></entry><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IwtXcSqWEzE&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&quot;da-kyung-kwak&quot;&gt;Da Kyung Kwak&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Misty&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JLehhb937iU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Autumn Leaves&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jJHfLyrTThs&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>phwl</name></author><category term="music" /><category term="hobbies" /><category term="jazz" /><summary type="html">A short list of great jazz muscians and recordings, mostly standards.</summary></entry><entry><title type="html">If-bit-then</title><link href="http://localhost:4000/2021/if-bit-then/" rel="alternate" type="text/html" title="If-bit-then" /><published>2021-08-08T06:49:55+10:00</published><updated>2021-08-08T06:49:55+10:00</updated><id>http://localhost:4000/2021/if-bit-then</id><content type="html" xml:base="http://localhost:4000/2021/if-bit-then/">&lt;p&gt;This optimisation came up in a consulting job for &lt;a href=&quot;http://www.cruxml.com&quot;&gt;CruxML&lt;/a&gt;.
 A common pattern in embedded programming or high-level synthesis
 is if-bit-then, i.e.  test a bit and modify a variable depending on the result.&lt;/p&gt;
 
@@ -599,140 +619,4 @@ First you pull out the plastic arm that pulls up on the glovebox door.&lt;/p&gt;
     &lt;figcaption&gt;
       
 
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="repair" /><summary type="html">Took our 2016 Forester to Subaru for a service. They called me back asking if I wanted to pay $143 to replace the Cabin Air/Pollen filter.</summary></entry><entry><title type="html">Hawkesbury River Rescue</title><link href="http://localhost:4000/2021/hawkesbury-river-rescue/" rel="alternate" type="text/html" title="Hawkesbury River Rescue" /><published>2021-04-03T18:00:33+11:00</published><updated>2021-04-03T18:00:33+11:00</updated><id>http://localhost:4000/2021/hawkesbury-river-rescue</id><content type="html" xml:base="http://localhost:4000/2021/hawkesbury-river-rescue/">&lt;p&gt;It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.&lt;/p&gt;
-
-&lt;p&gt;It was a very foggy morning, worse than I’ve ever seen it on the Hawkesbury.
-Approaching Mooney Mooney, a road sign said that the boat ramp was closed so we made a detour to Brooklyn boat ramp. That put us about an hour behind.&lt;/p&gt;
-
-&lt;p&gt;On one of the islands, we saw the odd scene of a really large tent and
-a really small kayak. We chatted with the guy (whose name was Dong), and his wife Lin, for about 10 minutes before he casually requested that we rescue them as their inflatable boat disappeared in the middle of the night.&lt;/p&gt;
-
-&lt;p&gt;Since the outboard was still at the campsite, we thought it was very unlikely it had
-been stolen. They had just pulled it up high onto the shore. 
-They had called 000 (the Aussie equivalent of 911) who weren’t interested in rescuing them. It was also
-a shame that my VHF marine radio was out of service with a dead battery so I couldn’t
-use it to call Marine Rescue.  We said we would go fishing and come back for them.
-When he mentioned he was from Wollongong, I correctly guessed he worked at Wollongong University.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7681.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7681.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;The fishing was tough but we got a nice bream just as we were about to change spots.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7682.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7682.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;It became a nice day as the fog cleared. There were many logs and other debris
-in the river due to the recent floods. The water was a dark brown colour.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7686.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7686.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;After fishing for a couple of hours, I called them and said we would be there in 20
-min. During the call, I hooked a nice flathead but it bit through the leader within inches
-of the boat. That’s the second consecutive flathead I’ve lost right at
-the net.&lt;/p&gt;
-
-&lt;p&gt;When we arrived, everything was already packed in the kayak. Warren and I were
-a bit worried about all the stuff in it and suggested putting the outboard in the
-boat.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7687.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7687.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Anyway, Dong said not to worry so off we went.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7688.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7688.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Another boat created a large wake, which we carefully negotiated. We were just 
-starting to get confident and travelling at about 4 knots.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7690.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7690.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Then the kayak flipped over. We tried to get it upright but it was too heavy to 
-do so from the boat. We carefully towed it to the beach, going so slow that at one point Warren asked if we were moving forward. Unfortunately, at some point we lost the outboard.
-We took everything out of the kayak and let the water drain away a bit before putting
-everything in the boat. The tent took three people to lift.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7692.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7692.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;With nothing in the kayak, we got up to 15 knots 
-on a plane when the tow rope snapped. Definitely
-a comedy of errors. We decided not to push things any further and limped back at
-4 knots.&lt;/p&gt;
-
-&lt;p&gt;When we arrived at the Mooney Mooney boat ramp (which was still closed), marine rescue prevented us from docking as they were towing a broken boat. They took about 20 minutes to do this simple operation and we could easily have gone in and unloaded all our stuff in
-parallel.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7693.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7693.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Following the rescue we managed to catch one more bream in the middle of the day before going home. It was quite
-an eventful trip and we made some new friends. Dong certainly took his misfortunes with better humour than I would have!&lt;/p&gt;
-
-&lt;p&gt;Postscript. Dong didn’t do badly compared to &lt;a href=&quot;https://www.smh.com.au/national/nsw/hawkesbury-river-boat-explosion-20210404-p57gfv.html&quot;&gt;these people&lt;/a&gt; who had their boat explode at Brooklyn.&lt;/p&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7694.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/04/IMG_7723.jpg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/04/IMG_7723.jpg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><category term="hawkesbury" /><summary type="html">It started off as a rather routine Easter fishing day trip to Mooney Mooney with Warren.</summary></entry></feed>
+    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="repair" /><summary type="html">Took our 2016 Forester to Subaru for a service. They called me back asking if I wanted to pay $143 to replace the Cabin Air/Pollen filter.</summary></entry></feed>
