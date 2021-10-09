@@ -58,4 +58,9 @@ crontab -e
 add ```@reboot /opt/Xilinx/license/lin_flexlm_v11.17.2.0/lnx64.o/lmgrd -c /opt/Xilinx/license/Xilinx.lic -l /opt/Xilinx/license/Xilinx.log```
 
 
-5. On local machines set ```XILINXD_LICENSE_FILE``` to ```2100@tuna.staff.sydney.edu.au```
+5. On Linux machines using the floating license server:
+```
+export XILINXD_LICENSE_FILE=2100@tuna.staff.sydney.edu.au
+```
+Under Windows you can use the Xilinx License Configuration Manager (XLCM) to set the XILINXD_LICENSE_FILE variable.
+
