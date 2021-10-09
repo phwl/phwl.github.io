@@ -10,40 +10,40 @@
     
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Dell Inspiron 13 7000 - Life, the Universe and Fishing</title>
-<meta name="description" content="Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd">
+<!-- begin _includes/seo.html --><title>Install Vitis/Vivado - Life, the Universe and Fishing</title>
+<meta name="description" content="Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Life, the Universe and Fishing">
-<meta property="og:title" content="Dell Inspiron 13 7000">
-<meta property="og:url" content="http://localhost:4000/2018/dell-inspiron-13-7000/">
+<meta property="og:title" content="Install Vitis/Vivado">
+<meta property="og:url" content="http://localhost:4000/2021/install-vivado/">
 
 
-  <meta property="og:description" content="Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd">
-
-
-
-  <meta property="og:image" content="http://localhost:4000/assets/images/2018/09/dell-logo-600x229.jpg">
+  <meta property="og:description" content="Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.">
 
 
 
-
-
-  <meta property="article:published_time" content="2018-09-12T09:59:17+10:00">
+  <meta property="og:image" content="https://www.xilinx.com/content/dam/xilinx/homepage/promos/xilinx-sony-promo-banner-500x250.jpg">
 
 
 
 
 
-  
+  <meta property="article:published_time" content="2021-10-08T13:43:51+11:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/2018/dell-inspiron-13-7000/">
+
+<link rel="canonical" href="http://localhost:4000/2021/install-vivado/">
 
 
 
@@ -166,15 +166,15 @@
   
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Dell Inspiron 13 7000">
-    <meta itemprop="description" content="Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd">
-    <meta itemprop="datePublished" content="September 12, 2018">
+    <meta itemprop="headline" content="Install Vitis/Vivado">
+    <meta itemprop="description" content="Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.">
+    <meta itemprop="datePublished" content="October 08, 2021">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Dell Inspiron 13 7000
+          <h1 id="page-title" class="page__title" itemprop="headline">Install Vitis/Vivado
 </h1>
           
         </header>
@@ -182,47 +182,50 @@
 
       <section class="page__content" itemprop="text">
         
-        <h1 id="setup-of-a-dell-inspiron-13-7000-running-windows-10-pro-at-usyd">Setup of a Dell Inspiron 13 7000 running Windows 10 Pro at USyd</h1>
+        <p>Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.</p>
 
-<ul>
-  <li>
-    <p>Set up as a personal rather than company managed computer</p>
+<ol>
+  <li>Install dependencies (because <a href="https://support.xilinx.com/s/article/76616?language=en_US">https://support.xilinx.com/s/article/76616?language=en_US</a>)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libtinfo5
+</code></pre></div>    </div>
   </li>
-  <li>
-    <p>Install follow-me printer <a href="http://staff.ask.sydney.edu.au/app/answers/detail/a_id/974/kw/printer">http://staff.ask.sydney.edu.au/app/answers/detail/a_id/974/kw/printer</a></p>
+  <li>Install software (in batch mode because of <a href="https://bbs.archlinux.org/viewtopic.php?id=256564">https://bbs.archlinux.org/viewtopic.php?id=256564</a>)
+Download  Xilinx Unified Installer 2021.1: Linux Self Extracting Web Installer from <a href="https://www.xilinx.com/support/download.html">https://www.xilinx.com/support/download.html</a>. Then
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./Xilinx_Unified_2020.1_0602_1208_Lin64.bin --noexec --target .
+./xsetup -b AuthTokenGen
+./xsetup -b ConfigGen
+# edit ~/.Xilinx.install_config.txt changing unwanted options to :0
+./xsetup --batch Install --agree XilinxEULA,3rdPartyEULA,WebTalkTerms --location /opt/Xilinx --config ~/.Xilinx/install_config.txt
+</code></pre></div>    </div>
   </li>
-  <li>
-    <p>To install Apple USB Ethernet driver</p>
-
-    <ul>
-      <li>
-        <p>Download the latest version of “Boot Camp Support Software” from Apple.com: <a href="http://support.apple.com/downloads/#macoscomponents">http://support.apple.com/downloads/#macoscomponents</a></p>
-      </li>
-      <li>
-        <p>Open the ZIP file and go into the BootCamp\Drivers\Asix driver</p>
-      </li>
-      <li>
-        <p>Run the AsixSetup64.exe driver installer</p>
-      </li>
-    </ul>
+  <li>Install licence server
+From <a href="https://www.xilinx.com/support/download.html">https://www.xilinx.com/support/download.html</a> download
+ Floating Server Tools Linux (Flex v11.17.2.0) and unzip into /opt/Xilinx/license. Generate and put Xilinx.lic in same directory. Then
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install lsb
+sudo adduser xilinx	# create xilinx user
+chmod -R xilinx.xilinx /opt/Xilinx
+mkdir -p /usr/tmp/.flexlm	# needed for license server
+chmod -R xilinx.xilinx /usr/tmp/.flexlm
+sudo su - xilinx
+/opt/Xilinx/license/lin_flexlm_v11.17.2.0/lnx64.o/lmgrd -c /opt/Xilinx/license/Xilinx.lic -l /opt/Xilinx/license/Xilinx.log
+tail Xilinx.log
+</code></pre></div>    </div>
+    <p>You should get:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>15:01:59 (xilinxd) Starting diagnostics port listener thread (DPLT)
+15:01:59 (xilinxd) Starting diagnostics output thread (DRQT)
+15:01:59 (xilinxd) DPLT: running
+15:01:59 (xilinxd) DRQT: running
+15:01:59 (xilinxd) DPLT: waiting for logger to connect
+</code></pre></div>    </div>
   </li>
-  <li>
-    <p>Install Eduroam <a href="http://staff.ask.sydney.edu.au/app/answers/detail/a_id/285/#staff">http://staff.ask.sydney.edu.au/app/answers/detail/a_id/285/#staff</a></p>
+  <li>Crontab
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su - xilinx	# if not already xilinx
+crontab -e
+</code></pre></div>    </div>
+    <p>add <code class="language-plaintext highlighter-rouge">@reboot /opt/Xilinx/license/lin_flexlm_v11.17.2.0/lnx64.o/lmgrd -c /opt/Xilinx/license/Xilinx.lic -l /opt/Xilinx/license/Xilinx.log</code></p>
   </li>
-  <li>
-    <p>Install Symantec Endpoint Protection (SEP) <a href="http://staff.ask.sydney.edu.au/app/answers/detail/a_id/123/kw/symantec">http://staff.ask.sydney.edu.au/app/answers/detail/a_id/123/kw/symantec</a></p>
-  </li>
-  <li>
-    <p>Install VPN <a href="http://staff.ask.sydney.edu.au/app/answers/detail/a_id/519/kw/vpn">http://staff.ask.sydney.edu.au/app/answers/detail/a_id/519/kw/vpn</a></p>
-  </li>
-  <li>
-    <p>Install Google Chrome <a href="https://www.google.com/chrome/">https://www.google.com/chrome/</a> (login to Google and lastpass)</p>
-  </li>
-  <li>
-    <p>Install Firefox <a href="https://www.mozilla.org/en-US/firefox/new/">https://www.mozilla.org/en-US/firefox/new/</a></p>
-  </li>
-</ul>
-
+  <li>On local machines set <code class="language-plaintext highlighter-rouge">XILINXD_LICENSE_FILE</code> to <code class="language-plaintext highlighter-rouge">2100@tuna.staff.sydney.edu.au</code></li>
+</ol>
 
         
       </section>
@@ -243,11 +246,7 @@
     
       
       
-      <a href="/tags/#linux" class="page__taxonomy-item" rel="tag">linux</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#ubuntu" class="page__taxonomy-item" rel="tag">ubuntu</a>
+      <a href="/tags/#hobbies" class="page__taxonomy-item" rel="tag">hobbies</a>
     
     </span>
   </p>
@@ -268,14 +267,14 @@
     
       
       
-      <a href="/categories/#software" class="page__taxonomy-item" rel="tag">software</a>
+      <a href="/categories/#diy" class="page__taxonomy-item" rel="tag">diy</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-09-12T09:59:17+10:00">September 12, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-10-08T13:43:51+11:00">October 08, 2021</time></p>
         
       </footer>
 
@@ -284,23 +283,22 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Dell+Inspiron+13+7000%20http%3A%2F%2Flocalhost%3A4000%2F2018%2Fdell-inspiron-13-7000%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Install+Vitis%2FVivado%20http%3A%2F%2Flocalhost%3A4000%2F2021%2Finstall-vivado%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2018%2Fdell-inspiron-13-7000%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2F2021%2Finstall-vivado%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2018%2Fdell-inspiron-13-7000%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2F2021%2Finstall-vivado%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/2018/nobel-laureates-joachim-frank-and-dan-shechtman/" class="pagination--pager" title="Nobel laureates Joachim Frank and Dan Shechtman
+      <a href="/2021/workbench/" class="pagination--pager" title="Workbench
 ">Previous</a>
     
     
-      <a href="/2018/mooney-mooney-morning-2018/" class="pagination--pager" title="Mooney Mooney Morning 2018
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -314,36 +312,6 @@
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-      <a href="/2021/install-vivado/">
-        <img src=
-          
-            "https://www.xilinx.com/content/dam/xilinx/homepage/promos/xilinx-sony-promo-banner-500x250.jpg"
-          
-          alt="Install Vitis/Vivado"></a>
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/2021/install-vivado/" rel="permalink">Install Vitis/Vivado
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.
-
-</p>
-  </article>
-</div>
-
         
           
 
@@ -431,6 +399,36 @@
     <p class="archive__item-excerpt" itemprop="description">A short list of great jazz muscians and recordings, mostly standards.
 
 </p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+      <a href="/2021/if-bit-then/">
+        <img src=
+          
+            "/assets/images/2021/08/cml_logo_new_sm.png"
+          
+          alt="If-bit-then"></a>
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/2021/if-bit-then/" rel="permalink">If-bit-then
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">This optimisation came up in a consulting job for CruxML.
+A common pattern in embedded programming or high-level synthesis
+is if-bit-then, i.e.  test a bit and modify a variable depending on the re...</p>
   </article>
 </div>
 
