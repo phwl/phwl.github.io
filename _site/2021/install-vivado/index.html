@@ -189,7 +189,7 @@
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libtinfo5
 </code></pre></div>    </div>
   </li>
-  <li>Install software (in batch mode because of <a href="https://bbs.archlinux.org/viewtopic.php?id=256564">https://bbs.archlinux.org/viewtopic.php?id=256564</a>)
+  <li>Install software (in batch mode because of <a href="https://bbs.archlinux.org/viewtopic.php?id=256564">https://bbs.archlinux.org/viewtopic.php?id=256564</a>)<br />
 Download  Xilinx Unified Installer 2021.1: Linux Self Extracting Web Installer from <a href="https://www.xilinx.com/support/download.html">https://www.xilinx.com/support/download.html</a>. Then
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./Xilinx_Unified_2020.1_0602_1208_Lin64.bin --noexec --target .
 ./xsetup -b AuthTokenGen
@@ -198,7 +198,7 @@ Download  Xilinx Unified Installer 2021.1: Linux Self Extracting Web Installer f
 ./xsetup --batch Install --agree XilinxEULA,3rdPartyEULA,WebTalkTerms --location /opt/Xilinx --config ~/.Xilinx/install_config.txt
 </code></pre></div>    </div>
   </li>
-  <li>Install licence server
+  <li>Install licence server<br />
 From <a href="https://www.xilinx.com/support/download.html">https://www.xilinx.com/support/download.html</a> download
  Floating Server Tools Linux (Flex v11.17.2.0) and unzip into /opt/Xilinx/license. Generate and put Xilinx.lic in same directory. Then
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install lsb
@@ -220,12 +220,17 @@ tail Xilinx.log
   </li>
   <li>Crontab
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo su - xilinx	# if not already xilinx
-crontab -e
+crontab -e  
 </code></pre></div>    </div>
     <p>add <code class="language-plaintext highlighter-rouge">@reboot /opt/Xilinx/license/lin_flexlm_v11.17.2.0/lnx64.o/lmgrd -c /opt/Xilinx/license/Xilinx.lic -l /opt/Xilinx/license/Xilinx.log</code></p>
   </li>
-  <li>On local machines set <code class="language-plaintext highlighter-rouge">XILINXD_LICENSE_FILE</code> to <code class="language-plaintext highlighter-rouge">2100@tuna.staff.sydney.edu.au</code></li>
+  <li>On Linux machines using the floating license server:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XILINXD_LICENSE_FILE=2100@tuna.staff.sydney.edu.au
+</code></pre></div>    </div>
+    <p>Under Windows you can use the Xilinx License Configuration Manager (XLCM) to set the XILINXD_LICENSE_FILE variable.</p>
+  </li>
 </ol>
+
 
         
       </section>
@@ -246,7 +251,7 @@ crontab -e
     
       
       
-      <a href="/tags/#hobbies" class="page__taxonomy-item" rel="tag">hobbies</a>
+      <a href="/tags/#fpga" class="page__taxonomy-item" rel="tag">fpga</a>
     
     </span>
   </p>
@@ -267,7 +272,11 @@ crontab -e
     
       
       
-      <a href="/categories/#diy" class="page__taxonomy-item" rel="tag">diy</a>
+      <a href="/categories/#electronics" class="page__taxonomy-item" rel="tag">electronics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/categories/#software" class="page__taxonomy-item" rel="tag">software</a>
     
     </span>
   </p>

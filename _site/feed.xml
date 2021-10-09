@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-09T15:12:47+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Install Vitis/Vivado</title><link href="http://localhost:4000/2021/install-vivado/" rel="alternate" type="text/html" title="Install Vitis/Vivado" /><published>2021-10-08T13:43:51+11:00</published><updated>2021-10-08T13:43:51+11:00</updated><id>http://localhost:4000/2021/install-vivado</id><content type="html" xml:base="http://localhost:4000/2021/install-vivado/">&lt;p&gt;Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-09T16:11:58+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Install Vitis/Vivado</title><link href="http://localhost:4000/2021/install-vivado/" rel="alternate" type="text/html" title="Install Vitis/Vivado" /><published>2021-10-08T13:43:51+11:00</published><updated>2021-10-08T13:43:51+11:00</updated><id>http://localhost:4000/2021/install-vivado</id><content type="html" xml:base="http://localhost:4000/2021/install-vivado/">&lt;p&gt;Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Install dependencies (because &lt;a href=&quot;https://support.xilinx.com/s/article/76616?language=en_US&quot;&gt;https://support.xilinx.com/s/article/76616?language=en_US&lt;/a&gt;)
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install libtinfo5
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Install software (in batch mode because of &lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=256564&quot;&gt;https://bbs.archlinux.org/viewtopic.php?id=256564&lt;/a&gt;)
+  &lt;li&gt;Install software (in batch mode because of &lt;a href=&quot;https://bbs.archlinux.org/viewtopic.php?id=256564&quot;&gt;https://bbs.archlinux.org/viewtopic.php?id=256564&lt;/a&gt;)&lt;br /&gt;
 Download  Xilinx Unified Installer 2021.1: Linux Self Extracting Web Installer from &lt;a href=&quot;https://www.xilinx.com/support/download.html&quot;&gt;https://www.xilinx.com/support/download.html&lt;/a&gt;. Then
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./Xilinx_Unified_2020.1_0602_1208_Lin64.bin --noexec --target .
 ./xsetup -b AuthTokenGen
@@ -14,7 +14,7 @@ Download  Xilinx Unified Installer 2021.1: Linux Self Extracting Web Installer f
 ./xsetup --batch Install --agree XilinxEULA,3rdPartyEULA,WebTalkTerms --location /opt/Xilinx --config ~/.Xilinx/install_config.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;Install licence server
+  &lt;li&gt;Install licence server&lt;br /&gt;
 From &lt;a href=&quot;https://www.xilinx.com/support/download.html&quot;&gt;https://www.xilinx.com/support/download.html&lt;/a&gt; download
  Floating Server Tools Linux (Flex v11.17.2.0) and unzip into /opt/Xilinx/license. Generate and put Xilinx.lic in same directory. Then
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install lsb
@@ -36,12 +36,16 @@ tail Xilinx.log
   &lt;/li&gt;
   &lt;li&gt;Crontab
     &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo su - xilinx	# if not already xilinx
-crontab -e
+crontab -e  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
     &lt;p&gt;add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@reboot /opt/Xilinx/license/lin_flexlm_v11.17.2.0/lnx64.o/lmgrd -c /opt/Xilinx/license/Xilinx.lic -l /opt/Xilinx/license/Xilinx.log&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;On local machines set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XILINXD_LICENSE_FILE&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2100@tuna.staff.sydney.edu.au&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="hobbies" /><summary type="html">Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.</summary></entry><entry><title type="html">Workbench</title><link href="http://localhost:4000/2021/workbench/" rel="alternate" type="text/html" title="Workbench" /><published>2021-10-04T12:34:23+11:00</published><updated>2021-10-04T12:34:23+11:00</updated><id>http://localhost:4000/2021/workbench</id><content type="html" xml:base="http://localhost:4000/2021/workbench/">&lt;p&gt;Photo of my workbench.&lt;/p&gt;
+  &lt;li&gt;On Linux machines using the floating license server:
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;export XILINXD_LICENSE_FILE=2100@tuna.staff.sydney.edu.au
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;Under Windows you can use the Xilinx License Configuration Manager (XLCM) to set the XILINXD_LICENSE_FILE variable.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name>phwl</name></author><category term="software" /><category term="electronics" /><category term="fpga" /><summary type="html">Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.</summary></entry><entry><title type="html">Workbench</title><link href="http://localhost:4000/2021/workbench/" rel="alternate" type="text/html" title="Workbench" /><published>2021-10-04T12:34:23+11:00</published><updated>2021-10-04T12:34:23+11:00</updated><id>http://localhost:4000/2021/workbench</id><content type="html" xml:base="http://localhost:4000/2021/workbench/">&lt;p&gt;Photo of my workbench.&lt;/p&gt;
 
 &lt;figure class=&quot;&quot;&gt;
   &lt;a href=&quot;/assets/images/2021/10/workbench.jpeg&quot;&gt;
