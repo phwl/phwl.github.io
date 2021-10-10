@@ -1,14 +1,21 @@
 ---
 comments: false
-date: 2017-10-21 09:16:08+00:00
+date: 2021-10-10 12:16:08+00:00
 ## layout: page
-## link: http://phwl.org/talks/
+# link: http://phwl.org/talks/
 permalink: talks
 slug: talks
 title: Talks
 classes: wide
+
 wordpress_id: 3312
 ---
+
+## 11 Oct 2021, School of Electrical and Information Engineering, The University of Sydney
+[Thesis Projects for 2022](assets/talks/projects-thesis21.pdf), 
+University of Sydney
+
+Undergraduate thesis projects for 2022.
 
 ## 26 August 2021, Invited Lecture,
 [Low Precision Inference and Training for Deep Neural Networks](/assets/talks/lowprecision-croucher-asi21.pdf),
