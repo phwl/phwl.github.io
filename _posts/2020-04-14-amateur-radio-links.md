@@ -51,6 +51,10 @@ Here is a collection of amateur radio links.
 1. Razvan M0HZH 600W HF amplifier <https://qrpblog.com/a600-hf-6m-600w-ldmos-amplifier/>
 1. Rob VK4HAT <https://robs-blog.net/> (includes copy of LTSpice for RADIO Aateurs and Crystal Sets to Sideband)
 1. Chavdar Levkov LZ1AQ <http://www.lz1aq.signacor.com/> - active antennas, TRX-SDR switches, SDR
+1. JF1OZL - <https://web.archive.org/web/20171116070818/http://www.intio.or.jp/jf10zl/index.html>
 
 ### Inductors
 1. Toroid calculator <http://toroids.info/T50-2.php>
+
+### Historical
+1. GE Sideband Handbook 1961 - <https://worldradiohistory.com/BOOKSHELF-ARH/GE-Books/General-Electric-Sideband-Handbook-1961-Adobe.pdf>
