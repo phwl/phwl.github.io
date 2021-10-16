@@ -16,9 +16,6 @@ A collection of interesting computing and server links.
 
 <!-- more -->
 
-## Ikea Lackrack
-* <https://wiki.eth0.nl/index.php/LackRack>
-
 ## Function Approximation
 * Approximating the exponential function <https://www.pseudorandom.com/implementing-exp>
 
