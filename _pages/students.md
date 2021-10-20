@@ -11,8 +11,10 @@ wordpress_id: 3338
 ---
 
 
+  1. Sean FOX, [Specialized Architectures and Arithmetic for Machine Learning](/assets/images/2021/10/sfox21.pdf), PhD 2021.
+
   1. Julian FARAONE, [Simplification Of Deep Neural Networks
-For Efficient Inference](/assets/images/2021/02/jfaraone21.pdf), PhD (under examination), 2021.
+For Efficient Inference](/assets/images/2021/02/jfaraone21.pdf), PhD 2021.
 
   1. Rui TANG, [Optimisation of residential battery integrated photovoltaics systems: analyses and new machine learning methods](/assets/images/2021/08/rtang21.pdf), PhD, 2021.
 
