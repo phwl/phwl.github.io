@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-10T19:45:16+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Install Vitis/Vivado</title><link href="http://localhost:4000/2021/install-vivado/" rel="alternate" type="text/html" title="Install Vitis/Vivado" /><published>2021-10-08T13:43:51+11:00</published><updated>2021-10-08T13:43:51+11:00</updated><id>http://localhost:4000/2021/install-vivado</id><content type="html" xml:base="http://localhost:4000/2021/install-vivado/">&lt;p&gt;Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-29T11:29:30+11:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Life, the Universe and Fishing</title><subtitle>Random things.</subtitle><author><name>phwl</name></author><entry><title type="html">Sydney Harbour Bream</title><link href="http://localhost:4000/2021/sydney-harbor-oct21/" rel="alternate" type="text/html" title="Sydney Harbour Bream" /><published>2021-10-23T19:49:55+11:00</published><updated>2021-10-23T19:49:55+11:00</updated><id>http://localhost:4000/2021/sydney-harbor-oct21</id><content type="html" xml:base="http://localhost:4000/2021/sydney-harbor-oct21/">&lt;p&gt;This brush turkey tried to bite my camera.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/10/IMG_8443.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/10/IMG_8443.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;Sydney Harbour.&lt;/p&gt;
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/10/IMG_8453.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/10/IMG_8453.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;
+
+&lt;p&gt;We had bream taking bread from the surface. Here is
+Beard with a bream.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Vu6d1B7OBmw&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;a href=&quot;/assets/images/2021/10/IMG_8455.jpeg&quot;&gt;
+  &lt;img src=&quot;/assets/images/2021/10/IMG_8455.jpeg&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="fishing" /><category term="australia" /><summary type="html">This brush turkey tried to bite my camera.</summary></entry><entry><title type="html">Install Vitis/Vivado</title><link href="http://localhost:4000/2021/install-vivado/" rel="alternate" type="text/html" title="Install Vitis/Vivado" /><published>2021-10-08T13:43:51+11:00</published><updated>2021-10-08T13:43:51+11:00</updated><id>http://localhost:4000/2021/install-vivado</id><content type="html" xml:base="http://localhost:4000/2021/install-vivado/">&lt;p&gt;Instructions on how to install Vivado 2020.1 under Ubuntu Linux 20.04.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Install dependencies (because &lt;a href=&quot;https://support.xilinx.com/s/article/76616?language=en_US&quot;&gt;https://support.xilinx.com/s/article/76616?language=en_US&lt;/a&gt;)
@@ -533,73 +553,4 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &amp;gt;&amp;gt;&amp;gt; list(map(torch.cuda.get_device_name, range(4)))
 [&apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;, &apos;GeForce RTX 3090&apos;]
 &amp;gt;&amp;gt;&amp;gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, flathead, was configured.</summary></entry><entry><title type="html">Anti-fouling Charlie’s boat</title><link href="http://localhost:4000/2021/antifoul-boat/" rel="alternate" type="text/html" title="Anti-fouling Charlie’s boat" /><published>2021-05-23T17:12:12+10:00</published><updated>2021-05-23T17:12:12+10:00</updated><id>http://localhost:4000/2021/antifoul-boat</id><content type="html" xml:base="http://localhost:4000/2021/antifoul-boat/">&lt;p&gt;My friend Charlie’s boat was at the dock for anti-fouling and I gave him a 
-hand.&lt;/p&gt;
-
-&lt;p&gt;Nice view of Sydney Harbour from Woolwich Dock.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1023.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1023.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1025.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1025.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Quite a few boats around here.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1021.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1021.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1032.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1032.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Here’s Charlie. He actually did most of the hard work the previous day so all we had to do was paint.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1035.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1035.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;Before.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/DSCF1034.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/DSCF1034.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;
-
-&lt;p&gt;After.&lt;/p&gt;
-&lt;figure class=&quot;&quot;&gt;
-  &lt;a href=&quot;/assets/images/2021/05/IMG_7843.jpeg&quot;&gt;
-  &lt;img src=&quot;/assets/images/2021/05/IMG_7843.jpeg&quot; alt=&quot;&quot; /&gt;
-  
-    &lt;figcaption&gt;
-      
-
-    &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;</content><author><name>phwl</name></author><category term="diy" /><category term="repair" /><summary type="html">My friend Charlie’s boat was at the dock for anti-fouling and I gave him a hand.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>phwl</name></author><category term="academia" /><category term="software" /><category term="ubuntu" /><summary type="html">This is how a new machine, flathead, was configured.</summary></entry></feed>

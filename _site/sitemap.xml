@@ -929,6 +929,10 @@
 <lastmod>2021-10-08T13:43:51+11:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2021/sydney-harbor-oct21/</loc>
+<lastmod>2021-10-23T19:49:55+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -1047,6 +1051,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page29/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page30/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/assets/images/2011/12/london-2011.pdf</loc>
@@ -1323,6 +1330,10 @@
 <url>
 <loc>http://localhost:4000/assets/images/2021/08/rtang21.pdf</loc>
 <lastmod>2021-08-01T10:52:54+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/images/2021/10/sfox21.pdf</loc>
+<lastmod>2021-10-20T15:45:24+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/aam_el12.pdf</loc>
@@ -1821,6 +1832,10 @@
 <lastmod>2021-07-11T17:43:13+10:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/assets/papers/mlblock_trets21.pdf</loc>
+<lastmod>2021-10-29T11:28:48+11:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/papers/mloop_ijrc09.pdf</loc>
 <lastmod>2021-07-11T17:43:13+10:00</lastmod>
 </url>
@@ -1894,7 +1909,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/overview.html</loc>
-<lastmod>2021-07-11T17:43:13+10:00</lastmod>
+<lastmod>2021-10-29T11:29:30+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/papers/perf_jasa00.pdf</loc>
