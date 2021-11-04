@@ -5,6 +5,7 @@ slug: generating-publications-list
 categories: 
   - academia
 tags:
+  - suee
   - software
   - latex
 use_math: true

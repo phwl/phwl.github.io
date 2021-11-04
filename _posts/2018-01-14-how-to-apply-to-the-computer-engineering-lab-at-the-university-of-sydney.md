@@ -7,6 +7,8 @@ title: How to apply to the Computer Engineering Lab at the University of Sydney
 classes: wide
 categories:
 - academia
+tags:
+- suee
 ---
 
 Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL), School of Electrical and Information Engineering, The University of Sydney. The offical University of Sydney information is available at [https://sydney.edu.au/study/admissions/apply/how-to-apply.html](https://sydney.edu.au/study/admissions/apply/how-to-apply.html) and this contains a thorough description of the applications process, including requirements regarding scholarships, english profiency and documentation. Please read this carefully before contacting me.

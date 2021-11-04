@@ -8,6 +8,7 @@ classes: wide
 categories:
 - academia
 tags:
+- suee
 - celchristmas
 header:
   teaser: /assets/images/2017/11/celchristmas17.jpeg

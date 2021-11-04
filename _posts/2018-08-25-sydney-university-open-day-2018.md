@@ -8,6 +8,8 @@ classes: wide
 categories:
 - academia
 - radio
+tags:
+- suee
 post_format:
 - Gallery
 header:

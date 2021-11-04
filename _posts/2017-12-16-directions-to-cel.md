@@ -9,6 +9,8 @@ header:
   teaser: /assets/images/2017/12/directions.png
 categories:
 - academia
+tags:
+- suee
 ---
 
 The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building (Building J03), The University of Sydney. My office is Room 837 (inside Lab 840) and the entrance is on the balcony. Please either knock on the door or call my [office number](/about) when you reach level 8.

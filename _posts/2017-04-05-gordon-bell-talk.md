@@ -5,6 +5,7 @@ categories:
  - academia
 tags:
  - electronics
+ - suee
 use_math: false
 header:
   teaser: /assets/images/2017/04/gordon_bell-2.jpg

@@ -9,6 +9,7 @@ header:
 categories:
 - academia
 tags:
+- suee
 - software
 - matlab
 classes: wide

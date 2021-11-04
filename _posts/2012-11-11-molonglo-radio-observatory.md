@@ -8,6 +8,7 @@ classes: wide
 categories:
 - academia
 tags:
+- suee
 - australia
 - travel
 - radio-telescope

@@ -9,6 +9,7 @@ categories:
 - photography
 tags:
 - australia
+- suee
 header:
   teaser: /assets/images/2013/05/GOPR5590.jpg
 ---

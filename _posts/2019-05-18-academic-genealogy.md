@@ -7,6 +7,8 @@ title: Academic Genealogy
 classes: wide
 categories:
 - academia
+tags:
+- suee
 header:
   teaser: /assets/images/2019/05/6700082371262977270_IMG_0887.jpg
 ---

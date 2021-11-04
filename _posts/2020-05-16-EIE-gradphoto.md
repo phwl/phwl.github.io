@@ -6,6 +6,8 @@ title: EIE graduation class
 classes: wide
 categories:
 - academia
+tags:
+- suee
 header:
   teaser: /assets/images/2020/05/EIE-gradphoto.jpeg
 ---

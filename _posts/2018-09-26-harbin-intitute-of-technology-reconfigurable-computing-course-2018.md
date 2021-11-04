@@ -8,6 +8,7 @@ classes: wide
 categories:
 - academia
 tags:
+- suee
 - harbin
 - FPGA
 header:

@@ -7,6 +7,7 @@ classes: wide
 categories:
 - academia
 tags:
+- suee
 header:
   teaser: /assets/images/2020/04/engineeringicon.png
 ---

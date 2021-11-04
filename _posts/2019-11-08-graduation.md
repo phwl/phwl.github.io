@@ -6,6 +6,8 @@ title: Graduation Ceremony
 classes: wide
 categories:
 - academia
+tags:
+  - suee
 header:
   teaser: /assets/images/2019/11/IMG_4738.jpg
 ---

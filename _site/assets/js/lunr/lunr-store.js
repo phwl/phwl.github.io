@@ -186,7 +186,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2012/04/P1110707.jpg"},{
         "title": "Molonglo Radio Observatory",
         "excerpt":"The University of Sydney’s Molonglo Radio Observatory is located about 3-4 hours south of Sydney. It is being used to prototype some of the technologies in the proposed Square Kilometer Array.           I visited the site to see whether the School of Electrical and Information Engineering, could strength its links with Molonglo. In the past, there was close collaboration with the School of Physics on radio astronomy.      The telescope consists of two arms, each about a kilometer in length and a cylindrical paraboloid in shape.      There is also a junior version.      Under the antennas are the amplifiers and ADCs.      Lots of equipment inside the Observatory.         This is the manager, Duncan Campbell-Wilson. He has a pet tiger snake but I didn’t see it on my visit - maybe next time. Unfortunately, I didn’t take a photo of his colleague, Darshan Thakkar who is doing most of the FPGA design work.      On my return trip, I met up with a friend I hadn’t seen for about 20 years, fishing guru, Steve Samuels. We fishined Googong Dam and caught a few redfin, but nothing to write about.         Slept the night in my car around Pejar Dam. It was a new moon and being way away from the city, I had a magnificent view of the stars.         Morning fog.         ","categories": ["academia"],
-        "tags": ["australia","travel","radio-telescope"],
+        "tags": ["suee","australia","travel","radio-telescope"],
         "url": "http://localhost:4000/2012/molonglo-radio-observatory/",
         "teaser":"http://localhost:4000/assets/images/2012/11/P1120459.jpg"},{
         "title": "Hawkesbury River 2012",
@@ -226,7 +226,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2013/05/P5182434-lr.jpg"},{
         "title": "High Altitude Balloon Launch #1",
         "excerpt":"Our Sydney University Electrical Engineering students, Stephen Tridgell and David Portelli successfully made a high-altitude balloon launch from Blayney, NSW. Stephen’s report is after the jump.                                  Excellent job guys!                                                                                                                                                                                   Balloon Launch Report (by Stephen Tridgell)   On the 11th of May a Balloon with approximately a 2Kg payload was launched from Blayney Tourist Park. The balloon contained:           A Find Me Spot GPS Tracker            A HTC smart phone            A Go Pro 2 Camera            An Arduino Uno board            A high current output stage            Nichrome wire            A Radar Reflector constructed of aluminium foil and cardboard            A Small parachute            A Medipack Heat warmer       Regulations:   In order to meet CASA approval we were required to have the following:           A method of popping the balloon from the ground            A suitable launch site far away from any flight paths            That it be fitted with a radar reflector            That the personnel launching the balloon must be contactable during its flight       Design of the Balloon:   To meet these requirements a radar reflector was constructed out of aluminum foil and cardboard. The chosen method of popping the balloon was to use nichrome wire around the balloons neck and if necessary heat up the wire by putting a large current through it to melt the neck of the balloon. In order to achieve this an Arduino Board was used with a output stage capable of drawing large current. The Arduino board would be triggered via bluetooth from the HTC phone when it received a message. There would also be an independent GPS tracker and a Camera to take scenic photos.   Construction of the Balloon System:   The balloon was constructed over a few weeks which was mostly focused on enclosing all the items securely in a box. The chosen method for this was to drill holes in the box and tie down the components with cable ties. A small piece of plywood was also used to secure the Go Pro camera to the box. It was theorized that the box would get quite cold when the balloon achieved sufficient altitude. To attempt to combat this, a heat Medipack was attached to the lid of the box. In order for the box to be successfully communicated with a python Script was developed to run on the HTC phone with a corresponding Bluetooth program running on the Arduino Uno. On the Uno it was necessary to use four digital pins in order to sink sufficient current into the board so that the current over the Nichrome wire would be high enough to pop the balloon. There was some experimentation and it was found that the wire required around 2 to 2.5 Amps to heat up enough to pop the balloon. Fishing line was selected as the means of holding the box, parachute, radar reflector and balloon together as it is high strength. There was a limited amount that could be done until right before the launch as all the components in the box were battery powered and hence could not be securely fastened until they had been activated.   Issues before the Launch:   The launch team arrived at the site a 1pm, which was about an hour later than expected. Setting up all the equipment ready for launch also took longer than expected resulting in a launch at around 15:30.  One issue was that many things needed to be done just before the launch such as:           GPS set up to Track            Aduino Uno On and connected to the output Stage            Phone on and Connected via Bluetooth to the Uno            Go Pro Camera set to take Photos every 2 Secs            Medi Heat Pack activated            Sealing the box            Filling up the balloon with helium       Additionally, the first time the balloon wasn’t filled up enough resulting in a very anti-climatic launch. The balloon had to be detached, filled a little more and reattached to the payload. For this payload the balloon required 3.5 m^3 of helium at 1atm.   Issues After Launch:   Immediately after launch the balloon was observed to be swinging the payload rather vigorously.  Fortunately the payload was securely fastened and the fishing line did not break. The balloon was tracked visually initially and was heading south. The first GPS tracking point confirmed this, however after the tracking point at 15:40 the GPS did not send a tracking point until 16:40 which was at its final resting place. The loss of GPS means we cannot map its trajectory which was a little disappointing. From the camera evidence it can be gathered that it took approximately 40 minutes to reach the peak after launch and 20 minutes to come back down. The first image after launch was judged to be at around 20m, This implies an initial vertical velocity of around 10m/s. Extrapolating this to the average speed of the upwards flight this implies it reached a maximum height of 79 000 feet. This is consistent with the images obtained as a height of around this is necessary to see the curvature of the earth. As it took only 20 minutes to come down, it was calculated that the balloon probably hit the ground at 70-75 km/hour. This is a lot faster than expected and is possibly due to the parachute getting tangled on the way down. The likely reason for this appears to be the balloon which, after popping was still attached to the rest of the balloon. The speed at which it came down is an issue that needs to be improved upon in future launches as it could cause significant damage. There will have to be design improvements and possibly a larger parachute or a smaller payload.   Issues with the Recovery:   As the balloon was launched late, the recovery started late too. The prediction had showed a position far to the east, thus after launch the team made their way to Bathurst. The first point at the landing sight was detected at 16:40 however it was mistakenly hypothesized that this was simply a point while it was still in the air as the predicted flight time was a lot longer than an hour and a lot further. When it was eventually realized there were several scattered GPS locations and the team made their way to the landing site. They reached it at around 18:00, after dark. The numerous GPS positions meant that there was a reasonable area that it could have landed in and the landing site, though near a dirt road had a few barbed wire fences and other obstacles. The balloon was not found the night it landed, due to uncertainty in the accuracy of the GPS and lack of light. In order for it to be found more easily in the future, it is recommended that the balloon be fitted with a buzzer and a flashing light. This would enable it to be more reliably and quickly recovered. It was found the next day to be very close to a few of the GPS points so it is believed that the accuracy is fairly good but there were a few points on the map far from where it was found. It can be seen from the landing site and the picture prior to landing that the balloon hit a tree and came to rest on the ground.   Summary:   The launch was a success as the balloon reached a high altitude took fantastic pictures and was recovered successfully. There were a few areas for improvement as there could have been issues with the launch. The highest priority one is a larger or better parachute deployment as it came down far too fast, which could not only damage the equipment but could harm someone or a third parties property. The launch timing needed to be planned better so that it could be recovered before dark. Possibly a more accurate GPS or one that could work at higher altitude.   ","categories": ["photography"],
-        "tags": ["australia"],
+        "tags": ["australia","suee"],
         "url": "http://localhost:4000/2013/high-altitude-balloon-launch-1/",
         "teaser":"http://localhost:4000/assets/images/2013/05/GOPR5590.jpg"},{
         "title": "The Gap, Watsons Bay, Sydney",
@@ -236,7 +236,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2013/06/thegap-medpano2.jpg"},{
         "title": "Kangaroo Tagging at Nelson Bay",
         "excerpt":"I had the opportunity to visit the Nelson Bay Golf Course and observe the tagging programme of semi-wild Eastern Grey Kangaroos being conducted by a colleague in Veterinary Science. Our interest in this work is to later measure the dietary intake of a number of these kangaroos using Android phones.                                The kangaroos are digging up the golf course and we are also trying to understand why they are doing so.                                They are first tranquillised by walking up to them and jabbing them with one of these. A dart gun will probably need to be used for some of the more cautious ones.                                Here is one of the tags.                                The kangaroos being measured.   &lt;a href=     \"/assets/images/2013/07/P7092734.jpg\" &gt;   &lt;img src=    \"/assets/images/2013/07/P7092734.jpg\"  alt=\"\"&gt;    &lt;figcaption&gt;     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;   We are going to fit a collar like the one below when we do our study.                                Here we are checking whether a mobile phone would fit around its neck comfortably.   &lt;a href=     \"/assets/images/2013/07/P7092744.jpg\" &gt;   &lt;img src=    \"/assets/images/2013/07/P7092744.jpg\"  alt=\"\"&gt;    &lt;figcaption&gt;     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;   The joey being measured.                                Blood sample.   &lt;a href=     \"/assets/images/2013/07/P7092752.jpg\" &gt;   &lt;img src=    \"/assets/images/2013/07/P7092752.jpg\"  alt=\"\"&gt;    &lt;figcaption&gt;     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;   Tagging.                                This one weighed about 65 kg.                                Tagged kangaroo.                                Release.                                Tagged kangaroo back on the golf course.   &lt;a href=     \"/assets/images/2013/07/P7090857.jpg\" &gt;   &lt;img src=    \"/assets/images/2013/07/P7090857.jpg\"  alt=\"\"&gt;    &lt;figcaption&gt;     &lt;/figcaption&gt;&lt;/a&gt;&lt;/figure&gt;   ","categories": ["academia"],
-        "tags": ["australia"],
+        "tags": ["suee","australia"],
         "url": "http://localhost:4000/2013/kangaroo-tagging-at-nelson-bay/",
         "teaser":"http://localhost:4000/assets/images/2013/07/P7090917.jpg"},{
         "title": "Cowan Creek",
@@ -326,7 +326,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2015/02/P2040434.jpg"},{
         "title": "Meeting Dr Karl",
         "excerpt":"A great honour to hang out with the inimitable Dr Karl Kruszelnicki (and Taylor Swift) this morning. A real gentleman.                                 ","categories": ["academia"],
-        "tags": ["people"],
+        "tags": ["suee","people"],
         "url": "http://localhost:4000/2015/drkarl/",
         "teaser":"http://localhost:4000/assets/images/2015/03/drkarl.jpeg"},{
         "title": "Fishhook removal",
@@ -386,12 +386,12 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2016/07/IMG_2849.jpg"},{
         "title": "PAPAA 2016",
         "excerpt":"We had a very successful Croucher PAPAA workshop at Hong Kong University.   The new elevator from HKU MTR station up to Hong Kong University is great.                                                              PAPAA lunch session.                                They were handing out free glasses of Veuve Clicquot at Pacific Place. In Sydney, that would have started a riot.                                Police lineup at the PAPAA workshop.                                           Workshop dinner.             Prof Wayne Luk from Imperial College lecturing.                                View from HKU Staff Common Room.                                Went for a cruise in this junk in Victoria Harbour.                        Whampoa Gardens.        The PAPAA bus which took us to dinner at Lei Yue Mun.                               Scampi.                               View from the restaurant.                                Seafood vendor.                                                                                                                                                                                 Guy keeping cool with a stylish fan.                                Dot-Well is a great new film photography shop. They specialise in film cameras and process B&amp;W and colour film there.                                           Of course, there was no shortage of food.   Lok Hau Fook Chiu Chow Restaurant in Kowloon City.                                “Oyster Song” dish.                                Spring Deer in Tsim Sha Tsui is one of my favourite restaurants.                         The PAPAA workshop dinner was at this excellent restaurant in Lei Yue Mun.                                          Razor clams.                                Noodle and cheese lobster.                                Prawns in salty egg.                                Scallops.                                                                                          Dinner with my family at Ye Shanghai.                                Fried eel and smoked duck.                                Baked crab shell.                                Hotpot dinner following PAPAA.                                Preparing suckling pig.                                Yum cha.                                Baked sago pudding.                                                                                          But not as good as Mak’s Noodle.                                Roast geese.                                           New The Wing Cathay lounge in Hong Kong.                                           Clear soap beef brisket and curry beef brisket in Tin Hau.                                Another Chiu Chow restaurant in Sheung Wan.                               Goose meat.                                Pig intestine soap.              Oyster cake.                                Chinese BBQ shop.                                Suckling pig.                                All good things come to an end.                                ","categories": ["academia"],
-        "tags": ["travel","photography"],
+        "tags": ["suee","travel","photography"],
         "url": "http://localhost:4000/2016/papaa-2016/",
         "teaser":"http://localhost:4000/assets/images/2016/07/IMG_4933.jpg"},{
         "title": "School Retreat (Manly 2016)",
         "excerpt":"Here are some photos from the School of Electrical and Information Engineering retreat in Manly.                                                                                                                                                                                 ","categories": ["academia"],
-        "tags": ["australia","photography"],
+        "tags": ["suee","australia","photography"],
         "url": "http://localhost:4000/2016/school-retreat-manly-2016/",
         "teaser":"http://localhost:4000/assets/images/2016/09/queencliffpano.jpg"},{
         "title": "Olympic Peninsula Fly-Fishing 2016",
@@ -436,7 +436,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2017/03/17101971_1867685196806919_812445305_n.jpg"},{
         "title": "Gordon Bell talk at the University of Sydney",
         "excerpt":"Gordon Bell gave a talk at the University of Sydney today. He signed my computer engineering book.      ","categories": ["academia"],
-        "tags": ["electronics"],
+        "tags": ["electronics","suee"],
         "url": "http://localhost:4000/2017/gordon-bell-talk/",
         "teaser":"http://localhost:4000/assets/images/2017/04/gordon_bell-2.jpg"},{
         "title": "View from Office",
@@ -501,12 +501,12 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2017/10/DSCF4677.jpg"},{
         "title": "Code for Leong and Carlile, \"Methods for spherical data analysis and visualization\"",
         "excerpt":"The source code for the paper:   P. Leong and S. Carlile. Methods for spherical data analysis and visualization. Journal of Neuroscience Methods, 80(2):191–200, 1998.   has been moved to /assets/papers/spak_2-1.zip.  ","categories": ["academia"],
-        "tags": ["software","matlab"],
+        "tags": ["suee","software","matlab"],
         "url": "http://localhost:4000/2017/code-for-leong-and-carlile-methods-for-spherical-data-analysis-and-visualization/",
         "teaser":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/267px-Matlab_Logo.png"},{
         "title": "Computer Engineering Lab Christmas Party Photo 2017",
         "excerpt":"                     2017        Photos from earlier years below.                        2016                             2015                             2014        ","categories": ["academia"],
-        "tags": ["celchristmas"],
+        "tags": ["suee","celchristmas"],
         "url": "http://localhost:4000/2017/computer-engineering-lab-christmas-party-photo-2017/",
         "teaser":"http://localhost:4000/assets/images/2017/11/celchristmas17.jpeg"},{
         "title": "Fly-fishing for Kingfish in Pittwater, Sydney",
@@ -516,7 +516,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2017/12/kingfish17-14.jpg"},{
         "title": "Directions to CEL",
         "excerpt":"The Computer Engineering Laboratory is on the 8th Floor of the Electrical Engineering Building (Building J03), The University of Sydney. My office is Room 837 (inside Lab 840) and the entrance is on the balcony. Please either knock on the door or call my office number when you reach level 8.    ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2017/directions-to-cel/",
         "teaser":"http://localhost:4000/assets/images/2017/12/directions.png"},{
         "title": "Girl from Chiang Rai Karen Long Neck Tribe",
@@ -531,7 +531,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2018/01/IMG_0676.jpg"},{
         "title": "How to apply to the Computer Engineering Lab at the University of Sydney",
         "excerpt":"Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL), School of Electrical and Information Engineering, The University of Sydney. The offical University of Sydney information is available at https://sydney.edu.au/study/admissions/apply/how-to-apply.html and this contains a thorough description of the applications process, including requirements regarding scholarships, english profiency and documentation. Please read this carefully before contacting me.   In particular note the Research Proposal Guidelines. A good research proposal would demonstrate that you are familiar with what has been done in the area and have some ideas about research directions for your degree. This, of course, will be refined over the course of your studies but is a major part of your application, and will be used to judge your aptitude for research. Here is a guide to how to write a proposal: https://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm.   CEL normally only accepts students with a scholarship. From time-to-time experienced engineers are hired to participate in funded research projects. If such projects are available, a link will be placed below.   Positions Vacant: (none)  ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2018/how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney/",
         "teaser":null},{
         "title": "Pittwater Jan 2018",
@@ -616,12 +616,12 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2018/08/IMG_1946.jpg"},{
         "title": "Sydney University Open Day 2018",
         "excerpt":"                               Here is a gallery of photos, the last 7 were taken by Geoff VK2TGO.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Here is the log, contacts include New Caledonia and New Zealand.                                ","categories": ["academia","radio"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2018/sydney-university-open-day-2018/",
         "teaser":"http://localhost:4000/assets/images/2018/08/img_1989.jpg"},{
         "title": "Nobel laureates Joachim Frank and Dan Shechtman",
         "excerpt":"Q&amp;A session with Nobel laureates Joachim Frank (Columbia) and Dan Shechtman (Technion, Israel), moderated by Julie Carney.   Professor Shechtman won the 2011 Nobel Prize in Chemistry for the discovery of quasicrystals. Professor Frank’s Nobel Prize in Chemistry was awarded in 2017 for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution                                  Prof Dan Shechtman           Did you worry when people (such as Linus Pauling) said your work was wrong? I am my own hardest critic of my own work so I verify my work over and over to ensure it is correct.            How do you find what to research? What you should pursue comes by chance, learn lots of things, find something you are interested in and become an expert.            Did Nobel Prize change your life? Nobel Prize is a license to do whatever you want and you have to choose what you want to do.            _How are things changing for the younger generation for the worse and better? _As technology develops we need people that are experts in different things e.g. nobody can make a cellphone by themselves. In the past you could only become an entrepreneur if your father owned a factory, now everybody has the opportunity.       Prof Joachim Frank           Is it harder for researchers now than before? Compared to 30 years ago researchers now have tools such as the internet for communications which allow scientific collaborations that were not feasible in the past.            How are things changing for the younger generation for the worse and better? Social media has created a dystopic environment. People need to look at their phones every 2 minutes and have serious attention deficit. Awareness has dramatically improved about world events, transcending the idea of nation states.            _Advice to a scientist embarking on their career. _If you have an idea that you have checked and believe in, don’t let someone discourage you.       ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2018/nobel-laureates-joachim-frank-and-dan-shechtman/",
         "teaser":"http://localhost:4000/assets/images/2018/09/img_2034.jpg"},{
         "title": "Dell Inspiron 13 7000",
@@ -636,7 +636,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2018/09/40515248_Unknown.jpg"},{
         "title": "Harbin Intitute of Technology (HIT) Reconfigurable Computing Course 2018",
         "excerpt":"Lecture Notes (0-cel, 1-intro-cn, 1-lstm, 2-architecture, 3-exploration, 4-parallelism, 5-integration, 6-customisation, 7-precision, 8-mca, 9-kernelarch)   Tutorial Notes (lstmtut)  ","categories": ["academia"],
-        "tags": ["harbin","FPGA"],
+        "tags": ["suee","harbin","FPGA"],
         "url": "http://localhost:4000/2018/harbin-intitute-of-technology-reconfigurable-computing-course-2018/",
         "teaser":"http://localhost:4000/assets/images/blank.png"},{
         "title": "Shanghai Harbin 2018",
@@ -661,7 +661,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2018/11/40784800_Unknown.jpg"},{
         "title": "Computer Engineering Lab Christmas Party Photo",
         "excerpt":"                     2018                             2017                             2016                             2015                             2014        ","categories": ["academia"],
-        "tags": ["celchristmas"],
+        "tags": ["celchristmas","suee"],
         "url": "http://localhost:4000/2018/computer-engineering-lab-christmas-party/",
         "teaser":"http://localhost:4000/assets/images/2018/11/DSCF5719.jpeg"},{
         "title": "Amateur Radio Shops in Akihabara",
@@ -756,7 +756,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/blank.png"},{
         "title": "Academic Genealogy",
         "excerpt":"I visited my PhD supervisor, Dr Marwan Anwar Jabri last week in San Francisco. He left academia to found Dilithium Networks which was then acquired by OnMobile Global Ltd. He is now Founder at Neuromorphic Systems LLC.   Myself and Dr Marwan Jabri     Marwan’s supervisor was Prof David James Skellern, who developed the first chip-set implementation of the IEEE 802.11a wireless networking standard. David taught the digital systems course at Sydney University when I was an undergraduate. He later became the first CEO and then Chairman of the National Information and Communications Technology Australia Ltd (NICTA).   David’s supervisor was Dr Robert Henry Frater, former CSIRO Deputy Chief Executive.   Bob Frater is second from the front on the left hand side of this photo.   Bob’s supervisor was Prof Wilbur Norman “Chris”  Christiansen. Chris was a radio astronomer and former Head of the Department of Electrical Engineering, The University of Sydney.   ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2019/academic-genealogy/",
         "teaser":"http://localhost:4000/assets/images/2019/05/6700082371262977270_IMG_0887.jpg"},{
         "title": "Sea lion, Santa Cruz Wharf",
@@ -801,7 +801,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2019/08/Nvidia_logo.svg"},{
         "title": "Sydney University Open Day 2019",
         "excerpt":"                                                                                                                                                 ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2019/open-day-19/",
         "teaser":"http://localhost:4000/assets/images/2019/08/openday-0.jpg"},{
         "title": "Hong Kong and Shanghai Trip 2019",
@@ -811,7 +811,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2019/10/DSCF0253.jpg"},{
         "title": "Generating a Publications List from BibTex files",
         "excerpt":"Publications list in Markdown  For many years I’ve been using a convoluted process to generate my  publications list from separate bibtex files for journals, conferences, books, patents, etc. I thought I could do it using pandoc, but it doesn’t appear that it parses bibtex files correctly.   After quite a lot of searching, I found pybtex  which (unlike pandoc) understands bibtex bst files and can output markdown. This plus a little bit of python allowed me to generate papers.md directly from my .bib files.   import subprocess import re import os  # different bibliography categories with their names bibs = {'journal': 'Journals',     'conference': 'Conference Papers',     'patent': 'Patents',     'book': 'Books',     'bookchap': 'Chapters in Books',     'editor': 'Edited Books',     'misc': 'Miscellaneous'}  pretex = \"\"\"\\\\documentclass{article} \\\\usepackage{natbib} \\\\usepackage{hyperref} % whatever you need here, basically a good idea is to use your real thesis header \\\\begin{document} \\\\nocite{*} \\\\bibliographystyle{unsrt} \"\"\"  # create the .tex and .md files for each category for k in bibs:     intex = pretex + '\\\\bibliography{../' + k + '}\\n\\\\end{document}\\n'     with open(k+\".tex\", \"w\") as tex_file:         print(intex, file=tex_file)     os.system(\"latex {}\".format(k))     os.system(\"bibtex {}\".format(k))     os.system(\"latex {}\".format(k))     cmd = \"pybtex --style-language python --output-backend markdown {}\".format(k)     os.system(cmd)  out = \"\"\"--- comments: false permalink: papers slug: papers title: Publications classes: wide --- \"\"\" with open(\"papers.md\", \"w\") as out_file:     print(out, file=out_file)      for k in bibs:         with open(k+\".md\", \"r\") as text_file:             text = text_file.read()             print(\"# {}\\n\".format(bibs[k]), file=out_file)             print(text, file=out_file)   Publications list in LaTeX  The next problem is to get it in \\(\\LaTeX\\). Unfortunately, I couldn’t  stay with bibtex and had to use biblatex/biber instead. Using biblatex, it is relatively straightforward and only a few issues needed to be handled:     How to manage different .bib files in different categories: https://tex.stackexchange.com/questions/35279/biblatex-multiple-bibliographies-categorised-by-different-bib-files   How to add a prefix to citations: https://tex.stackexchange.com/questions/389083/how-to-add-a-prefix-to-citations-and-references-numbers-in-latex   How to disable urls in a bibliography: https://tex.stackexchange.com/questions/26318/disabling-urls-in-bibliography   How to format \\printbibliography as subsections: https://tex.stackexchange.com/questions/134958/how-to-format-bibliography-titles-as-section-subsection-and-subsubsection   I also had to remove keywords in the .bib files as my way of overwriting  them didn’t work properly. Putting all this together, here is a skeleton of the latex file for my publications list.   \\documentclass[11pt,a4paper]{article} \\usepackage[utf8]{inputenc} \\usepackage[scale=0.8]{geometry} \\usepackage[backend=biber,sorting=none,defernumbers=true,url=false]{biblatex} \\usepackage{hyperref} \\DeclareSourcemap{   \\maps[datatype=bibtex, overwrite]{     \\map{       \\perdatasource{journal.bib}       \\step[fieldset=KEYWORDS, fieldvalue=journal, append]     }     \\map{       \\perdatasource{conference.bib}       \\step[fieldset=KEYWORDS, fieldvalue=conference, append]     }   } } \\addbibresource{journal.bib} \\addbibresource{conference.bib}  \\begin{document} \\nocite{*} \\printbibheading[title={Publications},heading=bibnumbered] \\newrefcontext[labelprefix=J] \\printbibliography[title=Journals, resetnumbers=true, heading=subbibnumbered, keyword=journal] \\newrefcontext[labelprefix=C] \\printbibliography[title=Conferences, resetnumbers=true, heading=subbibnumbered, keyword=conference] \\end{document}  ","categories": ["academia"],
-        "tags": ["software","latex"],
+        "tags": ["suee","software","latex"],
         "url": "http://localhost:4000/2019/generating-publications-list/",
         "teaser":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/320px-LaTeX_logo.svg.png"},{
         "title": "Mooney Mooney Spring Trip 2019",
@@ -826,12 +826,12 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2019/11/stove3.jpeg"},{
         "title": "Graduation Ceremony",
         "excerpt":"Congratulations to Rijul Gupta who graduated today with first-class honours. This photo shows him receiving his degree from the Chancellor, Belinda Hutchinson. In the foreground, from the right is Vice-Chancellor Dr Michael Spence and Sir Michael Hintze who received an honorary doctorate.                                Here is a photo of myself with my colleagues, A/Prof Gregor Verbic, Dr Swamidoss Sathiakumar, Peter Tyree, Prof Jian Guo Zhu (Head of School), Prof Willy Zwaenepoel (Dean), Prof Xiaoke Yi and myself.                                ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2019/graduation/",
         "teaser":"http://localhost:4000/assets/images/2019/11/IMG_4738.jpg"},{
         "title": "Computer Engineering Lab Christmas Party Photo",
         "excerpt":"We continue to have the world’s earlier Christmas party!                        2019                             2018                             2017                             2016                             2015                             2014        ","categories": ["academia"],
-        "tags": ["celchristmas"],
+        "tags": ["celchristmas","suee"],
         "url": "http://localhost:4000/2019/computer-engineering-lab-christmas-party/",
         "teaser":"http://localhost:4000/assets/images/2019/11/celchristmas19.jpeg"},{
         "title": "Spring VHF/UHF Field Day",
@@ -921,7 +921,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2018/12/IMG_9577.jpg"},{
         "title": "Herber Hoover on Engineering",
         "excerpt":"On Engineering - Herbert Hoover   It is a great profession. There is the fascination of watching a figment of the imagination emerge through the aid of science to a plan on paper. Then it moves to realization in stone or metal or energy. Then it brings jobs and homes to men. Then it elevates the standards of living and adds to the comforts of life. That is the engineer’s high privilege.   The great liability of the engineer compared to men of other professions is that his works are out in the open where all can see them. His acts, step by step, are in hard substance. He cannot bury his mistakes in the grave like the doctors. He cannot argue them into thin air or blame the judge like the lawyers. He cannot, like the architects, cover his failures with trees and vines. He cannot, like the politicians, screen his shortcomings by blaming his opponents and hope the people will forget. The engineer simply cannot deny he did it. If his works do not work, he is damned…   On the other hand, unlike the doctor his is not a life among the weak. Unlike the soldier, destruction is not his purpose. Unlike the lawyer, quarrels are not his daily bread. To the engineer falls the job of clothing the bare bones of science with life, comfort, and hope. No doubt as years go by the people forget which engineer did it, even if they ever knew. Or some politician puts his name on it. Or they credit it to some promoter who used other people’s money . . . But the engineer himself looks back at the unending stream of goodness which flows from his successes with satisfactions that few professions may know. And the verdict of his fellow professionals is all the accolade he wants.   Biography  1874 – 1964 By: Tom Longden for Famous Iowans Des Moines Register series on April 20, 2008   Before he was president, Herbert Clark Hoover was an extraordinary humanitarian with an international reputation. Before that he was an engineer who built a fortune. Before that he was a simple Iowa farm boy.   Hoover, the son of a Quaker blacksmith named Jesse and his wife, Hulda, was born at West Branch and orphaned at age 10. He was raised by uncles, first in Iowa and then in Oregon.   He worked his way through Stanford University, earning a degree in engineering, and by 23 was managing mines in Australia. Then, with his bride Lou, whom he had met at Stanford, he went to work for the Chinese Imperial Bureau of Mines. The Hoovers’ two sons became accustomed to traveling the globe.   By 1914, Hoover had a chain of offices all over the world and a $5 million fortune amassed by financing mining operations. He turned to public service, organizing an effort to feed starving masses in war-torn Belgium, at great risk to his own life.   Called “The Great Engineer,” Hoover saw his prestige grow as he became secretary of commerce under Presidents Harding and Coolidge. In 1928, he was elected the 31st president, carrying all but eight states­ a huge Republican victory.   Hoover took the oath of office in March 1929, when the nation was prospering, but the stock market crashed the following October, and he was blamed as the economy plummeted and unemployment soared. It was a national crisis with no precedent, and Hoover was vilified.   Defeated in the next election by Franklin D. Roosevelt, Hoover retired quietly to his home in Palo Alto to write. He regained stature as the years went by and he became the nation’s respected elder statesman, counseling leaders of both political parties. Hoover, who was the first president born west of the Mississippi River, and his first lady are buried at West Branch.  ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2020/on-engineering/",
         "teaser":"http://localhost:4000/assets/images/2020/04/engineeringicon.png"},{
         "title": "Staple Review",
@@ -946,7 +946,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2020/05/TL-WPA4220_AU_4.0_01_normal_1529456768328k.jpg"},{
         "title": "EIE graduation class",
         "excerpt":"Photo of my undergraduate graduation class, Department of Electrical Engineering, The University of Sydney.     Cleaning out some boxes of documents and found this.                                ","categories": ["academia"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2020/EIE-gradphoto/",
         "teaser":"http://localhost:4000/assets/images/2020/05/EIE-gradphoto.jpeg"},{
         "title": "Simple capillary alcohol stove from 375 ml coke can",
@@ -971,7 +971,7 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2020/06/codan6924-1.jpeg"},{
         "title": "Real-time automatic modulation classification using RFSoC",
         "excerpt":"Here is a short video describing our work on FPGA-based machine learning for real-time automatic modulation classification (AMC).     It was presented (virtually) at the RAW workshop https://raw.necst.it/.     Stephen Tridgell, David Boland, Philip HW Leong, Ryan Kastner, Alireza Khodamoradi, and Siddhartha. Real-time automatic modulation classification using rfsoc. In 2020 IEEE International Parallel and Distributed Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA, USA, May 18-22, 2020, 82–89. IEEE, 2020. DOI: https://doi.org/10.1109/IPDPSW50202.2020.00021 (amc_raw20.pdf)    ","categories": ["academia","radio"],
-        "tags": [],
+        "tags": ["suee"],
         "url": "http://localhost:4000/2020/rtamc/",
         "teaser":"http://localhost:4000/assets/images/2020/06/amc-screenshot.png"},{
         "title": "DUST2 Ubuntu GPU Machine Install",
@@ -1015,7 +1015,7 @@ var store = [{
         "url": "http://localhost:4000/2020/parker45/",
         "teaser":"http://localhost:4000/assets/images/2020/08/parker45.jpeg"},{
         "title": "Woy Woy Fisherman's Wharf",
-        "excerpt":"                             ","categories": ["academia"],
+        "excerpt":"                             ","categories": ["photography"],
         "tags": [],
         "url": "http://localhost:4000/2020/woywoy/",
         "teaser":"http://localhost:4000/assets/images/2020/08/IMG_6533.jpg"},{
@@ -1056,7 +1056,7 @@ var store = [{
         "teaser":"https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png"},{
         "title": "Computer Engineering Lab Christmas Party Photo",
         "excerpt":"A little late this year (and down on numbers due to COVID) but we had an enjoyable Christmas party.                        2020        We continue to have the world’s earlier Christmas party!                       2019                             2018                             2017                             2016                             2015                             2014        ","categories": ["academia"],
-        "tags": ["celchristmas"],
+        "tags": ["suee","celchristmas"],
         "url": "http://localhost:4000/2020/computer-engineering-lab-christmas-party/",
         "teaser":"http://localhost:4000/assets/images/2020/12/celchristmas20.jpeg"},{
         "title": "Tasmanian Holiday",
@@ -1166,6 +1166,6 @@ var store = [{
         "teaser":"http://localhost:4000/assets/images/2021/10/IMG_8455.jpeg"},{
         "title": "Sydney University Electrical Engineering Photos from 1971",
         "excerpt":"Historical polaroids from Chris Z.   The photo below was from an industrial visit to the Sydney South Substation at Picnic Point. The guy in the suit was Bob Robinson, a senior lecturer.              This is a photo of about 25% of the 4th year undergraduates. The Vietnam war was still underway and people of their age were eligible for conscription and compulsory  military service.              ","categories": ["academia"],
-        "tags": ["usyd"],
+        "tags": ["usyd","suee"],
         "url": "http://localhost:4000/2021/EE-class-1971/",
         "teaser":"http://localhost:4000/assets/images/2021/11/ee-1971-1.jpeg"}]

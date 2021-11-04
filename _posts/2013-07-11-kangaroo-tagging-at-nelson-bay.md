@@ -8,6 +8,7 @@ classes: wide
 categories:
 - academia
 tags:
+- suee
 - australia
 header:
   teaser: /assets/images/2013/07/P7090917.jpg

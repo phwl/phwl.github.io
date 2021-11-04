@@ -9,6 +9,7 @@ categories:
 - academia
 tags:
 - celchristmas
+- suee
 header:
   teaser: /assets/images/2019/11/celchristmas19.jpeg
 ---
