@@ -1164,8 +1164,8 @@ var store = [{
         "tags": ["australia"],
         "url": "http://localhost:4000/2021/sydney-harbor-oct21/",
         "teaser":"http://localhost:4000/assets/images/2021/10/IMG_8455.jpeg"},{
-        "title": "Sydney University Electrical Engineering Photo from 1971",
-        "excerpt":"These polaroids were taken by Chris VK2HX.   The first photo below was from an industrial visit to the Sydney South Substation at Picnic Point.              This is a photo of about 25% of the 4th year undergraduates. The Vietnam war was still underway and lads of our age were eligible for conscription and compulsory  military service.              ","categories": ["academia"],
+        "title": "Sydney University Electrical Engineering Photos from 1971",
+        "excerpt":"Historical polaroids from Chris Z.   The photo below was from an industrial visit to the Sydney South Substation at Picnic Point. The guy in the suit was Bob Robinson, a senior lecturer.              This is a photo of about 25% of the 4th year undergraduates. The Vietnam war was still underway and people of their age were eligible for conscription and compulsory  military service.              ","categories": ["academia"],
         "tags": ["usyd"],
         "url": "http://localhost:4000/2021/EE-class-1971/",
         "teaser":"http://localhost:4000/assets/images/2021/11/ee-1971-1.jpeg"}]
