@@ -20,6 +20,8 @@ landscapes:
     url: /assets/gallery/landscape/DSC_5806.jpg
   - image_path: /assets/gallery/landscape/ballshead16.jpg
     url: /assets/gallery/landscape/ballshead16.jpg
+  - image_path: /assets/gallery/landscape/usydopenday13.jpg
+    url: /assets/gallery/landscape/usydopenday13.jpg
 panoramas:
   - image_path: /assets/gallery/landscape/gappano13.jpg
     url: /assets/gallery/landscape/gappano13.jpg
