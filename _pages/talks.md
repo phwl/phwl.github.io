@@ -214,6 +214,6 @@ In machine learning, traditional linear prediction techniques are well understoo
 [Lunchtime research talk](http://phwl.org/2009/life-the-universe-and-fishing/), Chinese University of Hong Kong, Hong Kong
 
 ## 14 December 2007, Lecture
-[10 Sonnets Concerning Field Programmable Technology](/assets/images/2017/10/fpt07-whatsexciting.pdf), International Conference on Field Programmable Technology Special Session on What is Exciting about Field Programmable Technology
+[10 Sonnets Concerning Field Programmable Technology (FPT)](/assets/images/2017/10/fpt07-whatsexciting.pdf), International Conference on Field Programmable Technology Special Session on What is Exciting about Field Programmable Technology
 
 
