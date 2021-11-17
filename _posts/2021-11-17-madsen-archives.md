@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/2021/11/madsen.jpg
 ---
 
-A collection of historical records on Sir John Percival Vissing Madsen (1879-1969), collected by his grandson, Roger Madsen.
+A collection of historical records on Sir John Percival Vissing Madsen (1879-1969), from his grandson, Roger Madsen.
 
  * [Madsen1. 1970 Collection.pdf](/assets/images/2021/11/Madsen1. 1970 Collection.pdf)
  * [Madsen2. Historical Records R W Home.pdf](/assets/images/2021/11/Madsen2. Historical Records R W Home.pdf)
