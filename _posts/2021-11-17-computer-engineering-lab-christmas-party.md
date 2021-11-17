@@ -10,7 +10,7 @@ tags:
 - suee
 - celchristmas
 header:
-  teaser: /assets/images/2020/12/celchristmas20.jpeg
+  teaser: /assets/images/2021/11/celchristmas21.jpeg
 ---
 
 Down on numbers again this year due to COVID but we had another good Christmas party at Balls Head. People that attended but missing from the photo were Barry and Kathy Flower, Bo Peng and Ian Heddle.
