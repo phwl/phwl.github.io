@@ -1168,4 +1168,9 @@ var store = [{
         "excerpt":"Historical polaroids from Chris Z.   The photo below was from an industrial visit to the Sydney South Substation at Picnic Point. The guy in the suit was Bob Robinson, a senior lecturer.              This is a photo of about 25% of the 4th year undergraduates. The Vietnam war was still underway and people of their age were eligible for conscription and compulsory  military service.              EE course completed - Final days in 4th year 1971. Elec Eng Building              Celebrations during final days in 4th year 1971.                         ","categories": ["academia"],
         "tags": ["usyd","suee"],
         "url": "http://localhost:4000/2021/EE-class-1971/",
-        "teaser":"http://localhost:4000/assets/images/2021/11/ee-1971-1.jpeg"}]
+        "teaser":"http://localhost:4000/assets/images/2021/11/ee-1971-1.jpeg"},{
+        "title": "Computer Engineering Lab Christmas Party Photo",
+        "excerpt":"Down on numbers again this year due to COVID but we had another good Christmas party at Balls Head. People that attended but missing from the photo were Barry and Kathy Flower, Bo Peng and Ian Heddle.                        2021                             2020                             2019                             2018                             2017                             2016                             2015                             2014        ","categories": ["academia"],
+        "tags": ["suee","celchristmas"],
+        "url": "http://localhost:4000/2021/computer-engineering-lab-christmas-party/",
+        "teaser":"http://localhost:4000/assets/images/2020/12/celchristmas20.jpeg"}]
