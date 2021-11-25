@@ -4,6 +4,7 @@ comments: true
 date: 2021-11-17 17:00:00 AEDT
 title: Sir John Madsen (1879-1969) archives
 classes: wide
+toc: true
 categories:
 - academia
 tags:
@@ -14,7 +15,9 @@ header:
 
 A collection of historical records on Sir John Percival Vissing Madsen (1879-1969) from his grandson, Roger Madsen.
 
+<!-- more -->
 
+# Archive
 ![madsenportrait](/assets/images/2021/11/JPVMEHAportrait.jpg "Portrait"){: .align-center style="width: 30%;" .align-right}
  1. [1970 Collection.pdf](/assets/images/2021/11/Madsen1. 1970 Collection.pdf)
  1. [Historical Records R W Home.pdf](/assets/images/2021/11/Madsen2. Historical Records R W Home.pdf)
@@ -45,3 +48,6 @@ A collection of historical records on Sir John Percival Vissing Madsen (1879-196
  1. [EHA Centenary.PDF](/assets/images/2021/11/Madsen27. EHA Centenary.pdf)
  1. [JINDALEE OVER THE HORIZON RADAR.pdf](/assets/images/2021/11/Madsen28. JINDALEE OVER THE HORIZON RADAR.pdf)
  1. [Medal Collection.pdf](/assets/images/2021/11/Madsen30. Medal Collection.pdf)
+
+# Links
+  * [CSIROpedia](https://csiropedia.csiro.au/john-madsen/)
