@@ -31,21 +31,24 @@ Then there are two little self-tapping screws in the left and rightmost black pl
 After that the oven comes straight out. It's not too heavy, maybe about 10 kgs.
 {% include figure image_path="/assets/images/2021/11/oven4.jpeg" caption="" %}
 
+All the remaining screws are Torx (and the same size).
 Following the power cable, the top part looks fine.
 
 {% include figure image_path="/assets/images/2021/11/oven5.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2021/11/oven6.jpeg" caption="" %}
 
-Here are the connections to the top heating element. They looked ok as well.
+In the bottom section one can see the connections to the top heating element. 
+They looked ok as well and resistance was fine between the elements and to
+ground..
 {% include figure image_path="/assets/images/2021/11/oven7.jpeg" caption="" %}
 
-The four terminals at the bottom were those for the bottom element. The
-inside one had low resistance to earth so I unplugged them and the oven
-stopped tripping the RCD.
+The four terminals at the bottom are those for the bottom element. The
+black one (second from the left) had low resistance to earth so 
+I unplugged them and the oven stopped tripping the RCD.
 
 {% include figure image_path="/assets/images/2021/11/oven8.jpeg" caption="" %}
 
-Pulled out the bottom element. Notice the insulation of the second terminal
+This is the bottom element. Notice the insulation of the second terminal
 is charred. That must be the problem! 
 
 {% include figure image_path="/assets/images/2021/11/oven9.jpeg" caption="" %}
