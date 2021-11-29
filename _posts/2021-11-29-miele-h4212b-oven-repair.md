@@ -12,12 +12,11 @@ header:
   teaser: /assets/images/2021/11/oven8.jpeg
 ---
 
-I've never heard of anyone have problems with their oven but when my wife 
-opened the door a few days ago it went bang.
+I've never heard of any oven at all failing but when my wife 
+opened the door a few days ago, it went bang.
 
 <!-- more -->
-The symptom was that it would trip the residual current device (RCD) circuit breaker as soon as you turn the
-left knob to any position other than the light.
+AFter that the residual current device (RCD) circuit breaker would trip as soon as the left knob was on any position other than Off or Light.
 
 {% include figure image_path="/assets/images/2021/11/oven1.jpeg" caption="" %}
 
@@ -54,7 +53,8 @@ is charred. That must be the problem!
 {% include figure image_path="/assets/images/2021/11/oven9.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2021/11/oven10.jpeg" caption="" %}
 
-The Miele part number is 5001061. There's a second hand one on ebay and 
+The Miele part number is 5001061. Of course, they don't make the oven any
+more. There was a second hand one on ebay and 
 they're available at <https://www.statewideapp.com.au/miele-oven-bottom-element-550560w-5001061>.
 
 {% include figure image_path="/assets/images/2021/11/oven11.jpeg" caption="" %}
