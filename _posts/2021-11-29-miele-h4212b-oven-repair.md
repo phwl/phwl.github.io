@@ -12,15 +12,15 @@ header:
   teaser: /assets/images/2021/11/oven8.jpeg
 ---
 
-I've never heard of any oven at all failing but when my wife 
-opened the door a few days ago, it went bang.
+I've never heard of any oven failing but ours went bang after my wife opened the door.
 
 <!-- more -->
-AFter that the residual current device (RCD) circuit breaker would trip as soon as the left knob was on any position other than Off or Light.
+Following that, the residual current device (RCD) circuit breaker would trip as soon as the left knob was turned to any position other than Off or Light (even with
+the temperature down at 0).
 
 {% include figure image_path="/assets/images/2021/11/oven1.jpeg" caption="" %}
 
-First you push down the little tabs on each side to release the door.
+To take it apart, first you release the door by pushing down on the little tabs on each side.
 
 {% include figure image_path="/assets/images/2021/11/oven2.jpeg" caption="" %}
 
