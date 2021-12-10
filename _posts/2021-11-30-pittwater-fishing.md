@@ -51,6 +51,11 @@ Caught another flathead while Justin was installing the battery.
 
 Had lunch there and then chased some salmon. 
 
+
+<video width="1024" height="768" controls="controls">
+  <source src="/assets/images/2021/11/IMG_8604.mp4" type="video/mp4">
+</video>
+
 {% include figure image_path="/assets/images/2021/11/IMG_8603.jpeg" caption="" %}
 
 They took a small surf candy (medium sized one didn't work). The key is to cast at the thickest part of the rises where there is more competition. Strips should be as long as possible with a single continuous medium speed. 
