@@ -13,9 +13,9 @@ header:
   teaser: /assets/images/2021/11/IMG_8611.jpeg
 ---
 
-Barry called me 10pm the night prior to tell me he was a COVID close contact and could not make the fishing trip with Justin...
+The misadventure began when Barry called me at 10pm the night prior to tell me he was a COVID close contact and could not make the fishing trip.
 
-It was a bit too early for me which is why I chose to wear my hiking boots rather than my boat shoes. Coffee was purchased at the shop opposite the Newport Arms at 6am.
+Waking up at 5am, I didn't realise until I was well on my way to Pittwater that I chose to wear my hiking boots rather than my boat shoes. Coffee was purchased at the shop opposite the Newport Arms at 6am and on the water at 6:15.
 
 At the first spot, we had some kingfish on the surface. Could not attract one on a popper or on a squid fly. Hooked one on a Clouser which was long distance released.
 
