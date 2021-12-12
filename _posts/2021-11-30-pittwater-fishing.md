@@ -17,7 +17,7 @@ The misadventure began when Barry called me at 10pm the night prior to tell me h
 
 Waking up at 5am, I didn't realise until I was well on my way to Pittwater that I chose to wear my hiking boots rather than my boat shoes. Coffee was purchased at the shop opposite the Newport Arms at 6am and on the water at 6:15.
 
-At the first spot, we had some kingfish on the surface. Could not attract one on a popper or on a squid fly. Hooked one on a Clouser which was long distance released.
+The boat's electronics were giving a low battery warning at low revs, nothing to worry about!  At the first spot, we had some kingfish on the surface. Could not attract one on a popper or on a squid fly. Hooked one on a Clouser which was long distance released.
 
 
 Next fished the dropoff, waiting one minute for it to sink to the bottom on an intermediate line. There was a lot of bait there and also caught a nice 55 cm flathead (surprisingly). 
@@ -35,7 +35,7 @@ Finally caught a kingfish a bit further up.
 
 {% include figure image_path="/assets/images/2021/11/IMG_1961.jpeg" caption="" %}
 
-At this point, all 3 fishfinders on Justin's boat went out at the same time. I wasn't concerned until it was clear that the starting battery was using the same batteries. Justin has connections all over the Northern Beaches and managed to borrow a battery. Ducks followed up along the way.
+At this point, all 3 fishfinders on Justin's boat went out at the same time. I wasn't concerned until it was clear that the starting battery was using the same batteries. We suspected one of the power cables which looked a bit rusty. Justin has connections all over the Northern Beaches and managed to borrow a battery. Ducks followed up along the way.
 
 {% include figure image_path="/assets/images/2021/11/IMG_8593.jpeg" caption="" %}
 
