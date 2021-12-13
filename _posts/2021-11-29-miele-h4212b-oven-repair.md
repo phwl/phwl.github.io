@@ -58,3 +58,11 @@ more. There was a second hand one on ebay and
 they're available at <https://www.statewideapp.com.au/miele-oven-bottom-element-550560w-5001061>.
 
 {% include figure image_path="/assets/images/2021/11/oven11.jpeg" caption="" %}
+
+13/12/2021 - the part finally arrived. Pleased it's the right one.
+
+{% include figure image_path="/assets/images/2021/11/oven12.jpeg" caption="" %}
+
+Oven as good as new!
+
+{% include figure image_path="/assets/images/2021/11/oven13.jpeg" caption="" %}
