@@ -55,7 +55,7 @@ is charred. That must be the problem!
 
 The Miele part number is 5001061. Of course, they don't make the oven any
 more. There was a second hand one on ebay and 
-they're available at <https://www.statewideapp.com.au/miele-oven-bottom-element-550560w-5001061>.
+they're available at <https://www.statewideapp.com.au/miele-oven-bottom-element-550560w-5001061> for $175.96 + $15 shipping (which I ordered).
 
 {% include figure image_path="/assets/images/2021/11/oven11.jpeg" caption="" %}
 
@@ -66,3 +66,5 @@ they're available at <https://www.statewideapp.com.au/miele-oven-bottom-element-
 Oven as good as new!
 
 {% include figure image_path="/assets/images/2021/11/oven13.jpeg" caption="" %}
+
+18/12/2021 - finally got a quote from Miele Australia for $156.50. 
