@@ -10,8 +10,8 @@ classes: wide
 landscapes:
   - image_path: /assets/gallery/landscape/kirribilli10.jpg
     url: /assets/gallery/landscape/kirribilli10.jpg
-  - image_path: /assets/gallery/landscape/ironcove18.jpg
-    url: /assets/gallery/landscape/ironcove18.jpg
+  - image_path: /assets/gallery/landscape/ironcove18.jpeg
+    url: /assets/gallery/landscape/ironcove18.jpeg
   - image_path: /assets/gallery/landscape/ballshead16.jpg
     url: /assets/gallery/landscape/ballshead16.jpg
   - image_path: /assets/gallery/landscape/usydopenday13.jpg
