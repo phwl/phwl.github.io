@@ -1,2 +1,0 @@
-I"ã<p>This post details how to build an ARM linux image via <a href="https://buildroot.org">buildroot</a>, and emulate it using <a href="https://www.qemu.org/">QEMU</a>. This was done using an Ubuntu 18.04.5 LTS host machine.</p>
-:ET
