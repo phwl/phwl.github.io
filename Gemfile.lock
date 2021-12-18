@@ -274,7 +274,6 @@ GEM
       unf_ext
     unf_ext (0.0.8)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
     zeitwerk (2.5.1)
 
 PLATFORMS
@@ -284,7 +283,6 @@ DEPENDENCIES
   github-pages
   jekyll
   minimal-mistakes-jekyll
-  webrick
 
 BUNDLED WITH
    2.2.33
