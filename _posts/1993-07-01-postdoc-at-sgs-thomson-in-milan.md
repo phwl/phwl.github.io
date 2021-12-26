@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/1993/07/IMG_8809.jpeg
 ---
 
-Here are photos from my postdoc in Milan at SGS Thomson in 1993. I had a great time over there and made some lifelong friends.
+Photos from my postdoc at SGS Thomson in Milan. I had a great time over there and made some lifelong friends.
 
 {% include figure image_path="/assets/images/1993/07/AA79A4DA-EFD9-4C13-A59B-DD9824F2CD84.jpg" %}
 {% include figure image_path="/assets/images/1993/07/IMG_8810.jpeg" %}
