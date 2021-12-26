@@ -13,8 +13,9 @@ header:
   teaser: /assets/images/1994/09/IMG_8822.jpeg
 ---
 
-After reading this article <https://www.researchgate.net/publication/15021378_Chemistry_and_Physics_in_the_Kitchen> in Scientific American, I made liquid nitrogen ice cream for the first time with Drs Barry Flower (who was still doing his
-PhD at the time) and Markus Schenkel. 
+After reading the April 1994 article, "Chemistry and Physics in the Kitchen"  in Scientific American, I made liquid nitrogen ice cream for the first time with Drs Barry Flower and Markus Schenkel. 
+
+Here is a link to the article: <https://www.researchgate.net/publication/15021378_Chemistry_and_Physics_in_the_Kitchen>. The photos were taken outside Electrical Engineering at the University of Sydney.
 
 {% include figure image_path="/assets/images/1994/09/IMG_8822.jpeg" %}
 {% include figure image_path="/assets/images/1994/09/IMG_8823.jpeg" %}
