@@ -73,6 +73,8 @@ tests X Windows basic functionality.
 
 
  * (x86 MacOS X setup)
+    1. Install homebrew (see ```https://brew.sh/```) 
+    1. Use homebrew to install xquartz ```brew install --cask xquartz'''
     1. Run the ```Xquartz``` X Server program by clicking on the icon, an xterm window should appear
     1. Set “Allow connections from network clients” in XQuartz -> Preferences
     1. In the xterm window type 
