@@ -82,11 +82,17 @@ Man’s status at the top of the food chain can be ascribed to our ability to de
 
 **Conclusion**
 I have learnt many things through fishing and find that being successful in fishing has many similarities with being a good researcher. Irrespective of whether you ask me how to be a good researcher or a good fisherman, I would give the following suggestions:
+
 1.    Fish fertile waters. One of the important things in fishing is being at the right place at the right time. If you do the wrong thing, you will not be successful. In your research, try to learn what is productive and what is not.
+
 2.    Learn from others. Don’t be afraid to ask people things, most would be very flattered to be asked, you will learn faster and even make new friends.
+
 3.    Be persistent, life is not meant to be easy. I have caught a marlin using a fly. It would have been a world record had it been claimed and was taken on the last cast of a 3 day trip. I was not a particularly good fisherman at the time and believe I was rewarded. You should really believe in what you do and work 100% to achieve it.
+
 4.    Strive to improve. Learn to be content with what you achieve, learn from your mistakes and work actively to improve.
+
 5.    Slow down and think before you act. Myself and many others spend too much time working rather than thinking. The latter is harder to do but unfortunately good research cannot be achieved through hard work alone. Inspiration has often come to me only when I have had the time to think and question what I am doing. This has often been while fishing.
+
 6.    Do what you are interested in and aim high. You can only excel at something you are interested in. Pursue your interests, work hard and you will be very surprised at what you can achieve.
 
 I end with a quote from Henry David Thoreau who described it perfectly when he wrote, "Many men go fishing all of their lives without knowing that it is not fish they are after.”
