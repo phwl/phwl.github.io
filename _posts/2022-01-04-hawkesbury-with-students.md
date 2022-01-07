@@ -21,7 +21,8 @@ Bo and Wenjie driving the boat.
 {% include figure image_path="/assets/images/2022/01/IMG_8971.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/01/IMG_8970.jpeg" caption="" %}
 
-Group photos.
+Group photos. This is the last photo of that rod in the holder. Shortly after, I cast it out and left it on the deck while making coffee. Next time I looked it had disappeared. Note to self: use the rod holders.
+
 {% include figure image_path="/assets/images/2022/01/IMG_8969.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/01/IMG_8949.jpeg" caption="" %}
 
