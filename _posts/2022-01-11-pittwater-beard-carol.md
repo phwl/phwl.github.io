@@ -26,11 +26,11 @@ We met up with Dr Phil for an early lunch.
 
 Things picked up a bit after the low tide. We caught a pike and flathead. Then this tailor. 
 
-Prior to the trip, I told Carol that if she hooked a kingfish, she would need to be assertive or else it would cut her off. A kingfish took my soft plastic and cut me off. Even though I locked up the drag during the fight, it only took about 5 seconds for the fish to gain its freedom (5kg line wasn't a great idea).
-
 {% include figure image_path="/assets/images/2022/01/IMG_2066.jpeg" caption="" %}
 
-This is still the holiday period. So many boats out there, even on a weekday!
+Prior to the trip, I told Carol that if she hooked a kingfish, she would need to be assertive or else it would cut her off. A kingfish took my soft plastic, I wasn't stopping it so locked up the drag, and it cut me off. It was all over in about 5 seconds. Fishing there with 5kg line wasn't a great idea.
+
+This is still the holiday period so even though it was a weekday, many boats were on the water.
 
 {% include figure image_path="/assets/images/2022/01/IMG_2067.jpeg" caption="" %}
 
