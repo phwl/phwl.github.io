@@ -20,7 +20,7 @@ This is us heading out in the morning from Rowland Reserve. It was nice and over
 
 The morning was
 pretty quiet with the only action being my losing a flathead right by the boat.
-We met up with Dr Phil for an early lunch. 
+We met up with Dr Phil for an early lunch. This is his photo of our boat.
 
 {% include figure image_path="/assets/images/2022/01/IMG_7720.jpeg" caption="" %}
 
