@@ -12,7 +12,7 @@ header:
   teaser: /assets/images/2022/01/IMG_2058.jpeg
 ---
 
-In this summer of fishing, went to Pittwater with Beard and Carol, my student.
+In this summer of fishing, went to Pittwater with Beard and Carol (my student).
 
 This is us heading out in the morning from Rowland Reserve. It was nice and overcast in the morning.
 
