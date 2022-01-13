@@ -22,6 +22,8 @@ The morning was
 pretty quiet with the only action being my losing a flathead right by the boat.
 We met up with Dr Phil for an early lunch. 
 
+{% include figure image_path="/assets/images/2022/01/IMG_7720.jpeg" caption="" %}
+
 Things picked up a bit after the low tide. We caught a pike and flathead. Then this tailor. 
 
 Prior to the trip, I told Carol that if she hooked a kingfish, she would need to be assertive or else it would cut her off. A kingfish took my soft plastic and cut me off. Even though I locked up the drag during the fight, it only took about 5 seconds for the fish to gain its freedom (5kg line wasn't a great idea).
