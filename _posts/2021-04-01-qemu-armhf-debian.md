@@ -28,7 +28,7 @@ $ qemu-system-aarch64 --version
 QEMU emulator version 5.2.92 (v6.0.0-rc2)
 Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
 $ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G 
-$ wget http://debian.mirror.digitalpacific.com.au/debian-cd/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
+$ wget https://cdimage.debian.org/mirror/cdimage/archive/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
 $ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
 $ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.0-16-arm64     -kernel vmlinuz-4.19.0-16-arm64    -append "root=/dev/sda2 console=ttyAMA0"     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
