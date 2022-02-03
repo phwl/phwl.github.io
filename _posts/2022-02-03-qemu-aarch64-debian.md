@@ -41,10 +41,24 @@ scsi-cd,drive=cdrom -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device
  intel-hda -device hda-duplex
 ```
 ```bash
-$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
+$ sudo virt-ls -a debian-3607-aarch64.qcow2 /boot/
+System.map-5.10.0-10-arm64
+System.map-5.10.0-11-arm64
+config-5.10.0-10-arm64
+config-5.10.0-11-arm64
+initrd.img
+initrd.img-5.10.0-10-arm64
+initrd.img-5.10.0-11-arm64
+initrd.img.old
+lost+found
+vmlinuz
+vmlinuz-5.10.0-10-arm64
+vmlinuz-5.10.0-11-arm64
+vmlinuz.old
+$ sudo virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-5.10.0-11-arm64 /boot/initrd.img-5.10.0-11-arm64 .
 
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 \
-    -kernel vmlinuz-4.19.0-16-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 \
+    -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
     -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
     -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
 ```
