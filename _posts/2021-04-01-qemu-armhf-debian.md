@@ -31,7 +31,7 @@ $ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G
 $ wget https://cdimage.debian.org/mirror/cdimage/archive/10.9.0/arm64/iso-cd/debian-10.9.0-arm64-xfce-CD-1.iso
 $ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/initrd.gz
 $ wget http://ftp.au.debian.org/debian/dists/buster/main/installer-arm64/20190702/images/cdrom/vmlinuz
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.img-4.19.0-16-arm64     -kernel vmlinuz-4.19.0-16-arm64    -append "root=/dev/sda2 console=ttyAMA0"     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.gz     -kernel vmlinuz    -append "root=/dev/sda2 console=ttyAMA0"     -global virtio-blk-device.scsi=off     -device virtio-scsi-device,id=scsi     -drive file=debian-3607-aarch64.qcow2,id=rootimg,cache=unsafe,if=none     -device scsi-hd,drive=rootimg  -net user,hostfwd=tcp::10022-:22 -net nic    -nographic -device intel-hda -device hda-duplex
 ```
  *  No common CD-ROM drive was detected: Manually select to use /dev/vdb
 
@@ -41,6 +41,7 @@ $ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 \
     -kernel vmlinuz-4.19.0-16-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
     -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
+    -drive file=debian-11.2.0-arm64-DVD-1.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom \
     -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
 ```
 
