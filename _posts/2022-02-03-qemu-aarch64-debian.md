@@ -41,7 +41,9 @@ scsi-cd,drive=cdrom -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device
  intel-hda -device hda-duplex
 ```
 ```bash
-$ sudo virt-ls -a debian-3607-aarch64.qcow2 /boot/
+$ sudo apt install libguestfs-tools
+$ sudo chmod 644 /boot/vmlinuz-5.4.0-9* # or else virt-ls won't work
+$ virt-ls -a debian-3607-aarch64.qcow2 /boot/
 System.map-5.10.0-10-arm64
 System.map-5.10.0-11-arm64
 config-5.10.0-10-arm64
@@ -55,7 +57,7 @@ vmlinuz
 vmlinuz-5.10.0-10-arm64
 vmlinuz-5.10.0-11-arm64
 vmlinuz.old
-$ sudo virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-5.10.0-11-arm64 /boot/initrd.img-5.10.0-11-arm64 .
+$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-5.10.0-11-arm64 /boot/initrd.img-5.10.0-11-arm64 .
 
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 \
     -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
