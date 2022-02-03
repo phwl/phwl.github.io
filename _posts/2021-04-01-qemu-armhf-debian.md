@@ -13,6 +13,9 @@ tags:
 header:
   teaser: https://www.debian.org/Pics/openlogo-50.png
 ---
+
+NOTE this post has been superseded by <https://phwl.org/2022/qemu-aarch64-debian/>.
+
 This post describes how to emulate an ARM 64 bit (aarch64) or ARM hard float 32 bit (armhf) processor using using ```qemu``` and install Debian Linux on the emulator. Actually I did the 32 bit one first so the process is a little more streamlined for 64 bit.
 
 I used Ubuntu 18.04.5 but any Debian/Ubuntu distribution can be used with minor changes and it should work under VirtualBox. 
@@ -37,21 +40,12 @@ $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G     -initrd initrd.gz     -k
 
 ```bash
 $ sudo apt install libguestfs-tools
-$ sudo virt-ls -a debian-3607-aarch64.qcow2 /boot/
-System.map-5.10.0-10-arm64
-System.map-5.10.0-11-arm64
-config-5.10.0-10-arm64
-config-5.10.0-11-arm64
-initrd.img
-initrd.img-5.10.0-10-arm64
-initrd.img-5.10.0-11-arm64
-initrd.img.old
-lost+found
-vmlinuz
-vmlinuz-5.10.0-10-arm64
-vmlinuz-5.10.0-11-arm64
-vmlinuz.old
-$ sudo virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz /boot/initrd.img .
+$ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-4.19.0-16-arm64 /boot/initrd.img-4.19.0-16-arm64 .
+
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-4.19.0-16-arm64 \
+    -kernel vmlinuz-4.19.0-16-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
+    -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
+    -net user,hostfwd=tcp::10022-:22 -net nic -nographic -device intel-hda -device hda-duplex
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img \
     -kernel vmlinuz -append "root=/dev/vda2 console=ttyAMA0" \
     -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
