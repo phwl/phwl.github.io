@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2022-02-03 11:30:00 AEST
-title: Debian on QEMU-emulated ARM-64 (aarch64)
+title: Debian on QEMU-emulated ARM-64 aarch64
 use_math: true
 classes: wide
 categories:
