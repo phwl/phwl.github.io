@@ -12,7 +12,7 @@ tags:
 header:
   teaser: https://www.debian.org/Pics/openlogo-50.png
 ---
-Describes how to emulate an ARM 64 bit (aarch64) processor using using ```qemu``` and install Debian Linux on the emulator. 
+How to install Debian Linux under an ARM 64 bit (aarch64) emulation using ```qemu```.
 
 This is a follow on post from <https://phwl.org/2021/qemu-armhf-debian/>.
 I used Ubuntu 18.04.6 but any Debian/Ubuntu distribution should work with minor changes. It also works under ```qemu``` on MacOS.
