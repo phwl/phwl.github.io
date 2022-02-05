@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-02-05 14:00:00 AEST
+date: 2022-02-05 13:00:00 AEST
 title: Lion Dance in Cabramatta
 classes: wide
 categories:
