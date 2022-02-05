@@ -12,6 +12,7 @@ header:
   teaser: /assets/images/2022/02/IMG_9168.jpg
 ---
 
+Wishing everyone a happy and successful Chinese New Year!
 
 {% include figure image_path="/assets/images/2019/05/IMG_9168.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2019/05/IMG_9180.jpeg" caption="" %}
