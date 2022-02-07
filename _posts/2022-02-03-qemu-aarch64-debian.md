@@ -54,3 +54,10 @@ $ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-5.10.0-11-arm64 /boot
 
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd -net user,hostfwd=tcp::10022-:22 -net nic -device intel-hda -device hda-duplex -nographic
 ```
+
+You should now be able to log into the machine via ssh using the port specified in the qemu command line:
+```
+$ ssh -Y elec3607@localhost -p 10022
+```
+
+and also transfer files to it using ```scp```.
