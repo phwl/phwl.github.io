@@ -2,9 +2,8 @@
 author: phwl
 comments: true
 toc: true
-date: 2022-02-13 13:00:00 AEDT
-title: Installing Docker for ELEC3607 2022
-
+date: 2022-02-12 13:00:00 AEDT
+title: Installing Docker 2022 version
 classes: wide
 categories:
 - software
@@ -14,8 +13,8 @@ tags:
 header:
   teaser: https://www.docker.com/blog/wp-content/uploads/2013/11/homepage-docker-logo.png
 ---
-Here are installation instructions for installing Docker and running Modelsim for my [ELEC3607 Embedded Systems course](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607).
-
+Here are installation instructions for installing Docker and running Modelsim for my [ELEC3607 Embedded Systems](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) 
+and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) courses.
 <!-- more -->
 
 # 1. Installation
@@ -118,6 +117,22 @@ root@8adbb8d8b0d9:/# ls /mnt
 
 Within Docker, the directory on your local home directory will be mapped 
 to ```/mnt```. Use this to access your files and store your outputs.
+
+## 2.4 ELEC3608 Modelsim
+Finally, this tests the Docker image for Modelsim (the executable is called
+```vsim```). Make sure you have set up your X Server and can execute the
+previous Xeyes example.
+
+ * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim``` (note the position of the quotes).
+ * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
+
+If everything works, the Modelsim window should appear.
+
+{% include figure image_path="/assets/images/2020/08/vsim-screenshot.png" caption="" %}
+
+Within Docker, the directory on your local home directory will be mapped 
+to ```/mnt```. Use this to access your files and store your outputs.
+
 
 # 3 Troubleshooting
  * Update your operating system to the latest version. My Windows 10 Pro installation was on Version 2004 (OS Build 19041.388) available <https://www.microsoft.com/en-us/software-download/windows10ISO>.

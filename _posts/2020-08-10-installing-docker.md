@@ -4,7 +4,6 @@ comments: true
 toc: true
 date: 2020-08-10 15:40:00 AEDT
 title: Installing Docker
-
 classes: wide
 categories:
 - software
@@ -14,6 +13,8 @@ tags:
 header:
   teaser: https://www.docker.com/blog/wp-content/uploads/2013/11/homepage-docker-logo.png
 ---
+This post has been superseded by <https://phwl.org/2022/installing-docker-2022-version/>.
+
 Here are installation instructions for installing Docker and running Modelsim for my [ELEC3608 Computer Architecture course](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608).
 
 <!-- more -->
