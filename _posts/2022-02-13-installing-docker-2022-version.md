@@ -27,7 +27,7 @@ and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-un
    1. Run Docker Desktop by double-clicking the icon on the desktop
 
  * (MacOS)
-   1. Download and install stable version from <https://docs.docker.com/docker-for-mac/install/> (or <https://docs.docker.com/docker-for-mac/apple-silicon/> for the M1 mac in which case you need to add ```--platform linux/amd64``` to the command lines below)
+   1. Download and install stable version from <https://docs.docker.com/docker-for-mac/install/> (or <https://docs.docker.com/docker-for-mac/apple-silicon/> for the M1 mac in which case the ```--platform linux/amd64``` in the command lines below are mandatory)
    1. Run Docker Desktop by clicking the Docker icon
 
 # 2 Testing
@@ -96,12 +96,12 @@ $ docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY fr3nd/xeyes
 ```
 
 ## 2.3 ELEC3607 Base Image
-Finally, this tests the ELEC3607 base image.
+This tests the ELEC3607 base image.
 Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
  * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt -it phwl/elec3607-base:latest``` (note the position of the quotes).
- * (MacOS) You should now be able to do ```docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3607-base:latest```.
+ * (MacOS x86 and M1) You should now be able to do ```docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3607-base:latest```.
 
 If everything works, the ```#``` prompt should appear and ```ls /mnt``` should show your local home directory.
 
@@ -119,7 +119,7 @@ Within Docker, the directory on your local home directory will be mapped
 to ```/mnt```. Use this to access your files and store your outputs.
 
 ## 2.4 ELEC3608 Modelsim
-Finally, this tests the Docker image for Modelsim (the executable is called
+This tests the Docker image for Modelsim (the executable is called
 ```vsim```). Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
