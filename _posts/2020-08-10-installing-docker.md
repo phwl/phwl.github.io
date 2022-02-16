@@ -22,10 +22,8 @@ Here are installation instructions for installing Docker and running Modelsim fo
 # 1. Installation
  * (Windows)
    1. Install the VcXsrv X windows server <https://sourceforge.net/projects/vcxsrv/>
-   1. You will get an alert from Windows Defender. Allow access for Private Networks.
-   1. (Windows 10 Professional, Consumer and Education) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
-   to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that "Enable WEL 2 Windows Features" and "Add shortcut to desktop" are selected.
-   1. (Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions <https://docs.docker.com/docker-for-windows/install-windows-home/>
+   1. (Windows 10 all versions) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
+   to install Stable version of Docker Desktop for Windows (follow them carefully). 
    1. Run Docker Desktop by double-clicking the icon on the desktop
 
  * (MacOS)
