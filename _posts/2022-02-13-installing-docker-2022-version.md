@@ -19,11 +19,9 @@ and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-un
 
 # 1. Installation
  * (Windows)
-   1. Install the VcXsrv X windows server <https://sourceforge.net/projects/vcxsrv/>
-   1. You will get an alert from Windows Defender. Allow access for Private Networks.
-   1. (Windows 10 Professional, Consumer and Education) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
-   to install Stable version of Docker Desktop for Windows (follow them carefully). In the Configuration menu ensure that "Enable WEL 2 Windows Features" and "Add shortcut to desktop" are selected.
-   1. (Windows 10 Home) The same as for Windows 10 except for the Install Docker step where you follow these instructions <https://docs.docker.com/docker-for-windows/install-windows-home/>
+   1. Install MobaXterm <https://mobaxterm.mobatek.net/download-home-edition>
+   1. (Windows 10 all versions) Use instructions at <https://docs.docker.com/docker-for-windows/install/>
+   to install Stable version of Docker Desktop for Windows (follow them carefully). 
    1. Run Docker Desktop by double-clicking the icon on the desktop
 
  * (MacOS)
@@ -62,15 +60,8 @@ We need to use the X Server to display graphical output. This
 tests X Windows basic functionality.
 
  * (Windows setup) 
-    1. Run XLaunch and configure "Multiple Windows" and "Start no client"
-    1. Open a Windows Powershell window
-    1. Type ```ipconfig```. Note the IPv4 Address for the Ethernet Adapter vEthernet (WSL). Say it is aaa.bb.ccc.d (on my machine it was 172.18.240.1)
-    1. Type ```set-variable -name DISPLAY -value aaa.bb.ccc.d:0.0``` 
-(```set-variable -name DISPLAY -value 172.18.240.1:0.0``` on my machine)
-    1. Type ```docker run -it -e DISPLAY=$DISPLAY fr3nd/xeyes```
-
-{% include figure image_path="/assets/images/2020/08/ipconfig-screenshot.png" caption="" %}
-
+    1. Run MobaXterm and "Start a local terminal"
+    1. Type ```docker run -it fr3nd/xeyes```
 
  * (x86 MacOS X setup)
     1. Install homebrew (see ```https://brew.sh/```) 
@@ -101,7 +92,7 @@ This tests the ELEC3607 base image.
 Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt -it phwl/elec3607-base:latest``` (note the position of the quotes).
+ * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run ```docker run -it -v C:\Users\"XX YY":/mnt -it phwl/elec3607-base:latest``` from within a MobaXterm terminal (note the position of the quotes).
  * (MacOS x86 and M1) You should now be able to do ```docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3607-base:latest```.
 
 If everything works, the ```#``` prompt should appear and ```ls /mnt``` should show your local home directory.
@@ -124,7 +115,7 @@ This tests the Docker image for Modelsim (the executable is called
 ```vsim```). Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim``` (note the position of the quotes).
+ * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run vsim ```docker run -it -v C:\Users\"XX YY":/mnt phwl/elec3608-vsim:latest vsim``` (note the position of the quotes).
  * (MacOS) You should now be able to run vsim ```docker run -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3608-vsim:latest vsim```.
 
 If everything works, the Modelsim window should appear.
@@ -153,6 +144,5 @@ I found this bash script quite helpful. <https://github.com/mviereck/x11docker.>
 The script starts the container in a fresh new X session, without the usual permission hassles. 
 
 # 4 Links
- * The Docker image is derived from one provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). If you want to create your own variant, the scripts used to create it are available [here](https://github.com/phwl/elec3608-github).
- * Notes on Docker support under Windows Home with WSL 2 <https://www.docker.com/blog/docker-desktop-for-windows-home-is-here/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))
- * Notes on WSL 2 and Hyper-V <https://devblogs.microsoft.com/commandline/wsl-2-post-build-faq/> (from [Dr Peter Jones](https://www.sydney.edu.au/engineering/about/our-people/academic-staff/peter-jones.html))
+ * Instructions to build the Docker image for debian on aarch64 used in ELEC3607 are at <phwl.org/2022/qemu-aarch64-debian/>.
+ * The Docker image for ELEC3608 is derived from one provided by [Prof Nachiket Kapre (Waterloo)](https://nachiket.github.io/). If you want to create your own variant, the scripts used to create it are available [here](https://github.com/phwl/elec3608-github).
