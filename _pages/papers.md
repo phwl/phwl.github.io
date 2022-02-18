@@ -11,299 +11,303 @@ classes: wide
 
 # Journals
 
-[1] Maolin Wang, Seyedramin Rasoulinezhad, Philip H\.W\. Leong, and Hayden K\.H\. So\.
+[1] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip H\. W\. Leong, and Ivan Lee\.
+On\-device saliency prediction based on pseudo knowledge distillation\.
+*IEEE Transactions on Industrial Informatics*, accepted 13 Feb 2022 2022\.
+URL: [sal\_tii22\.pdf](sal_tii22.pdf)\.  
+[2] Maolin Wang, Seyedramin Rasoulinezhad, Philip H\.W\. Leong, and Hayden K\.H\. So\.
 NITI: training integer neural networks using integer\-only arithmetic\.
 *IEEE Transactions on Parallel and Distributed Systems*, accepted 4 Feb 2022 2022\.
 URL: [niti\_tpds22\.pdf](niti_tpds22.pdf)\.  
-[2] Seyedramin Rasoulinezhad, Esther Roorda, Steve Wilton, Philip H\. W\. Leong, and David Boland\.
+[3] Seyedramin Rasoulinezhad, Esther Roorda, Steve Wilton, Philip H\. W\. Leong, and David Boland\.
 Rethinking embedded blocks for machine learning applications\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, nov 2021\.
 URL: [https://doi\.org/10\.1145/3491234](https://doi.org/10.1145/3491234), [doi:10\.1145/3491234](https://doi.org/10.1145/3491234)\.  
-[3] Rui Tang, Jonathon Dore, Jin Ma, and Philip H\.W\. Leong\.
+[4] Rui Tang, Jonathon Dore, Jin Ma, and Philip H\.W\. Leong\.
 Interpolating high granularity solar generation and load consumption data using super resolution generative adversarial network\.
 *Applied Energy*, 299:117297, 2021\.
 URL: [srgan\_ae21\.pdf](srgan_ae21.pdf), [doi:https://doi\.org/10\.1016/j\.apenergy\.2021\.117297](https://doi.org/https://doi.org/10.1016/j.apenergy.2021.117297)\.  
-[4] Johan Saltin, Nguyen Cong Dao, Philip H\. W\. Leong, and Hiu Yung Wong\.
+[5] Johan Saltin, Nguyen Cong Dao, Philip H\. W\. Leong, and Hiu Yung Wong\.
 Energy filtering effect at source contact on ultra\-scaled MOSFETs\.
 *IEEE Journal of the Electron Devices Society*, 8:662&ndash;667, 2020\.
 URL: [sc\_jeds20\.pdf](sc_jeds20.pdf), [doi:10\.1109/JEDS\.2020\.2981251](https://doi.org/10.1109/JEDS.2020.2981251)\.  
-[5] Nicholas J\. Fraser and Philip H\. W\. Leong\.
+[6] Nicholas J\. Fraser and Philip H\. W\. Leong\.
 Kernel normalised least mean squares with delayed model adaptation\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, February 2020\.
 URL: [dknlms\_trets20\.pdf](dknlms_trets20.pdf), [doi:10\.1145/3376924](https://doi.org/10.1145/3376924)\.  
-[6] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky Capuska\.
+[7] C\.A\. Herbert, M\. Dassis, M\. Pye, P\.W\. Jones, P\.H\.W\. Leong, G\. Thomas, H\. Cope, A\. Jarman, R\. Hobbs, P\.E\. Murray, and G\.E\. Machovsky Capuska\.
 Development of light\-weight video\-tracking technology for use in wildlife research: a case study on kangaroos\.
 *Australian Zoologist*, 40\(3\):364&ndash;378, 2020\.
 URL: [kangaroo\_austzoo20\.pdf](kangaroo_austzoo20.pdf), [doi:10\.7882/AZ\.2020\.001](https://doi.org/10.7882/AZ.2020.001)\.  
-[7] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H\.W\. Leong\.
+[8] Julian Faraone, Martin Kumm, Martin Hardieck, Peter Zipf, Xueyuan Liu, David Boland, and Philip H\.W\. Leong\.
 AddNet: deep neural networks using FPGA\-optimized multipliers\.
 *IEEE Transactions on VLSI Systems*, 28\(1\):115&ndash;128, January 2020\.
 URL: [addnet\_tvlsi20\.pdf](addnet_tvlsi20.pdf), [doi:10\.1109/TVLSI\.2019\.2939429](https://doi.org/10.1109/TVLSI.2019.2939429)\.  
-[8] Jason Kamran Eshraghian, Seungbum Baek, Timothée Levi, Takashi Kohno, Said F\. Al\-Sarawi, Philip H\. W\. Leong, Kyoung\-Rok Cho, Derek Abbott, and Omid Kavehei\.
+[9] Jason Kamran Eshraghian, Seungbum Baek, Timothée Levi, Takashi Kohno, Said F\. Al\-Sarawi, Philip H\. W\. Leong, Kyoung\-Rok Cho, Derek Abbott, and Omid Kavehei\.
 Nonlinear retinal response modeling for future neuromorphic instrumentation\.
 *IEEE Instrum\. Meas\. Mag\.*, 23\(1\):21–29, 2020\.
 URL: [nrrm\_imm20\.pdf](nrrm_imm20.pdf), [doi:10\.1109/MIM\.2020\.8979519](https://doi.org/10.1109/MIM.2020.8979519)\.  
-[9] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland, Duncan Moss, Peter Zipf, and Philip H\. W\. Leong\.
+[10] Stephen Tridgell, Martin Kumm, Martin Hardieck, David Boland, Duncan Moss, Peter Zipf, and Philip H\. W\. Leong\.
 Unrolling ternary neural networks\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 12\(4\):22:1–22:23, October 2019\.
 URL: [ternary\_trets19\.pdf](ternary_trets19.pdf), [doi:10\.1145/3359983](https://doi.org/10.1145/3359983)\.  
-[10] Rui Tang, Baran Yildiz, Philip H\.W\. Leong, Anthony Vassallo, and Jonathon Dore\.
+[11] Rui Tang, Baran Yildiz, Philip H\.W\. Leong, Anthony Vassallo, and Jonathon Dore\.
 Residential battery sizing model using net meter energy data clustering\.
 *Applied Energy*, 251:113324, 2019\.
 URL: [rbat\_ae19\.pdf](rbat_ae19.pdf), [doi:10\.1016/j\.apenergy\.2019\.113324](https://doi.org/10.1016/j.apenergy.2019.113324)\.  
-[11] D\. J\. M\. Moss, D\. Boland, and P\. H\. W\. Leong\.
+[12] D\. J\. M\. Moss, D\. Boland, and P\. H\. W\. Leong\.
 A two\-speed, radix\-4, serial–parallel multiplier\.
 *IEEE Transactions on Very Large Scale Integration \(VLSI\) Systems*, 27\(4\):769&ndash;777, 4 2019\.
 URL: [tsm\_tvlsi19\.pdf](tsm_tvlsi19.pdf), [doi:10\.1109/TVLSI\.2018\.2883645](https://doi.org/10.1109/TVLSI.2018.2883645)\.  
-[12] Xiang Zhang, Bryn A\. Bell, Andri Mahendra, Chunle Xiong, Philip H\. W\. Leong, and Benjamin J\. Eggleton\.
+[13] Xiang Zhang, Bryn A\. Bell, Andri Mahendra, Chunle Xiong, Philip H\. W\. Leong, and Benjamin J\. Eggleton\.
 Integrated silicon nitride time\-bin entanglement circuits\.
 *Opt\. Lett\.*, 43\(15\):3469–3472, 8 2018\.
 URL: [isn\_oletters18\.pdf](isn_oletters18.pdf), [doi:10\.1364/OL\.43\.003469](https://doi.org/10.1364/OL.43.003469)\.  
-[13] Ning Ma, Yu Peng, Shaojun Wang, and Philip H\. W\. Leong\.
+[14] Ning Ma, Yu Peng, Shaojun Wang, and Philip H\. W\. Leong\.
 An unsupervised deep hyperspectral anomaly detector\.
 *Sensors*, 18\(693\):1–21, 2018\.
 URL: [hsianom\_sensors18\.pdf](hsianom_sensors18.pdf), [doi:10\.3390/s18030693](https://doi.org/10.3390/s18030693)\.  
-[14] Yongfu He, Yu Peng, Shaojun Wang, Datong Liu, and Philip H\.W\. Leong\.
+[15] Yongfu He, Yu Peng, Shaojun Wang, Datong Liu, and Philip H\.W\. Leong\.
 A structured sparse subspace learning algorithm for anomaly detection in UAV flight data\.
 *IEEE Transactions on Instrumentation and Measurement*, 67\(1\):90&ndash;100, 1 2018\.
 URL: [sssl\_tim18\.pdf](sssl_tim18.pdf), [doi:10\.1109/TIM\.2017\.2754698](https://doi.org/10.1109/TIM.2017.2754698)\.  
-[15] Nicholas J\. Fraser, Junkyu Lee, Duncan J\. M\. Moss, Julian Faraone, Stephen Tridgell, Craig T\. Jin, and Philip H\. W\. Leong\.
+[16] Nicholas J\. Fraser, Junkyu Lee, Duncan J\. M\. Moss, Julian Faraone, Stephen Tridgell, Craig T\. Jin, and Philip H\. W\. Leong\.
 FPGA implementations of kernel normalised least mean squares processors\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 10\(4\):26:1–26:20, December 2017\.
 URL: [knlms\_trets17\.pdf](knlms_trets17.pdf), [doi:10\.1145/3106744](https://doi.org/10.1145/3106744)\.  
-[16] X\. Zhang, Y\. H\. Lee, B\. A\. Bell, P\. H\. W\. Leong, T\. Rudolph, B\. J\. Eggleton, and C\. Xiong\.
+[17] X\. Zhang, Y\. H\. Lee, B\. A\. Bell, P\. H\. W\. Leong, T\. Rudolph, B\. J\. Eggleton, and C\. Xiong\.
 Indistinguishable heralded single photon generation via relative temporal multiplexing of two sources\.
 *Opt\. Express*, 25\(21\):26067–26075, October 2017\.
 URL: [relmux\_oe17\.pdf](relmux_oe17.pdf), [doi:10\.1364/OE\.25\.026067](https://doi.org/10.1364/OE.25.026067)\.  
-[17] Jia\-Chen Hua, Farzad Noorian, Duncan Moss, Philip H\.W\. Leong, and Gemunu H\. Gunaratne\.
+[18] Jia\-Chen Hua, Farzad Noorian, Duncan Moss, Philip H\.W\. Leong, and Gemunu H\. Gunaratne\.
 High\-dimensional time\-series prediction using kernel\-based Koopman mode regression\.
 *Nonlinear Dynamics*, 90:1785&ndash;–1806, November 2017\.
 URL: [tsp\_nody17\.pdf](tsp_nody17.pdf), [doi:10\.1007/s11071\-017\-3764\-y](https://doi.org/10.1007/s11071-017-3764-y)\.  
-[18] Jian Yan, Junqi Yuan, Philip H\. W\. Leong, Wayne Luk, and Lingli Wang\.
+[19] Jian Yan, Junqi Yuan, Philip H\. W\. Leong, Wayne Luk, and Lingli Wang\.
 Lossless compression decoders for bitstreams and software binaries based on high\-level synthesis\.
 *IEEE Transactions on VLSI Systems*, 25:2842–2855, 2017\.
 URL: [lcomp\_tvlsi17\.pdf](lcomp_tvlsi17.pdf), [doi:10\.1109/TVLSI\.2017\.2713527](https://doi.org/10.1109/TVLSI.2017.2713527)\.  
-[19] Nguyen Cong Dao, Abdallah El Kass, Craig T\. Jin, and Philip H\.W\. Leong\.
+[20] Nguyen Cong Dao, Abdallah El Kass, Craig T\. Jin, and Philip H\.W\. Leong\.
 Impact of series resistance on bulk CMOS current matching over the 5–300 K temperature range\.
 *IEEE Electron Device Letters*, 38:847–850, 2017\.
 URL: [match\_edl17\.pdf](match_edl17.pdf), [doi:10\.1109/LED\.2017\.2709545](https://doi.org/10.1109/LED.2017.2709545)\.  
-[20] Thuy T\. Pham, Philip H\.W\. Leong, Paul D\. Robinson, Thomas Gutzler, Adelle Jee, Gregory G\. King, and Cindy Thamrin\.
+[21] Thuy T\. Pham, Philip H\.W\. Leong, Paul D\. Robinson, Thomas Gutzler, Adelle Jee, Gregory G\. King, and Cindy Thamrin\.
 Automated quality control of forced oscillation measurements: respiratory artifact detection with advanced feature extraction\.
 *Journal of Applied Physiology*, 123:jap\.00726\.2016, 5 2017\.
 URL: [fot\_jappl17\.pdf](fot_jappl17.pdf), [doi:10\.1152/japplphysiol\.00726\.2016](https://doi.org/10.1152/japplphysiol.00726.2016)\.  
-[21] Thuy T\. Pham, Steven T\. Moore, Simon J\.G\. Lewis, Diep N\. Nguyen, Eryk Dutkiewicz, Andrew J\. Fuglevand, Alistair L\. McEwan, and Philip H\.W\. Leong\.
+[22] Thuy T\. Pham, Steven T\. Moore, Simon J\.G\. Lewis, Diep N\. Nguyen, Eryk Dutkiewicz, Andrew J\. Fuglevand, Alistair L\. McEwan, and Philip H\.W\. Leong\.
 Freezing of gait detection in Parkinson's disease: a subject\-independent detector using anomaly scores\.
 *IEEE Transactions on Biomedical Engineering*, 64:2719–2728, 2017\.
 URL: [fog\_tbme17\.pdf](fog_tbme17.pdf), [doi:10\.1109/TBME\.2017\.2665438](https://doi.org/10.1109/TBME.2017.2665438)\.  
-[22] Andri Mahendra, Chunle Xiong, Xiang Zhang, Benjamin J\. Eggleton, and Philip H\. W\. Leong\.
+[23] Andri Mahendra, Chunle Xiong, Xiang Zhang, Benjamin J\. Eggleton, and Philip H\. W\. Leong\.
 Multiwavelength stabilization control of a thermo\-optic system with adaptive reconfiguration\.
 *Appl\. Opt\.*, 56\(4\):1113–1118, 2 2017\.
 URL: [mimo\_ao17\.pdf](mimo_ao17.pdf), [doi:10\.1364/AO\.56\.001113](https://doi.org/10.1364/AO.56.001113)\.  
-[23] Nguyen Cong Dao, Abdallah El Kass, Mostafa Rahimi Azghadi, Craig T\. Jin, Jonathan Scott, and Philip H\.W\. Leong\.
+[24] Nguyen Cong Dao, Abdallah El Kass, Mostafa Rahimi Azghadi, Craig T\. Jin, Jonathan Scott, and Philip H\.W\. Leong\.
 An enhanced MOSFET threshold voltage model for the 6–300 K temperature range\.
 *Microelectronics Reliability*, 69:36–39, 2017\.
 URL: [vt\_mr17\.pdf](vt_mr17.pdf), [doi:10\.1016/j\.microrel\.2016\.12\.007](https://doi.org/10.1016/j.microrel.2016.12.007)\.  
-[24] M\. R\. Azghadi, B\. Linares\-Barranco, D\. Abbott, and P\. H\. W\. Leong\.
+[25] M\. R\. Azghadi, B\. Linares\-Barranco, D\. Abbott, and P\. H\. W\. Leong\.
 A hybrid CMOS\-memristor neuromorphic synapse\.
 *IEEE Transactions on Biomedical Circuits and Systems*, 11\(2\):434&ndash;445, April 2017\.
 URL: [memrsyn\_tbcas16\.pdf](memrsyn_tbcas16.pdf), [doi:10\.1109/TBCAS\.2016\.2618351](https://doi.org/10.1109/TBCAS.2016.2618351)\.  
-[25] Philip H\. W\. Leong, Hideharu Amano, Jason Anderson, Koen Bertels, João M\. P\. Cardoso, Oliver Diessel, Guy Gogniat, Mike Hutton, Junkyu Lee, Wayne Luk, Patrick Lysaght, Marco Platzner, Viktor K\. Prasanna, Tero Rissa, Cristina Silvano, Hayden Kwok\-Hay So, and Yu Wang\.
+[26] Philip H\. W\. Leong, Hideharu Amano, Jason Anderson, Koen Bertels, João M\. P\. Cardoso, Oliver Diessel, Guy Gogniat, Mike Hutton, Junkyu Lee, Wayne Luk, Patrick Lysaght, Marco Platzner, Viktor K\. Prasanna, Tero Rissa, Cristina Silvano, Hayden Kwok\-Hay So, and Yu Wang\.
 The first 25 years of the FPL conference: significant papers\.
 *ACM Transactions on Reconfigurable Technology and Systems*, 10\(2\):15:1–15:17, March 2017\.
 URL: [fplsig\_trets16\.pdf](fplsig_trets16.pdf), [doi:10\.1145/2996468](https://doi.org/10.1145/2996468)\.  
-[26] Farzad Noorian and Philip H\.W\. Leong\.
+[27] Farzad Noorian and Philip H\.W\. Leong\.
 On time series forecasting error measures for finite horizon control\.
 *IEEE Transactions on Control Systems Technology*, 25\(2\):736&ndash;743, 3 2017\.
 URL: [fhc\_tcst17\.pdf](fhc_tcst17.pdf), [doi:10\.1109/TCST\.2016\.2571661](https://doi.org/10.1109/TCST.2016.2571661)\.  
-[27] Harrison Ball, Trung Nguyen, Philip H\. W\. Leong, and Michael J\. Biercuk\.
+[28] Harrison Ball, Trung Nguyen, Philip H\. W\. Leong, and Michael J\. Biercuk\.
 Functional basis for efficient physical layer classical control in quantum processors\.
 *Phys\. Rev\. Applied*, 6:064009, December 2016\.
 URL: [fb\_pra16\.pdf](fb_pra16.pdf), [doi:10\.1103/PhysRevApplied\.6\.064009](https://doi.org/10.1103/PhysRevApplied.6.064009)\.  
-[28] Yeyong Pang, Shaojun Wang, Yu Peng, Xiyuan Peng, Nicholas J\. Fraser, and Philip H\. W\. Leong\.
+[29] Yeyong Pang, Shaojun Wang, Yu Peng, Xiyuan Peng, Nicholas J\. Fraser, and Philip H\. W\. Leong\.
 A microcoded kernel recursive least squares processor using FPGA technology\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 10\(1\):5:1–5:22, September 2016\.
 URL: [kproc\_trets16\.pdf](kproc_trets16.pdf), [doi:10\.1145/2950061](https://doi.org/10.1145/2950061)\.  
-[29] Thuy T\. Pham, Cindy Thamrin, Paul D\. Robinson, Alistair L\. McEwan, and Philip H\.W\. Leong\.
+[30] Thuy T\. Pham, Cindy Thamrin, Paul D\. Robinson, Alistair L\. McEwan, and Philip H\.W\. Leong\.
 Respiratory artefact removal in forced oscillation measurements: a machine learning approach\.
 *IEEE Transactions on Biomedical Engineering*, 64\(8\):1679&ndash;1687, 8 2017\.
 URL: [fot\_tbme16\.pdf](fot_tbme16.pdf), [doi:10\.1109/TBME\.2016\.2554599](https://doi.org/10.1109/TBME.2016.2554599)\.  
-[30] Gabriel E\. Machovsky\-Capuska, David Priddel, Philip H\.W\. Leong, Peter Jones, Nicholas Carlile, Lesley Shannon, Dean Portelli, Alistair McEwan, Alexandre V\. Chaves, and David Raubenheimer\.
+[31] Gabriel E\. Machovsky\-Capuska, David Priddel, Philip H\.W\. Leong, Peter Jones, Nicholas Carlile, Lesley Shannon, Dean Portelli, Alistair McEwan, Alexandre V\. Chaves, and David Raubenheimer\.
 Coupling bio\-logging with nutritional geometry to reveal novel insights into the foraging behaviour of a plunge\-diving marine predator\.
 *New Zealand Journal of Marine and Freshwater Research*, 2016\.
 URL: [boobies\_nzjmfr16\.pdf](boobies_nzjmfr16.pdf), [doi:http://dx\.doi\.org/10\.1080/00288330\.2016\.1152981](https://doi.org/http://dx.doi.org/10.1080/00288330.2016.1152981)\.  
-[31] Farzad Noorian, Anthony de Silva, and Philip Leong\.
+[32] Farzad Noorian, Anthony de Silva, and Philip Leong\.
 gramEvol: grammatical evolution in R\.
 *Journal of Statistical Software*, 71\(1\):1–26, 2016\.
 URL: [gev\_jss15\.pdf](gev_jss15.pdf), [doi:10\.18637/jss\.v071\.i01](https://doi.org/10.18637/jss.v071.i01)\.  
-[32] Ashnil Kumar, Shane Dyer, Jinman Kim, Changyang Li, Philip H\. W\. Leong, Michael Fulham, and Dagan Feng\.
+[33] Ashnil Kumar, Shane Dyer, Jinman Kim, Changyang Li, Philip H\. W\. Leong, Michael Fulham, and Dagan Feng\.
 Adapting content\-based image retrieval techniques for the semantic annotation of medical images\.
 *Computerized Medical Imaging and Graphics*, 49:37–45, April 2016\.
 URL: [clef\_cmig16\.pdf](clef_cmig16.pdf), [doi:doi:10\.1016/j\.compmedimag\.2016\.01\.001](https://doi.org/doi:10.1016/j.compmedimag.2016.01.001)\.  
-[33] C\. Xiong, X\. Zhang, Z\. Liu, M\.J\. Collins, A\. Mahendra, L\.G\. He, M\.J\. Steel, D\.\-Y\. Choi, C\.J\. Chae, P\.H\.W\. Leong, and B\.J\. Eggleton\.
+[34] C\. Xiong, X\. Zhang, Z\. Liu, M\.J\. Collins, A\. Mahendra, L\.G\. He, M\.J\. Steel, D\.\-Y\. Choi, C\.J\. Chae, P\.H\.W\. Leong, and B\.J\. Eggleton\.
 Active temporal multiplexing of indistinguishable heralded single photons\.
 *Nature Communications*, 2016\.
 URL: [atm\_ncomms16\.pdf](atm_ncomms16.pdf), [doi:10\.1038/ncomms10853](https://doi.org/10.1038/ncomms10853)\.  
-[34] Farzad Noorian, Barry Flower, and Philip H\.W\. Leong\.
+[35] Farzad Noorian, Barry Flower, and Philip H\.W\. Leong\.
 Stochastic receding horizon control for short\-term risk management in foreign exchange\.
 *Journal of Risk*, 18:29–62, 2016\.
 URL: [srhc\_risk15\.pdf](srhc_risk15.pdf), [doi:10\.21314/J0R\.2016\.333](https://doi.org/10.21314/J0R.2016.333)\.  
-[35] Anthony Mihirana de Silva, Richard I\.A\. Davis, Syed A\. Pasha, and Philip H\.W\. Leong\.
+[36] Anthony Mihirana de Silva, Richard I\.A\. Davis, Syed A\. Pasha, and Philip H\.W\. Leong\.
 Forecasting financial time\-series with grammar guided feature generation\.
 *Computational Intelligence*, 2016\.
 URL: [gram\_ci15\.pdf](gram_ci15.pdf), [doi:10\.1111/coin\.12083](https://doi.org/10.1111/coin.12083)\.  
-[36] C\. Xiong, X\. Zhang, A\. Mahendra, J\. He, D\.\-Y\. Choi, C\. J\. Chae, D\. Marpaung, A\. Leinse, R\. G\. Heideman, M\. Hoekman, C\. G\.H\. Roeloffzen, R\.M\. Oldenbeuving, P\.W\.L\. van Dijk, C\. Taddei, P\. H\. W\. Leong, and B\. J\. Eggleton\.
+[37] C\. Xiong, X\. Zhang, A\. Mahendra, J\. He, D\.\-Y\. Choi, C\. J\. Chae, D\. Marpaung, A\. Leinse, R\. G\. Heideman, M\. Hoekman, C\. G\.H\. Roeloffzen, R\.M\. Oldenbeuving, P\.W\.L\. van Dijk, C\. Taddei, P\. H\. W\. Leong, and B\. J\. Eggleton\.
 Compact and reconfigurable silicon nitride time\-bin entanglement circuit\.
 *Optica*, 2\(8\):724–727, August 2015\.
 URL: [tbentangle\_optica15\.pdf](tbentangle_optica15.pdf), [doi:10\.1364/OPTICA\.2\.000724](https://doi.org/10.1364/OPTICA.2.000724)\.  
-[37] Michael Frechtling and Philip H\. W\. Leong\.
+[38] Michael Frechtling and Philip H\. W\. Leong\.
 MCALIB \- a tool for automated rounding error analysis\.
 *ACM Transactions on Programming Languages and Systems*, 37:5:1–5:25, April 2015\.
 URL: [mca\_toplas14\.pdf](mca_toplas14.pdf), [doi:10\.1145/2665073](https://doi.org/10.1145/2665073)\.  
-[38] Man\-Ho Ho, Yan\-Qing Ai, Thomas C\.P\. Chau, Steve C\.L\. Yuen, Chiu\-Sing Choy, Philip H\.W\. Leong, and Kong\-Pang Pun\.
+[39] Man\-Ho Ho, Yan\-Qing Ai, Thomas C\.P\. Chau, Steve C\.L\. Yuen, Chiu\-Sing Choy, Philip H\.W\. Leong, and Kong\-Pang Pun\.
 Architecture and design flow for a highly efficient structured ASIC\.
 *IEEE Transactions on VLSI Systems*, 21\(3\):424–433, 2013\.
 URL: [sasic\_tvlsi12\.pdf](sasic_tvlsi12.pdf)\.  
-[39] Haile Yu, Philip H\.W\. Leong, and Qiang Xu\.
+[40] Haile Yu, Philip H\.W\. Leong, and Qiang Xu\.
 An FPGA chip identification generator using configurable ring oscillator\.
 *IEEE Transactions on VLSI Systems*, 20\(11\):2198–2207, 2012\.
 URL: [id\_tvlsi12\.pdf](id_tvlsi12.pdf)\.  
-[40] Mengxing Ouyang, W\.J\. Li, P\.H\.W\. Leong, and Ka Wai Wong\.
+[41] Mengxing Ouyang, W\.J\. Li, P\.H\.W\. Leong, and Ka Wai Wong\.
 Improving carbon nanotubes sensor time response and responsivity using constant\-power activation\.
 *IEEE Transactions on Nanotechnology*, 11\(3\):624–632, May 2012\.
 URL: [cntp\_tnano12\.pdf](cntp_tnano12.pdf), [doi:10\.1109/TNANO\.2012\.2188641](https://doi.org/10.1109/TNANO.2012.2188641)\.  
-[41] Roberto Cardu, Philip H\.W\. Leong, Craig T\. Jin, and Alistair McEwan\.
+[42] Roberto Cardu, Philip H\.W\. Leong, Craig T\. Jin, and Alistair McEwan\.
 Electrode contact impedance sensitivity to variations in geometry\.
 *Physiological Measurement*, 33:817–830, 2012\.
 URL: [eci\_pmea12\.pdf](eci_pmea12.pdf)\.  
-[42] Chenyu Wang, Jinman Kim, Craig T\. Jin, Philip H\. W\. Leong, and Alistair McEwan\.
+[43] Chenyu Wang, Jinman Kim, Craig T\. Jin, Philip H\. W\. Leong, and Alistair McEwan\.
 Near infrared spectroscopy in optical coherence tomography\.
 *Journal of Near Infrared Spectroscopy*, 20:237–247, 2012\.
 URL: [oct\_jnirs12\.pdf](oct_jnirs12.pdf)\.  
-[43] C\.H\. Ang, A\.L\. McEwan, A\. van Schaik, C\. Jin, and P\.H\.W\. Leong\.
+[44] C\.H\. Ang, A\.L\. McEwan, A\. van Schaik, C\. Jin, and P\.H\.W\. Leong\.
 FPGA implementation of a biologically\-inspired auto\-associative memory\.
 *IEE Electronics Letters*, 48\(3\):148–149, 2012\.
 URL: [aam\_el12\.pdf](aam_el12.pdf)\.  
-[44] ChiWai Yu, Alistair M\. Smith, Wayne Luk, Philip H\.W\. Leong, and Steven J\.E\. Wilton\.
+[45] ChiWai Yu, Alistair M\. Smith, Wayne Luk, Philip H\.W\. Leong, and Steven J\.E\. Wilton\.
 Optimizing floating point units in hybrid FPGAs\.
 *IEEE Transactions on VLSI Systems*, 20:1295–1303, 2012\.
 URL: [ofpu\_tvlsi12\.pdf](ofpu_tvlsi12.pdf)\.  
-[45] Joydip Das, Andrew Lam, Steven J\.E\. Wilton, Philip Leong, and Wayne Luk\.
+[46] Joydip Das, Andrew Lam, Steven J\.E\. Wilton, Philip Leong, and Wayne Luk\.
 An analytical model relating FPGA architecture to logic density and depth\.
 *IEEE Transactions on VLSI Systems*, 9\(12\):2229–2242, 2011\.
 URL: [anyl\_tvlsi11\.pdf](anyl_tvlsi11.pdf)\.  
-[46] Yuet Ming Lam, J\. Coutinho, Chun Hok Ho, Wayne Luk, and Philip H\.W\. Leong\.
+[47] Yuet Ming Lam, J\. Coutinho, Chun Hok Ho, Wayne Luk, and Philip H\.W\. Leong\.
 Multi\-loop parallelisation using unrolling and fission\.
 *International Journal of Reconfigurable Computing*, 2010\.
 Article ID 475620\.
 URL: [mloop\_ijrc10\.pdf](mloop_ijrc10.pdf)\.  
-[47] Chun Hok Ho, Chi Wai Yu, Philip Leong, Wayne Luk, and Steven J\.E\. Wilton\.
+[48] Chun Hok Ho, Chi Wai Yu, Philip Leong, Wayne Luk, and Steven J\.E\. Wilton\.
 Floating point FPGA: architecture and modelling\.
 *IEEE Transactions on VLSI Systems*, 17\(12\):1709–1719, 2009\.
 \\textbf In the top 25 downloaded manuscripts of the IEEE TVLSI journal, 2009 \(http://tvlsi\.egr\.duke\.edu/top25\_2009\.htm\)\.
 URL: [fpfpga\_tvlsi09\.pdf](fpfpga_tvlsi09.pdf)\.  
-[48] Chi Wai Yu, Julien Lamoureux, Steve Wilton, Philip Leong, and Wayne Luk\.
+[49] Chi Wai Yu, Julien Lamoureux, Steve Wilton, Philip Leong, and Wayne Luk\.
 The coarse\-grained / fine\-grained logic interface in FPGAs with embedded floating\-point arithmetic units\.
 *International Journal of Reconfigurable Computing*, 2008\.
 Article ID 736203\.
 URL: [swhw\_ijrc08\.pdf](swhw_ijrc08.pdf)\.  
-[49] Steve J\.E\. Wilton, C\.H\. Ho, Brad Quinton, P\.H\.W\. Leong, and Wayne Luk\.
+[50] Steve J\.E\. Wilton, C\.H\. Ho, Brad Quinton, P\.H\.W\. Leong, and Wayne Luk\.
 A synthesizable datapath\-oriented embedded FPGA fabric for silicon debug applications\.
 *ACM Transactions on Reconfigurable Technology and Systems*, 1\(1\):7:1&ndash;7:25, March 2008\.
 URL: [debug\_trets08\.pdf](debug_trets08.pdf)\.  
-[50] Brian M\. H\. Li and Philip H\. W\. Leong\.
+[51] Brian M\. H\. Li and Philip H\. W\. Leong\.
 Serial and parallel FPGA\-based variable block size motion estimation processors\.
 *Journal of VLSI Signal Processing*, 51\(1\):77–98, 2008\.
 Special issue of selected FPT06 papers\.
 URL: [me\_jvlsisp08\.pdf](me_jvlsisp08.pdf)\.  
-[51] David B\. Thomas, Wayne Luk, Philip H\.W\. Leong, and John D\. Villasenor\.
+[52] David B\. Thomas, Wayne Luk, Philip H\.W\. Leong, and John D\. Villasenor\.
 Gaussian random number generators\.
 *ACM Computing Surveys*, 39\(4\):11:1–11:38, 2007\.
 URL: [grng\_acmcs07\.pdf](grng_acmcs07.pdf)\.  
-[52] Mandy L\. Y\. Sin, Gary C\. T\. Chow, Gary M\. K\. Wong, Wen J\. Li, Philip H\. W\. Leong, and Ka Wai Wong\.
+[53] Mandy L\. Y\. Sin, Gary C\. T\. Chow, Gary M\. K\. Wong, Wen J\. Li, Philip H\. W\. Leong, and Ka Wai Wong\.
 Ultra\-low\-power alcohol vapor sensors using chemically functionalized multi\-walled carbon nanotubes\.
 *IEEE Transactions on Nanotechnology*, 6\(5\):571–577, September 2007\.
 URL: [alcoholcnt\_tnano07\.pdf](alcoholcnt_tnano07.pdf)\.  
-[53] K\.H\. Tsoi, Ka Ho Leung, and Philip H\.W\. Leong\.
+[54] K\.H\. Tsoi, Ka Ho Leung, and Philip H\.W\. Leong\.
 A high performance physical random number generator\.
 *IEE Proc\. Computers &amp; Digital Techniques*, 1\(4\):349–352, July 2007\.
 URL: [prng\_cdt07\.pdf](prng_cdt07.pdf)\.  
-[54] Steve C\.L\. Yuen, Johnny M\.H\. Lee, Wen J\. Li, and Philip H\.W\. Leong\.
+[55] Steve C\.L\. Yuen, Johnny M\.H\. Lee, Wen J\. Li, and Philip H\.W\. Leong\.
 An AA\-sized micro power generator and its application to a wireless sensor system\.
 *IEEE Pervasive Computing*, 6\(1\):64–72, March 2006\.
 URL: [mpg\_pervasive06\.pdf](mpg_pervasive06.pdf)\.  
-[55] D\. Lee, J\.D\. Villasenor, W\. Luk, and P\.H\.W\. Leong\.
+[56] D\. Lee, J\.D\. Villasenor, W\. Luk, and P\.H\.W\. Leong\.
 A hardware Gaussian noise generator using the Box\-Muller method and its error analysis\.
 *IEEE Transactions on Computers*, 55\(6\):659–671, June 2006\.
 URL: [bm\_tc06\.pdf](bm_tc06.pdf)\.  
-[56] M\.P\. Leong, C\.C\. Cheung, C\.W\. Cheung, P\.P\.M\. Wan, K\.H\. Leung, W\.M\.M\. Yeung, W\.S\. Yuen, K\.S\.K\. Chow, K\.S\. Leung, and P\.H\.W\. Leong\.
+[57] M\.P\. Leong, C\.C\. Cheung, C\.W\. Cheung, P\.P\.M\. Wan, K\.H\. Leung, W\.M\.M\. Yeung, W\.S\. Yuen, K\.S\.K\. Chow, K\.S\. Leung, and P\.H\.W\. Leong\.
 A parallel library for financial engineering applications\.
 *IEEE Computer*, 38\(10\):70–77, October 2005\.
 URL: [cpe\_computer05\.pdf](cpe_computer05.pdf)\.  
-[57] Dong\-U Lee, Wayne Luk, John D\. Villasenor, Guanglie Zhang, and Philip H\.W\. Leong\.
+[58] Dong\-U Lee, Wayne Luk, John D\. Villasenor, Guanglie Zhang, and Philip H\.W\. Leong\.
 A hardware Gaussian noise generator using the Wallace method\.
 *IEEE Transactions on VLSI Systems*, 13\(8\):911–920, August 2005\.
 URL: [wallace\_tvlsi05\.pdf](wallace_tvlsi05.pdf)\.  
-[58] Philip H\.W\. Leong, Ganglie Zhang, Dong\-U Lee, Wayne Luk, and John D\. Villasenor\.
+[59] Philip H\.W\. Leong, Ganglie Zhang, Dong\-U Lee, Wayne Luk, and John D\. Villasenor\.
 A comment on the implementation of the Ziggurat method\.
 *Journal of Statistical Software*, 2005\.
 http://www\.jsatsoft\.org\.
 URL: [zig\_jss05\.pdf](zig_jss05.pdf)\.  
-[59] M\.P\. Leong, C\.T\. Jin, and P\.H\.W\. Leong\.
+[60] M\.P\. Leong, C\.T\. Jin, and P\.H\.W\. Leong\.
 An FPGA–based electronic cochlea\.
 *EURASIP Journal on Applied Signal Processing*, 2003\(7\):629–638, 2003\.
 Special issue on neuromorphic signal processing and implementations\.
 URL: [ec\_asp03\.pdf](ec_asp03.pdf)\.  
-[60] M\.P\. Leong and P\.H\.W\. Leong\.
+[61] M\.P\. Leong and P\.H\.W\. Leong\.
 A variable\-radix digit\-serial design methodology and its application to the discrete cosine transform\.
 *IEEE Transactions on VLSI Systems*, 11\(1\):90–104, 2003\.
 URL: [dct\_tvlsi02\.pdf](dct_tvlsi02.pdf)\.  
-[61] P\.H\.W\. Leong and K\.H\. Leung\.
+[62] P\.H\.W\. Leong and K\.H\. Leung\.
 A microcoded elliptic curve processor using FPGA technology\.
 *IEEE Transactions on VLSI Systems*, 10\(5\):550–559, 2002\.
 URL: [ecc\_tvlsi02\.pdf](ecc_tvlsi02.pdf)\.  
-[62] Neil N\. H\. Ching, H\. Y\. Wong, Wen J\. Li, Philip H\. W\. Leong, and Zhiyu Wen\.
+[63] Neil N\. H\. Ching, H\. Y\. Wong, Wen J\. Li, Philip H\. W\. Leong, and Zhiyu Wen\.
 A laser\-micromachined multi\-modal resonating power transducer for wireless sensing systems\.
 *Sensors and Actuators A: Physical*, 97–98:685–690, 2002\.
 URL: [gen\_sa02\.pdf](gen_sa02.pdf)\.  
-[63] P\.H\.W\. Leong, C\.W\. Sham, W\.C\. Wong, H\.Y\. Wong, W\.S\. Yuen, and M\.P\. Leong\.
+[64] P\.H\.W\. Leong, C\.W\. Sham, W\.C\. Wong, H\.Y\. Wong, W\.S\. Yuen, and M\.P\. Leong\.
 A bitstream reconfigurable FPGA implementation of the WSAT algorithm\.
 *IEEE Transactions on VLSI Systems*, 9\(1\):197–201, 2001\.
 URL: [wsat\_tvlsi01\.pdf](wsat_tvlsi01.pdf)\.  
-[64] W\.J\. Li, G\.M\.H\. Chan, N\.N\.H\. Ching, P\.H\.W\. Leong, and H\.Y\. Wong\.
+[65] W\.J\. Li, G\.M\.H\. Chan, N\.N\.H\. Ching, P\.H\.W\. Leong, and H\.Y\. Wong\.
 Dynamical modeling and simulation of a laser\-micromachined vibration\-based micro power generator\.
 *International Journal of Nonlinear Sciences and Simulation*, 1:345–353, 2000\.  
-[65] W\. Chung, S\. Carlile, and P\. Leong\.
+[66] W\. Chung, S\. Carlile, and P\. Leong\.
 A performance adequate model for auditory localization\.
 *Journal of the Acoustical Society of America*, 107\(1\):432–445, 2000\.
 URL: [perf\_jasa00\.pdf](perf_jasa00.pdf)\.  
-[66] P\.H\.W\. Leong and C\.K\. Chung\.
+[67] P\.H\.W\. Leong and C\.K\. Chung\.
 FPGA based runtime configurable clause evaluator for SAT problems\.
 *IEE Electronics Letters*, 35\(19\):1618–1619, September 1999\.
 URL: [ce\_el99\.pdf](ce_el99.pdf)\.  
-[67] C\.T\. Jin, P\.L\. Rolandi, and P\.H\.W\. Leong\.
+[68] C\.T\. Jin, P\.L\. Rolandi, and P\.H\.W\. Leong\.
 Non–volatile programmable pulse computation cell\.
 *IEE Electronics Letters*, 35\(17\):1413–1414, August 1999\.
 URL: [ppg\_el99\.pdf](ppg_el99.pdf)\.  
-[68] P\. Leong and S\. Carlile\.
+[69] P\. Leong and S\. Carlile\.
 Methods for spherical data analysis and visualization\.
 *Journal of Neuroscience Methods*, 80\(2\):191–200, 1998\.
 source code available from \\url https://phwl\.github\.io/assets/papers/spak\_2\-1\.zip\.
 URL: [spak\_jnm98\.pdf](spak_jnm98.pdf)\.  
-[69] S\. Carlile, P\. Leong, S\. Hyams, and D\. Pralong\.
+[70] S\. Carlile, P\. Leong, S\. Hyams, and D\. Pralong\.
 The nature and distribution of errors in the localization of sounds in humans\.
 *Hearing Research*, 114:179–196, 1997\.
 URL: [errors\_hr97\.pdf](errors_hr97.pdf)\.  
-[70] P\. H\. W\. Leong and M\.A\. Jabri\.
+[71] P\. H\. W\. Leong and M\.A\. Jabri\.
 A low power VLSI arrhythmia classifier\.
 *IEEE Transactions on Neural Networks*, 6\(6\):1435–1445, November 1995\.
 URL: [matic\_tnn95\.pdf](matic_tnn95.pdf)\.  
-[71] P\.H\.W\. Leong and M\.A\. Jabri\.
+[72] P\.H\.W\. Leong and M\.A\. Jabri\.
 Kakadu \- a low power analogue neural network classifier\.
 *International Journal of Neural Systems*, pages 381–394, December 1993\.  
-[72] M\. Jabri, S\. Pickard, P\. Leong, and Y\. Xie\.
+[73] M\. Jabri, S\. Pickard, P\. Leong, and Y\. Xie\.
 Algorithms and implementation issues in analog low power learning neural network chips\.
 *International Journal on VLSI Signal Processing*, 6\(2\):67–76, March 1993\.  
-[73] P\.H\.W\. Leong and M\. Jabri\.
+[74] P\.H\.W\. Leong and M\. Jabri\.
 Matic \- an intracardiac tachycardia classification system\.
 *Pacing and Clinical Electrophysiology \(PACE\)*, 15:1317–1331, September 1992\.  
 
