@@ -92,7 +92,10 @@ This tests the ELEC3607 base image.
 Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is "C:\Users\XX", you should now be able to run ```docker run -it -v /cygdrive/c/Users/XX:/mnt -it phwl/elec3607-base:latest``` from within a MobaXterm terminal (note the position of the quotes).
+ * (Windows) If your home directory is "C:\Users\XX", you should now be able to run 
+```docker run -it -v /cygdrive/c/Users/XX:/mnt -it phwl/elec3607-base:latest``` 
+(if that doesn't work try ```docker run -it -v /c/Users/XX:/mnt -it phwl/elec3607-base:latest```)
+from within a MobaXterm terminal (note the position of the quotes).
  * (MacOS x86 and M1) You should now be able to do ```docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3607-base:latest```.
 
 If everything works, the ```#``` prompt should appear and ```ls /mnt``` should show your local home directory.
