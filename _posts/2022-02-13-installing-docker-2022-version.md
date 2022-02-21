@@ -92,7 +92,7 @@ This tests the ELEC3607 base image.
 Make sure you have set up your X Server and can execute the
 previous Xeyes example.
 
- * (Windows) If your home directory is "C:\Users\XX YY", you should now be able to run ```docker run -it -v C:\Users\"XX YY":/mnt -it phwl/elec3607-base:latest``` from within a MobaXterm terminal (note the position of the quotes).
+ * (Windows) If your home directory is "C:\Users\XX", you should now be able to run ```docker run -it -v /cygdrive/c/Users/XX:/mnt -it phwl/elec3607-base:latest``` from within a MobaXterm terminal (note the position of the quotes).
  * (MacOS x86 and M1) You should now be able to do ```docker run --platform linux/amd64 -it -e DISPLAY=$DISPLAY -v $HOME:/mnt phwl/elec3607-base:latest```.
 
 If everything works, the ```#``` prompt should appear and ```ls /mnt``` should show your local home directory.
@@ -111,6 +111,7 @@ Within Docker, the directory on your local home directory will be mapped
 to ```/mnt```. Use this to access your files and store your outputs.
 
 ## 2.4 ELEC3608 Modelsim
+(NOT FOR ELEC3607)
 This tests the Docker image for Modelsim (the executable is called
 ```vsim```). Make sure you have set up your X Server and can execute the
 previous Xeyes example.
