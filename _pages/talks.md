@@ -11,13 +11,19 @@ classes: wide
 wordpress_id: 3312
 ---
 
-## 11 Oct 2021, School of Electrical and Information Engineering, The University of Sydney
+## 24 Feb 2022, Tutorial
+[FPGA-based Machine Learning for Communications Applications: A Tutorial](assets/talks/rfml-milcis22.pdf),
+Military Communication and Information Systems Conference and Expo, Canberra
+
+A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. Since their introduction in the 1980s, these devices have dramatically increased in capacity and functionality, with the recent Xilinx ZU48DR FPGA integrating a quad core ARM Cortex A-53, a dual core ARM Cortex-R5, 8x 14-bit, 10 GSPS digital-to-analog converters; 8x 14-bit, 5 GSPS analog-to-digital converters; 33 G transceivers and 930K system logic cells on a single device. FPGAs enable integration of entire communications systems on a single chip, with significant latency, size, weight, power and cost (LSWaP-C) advantages. This tutorial presentation first provides an overview of FPGA technology and then describes opportunities for their use in sophisticated applications in defence communications through the combination of software defined radio and machine learning technology. The opportunities for the development of secure, sovereign solutions based on this technological foundation will be explained and finally research from our group and others will be surveyed.
+
+## 11 Oct 2021, Lecture
 [Thesis Projects for 2022](assets/talks/projects-thesis21.pdf), 
 University of Sydney
 
 Undergraduate thesis projects for 2022.
 
-## 26 August 2021, Invited Lecture,
+## 26 August 2021, Invited Lecture
 [Low Precision Inference and Training for Deep Neural Networks](/assets/talks/lowprecision-croucher-asi21.pdf),
 Croucher Advanced Study Institute: [Frontiers of AI Accelerators: Technologies, Circuits and Applications](https://accessasi.hkust.edu.hk/program),
 online and at HKUST

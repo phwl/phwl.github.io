@@ -31,8 +31,13 @@ $ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/debian-installer/arm64/initrd.gz
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/debian-installer/arm64/linux
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/mini.iso
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -kernel ./linux -initrd ./initrd.gz -hda debian-3607-aarch64.qcow2 -append "console=ttyAMA0" -drive file=mini.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -net user,hostfwd=tcp::10022-:22 -net nic -nographic  
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -kernel ./linux -initrd ./initrd.gz -hda debian-3607-aarch64.qcow2 -append "console=ttyAMA0" -drive file=mini.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -nographic
 ```
+After booting you should see the Debian installer. Choose the appropriate 
+options and install the Linux distribution. Following that, you need to extract
+the Linux kernel and initrd from the qcow2 image.
+
+
 ```bash
 $ sudo apt install libguestfs-tools
 $ sudo chmod 644 /boot/vmlinuz-5.4.0-9* # or else virt-ls won't work

@@ -11,14 +11,14 @@ classes: wide
 
 # Journals
 
-[1] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip H\. W\. Leong, and Ivan Lee\.
+[1] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip Heng Wai Leong, and Ivan Lee\.
 On\-device saliency prediction based on pseudo knowledge distillation\.
-*IEEE Transactions on Industrial Informatics*, accepted 13 Feb 2022 2022\.
-URL: [sal\_tii22\.pdf](sal_tii22.pdf)\.  
+*IEEE Transactions on Industrial Informatics*, \(\):1&ndash;1, 2022\.
+URL: [sal\_tii22\.pdf](sal_tii22.pdf), [doi:10\.1109/TII\.2022\.3153365](https://doi.org/10.1109/TII.2022.3153365)\.  
 [2] Maolin Wang, Seyedramin Rasoulinezhad, Philip H\.W\. Leong, and Hayden K\.H\. So\.
 NITI: training integer neural networks using integer\-only arithmetic\.
-*IEEE Transactions on Parallel and Distributed Systems*, accepted 4 Feb 2022 2022\.
-URL: [niti\_tpds22\.pdf](niti_tpds22.pdf)\.  
+*IEEE Transactions on Parallel and Distributed Systems*, 2022\.
+URL: [niti\_tpds22\.pdf](niti_tpds22.pdf), [doi:10\.1109/TPDS\.2022\.3149787](https://doi.org/10.1109/TPDS.2022.3149787)\.  
 [3] Seyedramin Rasoulinezhad, Esther Roorda, Steve Wilton, Philip H\. W\. Leong, and David Boland\.
 Rethinking embedded blocks for machine learning applications\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, nov 2021\.
