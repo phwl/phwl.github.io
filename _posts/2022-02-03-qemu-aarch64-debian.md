@@ -19,7 +19,7 @@ I used Ubuntu 18.04.6 but any Debian/Ubuntu distribution should work with minor 
 
 # 1. Create QEMU Image
 
-## 1.1. For (64-bit) aarch64
+## 1.1. Install Debian
 I used the lastest version of [qemu](https://github.com/qemu/qemu) from github
 and created a 32G qcow2 image (there isn't any disk space advantage to specifying 16G but it is a pain if it runs out).
 
@@ -56,7 +56,19 @@ vmlinuz-5.10.0-10-arm64
 vmlinuz-5.10.0-11-arm64
 vmlinuz.old
 $ virt-copy-out -a debian-3607-aarch64.qcow2 /boot/vmlinuz-5.10.0-11-arm64 /boot/initrd.img-5.10.0-11-arm64 .
+```
 
+## 1.2. Run Debian
+To execute Debian, you need the following files:
+```
+initrd.img-5.10.0-11-arm64
+vmlinuz-5.10.0-11-arm64
+debian-3607-aarch64.qcow2
+```
+
+You can then boot the emulation with the following command line:
+
+```
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd -net user,hostfwd=tcp::10022-:22 -net nic -device intel-hda -device hda-duplex -nographic
 ```
 
