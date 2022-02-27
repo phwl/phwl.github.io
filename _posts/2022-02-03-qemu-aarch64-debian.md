@@ -71,7 +71,7 @@ debian-3607-aarch64.qcow2
 
 You can then boot the emulation with the following command line:
 
-```
+```bash
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 \
     -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
     -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
@@ -80,7 +80,7 @@ $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11
 ```
 
 You should now be able to log into the machine via ssh using the port specified in the qemu command line:
-```
+```bash
 $ ssh -Y elec3607@localhost -p 10022
 ```
 
