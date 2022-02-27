@@ -31,7 +31,10 @@ $ qemu-img create -f qcow2 debian-3607-aarch64.qcow2 32G
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/debian-installer/arm64/initrd.gz
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/debian-installer/arm64/linux
 $ wget http://ftp.au.debian.org/debian/dists/bullseye/main/installer-arm64/current/images/netboot/mini.iso
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -kernel ./linux -initrd ./initrd.gz -hda debian-3607-aarch64.qcow2 -append "console=ttyAMA0" -drive file=mini.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom -nographic
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -kernel ./linux -initrd ./initrd.gz \
+    -hda debian-3607-aarch64.qcow2 -append "console=ttyAMA0" \
+    -drive file=mini.iso,id=cdrom,if=none,media=cdrom \
+    -device virtio-scsi-device -device scsi-cd,drive=cdrom -nographic
 ```
 After booting you should see the Debian installer. Choose the appropriate 
 options and install the Linux distribution. Following that, you need to extract
@@ -69,7 +72,11 @@ debian-3607-aarch64.qcow2
 You can then boot the emulation with the following command line:
 
 ```
-$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd -net user,hostfwd=tcp::10022-:22 -net nic -device intel-hda -device hda-duplex -nographic
+$ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-11-arm64 \
+    -kernel vmlinuz-5.10.0-11-arm64 -append "root=/dev/vda2 console=ttyAMA0" \
+    -drive if=virtio,file=debian-3607-aarch64.qcow2,format=qcow2,id=hd \
+    -net user,hostfwd=tcp::10022-:22 -net nic \
+    -device intel-hda -device hda-duplex -nographic
 ```
 
 You should now be able to log into the machine via ssh using the port specified in the qemu command line:
