@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-03-01 11:30:00 AEST
+date: 2022-03-01 07:30:00 AEST
 title: Fixing rice cooker
 use_math: true
 classes: wide
