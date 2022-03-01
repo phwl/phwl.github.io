@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2022-03-01 07:30:00 AEST
-title: Fixing rice cooker
+title: Fixing rice cooker E1 error
 use_math: true
 classes: wide
 categories:
@@ -13,7 +13,7 @@ header:
   teaser: assets/images/2022/03/IMG_9303.jpeg
 ---
 
-This is a $20 rice cooker from Taobao which stopped working just when we had family over for dinner.
+This is a $20 rice cooker from Taobao which stopped working with an E1 error just when we had family over for dinner.
 
 {% include figure image_path="/assets/images/2022/03/IMG_9303.jpeg" caption="" %}
 
