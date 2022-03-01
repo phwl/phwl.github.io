@@ -23,7 +23,7 @@ Starting from the bottom (which was the wrong side).
 
 {% include figure image_path="/assets/images/2022/03/IMG_9308.jpeg" caption="" %}
 
-But pulled it all apart anyway.
+But pulled it all apart anyway. It's actually quite a tidy unit.
 
 {% include figure image_path="/assets/images/2022/03/IMG_9314.jpeg" caption="" %}
 
