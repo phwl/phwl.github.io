@@ -17,6 +17,12 @@ Military Communication and Information Systems Conference and Expo, Canberra
 
 A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. Since their introduction in the 1980s, these devices have dramatically increased in capacity and functionality, with the recent Xilinx ZU48DR FPGA integrating a quad core ARM Cortex A-53, a dual core ARM Cortex-R5, 8x 14-bit, 10 GSPS digital-to-analog converters; 8x 14-bit, 5 GSPS analog-to-digital converters; 33 G transceivers and 930K system logic cells on a single device. FPGAs enable integration of entire communications systems on a single chip, with significant latency, size, weight, power and cost (LSWaP-C) advantages. This tutorial presentation first provides an overview of FPGA technology and then describes opportunities for their use in sophisticated applications in defence communications through the combination of software defined radio and machine learning technology. The opportunities for the development of secure, sovereign solutions based on this technological foundation will be explained and finally research from our group and others will be surveyed.
 
+## 20 Jan 2022, Panel
+[Difference Between Computer Engineering, Software Engineering and Computer Science](assets/talks/cscese.pdf),
+University of Sydney Info Day.
+
+Explained the Association for Computing Machinery View of the difference between computing subdisciplines.
+
 ## 11 Oct 2021, Lecture
 [Thesis Projects for 2022](assets/talks/projects-thesis21.pdf), 
 University of Sydney
