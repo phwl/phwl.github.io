@@ -11,7 +11,7 @@ categories:
 tags:
 - linux
 header:
-  teaser: https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png
+  teaser: /assets/images/2022/03/win11.png
 ---
 
 I had not used the Windows Subsystem for Linux before as it didn't support 
