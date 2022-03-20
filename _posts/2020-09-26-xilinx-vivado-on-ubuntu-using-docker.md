@@ -11,7 +11,7 @@ tags:
 - software
 - ubuntu
 header:
-  teaser: https://logos-download.com/wp-content/uploads/2016/12/Xilinx_logo_logotype.png
+  teaser: /assets/images/2022/02/docker_logo.png
 ---
 
 Using Docker, installation of the Xilinx Vivado tools can be automated and

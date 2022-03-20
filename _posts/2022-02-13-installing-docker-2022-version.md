@@ -11,7 +11,7 @@ categories:
 tags:
 - windows
 header:
-  teaser: https://www.docker.com/blog/wp-content/uploads/2013/11/homepage-docker-logo.png
+  teaser: /assets/images/2022/02/docker_logo.png
 ---
 Here are installation instructions for installing Docker and running Modelsim for my [ELEC3607 Embedded Systems](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) 
 and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) courses.

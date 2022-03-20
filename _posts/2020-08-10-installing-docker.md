@@ -11,7 +11,7 @@ categories:
 tags:
 - windows
 header:
-  teaser: https://www.docker.com/blog/wp-content/uploads/2013/11/homepage-docker-logo.png
+  teaser: /assets/images/2022/02/docker_logo.png
 ---
 This post has been superseded by <https://phwl.org/2022/installing-docker-2022-version/>.
 
