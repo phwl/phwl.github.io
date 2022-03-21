@@ -90,7 +90,7 @@ and also transfer files to it using ```scp```.
 
 Since the way we execute ```qemu``` requires the vmlinuz and initrd files to run, when the kernel is updated, we need to extract them from the qcow2 image. The kernel was recently updated from 5.10.0-11 to 5.10.0-12.
 
-In step 1.1, we extracted them using ```virt-copy-out```, but once we have bootstrapped debian, it is easier to use ```scp```. After updating the kernel, you can do:
+In step 1.1, we extracted them using ```virt-copy-out```, but once we have bootstrapped debian, it is easier to use ```scp```. After updating the kernel using ```sudo apt upgrade```, you can copy the required files and execute as follows:
 ```bash
 $ scp -P 10022 elec3607@localhost:/boot/vmlinuz-5.10.0-12-arm64 elec3607@localhost:/boot/initrd.img-5.10.0-12-arm64 .
 $ qemu-system-aarch64 -M virt -cpu cortex-a53 -m 1G -initrd initrd.img-5.10.0-12-arm64 -kernel vmlinuz-5.10.0-12-arm64 -append "root=/dev/vda2 console=ttyAMA0" -drive if=virtio,file=debian-3607-aarch64-lab1.qcow2,format=qcow2,id=hd -net user,hostfwd=tcp::10022-:22 -net nic -device intel-hda -device hda-duplex -nographic
