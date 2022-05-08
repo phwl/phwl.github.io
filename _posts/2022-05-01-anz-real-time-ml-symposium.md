@@ -20,7 +20,7 @@ header:
 The goal of this symposium is to provide a forum for the discussion of opportunities for collaboration between industry and academia in real-time machine learning in the Australian/New Zealand (ANZ) region. Topics include both training and inference using CPU/GPU and FPGA technology. Attendance can be either physical (subject to COVID-19 restrictions) or virtual.
 
 1. Panel Session (1400-1445)
-A panel session discussion how industry and academia can 
+A panel discussion regarding how industry and academia can 
 foster stronger collaborations in the ANZ region.
 * Prof. Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
 
@@ -28,6 +28,7 @@ foster stronger collaborations in the ANZ region.
 Coffee will be provided
 
 3. Invited Presentations (1500-1545)
+* Dr Joe Peng, Regional Sales Manager AMD
 * TBA
 
 4. Afternoon Tea (1545-1615)
