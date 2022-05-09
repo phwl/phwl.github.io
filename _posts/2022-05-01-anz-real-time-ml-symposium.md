@@ -36,5 +36,5 @@ Coffee will be provided
 4. Afternoon Tea (1545-1615)
 
 5. Industry Presentations (1615-1700)
-Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning. Joe, please start inviting companies.
+Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning. 
 * Dr Barry Flower, CEO CruxML Pty Ltd
