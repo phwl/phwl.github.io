@@ -23,16 +23,18 @@ The goal of this symposium is to provide a forum for the discussion of opportuni
 A panel discussion regarding how industry and academia can 
 foster stronger collaborations in the ANZ region.
 * Prof. Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
+* Dr Brett Biddington, Principal Biddington Research Pty Ltd
 
 2. Break (1445-1500)
 Coffee will be provided
 
 3. Invited Presentations (1500-1545)
 * Dr Joe Peng, Regional Sales Manager AMD
+* Dr Andrew Barton, Research Program Manager, SmartSat CRC
 * TBA
 
 4. Afternoon Tea (1545-1615)
 
 5. Industry Presentations (1615-1700)
 Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning. Joe, please start inviting companies.
-* Dr Barry Flower, CruxML Pty Ltd
+* Dr Barry Flower, CEO CruxML Pty Ltd
