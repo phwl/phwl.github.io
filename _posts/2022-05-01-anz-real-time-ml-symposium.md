@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-03-13 09:30:00 AEST
+date: 2022-05-01 09:30:00 AEST
 title: Australia and New Zealand Real-Time Machine Learning Symposium
 use_math: true
 toc: true
