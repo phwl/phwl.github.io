@@ -14,11 +14,12 @@ header:
   teaser: https://logosave.com/images/large/18/AMD-1-2-3-logo.gif
 ---
 
-# ANZ Real-time ML Symposium, 10th June 2022 (2-5pm)
+# ANZ Real-time ML & HPC Symposium, 10th June 2022 (2-5pm)
 [The Quantum Terminal](https://thequantumterminal.com/#thelocation), 1 Eddy Avenue, Haymarket 2000 (and via Zoom)
 
 The goal of this symposium is to provide a forum for the discussion of opportunities for collaboration between industry and academia in real-time machine learning in the Australian/New Zealand (ANZ) region. Topics include both training and inference using CPU/GPU and FPGA technology. Attendance can be either physical (subject to COVID-19 restrictions) or virtual.
 
+## Preliminary Program
 1. Panel Session (1400-1445)
 A panel discussion regarding how industry and academia can 
 foster stronger collaborations in the ANZ region.
@@ -36,5 +37,5 @@ Coffee will be provided
 4. Afternoon Tea (1545-1615)
 
 5. Industry Presentations (1615-1700)
-Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning. 
+Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning.
 * Dr Barry Flower, CEO CruxML Pty Ltd
