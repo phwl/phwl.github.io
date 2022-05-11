@@ -24,6 +24,7 @@ The goal of this symposium is to provide a forum for the discussion of opportuni
 A panel discussion regarding how industry and academia can 
 foster stronger collaborations in the ANZ region.
 * Prof. Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
+* Prof Ben Thornber, Associate Dean Research, The University of Sydney
 * Dr Brett Biddington, Principal Biddington Research Pty Ltd
 
 2. Break (1445-1500)
