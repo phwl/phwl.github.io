@@ -40,3 +40,5 @@ Coffee will be provided
 5. Industry Presentations (1615-1700)
 Companies give 5 minute presentation on their successes and challenges in FPGA-based machine learning.
 * Dr Barry Flower, CEO CruxML Pty Ltd
+* Sean Clift Director, Silicon Design Engineering, AMD Radeon Technologies Group
+
