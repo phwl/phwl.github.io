@@ -17,7 +17,7 @@ header:
 # ANZ Real-time ML & HPC Symposium, 10th June 2022 (2-5pm)
 [The Quantum Terminal](https://thequantumterminal.com/#thelocation), 1 Eddy Avenue, Haymarket 2000 (and via Zoom)
 
-The goal of this symposium is to provide a forum for the discussion of opportunities for collaboration between industry and academia in real-time machine learning in the Australian/New Zealand (ANZ) region. Topics include both training and inference using CPU/GPU and FPGA technology. Attendance can be either physical (subject to COVID-19 restrictions) or virtual.
+The goal of this symposium is to provide a forum for the discussion of opportunities for collaboration between industry and academia in real-time machine learning (ML) and high performance computing (HPC) in the Australian/New Zealand (ANZ) region. Topics include both training and inference using CPU/GPU and FPGA technology. Attendance can be either physical (subject to COVID-19 restrictions) or virtual.
 
 ## Preliminary Program
 1. Panel Session (1400-1445)
