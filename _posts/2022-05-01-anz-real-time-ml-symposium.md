@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2022-05-01 09:30:00 AEST
-title: Australia and New Zealand Real-Time Machine Learning Symposium
+title: Australia and New Zealand Real-time ML & HPC Symposium
 use_math: true
 toc: true
 classes: wide
@@ -19,6 +19,8 @@ header:
 
 The goal of this symposium is to provide a forum for the discussion of opportunities for collaboration between industry and academia in real-time machine learning (ML) and high performance computing (HPC) in the Australian/New Zealand (ANZ) region. Topics include both training and inference using CPU/GPU and FPGA technology. Attendance can be either physical (subject to COVID-19 restrictions) or virtual.
 
+Please register [here](https://www.eventbrite.com.au/e/anz-real-time-ml-hpc-symposium-and-network-2022-registration-339741605287).
+
 ## Preliminary Program
 1. Panel Session (1400-1445)
 A panel discussion regarding how industry and academia can 
@@ -26,6 +28,7 @@ foster stronger collaborations in the ANZ region.
 * Prof. Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
 * Prof Julie Cairney, Pro-Vice-Chancellor (Research - Enterprise and Engagement), The University of Sydney
 * Dr Brett Biddington, Principal Biddington Research Pty Ltd
+* Sean Clift, Director Silicon Design Engineering, AMD Radeon Technologies Group
 
 2. Break (1445-1500)
 Coffee will be provided
