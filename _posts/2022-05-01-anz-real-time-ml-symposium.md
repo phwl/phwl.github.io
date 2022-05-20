@@ -31,9 +31,9 @@ foster stronger collaborations in the ANZ region.
 Coffee will be provided
 
 3. Invited Presentations (1500-1545)
+* Prof Fang Chen, Executive Director UTS Data Sci and Distinguished Professor, University of Technology Sydney
 * Dr Joe Peng, Regional Sales Manager AMD
 * Dr Andrew Barton, Research Program Manager, SmartSat CRC
-* TBA
 
 4. Afternoon Tea (1545-1615)
 
