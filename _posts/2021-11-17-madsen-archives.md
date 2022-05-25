@@ -48,6 +48,7 @@ A collection of historical records on Sir John Percival Vissing Madsen (1879-196
  1. [EHA Centenary.PDF](/assets/images/2021/11/Madsen27. EHA Centenary.pdf)
  1. [JINDALEE OVER THE HORIZON RADAR.pdf](/assets/images/2021/11/Madsen28. JINDALEE OVER THE HORIZON RADAR.pdf)
  1. [Medal Collection.pdf](/assets/images/2021/11/Madsen30. Medal Collection.pdf)
+ 1. [MADSEN NEW ZEALAND PRESS ARTICLES 1920-1960.pdf](/assets/images/2022/05/MADSEN NEW ZEALAND PRESS ARTICLES 1920-1960.pdf)
 
 # Links
   * [CSIROpedia](https://csiropedia.csiro.au/john-madsen/)
