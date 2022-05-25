@@ -25,10 +25,11 @@ Please register [here](https://www.eventbrite.com.au/e/anz-real-time-ml-hpc-symp
 1. Panel Session (1400-1445)
 A panel discussion regarding how industry and academia can 
 foster stronger collaborations in the ANZ region.
-* Prof. Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
+* Prof Hugh Durrant-Whyte, NSW Chief Scientist and Engineer
 * Prof Julie Cairney, Pro-Vice-Chancellor (Research - Enterprise and Engagement), The University of Sydney
 * Dr Brett Biddington, Principal Biddington Research Pty Ltd
 * Sean Clift, Director Silicon Design Engineering, AMD Radeon Technologies Group
+* Prof Ben Eggleton, co-Director, NSW Smart Sensing Network (NSSN)
 
 2. Break (1445-1500)
 Coffee will be provided
@@ -36,7 +37,7 @@ Coffee will be provided
 3. Invited Presentations (1500-1545)
 * Dr Joe Peng, Regional Sales Manager AMD
 * Dr Andrew Barton, Research Program Manager, SmartSat CRC
-* TBA
+* Prof Fang Chen, Executive Director UTS Data Sci and Distinguished Professor, University of Technology Sydney
 
 4. Afternoon Tea (1545-1615)
 
