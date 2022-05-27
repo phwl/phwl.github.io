@@ -15,4 +15,3 @@ header:
 ---
 
 {% include figure image_path="/assets/images/2022/05/IMG_9808.jpg" caption="" %}
-
