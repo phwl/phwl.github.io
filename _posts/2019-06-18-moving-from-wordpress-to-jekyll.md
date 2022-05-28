@@ -164,6 +164,8 @@ brew install chruby
 ruby-install 3.1
 source ~/.zshrc
 chruby 3.1.2
+gem install jekyll
+brew install npm
 ```
 
 ## Links
