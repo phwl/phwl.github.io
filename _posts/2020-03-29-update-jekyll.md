@@ -116,3 +116,23 @@ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 gem install jekyll
 bundle update
 ```
+
+# M1 Mac 28/5/2022
+On the M1 mac I had problems with ruby. These were solved by following instructions at <https://www.joshholtz.com/blog/2021/10/27/joshs-m1-development-environemnt.html>:
+```bash
+$ brew install ruby-install
+$ brew install chruby
+# put stuff in path in ~/.zshrc that chruby instructions tell you to
+$ ruby-install 3.1
+$ source ~/.zshrc
+$ chruby 3.1.2
+$ gem install jekyll
+$ brew install npm
+```
+
+To update 
+```zsh
+$ npx npm-check-updates -u
+$ npm install
+```
+
