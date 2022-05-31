@@ -23,6 +23,7 @@ Here is a collection of amateur radio links.
 1. L.B. Cebik W4RNL (SK) documents <http://on5au.be/Cebik%20documents.html>
 1. Half-Wave Flowerpot Antenna VK2ZOI <https://vk2zoi.com/articles/half-wave-flower-pot/>
 1. Steve G3TXQ - Coax Common Mode Chokes <http://www.karinya.net/g3txq/chokes/>
+1. Martin G8JNJ - DIY antenna stuff <https://g8jnj.net/>
 
 ## Electronics
 ### Calculators
