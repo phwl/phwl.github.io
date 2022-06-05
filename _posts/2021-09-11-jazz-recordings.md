@@ -22,6 +22,10 @@ A short list of great jazz muscians and recordings, mostly standards.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/10QOOvxw0uA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+* Waltz for Debbie
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dH3GSrCmzC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 * A good discogrgphy <https://www.udiscovermusic.com/stories/best-bill-evans-songs/>
 
 # Dizzy Gillespie
