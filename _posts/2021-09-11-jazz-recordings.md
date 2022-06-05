@@ -121,3 +121,33 @@ Joshua 50:47
 
 * Autumn Leaves
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jJHfLyrTThs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Laufey
+
+* The Nearness of You
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4J8xvzjb_MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* There will never be another you
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KVmkRUEM1x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0Rdu1S6UJBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* These foolish things
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0PXZNJVPEew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Misty
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6fVNY-BouZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Jazz Is Everywhere
+
+* <https://www.youtube.com/c/jazziseverywhere/videos> 
+
+* Summertime (lots of different renditions)
+ 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y5G-6MNaRaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Haruki Murakami (music from his books)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OUqrCknPTn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XPKpOBGsoOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
