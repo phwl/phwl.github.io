@@ -14,7 +14,7 @@ header:
   teaser: https://logosave.com/images/large/18/AMD-1-2-3-logo.gif
 ---
 
-# ANZ Real-time ML & HPC Symposium and Network 2022, 10th June 2022 (2-5pm)
+# ANZ Real-time ML & HPC Symposium 2022, 10th June 2022 (2-5pm)
 Location: The Quantum Terminal, [Central Station Grand Concourse Light Rail Stop (L1)](https://nswtrains.fandom.com/wiki/Central_Grand_Concourse_Light_Rail_station), Sydney.
 
 * The symposium is hosted by The University of Sydney (USYD) and the University of Technology, Sydney (UTS) through the Digital Central Initiative, and by AMD.
