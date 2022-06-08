@@ -15,7 +15,7 @@ header:
 ---
 
 # ANZ Real-time ML & HPC Symposium and Network 2022, 10th June 2022 (2-5pm)
-[The Quantum Terminal](https://thequantumterminal.com/#thelocation), 1 Eddy Avenue, Haymarket 2000 
+Location: The Quantum Terminal, [Central Station Grand Concourse Light Rail Stop (L1)](https://nswtrains.fandom.com/wiki/Central_Grand_Concourse_Light_Rail_station), Sydney.
 
 * The symposium is hosted by The University of Sydney (USYD) and the University of Technology, Sydney (UTS) through the Digital Central Initiative, and by AMD.
 
@@ -24,9 +24,6 @@ header:
 * Topics include real-time machine learning (ML) and high performance computing (HPC) using AMD CPU/GPU and FPGA technology.
 
 * Attendees will see real-time machine learning demos from AMD.
-
-
-Location: The Quantum Terminal, [Central Station Grand Concourse Light Rail Stop (L1)](https://nswtrains.fandom.com/wiki/Central_Grand_Concourse_Light_Rail_station), Sydney.
 
 Please register [here](https://www.eventbrite.com.au/e/anz-real-time-ml-hpc-symposium-and-network-2022-registration-339741605287)
 and arrive at 1.45pm for a 2pm start.
