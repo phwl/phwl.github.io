@@ -11,18 +11,18 @@ classes: wide
 
 # Journals
 
-[1] Maolin Wang, Seyedramin Rasoulinezhad, Philip H\. W\. Leong, and Hayden K\.\-H\. So\.
+[1] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip H\. W\. Leong, and Ivan Lee\.
+On\-device saliency prediction based on pseudoknowledge distillation\.
+*IEEE Transactions on Industrial Informatics*, 18\(9\):6317&ndash;6325, 2022\.
+URL: [sal\_tii22\.pdf](sal_tii22.pdf), [doi:10\.1109/TII\.2022\.3153365](https://doi.org/10.1109/TII.2022.3153365)\.  
+[2] Maolin Wang, Seyedramin Rasoulinezhad, Philip H\. W\. Leong, and Hayden K\.\-H\. So\.
 Niti: training integer neural networks using integer\-only arithmetic\.
 *IEEE Transactions on Parallel and Distributed Systems*, 33\(11\):3249&ndash;3261, 2022\.
 URL: [niti\_tpds22\.pdf](niti_tpds22.pdf), [doi:10\.1109/TPDS\.2022\.3149787](https://doi.org/10.1109/TPDS.2022.3149787)\.  
-[2] Esther Roorda, Seyedramin Rasoulinezhad, Philip H\. W\. Leong, and Steven J\. E\. Wilton\.
+[3] Esther Roorda, Seyedramin Rasoulinezhad, Philip H\. W\. Leong, and Steven J\. E\. Wilton\.
 Fpga architecture exploration for dnn acceleration\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, may 2022\.
 URL: [explore\_trets22\.pdf](explore_trets22.pdf), [doi:10\.1145/3503465](https://doi.org/10.1145/3503465)\.  
-[3] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip Heng Wai Leong, and Ivan Lee\.
-On\-device saliency prediction based on pseudo knowledge distillation\.
-*IEEE Transactions on Industrial Informatics*, \(\):1&ndash;1, 2022\.
-URL: [sal\_tii22\.pdf](sal_tii22.pdf), [doi:10\.1109/TII\.2022\.3153365](https://doi.org/10.1109/TII.2022.3153365)\.  
 [4] Seyedramin Rasoulinezhad, Esther Roorda, Steve Wilton, Philip H\. W\. Leong, and David Boland\.
 Rethinking embedded blocks for machine learning applications\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, nov 2021\.
