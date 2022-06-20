@@ -14,11 +14,14 @@ header:
   teaser: /assets/images/2022/06/IMG_2106.jpeg
 ---
 
-Wife returned home with the Corolla sputtering on 3 cylinders
-and down on power. She was concerned we'd need a new car!!
+Wife returned home with the Corolla's Check Engine light blinking,
+the car sputtering on 3 cylinders and down on power. She was concerned
+we'd need a new car!!
 
 The engine temperature was ok so didn't seem serious.
-The OBD scanner reveals that cylinder 3 was misfiring. 
+The OBD scanner reveals that cylinder 3 was misfiring
+(Pending DTC means its waiting for a number of these
+"Diagnostic Trouble Codes" before turning on the Check Engine light). 
 {% include figure image_path="/assets/images/2022/06/d8ad760f-645d-4402-9d53-246c0972be7b.jpeg" caption="" %}
 
 Since the spark plugs were changed a couple of years ago (and this
