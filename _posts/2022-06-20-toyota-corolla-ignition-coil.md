@@ -26,7 +26,7 @@ The OBD scanner reveals that cylinder 3 was misfiring
 
 Since the spark plugs were changed a couple of years ago (and this
 is a low-mileage car), suspected the problem was the ignition coil.
-Our Corolla uses a Denso 099700-2500 coil but it seemed that few
+Our Corolla uses a Denso C9496 (099700-2500) coil but it seemed that few
 were available in Sydney. Of course, this was on a Sunday night so 
 couldn't call any of the shops.
 
