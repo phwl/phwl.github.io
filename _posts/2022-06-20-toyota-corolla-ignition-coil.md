@@ -60,3 +60,7 @@ original.
 {% include figure image_path="/assets/images/2022/06/IMG_2106.jpeg" caption="" %}
 
 Car is now running smoothly again and back to normal power.
+
+Ended up changing all 4 as the others are probably close to end of life.
+{% include figure image_path="/assets/images/2022/06/IMG_2108.jpeg" caption="" %}
+
