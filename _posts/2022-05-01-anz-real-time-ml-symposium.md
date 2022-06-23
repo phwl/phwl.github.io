@@ -18,6 +18,8 @@ header:
 Location: The Quantum Terminal, [Central Station Grand Concourse Light Rail Stop (L1)](https://nswtrains.fandom.com/wiki/Central_Grand_Concourse_Light_Rail_station), Sydney.
 
 {% include figure image_path="/assets/images/2022/05/IMG_1100.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2022/05/IMG_7902.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2022/05/IMG_7912.jpeg" caption="" %}
 
 * The symposium is hosted by The University of Sydney (USYD) and the University of Technology, Sydney (UTS) through the Digital Central Initiative, and by AMD.
 
