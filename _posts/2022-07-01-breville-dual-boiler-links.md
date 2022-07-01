@@ -16,7 +16,14 @@ header:
 
 Here are some links to information on the Breville Dual Boiler.
 
-# Mods
-* <https://www.home-barista.com/espresso-machines/breville-dual-boiler-five-years-on-t45361.html>
-* <https://www.home-barista.com/espresso-machines/breville-dual-boiler-mods-and-maintenance-t61421.html>
-* <https://www.ifixit.com/Device/Breville_Dual_Boiler_BES900_-_BES900XL>
+# Patent
+* [Original patent](https://patents.google.com/patent/WO2012151629A1)
+
+# Repair and Mods
+* [Breville Dual Boiler Five Years  On](https://www.home-barista.com/espresso-machines/breville-dual-boiler-five-years-on-t45361.html)
+* [Breville Dual Boiler Mods and Maintenance](https://www.home-barista.com/espresso-machines/breville-dual-boiler-mods-and-maintenance-t61421.html)
+* [ifixit Breville Dual Boiler BES900-BES900XL](https://www.ifixit.com/Device/Breville_Dual_Boiler_BES900_-_BES900XL)
+* [BDB Slayer mod](https://qporzk.github.io/BDB-Slayer)
+
+# Grinder
+* [BCG820 Smart Grinder Pro Exploded Diagram and Parts List](https://coffeepartswarehouse.com.au/breville-coffee-grinders-bcg820-c-64928_68645_118826.html)
