@@ -14,7 +14,8 @@ header:
   teaser: /assets/images/2022/07/IMG_9971.jpeg
 ---
 
-Here are some links to information on the Breville Dual Boiler.
+Here are some links to information on the Breville Dual Boiler. Ours is
+the BCG820BSS grinder and BES920 espresso machine.
 
 # Patent
 * [Original patent](https://patents.google.com/patent/WO2012151629A1)
