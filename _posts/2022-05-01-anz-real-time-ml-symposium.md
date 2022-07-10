@@ -13,6 +13,7 @@ tags:
 header:
   teaser: https://logosave.com/images/large/18/AMD-1-2-3-logo.gif
 ---
+Organised a [symposium](https://www.sydney.edu.au/engineering/news-and-events/2022/07/06/collaboration-to-fast-track-machine-learning--high-performance-c.html) at the Quantum Terminal.
 
 # ANZ Real-time ML & HPC Symposium 2022, 10th June 2022 (2-5pm)
 Location: The Quantum Terminal, [Central Station Grand Concourse Light Rail Stop (L1)](https://nswtrains.fandom.com/wiki/Central_Grand_Concourse_Light_Rail_station), Sydney.
