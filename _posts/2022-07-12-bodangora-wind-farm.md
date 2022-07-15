@@ -13,11 +13,12 @@ tags:
 header:
   teaser: /assets/images/2022/07/DSCF6902.jpeg
 ---
-Visited the [Bodangora Wind Farm](https://www.infigenenergy.com/our-assets/owned-renewable-energy-assets/bodangora/), owned by Iberdrola Australia ([wikipedia entry here](https://en.wikipedia.org/wiki/Bodangora_Wind_Farm).  It is located near Dubbo.
+Visited the [Bodangora Wind Farm](https://www.infigenenergy.com/our-assets/owned-renewable-energy-assets/bodangora/), owned by Iberdrola Australia ([wikipedia entry here](https://en.wikipedia.org/wiki/Bodangora_Wind_Farm).  It is located near Dubbo, has 33 turbines and capacity of 113.2 MW.
 
 {% include figure image_path="/assets/images/2022/07/18D48D36-E862-4CF7-9213-83F613900DF4-75657-00001C33563FB389.jpeg" caption="" %}
 
-This is the control room where we were briefed by Michael, the site manager.
+This is the control room where we were briefed by Michael, the site manager. There was little wind that day so conditions were perfect for visiting (but not electricty generation).
+
 {% include figure image_path="/assets/images/2022/07/DSCF6871.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/07/IMG_2111.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/07/IMG_2113.jpeg" caption="" %}
@@ -43,7 +44,7 @@ Obigatory group photos.
 {% include figure image_path="/assets/images/2022/07/DSCF6890.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/07/DSCF6894.jpeg" caption="" %}
 
-Then we went to a site where we inspected a damaged blade (about 60m in length).
+Then we went to a site where we inspected a damaged blade (63.7m in length).
 {% include figure image_path="/assets/images/2022/07/DSCF6895.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/07/DSCF6901.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/07/DSCF6902.jpeg" caption="" %}
