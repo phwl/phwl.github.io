@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-07-16 17:30:00 AEST
+date: 2022-07-16 07:30:00 AEST
 title: Trans-Tasman Low-Band Contest
 use_math: true
 toc: true
