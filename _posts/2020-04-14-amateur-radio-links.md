@@ -59,3 +59,6 @@ Here is a collection of amateur radio links.
 
 ### Historical
 1. GE Sideband Handbook 1961 - <https://worldradiohistory.com/BOOKSHELF-ARH/GE-Books/General-Electric-Sideband-Handbook-1961-Adobe.pdf>
+
+### Soldering
+1. A Beginner's Guide to Soldering Metal, Circuits, and More! - <https://alansfactoryoutlet.com/a-beginners-guide-to-soldering-metal-circuits-and-more/>
