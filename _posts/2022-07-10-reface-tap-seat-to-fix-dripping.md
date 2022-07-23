@@ -71,7 +71,7 @@ The dripping was fixed but the sink spout still leaked. I purchased a new
 Dorf El Toro Wall Sink set (part number 2660.044A) on 
 special order from Bunnings. 
 
-It's so much better when you have instructions!
+It's so much easier when you have instructions!
 
 {% include figure image_path="/assets/images/2022/07/IMG_0127.jpeg" caption="" %}
 
