@@ -16,6 +16,7 @@ header:
 How hard could it be to fix a dripping tap? I've been battling with this 
 one in my mother's kitchen for several decades.
 
+# Part 1 - Refacing 9/7/2022
 {% include figure image_path="/assets/images/2022/07/IMG_9979.jpeg" caption="" %}
 
 I've changed washers multiple times which didn't appear to fix the problem. The only thing it could be is that the tap seat, the smooth, flat surface
@@ -36,7 +37,8 @@ So trip #2 to Bunnings to buy a full tap spanner set.
 
 {% include figure image_path="/assets/images/2022/07/IMG_9998.jpeg" caption="" %}
 
-Turns out the problem wasn't that I was using the wrong spanner, it was just that due to sloppy tolerances mine was slightly too big for the job. This new set isn't very good though, the bar to turn the spanner doesn't even fit in the hole. However it was a hair tighter and I managed to remove the spindle.
+Turns out the problem wasn't that I was using the wrong spanner, it was just that due to sloppy tolerances mine was slightly too big for the job. This new set isn't very good though, the bar to turn the spanner doesn't even fit in the hole. However it was a hair tighter and I managed to remove the spindle using the 22.5 mm tap spanner.
+
 
 {% include figure image_path="/assets/images/2022/07/IMG_9990.jpeg" caption="" %}
 
@@ -63,3 +65,38 @@ Everything back together and it is fixed once and for all.
 {% include figure image_path="/assets/images/2022/07/IMG_9996.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2022/07/IMG_9997.jpeg" caption="" %}
+
+# Part 2 - New Tap Set 23/7/2022
+The dripping was fixed but the sink spout still leaked. I purchased a new
+Dorf El Toro Wall Sink set (part number 2660.044A) on 
+special order from Bunnings. 
+
+It's so much better when you have instructions!
+
+{% include figure image_path="/assets/images/2022/07/IMG_0127.jpeg" caption="" %}
+
+{% include figure image_path="/assets/images/2022/07/IMG_0121.jpeg" caption="" %}
+
+Disassemble the tap set one final time.
+
+{% include figure image_path="/assets/images/2022/07/IMG_0120.jpeg" caption="" %}
+
+Everything taken out.
+
+{% include figure image_path="/assets/images/2022/07/IMG_0123.jpeg" caption="" %}
+
+I had forgotten to bring my hex keys but fortunately one came in the box.
+
+{% include figure image_path="/assets/images/2022/07/IMG_0125.jpeg" caption="" %}
+
+The only tricky part is to be able to find this tool next time I need to
+disassemble.
+
+{% include figure image_path="/assets/images/2022/07/IMG_0126.jpeg" caption="" %}
+
+Here are the tools required.
+
+{% include figure image_path="/assets/images/2022/07/IMG_0128.jpeg" caption="" %}
+
+Hopefully won't need to mess with this for many years.
+{% include figure image_path="/assets/images/2022/07/IMG_0129.jpeg" caption="" %}
