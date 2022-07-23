@@ -37,7 +37,7 @@ So trip #2 to Bunnings to buy a full tap spanner set.
 
 {% include figure image_path="/assets/images/2022/07/IMG_9998.jpeg" caption="" %}
 
-Turns out the problem wasn't that I was using the wrong spanner, it was just that due to sloppy tolerances mine was slightly too big for the job. This new set isn't very good though, the bar to turn the spanner doesn't even fit in the hole. However it was a hair tighter and I managed to remove the spindle using the 22.5 mm tap spanner.
+Turns out the problem wasn't that I was using the wrong spanner, it was just that due to sloppy tolerances mine was slightly too big for the job. The 22.5 mm worked fine.
 
 
 {% include figure image_path="/assets/images/2022/07/IMG_9990.jpeg" caption="" %}
