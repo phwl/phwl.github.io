@@ -1,8 +1,8 @@
 ---
 author: phwl
 comments: true
-date: 2022-03-13 09:30:00 AEST
-title: Linux in Windows under WSL2
+date: 2022-07-24 09:30:00 AEST
+title: Outboard Links
 use_math: true
 toc: true
 classes: wide
