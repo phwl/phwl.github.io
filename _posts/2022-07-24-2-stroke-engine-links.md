@@ -7,9 +7,9 @@ use_math: true
 toc: true
 classes: wide
 categories:
-- academia
+- diy
 tags:
-- linux
+- boats
 header:
   teaser: /assets/images/2022/07/two-stroke-engine.jpg
 ---
@@ -29,9 +29,10 @@ Some links about 2-stroke motors.
 
 # Outboards
 
-* Starting an Evinrude 150 outboard for the first time in years
+* Dangar Marine Evinrude 150 Videos. Testing and rebuild of an old outboard [Playlist](https://www.youtube.com/playlist?list=PLJD0gZGZdCuf8O8RX9SQbzukZilvUpGnl)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XiewGg7XxO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJD0gZGZdCuf8O8RX9SQbzukZilvUpGnl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * E TEC telltale trouble
 
