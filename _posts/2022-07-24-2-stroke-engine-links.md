@@ -26,3 +26,13 @@ Some links about 2-stroke motors.
 * Cutaway engine
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kgy98u5fdbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Outboards
+
+* Starting an Evinrude 150 outboard for the first time in years
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XiewGg7XxO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* E TEC telltale trouble
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dOJ02_VVNMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
