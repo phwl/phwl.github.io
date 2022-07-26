@@ -13,6 +13,8 @@ tags:
 header:
   teaser: /assets/images/2022/02/docker_logo.png
 ---
+This post has been superseded by <http://phwl.org/installing-docker-semester2-elec3608/>
+
 Here are installation instructions for installing Docker and running Modelsim for my [ELEC3607 Embedded Systems](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) 
 and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) courses.
 <!-- more -->
