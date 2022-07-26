@@ -3,7 +3,7 @@ author: phwl
 comments: true
 toc: true
 date: 2022-07-26 09:00:00 AEDT
-title: Installing Docker 2022 Semester 2 - ELEC3608 Version
+title: Installing Docker 2022 Semester 2 
 classes: wide
 categories:
 - software
@@ -13,8 +13,8 @@ tags:
 header:
   teaser: /assets/images/2022/02/docker_logo.png
 ---
-Here are installation instructions for installing Docker and running the software required for my [ELEC3607 Embedded Systems](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3607) 
-and [ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608) courses.
+Here are installation instructions for installing Docker and running the software required for 
+[ELEC3608 Computer Architecture](https://cusp.sydney.edu.au/students/view-unit-page/alpha/ELEC3608).
 
 ## 1. Installation
  * (Windows 11)
