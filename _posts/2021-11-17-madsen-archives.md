@@ -51,6 +51,7 @@ A collection of historical records on Sir John Percival Vissing Madsen (1879-196
  1. [MADSEN NEW ZEALAND PRESS ARTICLES 1920-1960.pdf](/assets/images/2022/05/MADSEN NEW ZEALAND PRESS ARTICLES 1920-1960.pdf)
  1. [J.P.V.MADSEN AUSTRALIAN TROVE PRESS ARTICLES 1900-1955](/assets/images/2022/07/JPVMaustralianPressArticles.pdf) (added 29/7/2022)
  1. [Sir Ernest Rutherford PRS ,lecture tour of Australia & New Zealand, 1925.pdf](/assets/images/2022/07/JPVMrutherford1925LectureTour.pdf) (added 29/7/2022)
+ 1. [Letter from JPVM on 24 July 1910 to Nobel Laureate W H Bragg in Leeds](/assets/images/2022/08/JPVMletterToBragg24July1910.pdf)
 
 # Links
   * [CSIROpedia](https://csiropedia.csiro.au/john-madsen/)
