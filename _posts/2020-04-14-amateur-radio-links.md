@@ -65,3 +65,4 @@ Here is a collection of amateur radio links.
 
 ### Icom
 1. Andrew VK3FS <https://3fs.net.au/vk3fs-musings/>
+1. Lars <https://www.larsthunberg.se/category/amateur-radio>
