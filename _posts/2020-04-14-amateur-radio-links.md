@@ -62,3 +62,6 @@ Here is a collection of amateur radio links.
 
 ### Soldering
 1. A Beginner's Guide to Soldering Metal, Circuits, and More! - <https://alansfactoryoutlet.com/a-beginners-guide-to-soldering-metal-circuits-and-more/>
+
+### Icom
+1. Andrew VK3FS <https://3fs.net.au/vk3fs-musings/>
