@@ -18,7 +18,7 @@ URL: [amc\_access22\.pdf](amc_access22.pdf), [doi:10\.1109/ACCESS\.2022\.3197224
 [2] Xiangwei Li, Douglas L\. Maskell, Carol Jingyi Li, Philip H\.W\. Leong, and David Boland\.
 A scalable systolic accelerator for estimation of the spectral correlation density function and its fpga implementation\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, jun 2022\.
-URL: [https://doi\.org/10\.1145/3546181](https://doi.org/10.1145/3546181), [doi:10\.1145/3546181](https://doi.org/10.1145/3546181)\.  
+URL: [scd\_trets22\.pdf](scd_trets22.pdf), [doi:10\.1145/3546181](https://doi.org/10.1145/3546181)\.  
 [3] Ayaz Umer, Chakkrit Termritthikun, Tie Qiu, Philip H\. W\. Leong, and Ivan Lee\.
 On\-device saliency prediction based on pseudoknowledge distillation\.
 *IEEE Transactions on Industrial Informatics*, 18\(9\):6317&ndash;6325, 2022\.
