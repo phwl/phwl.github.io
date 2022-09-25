@@ -34,7 +34,7 @@ URL: [explore\_trets22\.pdf](explore_trets22.pdf), [doi:10\.1145/3503465](https:
 [6] Seyedramin Rasoulinezhad, Esther Roorda, Steve Wilton, Philip H\. W\. Leong, and David Boland\.
 Rethinking embedded blocks for machine learning applications\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, nov 2021\.
-URL: [https://doi\.org/10\.1145/3491234](https://doi.org/10.1145/3491234), [doi:10\.1145/3491234](https://doi.org/10.1145/3491234)\.  
+URL: [mlblock\_trets22\.pdf](mlblock_trets22.pdf), [doi:10\.1145/3491234](https://doi.org/10.1145/3491234)\.  
 [7] Rui Tang, Jonathon Dore, Jin Ma, and Philip H\.W\. Leong\.
 Interpolating high granularity solar generation and load consumption data using super resolution generative adversarial network\.
 *Applied Energy*, 299:117297, 2021\.
