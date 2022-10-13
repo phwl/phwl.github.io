@@ -16,11 +16,10 @@ fSEAD: a composable FPGA\-based streaming ensemble anomaly detection library\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 2022\.
 to appear\.
 URL: [fsead\_trets22\.pdf](fsead_trets22.pdf)\.  
-[2] Carol Jingyi Li, Xiangwei Li, Binglei Lou, Craig Jin, David Boland, and Philip H\.W\. Leong\.
-Fixed\-point FPGA implementation of the FFT Accumulation Method for real\-time cyclostationary analysis\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, 2022\.
-to appear\.
-URL: [cyclo\_trets22\.pdf](cyclo_trets22.pdf)\.  
+[2] Carol Jingyi Li, Xiangwei Li, Binglei Lou, Craig T\. Jin, David Boland, and Philip H\.W\. Leong\.
+Fixed\-point FPGA implementation of the FFT accumulation method for real\-time cyclostationary analysis\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, 9 2022\.
+URL: [cyclo\_trets22\.pdf](cyclo_trets22.pdf), [doi:10\.1145/3567429](https://doi.org/10.1145/3567429)\.  
 [3] Xueyuan Liu, Carol Jingyi Li, Craig T\. Jin, and Philip H\. W\. Leong\.
 Wireless signal representation techniques for automatic modulation classification\.
 *IEEE Access*, 10:84166&ndash;84187, 2022\.

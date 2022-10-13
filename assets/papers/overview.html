@@ -29,6 +29,7 @@ p + div, p + pre {margin-top:1em;}
 div + p, pre + p {margin-top:1em;}  
 a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }  
 @media print {div.crosslinks {visibility:hidden;}}  
+table.tabular{border-collapse: collapse; border-spacing: 0;}  
 a img { border-top: 0; border-left: 0; border-right: 0; }  
 center { margin-top:1em; margin-bottom:1em; }  
 td center { margin-top:0em; margin-bottom:0em; }  
@@ -38,12 +39,14 @@ div.par-math-display, div.math-display{text-align:center;}
 li p.indent { text-indent: 0em }  
 li p:first-child{ margin-top:0em; }  
 li p:last-child, li div:last-child { margin-bottom:0.5em; }  
+li p:first-child{ margin-bottom:0; }  
 li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }  
 .enumerate1 {list-style-type:decimal;}  
 .enumerate2 {list-style-type:lower-alpha;}  
 .enumerate3 {list-style-type:lower-roman;}  
 .enumerate4 {list-style-type:upper-alpha;}  
 div.newtheorem { margin-bottom: 2em; margin-top: 2em;}  
+div.newtheorem .head{font-weight: bold;}  
 .obeylines-h,.obeylines-v {white-space: nowrap; }  
 div.obeylines-v p { margin-top:0; margin-bottom:0; }  
 .overline{ text-decoration:overline; }  
@@ -87,6 +90,7 @@ table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
 .hline hr, .cline hr{ height : 0px; margin:0px; }  
 .hline td, .cline td{ padding: 0; }  
 .hline hr, .cline hr{border:none;border-top:1px solid black;}  
+.hline {border-top: 1px solid black;}  
 .tabbing-right {text-align:right;}  
 div.float, div.figure {margin-left: auto; margin-right: auto;}  
 div.float img {text-align:center;}  
@@ -152,7 +156,7 @@ dt.thebibliography {float:left; clear:left; margin-right:1em;}
 <h2 class="titleHead">Research in the Computer Engineering Lab</h2>
 <div class="author" ></div><br />
 <div class="date" ><span 
-class="cmr-12">June 30, 2022</span></div>
+class="cmr-12">October 13, 2022</span></div>
 </div>
 <!--l. 28--><p class="noindent" >The Computer Engineering Lab focuses on how to use field programmable
 gate array, VLSI and parallel processor technologies to solve difficult
@@ -167,23 +171,26 @@ learning.
 <!--l. 37--><p class="noindent" >In 2017, in collaboration with Xilinx Research Labs, our FINN paper was one of
 the first to demonstrate that binarized neural networks are an excellent match to
 FPGA architectures&#x00A0;[<a 
+ id="x1-2001"></a><a 
 href="#cite.1@UFGBLJV:17">3</a>]. Implementations exploiting binary weights have led to
 the highest performance FPGA implementations of convolutional neural
 networks. We further improved the accuracy using Symmetric Quantization&#x00A0;[<a 
+ id="x1-2002"></a><a 
 href="#cite.1@FFBL:18">1</a>],
 reporting state of the art results. We have also developed a fully parallel
 implementation of ternary networks which achieved the highest reported
 performance on an FPGA for small convolutional neural networks&#x00A0;[<a 
+ id="x1-2003"></a><a 
 href="#cite.1@TKHBMZL:19">2</a>]
 (Figure&#x00A0;<a 
-href="#x1-20011">1<!--tex4ht:ref: fg:lowprecnn --></a>).
+href="#x1-20041">1<!--tex4ht:ref: fg:lowprecnn --></a>).
 <!--l. 48--><p class="noindent" ><hr class="figure"><div class="figure" 
 >
                                                                      
 
                                                                      
 <a 
- id="x1-20011"></a>
+ id="x1-20041"></a>
                                                                      
 
                                                                      
@@ -193,7 +200,7 @@ src="figs/lowprecnn.png" alt="PIC"
 <br />  <div class="caption" 
 ><span class="id">Figure&#x00A0;1:   </span><span  
 class="content">CIFAR10   benchmark   results   for   low   precision   FPGA
-implementations.</span></div><!--tex4ht:label?: x1-20011 -->
+implementations.</span></div><!--tex4ht:label?: x1-20041 -->
                                                                      
 
                                                                      
@@ -218,7 +225,7 @@ class="cmtt-10x-x-109">CVPR.2018.00452</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="syq_cvpr18.pdf" class="url" ><span 
 class="cmtt-10x-x-109">syq_cvpr18.pdf</span></a>.
     </dd><dt id="X1-TKHBMZL:19" class="thebibliography">
@@ -244,7 +251,7 @@ class="cmtt-10x-x-109">10.1145/3359983</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="ternary_trets19.pdf" class="url" ><span 
 class="cmtt-10x-x-109">ternary_trets19.pdf</span></a>.
     </dd><dt id="X1-UFGBLJV:17" class="thebibliography">
@@ -257,24 +264,24 @@ id="bib-3" class="thebibliography">
 class="cmti-10x-x-109">Proc. ACM/SIGDA International Symposium</span>
     <span 
 class="cmti-10x-x-109">on Field-Programmable Gate Arrays (FPGA)</span>. Source code available
-    from  https://github.com/Xilinx/BNN-PYNQ.  2017,  pp.  65&#8211;74.  <span 
+    from https://github.com/Xilinx/BNN-PYNQ. 2017, pp.&#x00A0;65&#8211;74. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>:
-    <a 
+class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1145/3020078.3021744" ><span 
 class="cmtt-10x-x-109">10.1145/3020078.3021744</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="bnn_fpga17.pdf" class="url" ><span 
 class="cmtt-10x-x-109">bnn_fpga17.pdf</span></a>.</dd></dl>
 <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
  id="x1-30001.2"></a>On-Chip Training</h4>
 <!--l. 59--><p class="noindent" >We have developed a mixed-precision on-chip training implementation of the
 SWALP algorithm on the Xilinx Zynq platform&#x00A0;[<a 
+ id="x1-3001"></a><a 
 href="#cite.2@FFBVL:19">2</a>]. Using predominantly 8-bit
 integer numbers, block floating-point quantisation and stochastic weight
 averaging techniques are applied during training to avoid any degradation in
@@ -287,9 +294,10 @@ the exponent and mantissa, our new block minifloat (BM) exposes the exponent
 bias as an additional field for optimization. This enables end-to-end training of
 ImageNet, LSTM and Transformer deep neural networks end with only 4-8 bit
 weight, activation and gradient tensors&#x00A0;[<a 
+ id="x1-3002"></a><a 
 href="#cite.2@FRFBL:21">1</a>] and as a result, higher performance
 (see Figure&#x00A0;<a 
-href="#x1-30012">2<!--tex4ht:ref: fg:bm --></a>).
+href="#x1-30032">2<!--tex4ht:ref: fg:bm --></a>).
 <!--l. 76--><p class="noindent" >We also proposed a neural network training framework, called NITI&#x00A0;[<span 
 class="cmbx-10x-x-109">WRLS:22</span>],
 that stores all parameters and accumulates intermediate values as 8-bit integers
@@ -306,7 +314,7 @@ number generation.
 
                                                                      
 <a 
- id="x1-30012"></a>
+ id="x1-30032"></a>
                                                                      
 
                                                                      
@@ -317,7 +325,8 @@ src="figs/asic_perf_v2.png" alt="PIC"
 ><span class="id">Figure&#x00A0;2: </span><span  
 class="content">Accuracy of block minifloat (red) at different precisions compared
 with state of the art techniques (blue)&#x00A0;[<a 
-href="#cite.2@FRFBL:21">1</a>].</span></div><!--tex4ht:label?: x1-30012 -->
+ id="x1-3004"></a><a 
+href="#cite.2@FRFBL:21">1</a>].</span></div><!--tex4ht:label?: x1-30032 -->
                                                                      
 
                                                                      
@@ -334,7 +343,7 @@ class="cmti-10x-x-109">Learning Representations (ICLR)</span>. 2021. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="bm_iclr21.pdf" class="url" ><span 
 class="cmtt-10x-x-109">bm_iclr21.pdf</span></a>.
     </dd><dt id="X2-FFBVL:19" class="thebibliography">
@@ -346,13 +355,13 @@ id="bib-5" class="thebibliography">
 class="cmti-10x-x-109">Proc. International Conference on</span>
     <span 
 class="cmti-10x-x-109">Field Programmable Technology (FPT)</span>. Best Paper Award Candidate.
-    2019,  pp.  1&#8211;9.  <span 
+    2019,  pp.&#x00A0;1&#8211;9.  <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
 class="small-caps">i</span></span>:  <a 
 href="https://doi.org/10.1109/ICFPT47387.2019.00009" ><span 
-class="cmtt-10x-x-109">10 . 1109 / ICFPT47387 . 2019 . 00009</span></a>.  <span 
+class="cmtt-10x-x-109">10.1109/ICFPT47387.2019.00009</span></a>.  <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
@@ -369,11 +378,13 @@ processing (DSP) block compatible with the Xilinx DSP38E2 which supports 9, 4
 and 2-bit multiply-accumulation (MAC) operations, offering a 6, 12, and 24<span 
 class="cmsy-10x-x-109">&#x00D7;</span>
 improvement in MACs per DSP respectively&#x00A0;[<a 
+ id="x1-4001"></a><a 
 href="#cite.3@RZWL:19">1</a>] (Figure&#x00A0;<a 
-href="#x1-40013">3<!--tex4ht:ref: fg:pir-dsp --></a>). We also
+href="#x1-40033">3<!--tex4ht:ref: fg:pir-dsp --></a>). We also
 developed LUXOR, which are vendor-agnostic (LUXOR) and vendor-specific
 (LUXOR+) modifications to the Xilinx and Intel logic elements to allow the
 efficient implementation of compressor trees&#x00A0;[<a 
+ id="x1-4002"></a><a 
 href="#cite.3@RSZWBL:20">2</a>]. We demonstrate that
 LUXOR can deliver an average reduction of 13-19micro-benchmarks from a
 variety of domains. Binarized neural networks benefit the most with an
@@ -386,7 +397,7 @@ cells.
 
                                                                      
 <a 
- id="x1-40013"></a>
+ id="x1-40033"></a>
                                                                      
 
                                                                      
@@ -396,7 +407,8 @@ src="figs/pir-dsp.png" alt="PIC"
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;3: </span><span  
 class="content">PIR-DSP architecture for low-precision neural networks&#x00A0;[<a 
-href="#cite.3@RZWL:19">1</a>].</span></div><!--tex4ht:label?: x1-40013 -->
+ id="x1-4004"></a><a 
+href="#cite.3@RZWL:19">1</a>].</span></div><!--tex4ht:label?: x1-40033 -->
                                                                      
 
                                                                      
@@ -410,7 +422,7 @@ id="bib-6" class="thebibliography">
     <span 
 class="cmti-10x-x-109">Proc.  IEEE  Symposium  on  Field-Programmable  Custom  Computing</span>
     <span 
-class="cmti-10x-x-109">Machines (FCCM)</span>. 2019, pp. 1&#8211;8. <span 
+class="cmti-10x-x-109">Machines (FCCM)</span>. 2019, pp.&#x00A0;1&#8211;8. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
@@ -421,7 +433,7 @@ class="cmtt-10x-x-109">10.1109/FCCM.2019.00015</span></a>.
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="pirdsp_fccm19.pdf" class="url" ><span 
 class="cmtt-10x-x-109">pirdsp_fccm19.pdf</span></a>.
     </dd><dt id="X3-RSZWBL:20" class="thebibliography">
@@ -435,7 +447,7 @@ class="cmti-10x-x-109">The</span>
 class="cmti-10x-x-109">2020 ACM/SIGDA International Symposium on Field-Programmable</span>
     <span 
 class="cmti-10x-x-109">Gate Arrays</span>. FPGA &#8217;20. Seaside, CA, USA: Association for Computing
-    Machinery, 2020, pp. 161&#8211;171. <span 
+    Machinery, 2020, pp.&#x00A0;161&#8211;171. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">i</span><span 
 class="small-caps">s</span><span 
@@ -452,7 +464,7 @@ class="cmtt-10x-x-109">3373087.3375303</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="luxor_fpga20.pdf" class="url" ><span 
 class="cmtt-10x-x-109">luxor_fpga20.pdf</span></a>.</dd></dl>
 <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
@@ -460,22 +472,26 @@ class="cmtt-10x-x-109">luxor_fpga20.pdf</span></a>.</dd></dl>
 <!--l. 124--><p class="noindent" >We have developed a family of implementations of kernel methods which can
 perform simultaneous learning and prediction with different tradeoffs between
 capacity, performance, and area (Figure&#x00A0;<a 
-href="#x1-50014">4<!--tex4ht:ref: fg:kernel --></a>). Our microcoded kernel recursive
+href="#x1-50054">4<!--tex4ht:ref: fg:kernel --></a>). Our microcoded kernel recursive
 least squares (KRLS) and kernel normalised least mean squares (KNLMS)
 implementations achieves an order of magnitude improvement in throughput over
 a microprocessor, and is programmable&#x00A0;[<a 
+ id="x1-5001"></a><a 
 href="#cite.4@Pang:2016:MKR:3002131.2950061">3</a>]. Our fully pipelined implementation
 of KNLMS achieves 161&#x00A0;GFLOPS, this being a 10x speedup over a desktop
 processor and a 2.66x speedup over a GPU&#x00A0;[<a 
+ id="x1-5002"></a><a 
 href="#cite.4@Fraser:2017:FIK:3166118.3106744">2</a>]. We developed the <span 
 class="cmti-10x-x-109">braiding</span>
 technique which overcomes dependencies by expressing the output as a
 combination of the earlier state and other examples in the pipeline. This was
 applied to the Naive Online regularised Risk Minimization Algorithm (NORMA),
 achieving a latency of less than 100&#x00A0;ns&#x00A0;[<a 
+ id="x1-5003"></a><a 
 href="#cite.4@TMFL:15">4</a>]. We also developed a delayed update
 scheme to achieve 250&#x00A0;Gop/s, a 1.8x improvement on the state of the art
 and 12x higher performance than the standard KNLMS algorithm&#x00A0;[<a 
+ id="x1-5004"></a><a 
 href="#cite.4@FL:20">1</a>]
 .
 <!--l. 143--><p class="noindent" ><hr class="figure"><div class="figure" 
@@ -484,7 +500,7 @@ href="#cite.4@FL:20">1</a>]
 
                                                                      
 <a 
- id="x1-50014"></a>
+ id="x1-50054"></a>
                                                                      
 
                                                                      
@@ -494,7 +510,7 @@ src="figs/kernel.png" alt="PIC"
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4: </span><span  
 class="content">Kernel methods which can do simultaneous nonlinear &#8216;learning
-and prediction.</span></div><!--tex4ht:label?: x1-50014 -->
+and prediction.</span></div><!--tex4ht:label?: x1-50054 -->
                                                                      
 
                                                                      
@@ -503,7 +519,7 @@ and prediction.</span></div><!--tex4ht:label?: x1-50014 -->
 [1]  </dt><dd 
 id="bib-8" class="thebibliography">
     <!--l. 149--><p class="noindent" ><a 
- id="cite.4@FL:20"></a>Nicholas J. Fraser and Philip H. W. Leong. &#8220;Kernel Normalised Least
+ id="cite.4@FL:20"></a>Nicholas J. Fraser and Philip H.&#x00A0;W. Leong. &#8220;Kernel Normalised Least
     Mean  Squares  with  Delayed  Model  Adaptation&#8221;.  In:  <span 
 class="cmti-10x-x-109">ACM  Trans.</span>
     <span 
@@ -516,14 +532,13 @@ class="small-caps">n</span></span>: 1936-7406. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>:
-    <a 
+class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1145/3376924" ><span 
 class="cmtt-10x-x-109">10.1145/3376924</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="dknlms_trets20.pdf" class="url" ><span 
 class="cmtt-10x-x-109">dknlms_trets20.pdf</span></a>.
     </dd><dt id="X4-Fraser:2017:FIK:3166118.3106744" class="thebibliography">
@@ -534,24 +549,22 @@ id="bib-9" class="thebibliography">
     Least  Mean  Squares  Processors&#8221;.  In:  <span 
 class="cmti-10x-x-109">ACM  Trans.  Reconfigurable</span>
     <span 
-class="cmti-10x-x-109">Technol. Syst. </span>10.4 (Dec. 2017), 26:1&#8211;26:20. <span 
+class="cmti-10x-x-109">Technol.  Syst.  </span>10.4  (Dec.  2017),  26:1&#8211;26:20.  <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">i</span><span 
 class="small-caps">s</span><span 
 class="small-caps">s</span><span 
-class="small-caps">n</span></span>: 1936-7406. <span 
+class="small-caps">n</span></span>:  1936-7406.  <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>: <a 
+class="small-caps">i</span></span>:  <a 
 href="https://doi.org/10.1145/3106744" ><span 
-class="cmtt-10x-x-109">10.</span>
-    <span 
-class="cmtt-10x-x-109">1145/3106744</span></a>. <span 
+class="cmtt-10x-x-109">10.1145/3106744</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="knlms_trets17.pdf" class="url" ><span 
 class="cmtt-10x-x-109">knlms_trets17.pdf</span></a>.
     </dd><dt id="X4-Pang:2016:MKR:3002131.2950061" class="thebibliography">
@@ -579,7 +592,7 @@ class="cmtt-10x-x-109">1145/2950061</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="kproc_trets16.pdf" class="url" ><span 
 class="cmtt-10x-x-109">kproc_trets16.pdf</span></a>.
     </dd><dt id="X4-TMFL:15" class="thebibliography">
@@ -590,18 +603,18 @@ id="bib-11" class="thebibliography">
     kernel adaptive filters&#8221;. In: <span 
 class="cmti-10x-x-109">Proc. International Conference on Field</span>
     <span 
-class="cmti-10x-x-109">Programmable Technology (FPT)</span>. Queenstown, 2015, pp. 136&#8211;143. <span 
+class="cmti-10x-x-109">Programmable  Technology  (FPT)</span>.  Queenstown,  2015,  pp.&#x00A0;136&#8211;143.
+    <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>:
-    <a 
+class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1109/FPT.2015.7393140" ><span 
 class="cmtt-10x-x-109">10.1109/FPT.2015.7393140</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="braiding_fpt15.pdf" class="url" ><span 
 class="cmtt-10x-x-109">braiding_fpt15.pdf</span></a>.</dd></dl>
 <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
@@ -611,12 +624,15 @@ class="cmtt-10x-x-109">braiding_fpt15.pdf</span></a>.</dd></dl>
  id="x1-70002.1"></a>FPGA Architectures</h4>
 <!--l. 154--><p class="noindent" >We developed analytical models that relate FPGA architectural parameters to
 the delay&#x00A0;[<a 
+ id="x1-7001"></a><a 
 href="#cite.5@HWYCL:09">2</a>], logic size and depth&#x00A0;[<a 
+ id="x1-7002"></a><a 
 href="#cite.5@DLWLL:11">1</a>] of an FPGA implementation. We also
 proposed <span 
 class="cmti-10x-x-109">hybrid FPGAs </span>and a methodology to optimize coarse-grained floating
 point units (FPUs) which used common subgraph elimination to determine the
 best mix of blocks within an FPU&#x00A0;[<a 
+ id="x1-7003"></a><a 
 href="#cite.5@YSLLW:12">3</a>].
 <!--l. 162--><p class="noindent" >
     <dl class="thebibliography"><dt id="X5-DLWLL:11" class="thebibliography">
@@ -629,11 +645,11 @@ id="bib-12" class="thebibliography">
  id="cite.5@DLWLL:11"></a>Joydip Das et al. &#8220;An Analytical Model Relating FPGA Architecture
     to Logic Density and Depth&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE Transactions on VLSI Systems</span>
-    9.12 (2011), pp. 2229&#8211;2242. <span 
+    9.12 (2011), pp.&#x00A0;2229&#8211;2242. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="anyl_tvlsi11.pdf" class="url" ><span 
 class="cmtt-10x-x-109">anyl_tvlsi11.pdf</span></a>.
     </dd><dt id="X5-HWYCL:09" class="thebibliography">
@@ -644,11 +660,11 @@ id="bib-13" class="thebibliography">
 class="cmti-10x-x-109">Proc.</span>
     <span 
 class="cmti-10x-x-109">International Conference on Field Programmable Technology (FPT)</span>.
-    Sydney, 2009, pp. 96&#8211;103. <span 
+    Sydney, 2009, pp.&#x00A0;96&#8211;103. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="delay_fpt09.pdf" class="url" ><span 
 class="cmtt-10x-x-109">delay_fpt09.pdf</span></a>.
     </dd><dt id="X5-YSLLW:12" class="thebibliography">
@@ -657,12 +673,12 @@ id="bib-14" class="thebibliography">
     <!--l. 162--><p class="noindent" ><a 
  id="cite.5@YSLLW:12"></a>ChiWai Yu et al. &#8220;Optimizing Floating Point Units in Hybrid FPGAs&#8221;.
     In: <span 
-class="cmti-10x-x-109">IEEE Transactions on VLSI Systems </span>20 (7 2012), pp. 1295&#8211;1303.
+class="cmti-10x-x-109">IEEE Transactions on VLSI Systems </span>20 (7 2012), pp.&#x00A0;1295&#8211;1303.
     <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="ofpu_tvlsi12.pdf" class="url" ><span 
 class="cmtt-10x-x-109">ofpu_tvlsi12.pdf</span></a>.</dd></dl>
 <!--l. 165--><p class="noindent" >
@@ -674,12 +690,14 @@ physical layer radio frequency (RF) applications. We have implemented a
 long short-term memory based spectral prediction system with 4.5&#x00A0;<span 
 class="cmmi-10x-x-109">&#x03BC;</span>S
 latency&#x00A0;[<a 
+ id="x1-8001"></a><a 
 href="#cite.6@SLMFBSBL:18">1</a>]. We have also developed a high performance automatic modulation
 classification (AMC) system using the Xilinx RFSoC platform&#x00A0;[<a 
+ id="x1-8002"></a><a 
 href="#cite.6@TBLKKS:20">2</a>], which utilises
 a fully parallel ternary neural network to achieve throughput of 488K
 classifications per second (Figure&#x00A0;<a 
-href="#x1-80015">5<!--tex4ht:ref: fg:rfml --></a>). More information is available at
+href="#x1-80035">5<!--tex4ht:ref: fg:rfml --></a>). More information is available at
 <a 
 href="http://phwl.org/2020/rtamc/" class="url" ><span 
 class="cmtt-10x-x-109">http://phwl.org/2020/rtamc/</span></a>.
@@ -689,7 +707,7 @@ class="cmtt-10x-x-109">http://phwl.org/2020/rtamc/</span></a>.
 
                                                                      
 <a 
- id="x1-80015"></a>
+ id="x1-80035"></a>
                                                                      
 
                                                                      
@@ -700,7 +718,8 @@ src="figs/rfml.png" alt="PIC"
 ><span class="id">Figure&#x00A0;5: </span><span  
 class="content">Integrated radio frequency machine learning system on a Xilinx
 RFSoC FPGA&#x00A0;[<a 
-href="#cite.6@TBLKKS:20">2</a>].</span></div><!--tex4ht:label?: x1-80015 -->
+ id="x1-8004"></a><a 
+href="#cite.6@TBLKKS:20">2</a>].</span></div><!--tex4ht:label?: x1-80035 -->
                                                                      
 
                                                                      
@@ -713,19 +732,19 @@ id="bib-15" class="thebibliography">
     Spectral Prediction and its Real-time FPGA Implementation&#8221;. In: <span 
 class="cmti-10x-x-109">Proc.</span>
     <span 
-class="cmti-10x-x-109">MILCOM</span>. Los Angeles, US, Oct. 2018, pp. 1&#8211;9. <span 
+class="cmti-10x-x-109">MILCOM</span>. Los Angeles, US, Oct. 2018, pp.&#x00A0;1&#8211;9. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
 class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1109/MILCOM.2018.8599833" ><span 
-class="cmtt-10x-x-109">10.1109/MILCOM.</span>
+class="cmtt-10x-x-109">10.1109/</span>
     <span 
-class="cmtt-10x-x-109">2018.8599833</span></a>. <span 
+class="cmtt-10x-x-109">MILCOM.2018.8599833</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="lstm_milcom18.pdf" class="url" ><span 
 class="cmtt-10x-x-109">lstm_milcom18.pdf</span></a>.
     </dd><dt id="X6-TBLKKS:20" class="thebibliography">
@@ -738,28 +757,30 @@ class="cmti-10x-x-109">2020 IEEE International Parallel and Distributed</span>
     <span 
 class="cmti-10x-x-109">Processing Symposium Workshops, IPDPSW 2020, New Orleans, LA,</span>
     <span 
-class="cmti-10x-x-109">USA,  May  18-22,  2020</span>.  IEEE,  2020,  pp.  82&#8211;89.  <span 
+class="cmti-10x-x-109">USA, May 18-22, 2020</span>. IEEE, 2020, pp.&#x00A0;82&#8211;89. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>:  <a 
+class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1109" / IPDPSW50202.2020.00021 ><span 
-class="cmtt-10x-x-109">10 . 1109 /</span>
+class="cmtt-10x-x-109">10.1109/</span>
     <span 
 class="cmtt-10x-x-109">IPDPSW50202.2020.00021</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="amc_raw20.pdf" class="url" ><span 
 class="cmtt-10x-x-109">amc_raw20.pdf</span></a>.</dd></dl>
 <h4 class="subsectionHead"><span class="titlemark">2.3   </span> <a 
  id="x1-90002.3"></a>Random Number Generators</h4>
 <!--l. 187--><p class="noindent" >We proposed compact true and pseudo random number generators which can be
 efficiently implemented on FPGAs&#x00A0;[<a 
+ id="x1-9001"></a><a 
 href="#cite.7@TLL:03">2</a>]. Seminal work on Gaussian number
 generators on FPGAs were also reviewed and state of the art implementations
 based on different techniques proposed&#x00A0;[<a 
+ id="x1-9002"></a><a 
 href="#cite.7@TLLV:07">1</a>].
 <!--l. 193--><p class="noindent" >
     <dl class="thebibliography"><dt id="X7-TLLV:07" class="thebibliography">
@@ -773,7 +794,7 @@ class="cmti-10x-x-109">ACM Computing Surveys</span>
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="grng_acmcs07.pdf" class="url" ><span 
 class="cmtt-10x-x-109">grng_acmcs07.pdf</span></a>.
     </dd><dt id="X7-TLL:03" class="thebibliography">
@@ -786,11 +807,11 @@ class="cmti-10x-x-109">Proc.  IEEE</span>
     <span 
 class="cmti-10x-x-109">Symposium  on  Field-Programmable  Custom  Computing  Machines</span>
     <span 
-class="cmti-10x-x-109">(FCCM)</span>. California, 2003, pp. 51&#8211;61. <span 
+class="cmti-10x-x-109">(FCCM)</span>. California, 2003, pp.&#x00A0;51&#8211;61. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="tprng_fccm03.pdf" class="url" ><span 
 class="cmtt-10x-x-109">tprng_fccm03.pdf</span></a>.</dd></dl>
 <!--l. 196--><p class="noindent" >
@@ -803,23 +824,25 @@ an FPGA card which plugged directly into a memory slot of a high-performance
 
                                                                      
 processor&#x00A0;[<a 
+ id="x1-10001"></a><a 
 href="#cite.8@LLCTKWL:01">2</a>] (Figure&#x00A0;<a 
-href="#x1-100016">6<!--tex4ht:ref: fg:pilchard --></a>). This was among 25 papers recognised in the FCCM20:
+href="#x1-100036">6<!--tex4ht:ref: fg:pilchard --></a>). This was among 25 papers recognised in the FCCM20:
 Highlighting Significant Contributions from 20 Years of the International
 IEEE Symposium on Field-Programmable Custom Computing Machines
 (1993&#8211;2013)
 <!--l. 206--><p class="noindent" >We developed the highest performance structured ASIC with a 26/5x
 improvement in area/delay compared to an FPGA, which is customised using a
 minimum of 3 masks, i.e. two metals and one via&#x00A0;[<a 
+ id="x1-10002"></a><a 
 href="#cite.8@HACYCLP:13">1</a>]&#x00A0;(Figure&#x00A0;<a 
-href="#x1-100027">7<!--tex4ht:ref: fg:structuredasic --></a>).
+href="#x1-100057">7<!--tex4ht:ref: fg:structuredasic --></a>).
 <!--l. 211--><p class="noindent" ><hr class="figure"><div class="figure" 
 >
                                                                      
 
                                                                      
 <a 
- id="x1-100016"></a>
+ id="x1-100036"></a>
                                                                      
 
                                                                      
@@ -832,7 +855,8 @@ class="content">Pilchard,  one  of  25  papers  recognised  in  the  FCCM20:
 Highlighting Significant Contributions from 20 Years of the International
 IEEE  Symposium  on  Field-Programmable  Custom  Computing  Machines
 (1993&#8211;2013)&#x00A0;[<a 
-href="#cite.8@LLCTKWL:01">2</a>].</span></div><!--tex4ht:label?: x1-100016 -->
+ id="x1-10004"></a><a 
+href="#cite.8@LLCTKWL:01">2</a>].</span></div><!--tex4ht:label?: x1-100036 -->
                                                                      
 
                                                                      
@@ -843,7 +867,7 @@ href="#cite.8@LLCTKWL:01">2</a>].</span></div><!--tex4ht:label?: x1-100016 -->
 
                                                                      
 <a 
- id="x1-100027"></a>
+ id="x1-100057"></a>
                                                                      
 
                                                                      
@@ -854,7 +878,8 @@ src="figs/structuredasic.png" alt="PIC"
 ><span class="id">Figure&#x00A0;7: </span><span  
 class="content">Structured ASIC layout. This can be customised using 2 metal
 and 1 via mask&#x00A0;[<a 
-href="#cite.8@HACYCLP:13">1</a>].</span></div><!--tex4ht:label?: x1-100027 -->
+ id="x1-10006"></a><a 
+href="#cite.8@HACYCLP:13">1</a>].</span></div><!--tex4ht:label?: x1-100057 -->
                                                                      
 
                                                                      
@@ -866,11 +891,11 @@ id="bib-19" class="thebibliography">
  id="cite.8@HACYCLP:13"></a>Man-Ho Ho et al. &#8220;Architecture and Design Flow for a Highly Efficient
     Structured  ASIC&#8221;.  In:  <span 
 class="cmti-10x-x-109">IEEE  Transactions  on  VLSI  Systems  </span>21.3
-    (2013), pp. 424&#8211;433. <span 
+    (2013), pp.&#x00A0;424&#8211;433. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="sasic_tvlsi12.pdf" class="url" ><span 
 class="cmtt-10x-x-109">sasic_tvlsi12.pdf</span></a>.
     </dd><dt id="X8-LLCTKWL:01" class="thebibliography">
@@ -883,17 +908,18 @@ class="cmti-10x-x-109">Proc. IEEE Symposium on</span>
     <span 
 class="cmti-10x-x-109">Field-Programmable Custom Computing Machines (FCCM)</span>. Selected
     as one of the 25 most significant papers from the first 20 years of FCCM.
-    California, 2001, pp. 170&#8211;179. <span 
+    California, 2001, pp.&#x00A0;170&#8211;179. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="pilchard_fccm01.pdf" class="url" ><span 
 class="cmtt-10x-x-109">pilchard_fccm01.pdf</span></a>.</dd></dl>
 <h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
  id="x1-110002.5"></a>Financial Engineering</h4>
 <!--l. 230--><p class="noindent" >We were the first to demonstrate acceleration of Monte Carlo (MC) techniques
 for the pricing of complex derivatives using FPGAs&#x00A0;[<a 
+ id="x1-11001"></a><a 
 href="#cite.9@ZLHTCLCL:05">1</a>]. Our pipelined MC core
 implemented the Brace, Gatarek and Musiela (BGM) interest rate model
 and was 25 times faster than a software implementation on a desktop
@@ -903,11 +929,11 @@ processor.
 [1]  </dt><dd 
 id="bib-21" class="thebibliography">
     <!--l. 236--><p class="noindent" ><a 
- id="cite.9@ZLHTCLCL:05"></a>G. L. Zhang et al. &#8220;Reconfigurable Acceleration for Monte Carlo based
+ id="cite.9@ZLHTCLCL:05"></a>G.&#x00A0;L. Zhang et al. &#8220;Reconfigurable Acceleration for Monte Carlo based
     Financial  Simulation&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc.  International  Conference  on  Field</span>
     <span 
-class="cmti-10x-x-109">Programmable Technology (FPT)</span>. Singapore, 2005, pp. 215&#8211;222. <span 
+class="cmti-10x-x-109">Programmable Technology (FPT)</span>. Singapore, 2005, pp.&#x00A0;215&#8211;222. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
@@ -920,12 +946,16 @@ class="cmtt-10x-x-109">bgm_fpt05.pdf</span></a>.</dd></dl>
  id="x1-120002.6"></a>Cryptography</h4>
 <!--l. 240--><p class="noindent" >We reported the most efficient FPGA implementations of an elliptic curve
 processor&#x00A0;[<a 
+ id="x1-12001"></a><a 
 href="#cite.10@LL:02">1</a>], the IDEA algorithm&#x00A0;[<span 
 class="cmbx-10x-x-109">LCTL:00</span>], Montgomery multiplication&#x00A0;[<a 
+ id="x1-12002"></a><a 
 href="#cite.10@TCL:02">2</a>]
 and RC4&#x00A0;[<a 
+ id="x1-12003"></a><a 
 href="#cite.10@TLL:02">3</a>]. We also novel techniques to implement physically uncloneable
 functions (PUFs)&#x00A0;[<a 
+ id="x1-12004"></a><a 
 href="#cite.10@YLX:12">4</a>].
 <!--l. 246--><p class="noindent" >
     <dl class="thebibliography"><dt id="X10-LL:02" class="thebibliography">
@@ -938,11 +968,11 @@ id="bib-22" class="thebibliography">
  id="cite.10@LL:02"></a>P.H.W. Leong and K.H. Leung. &#8220;A Microcoded Elliptic Curve Processor
     using FPGA Technology&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE Transactions on VLSI Systems</span>
-    10.5 (2002), pp. 550&#8211;559. <span 
+    10.5 (2002), pp.&#x00A0;550&#8211;559. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="ecc_tvlsi02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">ecc_tvlsi02.pdf</span></a>.
     </dd><dt id="X10-TCL:02" class="thebibliography">
@@ -958,7 +988,7 @@ class="cmti-10x-x-109">Field-Programmable Custom Computing Machines (FCCM)</span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="mm_fccm02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">mm_fccm02.pdf</span></a>.
     </dd><dt id="X10-TLL:02" class="thebibliography">
@@ -969,12 +999,12 @@ id="bib-24" class="thebibliography">
     Search  Engine&#8221;.  In:  <span 
 class="cmti-10x-x-109">Proc. IEEE Symposium on Field-Programmable</span>
     <span 
-class="cmti-10x-x-109">Custom Computing Machines (FCCM)</span>.  California,  2002,  pp.  13&#8211;21.
+class="cmti-10x-x-109">Custom Computing Machines (FCCM)</span>. California, 2002, pp.&#x00A0;13&#8211;21.
     <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="rc4_fccm02.pdf" class="url" ><span 
 class="cmtt-10x-x-109">rc4_fccm02.pdf</span></a>.
     </dd><dt id="X10-YLX:12" class="thebibliography">
@@ -985,7 +1015,7 @@ id="bib-25" class="thebibliography">
     Identification Generator Using Configurable Ring Oscillator&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE</span>
     <span 
-class="cmti-10x-x-109">Transactions  on  VLSI  Systems  </span>20.11  (2012),  pp.  2198&#8211;2207.  <span 
+class="cmti-10x-x-109">Transactions  on  VLSI  Systems  </span>20.11  (2012),  pp.&#x00A0;2198&#8211;2207.  <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
@@ -1000,12 +1030,14 @@ class="cmtt-10x-x-109">id_tvlsi12.pdf</span></a>.</dd></dl>
 using fiber-integrated optics and off-the-shelf FPGAs, achieving a 100%
 enhancement to the single photon output probability without introducing
 additional multi-photon noise&#x00A0;[<a 
+ id="x1-13001"></a><a 
 href="#cite.11@XZLCMHSCLE:16">1</a>] (Figure&#x00A0;<a 
-href="#x1-130018">8<!--tex4ht:ref: fg:singlephoton --></a>). Time-bin entangled photons allow
+href="#x1-130038">8<!--tex4ht:ref: fg:singlephoton --></a>). Time-bin entangled photons allow
 robust entanglement distribution over quantum networks. We also demonstrated
 time-bin entangled photon generation, noise suppression, wavelength division,
 and entanglement analysis on a single photonic chip utilizing low-loss
 double-stripe silicon nitride waveguide structures&#x00A0;[<a 
+ id="x1-13002"></a><a 
 href="#cite.11@Zhang:18b">2</a>].
 <!--l. 260--><p class="noindent" ><hr class="figure"><div class="figure" 
 >
@@ -1013,7 +1045,7 @@ href="#cite.11@Zhang:18b">2</a>].
 
                                                                      
 <a 
- id="x1-130018"></a>
+ id="x1-130038"></a>
                                                                      
 
                                                                      
@@ -1023,7 +1055,8 @@ src="figs/singlephoton.png" alt="PIC"
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;8: </span><span  
 class="content">Time multiplexing of single photons&#x00A0;[<a 
-href="#cite.11@XZLCMHSCLE:16">1</a>].</span></div><!--tex4ht:label?: x1-130018 -->
+ id="x1-13004"></a><a 
+href="#cite.11@XZLCMHSCLE:16">1</a>].</span></div><!--tex4ht:label?: x1-130038 -->
                                                                      
 
                                                                      
@@ -1045,7 +1078,7 @@ class="cmtt-10x-x-109">10.1038/ncomms10853</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="atm_ncomms16.pdf" class="url" ><span 
 class="cmtt-10x-x-109">atm_ncomms16.pdf</span></a>.
     </dd><dt id="X11-Zhang:18b" class="thebibliography">
@@ -1054,7 +1087,7 @@ id="bib-27" class="thebibliography">
     <!--l. 266--><p class="noindent" ><a 
  id="cite.11@Zhang:18b"></a>Xiang Zhang et al. &#8220;Integrated silicon nitride time-bin entanglement
     circuits&#8221;. In: <span 
-class="cmti-10x-x-109">Opt. Lett. </span>43.15 (Aug. 2018), pp. 3469&#8211;3472. <span 
+class="cmti-10x-x-109">Opt. Lett. </span>43.15 (Aug. 2018), pp.&#x00A0;3469&#8211;3472. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
@@ -1066,7 +1099,7 @@ class="cmtt-10x-x-109">1364/OL.43.003469</span></a>. <span
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="isn_oletters18.pdf" class="url" ><span 
 class="cmtt-10x-x-109">isn_oletters18.pdf</span></a>.</dd></dl>
 <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
@@ -1077,10 +1110,14 @@ class="cmtt-10x-x-109">isn_oletters18.pdf</span></a>.</dd></dl>
 <!--l. 272--><p class="noindent" >We showed that the morphology of intracardiac electrocardiogram signals can be
 used to improve classification accuracy in implantable cardiac defibrillators
 (ICD)&#x00A0;[<a 
+ id="x1-15001"></a><a 
 href="#cite.12@LJ:92">2</a>], and that it could be implemented in low-power analogue VLSI&#x00A0;[<a 
+ id="x1-15002"></a><a 
 href="#cite.12@L:92">4</a>, <a 
+ id="x1-15003"></a><a 
 href="#cite.12@LJ:95">1</a>].
 This led to a patent&#x00A0;[<a 
+ id="x1-15004"></a><a 
 href="#cite.12@LJ:94">3</a>] that has been cited by all of the major ICD
 manufacturers such as Medtronic, Cardiac Pacemakers and Siemens, St.
 Jude Medical, and Pacesetter, and is being used in their commercial
@@ -1090,14 +1127,14 @@ devices.
 [1]  </dt><dd 
 id="bib-28" class="thebibliography">
     <!--l. 281--><p class="noindent" ><a 
- id="cite.12@LJ:95"></a>P. H. W. Leong and M.A. Jabri. &#8220;A Low Power VLSI Arrhythmia
+ id="cite.12@LJ:95"></a>P.&#x00A0;H.&#x00A0;W. Leong and M.A. Jabri. &#8220;A Low Power VLSI Arrhythmia
     Classifier&#8221;. In: <span 
 class="cmti-10x-x-109">IEEE Transactions on Neural Networks </span>6.6 (Nov. 1995),
-    pp. 1435&#8211;1445. <span 
+    pp.&#x00A0;1435&#8211;1445. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="matic_tnn95.pdf" class="url" ><span 
 class="cmtt-10x-x-109">matic_tnn95.pdf</span></a>.
     </dd><dt id="X12-LJ:92" class="thebibliography">
@@ -1108,7 +1145,7 @@ id="bib-29" class="thebibliography">
     classification   system&#8221;.   In:   <span 
 class="cmti-10x-x-109">Pacing  and  Clinical  Electrophysiology</span>
     <span 
-class="cmti-10x-x-109">(PACE) </span>15 (Sept. 1992), pp. 1317&#8211;1331.
+class="cmti-10x-x-109">(PACE) </span>15 (Sept. 1992), pp.&#x00A0;1317&#8211;1331.
     </dd><dt id="X12-LJ:94" class="thebibliography">
 [3]  </dt><dd 
 id="bib-30" class="thebibliography">
@@ -1130,7 +1167,7 @@ id="bib-31" class="thebibliography">
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="phdthesis.pdf" class="url" ><span 
 class="cmtt-10x-x-109">phdthesis.pdf</span></a>.</dd></dl>
 <!--l. 284--><p class="noindent" >
@@ -1139,7 +1176,9 @@ class="cmtt-10x-x-109">phdthesis.pdf</span></a>.</dd></dl>
 <!--l. 285--><p class="noindent" >We have developed feature selection techniques for time series problems, and
 applied them to a number of different applications including respiratory artefact
 removal&#x00A0;[<a 
+ id="x1-16001"></a><a 
 href="#cite.13@PTRML:16">2</a>, <a 
+ id="x1-16002"></a><a 
 href="#cite.13@PLRGJKT:17">1</a>]. A parameterised generator is used to produce a large set of
 candidate features, and a number of complementary metrics used to select a
 subset. This technique was found to produce significantly improved results in the
@@ -1153,13 +1192,13 @@ id="bib-32" class="thebibliography">
     Measurements: Respiratory Artifact Detection with Advanced Feature
     Extraction&#8221;.  In:  <span 
 class="cmti-10x-x-109">Journal  of  Applied  Physiology  </span>123  (4  May  2017),
-    jap.00726.2016.  <span 
+    jap.00726.2016. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">d</span><span 
 class="small-caps">o</span><span 
-class="small-caps">i</span></span>:  <a 
+class="small-caps">i</span></span>: <a 
 href="https://doi.org/10.1152/japplphysiol.00726.2016" ><span 
-class="cmtt-10x-x-109">10.1152/japplphysiol.00726.2016</span></a>.  <span 
+class="cmtt-10x-x-109">10.1152/japplphysiol.00726.2016</span></a>. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
@@ -1175,7 +1214,7 @@ id="bib-33" class="thebibliography">
     Oscillation   Measurements:   A   Machine   Learning   Approach&#8221;.   In:
     <span 
 class="cmti-10x-x-109">IEEE  Transactions  on  Biomedical  Engineering  </span>64.8  (Aug.  2017),
-    pp. 1679&#8211;1687. <span 
+    pp.&#x00A0;1679&#8211;1687. <span 
 class="cmcsc-10x-x-109"><span 
 class="small-caps">i</span><span 
 class="small-caps">s</span><span 
@@ -1191,7 +1230,7 @@ class="cmtt-10x-x-109">10.1109/TBME.2016.2554599</span></a>.
 class="cmcsc-10x-x-109"><span 
 class="small-caps">u</span><span 
 class="small-caps">r</span><span 
-class="small-caps">l</span></span>: <a 
+class="small-caps">l</span></span>:     <a 
 href="fot_tbme16.pdf" class="url" ><span 
 class="cmtt-10x-x-109">fot_tbme16.pdf</span></a>.</dd></dl>
                                                                      
