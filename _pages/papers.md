@@ -12,10 +12,9 @@ classes: wide
 # Journals
 
 [1] Binglei Lou, David Boland, and Philip H\.W\. Leong\.
-fSEAD: a composable FPGA\-based streaming ensemble anomaly detection library\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, 2022\.
-to appear\.
-URL: [fsead\_trets22\.pdf](fsead_trets22.pdf)\.  
+Fsead: a composable fpga\-based streaming ensemble anomaly detection library\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, to appear 2022\.
+URL: [fsead\_trets22\.pdf](fsead_trets22.pdf), [doi:10\.1145/3568992](https://doi.org/10.1145/3568992)\.  
 [2] Carol Jingyi Li, Xiangwei Li, Binglei Lou, Craig T\. Jin, David Boland, and Philip H\.W\. Leong\.
 Fixed\-point FPGA implementation of the FFT accumulation method for real\-time cyclostationary analysis\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 9 2022\.
