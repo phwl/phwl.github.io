@@ -6,8 +6,9 @@ title: Camp Kitchen (chuck box)
 classes: wide
 toc: true
 categories:
-- woodwork
+- diy
 tags:
+- woodwork
 - outdoors
 - hobbies
 - stoves

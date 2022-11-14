@@ -7,9 +7,9 @@ use_math: true
 toc: true
 classes: wide
 categories:
-- hobbies
+- academia
 tags:
-- woodwork
+- programming
 header:
   teaser: /assets/images/2022/11/scheme.jpeg
 ---

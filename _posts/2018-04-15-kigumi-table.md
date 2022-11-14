@@ -6,8 +6,9 @@ slug: kigumi-table
 title: Kigumi table
 classes: wide
 categories:
-- woodwork
+- diy
 tags:
+- woodwork
 - hobbies
 post_format:
 - Video

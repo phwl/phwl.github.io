@@ -5,7 +5,7 @@ date: 2019-11-04 17:09:47 AEDT
 title: New Stove Case
 classes: wide
 categories:
-- woodwork
+- diy
 tags:
 - hobbies
 - stoves
