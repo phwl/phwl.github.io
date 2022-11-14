@@ -11,7 +11,7 @@ categories:
 tags:
 - programming
 header:
-  teaser: /assets/images/2022/11/scheme.jpeg
+  teaser: /assets/images/2022/11/scheme.jpg
 ---
 [Here](/assets/images/2022/11/scheme-primer.pdf) is an excellent primer
 on scheme, a lisp-like programming language.
