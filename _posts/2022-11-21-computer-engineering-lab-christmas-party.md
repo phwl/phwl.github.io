@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-11-21 14:00:00 AEDT
+date: 2022-11-21 09:00:00 AEDT
 title: Computer Engineering Lab Christmas Party Photo 
 classes: wide
 categories:
