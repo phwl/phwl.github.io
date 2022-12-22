@@ -52,6 +52,8 @@ A collection of historical records on Sir John Percival Vissing Madsen (1879-196
  1. [J.P.V.MADSEN AUSTRALIAN TROVE PRESS ARTICLES 1900-1955](/assets/images/2022/07/JPVMaustralianPressArticles.pdf) (added 29/7/2022)
  1. [Sir Ernest Rutherford PRS ,lecture tour of Australia & New Zealand, 1925.pdf](/assets/images/2022/07/JPVMrutherford1925LectureTour.pdf) (added 29/7/2022)
  1. [Letter from JPVM on 24 July 1910 to Nobel Laureate W H Bragg in Leeds](/assets/images/2022/08/JPVMletterToBragg24July1910.pdf)
+ 1. [J P V Madsen & Beta Particle Scattering 1909: Electron & Beta Particle History.](/assets/images/2022/12/Madsen41.BetaSingleCollision1909.pdf) (added 22/12/2022)
+ 1. [W.H Bragg & J.P.V.Madsen: 1905-1911 Collaboration & Correspondence (update to 1981). Rutherford’s nuclear atom 1911.](/assets/images/2022/12/Madsen42.Bragg,Madsen,Rutherford1911AtomTheory(HistoricalRecord).pdf) (added 22/12/2022)
 
 # Links
   * [CSIROpedia](https://csiropedia.csiro.au/john-madsen/)
