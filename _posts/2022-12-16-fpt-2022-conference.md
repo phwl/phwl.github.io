@@ -60,7 +60,7 @@ Omlettes for breakfast at the Crowne Plaza.
 
 The conference banquet was at Nanhai No 1.
 {% include figure image_path="/assets/images/2022/12/IMG_1244.jpeg" caption="" %}
-
+{% include figure image_path="/assets/images/2022/12/IMG_1239.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/12/IMG_1245.jpeg" caption="" %}
 
 They had an artist draw cartoons of delegates. This is Filip 
