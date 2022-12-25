@@ -42,7 +42,9 @@ Prof Wei Zhang, the General Chair speaking in the opening session of the confere
 
 {% include figure image_path="/assets/images/2022/12/IMG_1142.jpeg" caption="" %}
 
-Amazing dinner at the Rosewood Hotel Tsim Sha Tsui, hosted by Platinum Sponsor, Huawei.
+On the first day of the conference, my student Binglei Lou presented [fSEAD: a Composable FPGA-based Streaming Ensemble Anomaly Detection Library](https://dl.acm.org/doi/10.1145/3568992) and Carol Jingyi Li presented [Fixed-Point FPGA Implementation of the FFT Accumulation Method for Real-time Cyclostationary Analysis](https://dl.acm.org/doi/10.1145/3567429).
+
+That evening, we had an amazing dinner at the Rosewood Hotel Tsim Sha Tsui, hosted by Platinum Sponsor, Huawei.
 {% include figure image_path="/assets/images/2022/12/IMG_1206.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/12/IMG_1203.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/12/IMG_1204.jpeg" caption="" %}
