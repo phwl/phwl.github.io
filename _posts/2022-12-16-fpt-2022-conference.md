@@ -147,4 +147,4 @@ Smoked salmon bagel in the Cathay Lounge at the airport.
 {% include figure image_path="/assets/images/2022/12/IMG_7723.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/12/IMG_7962.jpeg" caption="" %}
 
-Thanks to Profs Ray Cheung and Wei Zhang for their hospitality. It was great to visit Hong Kong again.
+Thanks to Profs Ray Cheung and Wei Zhang for their wonderful hospitality. It was great to visit after a long absence due to COVID.
