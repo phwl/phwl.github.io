@@ -104,6 +104,18 @@ Joshua 50:47
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pQ3_nlpnfuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+* Autumn Leaves
+
+John Coltrane (Tenor & Soprano Sax)  
+Wynton Kelly (Piano)  
+Paul Chambers (Bass)  
+Jimmy Cobb (Drums)  
+Stan Getz (Tenor Sax)  
+
+Jazz Icons John Coltrane Live in Germany 1960
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IwQVRQeXCSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Arturo Sandoval 
 
 * There Will Never Be Another You
