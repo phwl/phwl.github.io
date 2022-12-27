@@ -11,7 +11,7 @@ categories:
 tags:
 - linux
 header:
-  teaser: /assets/images/2022/12/IMG_1142.jpeg
+  teaser: /assets/images/2022/12/IMG_1095.jpeg
 ---
 
 Had an amazing time at the [International Conference on Field Programmable Technology in Hong Kong](https://fpt22.hkust.edu.hk/), the [21st conference in the series](http://icfpt.org).
