@@ -19,7 +19,7 @@ While overseas, <http://phwl.org> suddenly stopped working.
 The registrar was Bluehost and the reason was that I
 transferred [http://cruxml.com](https://cruxml.com.au) to a different
 registrar and let the hosting service expire. Bluehost then made
-phwl.org Inactive even though it had nothing to do with cruxml.com.  
+phwl.org Inactive even though it had nothing to do with cruxml.com.
 They wouldn't restore the settings 
 and suggested I do it manually.  Of course, it took
 about an hour to determine this from an online chat.
