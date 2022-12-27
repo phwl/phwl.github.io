@@ -40,7 +40,7 @@ This took about an hour to determine from an online chat.
 I then realised I could create a free account on CloudFlare,
 use CloudFlare's nameserver and then set up my A record. 
 One of the steps is to check that DNSSEC is enabled. You
-can't work it on from their website but this can be checked via
+can't work it out from their website but this can be checked via
 <https://my.bluehost.com/cgi/dm/dnssec/phwl.org>.
 That took about 5 minutes and <http://phwl.org> was working again!
 
