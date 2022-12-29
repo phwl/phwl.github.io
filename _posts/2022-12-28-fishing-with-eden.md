@@ -25,8 +25,9 @@ Then coffee at Careel Bay.
 {% include figure image_path="/assets/images/2022/12/IMG_1678.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2022/12/IMG_1687.jpeg" caption="" %}
 
-Near the high tide, seagulls and terns were diving and the salmon and tailor were on the bite.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DMfkwFoxafs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Near the high tide, seagulls and terns were diving and the salmon and tailor came on the bite.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_hWl_4US55I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {% include figure image_path="/assets/images/2022/12/IMG_1698.jpeg" caption="" %}
 
