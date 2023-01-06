@@ -50,3 +50,5 @@ Predawn panorama the following morning.
 {% include figure image_path="/assets/images/2023/01/IMG_1821.jpeg" caption="" %}
 
 Despite the weather, it was a most enjoyable trip with fabulous company. Thanks Dr Phil!
+
+P.S. Received a fish cut on my hand which was starting to swell. Several years ago, a spiking from a flathead got infected quite badly. I went to go to the doctor who prescribed antibiotic cream. This time I used [triple antibiotic ointment](https://en.wilsonhk.com/product-page/%E7%BE%8E%E5%9C%8B%E5%82%B2%E4%BB%95-%E7%89%B9%E6%95%88%E5%BC%B7%E5%8A%9B%E8%A4%87%E6%96%B9%E6%8A%97%E8%8F%8C%E6%B6%88%E7%82%8E%E8%BB%9F%E8%86%8F-1) which cured the swelling overnight.
