@@ -11,7 +11,7 @@ categories:
 tags:
 - fishing
 header:
-  teaser: /assets/images/2023/01/win11.png
+  teaser: /assets/images/2023/01/IMG_1817.jpeg
 ---
 The forecast was for 20 knot wind and rain. Who would be crazy enough to
 go fishing? 
@@ -49,4 +49,4 @@ Dr Phil cooked an amazing dinner with baked bream which was caught right at the 
 Predawn panorama the following morning.
 {% include figure image_path="/assets/images/2023/01/IMG_1821.jpeg" caption="" %}
 
-
+Despite the weather, it was a most enjoyable trip with fabulous company. Thanks Dr Phil!
