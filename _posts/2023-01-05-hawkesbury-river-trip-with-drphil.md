@@ -46,7 +46,7 @@ Dr Phil cooked an amazing dinner with baked bream which was caught right at the 
 {% include figure image_path="/assets/images/2023/01/IMG_1817.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/01/IMG_1819.jpeg" caption="" %}
 
-Predawn panorama the following morning.
+Predawn panorama.
 {% include figure image_path="/assets/images/2023/01/IMG_1821.jpeg" caption="" %}
 
 Despite the weather, it was a most enjoyable trip with fabulous company. Thanks Dr Phil!
