@@ -28,7 +28,7 @@ Dr Phil's neighbour kindly gave us live Hawkesbury River prawns to use as bait.
 {% include figure image_path="/assets/images/2023/01/IMG_1766.jpeg" caption="" %}
 
 We soon exchanged a prawn for a 40cm 
-yellowfin bream (acanthopagrus australis). These are a very slow growing
+yellowfin bream (acanthopagrus australis). These are very slow growing
 (see [here](/assets/images/2020/12/Yellowfin-Bream.pdf) from which the figure below was extracted) so
 the fish was duly released.
 {% include figure image_path="/assets/images/2020/12/breamgrowth.png" caption="" %}
