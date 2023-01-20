@@ -190,7 +190,7 @@ URL: [mca\_toplas14\.pdf](mca_toplas14.pdf), [doi:10\.1145/2665073](https://doi.
 [45] Man\-Ho Ho, Yan\-Qing Ai, Thomas C\.P\. Chau, Steve C\.L\. Yuen, Chiu\-Sing Choy, Philip H\.W\. Leong, and Kong\-Pang Pun\.
 Architecture and design flow for a highly efficient structured ASIC\.
 *IEEE Transactions on VLSI Systems*, 21\(3\):424–433, 2013\.
-URL: [sasic\_tvlsi12\.pdf](sasic_tvlsi12.pdf)\.  
+URL: [sasic\_tvlsi13\.pdf](sasic_tvlsi13.pdf)\.  
 [46] Haile Yu, Philip H\.W\. Leong, and Qiang Xu\.
 An FPGA chip identification generator using configurable ring oscillator\.
 *IEEE Transactions on VLSI Systems*, 20\(11\):2198–2207, 2012\.
