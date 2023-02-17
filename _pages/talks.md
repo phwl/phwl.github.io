@@ -11,7 +11,7 @@ classes: wide
 ---
 ## Invited Lecture
 [Block Minifloat Arithmetic for Deep Learning Inference and Training](/assets/talks/cel-bmf23v2.pdf),
-Presented at: 
+given at: 
 * Hong Kong University of Science and Technology ACCESS Seminar Series (3 Feb, 2023)  
 * Imperial College, London (17 Feb, 2023)
 
