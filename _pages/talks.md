@@ -9,19 +9,13 @@ title: Talks
 classes: wide
 
 ---
-
-## 17 February 2023, Invited Lecture
+## Invited Lecture
 [Block Minifloat Arithmetic for Deep Learning Inference and Training](/assets/talks/cel-bmf23v2.pdf),
-Imperial College, London
+Presented at: 
+* Hong Kong University of Science and Technology ACCESS Seminar Series (3 Feb, 2023)  
+* Imperial College, London (17 Feb, 2023)
 
 In this talk we present Block Minifloat (BM) arithmetic, a parameterised minifloat format which is optimised for low-precision deep learning applications. While standard floating-point representations have two degrees of freedom, the exponent and mantissa, BM exposes an additional exponent bias allowing the range of a block to be controlled. Results for inference, training and transfer learning using 4-8 bit precision which achieve similar accuracy to floating point will be presented.
-
-## 3 February 2023, Invited Lecture
-[Block Minifloat Arithmetic for Deep Learning Inference and Training](/assets/talks/cel-bmf23v1.pdf),
-Hong Kong University of Science and Technology ACCESS Seminar Series (online)
-
-In this talk we present Block Minifloat (BM) arithmetic, a parameterised minifloat format which is optimised for low-precision deep learning applications. While standard floating-point representations have two degrees of freedom, the exponent and mantissa, BM exposes an additional exponent bias allowing the range of a block to be controlled. Results for inference, training and transfer learning using 4-8 bit precision which achieve similar accuracy to floating point will be presented.
-
 
 ## 24 Feb 2022, Tutorial
 [FPGA-based Machine Learning for Communications Applications: A Tutorial](assets/talks/rfml-milcis22.pdf),
