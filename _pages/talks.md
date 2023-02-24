@@ -14,6 +14,7 @@ classes: wide
 given at: 
 * Hong Kong University of Science and Technology ACCESS Seminar Series (3 Feb, 2023)  
 * Imperial College, London (17 Feb, 2023) (recording: <https://youtu.be/ENsKtdCgi7c>)
+* ST Distinguished Lecture, ST Microelectronic, Italy (21 Feb, 2023)
 * EPFL (23 Feb, 2023)
 
 In this talk we present Block Minifloat (BM) arithmetic, a parameterised minifloat format which is optimised for low-precision deep learning applications. While standard floating-point representations have two degrees of freedom, the exponent and mantissa, BM exposes an additional exponent bias allowing the range of a block to be controlled. Results for inference, training and transfer learning using 4-8 bit precision which achieve similar accuracy to floating point will be presented.
