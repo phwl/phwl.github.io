@@ -15,7 +15,7 @@ header:
 ---
 We presented a tutorial on [Deep Learning-Optimized FPGA
 Archiectures](https://sites.google.com/view/fpga23fpgasfordl), slides
-available [here](https://sites.google.com/viewefpga23fpgasfordl/slides).
+available [here](https://sites.google.com/view/fpga23fpgasfordl/slides).
 It was an updated version of our [previous tutorial]({% link _posts/2022-10-07-micro22.md %}).
 
 
