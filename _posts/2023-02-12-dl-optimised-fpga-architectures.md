@@ -18,3 +18,4 @@ Archiectures](https://sites.google.com/view/fpga23fpgasfordl), slides
 available [here](https://sites.google.com/view/fpga23fpgasfordl/slides).
 It was an updated version of our [previous tutorial](/posts/2022-10-07-micro22.md).
 
+{% include figure image_path="/assets/images/2023/02/IMG_2118.jpg" caption="" %}
