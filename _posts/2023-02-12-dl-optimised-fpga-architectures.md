@@ -11,7 +11,7 @@ categories:
 tags:
 - travel
 header:
-  teaser: /assets/images/2022/10/IMG_0529.jpeg
+  teaser: /assets/images/2023/02/IMG_2118.jpt ag
 ---
 We presented a tutorial on [Deep Learning-Optimized FPGA
 Archiectures](https://sites.google.com/view/fpga23fpgasfordl), slides
