@@ -14,7 +14,7 @@ classes: wide
 [1] Jiaxin Qing, Philip H\. W\. Leong, and Raymond W\. Yeung\.
 Performance analysis and optimal design of bats code: a hardware perspective\.
 *IEEE Transactions on Vehicular Technology*, to appear 2023\.
-URL: [bats\_tvt\.pdf](bats_tvt.pdf)\.  
+URL: [bats\_tvt23\.pdf](bats_tvt23.pdf)\.  
 [2] Carol Jingyi Li, Xiangwei Li, Binglei Lou, Craig T\. Jin, David Boland, and Philip H\.W\. Leong\.
 Fixed\-point FPGA implementation of the FFT accumulation method for real\-time cyclostationary analysis\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 9 2022\.
