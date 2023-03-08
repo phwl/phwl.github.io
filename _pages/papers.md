@@ -11,10 +11,10 @@ classes: wide
 
 # Journals
 
-[1] Binglei Lou, David Boland, and Philip H\.W\. Leong\.
-Fsead: a composable fpga\-based streaming ensemble anomaly detection library\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, to appear 2022\.
-URL: [fsead\_trets22\.pdf](fsead_trets22.pdf), [doi:10\.1145/3568992](https://doi.org/10.1145/3568992)\.  
+[1] Jiaxin Qing, Philip H\. W\. Leong, and Raymond W\. Yeung\.
+Performance analysis and optimal design of bats code: a hardware perspective\.
+*IEEE Transactions on Vehicular Technology*, to appear 2023\.
+URL: [bats\_tvt\.pdf](bats_tvt.pdf)\.  
 [2] Carol Jingyi Li, Xiangwei Li, Binglei Lou, Craig T\. Jin, David Boland, and Philip H\.W\. Leong\.
 Fixed\-point FPGA implementation of the FFT accumulation method for real\-time cyclostationary analysis\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 9 2022\.
