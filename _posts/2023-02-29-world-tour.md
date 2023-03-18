@@ -88,6 +88,7 @@ The main reason for the visit was to go to [Museo Egizio](https://www.museoegizi
 {% include figure image_path="/assets/images/2023/02/DSCF7309.jpeg" caption="" %}
 
 After a lot of walking we also had [bicerin](https://en.wikipedia.org/wiki/Bicerin), a drink from Torino which originated in the 18th century. [Here](https://www.bbcgoodfood.com/recipes/bicerin) is a recipe.
+{% include figure image_path="/assets/images/2023/02/DSCF7336.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/02/DSCF7337.jpeg" caption="" %}
 
 Pigi insisted on visiting the Juventus stadium.
