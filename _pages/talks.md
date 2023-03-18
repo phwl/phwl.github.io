@@ -3,13 +3,14 @@ comments: false
 date: 2021-10-10 12:16:08+00:00
 ## layout: page
 # link: http://phwl.org/talks/
+toc: true
 permalink: talks
 slug: talks
 title: Talks
 classes: wide
 
 ---
-## Invited Lecture
+## Feb 2023, Invited Lecture
 [Block Minifloat Arithmetic for Deep Learning Inference and Training](/assets/talks/cel-bmf23v2.pdf),
 given at: 
 * Hong Kong University of Science and Technology ACCESS Seminar Series (3 Feb, 2023)  
