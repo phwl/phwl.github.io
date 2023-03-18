@@ -106,6 +106,8 @@ My host, Danilo, in front of a patent wall.
 {% include figure image_path="/assets/images/2023/02/IMG_2434.jpeg" caption="" %}
 
 We also visited Pavia. The [University of Pavia](https://en.wikipedia.org/wiki/University_of_Pavia) was founded in 1361 and is one of the oldest universities. This statue is of [Alessandro Volta](https://en.wikipedia.org/wiki/Alessandro_Volta) who held the chair of experimental physics there from 1779.
+Volta figured out capacitance and electricity so he was pretty important for electrical engineering (at the time, the main use for electricity was to make
+frogs' legs twitch).
 {% include figure image_path="/assets/images/2023/02/IMG_2444.jpeg" caption="" %}
 
 While walking though the city, I took photos of a beautiful luthier's shop. Turns out Pigi knew him, he was an ex-IC designer!
