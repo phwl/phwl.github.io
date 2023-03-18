@@ -21,7 +21,7 @@ This is the Victorinox store in Lausanne.
 {% include figure image_path="/assets/images/2023/02/IMG_2562.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/02/IMG_2563.jpeg" caption="" %}
 
-The Swiss Army Knife (SAK) that I've been using for the last 20 years had cracked scales, I purchased a new, Climber. With personalisation, I chose Plus scales which has two extra slots for a pen and pin.
+The Swiss Army Knife (SAK) that I've been using for the last 20 years had cracked scales. I purchased a new [Climber](https://victorinox.com.au/swiss-army-knives/climber/) with Plus scales which have two extra slots for a pen and pin.
 {% include figure image_path="/assets/images/2023/02/IMG_1958.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/02/IMG_1960.jpeg" caption="" %}
 
