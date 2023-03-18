@@ -14,10 +14,9 @@ header:
   teaser: /assets/images/2023/02/IMG_2049.jpeg
 ---
 
-I am on sabbatical this semester so for my trip to the FPGA conference in Monterey, came back the long way via England, Italy, Switzerland and Hong Kong and give a [lecture about our recent work](http://phwl.org/talks#feb-2023-invited-lecture)
+I am on sabbatical this semester so on my return trip from the FPGA conference, I came back the long way via England, Italy, Switzerland and Hong Kong. The purpose was give a [lecture about our recent work](http://phwl.org/talks#feb-2023-invited-lecture) and visit some colleagues and friends in Europe.
 
-This photo was taken shortly after takeoff from Sydney to LAX (turns out that the pilot was one of my ex-students).
-
+This photo was taken shortly after takeoff from Sydney to LAX. It turns out that the pilot was one of my ex-students.
 {% include figure image_path="/assets/images/2023/02/IMG_2049.jpeg" caption="" %}
 
 ## FPGA Conference
