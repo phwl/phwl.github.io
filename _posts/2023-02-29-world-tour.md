@@ -70,7 +70,9 @@ Here are my hosts, Pigi and Daniela on a [Big Bench](https://bigbenchcommunitypr
 Here I am with Pigi's parents who I hadn't seen for many decades.
 {% include figure image_path="/assets/images/2023/02/IMG_2342.jpeg" caption="" %}
 
-The next day we went to Torino. This lady dropped her car keys down a drain. Pigi helped her fish it out, our good deed for the day.
+The next day we went to Torino. Of course, with Pigi driving, this was at great speed and total disregard for traffic and parking rules.
+
+This lady dropped her car keys down a drain. Pigi helped her fish it out, our good deed for the day.
 {% include figure image_path="/assets/images/2023/02/DSCF7222.jpeg" caption="" %}
 
 She was so happy she wanted to buy us a drink.
