@@ -78,6 +78,9 @@ This lady dropped her car keys down a drain. Pigi helped her fish it out, our go
 She was so happy she wanted to buy us a drink.
 {% include figure image_path="/assets/images/2023/02/DSCF7224.jpeg" caption="" %}
 
+We first went to the most important landmark in Italy.
+{% include figure image_path="/assets/images/2023/02/DSCF7250.jpeg" caption="" %}
+
 Daniela and myself in front of the [Mole Antonelliana](https://en.wikipedia.org/wiki/Mole_Antonelliana).
 {% include figure image_path="/assets/images/2023/02/IMG_2371.jpeg" caption="" %}
 
