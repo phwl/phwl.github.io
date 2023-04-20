@@ -17,6 +17,8 @@ given at:
 * Imperial College, London (17 Feb, 2023) (recording: <https://youtu.be/ENsKtdCgi7c>)
 * ST Distinguished Lecture, ST Microelectronic, Italy (21 Feb, 2023)
 * EPFL Seminar (23 Feb, 2023)
+* CUHK Seminar (24 Mar, 2023)
+* TinyML Seminar (20 Apr, 2023) (<https://www.tinyml.org/event/tinyml-talks-low-precision-inference-and-training-for-deep-neural-networks>)
 
 In this talk we present Block Minifloat (BM) arithmetic, a parameterised minifloat format which is optimised for low-precision deep learning applications. While standard floating-point representations have two degrees of freedom, the exponent and mantissa, BM exposes an additional exponent bias allowing the range of a block to be controlled. Results for inference, training and transfer learning using 4-8 bit precision which achieve similar accuracy to floating point will be presented.
 
