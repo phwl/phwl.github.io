@@ -174,6 +174,8 @@ put everything back together).
 I used the shadow of the old blade for alignment.
 {% include figure image_path="/assets/images/2020/04/blade9.jpeg" caption="" %}
 
+**Make sure you tighten the self-lock nuts for the blades according to the manual (29.4-39.2 Nm) using a torque wrench!**
+
 ### Step 7 Put Back Together
 Put the cutter disc back on the mower. Replace the spark plug cable and 
 open the fuel valve.
