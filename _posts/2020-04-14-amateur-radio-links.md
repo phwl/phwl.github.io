@@ -54,6 +54,7 @@ Here is a collection of amateur radio links.
 1. Chavdar Levkov LZ1AQ <http://www.lz1aq.signacor.com/> - active antennas, TRX-SDR switches, SDR
 1. JF1OZL - <https://web.archive.org/web/20171116070818/http://www.intio.or.jp/jf10zl/index.html>
 1. Homebrew QRP and Microcontrollers VK8RH <https://vk8rhradioprojects.com/>
+1. DL5NEG RF meter - <http://www.herbert-dingfelder.de/>
 
 ### Inductors
 1. Toroid calculator <http://toroids.info/T50-2.php>
