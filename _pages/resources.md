@@ -1,6 +1,7 @@
 ---
 comments: false
 date: 2023-05-31 03:39:44+00:00
+toc: true
 # layout: page
 # link: http://phwl.org/technical-writing-resources/
 permalink: resources
@@ -10,8 +11,13 @@ classes: wide
 wordpress_id: 4699
 ---
 
+# Career 
+ * Terrance Tao's collection: <https://terrytao.wordpress.com/career-advice/>
+
+# Writing 
+
 ## Reviews
- * How to review conference papers <https://www.markbernstein.org/elements/Reviewing.pdf>
+ * How to review conference papers: <https://www.markbernstein.org/elements/Reviewing.pdf>
 
 ## Dissertations
   * Preparing your thesis: [https://sydney.edu.au/students/prepare-thesis.html](https://sydney.edu.au/students/prepare-thesis.html)
@@ -28,8 +34,6 @@ wordpress_id: 4699
   * How not to review a paper: the tools and techniques of the adversarial reviewer: [http://dl.acm.org/citation.cfm?id=1519122](http://dl.acm.org/citation.cfm?id=1519122)
 
 ## Research Plan
-  * Thesis aims and objectives <https://www.thephdproofreaders.com/structuring-a-thesis/writing-your-research-aims-and-objectives/>
+  * Thesis aims and objectives: <https://www.thephdproofreaders.com/structuring-a-thesis/writing-your-research-aims-and-objectives/>
   * How to write a research plan: [http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm](http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm)
 
-## Career Advice
-* Terrance Tao's collection <https://terrytao.wordpress.com/career-advice/>
