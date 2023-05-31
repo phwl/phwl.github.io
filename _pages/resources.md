@@ -1,11 +1,11 @@
 ---
 comments: false
-date: 2019-04-16 03:39:44+00:00
+date: 2023-05-31 03:39:44+00:00
 # layout: page
 # link: http://phwl.org/technical-writing-resources/
-permalink: writing-resources
-slug: writing-resources
-title: Writing-resources
+permalink: resources
+slug: resources
+title: Career and Writing Resources
 classes: wide
 wordpress_id: 4699
 ---
@@ -31,4 +31,5 @@ wordpress_id: 4699
   * Thesis aims and objectives <https://www.thephdproofreaders.com/structuring-a-thesis/writing-your-research-aims-and-objectives/>
   * How to write a research plan: [http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm](http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm)
 
-
+## Career Advice
+* Terrance Tao's collection <https://terrytao.wordpress.com/career-advice/>
