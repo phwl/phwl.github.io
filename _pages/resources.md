@@ -13,6 +13,7 @@ wordpress_id: 4699
 
 # Career 
  * Terrance Tao's collection: <https://terrytao.wordpress.com/career-advice/>
+ * How to Build a Bad Research Center: <https://www2.eecs.berkeley.edu/Pubs/TechRpts/2013/EECS-2013-123.pdf>
 
 # Writing 
 
