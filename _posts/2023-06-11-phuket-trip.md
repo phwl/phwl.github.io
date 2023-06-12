@@ -29,9 +29,11 @@ The Sunday Night Market in Phuket Old Town on Thalang Road was the highlight of 
 {% include figure image_path="/assets/images/2023/06/IMG_4224.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/06/IMG_4288.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/06/IMG_4312.jpeg" caption="" %}
+
+Even Elvis was there!
 {% include figure image_path="/assets/images/2023/06/IMG_4314.jpeg" caption="" %}
 
-This is the Tu Kab Khao restaurant, easily recognised as it has a lobster on the side of the building and recommended [in the Michelin Guide](https://guide.michelin.com/en/phuket-region/phuket/restaurant/tu-kab-khao). It is located in 8 Phang Nga Road, Phuket Town, Phone: 076 608 888. It is inexpensive and we ordered crab
+This is the Tu Kab Khao restaurant, easily recognised as there is a lobster on the side of the building, and recommended [in the Michelin Guide](https://guide.michelin.com/en/phuket-region/phuket/restaurant/tu-kab-khao). It is located in 8 Phang Nga Road, Phuket Town, Phone: 076 608 888. It is inexpensive and we ordered crab
 curry, fried snapper and larb gai (chicken, basil, onion in a chilli and lime suace). This was the best Thai meal I've ever had.
 
 {% include figure image_path="/assets/images/2023/06/IMG_4353.jpeg" caption="" %}
