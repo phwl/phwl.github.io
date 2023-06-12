@@ -47,7 +47,8 @@ Another Michelin restaurant is this one where the fried oyster omelette is excel
 Right near the end of own stay in Old Town, we had a good chat with a durian seller.
 {% include figure image_path="/assets/images/2023/06/IMG_4379.jpeg" caption="" %}
 
-At the midpoint of the trip, we relocated to the Mariott at Merlin Beach.
+At the mid point of the trip, we relocated to the Mariott at Merlin Beach.
+{% include figure image_path="/assets/images/2023/06/IMG_4480.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/06/IMG_4448.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2023/06/IMG_4491.jpeg" caption="" %}
