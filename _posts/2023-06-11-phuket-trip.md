@@ -48,6 +48,7 @@ Right near the end of own stay in Old Town, we had a good chat with a durian sel
 {% include figure image_path="/assets/images/2023/06/IMG_4379.jpeg" caption="" %}
 
 At the mid point of the trip, we relocated to the Mariott at Merlin Beach.
+Incidentally, it was the same day as the [Boat Ave shooting](https://www.thephuketnews.com/boat-avenue-shooting-suspect-charged-with-attempted-murder-88506.php) where a Russian businessman was shot several times (not fatally).
 {% include figure image_path="/assets/images/2023/06/IMG_4480.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/06/IMG_4448.jpeg" caption="" %}
 
