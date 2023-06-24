@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2023-06-24 09:30:00 AEST
+date: 2023-06-24 04:30:00 AEST
 title: 2023 Winter VHF/UHF Field Day
 use_math: true
 toc: true
