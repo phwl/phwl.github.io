@@ -14,8 +14,8 @@ header:
   teaser: /assets/images/2023/06/v11.jpeg
 ---
 
-Photos from the 2023 Winter VHF/UHF Field Day. More information at the
-[Manly Warringah Radio Society site](https://www.mwrs.org.au/).
+Photos from the 2023 Winter VHF/UHF Field Day. More information in the
+[Manly Warringah Radio Society post](https://www.mwrs.org.au/2023/06/27/24-jun-2023-winter-vhf-uhf-field-day/).
 
 {% include figure image_path="/assets/images/2023/06/v1.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2023/06/v2.jpeg" caption="" %}
