@@ -14,7 +14,7 @@ classes: wide
 [1] Andrew C Cullen, Benjamin IP Rubinstein, Sithamparanathan Kandeepan, Barry Flower, and Philip HW Leong\.
 Predicting dynamic spectrum allocation: a review covering simulation, modelling, and prediction\.
 *Artificial Intelligence Review*, pages 1–39, 2023\.
-URL: [dsa\_aireview23\.pdf](dsa_aireview23.pdf)\.  
+URL: [dsa\_aireview23\.pdf](dsa_aireview23.pdf), [doi:10\.1007/s10462\-023\-10449\-9](https://doi.org/10.1007/s10462-023-10449-9)\.  
 [2] Binglei Lou, David Boland, and Philip Leong\.
 FSEAD: a composable FPGA\-based streaming ensemble anomaly detection library\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, jun 2023\.
