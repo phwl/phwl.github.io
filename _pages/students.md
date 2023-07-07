@@ -11,6 +11,8 @@ wordpress_id: 3338
 ---
 
 
+  1. Seyedramin RASOULINEZHAD, [rrasoulinezhad23.pdf](/assets/images/2023/07/rrasoulinezhad23.pdf), PhD 2023.
+
   1. Sean FOX, [Specialised Architectures and Arithmetic for Machine Learning](/assets/images/2021/10/sfox21.pdf), PhD 2021.
 
   1. Julian FARAONE, [Simplification Of Deep Neural Networks
