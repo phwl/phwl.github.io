@@ -42,6 +42,9 @@ Here is a collection of amateur radio links.
 1. Micro software defined transceiver (uSDX) group <https://groups.io/g/ucx/topics>
 
 ## General
+### Mobile 
+1. K0BG - <http://k0bg.com/>
+
 ### Homebrew 
 1. Peter B Marks VK2TPM marxy's musing on technology - <http://blog.marxy.org/>
 1. Owen Duffy VK2OMD - <https://owenduffy.net>
