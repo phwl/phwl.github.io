@@ -350,10 +350,10 @@ Matic \- an intracardiac tachycardia classification system\.
 
 # Conferences
 
-[1] Chuliang Guo, Binglei Lou, Xueyuan Liu, David Boland, Philip H\.W\. Leong, and Cheng Zhuo\.
-BOOST: block minifloat\-based on\-device CNN training accelerator with transfer learning\.
-In *Proc\. ICCAD*, to appear\. 2023\.
-URL: [boost\_iccad23\.pdf](boost_iccad23.pdf)\.  
+[1] Teng\-Hui Huang, Thilini Dahanayaka, Kanchana Thilakarathna, Philip H\.W\. Leong, and Hesham El Gamal\.
+The Wyner variational autoencoder for unsupervised multi\-layer wireless fingerprinting\.
+In *Proc\. Globecom*, to appear\. 2023\.
+URL: [wyner\_globecom23\.pdf](wyner_globecom23.pdf)\.  
 [2] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\.W\. Leong\.
 FPGA implementation of N\-BEATS for time series forecasting using block minifloat arithmetic\.
 In *Proc\. Asia Pacific Conference on Circuits and Systems \(IEEE APCCAS 2022\)*\. 2022\.
