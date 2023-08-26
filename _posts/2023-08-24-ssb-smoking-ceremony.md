@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2023-08-24 09:00:00 AEST
+date: 2023-08-24 10:00:00 AEST
 title: Shepherd St Building Smoking (Ground Breaking) Ceremony
 use_math: true
 toc: true
