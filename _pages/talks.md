@@ -10,6 +10,12 @@ title: Talks
 classes: wide
 
 ---
+## 11 Sep 2023, Invited Talk
+[Acceleration of Cyclostationary Signal Processing Algorithms](https://cassyni.com/events/Xx7e1iKwdBndLTsekXv9NM),
+Novel Architecture and Novel Design Automation (NANDA), Imperial College, London
+
+A time series is said to be cyclostationary if its probability distribution varies periodically with time. Cyclostationary time series analyses are suitable for a wide range of periodic phenomena in signal processing, including characterization of modulation types; noise analysis of periodic time-variant linear systems; synchronization problems; parameter and waveform estimation; channel identification and equalization; signal detection and classification; AR and ARMA modelling and prediction; and source separation In this talk we will discuss our recent research efforts to accelerate the estimation of the spectral correlation density through low-precision arithmetic, improved algorithms and bespoke hardware. For large input lengths, which are of interest in low signal-to-noise conditions, greater than 10x acceleration can be achieved using sparse techniques.
+
 ## Feb 2023, Invited Lecture
 [Block Minifloat Arithmetic for Deep Learning Inference and Training](/assets/talks/cel-bmf23v2.pdf),
 given at: 
