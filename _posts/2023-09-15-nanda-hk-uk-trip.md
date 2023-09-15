@@ -74,6 +74,7 @@ was truly excellent with  papers on computer architecture, design automation and
 
 {% include figure image_path="/assets/images/2023/09/IMG_2804.jpeg" caption="" %}
 
+Profs Wayne Luk (Imperial), Ruby Lee (Princeton), Kunle Oyekunle (Stanford), Subhasish Mitra (Stanford) and Matthew Leung (Huawei).
 {% include figure image_path="/assets/images/2023/09/IMG_2911.jpeg" caption="" %}
 
 Prof Steve Furber (Manchester University), principal designer of the ARM 32-bit RISC microprocessor.
@@ -87,9 +88,11 @@ Dinner at Hux Brasserie.
 {% include figure image_path="/assets/images/2023/09/IMG_2929.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2023/09/IMG_2930.jpeg" caption="" %}
+
+Clockwise, myself, Profs Wayne Luk (Imperial), Ruby Lee (Princeton), Howard Lee, Paul Kelly (Imperial), Mary Sheeram (Chalmers) and Miriam Leeser (Northeastern).
 {% include figure image_path="/assets/images/2023/09/IMG_2934.jpeg" caption="" %}
 
-The next day I did a viva-voce examination for Prof Christos-Savvas Bouganis at
+The next day I did a viva examination for Prof Christos-Savvas Bouganis at
 Imperial College (congratulations to Dr Diederik Vink). Our exam only went for about 3 hours (they have been known to
 take the whole day) so we had time for lunch at the Imperial staff restaurant. Here I am with
 Christos and Prof Peter Cheung.
