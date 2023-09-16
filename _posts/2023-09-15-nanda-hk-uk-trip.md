@@ -24,8 +24,9 @@ The following day the first stop was the table tennis shop for new
 rubber. Apparently it should be changed every year. It was more
 than 10 years since I changed mine and I was told off by the cranky
 uncle there because the rubber had perished and the glue stuck to
-the blade. He told me I needed a new blade (and it shouldn't be a Stiga)
-so I did as he said.
+the blade. He told me I needed a new blade (and it should be a Butterfly
+blade, not a Stiga). He got more agitated when I asked what was the difference
+ between the cheap and expensive one (he said there was no difference).
 I very much miss HK, overseas most shop owners don't
 verbally abuse their customers. He wasn't happy when I asked for orange balls 
 (they stopped using them a few years ago).
