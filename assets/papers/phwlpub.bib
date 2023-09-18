@@ -1846,17 +1846,25 @@ journal = tvt
 }
 
 @article{LLLJBL:22,
-author = {Li, Carol Jingyi and Li, Xiangwei and Lou, Binglei and Jin, Craig T. and Boland, David and Leong, Philip H.W.},
-title = {Fixed-Point {FPGA} Implementation of the {FFT} Accumulation Method for Real-Time Cyclostationary Analysis},
+author = {Li, Carol Jingyi and Li, Xiangwei and Lou, Binglei and Jin, Craig T. and Boland, David and Leong, Philip H. W.},
+title = {Fixed-Point FPGA Implementation of the FFT Accumulation Method for Real-Time Cyclostationary Analysis},
+year = {2023},
+issue_date = {September 2023},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
+volume = {16},
+number = {3},
 issn = {1936-7406},
-doi = {10.1145/3567429},
-year = {2022},
-journal = {ACM Trans. Reconfigurable Technol. Syst.},
-month = {9},
 url = {cyclo_trets22.pdf},
+doi = {10.1145/3567429},
+abstract = {The spectral correlation density (SCD) is an important tool in cyclostationary signal detection and classification. Even using efficient techniques based on the fast Fourier transform (FFT), real-time implementations are challenging because of the high computational complexity. A key dimension for computational optimization lies in minimizing the wordlength employed. In this article, we analyze the relationship between wordlength and signal-to-quantization noise in fixed-point implementations of the SCD function. A canonical SCD estimation algorithm, the FFT accumulation method (FAM) using fixed-point arithmetic, is studied. We derive closed-form expressions for SQNR and compare them at wordlengths ranging from 14 to 26 bits. The differences between the calculated SQNR and bit-exact simulations are less than 1&nbsp;dB. Furthermore, an HLS-based FPGA design is implemented on a Xilinx Zynq UltraScale+ XCZU28DR-2FFVG1517E RFSoC. Using less than 25\% of the logic fabric on the device, it consumes 7.7&nbsp;W total on-chip power and has a power efficiency of 12.4&nbsp;GOPS/W, which is an order of magnitude improvement over an Nvidia Tesla K40 graphics processing unit (GPU) implementation. In terms of throughput, it achieves 50&nbsp;MS/sec, which is a speedup of 1.6 over a recent optimized FPGA implementation.},
+journal = {ACM Trans. Reconfigurable Technol. Syst.},
+month = {jun},
+articleno = {41},
+numpages = {28},
+keywords = {FAM, SCD, FPGAs, quantization error, HLS}
 }
+
 
 @ARTICLE{9852206,  
 author={Liu, Xueyuan and Li, Carol Jingyi and Jin, Craig T. and Leong, Philip H. W.},  
