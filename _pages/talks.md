@@ -28,6 +28,12 @@ given at:
 
 In this talk we present Block Minifloat (BM) arithmetic, a parameterised minifloat format which is optimised for low-precision deep learning applications. While standard floating-point representations have two degrees of freedom, the exponent and mantissa, BM exposes an additional exponent bias allowing the range of a block to be controlled. Results for inference, training and transfer learning using 4-8 bit precision which achieve similar accuracy to floating point will be presented.
 
+## 12 Feb 2023, Tutorial
+[FPGA Architecture for Machine Learning](https://sites.google.com/view/fpga23fpgasfordl),
+International Symposium on Field-Programmable Gate Arrays
+
+FPGA architecture has been continuously evolving over the course of the past three decades to better suit key FPGA use cases. With deep learning (DL) inference becoming a major market segment, FPGA architecture is also evolving to match its requirements. FPGA vendors are announcing new FPGA families specifically targeted for DL workloads and many academic research efforts are proposing FPGA architecture modifications for DL. In this tutorial, we will focus on both academic and industrial FPGA architecture enhancements for DL that have been introduced in recent years. First, we will give a brief introduction on the basics of FPGA architecture and how the key components of FPGAs lead to strengths and weaknesses in DL applications. Then, we will cover DL-specific enhancements to traditional FPGA components such as logic and DSP blocks as well as new specialized elements such as tensor blocks, computational BRAMs and AI engine processors that have been introduced for DL. We will also highlight promising directions for future research in this area. Finally, we will have a panel discussion with representatives from major FPGA vendors and academia to present their perspectives on the future of FPGA architecture and use cases in the DL domain.
+
 ## 24 Feb 2022, Tutorial
 [FPGA-based Machine Learning for Communications Applications: A Tutorial](assets/talks/rfml-milcis22.pdf),
 Military Communication and Information Systems Conference and Expo, Canberra
