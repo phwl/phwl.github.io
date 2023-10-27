@@ -21,6 +21,7 @@ wordpress_id: 4699
  * How to review conference papers: <https://www.markbernstein.org/elements/Reviewing.pdf>
 
 ## Dissertations
+  * Dissertations: [https://www.cl.cam.ac.uk/~pr10/teaching/dissertation.html](https://www.cl.cam.ac.uk/~pr10/teaching/dissertation.html)
   * Preparing your thesis: [https://sydney.edu.au/students/prepare-thesis.html](https://sydney.edu.au/students/prepare-thesis.html)
   * Research skills for HDR students: [https://sydney.edu.au/students/hdr-research-skills.html](https://sydney.edu.au/students/hdr-research-skills.html)
   * How to write a thesis: [http://www.phys.unsw.edu.au/~jw/thesis.html](http://www.phys.unsw.edu.au/~jw/thesis.html)
