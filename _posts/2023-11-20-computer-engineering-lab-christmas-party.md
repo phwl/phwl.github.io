@@ -10,7 +10,7 @@ tags:
 - suee
 - celchristmas
 header:
-  teaser: /assets/images/2022/11/celchristmas23-1.jpeg
+  teaser: /assets/images/2023/11/celchristmas23-1.jpeg
 ---
 
 Photos from our Christmas parties over the years. Thanks to Oliver for taking the photo again this year.
