@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2022-11-21 09:00:00 AEDT
+date: 2023-11-20 09:00:00 AEDT
 title: Computer Engineering Lab Christmas Party Photo 
 classes: wide
 categories:
@@ -10,10 +10,10 @@ tags:
 - suee
 - celchristmas
 header:
-  teaser: /assets/images/2022/11/celchristmas22-1.jpeg
+  teaser: /assets/images/2022/11/celchristmas23-1.jpeg
 ---
 
-Photos from our Christmas parties over the years. This year we were joined by David's dog. Thanks to Oliver for taking the photo!
+Photos from our Christmas parties over the years. Thanks to Oliver for taking the photo again this year.
 
 {% include figure image_path="/assets/images/2023/11/celchristmas23-1.jpeg" caption="2023" %}
 
