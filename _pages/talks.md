@@ -10,6 +10,12 @@ title: Talks
 classes: wide
 
 ---
+## 23 Nov 2023, Invited Talk
+[Deep Learning using FPGAs](/assets/talks/dlusingfpgas-vin23.pdf),
+AI and Cyber Security Summit, VinUni, Hanoi, Vietnam
+
+A field-programmable gate array (FPGA) is an integrated circuit in which the logic and interconnections can be defined by downloading a bitstream to its memory. These devices are eminently suitable for applications where high levels of integration, low power and low latency are required. In this talk I will describe our recent research on the implementation of deep learning systems for inference and on-FPGA training. The techniques used include binarised weights, block-minifloat arithmetic and transfer learning.
+
 ## 11 Sep 2023, Invited Talk
 [Acceleration of Cyclostationary Signal Processing Algorithms](https://cassyni.com/events/Xx7e1iKwdBndLTsekXv9NM),
 Novel Architecture and Novel Design Automation (NANDA), Imperial College, London
