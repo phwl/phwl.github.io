@@ -197,3 +197,7 @@ URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
 
 whois: http: nodename nor servname provided, or not known: Invalid argument
 ```
+
+## Update 6/12/2023
+
+Updating to <https://ap.www.namecheap.com/>. When it switches over just need to remember the nameservers are: ADELAIDE.NS.CLOUDFLARE.COM and KYREE.NS.CLOUDFLARE.ADELAIDE.COM.
