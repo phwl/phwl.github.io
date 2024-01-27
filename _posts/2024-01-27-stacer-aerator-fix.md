@@ -10,7 +10,7 @@ categories:
 tags:
 - fishing
 header:
-  teaser: /assets/images/2024/01/aer7.jpeg
+  teaser: /assets/images/2024/01/aer3.jpeg
 ---
 
 First problem I've had with my [Stacer](https://phwl.org/2015/stacer-outlaw-429/) is the live bait tank pump stopped working. Here are the steps I used to troubleshoot, which took way long than it should. Hopefully this will help someone else with the same problem. I don't actually know how it got burnt out, maybe I left it on out of water for too long?
