@@ -81,4 +81,6 @@ The new aerator in place at an angle.
 
 {% include figure image_path="/assets/images/2024/01/IMG_aer13.jpeg" caption="" %}
 
-Let's hope the water stays out!
+Let's hope the water stays out! 
+
+Thanks to Russell who patiently answered all my questions and suggested using Fixtech Fix15 as it's similar to the Sikaflex 291 that I used but lasts much longer in the tune (and is cheaper).
