@@ -13,7 +13,7 @@ header:
   teaser: /assets/images/2024/01/aer3.jpeg
 ---
 
-This is the first problem I've had with my Stacer 429 (very similar to the Quintrex 420SC Renegade) which has not had a single problem since I [purchased it in 2015](https://phwl.org/2015/stacer-outlaw-429/). The live bait tank pump stopped working.  Here are the steps I used to troubleshoot. Hopefully this will help someone else with the same problem. 
+This is the first problem I've had with my Stacer 429 (very similar to the Quintrex 420SC Renegade) since I [purchased it in 2015](https://phwl.org/2015/stacer-outlaw-429/). The live bait tank pump stopped working.  Here are the steps I used to troubleshoot. Hopefully this will help someone else with the same problem. 
 
 In my Stacer 429 the middle button controls the bait tank aerator (left) and the bilge pump (right). My label for the NavLight is wrong (pressing the right side turns it on).
 
