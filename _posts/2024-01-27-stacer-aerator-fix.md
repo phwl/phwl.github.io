@@ -27,7 +27,8 @@ Checked the switch works, by pulling out the terminal for the aerator. You shoul
 
 {% include figure image_path="/assets/images/2024/01/aer2.jpeg" caption="" %}
 
-This is the aerator pump in place. I was very pleased to see that it was a catridge type one with replaceable catridge. All I have to do is buy one of [these cartidges](https://www.spxflow.com/johnson-pump-marine/products/cartridge-aerator-pumps/) and I won't even need to take it out and reseal the hole in the transom.
+This is the aerator pump in place. I was very pleased to see that it was one of [these cartidges](https://www.spxflow.com/johnson-pump-marine/products/cartridge-aerator-pumps/). In theory, all I would need to do is swap the dead one and it simply screws on.
+
 
 {% include figure image_path="/assets/images/2024/01/aer3.jpeg" caption="" %}
 
