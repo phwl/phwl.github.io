@@ -12,8 +12,8 @@ classes: wide
 # Journals
 
 [1] Carol Jingyi Li, Richard Rademacher, David Boland, Craig T\. Jin, Chad M\. Spooner, and Philip H\.W\. Leong\.
-S3 ca: a sparse strip spectral correlation analyzer\.
-*IEEE Signal Processing Letters*, \(\):1&ndash;5, 2024\.
+S$^3$ca: a sparse strip spectral correlation analyzer\.
+*IEEE Signal Processing Letters*, 31\(\):646&ndash;650, 2024\.
 URL: [s3ca\_spl24\.pdf](s3ca_spl24.pdf), [doi:10\.1109/LSP\.2024\.3364062](https://doi.org/10.1109/LSP.2024.3364062)\.  
 [2] Andrew C Cullen, Benjamin IP Rubinstein, Sithamparanathan Kandeepan, Barry Flower, and Philip HW Leong\.
 Predicting dynamic spectrum allocation: a review covering simulation, modelling, and prediction\.
