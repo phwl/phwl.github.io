@@ -88,6 +88,12 @@ We started catching better fish. In our best session, the trout went carzy and w
 {% include figure image_path="/assets/images/2024/04/IMG_5945.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2024/04/IMG_7389.jpeg" caption="" %}
 
+Here is a video that Beard took of me landing a brown.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rP20oG4x_Wg?si=ki6RVFJM9C7UmaD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Another video, this time Beard landing a rainbow.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V9lOvzfHuQU?si=dDJPDlLIs1y36TlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 This last brown trout was 4.5 lbs.
 {% include figure image_path="/assets/images/2024/04/IMG_7403.jpeg" caption="" %}
 
