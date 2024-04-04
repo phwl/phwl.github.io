@@ -56,7 +56,7 @@ Lake Benmore.
 Coffee time on Lake Benmore.
 {% include figure image_path="/assets/images/2024/04/IMG_6124.jpeg" caption="" %}
 
-This is the Ahuriri River that flowa into Lake Benmore.
+This is the Ahuriri River that flows into Lake Benmore.
 {% include figure image_path="/assets/images/2024/04/IMG_6085.jpeg" caption="" %}
 
 Ahuriri River at Clay Cliffs.
