@@ -38,7 +38,8 @@ Our humble cabin at the Lake Ruataniwha Holiday Park in Twizel.
 Beard managed to puncture his new waders on the first day of the trip. Amazingly, he successfully patched them with bandaids and contact adhesive.
 {% include figure image_path="/assets/images/2024/04/IMG_6041.jpeg" caption="" %}
 
-Similarly, I managed to sit on my glasses on the second day. Unfortunately, I didn't have a fix until I got home but had a spare pair!
+Similarly, I managed to sit on my glasses on the second day. Unfortunately, I didn't have a fix until I got home but had a spare pair.
+
 There was significant controversy when Tip Top [discontinued Goody Goody Gum Drops ice cream](https://en.wikipedia.org/wiki/Goody_Goody_Gum_Drops). Fortunately it is now back.
 {% include figure image_path="/assets/images/2024/04/IMG_5860.jpeg" caption="" %}
 
@@ -59,6 +60,9 @@ This is Lake Ohau.
 Lake Benmore.
 {% include figure image_path="/assets/images/2024/04/IMG_6114.jpeg" caption="" %}
 
+Coffee time on Lake Benmore.
+{% include figure image_path="/assets/images/2024/04/IMG_6124.jpeg" caption="" %}
+
 This is the Ahuriri River that flowa into Lake Benmore.
 {% include figure image_path="/assets/images/2024/04/IMG_6085.jpeg" caption="" %}
 
@@ -66,6 +70,8 @@ Ahuriri River at Clay Cliffs.
 {% include figure image_path="/assets/images/2024/04/IMG_5820.jpeg" caption="" %}
 
 Upper Ahuriri River.
+{% include figure image_path="/assets/images/2024/04/IMG_5842.jpeg" caption="" %}
+
 {% include figure image_path="/assets/images/2024/04/IMG_5850.jpeg" caption="" %}
 
 [Holstein Friesian](https://en.wikipedia.org/wiki/Holstein_Friesian) cows at Lake Benmore. By the way, one of these two photos was taken on an iPhone and the other on a Fujifilm X100T - can you tell which is which?
