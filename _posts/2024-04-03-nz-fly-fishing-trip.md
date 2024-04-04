@@ -67,7 +67,7 @@ Ahuriri River at Clay Cliffs.
 Upper Ahuriri River.
 {% include figure image_path="/assets/images/2024/04/IMG_5850.jpeg" caption="" %}
 
-[Holstein Friesian](https://en.wikipedia.org/wiki/Holstein_Friesian) cows at Lake Benmore.
+[Holstein Friesian](https://en.wikipedia.org/wiki/Holstein_Friesian) cows at Lake Benmore. By the way, one of these two photos was taken on an iPhone and the other on a Fujifilm X100T - can you tell which is which?
 {% include figure image_path="/assets/images/2024/04/IMG_6110.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2024/04/6006C24B-7E13-4656-AD2D-FE7EC187DD25-7380-0000059D90B95775.jpeg" caption="" %}
