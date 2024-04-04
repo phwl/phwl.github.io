@@ -34,10 +34,17 @@ Sunset on Lake Pukaki with Mount Cook in the distance.
 Our humble cabin at the Lake Ruataniwha Holiday Park in Twizel.
 {% include figure image_path="/assets/images/2024/04/IMG_5806.jpeg" caption="" %}
 
+Beard managed to puncture his new waders on the first day of the trip. Amazingly, he successfully patched them with bandaids and contact adhesive.
+{% include figure image_path="/assets/images/2024/04/IMG_6041.jpeg" caption="" %}
+
+Similarly, I managed to sit on my glasses on the second day. Unfortunately, I didn't have a fix until I got home but had a spare pair!
 There was significant controversy when Tip Top [discontinued Goody Goody Gum Drops ice cream](https://en.wikipedia.org/wiki/Goody_Goody_Gum_Drops). Fortunately it is now back.
 {% include figure image_path="/assets/images/2024/04/IMG_5860.jpeg" caption="" %}
 
-We released most of the fish but here is one of the rainbow trout that we baked.
+We released most of the fish.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IRBZTlGW5Vs?si=GVU3VO5NCqu_6v4C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Here is one of the rainbow trout that we baked.
 {% include figure image_path="/assets/images/2024/04/IMG_5980.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2024/04/IMG_5983.jpeg" caption="" %}
 
