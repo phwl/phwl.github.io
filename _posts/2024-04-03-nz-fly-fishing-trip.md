@@ -16,7 +16,8 @@ header:
 ---
 
 Over the Easter break, went on a fly-fishing trip to the South Island of 
-New Zealand with Beard.
+New Zealand with Beard. [My last trip was in 2015]({% link _posts/2015-12-15-new-zealand-fly-fishing-2015.md %}),
+
 
 ## Trip Report
 Petrol was amazingly expensive with the exchange rate being, NZD 1=AUD 0.918.
