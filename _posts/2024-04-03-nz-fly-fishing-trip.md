@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2024-04-03 09:30:00 AEST
-title: New Zealand Fly Fishing Trip
+title: New Zealand Fly Fishing Trip 2024
 use_math: true
 toc: true
 classes: wide
@@ -12,7 +12,7 @@ tags:
 - fly-fishing
 - travel
 header:
-  teaser: /assets/images/2024/04/IMG_6024.jpeg
+  teaser: /assets/images/2024/04/IMG_6023.jpeg
 ---
 
 Over the Easter break, went on a fly-fishing trip to the South Island of 
@@ -68,6 +68,12 @@ Next day Beard was unwell, think he caught the flu.
 Anyway, no problem I kept fishing. A fat rainbow trout.
 {% include figure image_path="/assets/images/2024/04/IMG_6023.jpeg" caption="" %}
 
+Here's a brown.
+{% include figure image_path="/assets/images/2024/04/IMG_6119.jpeg" caption="" %}
+
+A very chewed up brown hares ear nymph. I made 6 dozen flies for the trip but all my fish were caught on these and I lost about 10 of them.
+{% include figure image_path="/assets/images/2024/04/IMG_6121.jpeg" caption="" %}
+
 This is Lake Ohau.
 {% include figure image_path="/assets/images/2024/04/IMG_6003.jpeg" caption="" %}
 
@@ -92,3 +98,4 @@ Mount Cook.
 This was taken from the Hooker Valley Track, near the Mueller Lake lookout. It was pretty windy that day.
 {% include figure image_path="/assets/images/2024/04/IMG_6134.jpeg" caption="" %}
 
+{% include figure image_path="/assets/images/2024/04/IMG_6135.jpeg" caption="" %}
