@@ -106,7 +106,7 @@ Another video, this time Beard landing a rainbow.
 This last brown trout was 4.5 lbs.
 {% include figure image_path="/assets/images/2024/04/IMG_7403.jpeg" caption="" %}
 
-Next day Beard was unwell, think he caught the flu. 
+Next day Beard was unwell, I think he caught the flu. 
 {% include figure image_path="/assets/images/2024/04/IMG_5996.jpeg" caption="" %}
 
 Anyway, no problem I kept fishing. A fat rainbow trout.
