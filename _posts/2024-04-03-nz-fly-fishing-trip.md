@@ -63,6 +63,8 @@ Upper Ahuriri River.
 [Holstein Friesian](https://en.wikipedia.org/wiki/Holstein_Friesian) cows at Lake Benmore.
 {% include figure image_path="/assets/images/2024/04/IMG_6110.jpeg" caption="" %}
 
+{% include figure image_path="/assets/images/2024/04/PHOTO-2024-03-28-20-16-57.jpg" caption="" %}
+
 Mount Cook.
 {% include figure image_path="/assets/images/2024/04/IMG_6061.jpeg" caption="" %}
 
