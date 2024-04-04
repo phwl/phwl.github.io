@@ -89,6 +89,6 @@ Upper Ahuriri River.
 Mount Cook.
 {% include figure image_path="/assets/images/2024/04/IMG_6061.jpeg" caption="" %}
 
-This was taken from the Hooker Valley Track, near the Mueller Lake lookout.
+This was taken from the Hooker Valley Track, near the Mueller Lake lookout. It was pretty windy that day.
 {% include figure image_path="/assets/images/2024/04/IMG_6134.jpeg" caption="" %}
 
