@@ -20,7 +20,7 @@ New Zealand with Beard. [My last trip was in 2015]({% link _posts/2015-12-15-new
 
 
 ## Trip Report
-Petrol was amazingly expensive with the exchange rate being, NZD 1=AUD 0.918.
+Petrol was amazingly expensive with the exchange rate being NZD 1=AUD 0.918.
 {% include figure image_path="/assets/images/2024/04/IMG_5771.jpeg" caption="" %}
 
 Giant salmon at Rakaia.
