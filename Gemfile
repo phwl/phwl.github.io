@@ -29,3 +29,5 @@ end
 
 gem "webrick"
 gem "rouge"
+gem 'faraday-retry'
+
