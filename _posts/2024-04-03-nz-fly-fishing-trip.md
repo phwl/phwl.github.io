@@ -81,6 +81,8 @@ This was taken from the Hooker Valley Track, near the Mueller Lake lookout. It w
 {% include figure image_path="/assets/images/2024/04/IMG_6135.jpeg" caption="" %}
 
 ## Fishing
+I didn’t catch any fish on the first day but when I switched back to my normal fishing hat the following day, I started catching. Coincidence? I think not. As my friend Ebbtide said, "Always risky wearing a new/different hat fishing."
+
 My first fish. It's a rainbow trout in poor condition.
 {% include figure image_path="/assets/images/2024/04/IMG_5872.jpeg" caption="" %}
 
