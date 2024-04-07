@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2024-04-07 09:30:00 AEST
+date: 2024-04-05 09:30:00 AEST
 title: Installing Jekyll under Anaconda
 use_math: true
 toc: true
