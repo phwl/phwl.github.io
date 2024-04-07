@@ -23,4 +23,10 @@ Instructions for doing the above based on <https://s-canchi.github.io/2021-04-30
 (jekyll) $ conda install -c conda-forge c-compiler compilers cxx-compiler
 (jekyll) $ conda install -c conda-forge ruby
 (jekyll) $ gem install jekyll bundler
+(jekyll) $ pushd $HOME/anaconda3/envs/jekyll/share/rubygems/bin
+(jekyll) $ ln -s $HOME/anaconda3/envs/jekyll/bin/ruby .
+(jekyll) $ popd
+(jekyll) $ bundle exec jekyll serve --incremental
+```
+
 
