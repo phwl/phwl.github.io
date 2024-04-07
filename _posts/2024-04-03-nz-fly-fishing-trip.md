@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2024-04-03 09:30:00 AEST
+date: 2024-04-04 09:30:00 AEST
 title: New Zealand Fly Fishing Trip 2024
 use_math: true
 toc: true
