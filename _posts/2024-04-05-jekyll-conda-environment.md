@@ -19,7 +19,6 @@ Instructions for the above based on <https://s-canchi.github.io/2021-04-30-jekyl
 ```bash
 (base) % conda create --name jekyll python
 (base) % conda activate jekyll
-(base) % conda activate jekyll
 ```
 Your path should look something like this:
 ```bash
@@ -32,9 +31,10 @@ Now install compilers and ruby:
 (jekyll) % conda install -c conda-forge c-compiler compilers cxx-compiler
 (jekyll) % conda install -c conda-forge ruby
 (jekyll) % gem install jekyll bundler
-(jekyll) % pushd $HOME/anaconda3/envs/jekyll/share/rubygems/bin
-(jekyll) % ln -s $HOME/anaconda3/envs/jekyll/bin/ruby .
+(jekyll) % pushd $HOME/opt/anaconda3/envs/jekyll/share/rubygems/bin
+(jekyll) % ln -s $HOME/opt/anaconda3/envs/jekyll/bin/ruby .
 (jekyll) % popd
+(jekyll) % bundle install
 (jekyll) % bundle exec jekyll serve --incremental
 ```
 
