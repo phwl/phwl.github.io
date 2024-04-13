@@ -12,7 +12,7 @@ tags:
 - fly-fishing
 - travel
 header:
-  teaser: /assets/images/2024/04/IMG_6023.jpeg
+  teaser: /assets/images/2024/04/IMG_7389.jpeg
 ---
 
 Over the Easter break, went on a fly-fishing trip to the South Island of 
