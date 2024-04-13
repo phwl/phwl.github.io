@@ -114,7 +114,7 @@ Next day Beard was unwell, I think he caught the flu.
 Anyway, no problem I kept fishing. A fat rainbow trout.
 {% include figure image_path="/assets/images/2024/04/IMG_6023.jpeg" caption="" %}
 
-Here's a brown.
+Here's a brown. Can't remember if it was this one but I caught one on the very last cast of a session.
 {% include figure image_path="/assets/images/2024/04/IMG_6119.jpeg" caption="" %}
 
 A very chewed up brown Hares Ear nymph. I made 6 dozen flies for the trip but all my fish were caught on these and I lost about 10 of them.
