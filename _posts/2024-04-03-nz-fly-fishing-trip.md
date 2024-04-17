@@ -127,3 +127,7 @@ Here is one of the rainbow trout that we baked.
 {% include figure image_path="/assets/images/2024/04/IMG_5980.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2024/04/IMG_5983.jpeg" caption="" %}
 
+
+## Bloopers
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KduMr3Ku5Nk?si=oAc1F9xiTwMqLley" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
