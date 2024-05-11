@@ -16,6 +16,8 @@ header:
 
 # Copy a LUKS volume
 This is how to copy a LUKS partition from back1 to back2. 
+
+## Prepare back2 disk
 We assume the original device is already opened using:
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
@@ -37,7 +39,7 @@ cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
 ```
 
-# Copying
+## Copying back1 to back2
 Find UUIDS using ```blkid```, then
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/dc861b6d-0113-4da8-9c74-23fb1e759195 back1
@@ -47,7 +49,7 @@ mount /dev/mapper/back2 /srv/back2
 nohup rsync -Phav /srv/back1/ /srv/back2&
 ```
 
-# Mounting
+# Mounting  back2
 ## Ubuntu 
 ```
 cryptsetup luksOpen /dev/disk/by-uuid/b6e6191b-673a-49c2-87b0-7a1a2d880bb1 back2
@@ -63,12 +65,7 @@ mount /dev/mapper/back2 /srv/back2
    * It took me a long time to figure out that you can only pass through the disk as a USB 3.0 disk and have to install Guest Additions from Preferences on VMWare. 
    * Use an Bridged Adapter to put the machine on the same subnet as your host and samba to share the drive
 
-# Mounting
-You can mount the shared drive from a Ubuntu machine as follows
-```
-mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(id -g),iocharset=utf8,vers=3.0
-```
-# Closing
+## Closing the LUKS drives
 ```
 umount /srv/back1
 umount /srv/back2
@@ -76,6 +73,11 @@ cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
 ```
 
-# Linsk (11/5/24)
+## Mounting a Samba Shared Drive
+You can mount a samba shared drive from a Ubuntu machine as follows
+```
+mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(id -g),iocharset=utf8,vers=3.0
+```
+## Linsk (11/5/24)
 I haven't tried this but it looks good.
 <https://github.com/AlexSSD7/linsk>
