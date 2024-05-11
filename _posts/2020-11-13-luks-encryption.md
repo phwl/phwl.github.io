@@ -75,3 +75,7 @@ umount /srv/back2
 cryptsetup luksClose /dev/mapper/back1
 cryptsetup luksClose /dev/mapper/back2
 ```
+
+# Linsk (11/5/24)
+I haven't tried this but it looks good.
+<https://github.com/AlexSSD7/linsk>
