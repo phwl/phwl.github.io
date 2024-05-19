@@ -81,3 +81,7 @@ mount -t cifs //phwlnuc/back2 /srv/back2 -v -o username=phwl,uid=$(id -u),gid=$(
 ## Linsk (11/5/24)
 I haven't tried this but it looks good.
 <https://github.com/AlexSSD7/linsk>
+
+# A few scripts to remember
+    * Get size of all files from a find command ```find . -name '*.pdf' -exec du -hc {} +```
+    * Rsync all pdf's ```rsync -am --include='*/' --include='*/*.pdf' --exclude='*' . /Volumes/SamsungC```
