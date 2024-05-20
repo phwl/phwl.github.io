@@ -11,8 +11,11 @@ categories:
 tags:
 - linux
 header:
-  teaser: /assets/images/2022/03/win11.png
+  teaser: https://gitlab.com/uploads/-/system/user/avatar/113594/avatar.png
 ---
+
+For quite a while I've wanted to mount LUKS-encrypted partitions to my
+MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Windows). Here is a way to do it using the UTM virtual machine.
 
 # VM
 1. Download ArchLinux ARM from <https://mac.getutm.app/gallery/archlinux-arm>.
@@ -35,3 +38,8 @@ header:
 
 # Host
 1. You should be able to run the Finder, Go, Connect to server: smb://192.168.64.2
+1. You can also start it up automatically from MacOS using the following script:
+```bash
+$ utmctl start 2F2C4095-EC5B-49CD-A654-FE17D7EC7CAA
+$ utmctl usb connect "ArchLinux" "0BC2:AB84"
+```
