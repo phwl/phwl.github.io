@@ -11,7 +11,7 @@ categories:
 tags:
 - linux
 header:
-  teaser: https://gitlab.com/uploads/-/system/user/avatar/113594/avatar.png
+  teaser: https://guardianproject.info/wp-content/uploads/2011/02/luks-logo-cropped.png
 ---
 
 For quite a while I've wanted to mount LUKS-encrypted partitions to my
