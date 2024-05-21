@@ -15,26 +15,37 @@ header:
 ---
 
 For quite a while I've wanted to mount LUKS-encrypted partitions to my
-MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Windows). Here is a way to do it using the UTM virtual machine.
+MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Windows). This post describes a way to do it using UTM virtual machine.
 
 # VM
-1. Download ArchLinux ARM from <https://mac.getutm.app/gallery/archlinux-arm>.
-1. Unzip archlinux-arm64-utm4.zip which will create ArchLinux.utm
-1. In UTM create a new VM and Open the UTM file; run from the GUI and it should boot an emulated Linux.
-1. Resize the disk to 20G and mem to 8G.
-1. From the ArchLinux menu, pass through your USB drive.
-1. ```pacman -Syu```
-1. Install samba: ```pacman -Sy; pacman -S samba```
-1. ```curl 'https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD' > /etc/samba/smb.conf```
-1. Configure samba according to https://linuxways.net/arch/install-configure-samba-arch-linux/
-1. ```useradd phwl; mkdir /home/phwl; chown phwl:phwl /home/phwl; passwd phwl;```
-1.  ```groupadd -r smbusers; usermod -aG smbusers phwl```
-1. ```smbpasswd -a phwl```
-1. ```cryptsetup luksOpen /dev/sda1 onetouch```
-1. ```mkdir /samba; chown -R :smbusers /samba; mount /dev/mapper/onetouch /samba```
-1. ```systemctl enable --now smb```
-1. ```systemctl enable --now nmb```
-1. ```ifconfig```
+1. ArchLinux Config
+    * Download ArchLinux ARM from <https://mac.getutm.app/gallery/archlinux-arm>.
+    * Unzip archlinux-arm64-utm4.zip which will create ArchLinux.utm
+    * In UTM create a new VM and Open the UTM file. Then resize the disk to 16G and mem to 8G.
+    * Run ArchLinux from the GUI and it should boot the emulated Linux.
+1. LUKS
+    * Identify the drive using ```lsblk``` (mine was /dev/sda1)
+    * ```cryptsetup luksOpen /dev/sda1 onetouch```
+1. Samba
+    * From the ArchLinux menu, pass through your USB drive.
+    * Install samba: ```pacman -Syu samba``` (choose 1) dbus-broker-units.
+    * ```curl 'https://git.samba.org/samba.git/?p=samba.git;a=blob_plain;f=examples/smb.conf.default;hb=HEAD' > /etc/samba/smb.conf```
+    * Configure samba according to https://linuxways.net/arch/install-configure-samba-arch-linux/ (summarised below)
+    * Edit /etc/samba./smb.conf  and put the following at the end of the file
+        ```
+        [archshare]
+            path = /samba
+            writeable = yes
+            browsable = yes
+            read only = no
+            guest ok = no
+        ```
+    * ```useradd phwl; mkdir /home/phwl; chown phwl:phwl /home/phwl; passwd phwl;```
+    * ```groupadd -r smbusers; usermod -aG smbusers phwl```
+    * ```smbpasswd -a phwl```
+    * ```mkdir /samba; chown -R :smbusers /samba; mount /dev/mapper/onetouch /samba```
+    * ```systemctl enable --now smb nmb```
+    * ```ifconfig```
 
 # Host
 1. You should be able to run the Finder, Go, Connect to server: smb://192.168.64.2
