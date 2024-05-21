@@ -41,6 +41,7 @@ MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Wind
             guest ok = no
         ```
     * ```useradd phwl; mkdir /home/phwl; chown phwl:phwl /home/phwl; passwd phwl;```
+    * ```passwd root```
     * ```groupadd -r smbusers; usermod -aG smbusers phwl```
     * ```smbpasswd -a phwl```
     * ```mkdir /samba; chown -R :smbusers /samba; mount /dev/mapper/onetouch /samba```
