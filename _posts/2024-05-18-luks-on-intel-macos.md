@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2024-05-18 09:30:00 AEST
-title: LUKS on Intel MacOS (using an ARM64 ArchLinux image under UTM)
+title: LUKS on Intel or ARM Mac (using an ARM64 ArchLinux image under UTM)
 use_math: true
 toc: true
 classes: wide
