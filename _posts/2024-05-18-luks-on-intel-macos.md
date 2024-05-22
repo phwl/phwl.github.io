@@ -17,7 +17,8 @@ header:
 For quite a while I've wanted to mount LUKS-encrypted partitions to my
 MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Windows). This post describes a way to do it using UTM virtual machine.
 
-# VM
+# VM Method
+## Create VM
 1. ArchLinux Config
     * Download ArchLinux ARM from <https://mac.getutm.app/gallery/archlinux-arm>.
     * Unzip archlinux-arm64-utm4.zip which will create ArchLinux.utm
@@ -48,10 +49,36 @@ MacOS machines ([here](https://phwl.org/2022/wsl2-tips/) is how to do it in Wind
     * ```systemctl enable --now smb nmb```
     * ```ifconfig```
 
-# Host
+## Host
 1. You should be able to run the Finder, Go, Connect to server: smb://192.168.64.2
 1. You can also start it up automatically from MacOS using the following script:
 ```bash
 $ utmctl start 2F2C4095-EC5B-49CD-A654-FE17D7EC7CAA
 $ utmctl usb connect "ArchLinux" "0BC2:AB84"
 ```
+
+# openwrt
+
+This is using a [GL.iNet GL-MT3000 router](https://www.gl-inet.com/products/gl-mt3000/). It should be similar for any openwrt device.
+
+1. First [install openwrt](https://openwrt.org/toh/gl.inet/gl-mt3000) and turn on wifi access.
+1. USB: ssh to openwrt machine and do the following [to get usb working](https://openwrt.org/docs/guide-user/storage/usb-installing):
+```
+# opkg update
+# opkg install kmod-usb-storage cryptsetup
+# opkg install kmod-usb-uhci
+# insmod uhci_hcd
+# opkg install kmod-usb2
+# insmod ehci-hcd
+# opkg install kmod-usb3
+# insmod xhci-hcd
+# opkg install kmod-usb-storage-uas
+# dmesg
+# cryptsetup luksOpen /dev/sda1 onetouch
+```
+You should see a message like ```[sda] Attached SCSI desk``` which means the USB drive is working.
+1. The next problem is you may get ```Warning: keyslot operation could fail as it requires more than available memory```. This problem is addressed [here](https://unix.stackexchange.com/questions/647859/open-cryptsetup-out-of-memory-not-enough-available-memory-to-open-a-keyslot). On a computer with sufficient memory:
+    ```
+    $ cryptsetup luksAddKey -S 1 --pbkdf pbkdf2 /dev/sda1
+    $ cryptsetup luksOpen -S 1 /dev/sda1 onetouch
+    ```
