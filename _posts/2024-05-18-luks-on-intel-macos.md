@@ -57,7 +57,9 @@ $ utmctl start 2F2C4095-EC5B-49CD-A654-FE17D7EC7CAA
 $ utmctl usb connect "ArchLinux" "0BC2:AB84"
 ```
 
-# openwrt
+# Openwrt Method
+
+APPARENTLY, THIS APPEARS TO BE A BAD IDEA FOR THE MOMENT DUE TO AN UNRESOLVED [LUKS BUG IN OPENWRT](https://github.com/openwrt/openwrt/issues/12323).
 
 This is using a [GL.iNet GL-MT3000 router](https://www.gl-inet.com/products/gl-mt3000/). It should be similar for any openwrt device.
 
