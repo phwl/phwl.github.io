@@ -14,13 +14,13 @@ header:
   teaser: https://yaesu.com/ProductImages/FTM-500DR_thumb.jpg
 ---
 
-Here is a simple python program to convert CSV files from
-[https://www.wia.org.au/members/repeaters/data/](the Australian Repeater list) 
-to a form digestible by the [Yaesu FTM-500D Programmer ADMS-16 software](https://yaesu.com/downloadFile.cfm?FileID=17933&FileCatID=42&FileName=FTM%2D500D%5FADMS%2D16%5FENG.zip&FileContentType=application%2Fx%2Dzip%2Dcompressed). If you
-just want the resulting CSV file, it is available [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv).
+Even though the FTM-500DR has a microSD card slot, you need a cable to
+program the memories from a computer. I came up with this simple python 
+program to convert CSV files from the [Australian Repeater list](https://www.wia.org.au/members/repeaters/data/) 
+to a form digestible by the [Yaesu FTM-500D Programmer ADMS-16 software](https://yaesu.com/downloadFile.cfm?FileID=17933&FileCatID=42&FileName=FTM%2D500D%5FADMS%2D16%5FENG.zip&FileContentType=application%2Fx%2Dzip%2Dcompressed). Specifically, it converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be simply downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv).
 
-Here is the program.
-```python3
+If you would like to customise the program, it is available below.
+```python
 #!/usr/bin/python3
 
 # Program to convert csv files from https://www.wia.org.au/members/repeaters/data/ 
