@@ -19,7 +19,7 @@ program the memories from a computer. I came up with this simple python
 program to convert CSV files from the [Australian Repeater list](https://www.wia.org.au/members/repeaters/data/) 
 to a form digestible by the Yaesu FTM-500D Programmer ADMS-16 software, available under Files from the [Yaesu website](https://yaesu.com/indexVS.cfm?cmd=DisplayProducts&ProdCatID=249&encProdID=0308259EFC6C36C21D8DCDB78ECBBDCA). 
 
-Specifically, the program converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be simply downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv).
+Specifically, the program converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv) and directly imported in the Yaesu ADMS-16 software.
 
 If you would like to customise the program, it is available below.
 ```python
