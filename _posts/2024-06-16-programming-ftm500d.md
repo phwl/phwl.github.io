@@ -17,7 +17,9 @@ header:
 Even though the FTM-500DR has a microSD card slot, you need a cable to
 program the memories from a computer. I came up with this simple python 
 program to convert CSV files from the [Australian Repeater list](https://www.wia.org.au/members/repeaters/data/) 
-to a form digestible by the [Yaesu FTM-500D Programmer ADMS-16 software](https://yaesu.com/downloadFile.cfm?FileID=17933&FileCatID=42&FileName=FTM%2D500D%5FADMS%2D16%5FENG.zip&FileContentType=application%2Fx%2Dzip%2Dcompressed). Specifically, it converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be simply downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv).
+to a form digestible by the Yaesu FTM-500D Programmer ADMS-16 software, available under Files from the [Yaesu website](https://yaesu.com/indexVS.cfm?cmd=DisplayProducts&ProdCatID=249&encProdID=0308259EFC6C36C21D8DCDB78ECBBDCA). 
+
+Specifically, the program converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be simply downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv).
 
 If you would like to customise the program, it is available below.
 ```python
@@ -30,7 +32,6 @@ import re
 import sys
 import csv
 
-# fname = sys.argv[1]
 fname = 'chirpM_Sydney.csv'
 # we include all these names in our scan list
 scancalls = ['VK2RBV', 'VK2RCG', 'Paddo', 'VK2RON', 'VK2RHC', 'VK2RCF', 'THills', 'Asqith', 'Dural', 'HCote']
