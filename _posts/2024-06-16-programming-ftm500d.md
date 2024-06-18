@@ -22,6 +22,9 @@ to a form digestible by the Yaesu FTM-500D Programmer ADMS-16 software, availabl
 Specifically, the program converts the ```chirpM_Sydney.csv``` file. The resulting CSV file can be downloaded from [here](/assets/images/2024/06/chirpM_Sydney-FTM500d.csv) and directly imported in the Yaesu ADMS-16 software.
 
 If you would like to customise the program, it is available below.
+
+73 VK2APL
+
 ```python
 #!/usr/bin/python3
 
