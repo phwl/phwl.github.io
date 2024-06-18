@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2024-06-16 09:30:00 AEST
-title: How to Program Repeaters in Yaesu FTM-500DR without a Cable
+title: How to Program Repeaters into the Yaesu FTM-500DR (without a Cable)
 use_math: true
 toc: true
 classes: wide
