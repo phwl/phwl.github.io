@@ -357,7 +357,7 @@ Matic \- an intracardiac tachycardia classification system\.
 [1] Binglei Lou, Richard Rademacher, David Boland, and Philip H\.W\. Leong\.
 PolyLUT\-Add: FPGA\-based LUT inference with wide inputs\.
 In *Proc\. International Conference on Field Programmable Logic an d Applications \(FPL\)*, to appear\. 2024\.
-URL: [polylutadd\.pdf](polylutadd.pdf)\.  
+URL: [polylutadd\-fpl24\.pdf](polylutadd-fpl24.pdf)\.  
 [2] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, David Boland, and Chris Butler\.
 Performance analysis of federated learning in orbital edge computing\.
 In *Proc\. IEEE/ACM 16th International Conference on Utility and Cloud Computing Proceedings*, to appear\. 2023\.
