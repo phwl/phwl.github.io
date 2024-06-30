@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2024-06-29 09:30:00 AEST
-title: ETEC 50hp Service
+title: 2015 Evinrude ETEC 50hp Service
 use_math: true
 toc: true
 classes: wide
