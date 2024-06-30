@@ -14,10 +14,10 @@ header:
   teaser: /assets/images/2024/06/IMG_6861.jpeg
 ---
 
-Here is how to change the fuel filter and gearcase oil on an Evinrude 50hp.
+Here is how to change the fuel filter and gearcase oil on a 2015 Evinrude 50hp ETEC outboard motor.
 
 # Opening Cowling
-This is the hardest part. The side in the photo often gets stuck. To get it unlocked you slap the side of the cover just above the mechanism while pulling down on the lever.
+Opening the cowling is the hardest part. The side in the photo often gets stuck. To get it unlocked you slap the side of the cover just above the mechanism while pulling down on the lever.
 {% include figure image_path="/assets/images/2024/06/IMG_6869.jpeg" caption="" %}
 
 # Fuel Filter
