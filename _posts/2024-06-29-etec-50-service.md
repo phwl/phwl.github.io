@@ -26,14 +26,14 @@ This also stopped me in my tracks as they are held by [Oetiker Clamps](https://w
 What I did was lift up the barb using needle nose pliers and then used the ear clamp pliers to remove.
 {% include figure image_path="/assets/images/2024/06/IMG_6857.jpeg" caption="" %}
 
-The put in the new one, ensuring you get the direction right. Tighten the new clamps.
+The put in the new one, ensuring you get the direction right. Tighten the new clamps. Having the correct tool makes this easy.
 {% include figure image_path="/assets/images/2024/06/IMG_6861.jpeg" caption="" %}
 
 # Gearcase Oil
-The top and bottom plugs are shown below.
+The location of the top and bottom plugs are shown in the photo below.
 {% include figure image_path="/assets/images/2024/06/IMG_6871.jpeg" caption="" %}
 
-First remove the top level plug (it is a 4mm hex) and check the level was near the top using something clean like a cable tie. Then remove the bottom drain plug and drain.
+First put something underneath to catch the oil. Remove the top level plug (it is a 4mm hex) and check the level was near the top using something like a clean cable tie. Then remove the bottom drain plug and drain.
 {% include figure image_path="/assets/images/2024/06/IMG_6864.jpeg" caption="" %}
 
 While draining, inspect the plugs. They are magnetised so any fuzz is bad. Also check for water contamination. After everything has drained, remove the seals from the plug areas.
