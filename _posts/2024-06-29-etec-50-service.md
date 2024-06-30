@@ -28,6 +28,9 @@ What I did was lift up the barb using needle nose pliers and then used the ear c
 {% include figure image_path="/assets/images/2024/06/IMG_6861.jpeg" caption="" %}
 
 # Gearcase Oil
+The top and bottom plugs are shown below.
+{% include figure image_path="/assets/images/2024/06/IMG_6871.jpeg" caption="" %}
+
 First remove the top level plug (it is a 4mm hex) and check the level was near the top using something clean like a cable tie. Then remove the bottom drain plug and drain.
 {% include figure image_path="/assets/images/2024/06/IMG_6864.jpeg" caption="" %}
 
