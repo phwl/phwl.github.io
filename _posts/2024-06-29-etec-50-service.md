@@ -11,7 +11,7 @@ categories:
 tags:
 - linux
 header:
-  teaser: /assets/images/2022/03/win11.png
+  teaser: /assets/images/2024/06/IMG_6861.jpeg
 ---
 
 Here is how to change the fuel filter and gearcase oil on an Evinrude 50hp.
