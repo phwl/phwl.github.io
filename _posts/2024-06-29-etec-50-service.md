@@ -7,9 +7,9 @@ use_math: true
 toc: true
 classes: wide
 categories:
-- academia
+- diy
 tags:
-- linux
+- boat
 header:
   teaser: /assets/images/2024/06/IMG_6861.jpeg
 ---

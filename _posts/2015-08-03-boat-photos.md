@@ -7,6 +7,8 @@ title: Quintrex Fishseeker Photos
 classes: wide
 categories:
 - fishing
+tags:
+- boat
 header:
   teaser: /assets/images/2015/08/R0015861.jpg
 ---

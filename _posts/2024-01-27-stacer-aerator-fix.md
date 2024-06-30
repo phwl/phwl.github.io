@@ -6,9 +6,9 @@ title: Telwater Stacer/Quintex Aerator Fix
 use_math: true
 classes: wide
 categories:
-- hobbies
+- diy
 tags:
-- fishing
+- boat
 header:
   teaser: /assets/images/2024/01/aer3.jpeg
 ---

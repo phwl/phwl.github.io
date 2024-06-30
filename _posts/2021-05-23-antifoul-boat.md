@@ -8,6 +8,7 @@ classes: wide
 categories:
 - diy
 tags:
+- boat
 - repair
 header:
   teaser: /assets/images/2021/05/IMG_7843.jpeg

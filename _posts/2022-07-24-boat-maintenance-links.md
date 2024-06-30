@@ -9,7 +9,8 @@ classes: wide
 categories:
 - diy
 tags:
-- boats
+- boat
+- repair
 header:
   teaser: /assets/images/2022/07/two-stroke-engine.jpg
 ---
