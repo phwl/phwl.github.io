@@ -25,6 +25,8 @@ This also stopped me in my tracks as they are held by [Oetiker Clamps](https://w
 
 What I did was lift up the barb using needle nose pliers and then used the ear clamp pliers to remove.
 {% include figure image_path="/assets/images/2024/06/IMG_6857.jpeg" caption="" %}
+
+The put in the new one, ensuring you get the direction right. Tighten the new clamps.
 {% include figure image_path="/assets/images/2024/06/IMG_6861.jpeg" caption="" %}
 
 # Gearcase Oil
