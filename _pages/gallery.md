@@ -48,14 +48,16 @@ portraits:
   - image_path: /assets/gallery/portrait/SBfever1.jpg
     url: /assets/gallery/portrait/SBfever1.jpg
 fishing:
+  - image_path: /assets/gallery/fishing/jy-pittwater.jpg
+    url: /assets/gallery/fishing/jy-pittwater.jpg
   - image_path: /assets/gallery/fishing/IMG_7711.JPG
     url: /assets/gallery/fishing/IMG_7711.JPG
   - image_path: /assets/gallery/fishing/IMG_1615.JPG
     url: /assets/gallery/fishing/IMG_1615.JPG
   - image_path: /assets/gallery/fishing/plmack04.JPG
     url: /assets/gallery/fishing/plmack04.JPG
-  - image_path: /assets/gallery/fishing/IMG_7694.JPG
-    url: /assets/gallery/fishing/IMG_7694.JPG
+  #- image_path: /assets/gallery/fishing/IMG_7694.JPG
+    #url: /assets/gallery/fishing/IMG_7694.JPG
   - image_path: /assets/gallery/fishing/IMG_7735.JPG
     url: /assets/gallery/fishing/IMG_7735.JPG
   - image_path: /assets/gallery/fishing/IMG_8437.jpg
