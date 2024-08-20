@@ -12,7 +12,7 @@ classes: wide
 # Journals
 
 [1] Chuliang Guo, Binglei Lou, David Boland, and Philip H\.W\. Leong\.
-Highly\-parallel cnn accelerator for repvgg\-like network training on fpgas\.
+Highly\-parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2024\.
 URL: [cnn\_tvlsi24\.pdf](cnn_tvlsi24.pdf), [doi:10\.1109/TCAD\.2024\.3445264](https://doi.org/10.1109/TCAD.2024.3445264)\.  
 [2] Carol Jingyi Li, Richard Rademacher, David Boland, Craig T\. Jin, Chad M\. Spooner, and Philip H\.W\. Leong\.
