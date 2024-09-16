@@ -14,7 +14,7 @@ classes: wide
 [1] Chuliang Guo, Binglei Lou, David Boland, and Philip H\.W\. Leong\.
 Highly\-parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2024\.
-URL: [cnn\_tvlsi24\.pdf](cnn_tvlsi24.pdf), [doi:10\.1109/TCAD\.2024\.3445264](https://doi.org/10.1109/TCAD.2024.3445264)\.  
+URL: [repvgg\_tcad24\.pdf](repvgg_tcad24.pdf), [doi:10\.1109/TCAD\.2024\.3445264](https://doi.org/10.1109/TCAD.2024.3445264)\.  
 [2] Carol Jingyi Li, Richard Rademacher, David Boland, Craig T\. Jin, Chad M\. Spooner, and Philip H\.W\. Leong\.
 S$^3$ca: a sparse strip spectral correlation analyzer\.
 *IEEE Signal Processing Letters*, 31\(\):646&ndash;650, 2024\.
