@@ -33,6 +33,11 @@ Beam: 2.08m Bottomsides: 3.00mm Depth: 1.08m Height on Trailer: 1.60m Length Max
 
 Trailer tyre is a 155R13LT. Pressure should be minimum 40 lb/sq in preferably 50. (Should be a HT Holden bearing with 64mm stud spacing).
 
+***Trailer***
+30/10/2024 Just was I was wondering whether or not I should replace the tyres, the right had a crack near the valve. Bought 2 new wheels and tyres from <https://sunriseint.com.au/>. They were Galvanised 155R13C (commercial rather than light truck) and were $104 each. The Stacer trailer indeed had a Holden HT stud pattern. The tyres came inflated to 46 psi.
+
+The stud size is 7/16" and the lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts>.
+
 ***Battery***
 Evinrude ETEC 640 CCA (800 MCA) (actually it was supplied with a CCA550 battery which has worked well for 4.5 years)
 
