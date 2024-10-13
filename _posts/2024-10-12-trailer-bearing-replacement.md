@@ -32,7 +32,7 @@ The wheels/tyres were Galvanised 155R13C (commercial rather than light truck) an
 
 The stud size is 7/16" and the lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts>.
 
-I replace the wheels and tyres first.
+I replaced the wheels and tyres prior to this job.
 
 # Wheel and hub removal
 
