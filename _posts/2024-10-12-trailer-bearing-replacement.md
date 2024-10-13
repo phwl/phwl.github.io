@@ -22,39 +22,44 @@ The reason for this post is that I wasn't able to find a good, written descripti
 Here is a really good diagram showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
 
+## Hubs
 To identify the hub type, you need to check the stud pattern. 
-For uneven stud holes such as 5 stud patterns, measure from the centre of one stud, to the furthest edge of the most opposite stud (1 to 2 in the figure above). For even stud holes such as 4 or 6 stud patterns, measure from the centre of one stud to the centre of the opposite stud. The match with the stud pitch circle diammeter (PCD) column in the table below.
+For uneven stud holes such as 5 stud patterns, measure from the centre of one stud, to the furthest edge of the most opposite stud (1 to 2 in the figure above). For even stud holes such as 4 or 6 stud patterns, measure from the centre of one stud to the centre of the opposite stud. The match with the stud distance  column in the table below. If you want to be extra safe, also check the pitch circle diammeter (PCD) which is the diameter of a circle going through the center of all the studs.
 
 {% include figure image_path="/assets/images/2024/10/studpatterns.jpg" caption="" %}
 
-The most commomn in Australia are Holden (LM) bearings and Ford (slimline) ones. 
+## Bearings
+The most common in Australia are Holden (LM) bearings and Ford (slimline) ones. 
 * The best way is to check the PCD. Other ways include:
 * The Holden have 11mm stud diameter and Ford 12.4mm. 
 * Round 39 mm and square 40 mm axles are usually Holden and 45 mm square axles are usually Ford.
+
+This photo below shows the new rims and tyres that I bought. They support both Holden HT and Ford hubs.
+
+{% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
 The bearing type is best determined by reading the part number of the one being replaced.
 
 The Stacer trailer has a Holden HT stud pattern and the bearings are:
 * ¾” Cone – LM11949/10 Bearing
 * 1 ¼” Cone – LM67048/10 Bearing.
+The rims/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each.  The new tyres came inflated to 46 psi.
 
 # Tyres
 I've had my [Stacer Outlaw 429]({% link _posts/2015-10-18-stacer-outlaw-429.md %}) since 2015. I don't do very many miles as I only drive to  the local boat ramp. When I stop I always check the bearings aren't hot. Anually, I jack it up and spin the wheels to check for noise or side-to-side play.
 
-30/10/2024 Just was I was wondering whether or not I should replace the tyres (it is recommended to change them after [10 years](https://tyregeek.com.au/when-to-replace-tyres), the right had a crack near the valve. Bought 2 new wheels and tyres from <https://sunriseint.com.au/>). The reason I bought new wheels as well was to use one of the old ones as a spare.
+30/10/2024 Just was I was wondering whether or not I should replace the tyres (it is recommended to change them after [10 years](https://tyregeek.com.au/when-to-replace-tyres), the right had a crack near the valve. Bought 2 new rims and tyres from <https://sunriseint.com.au/>). The reason I bought new rims was to use one of the old ones as a spare.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8054.jpeg" caption="" %}
 
-The wheels/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each.  The tyres came inflated to 46 psi.
-
-The stud size is 7/16" and the lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts> and below.
+The lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts> and below.
 
 
 {% include figure image_path="/assets/images/2024/10/IMG_8192.jpeg" caption="" %}
 
 # Wheel and hub removal
 
-With the new wheels in place, first the Bearing Buddies come off. You tap them from side to side with a hammer to get them to come out. I don't like these original ones, my grease gun always stuck to the nipple. For this reason I didn't grease it very often.
+First the Bearing Buddies come off. You tap them from side to side with a hammer to get them to come out. I don't like these original ones, my grease gun always stuck to the nipple. For this reason I didn't grease it very often.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
