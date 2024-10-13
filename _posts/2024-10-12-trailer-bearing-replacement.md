@@ -54,7 +54,7 @@ Now the wheel can come off. Make sure you chock the wheels on the opposite side 
 
 {% include figure image_path="/assets/images/2024/10/IMG_8162.jpeg" caption="" %}
 
-Take the tyre off.
+Take the tyre off. Then remove the axle nut using a spanner or water pump pliers.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8151.jpeg" caption="" %}
 
