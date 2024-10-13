@@ -22,6 +22,22 @@ The reason for this post is that I wasn't able to find a good, written descripti
 Here is a really good diagram showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
 
+To identify the hub type, you need to check the stud pattern. 
+For uneven stud holes such as 5 stud patterns, measure from the centre of one stud, to the furthest edge of the most opposite stud (1 to 2 in the figure above). For even stud holes such as 4 or 6 stud patterns, measure from the centre of one stud to the centre of the opposite stud. The match with the stud pitch circle diammeter (PCD) column in the table below.
+
+{% include figure image_path="/assets/images/2024/10/studpatterns.jpg" caption="" %}
+
+The most commomn in Australia are Holden (LM) bearings and Ford (slimline) ones. 
+* The best way is to check the PCD. Other ways include:
+* The Holden have 11mm stud diameter and Ford 12.4mm. 
+* Round 39 mm and square 40 mm axles are usually Holden and 45 mm square axles are usually Ford.
+
+The bearing type is best determined by reading the part number of the one being replaced.
+
+The Stacer trailer has a Holden HT stud pattern and the bearings are:
+* ¾” Cone – LM11949/10 Bearing
+* 1 ¼” Cone – LM67048/10 Bearing.
+
 # Tyres
 I've had my [Stacer Outlaw 429]({% link _posts/2015-10-18-stacer-outlaw-429.md %}) since 2015. I don't do very many miles as I only drive to  the local boat ramp. When I stop I always check the bearings aren't hot. Anually, I jack it up and spin the wheels to check for noise or side-to-side play.
 
@@ -29,7 +45,7 @@ I've had my [Stacer Outlaw 429]({% link _posts/2015-10-18-stacer-outlaw-429.md %
 
 {% include figure image_path="/assets/images/2024/10/IMG_8054.jpeg" caption="" %}
 
-The wheels/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each. The Stacer trailer has a Holden HT stud pattern. The tyres came inflated to 46 psi.
+The wheels/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each.  The tyres came inflated to 46 psi.
 
 The stud size is 7/16" and the lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts> and below.
 
@@ -76,9 +92,6 @@ Clean out all the old grease on the axle.
 I purchased hubs and bearings from [Huntsman Products](https://www.huntsmanproducts.com.au/) on Ebay:
 * [X2 HT Trailer Galvanised Disc Hubs with LM Holden Bearings](https://www.huntsmanproducts.com.au/products/ht-trailer-galvanised-disc-hubs-x-2-with-lm-holden-bearings)
 * [Upgrade to Koyo Japanese Bearing kit](https://www.huntsmanproducts.com.au/products/upgrade-to-japanese-bearing-kit-single-axle-lm-or-s-l-bearings).
-The bearings are:
-* ¾” Cone – LM11949/10 Bearing
-* 1 ¼” Cone – LM67048/10 Bearing.
 I also chose Penrite Marine Grease.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8148.jpeg" caption="" %}
