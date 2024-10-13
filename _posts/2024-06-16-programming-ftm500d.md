@@ -14,8 +14,12 @@ header:
   teaser: https://yaesu.com/ProductImages/FTM-500DR_thumb.jpg
 ---
 
-Even though the FTM-500DR has a microSD card slot, you need a cable to
-program the memories from a computer. I came up with this simple python 
+This post explains how to program the memories of a Yaesu FTM-500DR
+via the microSD card (instead of a cable).
+
+Even though the FTM-500DR has a microSD card slot, it isn't 
+straightforward to program its memories from a computer.
+I came up with this simple python 
 program to convert CSV files from the [Australian Repeater list](https://www.wia.org.au/members/repeaters/data/) 
 to a form digestible by the Yaesu FTM-500D Programmer ADMS-16 software, available under Files from the [Yaesu website](https://yaesu.com/indexVS.cfm?cmd=DisplayProducts&ProdCatID=249&encProdID=0308259EFC6C36C21D8DCDB78ECBBDCA). 
 
