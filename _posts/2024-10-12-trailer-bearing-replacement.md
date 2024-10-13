@@ -138,8 +138,8 @@ Grease the Bearing Buddies with a grease gun.
 Place a punch on the lip of the race and smash it with a hammer from different positions to move it out. When you get near the end, you'll need to support the hub so the race can fall out.
 {% include figure image_path="/assets/images/2024/10/IMG_8182.jpeg" caption="" %}
 
-It takes a bit of work but here are the inner and outer races.
 {% include figure image_path="/assets/images/2024/10/IMG_8183.jpeg" caption="" %}
 
+It takes a bit of work but here are the inner and outer races.
 {% include figure image_path="/assets/images/2024/10/IMG_8184.jpeg" caption="" %}
 
