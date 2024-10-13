@@ -11,20 +11,20 @@ categories:
 tags:
 - repair
 header:
-  teaser: /assets/images/2024/10/IMG_8148.jpeg
+  teaser: /assets/images/2024/10/IMG_8156.jpeg
 ---
 
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
 
 # Introduction
 
-Here is a really good diagram showing the entire assembly.
+Here is a really good diagram showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
 
 # Tyres
 I've had my [Stacer Outlaw 429]({% link _posts/2015-10-18-stacer-outlaw-429.md %}) since 2015. I don't do very many miles as I only drive to  the local boat ramp. When I stop I always check the bearings aren't hot. Anually, I jack it up and spin the wheels to check for noise or side-to-side play.
 
-30/10/2024 Just was I was wondering whether or not I should replace the tyres (it is recommended to change them after [10 years](https://tyregeek.com.au/when-to-replace-tyres), the right had a crack near the valve. Bought 2 new wheels and tyres from <https://sunriseint.com.au/>. The reason I bought wheels was so I can use one of the old ones as a spare.
+30/10/2024 Just was I was wondering whether or not I should replace the tyres (it is recommended to change them after [10 years](https://tyregeek.com.au/when-to-replace-tyres), the right had a crack near the valve. Bought 2 new wheels and tyres from <https://sunriseint.com.au/>). The reason I bought new wheels as well was to use one of the old ones as a spare.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8054.jpeg" caption="" %}
 
@@ -32,15 +32,13 @@ The wheels/tyres were Galvanised 155R13C (commercial rather than light truck) an
 
 The stud size is 7/16" and the lug nuts should be torqued to 70-80 ft lbs. The tightening sequence is here <https://www.tirerack.com/upgrade-garage/how-do-i-properly-torque-my-wheel-lug-nuts-or-bolts>.
 
-I replaced the wheels and tyres prior to this job.
-
 # Wheel and hub removal
 
-First the Bearing Buddies come off. You tap them from side to side with a hammer to get them to come out. I don't like these original ones, my grease gun always stuck to the nipple. For this reason I didn't grease it very often.
+With the new wheels in place, first the Bearing Buddies come off. You tap them from side to side with a hammer to get them to come out. I don't like these original ones, my grease gun always stuck to the nipple. For this reason I didn't grease it very often.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
-The grease looks pretty old.
+The grease looks pretty old. I really should have repacked the bearings sooner.
 {% include figure image_path="/assets/images/2024/10/IMG_8145.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2024/10/IMG_8146.jpeg" caption="" %}
@@ -49,7 +47,7 @@ Wipe off the old grease and then remove the cotter pin with pliers.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8147.jpeg" caption="" %}
 
-Now the wheel can come off. Make sure you chock the wheels on the opposite side before you jack up the trailer!
+Now the wheel can come off. Undo the lug nuts first and make sure you chock the wheels on the opposite side before you jack up the trailer!
 {% include figure image_path="/assets/images/2024/10/IMG_8149.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2024/10/IMG_8162.jpeg" caption="" %}
@@ -58,13 +56,13 @@ Take the tyre off. Then remove the axle nut using a spanner or water pump pliers
 
 {% include figure image_path="/assets/images/2024/10/IMG_8151.jpeg" caption="" %}
 
-The whole hub should come off now. Sometimes you need to lightly tap it from behind with a hammer.
+The whole hub should come off now. Sometimes you need to lightly tap it from behind with a hammer. I had to do this on the other side.
 {% include figure image_path="/assets/images/2024/10/IMG_8152.jpeg" caption="" %}
 
 Good, the old bearing is a LM11949/10 so I purchased the right ones!
 {% include figure image_path="/assets/images/2024/10/IMG_8154.jpeg" caption="" %}
 
-Gave the old bearings a quick wash in kerosene. They weren't in really bad condition.
+Gave the old bearings a quick wash in kerosene. They weren't in bad condition, you can see some lines on the rollers but no deep scoring or chipping.
 {% include figure image_path="/assets/images/2024/10/IMG_8188.jpeg" caption="" %}
 
 Clean out all the old grease on the axle.
@@ -77,23 +75,23 @@ I purchased hubs and bearings from [Huntsman Products](https://www.huntsmanprodu
 The bearings are:
 * ¾” Cone – LM11949/10 Bearing
 * 1 ¼” Cone – LM67048/10 Bearing.
-The bearing race came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. In my case, I'll need to remove the race from the old hub as I want to use it as a spare.
-
 I also chose Penrite Marine Grease.
-
-You put grease on your palm and then press it from the bottom until it appears at the top. Needless to say it's a super messy process.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8148.jpeg" caption="" %}
 
-Here they are all done.
-
 {% include figure image_path="/assets/images/2024/10/IMG_8155.jpeg" caption="" %}
+
+Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to hammer in the new races (using the old ones to get them inside the hub).
+
+Then, put grease on your palm and then press it into each bearing from the bottom. What you want is for the grease to squeeze out to the top. Needless to say it's a super messy process.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8156.jpeg" caption="" %}
 
+Here they are all done.
+
 {% include figure image_path="/assets/images/2024/10/IMG_8157.jpeg" caption="" %}
 
-Put the inner bearing in the hub.
+Put the inner bearing in the race.
 {% include figure image_path="/assets/images/2024/10/IMG_8169.jpeg" caption="" %}
 
 Put grease in the gap.
@@ -108,7 +106,7 @@ I use an old spanner to balance the force.
 Now put the rubber part of the lip seal on the axle.
 {% include figure image_path="/assets/images/2024/10/IMG_8174.jpeg" caption="" %}
 
-Then the hub and spindle washer.
+Then the hub, outer bearing and spindle washer.
 {% include figure image_path="/assets/images/2024/10/IMG_8175.jpeg" caption="" %}
 
 Axle nut.
