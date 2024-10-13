@@ -52,7 +52,7 @@ Now the wheel can come off. Undo the lug nuts first and make sure you chock the 
 
 {% include figure image_path="/assets/images/2024/10/IMG_8162.jpeg" caption="" %}
 
-Take the tyre off. Then remove the axle nut using a spanner or water pump pliers.
+Take of the wheel. Then remove the axle nut using a spanner or water pump pliers.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8151.jpeg" caption="" %}
 
@@ -115,10 +115,10 @@ Axle nut.
 Put in the cotter pin.
 {% include figure image_path="/assets/images/2024/10/IMG_8177.jpeg" caption="" %}
 
-Check the wheel spins freely.
+Check the wheel spins freely and check for side-to-side wobble.
 {% include figure image_path="/assets/images/2024/10/IMG_8179.jpeg" caption="" %}
 
-Now you can bend the cotter pin.
+Now you can bend the cotter pin and firm up (but not tighten the wheel lugs).
 {% include figure image_path="/assets/images/2024/10/IMG_8180.jpeg" caption="" %}
 
 Set the wheel back on the ground and
