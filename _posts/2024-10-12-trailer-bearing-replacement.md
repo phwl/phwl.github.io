@@ -124,7 +124,7 @@ Check the wheel spins freely and check for side-to-side wobble.
 Now you can bend the cotter pin and firm up (but not tighten the wheel lugs).
 {% include figure image_path="/assets/images/2024/10/IMG_8180.jpeg" caption="" %}
 
-Set the wheel back on the ground and
+Set the trailer back on the ground and
 tighten to 70-80 ft lbs using a [star pattern](https://australianoffroad.com.au/wp-content/uploads/2019/12/Wheel-Nut-Torque-Settings-Information-Sheet-3.pdf).
 {% include figure image_path="/assets/images/2024/10/IMG_8181.jpeg" caption="" %}
 
