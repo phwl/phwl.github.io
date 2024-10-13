@@ -11,7 +11,7 @@ categories:
 tags:
 - repair
 header:
-  teaser: /assets/images/2022/03/win11.png
+  teaser: /assets/images/2024/10/IMG_8148.jpeg
 ---
 
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
