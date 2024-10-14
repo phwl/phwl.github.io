@@ -17,7 +17,7 @@ header:
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
 
 # Introduction
-The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races, which are crucial. An exception is [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
+The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. An exception is [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
 
 Here is a really good diagram showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
@@ -31,14 +31,13 @@ For uneven stud holes such as 5 stud patterns, measure from the centre of one st
 The most common hubs in Australia are Holden (LM) and Ford: 
 * The best way is to carefully check the stud spacing. 
 * Another differentiator is that Holden LM have 11mm stud diameter and Ford 12.4mm. 
-* Round 39 mm and square 40 mm axles are usually Holden and 45 mm square axles are usually Ford.
 
 This photo below shows the new rims and tyres that I bought. They support both Holden HT and Ford hubs.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
 ## Bearings
-The bearing type is best determined by reading the part number of the one being replaced.
+The bearing type is best determined by reading the part number of the one being replaced. Round 39 mm and square 40 mm axles usually use Holden bearings and 45 mm square axles are usually Ford.
 
 ## Stacer 429 trailer
 The Stacer trailer has a Holden HT stud pattern and the bearings are:
@@ -70,7 +69,7 @@ The grease looks pretty old. I really should have repacked the bearings sooner.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8146.jpeg" caption="" %}
 
-Wipe off the old grease and then remove the cotter pin with pliers.
+Wipe off the old grease and then remove the split pin with pliers.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8147.jpeg" caption="" %}
 
@@ -136,13 +135,13 @@ Then the hub, outer bearing and spindle washer.
 Axle nut.
 {% include figure image_path="/assets/images/2024/10/IMG_8176.jpeg" caption="" %}
 
-Put in the cotter pin.
+Put in the split pin.
 {% include figure image_path="/assets/images/2024/10/IMG_8177.jpeg" caption="" %}
 
 Check the wheel spins freely and check for side-to-side wobble.
 {% include figure image_path="/assets/images/2024/10/IMG_8179.jpeg" caption="" %}
 
-Now you can bend the cotter pin and firm up (but not tighten the wheel lugs).
+Now you can bend the split pin and firm up (but not tighten the wheel lugs).
 {% include figure image_path="/assets/images/2024/10/IMG_8180.jpeg" caption="" %}
 
 Set the trailer back on the ground and
