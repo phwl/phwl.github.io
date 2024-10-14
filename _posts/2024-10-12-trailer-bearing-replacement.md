@@ -17,12 +17,14 @@ header:
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
 
 # Introduction
-The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. Exceptions include
+The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. Having said that, here are some definitive guides and good YouTube links:
+* [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}) describes best practices. 
+* [Timken Tricks of the Trade: Trailer Wheel Bearing Maintenance](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX), the bearing company.
 * [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
-* [Timken](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX), the bearing company.
 
 Here is an excellent figure showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
+
 
 ## Hubs
 To identify the hub type, you need to check the stud pattern. 
@@ -44,6 +46,8 @@ This photo below shows the new rims and tyres that I bought. They support both H
 
 ## Bearings
 The bearing type is best determined by reading the part number of the one being replaced. Round 39 mm and square 40 mm axles usually use Holden bearings and 45 mm square axles are usually Ford.
+
+[This](
 
 ## Stacer 429 trailer
 The Stacer trailer has a Holden HT stud pattern and the bearings are:
@@ -139,7 +143,13 @@ Grease the outer race and insert the hub in the axle.
 Then the outer bearing and spindle washer.
 {% include figure image_path="/assets/images/2024/10/IMG_8175.jpeg" caption="" %}
 
-Tighten the axle nut. You should tighten until the torque to spin the wheel increases and then back off 1/6 to 1/4 of a turn so the split pin aligns.
+Here are two different approaches, both from previously referenced Timken material:
+* [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}): Use a torque wrench to tighten the adjusting nut to 50 ft lbs while 
+turning the rotor. Back off the adjusting nut 1 full turn. Retorque 
+the nut to 10 ft. lbs. while turning the rotor. Next, back off the
+adjusting nut ¼ turn. Lock the nut with a new cotter pin.
+* [Timken Tricks of the Trade: Trailer Wheel Bearing Maintenance](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX): Tighten the axle nut. You should tighten until the torque to spin the wheel increases and then back off 1/6 to 1/4 of a turn so the split pin aligns.
+
 {% include figure image_path="/assets/images/2024/10/IMG_8176.jpeg" caption="" %}
 
 Put in the split pin and bend.
