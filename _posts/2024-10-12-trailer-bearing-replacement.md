@@ -17,7 +17,9 @@ header:
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
 
 # Introduction
-The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. An exception is [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
+The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. Exceptions include
+* [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
+* [Timken](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX), the bearing company.
 
 Here is an excellent figure showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
@@ -82,7 +84,7 @@ Now the wheel can come off. Undo the lug nuts first and make sure you chock the 
 
 {% include figure image_path="/assets/images/2024/10/IMG_8162.jpeg" caption="" %}
 
-Take of the wheel. Then remove the axle nut using a spanner or water pump pliers.
+Take of the wheel. Then remove the axle nut.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8151.jpeg" caption="" %}
 
@@ -108,7 +110,7 @@ I also chose Penrite Marine Grease.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8155.jpeg" caption="" %}
 
-Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to hammer in the new races (using the old ones to get them inside the hub).
+Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to press in the new races. Note that [Timken](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX) don't recommended hammer with the old ones to get the new ones in. 
 
 Then, put grease on your palm and then press it into each bearing from the bottom. What you want is for the grease to squeeze out to the top. Needless to say it's a super messy process.
 
@@ -118,7 +120,7 @@ Here they are all done.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8157.jpeg" caption="" %}
 
-Put the inner bearing in the race.
+Grease the race and put in the inner bearing.
 {% include figure image_path="/assets/images/2024/10/IMG_8169.jpeg" caption="" %}
 
 Put grease in the gap.
@@ -133,19 +135,20 @@ I use an old spanner to balance the force.
 Now put the rubber part of the lip seal on the axle.
 {% include figure image_path="/assets/images/2024/10/IMG_8174.jpeg" caption="" %}
 
-Then the hub, outer bearing and spindle washer.
+Grease the outer race and insert the hub in the axle.
+Then the outer bearing and spindle washer.
 {% include figure image_path="/assets/images/2024/10/IMG_8175.jpeg" caption="" %}
 
-Axle nut.
+Tighten the axle nut. You should tighten until the torque to spin the wheel increases and then back off 1/6 to 1/4 of a turn so the split pin aligns.
 {% include figure image_path="/assets/images/2024/10/IMG_8176.jpeg" caption="" %}
 
-Put in the split pin.
+Put in the split pin and bend.
 {% include figure image_path="/assets/images/2024/10/IMG_8177.jpeg" caption="" %}
 
-Check the wheel spins freely and check for side-to-side wobble.
+Check for side-to-side wobble.
 {% include figure image_path="/assets/images/2024/10/IMG_8179.jpeg" caption="" %}
 
-Now you can bend the split pin and firm up (but not tighten the wheel lugs).
+Now you can firm up (but not tighten the wheel lugs).
 {% include figure image_path="/assets/images/2024/10/IMG_8180.jpeg" caption="" %}
 
 Set the trailer back on the ground and
