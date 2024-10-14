@@ -17,10 +17,13 @@ header:
 My boat trailer is about 10 years old and on the original set of bearings. I guess it's time to change them.
 
 # Introduction
-The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. Having said that, here are some definitive guides and good YouTube links:
-* [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}) describes best practices. 
-* [Timken Tricks of the Trade: Trailer Wheel Bearing Maintenance](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX), the bearing company.
-* [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
+The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, and many leave out steps like changing the races (which is crucial). 
+
+Having said that, here are some definitive guides and good YouTube links:
+* [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}) describes best practices.
+* [Timken Tricks of the Trade: Trailer Wheel Bearing Maintenance](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX), is another good explanation showing all the steps.
+
+[The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) gives really good information on all aspects of trailer maintenance.
 
 Here is an excellent figure showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
@@ -45,9 +48,9 @@ This photo below shows the new rims and tyres that I bought. They support both H
 {% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
 ## Bearings
-The bearing type is best determined by reading the part number of the one being replaced. Round 39 mm and square 40 mm axles usually use Holden bearings and 45 mm square axles are usually Ford.
+The bearing set has inner/outer bearings with matching inner/outer race (also called the inner/outer cones and inner/outer cups). 
 
-[This](
+The bearing type is best determined by reading the part number of the one being replaced. Round 39 mm and square 40 mm axles usually use Holden bearings and 45 mm square axles are usually Ford.
 
 ## Stacer 429 trailer
 The Stacer trailer has a Holden HT stud pattern and the bearings are:
@@ -95,13 +98,15 @@ Take of the wheel. Then remove the axle nut.
 The whole hub should come off now. Sometimes you need to lightly tap it from behind with a hammer. I had to do this on the other side.
 {% include figure image_path="/assets/images/2024/10/IMG_8152.jpeg" caption="" %}
 
-Good, the old bearing is a LM11949/10 so I purchased the right ones!
+Good, the old bearing is a LM11949 so I purchased the correct ones!
 {% include figure image_path="/assets/images/2024/10/IMG_8154.jpeg" caption="" %}
 
 Gave the old bearings a quick wash in kerosene. They weren't in bad condition, you can see some lines on the rollers but no deep scoring or chipping.
 {% include figure image_path="/assets/images/2024/10/IMG_8188.jpeg" caption="" %}
 
-Clean out all the old grease on the axle.
+Note that these were Made in China. Many people rubbish Chinese bearings without any evidence. These ones couldn't be faulted.
+
+Clean out all the old grease on the spindle.
 
 
 # New Bearings
@@ -114,7 +119,7 @@ I also chose Penrite Marine Grease.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8155.jpeg" caption="" %}
 
-Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to press in the new races. Note that [Timken](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX) don't recommended hammer with the old ones to get the new ones in. 
+Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to press in the new races. Note that Timken say in the ([Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %})) "Never use a bearing cone assembly to drive a cup."
 
 Then, put grease on your palm and then press it into each bearing from the bottom. What you want is for the grease to squeeze out to the top. Needless to say it's a super messy process.
 
@@ -136,19 +141,19 @@ Now hammer the double lip seal into the hub.
 I use an old spanner to balance the force.
 {% include figure image_path="/assets/images/2024/10/IMG_8173.jpeg" caption="" %}
 
-Now put the rubber part of the lip seal on the axle.
+Now put the rubber part of the lip seal on the spindle.
 {% include figure image_path="/assets/images/2024/10/IMG_8174.jpeg" caption="" %}
 
-Grease the outer race and insert the hub in the axle.
+Grease the outer race and insert the hub in the spindle.
 Then the outer bearing and spindle washer.
 {% include figure image_path="/assets/images/2024/10/IMG_8175.jpeg" caption="" %}
 
-Here are two different approaches, both from previously referenced Timken material:
-* [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}): Use a torque wrench to tighten the adjusting nut to 50 ft lbs while 
-turning the rotor. Back off the adjusting nut 1 full turn. Retorque 
+The [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}) instructions say to use a torque wrench to tighten the adjusting nut to 50 ft lbs while 
+turning the rotor . Back off the adjusting nut 1 full turn. Retorque 
 the nut to 10 ft. lbs. while turning the rotor. Next, back off the
-adjusting nut ¼ turn. Lock the nut with a new cotter pin.
-* [Timken Tricks of the Trade: Trailer Wheel Bearing Maintenance](https://youtu.be/81zHRycNa8s?si=2cHleIxO8vuyY3MX): Tighten the axle nut. You should tighten until the torque to spin the wheel increases and then back off 1/6 to 1/4 of a turn so the split pin aligns.
+adjusting nut ¼ turn. Lock the nut with a new split pin. The [video explanation](https://youtu.be/0RqlrnoiqnY?si=a5AeGuPIkAWvsefw) also says to measure the end-play which should be between 0.001" and 0.005" but I don't have a dial indicator. I wonder how many mechanics do this?
+
+This [other Timken video](https://youtu.be/81zHRycNa8s?si=hRhNg07vxsqbE9rX) has a slightly different procedure which is to tigten the nut to 25 ft lbs and then back off by 1/6 to 1/4 turn and measure end-play.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8176.jpeg" caption="" %}
 
