@@ -28,22 +28,24 @@ For uneven stud holes such as 5 stud patterns, measure from the centre of one st
 
 {% include figure image_path="/assets/images/2024/10/studpatterns.jpg" caption="" %}
 
-## Bearings
-The most common in Australia are Holden (LM) bearings and Ford (slimline) ones. 
-* The best way is to check the PCD. Other ways include:
-* The Holden have 11mm stud diameter and Ford 12.4mm. 
+The most common hubs in Australia are Holden (LM) and Ford: 
+* The best way is to carefully check the stud spacing. 
+* Another differentiator is that Holden LM have 11mm stud diameter and Ford 12.4mm. 
 * Round 39 mm and square 40 mm axles are usually Holden and 45 mm square axles are usually Ford.
 
 This photo below shows the new rims and tyres that I bought. They support both Holden HT and Ford hubs.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8144.jpeg" caption="" %}
 
+## Bearings
 The bearing type is best determined by reading the part number of the one being replaced.
 
+## Stacer 429 trailer
 The Stacer trailer has a Holden HT stud pattern and the bearings are:
 * ¾” Cone – LM11949/10 Bearing
 * 1 ¼” Cone – LM67048/10 Bearing.
-The rims/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each.  The new tyres came inflated to 46 psi.
+The original tyres were 155R13LT (light truck).
+The new rims/tyres were Galvanised 155R13C (commercial rather than light truck) and were $104 each.  The new tyres came inflated to 46 psi.
 
 # Tyres
 I've had my [Stacer Outlaw 429]({% link _posts/2015-10-18-stacer-outlaw-429.md %}) since 2015. I don't do very many miles as I only drive to  the local boat ramp. When I stop I always check the bearings aren't hot. Anually, I jack it up and spin the wheels to check for noise or side-to-side play.
