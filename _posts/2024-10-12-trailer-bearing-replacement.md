@@ -135,7 +135,7 @@ Grease the race and put in the inner bearing.
 Put grease in the gap.
 {% include figure image_path="/assets/images/2024/10/IMG_8170.jpeg" caption="" %}
 
-Now hammer the double lip seal into the hub.
+Now hammer the seal into the hub.
 {% include figure image_path="/assets/images/2024/10/IMG_8171.jpeg" caption="" %}
 
 I use an old spanner to balance the force.
