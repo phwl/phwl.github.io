@@ -24,7 +24,11 @@ Here is a really good diagram showing the assembly. Although I tried, I couldn't
 
 ## Hubs
 To identify the hub type, you need to check the stud pattern. 
-For uneven stud holes such as 5 stud patterns, measure from the centre of one stud, to the furthest edge of the most opposite stud (1 to 2 in the figure above). For even stud holes such as 4 or 6 stud patterns, measure from the centre of one stud to the centre of the opposite stud. The match with the stud distance  column in the table below. If you want to be extra safe, also check the pitch circle diammeter (PCD) which is the diameter of a circle going through the center of all the studs.
+For hubs with an odd number of holes such as 5 stud patterns, measure from the centre of one stud, to the furthest edge of the most opposite stud (1 to 2 in the figure above). For even numbers such as 4 or 6 stud patterns, measure from the centre of one stud to the centre of the opposite stud. 
+
+{% include figure image_path="/assets/images/2024/10/studspacing.jpeg" caption="" %}
+
+Then match with the stud distance  column in the table below. If you want to be extra safe, also check the pitch circle diammeter (PCD) which is the diameter of a circle going through the center of all the studs.
 
 {% include figure image_path="/assets/images/2024/10/studpatterns.jpg" caption="" %}
 
