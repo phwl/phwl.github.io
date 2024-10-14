@@ -19,7 +19,7 @@ My boat trailer is about 10 years old and on the original set of bearings. I gue
 # Introduction
 The reason for this post is that I wasn't able to find a good, written description of how to change trailer bearings on the internet. There are lots of YouTube videos, many leave out steps like changing the races (otherwise known as cups), which are crucial. An exception is [The TrailerSmith](https://www.youtube.com/@TheTrailerSmith) who gives really good information on all aspects of trailer maintenance.
 
-Here is a really good diagram showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
+Here is an excellent figure showing the assembly. Although I tried, I couldn't find the original source of this figure, please let me know if it is yours.
 {% include figure image_path="/assets/images/2024/10/12StepsBearing.jpg" caption="" %}
 
 ## Hubs
