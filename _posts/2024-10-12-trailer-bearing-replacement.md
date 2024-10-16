@@ -110,16 +110,15 @@ Clean out all the old grease on the spindle.
 
 
 # New Bearings
-I purchased hubs and bearings from [Huntsman Products](https://www.huntsmanproducts.com.au/) on Ebay:
+[Huntsman Products](https://www.huntsmanproducts.com.au/) on Ebay provide an excellent service and will press Koyo bearing races onto the hub prior to shipping. I purhcased:
 * [X2 HT Trailer Galvanised Disc Hubs with LM Holden Bearings](https://www.huntsmanproducts.com.au/products/ht-trailer-galvanised-disc-hubs-x-2-with-lm-holden-bearings)
 * [Upgrade to Koyo Japanese Bearing kit](https://www.huntsmanproducts.com.au/products/upgrade-to-japanese-bearing-kit-single-axle-lm-or-s-l-bearings).
-I also chose Penrite Marine Grease.
 
 {% include figure image_path="/assets/images/2024/10/IMG_8148.jpeg" caption="" %}
 
 {% include figure image_path="/assets/images/2024/10/IMG_8155.jpeg" caption="" %}
 
-Note that in my case, the bearing races came pressed onto the hub. It's much less work to just buy these "Easy Hubs" and throw away the old one. If you need to remove the old races, see the section at the end where I removed them to use it as a spare. After that, you need to press in the new races. Note that Timken say in the ([Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %})) "Never use a bearing cone assembly to drive a cup."
+It's much less work to just buy these "Easy Hubs" and throw away the old ones. If you want to reuse the old hubs, see the section at the end. After removing the old races, you also need to drive in the new ones. Note that Timken say in the ([Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %})) "Never use a bearing cone assembly to drive a cup."
 
 Then, put grease on your palm and then press it into each bearing from the bottom. What you want is for the grease to squeeze out to the top. Needless to say it's a super messy process.
 
