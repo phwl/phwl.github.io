@@ -150,7 +150,7 @@ Then the outer bearing and spindle washer.
 The [Timken Wheel Bearing Replacement Techtip]({% link /assets/images/2024/10/Timken-MDV16-Wheel-Bearing-Replacement_10840.pdf %}) instructions say to use a torque wrench to tighten the adjusting nut to 50 ft lbs while 
 turning the rotor . Back off the adjusting nut 1 full turn. Retorque 
 the nut to 10 ft. lbs. while turning the rotor. Next, back off the
-adjusting nut ¼ turn. Lock the nut with a new split pin. The [video explanation](https://youtu.be/0RqlrnoiqnY?si=a5AeGuPIkAWvsefw) also says to measure the end-play which should be between 0.001" and 0.005" but I don't have a dial indicator. I wonder how many mechanics do this?
+adjusting nut 1/4 turn. Lock the nut with a new split pin. The [video explanation](https://youtu.be/0RqlrnoiqnY?si=a5AeGuPIkAWvsefw) also says to measure the end-play which should be between 0.001" and 0.005" but I don't have a dial indicator. I wonder how many mechanics do this?
 
 This [other Timken video](https://youtu.be/81zHRycNa8s?si=hRhNg07vxsqbE9rX) has a slightly different procedure which is to tigten the nut to 25 ft lbs and then back off by 1/6 to 1/4 turn and measure end-play.
 
