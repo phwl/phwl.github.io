@@ -11,7 +11,7 @@ categories:
 tags:
 - repair
 header:
-  teaser: https://youtu.be/HY-BT7877_0?si=-_FkPFOE1OOUQFDe
+  teaser: /assets/images/2024/10/IMG_8327.jpg
 ---
 
 Cruising around his farm in a buggy and fixing a Massey Ferguson tractor for which we lost a plastic bit of the fuel separator.
