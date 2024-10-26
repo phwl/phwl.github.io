@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2024-10-26 09:30:00 AEST
-title: Visit Farmer Rod (and Massey Ferguson report)
+title: Visit Farmer Rod (and Massey Ferguson repair)
 use_math: true
 toc: true
 classes: wide
