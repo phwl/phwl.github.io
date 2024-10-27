@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2024/10/IMG_8327.jpeg
 ---
 
-Cruising around his farm in a buggy and fixing a Massey Ferguson tractor (lost a plastic bit from the fuel separator).
+A farm tour and repairs to a forklift and Massey Ferguson tractor.
 
 Here is a video summarising the day.
 
