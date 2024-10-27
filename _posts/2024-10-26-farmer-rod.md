@@ -16,7 +16,7 @@ header:
 
 A farm tour and repairs to a forklift and Massey Ferguson tractor.
 
-Here is a video summarising the day.
+This is a video summarising the day.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HY-BT7877_0?si=05OUCcR-oRgz2oe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
