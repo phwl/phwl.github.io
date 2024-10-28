@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2024-10-26 09:30:00 AEST
+date: 2024-10-27 09:30:00 AEST
 title: Visiting Farmer Rod (Massey Ferguson repair)
 use_math: true
 toc: true
@@ -145,3 +145,10 @@ Spent a while looking for a plastic piece of the fuel separator that disappeared
 As you can see in the video at the start of this post, the fix worked fine.
 
 Overall an excellent day and thanks to Rod for his hospitality.
+
+## Postscript 29/10/2024
+
+Guess what, two days later, Rod found the piece under the one of the forks of the Ursus (a long way away).
+
+{% include figure image_path="/assets/images/2024/10/image1.jpeg" caption="" %}
+
