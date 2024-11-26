@@ -10,10 +10,12 @@ tags:
 - suee
 - celchristmas
 header:
-  teaser: /assets/images/2024/11/cel-logo.png
+  teaser: /assets/images/2024/11/cel-logo-black.png
 ---
 
 Photos from our Christmas parties over the years. Thanks to Oliver for taking the photo again this year.
+
+![logo](/assets/images/2024/11/cel-logo-black.png)
 
 {% include figure image_path="/assets/images/2024/11/celchristmas24.jpeg" caption="2024" %}
 
