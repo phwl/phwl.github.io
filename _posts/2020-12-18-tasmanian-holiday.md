@@ -63,7 +63,7 @@ Picked strawberries and cherries at [Sorell Fruit Farm](https://www.sorellfruitf
 {% include figure image_path="/assets/images/2020/12/IMG_7288.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/12/IMG_7291.jpeg" caption="" %}
 
-Had lunch at [Tasmanian Gourmet Seagoods](https://tasmaniangourmetseafoods.com.au/) which was pretty good.
+Had lunch at [Tasmanian Gourmet Seafoods](https://tasmaniangourmetseafoods.com.au/) which was pretty good.
 {% include figure image_path="/assets/images/2020/12/IMG_7296.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2020/12/IMG_E7297.jpeg" caption="" %}
 
