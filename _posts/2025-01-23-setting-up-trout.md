@@ -13,6 +13,7 @@ tags:
 header:
   teaser: /assets/images/2025/01/debianlogo.png
 ---
+Setting up my home server.
 
 ## Install Debian
 
@@ -98,9 +99,8 @@ $ sudo systemctl restart smbd
 the script itself is
 ```bash
 #!/bin/bash
-find /srv/troutdisk -print > /srv/troutdisk/data/WD.index
+find /srv/troutdisk -print > /srv/troutdisk/data/WD3.index
 rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/image/3
-rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/carpdisk/image/3
 ```
 
 6. Disable suspend ```/etc/systemd/sleep.conf``` with the following options
