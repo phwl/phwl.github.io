@@ -48,7 +48,7 @@ Number  Start   End    Size    File system     Name  Flags
 
 1. Install ssh ```sudo apt install openssh-server```. Use ```ssh-copy-id user@machine``` to copy public key over.
 
-1. Create LUKS Volume
+2. Create LUKS Volume
 We are going to use /dev/sda1 with encryption so:
 
 ```bash
@@ -59,7 +59,7 @@ $ sudo mkfs.ext4 /dev/mapper/img3
 $ sudo cryptsetup luksClose /dev/mapper/img3
 ```
 
-1. Mount LUKS Volume
+3. Mount LUKS Volume
 Use ```sudo blkid``` to identify /dev/sda UUID and create the following shell script:
 
 ```bash
@@ -75,7 +75,7 @@ UUID=XXXXXXXX-463c-4ae6-827a-368ab73cad88 /srv ext4 defaults 0 1
 ```
 ```sudo mount -a```
 
-1. Install samba
+4. Install samba
 ```bash
 $ sudo apt install samba -y
 ```
@@ -91,4 +91,23 @@ In /etc/samba/samba.conf add:
 ```bash
 $ sudo systemctl restart smbd
 ```
-1. Install [quickemu](https://github.com/quickemu-project/quickemu/wiki/01-Installation)
+5. Set up cron job using ```crontab -e```
+```
+0 5 * * * /srv/troutdisk/scripts/backup-to-cod-and-carp >/tmp/cronjob.out
+```
+the script itself is
+```bash
+#!/bin/bash
+find /srv/troutdisk -print > /srv/troutdisk/data/WD.index
+rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/image/3
+rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/carpdisk/image/3
+```
+
+6. Disable suspend ```/etc/systemd/sleep.conf``` with the following options
+```
+[Sleep]
+AllowSuspend=no
+AllowHibernation=no
+AllowSuspendThenHibernate=no
+AllowHybridSleep=no
+```
