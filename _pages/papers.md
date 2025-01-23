@@ -21,9 +21,9 @@ FedOrbit: energy efficient federated learning for orbital edge computing using b
 *IEEE Transactions on Services Computing*, 2024\.
 to appear\.
 URL: [fedorbit\_tsc24\.pdf](fedorbit_tsc24.pdf)\.  
-[3] Chuliang Guo, Binglei Lou, David Boland, and Philip H\.W\. Leong\.
-Highly\-parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
-*IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2024\.
+[3] Chuliang Guo, Binglei Lou, David Boland, and Philip H\. W\. Leong\.
+Highly parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
+*IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, 44\(2\):554&ndash;558, 2025\.
 URL: [repvgg\_tcad24\.pdf](repvgg_tcad24.pdf), [doi:10\.1109/TCAD\.2024\.3445264](https://doi.org/10.1109/TCAD.2024.3445264)\.  
 [4] Carol Jingyi Li, Richard Rademacher, David Boland, Craig T\. Jin, Chad M\. Spooner, and Philip H\.W\. Leong\.
 S$^3$ca: a sparse strip spectral correlation analyzer\.
