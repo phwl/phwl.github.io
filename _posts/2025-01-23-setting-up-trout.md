@@ -112,3 +112,8 @@ AllowSuspendThenHibernate=no
 AllowHybridSleep=no
 ```
 
+7. To mount cod:
+```bash
+$ sudo apt-get install cifs-utils
+$ sudo mount.cifs  //cod.local/cod-share /srv/coddisk -o username=phwl
+```
