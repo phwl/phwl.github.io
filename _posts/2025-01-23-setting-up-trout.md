@@ -124,8 +124,30 @@ AllowSuspendThenHibernate=no
 AllowHybridSleep=no
 ```
 
-7. To mount cod:
+7. To mount cod (mountcod):
 ```bash
 $ sudo apt-get install cifs-utils time
 $ sudo mount.cifs  //cod.local/cod-share /srv/coddisk -o username=phwl
 ```
+Mounting others (mountall)
+```bash
+#!/bin/bash
+
+# /srv/troutdisk
+echo "Mounting trout"
+sudo cryptsetup luksOpen /dev/disk/by-uuid/f3bacd55-843f-42c9-af34-b5cb43f73d00 troutdisk
+sudo mount /dev/mapper/troutdisk /srv/troutdisk
+
+# /srv/coddifsk
+echo "Mounting cod (samba)"
+./mountcod
+
+# /srv/wddisk
+EXTDISK=/dev/disk/by-uuid/5b5ac122-f46a-4307-8bfd-463bc9ca818a
+if test -f "$EXTDISK"; then
+	echo "Mounting wddisk"
+	sudo cryptsetup luksOpen $EXTDISK wddisk
+	sudo mount /dev/mapper/wddisk /srv/wddisk
+fi
+```
+
