@@ -101,13 +101,15 @@ the script itself is
 #!/bin/bash
 
 function teval() {
-	echo "$*"
+	echo "-- $*"
 	eval "/usr/bin/time -v $*"
 }
 
+echo "** Running $0"
 date
 teval 'find /srv/troutdisk -print > /srv/troutdisk/data/media/gen/WD3.index'
-teval 'rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/image/3'
+teval 'rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/ima
+ge/3'
 teval 'ssh cod.local rsync -avh --delete --progress /srv/coddisk/ /srv/carpdisk'
 
 date
