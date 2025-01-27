@@ -92,15 +92,25 @@ In /etc/samba/samba.conf add:
 ```bash
 $ sudo systemctl restart smbd
 ```
-5. Set up cron job using ```crontab -e```
+5. Set up backup cron job using ```crontab -e```
 ```
-0 5 * * * /srv/troutdisk/scripts/backup-to-cod-and-carp >/tmp/cronjob.out
+0 5 * * * /srv/troutdisk/scripts/backup-to-cod >/tmp/cronjob.out
 ```
 the script itself is
 ```bash
 #!/bin/bash
-find /srv/troutdisk -print > /srv/troutdisk/data/WD3.index
-rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/image/3
+
+function teval() {
+	echo "$*"
+	eval "/usr/bin/time -v $*"
+}
+
+date
+teval 'find /srv/troutdisk -print > /srv/troutdisk/data/media/gen/WD3.index'
+teval 'rsync -avh --delete --progress /srv/troutdisk/ cod.local:/srv/coddisk/image/3'
+teval 'ssh cod.local rsync -avh --delete --progress /srv/coddisk/ /srv/carpdisk'
+
+date
 ```
 
 6. Disable suspend ```/etc/systemd/sleep.conf``` with the following options
