@@ -89,12 +89,12 @@ $ sudo systemctl restart smbd
 
 1. Install ssh ```sudo apt install openssh-server```. Use ```ssh-copy-id user@machine``` to copy public key over.
 
-1. To mount cod (mountcod):
+1. To mount cod (mountcod script):
 ```bash
 $ sudo apt-get install cifs-utils time
 $ sudo mount.cifs  //cod.local/cod-share /srv/coddisk -o username=phwl
 ```
-Mounting others (mountall)
+Mounting others (mountall script)
    ```bash
    #!/bin/bash
    
