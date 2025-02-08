@@ -115,7 +115,7 @@ Then fill until it comes out the top. When it does, screw in the top plug (with 
    {% include figure image_path="/assets/images/2025/02/IMG_9356.jpeg" caption="" %}
 
 ## Water Pump Assembly
-1. First give it a clean, remove remaining gasket material and sand with #600 git wet and dry.
+1. First give it a clean, remove remaining gasket material and lightly sand mating surface and driveshaft with #600 git wet and dry.
    {% include figure image_path="/assets/images/2025/02/IMG_9409.jpeg" caption="" %}
 
 1. Remove the impeller cup from the housing.
