@@ -102,7 +102,7 @@ Then fill until it comes out the top. When it does, screw in the top plug (with 
 1. At this point you are supposed to be able to pry the impeller off the driveshaft. A drive cam is the only thing holding it in place.
    {% include figure image_path="/assets/images/2025/02/IMG_9312.jpeg" caption="" %}
 
-1. After an hour trying to get the thing off, I gave up for the day. A few days later I used a Dremel tool to carefully cut through the rubber and brass ring (in front of the recess in the driveshaft where the drive cam sits).
+1. After more than an hour trying to get the thing off, I gave up for the day. A few days later I used a Dremel tool to carefully cut through the rubber and brass ring (in front of the recess in the driveshaft where the drive cam sits).
    {% include figure image_path="/assets/images/2025/02/IMG_9346.jpeg" caption="" %}
    {% include figure image_path="/assets/images/2025/02/IMG_9347.jpeg" caption="" %}
 
@@ -127,7 +127,7 @@ Then fill until it comes out the top. When it does, screw in the top plug (with 
 1. Coat the inside of the impeller cup with Triple Guard grease.
    {% include figure image_path="/assets/images/2025/02/IMG_9415.jpeg" caption="" %}
 
-1. Place the impeller in the cup making sure you have the orientation of the fins in the right way. This is done with anticlockwise rotation.
+1. Place the impeller in the cup making sure you have the orientation of the fins in the right way. This is done with anticlockwise rotation (normally you're looking at it from the top and the driveshaft spins clockwise).
    {% include figure image_path="/assets/images/2025/02/IMG_9416.jpeg" caption="" %}
 
 1. Stick the drive cam in the driveshaft. The sharp edge is the leading edge in the clockwise direction.
