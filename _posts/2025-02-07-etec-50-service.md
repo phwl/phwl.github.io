@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2024/06/IMG_6861.jpeg
 ---
 
-Here is how to service an ETEC 50hp outboard including water pump, fuel filter and gearcase oil.
+Here is how to service an ETEC 50hp outboard including fuel filter, gearcase oil and water pump.
 
 # Opening Cowling
 1. Opening the cowling is the hardest part. The side in the photo often gets stuck. To get it unlocked you slap the side of the cover just above the mechanism while pulling down on the lever.
@@ -47,7 +47,7 @@ Then fill until it comes out the top. When it does, screw in the top plug (with 
 1. Tighten with a torque wrench set to 7-9.5~Nm.
    {% include figure image_path="/assets/images/2024/06/IMG_6868.jpeg" caption="" %}
 
-# Water Pump Service
+# Water Pump 
 
 1. You will need the [Evinrude Water Pump Repair Kit 5006511](https://www.crowleymarine.com/evinrude/products/5006511-water-pump-repair-kit). It includes the following:
    * Impeller Housing Grommet	0341732	
