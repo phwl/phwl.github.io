@@ -19,6 +19,7 @@ wordpress_id: 4699
 
 ## Reviews
  * How to review conference papers: <https://www.markbernstein.org/elements/Reviewing.pdf>
+ * How to perform a peer review: <https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html>
 
 ## Dissertations
   * Dissertations: [https://www.cl.cam.ac.uk/~pr10/teaching/dissertation.html](https://www.cl.cam.ac.uk/~pr10/teaching/dissertation.html)
