@@ -9,7 +9,7 @@ classes: wide
 categories:
 - diy
 tags:
-- linux
+- knives
 header:
   teaser: /assets/images/2025/02/IMG_9462.jpeg
 ---
