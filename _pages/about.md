@@ -26,7 +26,7 @@ W  [http://sydney.edu.au/people/philip.leong](http://sydney.edu.au/people/philip
 
 
 ## Other
- * [Directions to my lab (Computer Engineering Lab)](http://phwl.org/2017/directions-to-cel/)
+ * [Directions to my lab (Computer Engineering Lab)]({% post_url 2024-12-16-directions-to-cel %})
  * [Google scholar entry](https://scholar.google.com.au/citations?user=fTs3gvMAAAAJ&amp)
  * [University of Sydney Website](http://sydney.edu.au/people/philip.leong)
  * [ORCID entry](http://orcid.org/0000-0002-3923-3499)

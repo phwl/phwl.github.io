@@ -1,10 +1,11 @@
 ---
 author: phwl
 comments: true
-date: 2018-01-14 22:50:04+00:00
+date: 2025-01-14 22:50:04+00:00
 slug: how-to-apply-to-the-computer-engineering-lab-at-the-university-of-sydney
 title: How to apply to the Computer Engineering Lab at the University of Sydney
-classes: wide
+header:
+  teaser: /assets/images/2024/11/cel-logo-black.png
 categories:
 - academia
 tags:
