@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2025/02/IMG_9462.jpeg
 ---
 
-This post describes how to change a Victorinox Foldable Paring Knife from its rounded,
+This post shows how to change a Victorinox Foldable Paring Knife from its rounded,
 butter knife profile to a [drop point](https://en.wikipedia.org/wiki/Drop_point).
 
 First, use a Sharpie and French Curve (or another knife) to draw the profile 
@@ -29,3 +29,4 @@ Use a coarse sharpening stone to finish the job. Carefully sharpen so that the n
 
 {% include figure image_path="/assets/images/2025/02/IMG_9462.jpeg" caption="" %}
 
+I really like this knife now. It's great for travel and camping.
