@@ -30,3 +30,5 @@ Use a coarse sharpening stone to finish the job. Carefully sharpen so that the n
 {% include figure image_path="/assets/images/2025/02/IMG_9462.jpeg" caption="" %}
 
 I really like this knife now. It's great for travel and camping.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zb5HOzmhFvQ?si=TxEQvd42Hb0-lY6P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
