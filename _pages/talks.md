@@ -10,6 +10,18 @@ title: Talks
 classes: wide
 
 ---
+## 1 Mar 2025, Invited Talk
+[Domain-specific FPGAs for Radio Frequency Machine Learning ](/assets/talks/dsfpgas-fpga25.pdf),
+First Workshop on Domain-Specialized FPGAs, Monterey, US`
+
+Talk about how FPGA architectures could be specialised for radio frequency machine learning.
+
+## 11 Sep 2023, Invited Talk
+[Acceleration of Cyclostationary Signal Processing Algorithms](https://cassyni.com/events/Xx7e1iKwdBndLTsekXv9NM),
+Novel Architecture and Novel Design Automation (NANDA), Imperial College, London
+
+A time series is said to be cyclostationary if its probability distribution varies periodically with time. Cyclostationary time series analyses are suitable for a wide range of periodic phenomena in signal processing, including characterization of modulation types; noise analysis of periodic time-variant linear systems; synchronization problems; parameter and waveform estimation; channel identification and equalization; signal detection and classification; AR and ARMA modelling and prediction; and source separation In this talk we will discuss our recent research efforts to accelerate the estimation of the spectral correlation density through low-precision arithmetic, improved algorithms and bespoke hardware. For large input lengths, which are of interest in low signal-to-noise conditions, greater than 10x acceleration can be achieved using sparse techniques.
+
 ## 23 Nov 2023, Invited Talk
 [Deep Learning using FPGAs](/assets/talks/dlusingfpgas-vin23.pdf),
 AI and Cyber Security Summit, VinUni, Hanoi, Vietnam
