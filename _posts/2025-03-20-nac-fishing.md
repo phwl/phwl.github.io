@@ -11,14 +11,14 @@ categories:
 tags:
 - research
 header:
-  teaser: /assets/images/2025/03/phwl-mac.jpg
+  teaser: /assets/images/2025/03/phwl-mac.jpeg
 ---
 
 A great day fishing with Barry. Came across a school of mackerel tuna, frigate runa and bonito.
 
-{% include figure image_path="/assets/images/2022/03/barry-mac.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/03/barry-mac.jpeg" caption="" %}
 
-{% include figure image_path="/assets/images/2022/03/phwl-mac.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/03/phwl-mac.jpeg" caption="" %}
 
 <iframe width="315" height="560"
 src="https://www.youtube.com/embed/vVuhPHgFSWk?si=quh9ptBivOhgvJ3T"
