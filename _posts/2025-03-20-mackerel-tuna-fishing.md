@@ -20,7 +20,7 @@ A great day fishing with Barry. Came across a school of mackerel tuna, frigate r
 
 {% include figure image_path="/assets/images/2025/03/phwl-mac.jpeg" caption="" %}
 
-<iframe height="400"
+<iframe height="300"
 src="https://www.youtube.com/embed/vVuhPHgFSWk?si=quh9ptBivOhgvJ3T"
 title="YouTube video player"
 frameborder="0"
