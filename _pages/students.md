@@ -11,6 +11,8 @@ wordpress_id: 3338
 ---
 
 
+  1. Carol Jingyi LI, [High-Speed Implementations of Spectral Correlation Analysis Techniques](/assets/images/2025/04/jyli25.pdf), PhD 2025.
+   
   1. Binglei LOU, [Low Latency and Scalable Machine Learning on FPGA-based System-on-Chip](/assets/images/2024/12/blou24.pdf), PhD 2024.
 
   1. Seyedramin RASOULINEZHAD, [Rethinking FPGA Architectures for Deep Neural Network applications](/assets/images/2023/07/rrasoulinezhad23.pdf), PhD 2023.
