@@ -11,16 +11,14 @@ classes: wide
 
 # Journals
 
-[1] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\.W\. Leong\.
+[1] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\. W\. Leong\.
 Fpga\-based block minifloat training accelerator for a time series prediction network\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, December 2025\.
-to appear\.
-URL: [nbeats\_trets25\.pdf](nbeats_trets25.pdf), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, March 2025\.
+URL: [https://doi\.org/10\.1145/3707209](https://doi.org/10.1145/3707209), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
 [2] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, and David Boland\.
-FedOrbit: energy efficient federated learning for orbital edge computing using block minifloat arithmetic\.
-*IEEE Transactions on Services Computing*, 2024\.
-to appear\.
-URL: [fedorbit\_tsc24\.pdf](fedorbit_tsc24.pdf)\.  
+Fedorbit: energy efficient federated learning for orbital edge computing using block minifloat arithmetic\.
+*IEEE Transactions on Services Computing*, 17\(6\):3657&ndash;3671, 2024\.
+[doi:10\.1109/TSC\.2024\.3478768](https://doi.org/10.1109/TSC.2024.3478768)\.  
 [3] Chuliang Guo, Binglei Lou, David Boland, and Philip H\. W\. Leong\.
 Highly parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, 44\(2\):554&ndash;558, 2025\.
