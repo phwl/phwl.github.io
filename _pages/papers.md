@@ -12,8 +12,8 @@ classes: wide
 # Journals
 
 [1] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\. W\. Leong\.
-Fpga\-based block minifloat training accelerator for a time series prediction network\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, March 2025\.
+FPGA\-based block minifloat training accelerator for a time series prediction network\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, 18\(2\):1–23, March 2025\.
 URL: [https://doi\.org/10\.1145/3707209](https://doi.org/10.1145/3707209), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
 [2] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, and David Boland\.
 Fedorbit: energy efficient federated learning for orbital edge computing using block minifloat arithmetic\.
