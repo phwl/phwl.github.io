@@ -14,11 +14,11 @@ classes: wide
 [1] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\. W\. Leong\.
 FPGA\-based block minifloat training accelerator for a time series prediction network\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 18\(2\):1–23, March 2025\.
-URL: [https://doi\.org/10\.1145/3707209](https://doi.org/10.1145/3707209), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
+URL: [nbeats\_trets25\.pdf](nbeats_trets25.pdf), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
 [2] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, and David Boland\.
 Fedorbit: energy efficient federated learning for orbital edge computing using block minifloat arithmetic\.
 *IEEE Transactions on Services Computing*, 17\(6\):3657&ndash;3671, 2024\.
-[doi:10\.1109/TSC\.2024\.3478768](https://doi.org/10.1109/TSC.2024.3478768)\.  
+URL: [fedorbit\_tsc24\.pdf](fedorbit_tsc24.pdf), [doi:10\.1109/TSC\.2024\.3478768](https://doi.org/10.1109/TSC.2024.3478768)\.  
 [3] Chuliang Guo, Binglei Lou, David Boland, and Philip H\. W\. Leong\.
 Highly parallel CNN accelerator for RepVGG\-like network training on FPGAs\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, 44\(2\):554&ndash;558, 2025\.
@@ -35,11 +35,10 @@ URL: [dsa\_aireview23\.pdf](dsa_aireview23.pdf), [doi:10\.1007/s10462\-023\-1044
 FSEAD: a composable FPGA\-based streaming ensemble anomaly detection library\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, jun 2023\.
 URL: [fsead\_trets23\.pdf](fsead_trets23.pdf), [doi:10\.1145/3568992](https://doi.org/10.1145/3568992)\.  
-[7] Yufei Yang, Chenhao Xie, Philip H\. W\. Leong, and Shuaiwen Leon Song\.
+[7] Yufei Yang, Chenhao Xie, Liansheng Liu, Philip H\. W\. Leong, and Shuaiwen Leon Song\.
 Efficient radius search for adaptive foveal sizing mechanism in collaborative foveated rendering framework\.
-*IEEE Transactions on Mobile Computing*, 2023\.
-to appear\.
-URL: [fov\_tmc23\.pdf](fov_tmc23.pdf), [doi:10\.1109/TMC\.2023\.3277577](https://doi.org/10.1109/TMC.2023.3277577)\.  
+*IEEE Transactions on Mobile Computing*, 23\(5\):3620&ndash;3632, 2024\.
+[doi:10\.1109/TMC\.2023\.3277577](https://doi.org/10.1109/TMC.2023.3277577)\.  
 [8] Jiaxin Qing, Philip H\. W\. Leong, and Raymond W\. Yeung\.
 Performance analysis and optimal design of bats code: a hardware perspective\.
 *IEEE Transactions on Vehicular Technology*, pages 1&ndash;14, 2023\.
