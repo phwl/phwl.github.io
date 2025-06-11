@@ -28,17 +28,17 @@ Didn't get to Kwan's farm until late but our first project was to try to fix Kwa
 We needed a new FFC/FPC flat ribbon cable.
 {% include figure image_path="/assets/images/2025/06/IMG_0957.jpeg" caption="" %}
 
-All fixed!
+All fixed! 
 {% include figure image_path="/assets/images/2025/06/IMG_1020.jpeg" caption="" %}
 
 Pano of Kwan's farm.
 {% include figure image_path="/assets/images/2025/06/IMG_0993.jpeg" caption="" %}
 
-This fuel bill was more than my first car!
+This fuel bill exceeds the price of my first car!
 {% include figure image_path="/assets/images/2025/06/IMG_0998.jpeg" caption="" %}
 
 We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was much less than the forecast.
-{% include figure image_path="/assets/images/2025/06/IMG_0998.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/06/IMG_0999.jpeg" caption="" %}
 
 We cast to a school of tuna but didn't manage to fool them. There were plenty of dolphins around. We started catching a fish on every cast using a little slice generously given to me by Yufei.  
 
@@ -57,22 +57,22 @@ With insufficient time, we didn't catch any crabs or mangrove jack. However, we 
 {% include figure image_path="/assets/images/2025/06/IMG_1072.jpeg" caption="" %}
 
 On the King's Birthday, we went offshore again with Craig. Conditions were very lumpy and not great for fishing. On the way out, the anchor release failed so we couldn't use the anchor winch.
-{% include figure image_path="/assets/images/2025/06/IMG_1072.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/06/IMG_1088.jpeg" caption="" %}
 
-Craig hooked up to a cobia that quickly buried him.
+Craig hooked up to a cobia that quickly buried him. This happened several times for all of us.
 {% include figure image_path="/assets/images/2025/06/IMG_1090.jpeg" caption="" %}
 
 Without the anchor winch, and the wind blowing in the opposite direction to the tide, the anchor rope got tangled on both outboards. Any sensible person would have just cut the rope but that would mean we would lose the anchor and end our day of fishing. So Kwan jumped in and promptly got smashed against the knife-sharp propeller putting a large cut on his chest. In addition we had to use the other outboard to get slack in the rope while Kwan was in the water.
 
 I was so afraid he would get churned into mince I stopped taking photos. 
 Anyway, it took about 10 minutes to get everything sorted and Kwan came back into the boat with bleeding hands and chest. As an additional prize, he got bitten by stinging jellyfish.
-{% include figure image_path="/assets/images/2025/06/IMG_1090.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/06/IMG_1095.jpeg" caption="" %}
 
 Then we started catching fish. There were thousands of trevally around. Here is Kwan with a particularly nice one.
 {% include figure image_path="/assets/images/2025/06/IMG_1103.jpeg" caption="" %}
 
 We could tell the next fish was big as soon as it hit. It took Craig around the front of the boat so he passed the rod to Kwan from the starboard side to the bow, and then back to me on the port side. The fish came up to the surface quite quickly and Craig made short work of it on his 30kg gear. After about 3 or 4 gaff shots (they are slippery and have big scales), we could take a photo of this really nice cobia. 
-{% include figure image_path="/assets/images/2025/06/IMG_1103.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/06/IMG_1112.jpeg" caption="" %}
 
 As the conditions were quite rough, we returned to the boat ramp early.
 We only took a few trevally, an emperor and the cobia.
