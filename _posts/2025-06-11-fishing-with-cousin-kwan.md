@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2025/06/IMG_1016.jpeg
 ---
 
-Went to visit Cousin Kwan in Seventeen Seventy and do some fishing.
+Went to visit Cousin Kwan in [Seventeen Seventy](https://en.wikipedia.org/wiki/Seventeen_Seventy,_Queensland) to do some fishing.
 
 To get there I flew to Brisbane.
 {% include figure image_path="/assets/images/2025/06/IMG_0935.jpeg" caption="" %}
@@ -71,7 +71,7 @@ Anyway, it took about 10 minutes to get everything sorted and Kwan came back int
 Then we started catching fish. There were thousands of trevally around. Here is Kwan with a particularly nice one.
 {% include figure image_path="/assets/images/2025/06/IMG_1103.jpeg" caption="" %}
 
-We could tell the next fish was big as soon as it hit. It took Craig around the front of the boat so he passed the rod to Kwan from the starboard side to the bow, and then back to me on the port side. The fish came up to the surface quite quickly and Craig made short work of it on his 30kg gear. After about 3 or 4 gaff shots (they are slippery and have big scales), we could take a photo of this really nice cobia. 
+We could tell the next fish was big when it hit. It took Craig around the front of the boat so he passed the rod to Kwan from starboard to bow, and then back to me on the port side. The fish came up to the surface quite quickly and Craig made short work of it on his 30kg gear. After about 3 or 4 gaff shots (they are slippery and have big scales), we could take a photo of this really nice cobia. 
 {% include figure image_path="/assets/images/2025/06/IMG_1112.jpeg" caption="" %}
 
 As the conditions were quite rough, we returned to the boat ramp early.
@@ -87,6 +87,6 @@ Quite a lot of fillets.
 On the final day we tested a 45kW sandblaster that Kwan picked up for a song. A little redneck engineering was involved, but we think it needs more power on startup than Kwan's 3-phase inverter can supply.
 {% include figure image_path="/assets/images/2025/06/IMG_1173.jpeg" caption="" %}
 
-We finished a wonderful trip with a fire, as it got bitterly cold (down to about 15 celcius that night). Thanks so much to Kwan, Kim and Craig for their hospitality and making this a truly memorable trip.
+We finished the trip with a fire, as it got bitterly cold (down to about 15 celcius that night). Thanks so much to Kwan, Kim and Craig for their hospitality and making this a truly memorable trip.
 {% include figure image_path="/assets/images/2025/06/IMG_1191.jpeg" caption="" %}
 
