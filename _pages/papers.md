@@ -14,7 +14,7 @@ classes: wide
 [1] Han Yue, Jun Cheng, Yu\-Xuan Ren, Chien\-Chun Chen, Grant A\. van Riessen, Philip Heng Wai Leong, and Steve Feng Shu\.
 A physics\-inspired deep learning framework with polar coordinate attention for ptychographic imaging\.
 *IEEE Transactions on Computational Imaging*, \(\):1&ndash;13, 2025\.
-URL: [ptycho\_tci25](ptycho_tci25), [doi:10\.1109/TCI\.2025\.3572250](https://doi.org/10.1109/TCI.2025.3572250)\.  
+URL: [ptycho\_tci25\.pdf](ptycho_tci25.pdf), [doi:10\.1109/TCI\.2025\.3572250](https://doi.org/10.1109/TCI.2025.3572250)\.  
 [2] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\. W\. Leong\.
 FPGA\-based block minifloat training accelerator for a time series prediction network\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 18\(2\):1–23, March 2025\.
