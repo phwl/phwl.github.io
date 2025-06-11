@@ -42,7 +42,7 @@ We weren't sure about the weather but chanced it with a midday start. Turned out
 
 We cast to a school of tuna but didn't manage to fool them. There were plenty of dolphins around. We started catching a fish on every cast using a little slice generously given to me by Yufei.  
 
-It wasn't long before I hooked a really solid fish with my 10kg travel rod. This is what the fish thought.
+It wasn't long before I hooked a really solid fish with my 10kg travel rod. This is what the fish thought of my tackle.
 {% include figure image_path="/assets/images/2025/06/IMG_1004.jpeg" caption="" %}
 
 The first decent fish we landed was a golden travelly on the slice.
