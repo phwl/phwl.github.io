@@ -7,9 +7,9 @@ use_math: true
 toc: true
 classes: wide
 categories:
-- academia
+- fishing
 tags:
-- research
+- australia
 header:
   teaser: /assets/images/2025/03/phwl-mac.jpeg
 ---
