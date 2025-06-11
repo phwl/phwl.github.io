@@ -40,12 +40,12 @@ This fuel bill exceeds the price of my first car!
 We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was much less than the forecast.
 {% include figure image_path="/assets/images/2025/06/IMG_0999.jpeg" caption="" %}
 
-We cast to a school of tuna but didn't manage to fool them. There were plenty of dolphins around. We started catching a fish on every cast using a little slice generously given to me by Yufei.  
+We cast to a school of tuna but didn't manage to fool them. There were plenty of dolphins around. We started catching a fish on every cast using a metal lure generously given to me by Yufei.  
 
 It wasn't long before I hooked a really solid fish with my 10kg travel rod. This is what the fish thought of my tackle.
 {% include figure image_path="/assets/images/2025/06/IMG_1004.jpeg" caption="" %}
 
-The first decent fish we landed was a golden travelly on the slice.
+The first decent fish we landed was a golden travelly on the lure.
 {% include figure image_path="/assets/images/2025/06/IMG_1007.jpeg" caption="" %}
 
 Then a cobia slammed my bait. After a really strong fight on 25kg gear, we got it in the boat.
