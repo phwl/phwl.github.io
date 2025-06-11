@@ -11,7 +11,7 @@ categories:
 tags:
 - australia
 header:
-  teaser: /assets/images/2025/03/phwl-mac.jpeg
+  teaser: /assets/images/2025/06/IMG_1016.jpeg
 ---
 
 Went to visit Cousin Kwan in Seventeen Seventy and do some fishing.
