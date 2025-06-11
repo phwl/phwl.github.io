@@ -84,9 +84,9 @@ The cobia weighed about 11 kg.
 Quite a lot of fillets.
 {% include figure image_path="/assets/images/2025/06/IMG_1156.jpeg" caption="" %}
 
-On the final day we tried to get a 45kW sandblaster working that Kwan picked up for a song. A little redneck engineering was involved, but we think it needs more power on startup than Kwan's 3-phase inverter can supply.
+On the final day we tested a 45kW sandblaster that Kwan picked up for a song. A little redneck engineering was involved, but we think it needs more power on startup than Kwan's 3-phase inverter can supply.
 {% include figure image_path="/assets/images/2025/06/IMG_1173.jpeg" caption="" %}
 
-We finished a wonderful trip with a fire, as the temperature went down to about 15 celcius that night! Thanks so much to Kwan, Kim and Craig for their hospitality and making this a truly memorable trip.
-{% include figure image_path="/assets/images/2025/06/IMG_1173.jpeg" caption="" %}
+We finished a wonderful trip with a fire, as it got bitterly cold (down to about 15 celcius that night). Thanks so much to Kwan, Kim and Craig for their hospitality and making this a truly memorable trip.
+{% include figure image_path="/assets/images/2025/06/IMG_1191.jpeg" caption="" %}
 
