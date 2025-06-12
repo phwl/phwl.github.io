@@ -14,18 +14,18 @@ header:
   teaser: /assets/images/2025/06/IMG_1016.jpeg
 ---
 
-Went to visit Cousin Kwan and Kim in [Seventeen Seventy](https://en.wikipedia.org/wiki/Seventeen_Seventy,_Queensland).
+Went to visit my cousin Kwan and his wife Kim in [Seventeen Seventy](https://en.wikipedia.org/wiki/Seventeen_Seventy,_Queensland).
 
-To get there I first flew to Brisbane.
+Getting there involves first flying to Brisbane.
 {% include figure image_path="/assets/images/2025/06/IMG_0935.jpeg" caption="" %}
 
-Then took a Dash-8 turboprop flight to Budaberg (I'd forgotten how noisy propeller planes were).
+Then taking a Dash-8 turboprop flight to Budaberg (I'd forgotten how noisy propeller planes are).
 {% include figure image_path="/assets/images/2025/06/IMG_0937.jpeg" caption="" %}
 
-Didn't get to Kwan's farm until late but our first project was to try to fix Kwan's Simrad fishfinder.
+Didn't get to Kwan's farm until late but our first project was to try to fix his Simrad fishfinder.
 {% include figure image_path="/assets/images/2025/06/IMG_0956.jpeg" caption="" %}
 
-We needed a new FFC/FPC flat ribbon cable.
+It needed a new FFC/FPC flat ribbon cable.
 {% include figure image_path="/assets/images/2025/06/IMG_0957.jpeg" caption="" %}
 
 All fixed! 
@@ -37,23 +37,23 @@ Pano of Kwan's farm.
 This fuel bill for the boat exceeded the price of my first car.
 {% include figure image_path="/assets/images/2025/06/IMG_0998.jpeg" caption="" %}
 
-We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was much less than the forecast.
+We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was way lower than the forecast.
 {% include figure image_path="/assets/images/2025/06/IMG_0999.jpeg" caption="" %}
 
-We cast to a school of tuna but didn't manage to fool them. There were plenty of dolphins around. We started catching a fish on every cast using a metal lure generously given to me by Yufei.  
+There were plenty of dolphins around and we soon found a school of tuna. Tried casting to them but they weren't interested. At another spot we started catching a fish on every cast using a metal lure generously given to me by Yufei.  
 
-It wasn't long before I hooked a really solid fish with my 10kg travel rod. This is what the fish thought of my tackle.
+Then I hooked a really solid fish with my 10kg travel rod. This is what it thought of my tackle.
 {% include figure image_path="/assets/images/2025/06/IMG_1004.jpeg" caption="" %}
 
-The first decent fish we landed was a golden travelly on the lure.
+The first decent fish we landed was a golden travelly on the metal lure.
 {% include figure image_path="/assets/images/2025/06/IMG_1007.jpeg" caption="" %}
 
-Then a cobia slammed my bait. After a really strong fight on 25kg gear, we got it in the boat.
+Then a cobia slammed my bait. After a tense fight on 25kg gear, we got it in the boat.
 {% include figure image_path="/assets/images/2025/06/IMG_1016.jpeg" caption="" %}
 
-The next day we went crabbing in Baffle Creek in Kwan's small boat. The outboard had new everything (engine control unit, water pump, carby) except fuel filter which was supposedly new because it was installed by the previous owner. Guess what didn't work?
+The next day we went crabbing in Baffle Creek using Kwan's small boat. The outboard had been completely serviced by Kwan (engine control unit, water pump, carby) except for the fuel filter which was supposedly new and installed by the previous owner. Guess what didn't work?
 
-With insufficient time, we didn't catch any crabs or mangrove jack. However, we collected fresh mullet with a cast net for the next day.
+Unfortunately, we didn't catch any crabs or mangrove jack. However, we collected lots fresh mullet with a cast net for the following offshore trip.
 {% include figure image_path="/assets/images/2025/06/IMG_1072.jpeg" caption="" %}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NdVY9aNJFbg?si=VVJ4yqx09sbFpKhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -61,13 +61,13 @@ With insufficient time, we didn't catch any crabs or mangrove jack. However, we 
 On the King's Birthday, we went offshore again with Craig. Conditions were very lumpy and not great for fishing. On the way out, the anchor release failed so we couldn't use the anchor winch.
 {% include figure image_path="/assets/images/2025/06/IMG_1088.jpeg" caption="" %}
 
-Craig hooked up to a cobia that quickly buried him. This happened several times for all of us.
+Craig hooked up to a cobia that quickly buried him. This happened several times to each of us. We caught lots and lots of remora (in fact it was Kwan's personal best day for this species).
 {% include figure image_path="/assets/images/2025/06/IMG_1090.jpeg" caption="" %}
 
-Without the anchor winch, and the wind blowing in the opposite direction to the tide, the anchor rope got tangled on both outboards. Any sensible person would have just cut the rope but that would mean we would lose the anchor and end our day of fishing. So Kwan jumped in and promptly got smashed against the knife-sharp propeller putting a large cut on his chest. In addition we had to use the other outboard to get slack in the rope while Kwan was in the water.
+Without the anchor winch, and the wind blowing in the opposite direction to the tide, the anchor rope got tangled on both outboards. Any sensible person would have just cut the rope but that would have lost the anchor and ending fishing for the day. So Kwan jumped in the water and promptly got smashed against the knife-sharp propeller putting a large cut on his chest. Moreover, we had to use the other outboard to get slack in the rope while Kwan was in the water.
+I was so afraid he would get churned into mince that I stopped taking photos. 
 
-I was so afraid he would get churned into mince I stopped taking photos. 
-Anyway, it took about 10 minutes to get everything sorted and Kwan came back into the boat with bleeding hands and chest. As an additional prize, he got bitten by stinging jellyfish.
+Anyway, it took about 10 minutes to get everything sorted and Kwan came back into the boat with bleeding hands and chest. As an additional prize, he was bitten by stinging jellyfish.
 {% include figure image_path="/assets/images/2025/06/IMG_1095.jpeg" caption="" %}
 
 Then we started catching fish. There were thousands of trevally around. Here is Kwan with a particularly nice one.
