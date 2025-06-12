@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2025/06/IMG_1016.jpeg
 ---
 
-Went to visit Cousin Kwan and his wife Kim in [Seventeen Seventy](https://en.wikipedia.org/wiki/Seventeen_Seventy,_Queensland).
+Went to visit Cousin Kwan and Kim in [Seventeen Seventy](https://en.wikipedia.org/wiki/Seventeen_Seventy,_Queensland).
 
 To get there I first flew to Brisbane.
 {% include figure image_path="/assets/images/2025/06/IMG_0935.jpeg" caption="" %}
@@ -34,7 +34,7 @@ All fixed!
 Pano of Kwan's farm.
 {% include figure image_path="/assets/images/2025/06/IMG_0993.jpeg" caption="" %}
 
-This fuel bill exceeded the price of my first car.
+This fuel bill for the boat exceeded the price of my first car.
 {% include figure image_path="/assets/images/2025/06/IMG_0998.jpeg" caption="" %}
 
 We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was much less than the forecast.
