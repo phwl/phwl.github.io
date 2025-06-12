@@ -71,9 +71,14 @@ Anyway, it took about 10 minutes to get everything sorted and Kwan came back int
 {% include figure image_path="/assets/images/2025/06/IMG_1095.jpeg" caption="" %}
 
 Then we started catching fish. There were thousands of trevally around. Here is Kwan with a particularly nice one.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aYBNU6KISUo?si=FHGk4rTfzGvfQ1--" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 {% include figure image_path="/assets/images/2025/06/IMG_1103.jpeg" caption="" %}
 
 We could tell the next fish was big when it hit. It took Craig around the front of the boat so he passed the rod to Kwan from starboard to bow, and then back to me on the port side. The fish came up to the surface quite quickly and Craig made short work of it on his 30kg gear. After about 3 or 4 gaff shots (they are slippery and have big scales), we could take a photo of this really nice cobia. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JmYIXv-Ld14?si=cN74CZKmcjhuXlqV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 {% include figure image_path="/assets/images/2025/06/IMG_1112.jpeg" caption="" %}
 
 As the conditions were quite rough, we returned to the boat ramp early.
