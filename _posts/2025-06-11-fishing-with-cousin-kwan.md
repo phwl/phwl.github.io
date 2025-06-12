@@ -97,3 +97,6 @@ On the final day we tested a 45kW sandblaster that Kwan picked up for a song. A 
 We finished the trip with a fire, as it got bitterly cold (down to about 15 celcius that night). Thanks so much to Kwan, Kim and Craig for their hospitality and making this a truly memorable trip.
 {% include figure image_path="/assets/images/2025/06/IMG_1191.jpeg" caption="" %}
 
+Nice view of Hawkesbury River on the return flight.
+{% include figure image_path="/assets/images/2025/06/IMG_1232.jpeg" caption="" %}
+
