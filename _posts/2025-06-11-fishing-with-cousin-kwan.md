@@ -34,7 +34,7 @@ All fixed!
 Pano of Kwan's farm.
 {% include figure image_path="/assets/images/2025/06/IMG_0993.jpeg" caption="" %}
 
-This fuel bill exceeds the price of my first car!
+This fuel bill exceeded the price of my first car.
 {% include figure image_path="/assets/images/2025/06/IMG_0998.jpeg" caption="" %}
 
 We weren't sure about the weather but chanced it with a midday start. Turned out the conditions were pretty good and the swell was much less than the forecast.
@@ -55,6 +55,8 @@ The next day we went crabbing in Baffle Creek in Kwan's small boat. The outboard
 
 With insufficient time, we didn't catch any crabs or mangrove jack. However, we collected fresh mullet with a cast net for the next day.
 {% include figure image_path="/assets/images/2025/06/IMG_1072.jpeg" caption="" %}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NdVY9aNJFbg?si=VVJ4yqx09sbFpKhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 On the King's Birthday, we went offshore again with Craig. Conditions were very lumpy and not great for fishing. On the way out, the anchor release failed so we couldn't use the anchor winch.
 {% include figure image_path="/assets/images/2025/06/IMG_1088.jpeg" caption="" %}
