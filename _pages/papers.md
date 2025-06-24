@@ -372,11 +372,11 @@ Matic \- an intracardiac tachycardia classification system\.
 [1] Carol Jingyi Li, Ruilin Wu, and Philip H\.W\. Leong\.
 AMD Versal implementations of FAM and SSCA estimators\.
 In *2025 35th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, to appear\. 2025\.
-URL: [famssca\-fpl25\.pdf](famssca-fpl25.pdf)\.  
+URL: [famssca\_fpl25\.pdf](famssca_fpl25.pdf)\.  
 [2] Binglei Lou, Richard Rademacher, David Boland, and Philip H\.W\. Leong\.
 PolyLUT\-Add: FPGA\-based LUT inference with wide inputs\.
 In *2024 34th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, 149&ndash;155\. 2024\.
-URL: [polylutadd\-fpl24\.pdf](polylutadd-fpl24.pdf), [doi:10\.1109/FPL64840\.2024\.00029](https://doi.org/10.1109/FPL64840.2024.00029)\.  
+URL: [polylutadd\_fpl24\.pdf](polylutadd_fpl24.pdf), [doi:10\.1109/FPL64840\.2024\.00029](https://doi.org/10.1109/FPL64840.2024.00029)\.  
 [3] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, David Boland, and Chris Butler\.
 Performance analysis of federated learning in orbital edge computing\.
 In *Proc\. IEEE/ACM 16th International Conference on Utility and Cloud Computing Proceedings*, to appear\. 2023\.
