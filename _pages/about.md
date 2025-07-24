@@ -12,7 +12,7 @@ classes: wide
 
 Philip Leong received the B.Sc., B.E. and Ph.D. degrees from the University of Sydney. From 1997-2009 he was with the Chinese University of Hong Kong. He is currently Professor of Computer Systems in the School of Electrical and Computer Engineering at the University of Sydney, Chief Technology Officer at CruxML and Chief Executive Officer at TernaryNet. 
 
-Dr Leong was co-founder and program co-chair of the International Conference on Field Programmable Technology (FPT) and program co-chair of the International Conference on Field Programmable Logic and Applications (FPL). He is currently Senior Associate Editor for ACM Transactions on Reconfigurable Technology and Systems (TRETS). The author of 200 technical papers and 5 patents, he was the recipient of the 2005 FPT conference Best Paper as well as the 2007 and 2008 FPL conference Stamatis Vassiliadis Outstanding Paper awards. His research interests include FPGA architectures and applications, computer architecture and machine learning.
+Dr Leong was co-founder and program co-chair of the International Conference on Field Programmable Technology (FPT) and program co-chair of the International Conference on Field Programmable Logic and Applications (FPL). He is currently Senior Associate Editor for ACM Transactions on Reconfigurable Technology and Systems (TRETS). The author of 200 technical papers and 5 patents, he was the recipient of the 2005 FPT conference Best Paper as well as the 2007 and 2008 FPL conference Stamatis Vassiliadis Outstanding Paper awards. His research interests include FPGA architectures and applications, signal processing and machine learning.
 
 ## Contact
 
