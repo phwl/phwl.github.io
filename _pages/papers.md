@@ -13,11 +13,11 @@ classes: wide
 
 [1] Han Yue, Jun Cheng, Yu\-Xuan Ren, Chien\-Chun Chen, Grant A\. van Riessen, Philip Heng Wai Leong, and Steve Feng Shu\.
 A physics\-inspired deep learning framework with polar coordinate attention for ptychographic imaging\.
-*IEEE Transactions on Computational Imaging*, \(\):1&ndash;13, 2025\.
+*IEEE Transactions on Computational Imaging*, 11\(\):888&ndash;900, 2025\.
 URL: [ptycho\_tci25\.pdf](ptycho_tci25.pdf), [doi:10\.1109/TCI\.2025\.3572250](https://doi.org/10.1109/TCI.2025.3572250)\.  
 [2] Wenjie Zhou, Haoyan Qi, David Boland, and Philip H\. W\. Leong\.
 FPGA\-based block minifloat training accelerator for a time series prediction network\.
-*ACM Trans\. Reconfigurable Technol\. Syst\.*, March 2025\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, 18\(2\):1–23, March 2025\.
 URL: [nbeats\_trets25\.pdf](nbeats_trets25.pdf), [doi:10\.1145/3707209](https://doi.org/10.1145/3707209)\.  
 [3] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, and David Boland\.
 Fedorbit: energy efficient federated learning for orbital edge computing using block minifloat arithmetic\.
@@ -372,11 +372,11 @@ Matic \- an intracardiac tachycardia classification system\.
 [1] Carol Jingyi Li, Ruilin Wu, and Philip H\.W\. Leong\.
 AMD Versal implementations of FAM and SSCA estimators\.
 In *2025 35th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, to appear\. 2025\.
-URL: [famssca\_fpl25\.pdf](famssca_fpl25.pdf)\.  
+URL: [famssca\-fpl25\.pdf](famssca-fpl25.pdf)\.  
 [2] Binglei Lou, Richard Rademacher, David Boland, and Philip H\.W\. Leong\.
 PolyLUT\-Add: FPGA\-based LUT inference with wide inputs\.
 In *2024 34th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, 149&ndash;155\. 2024\.
-URL: [polylutadd\_fpl24\.pdf](polylutadd_fpl24.pdf), [doi:10\.1109/FPL64840\.2024\.00029](https://doi.org/10.1109/FPL64840.2024.00029)\.  
+URL: [polylutadd\-fpl24\.pdf](polylutadd-fpl24.pdf), [doi:10\.1109/FPL64840\.2024\.00029](https://doi.org/10.1109/FPL64840.2024.00029)\.  
 [3] Mohammad Reza Jabbarpour, Bahman Javadi, Philip H\.W\. Leong, Rodrigo N\. Calheiros, David Boland, and Chris Butler\.
 Performance analysis of federated learning in orbital edge computing\.
 In *Proc\. IEEE/ACM 16th International Conference on Utility and Cloud Computing Proceedings*, to appear\. 2023\.
@@ -1070,22 +1070,26 @@ The University of Sydney, 1992\.
 
 # Miscellaneous
 
-[1] P\. Leong\.
+[1] Rafal Sienicki, Danielle J\. Edwards, Manuel A\. Cervera, and Philip H\.W\. Leong\.
+Ionogram scaling for vertical, oblique and backscatter sounders: a review of challenges and opportunities\.
+*IEEE Geoscience and Remote Sensing Magazine*, 11\(\):to appear, 2025\.
+URL: [is\_grsmag\.pdf](is_grsmag.pdf)\.  
+[2] P\. Leong\.
 Barramundi on fly\.
 *www\.flyfish\.com*, 2004\.
 URL: [http://www\.flyfish\.com/library/editorial\.php?id=611](http://www.flyfish.com/library/editorial.php?id=611)\.  
-[2] P\. Leong\.
+[3] P\. Leong\.
 Low\-cost reconfigurable computing \(FPGAs\)\.
 *Slashdot*, 2001\.
 URL: [http://slashdot\.org/hardware/01/11/04/1947212\.shtml](http://slashdot.org/hardware/01/11/04/1947212.shtml)\.  
-[3] P\. Leong\.
+[4] P\. Leong\.
 Book review\.
 *EA Electrical Engineering Review*, 1\(3\):34–35, 1995\.  
-[4] P\. Leong\.
+[5] P\. Leong\.
 Marlin on fly\.
 *\(Australian\) Modern Fishing Magazine*, pages 50–53, 1994\.
 URL: [marlin\_mf94\.pdf](marlin_mf94.pdf)\.  
-[5] P\. Leong\.
+[6] P\. Leong\.
 Current source scrounges parts\.
 *EDN Magazine*, pages 182, June 1991\.
 URL: [isrc\_edn91\.pdf](isrc_edn91.pdf)\.  
