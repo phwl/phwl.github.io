@@ -1073,7 +1073,7 @@ The University of Sydney, 1992\.
 [1] Rafal Sienicki, Danielle J\. Edwards, Manuel A\. Cervera, and Philip H\.W\. Leong\.
 Ionogram scaling for vertical, oblique and backscatter sounders: a review of challenges and opportunities\.
 *IEEE Geoscience and Remote Sensing Magazine*, 11\(\):to appear, 2025\.
-URL: [is\_grsmag\.pdf](is_grsmag.pdf)\.  
+URL: [is\_grsmag25\.pdf](is_grsmag25.pdf)\.  
 [2] P\. Leong\.
 Barramundi on fly\.
 *www\.flyfish\.com*, 2004\.
