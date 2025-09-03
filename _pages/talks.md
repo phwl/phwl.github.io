@@ -12,7 +12,7 @@ classes: wide
 ---
 ## 8 Sep 2025, Tutorial
 [Computer Arithmetic for Machine Learning](/assets/talks/ca4ml.pdf),
-National Tsing Hui University, Taiwan
+National Tsing Hua University, Taiwan
 
 As machine learning becomes a dominant computing workload, interest in improving performance has increased. This talk will be a tutorial on low-precision arithmetic systems that can be applied to the training of deep neural networks. We will first introduce fixed- and floating-point number formats typically used for machine learning. This will be followed by a description of our work on block minifloat arithmetic and the new microscaling (MX) format being supported by the major vendors.
 
