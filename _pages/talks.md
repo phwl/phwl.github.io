@@ -10,9 +10,15 @@ title: Talks
 classes: wide
 
 ---
+## 8 Sep 2025, Tutorial
+[Computer Arithmetic for Machine Learning](/assets/talks/ca4ml.pdf),
+National Tsing Hui University, Taiwan
+
+As machine learning becomes a dominant computing workload, interest in improving performance has increased. This talk will be a tutorial on low-precision arithmetic systems that can be applied to the training of deep neural networks. We will first introduce fixed- and floating-point number formats typically used for machine learning. This will be followed by a description of our work on block minifloat arithmetic and the new microscaling (MX) format being supported by the major vendors.
+
 ## 1 Mar 2025, Invited Talk
 [Domain-specific FPGAs for Radio Frequency Machine Learning ](/assets/talks/dsfpgas-fpga25.pdf),
-First Workshop on Domain-Specialized FPGAs, Monterey, US`
+First Workshop on Domain-Specialized FPGAs, Monterey, US
 
 Talk about how FPGA architectures could be specialised for radio frequency machine learning.
 
