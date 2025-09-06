@@ -16,16 +16,16 @@ header:
 
 One of the canals in Amsterdam.
 
-{% include figure image_path="/assets/images/2022/03/IMG_9328.jpeg" caption="" %}
+{% include figure image_path="/assets/images/2025/09/DSCF0159.jpeg" caption="" %}
 
 Flower market.
 
-{% include figure image_path="/assets/images/2025/09/DSCF0159.jpeg" caption="" %}
-
 {% include figure image_path="/assets/images/2025/09/DSCF0160.jpeg" caption="" %}
 
-We went to [Jazz Cafe Alto](https://www.jazz-cafe-alto.nl/) and had a great time. [Francisco Morales](https://franciscomoralesmusic.com/) was playing.
 {% include figure image_path="/assets/images/2025/09/DSCF0163.jpeg" caption="" %}
+
+We went to [Jazz Cafe Alto](https://www.jazz-cafe-alto.nl/) and had a great time. [Francisco Morales](https://franciscomoralesmusic.com/) was playing.
+
 {% include figure image_path="/assets/images/2025/09/DSCF0207.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2025/09/DSCF0210.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2025/09/DSCF0238.jpeg" caption="" %}
