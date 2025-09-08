@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2025-09-05 09:30:00 AEST
-title: FPL25 Conference
+title: FPL25 and Semicon Conferences
 use_math: true
 toc: true
 classes: wide
@@ -13,10 +13,11 @@ tags:
 header:
   teaser: /assets/images/2025/09/DSCF0324.jpeg
 ---
-Here are some photos of a trip to the lowlands of Europe, mainly to attend the FPL 2025 conference in Leiden.
+Had a very busy schedule for a trip to the [FPL 2025 conference](https://2025.fpl.org/) in Leiden.
 
 ## Amsterdam
-One of the canals in Amsterdam.
+I flew via Dubai and arrived in the afternoon. Here is a photo of
+one of the canals in Amsterdam.
 
 {% include figure image_path="/assets/images/2025/09/DSCF0159.jpeg" caption="" %}
 
