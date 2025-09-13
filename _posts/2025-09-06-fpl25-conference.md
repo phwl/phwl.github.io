@@ -102,3 +102,8 @@ On the last day, we went to [Jazz Cafe Alto](https://www.jazz-cafe-alto.nl/) and
 {% include figure image_path="/assets/images/2025/09/DSCF0210.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2025/09/DSCF0238.jpeg" caption="" %}
 {% include figure image_path="/assets/images/2025/09/DSCF0324.jpeg" caption="" %}
+
+
+## Taipei
+This is the [Blue Note Taipei](https://www.bluenotetaipei.com/).
+{% include figure image_path="/assets/images/2025/09/DSCF0382.JPG" caption="" %}
