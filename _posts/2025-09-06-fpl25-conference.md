@@ -105,5 +105,6 @@ On the last day, we went to [Jazz Cafe Alto](https://www.jazz-cafe-alto.nl/) and
 
 
 ## Taipei
-This is the [Blue Note Taipei](https://www.bluenotetaipei.com/).
+We went to [Blue Note Taipei](https://www.bluenotetaipei.com/) where [Jazz Meta](https://jazzmeta.ldien.net/) were playing.
+
 {% include figure image_path="/assets/images/2025/09/DSCF0382.jpeg" caption="" %}
