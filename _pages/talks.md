@@ -14,7 +14,7 @@ classes: wide
 [The Computer Engineering Lab](/assets/talks/cel-amdroadshow25.pdf),
 [AMD on Wheels, Sydney](https://www.avnet.com/apac/resources/training-and-events/event/amd-on-wheels)
 
-Some research gaps in radio frequency machine learning and how the Computer Engineering Lab has been working to address them.
+Advances in software-defined radio and deep learning (DL) have enabled radio signals to be detected and classified more accurately than using conventional digital signal processing techniques. However, gaps in radio frequency machine learning (RFML) research regarding suitable Algorithms, Latency, Edge implementations, Representation and Training  (ALERT) techniques remain. In the Computer Engineering Laboratory at the University of Sydney, we have been designing FPGA-based accelerators for cyclostationary signal processing and low-precision edge-based training for RFML applications. This talk elaborates on the research gaps and our efforts to address them. 
 
 ## 8 Sep 2025, Tutorial
 [Computer Arithmetic for Machine Learning](/assets/talks/ca4ml.pdf),
