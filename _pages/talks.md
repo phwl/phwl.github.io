@@ -10,6 +10,12 @@ title: Talks
 classes: wide
 
 ---
+## 7 Nov 2025, Keynote Address
+[The Computer Engineering Lab](/assets/talks/cel-amdroadshow25.pdf),
+[AMD on Wheels, Sydney](https://www.avnet.com/apac/resources/training-and-events/event/amd-on-wheels)
+
+Some research gaps in radio frequency machine learning and how the Computer Engineering Lab has been working to address them.
+
 ## 8 Sep 2025, Tutorial
 [Computer Arithmetic for Machine Learning](/assets/talks/ca4ml.pdf),
 National Tsing Hua University, Taiwan
