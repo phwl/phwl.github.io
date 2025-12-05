@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2025-11-17 09:00:00 AEDT
+date: 2025-11-18 09:00:00 AEDT
 title: Computer Engineering Lab Christmas Party 
 classes: wide
 categories:
