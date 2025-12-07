@@ -38,3 +38,15 @@ Now install compilers and ruby:
 (jekyll) % bundle exec jekyll serve --incremental
 ```
 
+## Update 8/12/2025
+```bash
+conda create --name jekyll_env python
+conda activate jekyll_env
+
+conda install -c conda-forge c-compiler compilers cxx-compiler
+conda install -c conda-forge ruby
+
+gem install jekyll bundler
+bundle install
+```
+
