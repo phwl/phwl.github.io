@@ -40,8 +40,8 @@ Now install compilers and ruby:
 
 ## Update 8/12/2025
 ```bash
-conda create --name jekyll_env python
-conda activate jekyll_env
+conda create --name jekyll python
+conda activate jekyll
 
 conda install -c conda-forge c-compiler compilers cxx-compiler
 conda install -c conda-forge ruby
