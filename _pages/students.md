@@ -11,6 +11,8 @@ wordpress_id: 3338
 ---
 
 
+  1. Wenjie ZHOU, [Block Arithmetic Techniques for the Implementation of Deep Neural Networks](/assets/images/2025/12/wzhou25.pdf), PhD 2025.
+   
   1. Carol Jingyi LI, [High-Speed Implementations of Spectral Correlation Analysis Techniques](/assets/images/2025/04/jyli25.pdf), PhD 2025.
    
   1. Binglei LOU, [Low Latency and Scalable Machine Learning on FPGA-based System-on-Chip](/assets/images/2024/12/blou24.pdf), PhD 2024.
