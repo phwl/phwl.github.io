@@ -14,11 +14,9 @@ header:
   teaser: /assets/images/2025/12/fpgastilllife-maggie.jpeg
 ---
 
-ChatGPT-generated still life images from Carol and Maggie.
+ChatGPT-generated still life images from Carol (left) and Maggie (right).
 
-[Carol](http://jingyi-li.github.io/)
-
-{% include figure image_path="/assets/images/2025/12/fpgastilllife-carol.jpeg" caption="" %}
-
-Maggie
-{% include figure image_path="/assets/images/2025/12/fpgastilllife-maggie.jpeg" caption="" %}
+<div class="image-container">
+    <img src="{{ site.baseurl }}/assets/images/2025/12/fpgastilllife-carol.jpeg" alt="Alt text" width="300">
+    <img src="{{ site.baseurl }}/assets/images/2025/12/fpgastilllife-maggie.jpeg" alt="Alt text" width="300">
+</div>
