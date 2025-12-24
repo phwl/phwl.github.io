@@ -11,7 +11,7 @@ categories:
 tags:
 - FPGA
 header:
-  teaser: /assets/images/2025/12/fpgastilllife-maggie.jpeg
+  teaser: /assets/images/2025/12/fpgastilllife-small.jpeg
 ---
 
 ChatGPT-generated still life images from Carol (left) and Maggie (right).
