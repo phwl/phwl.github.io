@@ -29,13 +29,6 @@ and history.
 
 ## Standard (1.3703 model)
 
-The current one I am using was purchased at the Lausanne Victorinox store in 2023 (see <https://phwl.org/2023/a-visit-to-the-victorinox-store-lausanne/>). It has the "Plus" scales which include an extra slot for a pen. 
-Not everyone knows that there is a hole for a pin under the corkscrew in
-all modern scales.
-
-{% include figure image_path="/assets/images/2023/02/IMG_2973.jpeg" %}
-
-
 The standard Climber is a three-layer SAK and has the following dimensions:
 * Width: 26 mm
 * Height: 18 mm
@@ -55,6 +48,13 @@ It is equipped with the following tools:
 1. Key ring
 1. Tweezers
 1. Toothpick.
+
+My current Climber was purchased at the Lausanne Victorinox store in 2023 (see <https://phwl.org/2023/a-visit-to-the-victorinox-store-lausanne/>). It has the "Plus" scales which include an extra slot for a pen. 
+Not everyone knows that there is a hole for a pin under the corkscrew in
+all modern scales.
+
+{% include figure image_path="/assets/images/2023/02/IMG_2973.jpeg" %}
+
 
 I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (and added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew and the awl gets occasional use. Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
 
