@@ -14,9 +14,8 @@ header:
   teaser: /assets/images/2026/01/climber-small.jpg
 ---
 
-The [91mm Victorinox Climber](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Climber/p/1.3703) is my favourite Swiss Army Knife (SAK)
-and has been my companion for many decades.  
-{% include figure image_path="/assets/images/2026/01/climber-1.jpg" %}
+The medium-sized [Victorinox Climber](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Climber/p/1.3703) is my favourite Swiss Army Knife (SAK)
+and I've carried one for fishing, camping and fixing things for several decades.
 
 All Victorinox pocket knives that I have purchased have been of
 admirable quality with absolutely no play, snappy closing and a
@@ -28,6 +27,8 @@ ground, the scales really stand up to hard usage.  The
 and history.
 
 ## Standard (1.3703 model)
+
+{% include figure image_path="https://imageengine.victorinox.com/transform/b930a3ee-e28e-40e8-bb94-6f4dbc02bddf/SAK_1_3703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" %}
 
 The standard Climber is a three-layer SAK and has the following dimensions:
 * Width: 26 mm
@@ -55,19 +56,29 @@ all modern scales.
 
 {% include figure image_path="/assets/images/2023/02/IMG_2973.jpeg" %}
 
-
 I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (and added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew and the awl gets occasional use. Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
 
-Other people may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909), the usefulness of having 2 blades and the choice of two screwdrivers better suit my purposes.
+### Compared with Other Models
 
+<div class="image-container">
+    <img src="https://imageengine.victorinox.com/transform/313a555e-8f29-4487-bb01-dceeca554eeb/SAK_1-3405_S2-jpg?io=transform%3Afit%2Cwidth%3A1800%2Cheight%3A1300&quality=100" alt="Alt text" width="300">
+    <img src="https://imageengine.victorinox.com/transform/86d7229e-dd3b-4147-9666-02f97a956577/SAK_1-3909_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Alt text" width="300">
+    <img src="https://imageengine.victorinox.com/transform/122a2864-0335-4492-a116-dddf6b846bf2/SAK_1_4703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" alt="Alt text" width="300">
+</div>
+
+Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) (left) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909) (middle), the usefulness of having 2 blades and the choice of two screwdrivers better suit my purposes.
+The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Super-Tinker/p/1.4703) (right) replaces the corkscrew in a Climber with a Philips screwdriver. Unfortunately, one loses the mini screwdriver which has come in handy to fix glasses (mine and others) from time to time. Moreover, it can't be used to open a bottle of wine in an emergency!
 ## Long Nail File Version (1.3722 model)
+
+{% include figure image_path="/assets/images/2026/01/climber-1.jpg" %}
+
 
 <div class="image-container">
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-2.jpg" alt="Alt text" width="300">
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-3.jpg" alt="Alt text" width="300">
 </div>
 I've found all the tools on the standard Climber useful except the parcel hook. 
-The 1.3722 replaces the parcel hook with a long nail file. Moreover,
+The 1.3722 replaces the parcel hook with a long nail file. Furthermore,
 it has no keyring, this probably being because it was derived from
 an earlier model, the Traveller, which also didn't have a keyring.
 Mine was ordered many years ago from <https://www.swiss-knife.com/en/>.
