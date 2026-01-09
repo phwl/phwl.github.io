@@ -77,12 +77,12 @@ The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-2.jpg" alt="Alt text" width="300">
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-3.jpg" alt="Alt text" width="300">
 </div>
-I've found all the tools on the standard Climber useful except the parcel hook. 
-The 1.3722 replaces the parcel hook with a long nail file. Furthermore,
-it has no keyring, this probably being because it was derived from
-an earlier model, the Traveller, which also didn't have a keyring.
-Mine was ordered many years ago from <https://www.swiss-knife.com/en/>.
-This version is not nearly as common but I believe the nail file
-is a more useful tool.  Apart from filing things, it is useful for
-making notches and prodding things in confined spaces.
+
+A less common variant is the 1.3722 Climber which replaces the
+parcel hook with a long nail file. Furthermore, it has no keyring
+(this probably being because it was derived from an earlier model,
+the Traveller).  I believe the nail file is a more useful tool than
+the parcel hook as apart from filing things, it is useful for making
+notches and prodding things in confined spaces as is often required in dealing
+with electronics.
 
