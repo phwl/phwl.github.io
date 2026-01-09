@@ -61,9 +61,9 @@ I use the large blade for food preparation and the small blade for other work su
 ### Compared with Other Models
 
 <div class="image-container">
-    <img src="https://imageengine.victorinox.com/transform/313a555e-8f29-4487-bb01-dceeca554eeb/SAK_1-3405_S2-jpg?io=transform%3Afit%2Cwidth%3A1800%2Cheight%3A1300&quality=100" alt="Alt text" width="300">
-    <img src="https://imageengine.victorinox.com/transform/86d7229e-dd3b-4147-9666-02f97a956577/SAK_1-3909_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Alt text" width="300">
-    <img src="https://imageengine.victorinox.com/transform/122a2864-0335-4492-a116-dddf6b846bf2/SAK_1_4703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" alt="Alt text" width="300">
+    <img src="https://imageengine.victorinox.com/transform/313a555e-8f29-4487-bb01-dceeca554eeb/SAK_1-3405_S2-jpg?io=transform%3Afit%2Cwidth%3A1800%2Cheight%3A1300&quality=100" alt="Compact" width="300">
+    <img src="https://imageengine.victorinox.com/transform/86d7229e-dd3b-4147-9666-02f97a956577/SAK_1-3909_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Companion" width="300">
+    <img src="https://imageengine.victorinox.com/transform/122a2864-0335-4492-a116-dddf6b846bf2/SAK_1_4703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" alt="Super Tinker" width="300">
 </div>
 
 Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) (left) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909) (middle), the usefulness of having 2 blades and the choice of two screwdrivers better suit my purposes.
