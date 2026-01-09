@@ -33,13 +33,13 @@ The current one I am using was purchased at the Lausanne Victorinox store in 202
 
 ## Standard (1.3703 model)
 
-The standard Climber has the following dimensions:
+The standard Climber is a three-layer SAK and has the following dimensions:
 * Width: 26 mm
 * Height: 18 mm
 * Length: 91 mm and
 * Weight: 82 g.  
 
-It has the following tools: 
+It is equipped with the following tools: 
 1. Blade, large
 1. Blade, small
 1. Corkscrew
