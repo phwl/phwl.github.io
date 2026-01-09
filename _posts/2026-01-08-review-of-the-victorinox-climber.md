@@ -21,7 +21,7 @@ and has been my companion for many decades.
 All Victorinox pocket knives that I have purchased have been of
 admirable quality with absolutely no play, snappy closing and a
 flawless finish.  The steel is easy to sharpen and virtually
-rustproof.  Although I managed to crack a set by dropping on the
+rustproof.  Although I managed to crack them by dropping on the
 ground, the scales really stand up to hard usage.  The
 [SAKwiki](https://sakwiki.com) has a good page on all the different
 [Climber models](https://sakwiki.com/tiki-index.php?page=Climber)
@@ -63,9 +63,11 @@ I use the large blade for food preparation and the small blade for other work su
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-3.jpg" alt="Alt text" width="300">
 </div>
 I've found all the tools on the standard Climber useful except the parcel hook. 
-The 1.3722 replaces the parcel hook with a long nail file. Moreover, it has no keyring, this probably being because it was derived from an earlier model, the
-Traveller, which also didn't have a keyring.
-Mine was ordered many years ago from <https://www.swiss-knife.com/en/>. 
-This version is not nearly as common but I believe the nail file is a more useful tool.
-Apart from filing things, the file is useful for making notches and prodding things in confined spaces.
+The 1.3722 replaces the parcel hook with a long nail file. Moreover,
+it has no keyring, this probably being because it was derived from
+an earlier model, the Traveller, which also didn't have a keyring.
+Mine was ordered many years ago from <https://www.swiss-knife.com/en/>.
+This version is not nearly as common but I believe the nail file
+is a more useful tool.  Apart from filing things, it is useful for
+making notches and prodding things in confined spaces.
 
