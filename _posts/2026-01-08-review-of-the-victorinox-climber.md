@@ -89,3 +89,17 @@ with electronics.
 
 Finally, the Pioneer X Alox is also very similar. It does not have the cellidor (plastic scales) and hence you lose the small blade, corkscrew, hook, toothpick, tweezers and pin. However, it is considerably thinner and the awl is handy. I also like this model.
 
+## Other Climber Reviews
+
+### Blogs
+1. <https://www.outdoorgearlab.com/reviews/camping-and-hiking/pocket-knife/victorinox-climber>
+1. <https://discover.hubpages.com/sports/Victorinox-Climber-Review-Perfect-Gift-You-Can-Get-For-You-or-Loved-Ones>
+1. <https://www.mantripping.com/stuff/victorinox-climber-swiss-army-knife-review.html>
+1. <https://archerwinsak.blogspot.com/2014/12/review-victorinox-climber-and-super.html>
+
+### Forums
+1. <https://www.bladeforums.com/threads/victorinox-climber-one-of-my-favourite-edc-knives.1178504/>
+1. <https://forum.multitool.org/index.php?topic=22231.0>
+
+### Youtube Videos
+1. <https://www.google.com/search?q=victorinox+climber+review&udm=7>
