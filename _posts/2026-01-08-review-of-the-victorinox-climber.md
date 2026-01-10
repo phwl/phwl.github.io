@@ -85,9 +85,13 @@ the parcel hook as apart from filing things, it is useful for making
 notches and prodding things in confined spaces as is often required in dealing
 with electronics.
 
-{% include figure image_path="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg?v=1742531067&width=400" %}
+<div class="image-container">
+    <img src="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg" width="300">
+    <img src="https://imageengine.victorinox.com/transform/12c466ee-728e-41e9-ac2c-e5d6ad66b975/SAK_0-8226-20_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Alt text" width="300">
+</div>
 
-Finally, the Pioneer X Alox is also very similar. Aluminium scales replace the cellidor (plastic) ones. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I also like this model. 
+
+In aluminium scales (alox), the [Pioneer X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Pioneer-X-Alox/p/0.8231.26)  (left) is very similar. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I haven't used the new [Synergy X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-X-Alox/p/0.8226.20) (right) but it has skeletonised scales, locking blade and clip.
 
 ## Other Climber Reviews
 
