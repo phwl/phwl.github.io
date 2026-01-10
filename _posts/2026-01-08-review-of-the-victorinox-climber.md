@@ -54,7 +54,7 @@ My current Climber was purchased at the Lausanne Victorinox store in 2023 (see <
 Not everyone knows that there is a hole for a pin under the corkscrew in
 all modern scales.
 
-{% include figure image_path="/assets/images/2023/02/IMG_2973.jpeg" %}
+<img src="/assets/images/2023/02/IMG_2973.jpeg" alt="Climber+" width="800">
 
 I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (and added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew and the awl gets occasional use. Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
 
@@ -72,7 +72,6 @@ The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84
 
 {% include figure image_path="/assets/images/2026/01/climber-1.jpg" %}
 
-
 <div class="image-container">
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-2.jpg" alt="Alt text" width="300">
     <img src="{{ site.baseurl }}/assets/images/2026/01/climber-3.jpg" alt="Alt text" width="300">
@@ -85,4 +84,8 @@ the Traveller).  I believe the nail file is a more useful tool than
 the parcel hook as apart from filing things, it is useful for making
 notches and prodding things in confined spaces as is often required in dealing
 with electronics.
+
+{% include figure image_path="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg?v=1742531067&width=400" %}
+
+Finally, the Pioneer X Alox is also very similar. It does not have the cellidor (plastic scales) and hence you lose the small blade, corkscrew, hook, toothpick, tweezers and pin. However, it is considerably thinner and the awl is handy. I also like this model.
 
