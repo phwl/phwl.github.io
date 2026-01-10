@@ -87,7 +87,7 @@ with electronics.
 
 {% include figure image_path="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg?v=1742531067&width=400" %}
 
-Finally, the Pioneer X Alox is also very similar. It does not have the cellidor (plastic scales) and hence you lose the small blade, corkscrew, hook, toothpick, tweezers and pin. However, it is considerably thinner and the awl is handy. I also like this model.
+Finally, the Pioneer X Alox is also very similar. Aluminium scales replace the cellidor (plastic) ones. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I also like this model. 
 
 ## Other Climber Reviews
 
