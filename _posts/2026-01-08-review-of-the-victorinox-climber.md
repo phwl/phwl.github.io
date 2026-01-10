@@ -101,5 +101,5 @@ Finally, the Pioneer X Alox is also very similar. It does not have the cellidor 
 1. <https://www.bladeforums.com/threads/victorinox-climber-one-of-my-favourite-edc-knives.1178504/>
 1. <https://forum.multitool.org/index.php?topic=22231.0>
 
-### Youtube Videos
+### Videos
 1. <https://www.google.com/search?q=victorinox+climber+review&udm=7>
