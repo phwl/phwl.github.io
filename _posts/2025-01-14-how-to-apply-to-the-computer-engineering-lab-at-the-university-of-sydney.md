@@ -12,7 +12,7 @@ tags:
 - suee
 ---
 
-Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL), School of Electrical and Information Engineering, The University of Sydney. The offical University of Sydney information is available at [https://sydney.edu.au/study/admissions/apply/how-to-apply.html](https://sydney.edu.au/study/admissions/apply/how-to-apply.html) and this contains a thorough description of the applications process, including requirements regarding scholarships, english profiency and documentation. Please read this carefully before contacting me.
+Please note that I receive a large number of emails from students wishing to join the Computer Engineering Lab (CEL), School of Electrical and Information Engineering, The University of Sydney. The offical University of Sydney Engineering information is available at <https://www.sydney.edu.au/engineering/study/postgraduate-research.html> and this contains a thorough description of the applications process, including requirements regarding scholarships, english profiency and documentation. Please read this carefully before contacting me.
 
 In particular, the main scholarship is the Research Training Program (RTP). Please refer to this link for closing dates: <https://www.sydney.edu.au/scholarships/e/australian-government-rtp-scholarship-international.html>.
 
