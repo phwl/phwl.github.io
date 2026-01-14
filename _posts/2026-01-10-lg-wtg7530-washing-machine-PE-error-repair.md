@@ -14,7 +14,7 @@ header:
   teaser: /assets/images/2026/01/lgwash-2.jpeg
 ---
 
-My daughter's LG washing machine was giving the PE (Pressure Error) code, 
+My daughter's LG washing machine was showing a PE (Pressure Error) code 
 indicating a problem with the water level sensor.
 
 {% include figure image_path="/assets/images/2026/01/lgwash-1.jpeg" %}
