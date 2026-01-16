@@ -58,7 +58,7 @@ all modern scales.
 
 <img src="/assets/images/2023/02/IMG_2973.jpeg" alt="Climber+" width="800">
 
-I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (and added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew and the awl gets occasional use. Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
+I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (and added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew which has saved the day on more than one occasion by fixing eyeglasses. The awl gets used infrequently but has been used to make a field repair on shoes (using dental floss as thread). Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
 
 ### Long Nail File Version (1.3722 model)
 
@@ -88,7 +88,7 @@ There is also a smaller, 84mm Climber. Here is a good youtube video describing t
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pUOVjlIOFNM?si=pL3Wi5WePoq6ctlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-### Compared with Other Models
+## Compared with Other Models
 
 <div class="image-container">
     <img src="https://imageengine.victorinox.com/transform/313a555e-8f29-4487-bb01-dceeca554eeb/SAK_1-3405_S2-jpg?io=transform%3Afit%2Cwidth%3A1800%2Cheight%3A1300&quality=100" alt="Compact" width="300">
@@ -96,8 +96,8 @@ There is also a smaller, 84mm Climber. Here is a good youtube video describing t
     <img src="https://imageengine.victorinox.com/transform/122a2864-0335-4492-a116-dddf6b846bf2/SAK_1_4703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" alt="Super Tinker" width="300">
 </div>
 
-Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) (left) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909) (middle), the usefulness of having 2 blades and the choice of two screwdrivers better suit my purposes.
-The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Super-Tinker/p/1.4703) (right) replaces the corkscrew in a Climber with a Philips screwdriver. Unfortunately, one loses the mini screwdriver which has come in handy to fix glasses (mine and others) from time to time. Moreover, it can't be used to open a bottle of wine in an emergency!
+Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909), the usefulness of having 2 blades and the choice of two screwdrivers better suit my purposes.
+The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Super-Tinker/p/1.4703) replaces the corkscrew in a Climber with a Philips screwdriver. Unfortunately, one loses the mini screwdriver which has come in handy to fix glasses (mine and others) from time to time. Moreover, it can't be used to open a bottle of wine in an emergency!
 
 In aluminium scales (alox), the [Pioneer X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Pioneer-X-Alox/p/0.8231.26)  (left) is very similar. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I haven't used the new [Synergy X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-X-Alox/p/0.8226.20) (right) but it has skeletonised scales, locking blade and clip.
 
