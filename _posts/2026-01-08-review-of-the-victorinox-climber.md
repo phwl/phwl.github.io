@@ -117,4 +117,4 @@ In aluminium scales (alox), the [Pioneer X Alox](https://www.victorinox.com/en/P
 
 ### Videos
 1. Google search - <https://www.google.com/search?q=victorinox+climber+review&udm=7>
-1. Victornix Climber Small: History and Mystery of the 84mm Scissors - <https://www.youtube.com/watch?v=pUOVjlIOFNM&t=1s>
+1. Victorinox Climber Small: History and Mystery of the 84mm Scissors - <https://www.youtube.com/watch?v=pUOVjlIOFNM&t=1s>
