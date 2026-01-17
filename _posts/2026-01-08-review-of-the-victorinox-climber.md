@@ -58,7 +58,9 @@ all modern scales.
 
 <img src="/assets/images/2023/02/IMG_2973.jpeg" alt="Climber+" width="800">
 
-I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (an added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. I have added a mini screwdriver on the corkscrew which has saved the day on more than one occasion by fixing eyeglasses. The awl gets used infrequently but has been used to make a field repair on shoes (using dental floss as thread). Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
+I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (an added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. 
+
+I have added a mini screwdriver on the corkscrew which has saved the day on more than one occasion by fixing eyeglasses. The awl gets used infrequently but has been used to make a field repair on shoes (using dental floss as thread). Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
 
 ### Long Nail File Version (1.3722 model)
 
@@ -83,7 +85,7 @@ with electronics.
 </div>
 
 ### 84mm Version
-There is also a smaller, 84mm Climber. Here is a good youtube video describing the history of this rather rare Climber. The video includes the Victorinox 245kU which has the long nail file and the older Victorinox 235kU with bail.
+There is also a smaller, 84mm Climber. Here is a good YouTube video describing the history of this rather rare Climber. The video includes the Victorinox 245kU which has the long nail file and the older Victorinox 235kU with bail.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pUOVjlIOFNM?si=pL3Wi5WePoq6ctlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
