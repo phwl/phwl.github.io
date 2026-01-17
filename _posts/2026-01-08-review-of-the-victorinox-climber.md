@@ -79,11 +79,6 @@ the parcel hook as apart from filing things, it is useful for making
 notches and prodding things in confined spaces as is often required in dealing
 with electronics.
 
-<div class="image-container">
-    <img src="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg" width="300">
-    <img src="https://imageengine.victorinox.com/transform/12c466ee-728e-41e9-ac2c-e5d6ad66b975/SAK_0-8226-20_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Alt text" width="300">
-</div>
-
 ### 84mm Version
 There is also a smaller, 84mm Climber. Here is a good YouTube video describing the history of this rather rare Climber. The video includes the Victorinox 245kU which has the long nail file and the older Victorinox 235kU with bail.
 
@@ -100,6 +95,11 @@ There is also a smaller, 84mm Climber. Here is a good YouTube video describing t
 
 Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909), but the utility of having 2 blades and the choice of two screwdrivers better suit my purposes.
 The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Super-Tinker/p/1.4703) replaces the corkscrew in a Climber with a Philips screwdriver. Unfortunately, one loses the mini screwdriver which has come in handy to fix glasses (mine and others) from time to time. Moreover, it can't be used to open a bottle of wine in an emergency!
+
+<div class="image-container">
+    <img src="https://victorinox.com.au/cdn/shop/files/35244_a-Victorinox.jpg" width="300">
+    <img src="https://imageengine.victorinox.com/transform/12c466ee-728e-41e9-ac2c-e5d6ad66b975/SAK_0-8226-20_S1?io=transform%3Abackground%2Ccolor%3AF0F0F0&io=transform%3Afit%2Cwidth%3A900%2Cheight%3A650&quality=100" alt="Alt text" width="300">
+</div>
 
 In aluminium scales (alox), the [Pioneer X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Pioneer-X-Alox/p/0.8231.26)  (left) is very similar. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I haven't used the new [Synergy X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-X-Alox/p/0.8226.20) (right) but it has skeletonised scales, locking blade and clip.
 
