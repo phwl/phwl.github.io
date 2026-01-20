@@ -19,12 +19,20 @@ and I've carried one for fishing, camping and fixing things for several decades.
 
 All Victorinox pocket knives that I have purchased have been of
 admirable quality with absolutely no play, snappy closing and a
-flawless finish.  The steel is easy to sharpen and virtually
-rustproof.  Although I managed to crack them by dropping on the
-ground, the scales really stand up to hard usage.  The
+flawless finish.  Although I managed to crack them by dropping on
+the ground, the scales really stand up to hard usage.  The
 [SAKwiki](https://sakwiki.com) has a good page on all the different
 [Climber models](https://sakwiki.com/tiki-index.php?page=Climber)
 and history.
+
+The steel they use is DIN 1.4110 (otherwise known as X55CrMo14), a
+martensitic stainless steel with less carbon than most high-end
+knife steels (it has 0.55% carbon while VG10 has 1%), making it
+virtually rustproof. More information is available at [Otai
+Steel](https://www.astmsteel.com/product/1-4110-stainless-steel-cutlery-tools/)
+and [Zhang Xiaoquan](https://zhangxiaoquan.au/blogs/kitchen-knife-steel/understanding-x55crmov14-steel-the-reliable-workhorse-of-german-kitchen-knives).
+It is very easy to sharpen and I actually prefer this characteristic in 
+a pocket knife over edge-holding.
 
 ## Climber Variants
 
@@ -93,7 +101,7 @@ There is also a smaller, 84mm Climber. Here is a good YouTube video describing t
     <img src="https://imageengine.victorinox.com/transform/122a2864-0335-4492-a116-dddf6b846bf2/SAK_1_4703__S1-tif?io=transform%3Afit%2Cwidth%3A600%2Cheight%3A360&quality=100" alt="Super Tinker" width="300">
 </div>
 
-Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909), but the utility of having 2 blades and the choice of two screwdrivers better suit my purposes.
+Others may prefer the 2-layer [Compact](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Compact/p/1.3405) or 3-layer [Companion](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Companion/p/1.3909), but the utility of having 2 blades and the choice of two screwdrivers better suits my purposes.
 The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Super-Tinker/p/1.4703) replaces the corkscrew in a Climber with a Philips screwdriver. Unfortunately, one loses the mini screwdriver which has come in handy to fix glasses (mine and others) from time to time. Moreover, it can't be used to open a bottle of wine in an emergency!
 
 <div class="image-container">
@@ -102,6 +110,8 @@ The [Super Tinker](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84
 </div>
 
 In aluminium scales (alox), the [Pioneer X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Pioneer-X-Alox/p/0.8231.26)  (left) is very similar. The small blade, corkscrew, hook, toothpick, tweezers and pin are lost but in return, it is considerably thinner and the awl is handy. I haven't used the new [Synergy X Alox](https://www.victorinox.com/en/Products/Swiss-Army-Knife%E2%84%A2-and-Tools/Essentials/Synergy-X-Alox/p/0.8226.20) (right) but it has skeletonised scales, locking blade and clip.
+
+Of course, 4-layer SAKs exist, e.g. the Huntsman that adds a saw. In my opinion, these are too thick and heavy for pocket carry. Additional tools I might want to carry include a saw, diamond file and bit set. If I think I'll need them, I'll include a Leatherman Wave.
 
 ## Other Climber Reviews
 
