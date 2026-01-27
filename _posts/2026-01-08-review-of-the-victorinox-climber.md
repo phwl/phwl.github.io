@@ -68,7 +68,14 @@ all modern scales.
 
 I use the large blade for food preparation and the small blade for other work such as opening boxes, cutting plastic etc. The scissors are often used for controlled cuts, particularly to trim fishing knots (an added bonus is that one is less likely to stab oneself when doing this on a rocking boat). I also like having the separate can and bottle openers because the can opener works very well as a Philips screwdriver. The bottle opener is often used as a flat blade screwdriver and for prying. 
 
-I have added a mini screwdriver on the corkscrew which has saved the day on more than one occasion by fixing eyeglasses. The awl gets used infrequently but has been used to make a field repair on shoes (using dental floss as thread). Even the toothpick and tweezers get used from time to time, the former being excellent for cleaning USB ports.
+I have added a mini screwdriver on the corkscrew which has saved
+the day on more than one occasion by fixing eyeglasses.  Even the
+toothpick and tweezers get used from time to time, the former being
+excellent for cleaning USB ports.  The awl gets used infrequently
+but has been used to make a field repair on shoes (using dental
+floss as thread). Unfortunately, it closes if you put a lot of
+pressure on it and is not as effective as the inline awl used in
+the alox Soldier and Pioneer X (see below).
 
 ### Long Nail File Version (1.3722 model)
 
