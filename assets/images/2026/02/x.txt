@@ -1,0 +1,24 @@
+eee © *s¢ Machines - Tailscale x +
+
+€ C O & = login.tailscale.com/admin/machines Ww + 05 8 D
+-¥) Import bookmarks... Oo Bookmarks Menu 8 Home - Intranet - T... & My requests - Unive... 1a} UOS Coordinator | S... © All Posts - Cyclosta... g Manage Workspace ee) ELEC3607 ELEC96... a Amazon AU price tr... » Oo Other E
+*:¢ phwl.github Free Q ww
+& Machines do Apps “% Services & Users GQ Accesscontrols Logs © DNS’ & Settings (1 Resource hub
+Machines
+Manage the devices connected to your tailnet. Learn more aebheeuige
+Q Search by name, owner, tag, version. Y Filters v Y
+4 machines
+MACHINE ADDRESSES @® VERSION LAST SEEN
+gl-mt3000 ® 1.80.3-1 (OpenWrt) e Connected eee
+Subnets ©
+iphone-14-pro 1.94.1 e@ Connected eee
+PS iOS 26.21
+5 fe) a 1.941 4:50 AM AEDT coe
+5 O a macOS 26.2.0
+trout 1.94.1 e@ Connected eee
+
+Linux 6.12.69+deb13-amd64
+
+Add devices to your network
+
+Tailscale works best when it’s installed on multiple devices. Explore what you can do with Tailscale in these environments.
