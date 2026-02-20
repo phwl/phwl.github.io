@@ -45,4 +45,4 @@ Check that the machines are connected on the [Tailscale Admin Machines](https://
 
 {% include figure image_path="/assets/images/2026/02/machines.png" caption="" %}
 
-The blanked out IP addresses are those of the different machines so you should be able to ssh to trout from any machine connected to the Beryl travel router. 
+The blanked out IP addresses are those of the different machines so you should be able to ssh to trout from any machine connected to the Beryl travel router. While this setup is extremely convenient, please be aware that anyone able to connnect to the router will be able to access your machines!
