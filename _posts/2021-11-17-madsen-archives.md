@@ -57,6 +57,7 @@ A collection of historical records on Sir John Percival Vissing Madsen (1879-196
  1. [JPVM Medals - Powerhouse](/assets/images/2025/04/JPVM_Medals-Powerhouse.pdf) (added 24/04/2025)
  1. [Letter to Nobel Laureate Edward Appleton in 1949](/assets/images/2025/07/RWMappletonLetter1949JPVM.jpg) with [notes from Roger Madsen](/assets/images/2025/07/RWMappletonLetter1949.pdf) (added 17/07/2025)
  1. [Techniques on Alpha Gamma Beta Radioactivity](/assets/images/2026/03/Madsen50 1907-1909 Techniques on Alpha Gamma Beta Radioactivity.pdf) (added 12/03/2026)
+ 1. [J P V Madsen and University of Queensland Physics 1935-1945](/assets/images/2026/03/Madsen52 University of Qld Physics 1935-1945.pdf) (added 24/03/2026)
 
 # Links
   * [CSIROpedia](https://csiropedia.csiro.au/john-madsen/)
