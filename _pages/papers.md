@@ -15,10 +15,10 @@ classes: wide
 Enhancing lut\-based deep neural networks inference through architecture and connectivity optimization\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2026\.
 URL: [sparselut\_tcad26\.pdf](sparselut_tcad26.pdf), [doi:10\.1109/TCAD\.2026\.3654908](https://doi.org/10.1109/TCAD.2026.3654908)\.  
-[2] Rafal Sienicki, Manuel A\. Cervera, and Philip H\. W\. Leong\.
-Segmentation of the f2 leading edge in a backscatter sounder ionogram\.
-*IEEE Transactions on Geoscience and Remote Sensing*, \(\):1&ndash;1, 2026\.
-URL: [seg\_tgrs26\.pdf](seg_tgrs26.pdf), [doi:10\.1109/TGRS\.2026\.3653438](https://doi.org/10.1109/TGRS.2026.3653438)\.  
+[2] Rafal Sienicki, Danielle J\. Edwards, Manuel A\. Cervera, and Philip H\.W\. Leong\.
+Ionogram scaling for vertical, oblique, and backscatter sounders: a review of challenges and opportunities\.
+*IEEE Geoscience and Remote Sensing Magazine*, 14\(1\):49&ndash;68, 2026\.
+URL: [seg\_tgrs26\.pdf](seg_tgrs26.pdf), [doi:10\.1109/MGRS\.2025\.3602369](https://doi.org/10.1109/MGRS.2025.3602369)\.  
 [3] Thuy T Pham, Lucien Gheerbrant, Ha S\. Pham, Veronica B H Nguyen, and Philip H\.W\. Leong\.
 Space sign language for spacewalks: sign profiling and edge computing approach\.
 *IEEE Journal of Radio Frequency Identification*, \(\):1&ndash;1, 2025\.
