@@ -1,7 +1,7 @@
 ---
 author: phwl
 comments: true
-date: 2026-06-06 09:30:00 AEST
+date: 2026-06-05 09:30:00 AEST
 title: Miele CS 1212 Induction Hob repair
 use_math: true
 toc: true
