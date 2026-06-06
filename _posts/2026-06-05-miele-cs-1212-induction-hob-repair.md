@@ -39,6 +39,6 @@ Look, C311 and C312 appear to be bulging.
 Simple job to replace them.
 {% include figure image_path="/assets/images/2026/06/IMG_4967.jpeg" caption="" %}
 
-Unfortunately, this was only a partial repair. The hob in the front gives an F3 error when it gets really hot, but the one in the back is working perfectly now with the fan coming on at the right time. I think we'll just use it for now.
+Unfortunately, this was only a partial repair. The hob in the front gives an F3 error when it gets really hot, but the one in the back is working perfectly with the fan coming on at the right time. I think we'll just use it for now.
 {% include figure image_path="/assets/images/2026/06/IMG_4971.jpeg" caption="" %}
 
