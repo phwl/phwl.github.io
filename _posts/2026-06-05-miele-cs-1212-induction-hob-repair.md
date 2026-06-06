@@ -24,14 +24,14 @@ So out it comes. The steel case is held in with Torx T20 screws.
 On the workbench.
 {% include figure image_path="/assets/images/2026/06/IMG_4953.jpeg" caption="" %}
 
-Under the steel case there are two boards.
-{% include figure image_path="/assets/images/2026/06/IMG_4964.jpeg" caption="" %}
-
-This is the main heating board.
+Under the steel case there are two boards. On the left is the main heating board.
 {% include figure image_path="/assets/images/2026/06/IMG_4954.jpeg" caption="" %}
 
-This must be the temperature control board.
+The white board is some sort of control board.
 {% include figure image_path="/assets/images/2026/06/IMG_4955.jpeg" caption="" %}
+
+Out it comes.
+{% include figure image_path="/assets/images/2026/06/IMG_4964.jpeg" caption="" %}
 
 Look, C311 and C312 appear to be bulging.
 {% include figure image_path="/assets/images/2026/06/IMG_4963.jpeg" caption="" %}
