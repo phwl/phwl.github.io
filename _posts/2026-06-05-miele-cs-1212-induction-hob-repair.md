@@ -33,15 +33,22 @@ The white board is some sort of control board.
 Out it comes.
 {% include figure image_path="/assets/images/2026/06/IMG_4964.jpeg" caption="" %}
 
-Look, C311 and C312 appear to be bulging.
+Look, capacitors C311 and C312 appear to be bulging.
 {% include figure image_path="/assets/images/2026/06/IMG_4963.jpeg" caption="" %}
 
-They were Yageo 470uF 25V capacitors (which are a top quality Taiwanese brand).
+Once out, the 470uF, 25V capacitors measured about 100uF so definitely
+needed replacing.  The failed components were made by Yageo, a top
+quality Taiwanese brand. In fact they are the second largest passive
+component maker behind Murata.
 {% include figure image_path="/assets/images/2026/06/IMG_4974.jpeg" caption="" %}
 
-Simple job to replace them.
+It was a simple job to replace them.
 {% include figure image_path="/assets/images/2026/06/IMG_4967.jpeg" caption="" %}
 
-Unfortunately, this was only a partial repair. The hob in the front gives an F0 error now when it gets really hot, maybe that one was masked by the others? However, the one in the back is working perfectly with the fan coming on at the right time - I think we'll just use one for now.
+Unfortunately, this was only a partial repair. The hob in the front
+now gives an F0 error when it gets really hot, maybe that one was
+masked by the others? However, the one in the back is working
+perfectly with the fan coming on at the right time - I think we'll
+just use the working one for now.
 {% include figure image_path="/assets/images/2026/06/IMG_4971.jpeg" caption="" %}
 
