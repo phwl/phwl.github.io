@@ -36,6 +36,9 @@ Out it comes.
 Look, C311 and C312 appear to be bulging.
 {% include figure image_path="/assets/images/2026/06/IMG_4963.jpeg" caption="" %}
 
+They were Yageo 470uF 25V capacitors (which are a top quality Taiwanese brand).
+{% include figure image_path="/assets/images/2026/06/IMG_4974.jpeg" caption="" %}
+
 Simple job to replace them.
 {% include figure image_path="/assets/images/2026/06/IMG_4967.jpeg" caption="" %}
 
