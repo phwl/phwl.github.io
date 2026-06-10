@@ -47,8 +47,8 @@ It was a simple job to replace them.
 
 Unfortunately, this was only a partial repair. The hob in the front
 now gives an F0 error when it gets really hot, maybe that one was
-masked by the others? However, the one in the back is working
-perfectly with the fan coming on at the right time - I think we'll
-just use the working one for now.
+masked by the others? However, the front is fine if the setting is
+lower than 9 oclock and the one in the back is working perfectly
+with the fan coming on at the right time. In the meantime we'll be using it!
 {% include figure image_path="/assets/images/2026/06/IMG_4971.jpeg" caption="" %}
 
