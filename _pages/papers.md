@@ -14,7 +14,7 @@ classes: wide
 [1] James Li, Philip H\.W\. Leong, and Thomas Chaffey\.
 Quantization robustness of monotone operator equilibrium networks\.
 *IEEE Control Systems Letters*, \(\):1&ndash;1, 2026\.
-[doi:10\.1109/LCSYS\.2026\.3703783](https://doi.org/10.1109/LCSYS.2026.3703783)\.  
+URL: [mono\_csl26\.pdf](mono_csl26.pdf), [doi:10\.1109/LCSYS\.2026\.3703783](https://doi.org/10.1109/LCSYS.2026.3703783)\.  
 [2] Binglei Lou, Ruilin Wu, and Philip Leong\.
 Enhancing lut\-based deep neural networks inference through architecture and connectivity optimization\.
 *IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2026\.
