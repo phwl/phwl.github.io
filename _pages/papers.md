@@ -390,13 +390,13 @@ Matic \- an intracardiac tachycardia classification system\.
 # Conferences
 
 [1] Ruilin Wu, Carol Jingyi Li, Wei Zhang, Xueyuan Liu, and Philip H\.W\. Leong\.
-Cyclo\-AMC: automatic modulation classification on versal utilising cyclostationary features\.
-In *2025 International Conference on Field\-Programmable Technology \(ICFPT\)*, volume, to appear\. 2025\.
+Cyclo\-amc: automatic modulation classification on versal utilising cyclostationary features\.
+In *2025 International Conference on Field Programmable Technology \(ICFPT\)*, volume, 91&ndash;100\. 2025\.
 URL: [cycloamc\_fpt25\.pdf](cycloamc_fpt25.pdf)\.  
 [2] Carol Jingyi Li, Ruilin Wu, and Philip H\.W\. Leong\.
-AMD Versal implementations of FAM and SSCA estimators\.
-In *2025 35th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, to appear\. 2025\.
-URL: [famssca\_fpl25\.pdf](famssca_fpl25.pdf)\.  
+ AMD Versal Implementations of FAM and SSCA Estimators \.
+In *2025 35th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, 314&ndash;322\. Los Alamitos, CA, USA, September 2025\. IEEE Computer Society\.
+URL: [famssca\_fpl25\.pdf](famssca_fpl25.pdf), [doi:10\.1109/FPL68686\.2025\.00050](https://doi.org/10.1109/FPL68686.2025.00050)\.  
 [3] Binglei Lou, Richard Rademacher, David Boland, and Philip H\.W\. Leong\.
 PolyLUT\-Add: FPGA\-based LUT inference with wide inputs\.
 In *2024 34th International Conference on Field\-Programmable Logic and Applications \(FPL\)*, volume, 149&ndash;155\. 2024\.
