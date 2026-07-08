@@ -12,7 +12,7 @@ classes: wide
 # Journals
 
 [1] Xueyuan Liu, Ruilin Wu, and Philip H\.W\. Leong\.
-A flexible fpga butterfly engine for accelerating signal processing and machine learning\.
+A flexible FPGA\-based butterfly engine for accelerating signal processing and machine learning\.
 *ACM Trans\. Reconfigurable Technol\. Syst\.*, 2026 \(to appear\)\.
 URL: [flexbe\_trets26\.pdf](flexbe_trets26.pdf)\.  
 [2] Paul Damien McGreevy, Melissa J\. Starling, Paul P\. Breen, Carolyn Broderick, Cameron A\. Clark, Barry Flower, Clara Grazian, Titus Jayarathna, Ollie Jay, Philip Leong, Sabrina Lomax, and Scott A\. Sisson\.
