@@ -11,18 +11,18 @@ classes: wide
 
 # Journals
 
-[1] Paul Damien McGreevy, Melissa J\. Starling, Paul P\. Breen, Carolyn Broderick, Cameron A\. Clark, Barry Flower, Clara Grazian, Titus Jayarathna, Ollie Jay, Philip Leong, Sabrina Lomax, and Scott A\. Sisson\.
+[1] Xueyuan Liu, Ruilin Wu, and Philip H\.W\. Leong\.
+A flexible fpga butterfly engine for accelerating signal processing and machine learning\.
+*ACM Trans\. Reconfigurable Technol\. Syst\.*, 2026 \(to appear\)\.
+URL: [flexbe\_trets26\.pdf](flexbe_trets26.pdf)\.  
+[2] Paul Damien McGreevy, Melissa J\. Starling, Paul P\. Breen, Carolyn Broderick, Cameron A\. Clark, Barry Flower, Clara Grazian, Titus Jayarathna, Ollie Jay, Philip Leong, Sabrina Lomax, and Scott A\. Sisson\.
 A pilot study on real\-time monitoring of canine responses to exercise\.
 *Applied Animal Behaviour Science*, pages 107105, 2026\.
 URL: [dogs\_aabs26\.pdf](dogs_aabs26.pdf), [doi:https://doi\.org/10\.1016/j\.applanim\.2026\.107105](https://doi.org/https://doi.org/10.1016/j.applanim.2026.107105)\.  
-[2] James Li, Philip H\.W\. Leong, and Thomas Chaffey\.
+[3] James Li, Philip H\.W\. Leong, and Thomas Chaffey\.
 Quantization robustness of monotone operator equilibrium networks\.
 *IEEE Control Systems Letters*, \(\):1&ndash;1, 2026\.
 URL: [mono\_csl26\.pdf](mono_csl26.pdf), [doi:10\.1109/LCSYS\.2026\.3703783](https://doi.org/10.1109/LCSYS.2026.3703783)\.  
-[3] Binglei Lou, Ruilin Wu, and Philip Leong\.
-Enhancing lut\-based deep neural networks inference through architecture and connectivity optimization\.
-*IEEE Transactions on Computer\-Aided Design of Integrated Circuits and Systems*, \(\):1&ndash;1, 2026\.
-URL: [sparselut\_tcad26\.pdf](sparselut_tcad26.pdf), [doi:10\.1109/TCAD\.2026\.3654908](https://doi.org/10.1109/TCAD.2026.3654908)\.  
 [4] Rafal Sienicki, Danielle J\. Edwards, Manuel A\. Cervera, and Philip H\.W\. Leong\.
 Ionogram scaling for vertical, oblique, and backscatter sounders: a review of challenges and opportunities\.
 *IEEE Geoscience and Remote Sensing Magazine*, 14\(1\):49&ndash;68, 2026\.
