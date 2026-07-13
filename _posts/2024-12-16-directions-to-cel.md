@@ -1,19 +1,20 @@
 ---
 author: phwl
 comments: true
-date: 2024-12-16 21:16:48+00:00
+date: 2026-07-10 21:16:48+00:00
 slug: directions-to-cel
 title: Directions to CEL
 classes: wide
 header:
-  teaser: /assets/images/2024/11/cel-logo-black.png
+  teaser: /assets/images/2026/07/h03-cel.jpg
 categories:
 - academia
 tags:
 - suee
 ---
 
-The Computer Engineering Laboratory is on the 8th Floor of the [School of Electrical and Computer Engineering (Building J03)](https://www.sydney.edu.au/engineering/schools/school-of-electrical-computer-engineering.html), The University of Sydney. My office is Room 837 (inside Lab 830) and the entrance is on the balcony. Please either knock on the door or call my [office number](/about) when you reach level 8.
+The Computer Engineering Laboratory is on the 4th Floor of the Institute Building (Building H03), The University of Sydney. My office is Room N436 and the entrance is from the south side of the Institute Building shown in the map below.
 
+{% include figure image_path="/assets/images/2026/07/h03-cel.jpg" caption="" %}
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.998769960621!2d151.19046917662436!3d-33.88968552014256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1a2155b3a41%3A0xc89684e0efc0778a!2sEngineering%20and%20Technology%20Precinct%20(J03)!5e0!3m2!1sen!2sau!4v1715409576444!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<https://www.google.com/maps/place/33%C2%B053'27.4%22S+151%C2%B011'23.7%22E/@-33.8909594,151.1899363,21z/data=!4m4!3m3!8m2!3d-33.890947!4d151.189915?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D>
