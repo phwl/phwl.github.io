@@ -89,10 +89,6 @@ An Engima Machine.
 
 {% include figure image_path="/assets/images/2016/12/IMG_4267.jpg" caption="" %}
 
-Falun Gong protestors.
-
-![img_4178](/assets/images/2016/12/IMG_4178.jpg)
-
 Shop window.
 
 ![img_4290](/assets/images/2016/12/IMG_4290.jpg)

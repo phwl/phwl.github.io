@@ -76,8 +76,7 @@ Also listened to jazz at Ned Kelly's Last Stand. I always have an enjoyable time
 {% include figure image_path="/assets/images/2019/10/DSCF0215.jpg" caption="" %}
 
 ## Fudan University, Shanghai
-Next stop was Fudan University. Due to the protests in Hong Kong, there
-was tight security at the airport.
+Next stop was Fudan University. 
 
 {% include figure image_path="/assets/images/2019/10/IMG_1385.jpg" caption="" %}
 
