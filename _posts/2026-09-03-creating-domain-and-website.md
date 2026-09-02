@@ -11,7 +11,7 @@ categories:
 tags:
 - linux
 header:
-  teaser: /assets/images/2022/03/win11.png
+  teaser: /assets/images/2022/10/grumpy.jpg
 ---
 It took me a while to renew the SSL certificate for ternarynet.com. Here is the setup.
 
