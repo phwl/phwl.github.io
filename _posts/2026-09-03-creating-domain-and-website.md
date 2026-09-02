@@ -32,3 +32,8 @@ Log in to your [EasyWP](easywp.com) dashboard and create your WordPress website.
 I generated a PositiveSSL certificate on [SSLTrust](https://www.ssltrust.com.au/). You'll also need a [Certificate Signing Request](https://knowledge.digicert.com/general-information/how-to-create-a-csr) (CSR). 
 
 Navigate back to your EasyWP dashboard and find your website settings. Locate the SSL Certificate section and click Manage. Choose Custom SSL Certificate if you are using an external certificate, or activate the built-in Sectigo PositiveSSL if available on your plan. Upload your Sectigo certificate files (.crt and .ca-bundle) along with your private key if doing a manual install, then save the changes.
+
+5. Check
+* Check the domain registration via <https://lookup.icann.org/en>.
+* Check the SSL Certficate via <https://www.ssl.org/>.
+* Digger.tools is also useful <https://digger.tools/lookup/>
