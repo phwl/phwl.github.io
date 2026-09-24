@@ -394,7 +394,7 @@ Matic \- an intracardiac tachycardia classification system\.
 # Conferences
 
 [1] Karthikeyan Kalyanasundaram, Ivan Maksymov, and Philip H\.W\. Leong\.
-Pensa: a spatial accelerator for bitnet b1\.58 inference on an hbm\-equipped amd alveo fpga\.
+PENSA: a spatial accelerator for BitNet b1\.58 inference on an HBM\-equipped AMD Alveo FPGA\.
 In *Advances in Neural Information Processing Systems*\. 2026\.
 URL: [pensa\_neurips26\.pdf](pensa_neurips26.pdf)\.  
 [2] Ruilin Wu, Carol Jingyi Li, Wei Zhang, Xueyuan Liu, and Philip H\.W\. Leong\.
