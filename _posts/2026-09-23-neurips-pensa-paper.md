@@ -14,9 +14,9 @@ header:
   teaser: /assets/images/2026/09/NeurIPS-logo.svg
 ---
 
-[PENSA: A Spatial Accelerator for BitNet b1.58 Inference on an
-HBM-equipped AMD Alveo FPGA](/assets/papers/pensa_neurips26.pdf)
-describes our ternary large language model accelerator in collaboration
-with [TernaryNet](https://www.ternarynet.com). It will be presented
-at NeurIPS 2026 in Sydney.
+Our paper, [PENSA: A Spatial Accelerator for BitNet b1.58 Inference on an
+HBM-equipped AMD Alveo FPGA](/assets/papers/pensa_neurips26.pdf),
+developed in collaboration
+with [TernaryNet](https://www.ternarynet.com), will be presented
+at NeurIPS 2026 in Sydney. PENSA is an FPGA accelerator for ternary large language models.
 
