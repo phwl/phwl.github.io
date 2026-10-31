@@ -2,7 +2,7 @@
 author: phwl
 comments: true
 date: 2026-10-23 09:30:00 AEST
-title: Cousin Kwan trip
+title: Queensland trip to visit Cousin Kwan
 use_math: true
 toc: true
 classes: wide
